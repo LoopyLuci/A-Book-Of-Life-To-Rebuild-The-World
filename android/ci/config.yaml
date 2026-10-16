@@ -1,0 +1,94 @@
+android:
+  app:
+    package: org.abookoflife.app
+    min_sdk: 26
+    target_sdk: 35
+    compile_sdk: 35
+    java_version: 17
+    kotlin_version: 2.0.21
+    gradle_version: 8.9
+
+pipeline:
+  stages:
+    - preflight
+    - build
+    - test
+    - deploy
+    - validate
+    - performance
+
+  preflight:
+    enabled: true
+    fail_on_error: true
+    timeout_seconds: 300
+    checks:
+      - environment
+      - android_sdk
+      - java_version
+      - disk_space
+      - build_configuration
+
+  build:
+    enabled: true
+    fail_on_error: true
+    timeout_seconds: 600
+    variants:
+      - debug
+      - release
+    cache:
+      enabled: true
+      max_age_days: 7
+    artifacts:
+      types:
+        - apk
+        - aab
+
+  test:
+    enabled: true
+    fail_on_error: true
+    timeout_seconds: 900
+    types:
+      - unit
+      - instrumented
+      - ui
+    retry_attempts: 2
+    retry_delay_seconds: 5
+    max_test_failures: 0
+    reports:
+      junit: true
+      html: true
+
+  deploy:
+    enabled: true
+    fail_on_error: true
+    timeout_seconds: 300
+    method:
+      - adb
+      - fastboot
+    rollback_on_failure: true
+    backup_count: 3
+
+  validate:
+    enabled: true
+    fail_on_error: false
+    timeout_seconds: 120
+    level: full
+    checks:
+      - app_installed
+      - app_launched
+      - ui_rendered
+      - performance_threshold
+
+  performance:
+    enabled: false
+    monitoring_duration_seconds: 300
+    sampling_interval_seconds: 30
+    metrics:
+      - memory_usage
+      - battery_level
+      - storage_usage
+      - network_activity
+    thresholds:
+      memory_mb: 200
+      battery_percent: 90
+      storage_gb: 1

@@ -69,15 +69,16 @@ jobs:
 
       - name: Enable KVM group perms
         run: |
-          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' \
-            | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
       - name: Install emulator runtime libraries
         run: |
           sudo apt-get update
-          sudo apt-get install -y libpulse0 libegl1 libgl1 libxkbcommon0 libnss3 libasound2 libglib2.0-0
+          # Fixed: Use libasound2t64 (correct package name in newer Ubuntu)
+          # libpulse0 may not be available in all environments
+          sudo apt-get install -y libasound2t64 libgl1 libglib2.0-0
 
       - name: Run instrumentation tests (API ${{ matrix.api-level }})
         uses: reactivecircus/android-emulator-runner@v2
