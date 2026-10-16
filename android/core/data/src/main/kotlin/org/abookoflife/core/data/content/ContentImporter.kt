@@ -39,10 +39,15 @@ class ContentImporter @Inject constructor(
         val meta = readMeta()
         val storedVersion = database.metaDao().get(AbookDatabase.META_KB_VERSION)
         val storedCount = database.entryDao().count()
+        val storedHash = database.metaDao().get(AbookDatabase.META_CONTENT_HASH)
 
+        // Re-import when the KB version, entry count or content fingerprint changes,
+        // so refreshes are picked up even when the version is not bumped.
+        val hashMatches = meta.contentHash.isEmpty() || storedHash == meta.contentHash
         val alreadyCurrent = !force &&
             storedVersion == meta.kbVersion &&
             storedCount == meta.entryCount &&
+            hashMatches &&
             storedCount > 0
 
         if (alreadyCurrent) {
@@ -73,6 +78,7 @@ class ContentImporter @Inject constructor(
 
             database.metaDao().put(MetaEntity(AbookDatabase.META_KB_VERSION, meta.kbVersion))
             database.metaDao().put(MetaEntity(AbookDatabase.META_ENTRY_COUNT, entries.size.toString()))
+            database.metaDao().put(MetaEntity(AbookDatabase.META_CONTENT_HASH, meta.contentHash))
             database.metaDao().put(
                 MetaEntity(AbookDatabase.META_IMPORTED_AT, System.currentTimeMillis().toString())
             )

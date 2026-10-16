@@ -55,6 +55,7 @@ data class DomainDto(
 @Serializable
 data class MetaDto(
     val kbVersion: String = "0.0.0",
+    val contentHash: String = "",
     val entryCount: Int = 0,
     val domainCount: Int = 0,
     val defaultLanguage: String = "en",

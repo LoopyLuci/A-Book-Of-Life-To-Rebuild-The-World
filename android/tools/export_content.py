@@ -12,13 +12,19 @@ Writes:
   android/app/src/main/assets/content/entries.json
   android/app/src/main/assets/content/domains.json
   android/app/src/main/assets/content/meta.json
-  android/app/src/main/res/values-<lang>/strings.xml   (translations)
+  android/core/designsystem/src/main/res/values-<lang>/strings.xml   (translations)
+
+Translations are emitted next to the design-system module's default English
+strings so that lint sees each translation alongside its default-locale
+counterpart (otherwise it reports spurious ExtraTranslation errors).
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
+import shutil
 import sys
 import tomllib
 from pathlib import Path
@@ -34,6 +40,7 @@ MANIFEST = ROOT / "manifest.toml"
 ANDROID_DIR = ROOT / "android"
 ASSETS_DIR = ANDROID_DIR / "app" / "src" / "main" / "assets" / "content"
 RES_DIR = ANDROID_DIR / "app" / "src" / "main" / "res"
+DS_RES_DIR = ANDROID_DIR / "core" / "designsystem" / "src" / "main" / "res"
 
 DOMAIN_META = {
     "survival": ("Survival & Immediate Needs", "Water, fire, shelter, first aid", "local_fire_department", "#D84315"),
@@ -57,6 +64,25 @@ def kb_version() -> str:
     return "0.0.0"
 
 
+def strip_leading_title_block(body: str) -> str:
+    """Drop the leading H1 title and metadata blockquote from an entry body.
+
+    The reader already renders the entry title and its metadata, so the
+    Markdown body should begin at the first real content heading.
+    """
+    lines = body.splitlines()
+    i = 0
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    if i < len(lines) and lines[i].startswith("# "):
+        i += 1
+        while i < len(lines) and not lines[i].strip():
+            i += 1
+        while i < len(lines) and lines[i].lstrip().startswith(">"):
+            i += 1
+    return "\n".join(lines[i:]).lstrip("\n")
+
+
 def load_entries() -> list[dict]:
     entries = []
     for sidecar_path in sorted(SIDECARS_DIR.rglob("*.pnk.yaml")):
@@ -67,7 +93,7 @@ def load_entries() -> list[dict]:
             continue
         with sidecar_path.open("r", encoding="utf-8") as f:
             meta = yaml.safe_load(f)
-        body = md_path.read_text(encoding="utf-8")
+        body = strip_leading_title_block(md_path.read_text(encoding="utf-8"))
         verification = meta.get("verification", {}) or {}
         sources = []
         for s in meta.get("sources", []) or []:
@@ -135,13 +161,15 @@ def _android_escape(value: str) -> str:
 
 
 def write_translations() -> None:
+    langs: list[str] = []
     for src in sorted(I18N_DIR.glob("*.yaml")):
         lang = src.stem
         if lang == "en":
             continue
+        langs.append(lang)
         with src.open("r", encoding="utf-8") as f:
             strings = yaml.safe_load(f) or {}
-        out_dir = RES_DIR / f"values-{lang}"
+        out_dir = DS_RES_DIR / f"values-{lang}"
         out_dir.mkdir(parents=True, exist_ok=True)
         lines = ['<?xml version="1.0" encoding="utf-8"?>', "<resources>"]
         for key, value in strings.items():
@@ -149,6 +177,12 @@ def write_translations() -> None:
         lines.append("</resources>")
         (out_dir / "strings.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
         print(f"  wrote {out_dir.relative_to(ROOT)}/strings.xml ({len(strings)} strings)")
+
+    for lang in langs:
+        legacy = RES_DIR / f"values-{lang}"
+        if legacy.exists():
+            shutil.rmtree(legacy)
+            print(f"  removed legacy {legacy.relative_to(ROOT)}")
 
 
 def main() -> int:
@@ -162,14 +196,14 @@ def main() -> int:
 
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
-    (ASSETS_DIR / "entries.json").write_text(
-        json.dumps(entries, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
-    )
+    entries_json = json.dumps(entries, ensure_ascii=False, separators=(",", ":"))
+    (ASSETS_DIR / "entries.json").write_text(entries_json, encoding="utf-8")
     (ASSETS_DIR / "domains.json").write_text(
         json.dumps(domains, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     meta = {
         "kbVersion": version,
+        "contentHash": hashlib.sha256(entries_json.encode("utf-8")).hexdigest()[:16],
         "entryCount": len(entries),
         "domainCount": len(domains),
         "defaultLanguage": "en",

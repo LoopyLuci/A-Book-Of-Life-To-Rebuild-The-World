@@ -18,7 +18,14 @@ entire knowledge base into the APK so it works with **zero connectivity**.
 - **Themes** — Material 3 light/dark, dynamic color on Android 12+, and a parchment
   "field manual" accent palette.
 - **Localization** — 8 UI translations (ar, de, es, fr, hi, pt, sw, zh) generated from
-  `i18n/strings/*.yaml`.
+  `i18n/strings/*.yaml`, selectable per app via Android 13+ per-app language settings.
+
+## Screenshots
+
+| Library | Search | Reader | Saved | Settings |
+| --- | --- | --- | --- | --- |
+| ![Library](../docs/screenshots/android/home.png) | ![Search](../docs/screenshots/android/search.png) | ![Reader](../docs/screenshots/android/reader.png) | ![Saved](../docs/screenshots/android/bookmarks.png) | ![Settings](../docs/screenshots/android/settings.png) |
+
 
 ## Architecture
 
@@ -56,8 +63,12 @@ domains/**/*.md + sidecars/**/*.pnk.yaml + i18n/strings/*.yaml + manifest.toml
         │
         ▼  python android/tools/export_content.py
 android/app/src/main/assets/content/{entries,domains,meta}.json
-android/app/src/main/res/values-<lang>/strings.xml
+android/core/designsystem/src/main/res/values-<lang>/strings.xml
 ```
+
+`meta.json` records a content fingerprint (`contentHash`) alongside the KB version, and
+the importer re-imports whenever the version, entry count **or** hash changes — so content
+refreshes are picked up even when the KB version is not bumped.
 
 The generated files are committed, and CI regenerates them and fails if the working
 tree differs — so change the source entries, re-run the exporter, and commit the result.
@@ -92,7 +103,12 @@ sdk.dir=/path/to/Android/Sdk
 
 ```bash
 cd android
+
+# JVM unit tests (core:common, core:data, …)
 ./gradlew test
+
+# Compose instrumentation tests on a connected device/emulator
+./gradlew :app:connectedDebugAndroidTest
 ```
 
 ## Continuous integration
@@ -100,6 +116,49 @@ cd android
 [`.github/workflows/android.yml`](../.github/workflows/android.yml) regenerates the
 content assets, verifies they are committed, runs the unit tests, assembles the debug
 APK and uploads it as a build artifact.
+
+[`.github/workflows/android-emulator.yml`](../.github/workflows/android-emulator.yml)
+runs the Compose instrumentation suite on an emulator matrix (API 26 / 31 / 35).
+
+## Release signing
+
+The `release` variant is minified with R8 and signed with a keystore supplied at build
+time. Provide the keystore through either environment variables or `android/keystore.properties`
+(both gitignored):
+
+```
+ABOOK_RELEASE_STORE_FILE=/path/to/release.jks
+ABOOK_RELEASE_STORE_PASSWORD=…
+ABOOK_RELEASE_KEY_ALIAS=…
+ABOOK_RELEASE_KEY_PASSWORD=…
+```
+
+```bash
+cd android
+./gradlew assembleRelease
+# -> app/build/outputs/apk/release/app-release.apk
+```
+
+If no keystore is configured the release build falls back to the debug key (handy for
+local verification, never for distribution). `versionName` and `versionCode` are derived
+from `manifest.toml` at the repository root.
+
+## Releasing
+
+[`.github/workflows/android-release.yml`](../.github/workflows/android-release.yml) runs
+when a `v*` tag is pushed: it regenerates content, runs the tests, builds a **signed**
+release APK and attaches it to a GitHub Release. It expects these repository secrets:
+
+| Secret | Purpose |
+| --- | --- |
+| `ABOOK_RELEASE_KEYSTORE_BASE64` | base64-encoded `release.jks` |
+| `ABOOK_RELEASE_STORE_PASSWORD` | keystore password |
+| `ABOOK_RELEASE_KEY_ALIAS` | key alias |
+| `ABOOK_RELEASE_KEY_PASSWORD` | key password |
+
+```bash
+git tag v0.1.0-alpha && git push origin v0.1.0-alpha
+```
 
 ## License
 

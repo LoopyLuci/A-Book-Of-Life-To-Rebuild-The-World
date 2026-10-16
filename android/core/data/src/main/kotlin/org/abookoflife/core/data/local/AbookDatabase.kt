@@ -30,5 +30,6 @@ abstract class AbookDatabase : RoomDatabase() {
         const val META_KB_VERSION = "kb_version"
         const val META_IMPORTED_AT = "imported_at"
         const val META_ENTRY_COUNT = "entry_count"
+        const val META_CONTENT_HASH = "content_hash"
     }
 }

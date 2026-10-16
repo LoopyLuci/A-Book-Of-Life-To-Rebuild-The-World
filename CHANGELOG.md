@@ -13,6 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   reader, bookmarks, reading progress, themes and 8 UI translations.
 - `android/tools/export_content.py` content export pipeline (entries/domains/meta JSON
   and `values-<lang>` string resources) and `.github/workflows/android.yml` CI.
+- Android instrumentation tests (`AppSmokeTest`) plus
+  `.github/workflows/android-emulator.yml` running them on an API 26/31/35 emulator matrix.
+
+### Changed
+- Android release builds are minified, shrink resources, derive their version from
+  `manifest.toml`, and are signed via environment/`keystore.properties` credentials
+  (tag-driven `.github/workflows/android-release.yml` publishes them to GitHub Releases).
+- Exported entry bodies no longer repeat the leading `# Title` and metadata blockquote
+  (the reader already renders both), and `meta.json` now carries a `contentHash` that the
+  importer uses to pick up content refreshes even when the KB version is unchanged.
+- Android app declares a `localeConfig` so the 8 translations are selectable via Android's
+  per-app language settings.
 
 ## [1.0.0] — 2026-01-01
 
