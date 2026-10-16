@@ -1,0 +1,14 @@
+[Unit]
+Description=Book of Life offline server
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/book-of-life
+ExecStart=/opt/book-of-life/.venv/bin/python scripts/serve.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

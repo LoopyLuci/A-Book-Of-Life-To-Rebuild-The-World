@@ -1,0 +1,24 @@
+[project]
+name = "a-book-of-life"
+version = "1.0.0"
+description = "A Book Of Life To Rebuild The World — an offline-first knowledge engine."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "A Book Of Life Contributors" }]
+
+[project.scripts]
+abook-validate = "scripts.validate:validate"
+abook-build = "scripts.build_index:build"
+abook-search = "scripts.search:main"
+abook-serve = "scripts.serve:app"
+abook-mcp = "scripts.mcp_server:main"
+abook-rag = "scripts.rag:main"
+abook-bundle = "scripts.build_zim:build"
+abook-new = "scripts.new_entry:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

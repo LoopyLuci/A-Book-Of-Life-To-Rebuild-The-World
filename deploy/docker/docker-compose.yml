@@ -1,0 +1,112 @@
+name: a-book-of-life
+
+services:
+  # ---------------------------------------------------------------------------
+  # Knowledge base API (FastAPI + hybrid search)
+  # ---------------------------------------------------------------------------
+  api:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    container_name: abook-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - abook-build:/app/build:ro
+    environment:
+      - BOL_MODEL_DIR=/models
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ---------------------------------------------------------------------------
+  # MCP server (stdio over network via SSE transport)
+  # ---------------------------------------------------------------------------
+  mcp:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile.mcp
+    container_name: abook-mcp
+    ports:
+      - "8083:8083"
+    volumes:
+      - abook-build:/app/build:ro
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # RAG API (retrieval + local LLM)
+  # ---------------------------------------------------------------------------
+  rag:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile.rag
+    container_name: abook-rag
+    ports:
+      - "8084:8084"
+    volumes:
+      - abook-build:/app/build:ro
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+      - ABOOK_MODEL=abook-rag
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Local LLM runtime
+  # ---------------------------------------------------------------------------
+  ollama:
+    image: ollama/ollama:latest
+    container_name: abook-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-models:/root/.ollama
+    restart: unless-stopped
+
+  ollama-pull:
+    image: ollama/ollama:latest
+    depends_on:
+      - ollama
+    entrypoint: >
+      sh -c "sleep 5 &&
+             ollama pull llama3.1:8b &&
+             ollama create abook-rag -f /Modelfile"
+    volumes:
+      - ./ollama/Modelfile:/Modelfile:ro
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    restart: "no"
+
+  # ---------------------------------------------------------------------------
+  # Offline Wikipedia-style browser (ZIM)
+  # ---------------------------------------------------------------------------
+  kiwix:
+    image: ghcr.io/kiwix/kiwix-serve:latest
+    container_name: abook-kiwix
+    ports:
+      - "8081:8080"
+    volumes:
+      - abook-build:/data:ro
+    command: ["/data/offline-bundle/a-book-of-life.zim"]
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Education platform (Khan Academy content offline)
+  # ---------------------------------------------------------------------------
+  kolibri:
+    image: learningequality/kolibri:latest
+    container_name: abook-kolibri
+    ports:
+      - "8082:8080"
+    volumes:
+      - kolibri-data:/kolibri
+    restart: unless-stopped
+
+volumes:
+  abook-build:
+  ollama-models:
+  kolibri-data:

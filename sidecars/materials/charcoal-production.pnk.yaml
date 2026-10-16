@@ -1,0 +1,24 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+title: Charcoal Production
+domain: materials
+tags: [charcoal, pyrolysis, fuel, smelting, materials]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Charcoal Production Manual
+    license: public-domain
+verification:
+  status: field-tested
+  tested_by: Community Team Alpha
+  date: "2026-03-22"
+  location: Missouri, USA
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+geographic_applicability: [universal]
+language: en
+media: []

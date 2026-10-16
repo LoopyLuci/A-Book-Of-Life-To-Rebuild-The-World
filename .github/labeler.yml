@@ -1,0 +1,33 @@
+domain/survival:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/survival/**'
+domain/agriculture:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/agriculture/**'
+domain/materials:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/materials/**'
+domain/energy:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/energy/**'
+domain/construction:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/construction/**'
+domain/health:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/health/**'
+domain/knowledge:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/knowledge/**'
+domain/society:
+  - changed-files:
+      - any-glob-to-any-file: 'domains/society/**'
+field-test:
+  - changed-files:
+      - any-glob-to-any-file: 'field-tests/**'
+governance:
+  - changed-files:
+      - any-glob-to-any-file: 'governance/**'
+ci:
+  - changed-files:
+      - any-glob-to-any-file: '.github/**'

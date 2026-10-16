@@ -1,0 +1,42 @@
+id: ft-making-fire-arizona-2026-03
+entry_id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+tester: Community Team Alpha
+tester_contact: alpha@abookoflife.org
+date: "2026-03-15"
+location: "Sonoran Desert, Arizona, USA"
+gps: "33.4484, -112.0740"
+conditions:
+  weather: clear, dry, light breeze
+  temperature_c: 27
+  altitude_m: 340
+  materials_substituted: none
+  tools_available: [ferro rod, bow drill set, flint and steel]
+procedure_followed: "Tested all three methods in sequence."
+deviations: "Used mesquite for the fireboard instead of the listed softwood."
+results: |
+  Ferro rod ignited tinder in 45 seconds on first try.
+  Bow drill produced an ember in 3 minutes 20 seconds; required 4 attempts.
+  Flint and steel required char cloth; without it, no ignition.
+measurements:
+  - name: ferro_rod_ignition_time
+    value: "45"
+    unit: seconds
+  - name: bow_drill_ember_time
+    value: "200"
+    unit: seconds
+  - name: flint_steel_with_charcloth
+    value: "30"
+    unit: seconds
+failure_modes: |
+  Bow drill spindle slipped twice due to insufficient downward pressure.
+  Flint and steel failed entirely without char cloth.
+safety_observed: true
+safety_notes: "No injuries. Fire clear of overhanging branches."
+photos:
+  - "field-tests/ft-making-fire-arizona-2026-03/photo-01.jpg"
+  - "field-tests/ft-making-fire-arizona-2026-03/photo-02.jpg"
+recommendations: |
+  Add a note that bow drill requires 2-3 kg of downward pressure.
+  Emphasize char cloth production before flint-and-steel attempts.
+duration_minutes: 45
+verified: true

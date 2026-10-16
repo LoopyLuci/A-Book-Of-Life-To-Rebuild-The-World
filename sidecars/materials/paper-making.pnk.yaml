@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+title: Paper Making
+domain: materials
+tags: [paper, pulp, writing, knowledge, materials]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+  - title: Traditional papermaking methods
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-04-08"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

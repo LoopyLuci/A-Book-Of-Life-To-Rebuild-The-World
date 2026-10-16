@@ -1,0 +1,28 @@
+id: ft-REPLACE-ME
+entry_id: pnk:REPLACE/domain/slug
+tester: Your Name
+tester_contact: optional
+date: "2026-01-01"
+location: "City, Region, Country"
+gps: "optional: 34.05, -118.25"
+conditions:
+  weather: clear, dry
+  temperature_c: 21
+  altitude_m: 100
+  materials_substituted: none
+  tools_available: [knife, ferro rod]
+procedure_followed: "Followed sections 1-3 exactly as written."
+deviations: "none"
+results: "Describe the outcome. Did it work? How well? How fast?"
+measurements:
+  - name: time_to_ignition
+    value: "45"
+    unit: seconds
+failure_modes: "What went wrong, if anything."
+safety_observed: true
+safety_notes: "No injuries. Fire was well clear of overhangs."
+photos:
+  - "field-tests/ft-xxx/photo-01.jpg"
+recommendations: "Consider adding a note about damp tinder."
+duration_minutes: 30
+verified: false

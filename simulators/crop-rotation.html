@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crop Rotation Simulator — A Book Of Life To Rebuild The World</title>
+<style>
+:root { --fg:#1a1a1a; --bg:#fafaf7; --accent:#8b5a2b; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 0 auto;
+       padding: 1.5rem; background: var(--bg); color: var(--fg); }
+h1 { border-bottom: 2px solid var(--accent); padding-bottom: .5rem; }
+table { border-collapse: collapse; margin: 1rem 0; }
+td, th { border: 1px solid #ccc; padding: .6rem .8rem; text-align: center; }
+.legume    { background: #c8e6c9; }
+.brassica  { background: #ffe0b2; }
+.root      { background: #d1c4e9; }
+.fruiting  { background: #ffcdd2; }
+button { padding: .5rem 1rem; font-size: 1rem; cursor: pointer; }
+.family-key span { display: inline-block; padding: .15rem .5rem; margin: .1rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>Crop Rotation Simulator</h1>
+<p>Rotate the four families across four beds so no family returns to the
+same bed within 4 years.</p>
+
+<div class="family-key">
+  <span class="legume">Legume (fixes N)</span>
+  <span class="brassica">Brassica (heavy feeder)</span>
+  <span class="root">Root (loosens)</span>
+  <span class="fruiting">Fruiting (heavy feeder)</span>
+</div>
+
+<table id="grid"></table>
+<button onclick="rotate()">Rotate Year</button>
+<button onclick="reset()">Reset</button>
+<p id="status"></p>
+
+<script>
+const FAMILIES = ["legume", "brassica", "root", "fruiting"];
+const NAMES = { legume: "Legume", brassica: "Brassica", root: "Root", fruiting: "Fruiting" };
+let year = 0;
+
+function reset() { year = 0; render(); }
+function rotate() { year = (year + 1) % 4; render(); }
+
+function render() {
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  const header = document.createElement("tr");
+  header.innerHTML = "<th>Year</th><th>Bed 1</th><th>Bed 2</th><th>Bed 3</th><th>Bed 4</th>";
+  grid.appendChild(header);
+  for (let y = 0; y < 4; y++) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<th>${y + 1}</th>`;
+    for (let b = 0; b < 4; b++) {
+      const fam = FAMILIES[(b + y) % 4];
+      const td = document.createElement("td");
+      td.className = fam;
+      td.textContent = NAMES[fam];
+      tr.appendChild(td);
+    }
+    grid.appendChild(tr);
+  }
+  document.getElementById("status").textContent = `Current year: ${year + 1}`;
+
+  // Emit snapshot for embedding
+  window.abookSnapshot = {
+    simulator: "crop-rotation",
+    year: year + 1,
+    grid: [0,1,2,3].map(y => [0,1,2,3].map(b => FAMILIES[(b + y) % 4])),
+  };
+}
+
+reset();
+</script>
+</body>
+</html>

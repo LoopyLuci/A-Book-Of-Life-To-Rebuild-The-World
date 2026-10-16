@@ -1,0 +1,13 @@
+successors:
+  - maintainer: "@maintainer-a"
+    successor: "@maintainer-b"
+    effective: 2026-01-01
+    scope: [architecture, releases]
+  - maintainer: "@maintainer-b"
+    successor: "@maintainer-c"
+    effective: 2026-01-01
+    scope: [security, federation]
+  - maintainer: "@maintainer-c"
+    successor: "@maintainer-a"
+    effective: 2026-01-01
+    scope: [content, community]

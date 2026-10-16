@@ -1,0 +1,45 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels: [dependencies, python]
+
+  - package-ecosystem: pip
+    directory: "/sdk/python"
+    schedule:
+      interval: weekly
+    labels: [dependencies, python, sdk]
+
+  - package-ecosystem: npm
+    directory: "/sdk/typescript"
+    schedule:
+      interval: weekly
+    labels: [dependencies, typescript, sdk]
+
+  - package-ecosystem: npm
+    directory: "/mobile"
+    schedule:
+      interval: weekly
+    labels: [dependencies, mobile]
+
+  - package-ecosystem: cargo
+    directory: "/sdk/rust"
+    schedule:
+      interval: weekly
+    labels: [dependencies, rust, sdk]
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    labels: [dependencies, ci]
+
+  - package-ecosystem: docker
+    directory: "/deploy/docker"
+    schedule:
+      interval: weekly
+    labels: [dependencies, docker]

@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
+title: Signaling for Rescue
+domain: survival
+tags: [rescue, signaling, communication, survival]
+difficulty: novice
+safety: green
+time_to_complete: minutes
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army FM 21-76 Survival Manual
+    license: public-domain
+  - title: ICAO Search and Rescue Manual
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-02-22"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

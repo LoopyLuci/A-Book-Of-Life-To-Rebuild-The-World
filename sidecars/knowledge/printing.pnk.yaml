@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0BHFN6FGVNWDCDAKFT/knowledge/printing
+title: Printing
+domain: knowledge
+tags:
+- printing
+- publishing
+- knowledge
+- communication
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain letterpress manuals
+  license: public-domain
+- title: Gutenberg press reconstruction notes
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

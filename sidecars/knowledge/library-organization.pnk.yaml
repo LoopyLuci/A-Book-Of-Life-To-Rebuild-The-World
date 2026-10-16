@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+title: Library Organization
+domain: knowledge
+tags:
+- library
+- cataloguing
+- knowledge
+- archives
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain library science texts
+  license: public-domain
+- title: UNESCO archive guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

@@ -1,0 +1,430 @@
+openapi: 3.1.0
+info:
+  title: A Book Of Life To Rebuild The World — Public API
+  version: 1.0.0
+  description: |
+    The public HTTP API for A Book Of Life To Rebuild The World.
+    Every endpoint is idempotent and works offline when the server is
+    deployed on a local network. Authentication is optional; rate limits
+    apply only to the hosted mirror.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: A Book Of Life Maintainers
+    url: https://abookoflife.org
+servers:
+  - url: https://api.abookoflife.org/v1
+    description: Hosted mirror (rate-limited)
+  - url: http://localhost:8080/v1
+    description: Local deployment (unlimited)
+
+tags:
+  - name: search
+  - name: entries
+  - name: verification
+  - name: governance
+  - name: federation
+  - name: system
+
+paths:
+  /health:
+    get:
+      tags: [system]
+      summary: Health check
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, enum: [ok] }
+                  index_exists: { type: boolean }
+
+  /version:
+    get:
+      tags: [system]
+      summary: Get KB and API version
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Version"
+
+  /search:
+    get:
+      tags: [search]
+      summary: Hybrid BM25 + semantic search
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema: { type: string, minLength: 1 }
+        - name: domain
+          in: query
+          schema:
+            type: string
+            enum: [survival, agriculture, materials, energy, construction, health, knowledge, society]
+        - name: difficulty
+          in: query
+          schema:
+            type: string
+            enum: [novice, apprentice, journeyman, master]
+        - name: safety
+          in: query
+          schema:
+            type: string
+            enum: [green, yellow, red]
+        - name: language
+          in: query
+          schema: { type: string, default: en }
+        - name: limit
+          in: query
+          schema: { type: integer, default: 20, minimum: 1, maximum: 100 }
+      responses:
+        "200":
+          description: Ranked results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  query: { type: string }
+                  results:
+                    type: array
+                    items: { $ref: "#/components/schemas/SearchResult" }
+
+  /entries:
+    get:
+      tags: [entries]
+      summary: List entries with filters
+      parameters:
+        - name: domain
+          in: query
+          schema: { type: string }
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [draft, peer-reviewed, field-tested, deprecated]
+        - name: cursor
+          in: query
+          schema: { type: string }
+        - name: limit
+          in: query
+          schema: { type: integer, default: 50, maximum: 200 }
+      responses:
+        "200":
+          description: Paginated list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EntryList"
+
+  /entries/{entry_id}:
+    get:
+      tags: [entries]
+      summary: Get a single entry (metadata + body)
+      parameters:
+        - $ref: "#/components/parameters/EntryId"
+      responses:
+        "200":
+          description: Entry
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Entry" }
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /entries/{entry_id}/links:
+    get:
+      tags: [entries]
+      summary: Get incoming and outgoing links for an entry
+      parameters:
+        - $ref: "#/components/parameters/EntryId"
+      responses:
+        "200":
+          description: Link graph node
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/LinkGraph" }
+
+  /verification/{entry_id}:
+    get:
+      tags: [verification]
+      summary: Get verification record
+      parameters:
+        - $ref: "#/components/parameters/EntryId"
+      responses:
+        "200":
+          description: Verification record
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Verification" }
+
+  /verification/ledger:
+    get:
+      tags: [verification]
+      summary: Get verification ledger events
+      parameters:
+        - name: since
+          in: query
+          schema: { type: string, format: date-time }
+        - name: limit
+          in: query
+          schema: { type: integer, default: 100, maximum: 1000 }
+      responses:
+        "200":
+          description: Ledger events
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items: { $ref: "#/components/schemas/VerificationEvent" }
+
+  /verification/field-tests:
+    get:
+      tags: [verification]
+      summary: List field-test reports
+      responses:
+        "200":
+          description: Field tests
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  field_tests:
+                    type: array
+                    items: { $ref: "#/components/schemas/FieldTest" }
+
+  /stats:
+    get:
+      tags: [system]
+      summary: Knowledge base statistics
+      responses:
+        "200":
+          description: Stats
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Stats" }
+
+  /federation/manifest:
+    get:
+      tags: [federation]
+      summary: Federation manifest (identifies this KB node)
+      responses:
+        "200":
+          description: Manifest
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/FederationManifest" }
+
+  /federation/resolve:
+    get:
+      tags: [federation]
+      summary: Resolve a pnk:// URI to a remote node
+      parameters:
+        - name: uri
+          in: query
+          required: true
+          schema: { type: string, pattern: "^pnk:" }
+      responses:
+        "200":
+          description: Resolution
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Resolution" }
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /federation/peers:
+    get:
+      tags: [federation]
+      summary: List known peer KBs
+      responses:
+        "200":
+          description: Peers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  peers:
+                    type: array
+                    items: { $ref: "#/components/schemas/Peer" }
+
+components:
+  parameters:
+    EntryId:
+      name: entry_id
+      in: path
+      required: true
+      schema:
+        type: string
+        pattern: "^pnk:"
+
+  responses:
+    NotFound:
+      description: Not found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail: { type: string }
+
+  schemas:
+    Version:
+      type: object
+      properties:
+        kb_version: { type: string }
+        api_version: { type: string }
+        schema_version: { type: string }
+        built_at: { type: string, format: date-time }
+
+    SearchResult:
+      type: object
+      required: [id, title, domain, difficulty, safety, score]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        domain: { type: string }
+        difficulty: { type: string }
+        safety: { type: string }
+        score: { type: number }
+        snippet: { type: string }
+
+    EntryList:
+      type: object
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/EntrySummary" }
+        next_cursor: { type: string, nullable: true }
+        total: { type: integer }
+
+    EntrySummary:
+      type: object
+      properties:
+        id: { type: string }
+        title: { type: string }
+        domain: { type: string }
+        difficulty: { type: string }
+        safety: { type: string }
+        verification_status: { type: string }
+
+    Entry:
+      allOf:
+        - $ref: "#/components/schemas/EntrySummary"
+        - type: object
+          properties:
+            tags: { type: array, items: { type: string } }
+            body: { type: string }
+            metadata:
+              type: object
+              additionalProperties: true
+
+    LinkGraph:
+      type: object
+      properties:
+        id: { type: string }
+        outgoing:
+          type: array
+          items: { $ref: "#/components/schemas/Edge" }
+        incoming:
+          type: array
+          items: { $ref: "#/components/schemas/Edge" }
+
+    Edge:
+      type: object
+      properties:
+        id: { type: string }
+        relation:
+          type: string
+          enum: [prerequisite, material, tool, link, translation]
+
+    Verification:
+      type: object
+      properties:
+        entry_id: { type: string }
+        status:
+          type: string
+          enum: [draft, peer-reviewed, field-tested, deprecated]
+        reviewers: { type: array, items: { type: string } }
+        tested_by: { type: string, nullable: true }
+        tested_date: { type: string, nullable: true, format: date }
+        tested_location: { type: string, nullable: true }
+        notes: { type: string }
+
+    VerificationEvent:
+      type: object
+      properties:
+        entry_id: { type: string }
+        from_status: { type: string }
+        to_status: { type: string }
+        actor: { type: string }
+        timestamp: { type: string, format: date-time }
+        notes: { type: string }
+
+    FieldTest:
+      type: object
+      additionalProperties: true
+
+    Stats:
+      type: object
+      properties:
+        total: { type: integer }
+        by_status:
+          type: object
+          additionalProperties: { type: integer }
+        by_domain:
+          type: object
+          additionalProperties: { type: integer }
+        by_safety:
+          type: object
+          additionalProperties: { type: integer }
+        by_difficulty:
+          type: object
+          additionalProperties: { type: integer }
+
+    FederationManifest:
+      type: object
+      required: [node_id, kb_version, api_url, public_key]
+      properties:
+        node_id:
+          type: string
+          description: Stable identifier for this KB node (ULID-based).
+        kb_version: { type: string }
+        api_url: { type: string, format: uri }
+        public_key:
+          type: string
+          description: Base64 Ed25519 public key for signing sync manifests.
+        domains: { type: array, items: { type: string } }
+        languages: { type: array, items: { type: string } }
+        entry_count: { type: integer }
+        created_at: { type: string, format: date-time }
+
+    Resolution:
+      type: object
+      properties:
+        uri: { type: string }
+        node_id: { type: string }
+        api_url: { type: string, format: uri }
+        entry_id: { type: string }
+        title: { type: string }
+
+    Peer:
+      type: object
+      properties:
+        node_id: { type: string }
+        api_url: { type: string, format: uri }
+        last_sync: { type: string, format: date-time }
+        trusted: { type: boolean }

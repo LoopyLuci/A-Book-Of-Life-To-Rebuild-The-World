@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+title: Soil Testing
+domain: agriculture
+tags: [soil, testing, ph, texture, agriculture]
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA Soil Survey Manual
+    license: public-domain
+  - title: FAO Soil Testing Guidelines
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-03-02"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

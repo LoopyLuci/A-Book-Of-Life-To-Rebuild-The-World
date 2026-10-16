@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N90/materials/chemistry
+title: Chemistry
+domain: materials
+tags: [chemistry, acids, bases, salts, reactions]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army Chemistry Manual
+    license: public-domain
+verification:
+  status: draft
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N20/survival/soap-making
+geographic_applicability: [universal]
+language: en
+media: []

@@ -1,0 +1,52 @@
+name: Review Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, labeled]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  require-reviewers:
+    if: contains(github.event.pull_request.labels.*.name, 'peer-review')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Check reviewer count
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR=${{ github.event.pull_request.number }}
+          REVIEWS=$(gh pr view $PR --json reviews -q '.reviews | map(select(.state == "APPROVED")) | length')
+          echo "Approved reviews: $REVIEWS"
+          if [ "$REVIEWS" -lt 2 ]; then
+            echo "::error::Peer review requires at least 2 approvals."
+            exit 1
+          fi
+      - name: Validate all sidecars
+        run: python scripts/validate.py
+      - name: Validate field tests
+        run: python scripts/validate_field_tests.py
+      - name: Build index
+        run: python scripts/build_index.py
+
+  auto-merge-if-verified:
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'field-tested') &&
+      github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pascalgn/automerge-action@v0.16.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LABELS: "field-tested,!do-not-merge"
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "pull-request-title"
+          MERGE_RETRIES: "6"
+          MERGE_RETRY_SLEEP: "10000"

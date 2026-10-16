@@ -1,0 +1,26 @@
+id: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+title: Antibiotics
+domain: health
+tags:
+- antibiotics
+- infection
+- pharmacology
+- health
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Model List of Essential Medicines
+  license: public-domain
+- title: MSF Clinical Guidelines (open)
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

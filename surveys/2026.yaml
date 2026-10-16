@@ -1,0 +1,65 @@
+id: survey-2026
+title: "A Book Of Life — 2026 Community Survey"
+opens: "2026-11-01"
+closes: "2026-11-30"
+anonymous: true
+
+questions:
+  - id: role
+    type: single
+    prompt: "What best describes your relationship to the project?"
+    options:
+      - Reader
+      - Contributor
+      - Verifier
+      - Domain Maintainer
+      - Core Maintainer
+      - Funder
+
+  - id: domains_used
+    type: multiple
+    prompt: "Which domains do you use most?"
+    options:
+      - survival
+      - agriculture
+      - materials
+      - energy
+      - construction
+      - health
+      - knowledge
+      - society
+
+  - id: offline_usage
+    type: single
+    prompt: "How often do you use the offline bundle?"
+    options:
+      - Daily
+      - Weekly
+      - Monthly
+      - Rarely
+      - Never
+
+  - id: languages
+    type: multiple
+    prompt: "Which languages do you read?"
+    options: [en, es, fr, de, pt, hi, ar, sw, zh]
+
+  - id: verification_trust
+    type: scale
+    prompt: "How much do you trust the field-tested badge?"
+    min: 1
+    max: 5
+
+  - id: blockers
+    type: freeform
+    prompt: "What prevents you from using the project more?"
+
+  - id: wishes
+    type: freeform
+    prompt: "What is the one thing you wish we would add?"
+
+  - id: nps
+    type: scale
+    prompt: "How likely are you to recommend the project to a friend?"
+    min: 0
+    max: 10

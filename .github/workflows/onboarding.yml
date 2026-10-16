@@ -1,0 +1,63 @@
+name: Contributor Onboarding
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome first-time contributors
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |
+            Thank you for your first pull request to **A Book Of Life To
+            Rebuild The World**!
+
+            A maintainer will review your change within 7 days. In the
+            meantime, please confirm:
+
+            - [ ] Your sidecar validates (`python scripts/validate.py`)
+            - [ ] You signed the CLA (the bot will prompt you)
+            - [ ] You cited every source with a license
+            - [ ] You assigned a safety level (green/yellow/red)
+
+            See `CONTRIBUTING.md` for details.
+          issue-message: |
+            Thank you for opening your first issue in **A Book Of Life To
+            Rebuild The World**!
+
+            A maintainer will respond within 7 days. Please include:
+            - The domain (survival, agriculture, materials, energy,
+              construction, health, knowledge, society)
+            - Your sources
+            - Your safety assessment
+
+  cla-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: contributor-assistant/github-action@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_BOT_TOKEN }}
+        with:
+          path-to-signatures: "governance/cla-signatures.json"
+          path-to-document: "https://github.com/${{ github.repository }}/blob/main/governance/CLA.md"
+          branch: "main"
+          allowlist: "dependabot[bot],github-actions[bot]"
+
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0RA0X0BA2YAAY2Y4XJ/society/legal-frameworks
+title: Legal Frameworks
+domain: society
+tags:
+- law
+- justice
+- governance
+- society
+difficulty: journeyman
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain legal primers
+  license: public-domain
+- title: Natural-law and common-law principles
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

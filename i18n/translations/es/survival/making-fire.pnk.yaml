@@ -1,0 +1,17 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+title: Hacer Fuego
+domain: survival
+tags: [fuego, ignicion, calor, cocina, supervivencia]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+language: es
+sources:
+  - title: US Army Field Manual FM 21-76
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+media: []

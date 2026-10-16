@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+title: Battery Basics
+domain: energy
+tags: [battery, lead-acid, storage, electricity, energy]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+materials_required: []
+tools_required: []
+sources:
+  - title: US DOE Battery Handbook
+    license: public-domain
+  - title: US Army Battery Manual
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-05-01"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

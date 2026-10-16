@@ -1,0 +1,50 @@
+name: Security Advisory
+
+on:
+  repository_vulnerability_alert:
+    types: [create, dismiss, reopen]
+
+permissions:
+  contents: read
+  issues: write
+  security-events: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Open tracking issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const alert = context.payload.alert;
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Security advisory: ${alert.summary}`,
+              body: `
+                **Severity:** ${alert.severity}
+                **Package:** ${alert.dependency.package.name}
+                **Vulnerable range:** ${alert.security_vulnerability.vulnerable_version_range}
+                **Patched version:** ${alert.security_vulnerability.first_patched_version?.identifier || "none"}
+
+                See the advisory: ${alert.security_advisory.ghsa_id}
+
+                /cc @abookoflife/core-maintainers
+              `,
+              labels: ["security", "advisory"],
+            });
+
+  # Also dispatch to Renovate for an automatic fix PR
+  notify-renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Renovate
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.RENOVATE_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/dispatches \
+            -d '{"event_type":"renovate"}'

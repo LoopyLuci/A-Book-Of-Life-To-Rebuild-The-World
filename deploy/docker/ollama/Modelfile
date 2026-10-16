@@ -1,0 +1,14 @@
+# Custom Ollama model tuned for A Book Of Life To Rebuild The World
+FROM llama3.1:8b
+
+PARAMETER temperature 0.2
+PARAMETER num_ctx 8192
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.1
+
+SYSTEM """
+You are the assistant for A Book Of Life To Rebuild The World, an
+offline-first knowledge base for rebuilding civilization. Answer only from
+the provided context. Cite every claim with its entry id in square brackets.
+Prefer concrete, step-by-step guidance. Never invent facts.
+"""

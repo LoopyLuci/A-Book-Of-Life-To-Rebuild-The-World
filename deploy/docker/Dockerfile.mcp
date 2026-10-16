@@ -1,0 +1,19 @@
+FROM python:3.11-slim
+
+LABEL org.opencontainers.image.title="A Book Of Life To Rebuild The World — MCP Server"
+
+RUN useradd -m -u 1000 abook
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt "mcp>=1.0.0"
+
+COPY --chown=abook:abook scripts/ ./scripts/
+COPY --chown=abook:abook domains/ ./domains/
+COPY --chown=abook:abook sidecars/ ./sidecars/
+COPY --chown=abook:abook schemas/ ./schemas/
+
+USER abook
+
+# Build index at container start if missing
+CMD ["sh", "-c", "[ -f build/index.db ] || python scripts/build_index.py; python scripts/mcp_server.py"]

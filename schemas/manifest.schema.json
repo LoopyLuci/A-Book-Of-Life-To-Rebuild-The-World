@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://book-of-life.org/schemas/manifest.schema.json",
+  "title": "Book of Life Build Manifest",
+  "type": "object",
+  "required": ["kb_version", "generated_at", "entries", "index"],
+  "properties": {
+    "kb_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "domain", "path"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "domain": { "type": "string" },
+          "path": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "difficulty": { "type": "string" },
+          "safety": { "type": "string" },
+          "verification_status": { "type": "string" }
+        }
+      }
+    },
+    "index": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "entry_count": { "type": "integer" },
+        "fts_engine": { "type": "string" },
+        "vector_engine": { "type": "string" },
+        "embedding_model": { "type": "string" }
+      }
+    }
+  }
+}

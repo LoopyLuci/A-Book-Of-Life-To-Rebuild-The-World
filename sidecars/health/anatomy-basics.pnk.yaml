@@ -1,0 +1,26 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Anatomy Basics
+domain: health
+tags:
+- anatomy
+- physiology
+- health
+- education
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Gray's Anatomy (public domain)
+  license: public-domain
+- title: WHO Basic Emergency Care
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

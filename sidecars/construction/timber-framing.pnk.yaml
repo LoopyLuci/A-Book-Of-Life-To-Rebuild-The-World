@@ -1,0 +1,26 @@
+id: pnk:01M52TVJZPMXC71VXFS42RAJWY/construction/timber-framing
+title: Timber Framing
+domain: construction
+tags:
+- timber
+- carpentry
+- structure
+- construction
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-6 Carpentry
+  license: public-domain
+- title: Traditional timber-frame guild notes
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

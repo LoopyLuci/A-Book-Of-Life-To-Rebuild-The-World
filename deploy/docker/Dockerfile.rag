@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+LABEL org.opencontainers.image.title="A Book Of Life To Rebuild The World — RAG API"
+
+RUN useradd -m -u 1000 abook
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt "fastapi>=0.110" "uvicorn[standard]>=0.29"
+
+COPY --chown=abook:abook scripts/ ./scripts/
+COPY --chown=abook:abook domains/ ./domains/
+COPY --chown=abook:abook sidecars/ ./sidecars/
+
+USER abook
+
+COPY deploy/docker/rag_entrypoint.py ./rag_entrypoint.py
+
+EXPOSE 8084
+CMD ["python", "rag_entrypoint.py"]

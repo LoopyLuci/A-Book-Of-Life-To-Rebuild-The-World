@@ -1,0 +1,26 @@
+id: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+title: Field Diagnostics
+domain: health
+tags:
+- diagnostics
+- examination
+- health
+- triage
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Basic Emergency Care
+  license: public-domain
+- title: MSF Clinical Guidelines (open)
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

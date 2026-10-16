@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abookoflife.org/schemas/media.schema.json",
+  "title": "Media Metadata",
+  "type": "object",
+  "required": ["entry_id", "type", "path", "license"],
+  "properties": {
+    "entry_id": { "type": "string", "pattern": "^pnk:" },
+    "type": { "type": "string", "enum": ["video", "audio", "3d-model", "simulator", "diagram", "photo"] },
+    "path": { "type": "string" },
+    "transcript": { "type": "string" },
+    "duration_seconds": { "type": "number" },
+    "language": { "type": "string", "default": "en" },
+    "license": { "type": "string" },
+    "author": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "caption": { "type": "string" }
+  }
+}

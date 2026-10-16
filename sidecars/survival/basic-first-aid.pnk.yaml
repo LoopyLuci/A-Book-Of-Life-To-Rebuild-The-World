@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+title: Basic First Aid
+domain: survival
+tags: [first-aid, cpr, bleeding, fractures, burns, survival]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Basic Emergency Care
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-02-20"
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1X/health/wound-care
+geographic_applicability: [universal]
+language: en
+media: []

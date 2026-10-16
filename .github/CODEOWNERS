@@ -1,0 +1,40 @@
+# Code owners require review from the listed individuals.
+# See MAINTAINERS.md for the current roster.
+
+# Default — Core Maintainers
+*                       @abookoflife/core-maintainers
+
+# Governance
+/governance/            @abookoflife/core-maintainers
+/MAINTAINERS.md         @abookoflife/core-maintainers
+/CODE_OF_CONDUCT.md     @abookoflife/core-maintainers
+
+# CI and infrastructure
+/.github/               @abookoflife/core-maintainers
+/deploy/                @abookoflife/core-maintainers
+
+# Domain content
+/domains/survival/      @abookoflife/survival-maintainers
+/domains/agriculture/   @abookoflife/agriculture-maintainers
+/domains/materials/     @abookoflife/materials-maintainers
+/domains/energy/        @abookoflife/energy-maintainers
+/domains/construction/  @abookoflife/construction-maintainers
+/domains/health/        @abookoflife/health-maintainers
+/domains/knowledge/     @abookoflife/knowledge-maintainers
+/domains/society/       @abookoflife/society-maintainers
+
+# Schemas and sidecars — require Core sign-off
+/schemas/               @abookoflife/core-maintainers
+/sidecars/              @abookoflife/core-maintainers
+
+# SDKs
+/sdk/python/            @abookoflife/sdk-maintainers
+/sdk/typescript/        @abookoflife/sdk-maintainers
+/sdk/rust/              @abookoflife/sdk-maintainers
+
+# Mobile
+/mobile/                @abookoflife/mobile-maintainers
+
+# Federation
+/scripts/federation.py  @abookoflife/core-maintainers
+/docs/federation/       @abookoflife/core-maintainers

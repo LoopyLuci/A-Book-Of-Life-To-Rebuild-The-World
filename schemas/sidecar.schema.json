@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://book-of-life.org/schemas/sidecar.schema.json",
+  "title": "Book of Life Sidecar",
+  "description": "Metadata sidecar for a single knowledge entry.",
+  "type": "object",
+  "required": ["id", "title", "domain", "tags", "difficulty", "safety", "sources", "verification"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pnk:[0-9A-HJKMNP-TV-Z]{26}/[a-z0-9-]+/[a-z0-9-]+$",
+      "description": "Stable, unique identifier (ULID-based)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["survival", "agriculture", "materials", "energy", "construction", "health", "knowledge", "society"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["novice", "apprentice", "journeyman", "master"]
+    },
+    "safety": {
+      "type": "string",
+      "enum": ["green", "yellow", "red"]
+    },
+    "time_to_complete": {
+      "type": "string",
+      "enum": ["minutes", "hours", "days", "weeks", "months"]
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^pnk:" },
+      "default": []
+    },
+    "materials_required": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^pnk:" },
+      "default": []
+    },
+    "tools_required": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^pnk:" },
+      "default": []
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "license"],
+        "properties": {
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "license": {
+            "type": "string",
+            "enum": ["public-domain", "CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0", "MIT", "original", "field-tested"]
+          },
+          "year": { "type": "integer" }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["draft", "peer-reviewed", "field-tested", "deprecated"]
+        },
+        "reviewers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tested_by": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "location": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^pnk:" },
+      "default": []
+    },
+    "geographic_applicability": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["temperate", "arid", "tropical", "arctic", "universal"]
+      },
+      "default": ["universal"]
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+      "default": "en"
+    },
+    "translation_of": {
+      "type": "string",
+      "pattern": "^pnk:"
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path"],
+        "properties": {
+          "type": { "type": "string", "enum": ["image", "video", "audio", "3d-model", "simulator", "diagram", "schematic"] },
+          "path": { "type": "string" },
+          "caption": { "type": "string" },
+          "license": { "type": "string" }
+        }
+      },
+      "default": []
+    }
+  }
+}

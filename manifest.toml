@@ -1,0 +1,69 @@
+[project]
+name = "book-of-life"
+version = "0.1.0-alpha"
+description = "A living, decentralized, offline-first knowledge engine for rebuilding civilization."
+license_content = "CC-BY-SA-4.0"
+license_code = "MIT"
+homepage = "https://book-of-life.org"
+repository = "https://github.com/book-of-life/book-of-life"
+
+[knowledge_base]
+schema_version = "1.0.0"
+default_language = "en"
+supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja"]
+
+[domains]
+list = [
+  "survival",
+  "agriculture",
+  "materials",
+  "energy",
+  "construction",
+  "health",
+  "knowledge",
+  "society",
+]
+
+[chunking]
+strategy = "heading"
+max_tokens = 512
+overlap_tokens = 64
+
+[embeddings]
+model = "all-MiniLM-L6-v2"
+dimensions = 384
+provider = "local"
+backend = "onnx"
+
+[index]
+fts_engine = "sqlite-fts5"
+vector_engine = "sqlite-vec"
+fusion = "reciprocal_rank_fusion"
+rrf_k = 60
+
+[search]
+default_limit = 20
+max_limit = 100
+min_score = 0.0
+
+[api]
+mcp_enabled = true
+static_json_enabled = true
+openapi_enabled = true
+
+[build]
+output_dir = "build"
+index_path = "build/index.db"
+offline_bundle_path = "build/offline-bundle"
+api_path = "build/api"
+
+[verification]
+required_reviewers = 2
+field_test_required = false
+lifecycle = ["draft", "peer-reviewed", "field-tested", "deprecated"]
+
+[safety]
+levels = ["green", "yellow", "red"]
+
+[difficulty]
+levels = ["novice", "apprentice", "journeyman", "master"]

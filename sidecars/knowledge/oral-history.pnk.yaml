@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0JBQACJVMNCVNHX07Q/knowledge/oral-history
+title: Oral History
+domain: knowledge
+tags:
+- oral-history
+- culture
+- memory
+- archives
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain folklore collection guides
+  license: public-domain
+- title: UNESCO intangible heritage guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

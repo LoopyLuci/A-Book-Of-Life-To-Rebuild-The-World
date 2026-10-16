@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+title: Emergency Shelter
+domain: survival
+tags: [shelter, exposure, hypothermia, bushcraft, survival]
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army FM 21-76 Survival Manual
+    license: public-domain
+verification:
+  status: peer-reviewed
+  reviewers: [TBD]
+  date: "2026-02-10"
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+geographic_applicability: [temperate, arid, tropical, arctic]
+language: en
+media: []

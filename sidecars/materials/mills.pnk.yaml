@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
+title: Mills
+domain: materials
+tags: [mill, water-wheel, windmill, grain, flour, materials]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Small-Scale Milling
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-04-12"
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+geographic_applicability: [temperate, tropical]
+language: en
+media: []

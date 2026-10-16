@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: Consensus Decision-Making
+domain: society
+tags:
+- consensus
+- governance
+- meetings
+- society
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain consensus guides
+  license: public-domain
+- title: Quaker meeting practice
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

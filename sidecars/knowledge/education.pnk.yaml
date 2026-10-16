@@ -1,0 +1,26 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: Education
+domain: knowledge
+tags:
+- education
+- teaching
+- literacy
+- knowledge
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain pedagogy texts
+  license: public-domain
+- title: UNESCO education guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

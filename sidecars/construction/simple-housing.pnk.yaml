@@ -1,0 +1,26 @@
+id: pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+title: Simple Housing
+domain: construction
+tags:
+- shelter
+- construction
+- housing
+- infrastructure
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-10 Field Sanitation
+  license: public-domain
+- title: Traditional vernacular building practice
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

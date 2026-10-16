@@ -1,0 +1,26 @@
+id: pnk:01M52TVJZYRW8670DXEDMQ9NTP/construction/surveying
+title: Surveying
+domain: construction
+tags:
+- surveying
+- measurement
+- land
+- construction
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 3-34.331 Surveying
+  license: public-domain
+- title: Public-domain surveying primers
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

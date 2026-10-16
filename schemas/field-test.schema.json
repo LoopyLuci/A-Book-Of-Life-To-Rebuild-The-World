@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abookoflife.org/schemas/field-test.schema.json",
+  "title": "Field Test Report",
+  "type": "object",
+  "required": ["id", "entry_id", "tester", "date", "location", "conditions", "results", "safety_observed"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^ft-[a-z0-9-]{3,64}$" },
+    "entry_id": { "type": "string", "pattern": "^pnk:" },
+    "tester": { "type": "string", "minLength": 2 },
+    "tester_contact": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "location": { "type": "string" },
+    "gps": { "type": "string" },
+    "conditions": {
+      "type": "object",
+      "properties": {
+        "weather": { "type": "string" },
+        "temperature_c": { "type": "number" },
+        "altitude_m": { "type": "number" },
+        "materials_substituted": { "type": "string" },
+        "tools_available": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "procedure_followed": { "type": "string" },
+    "deviations": { "type": "string" },
+    "results": { "type": "string", "minLength": 10 },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "value"],
+        "properties": {
+          "name": { "type": "string" },
+          "value": { "type": "string" },
+          "unit": { "type": "string" }
+        }
+      }
+    },
+    "failure_modes": { "type": "string" },
+    "safety_observed": { "type": "boolean" },
+    "safety_notes": { "type": "string" },
+    "photos": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommendations": { "type": "string" },
+    "duration_minutes": { "type": "number" },
+    "verified": { "type": "boolean", "default": false }
+  }
+}

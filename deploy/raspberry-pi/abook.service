@@ -1,0 +1,14 @@
+[Unit]
+Description=A Book Of Life To Rebuild The World — API
+After=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/a-book-of-life
+ExecStart=/opt/a-book-of-life/.venv/bin/python scripts/serve.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

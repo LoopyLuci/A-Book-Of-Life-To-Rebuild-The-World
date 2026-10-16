@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N37/materials/natural-dyes
+title: Natural Dyes
+domain: materials
+tags: [dyes, textiles, mordants, color, materials]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+  - title: Traditional dyeing methods
+    license: public-domain
+  - title: USDA natural dye reports
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-04-10"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

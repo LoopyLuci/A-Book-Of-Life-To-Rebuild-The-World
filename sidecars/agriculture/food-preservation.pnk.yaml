@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+title: Food Preservation
+domain: agriculture
+tags: [preservation, canning, drying, smoking, fermentation]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA Complete Guide to Home Canning
+    license: public-domain
+  - title: FAO Food Preservation Manual
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-03-18"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

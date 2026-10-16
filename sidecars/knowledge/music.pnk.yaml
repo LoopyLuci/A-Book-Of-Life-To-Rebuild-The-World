@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N91/knowledge/music
+title: Music
+domain: knowledge
+tags: [music, instruments, rhythm, song, culture]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required: []
+tools_required: []
+sources:
+  - title: Traditional instrument-making
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-07-20"
+links: []
+geographic_applicability: [universal]
+language: en
+media: []

@@ -1,0 +1,210 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validate sidecars
+        run: python scripts/validate.py
+      - name: Validate field tests
+        run: python scripts/validate_field_tests.py
+      - name: Build index
+        run: python scripts/build_index.py
+      - name: Build dashboard
+        run: python scripts/dashboard.py
+      - name: Run tests
+        run: pytest -v
+      - uses: actions/upload-artifact@v4
+        with:
+          name: index-and-dashboard
+          path: |
+            build/index.db
+            build/dashboard.html
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "domains/**/*.md"
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --exclude-mail 'domains/**/*.md'
+          fail: true
+
+  models:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install openscad
+        run: sudo apt-get update && sudo apt-get install -y openscad
+      - run: python scripts/build_models.py
+
+  media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_media.py
+
+  i18n:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/validate_i18n.py
+      - run: python scripts/build_i18n.py
+
+  variants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_variants.py
+
+  simulators:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate simulator HTML (basic well-formedness)
+        run: |
+          for f in simulators/*.html; do
+            [ -f "$f" ] || continue
+            grep -q "<!DOCTYPE html>" "$f" || (echo "Missing doctype: $f" && exit 1)
+            grep -q "</html>" "$f" || (echo "Missing closing html: $f" && exit 1)
+          done
+
+  sdk-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e "sdk/python[dev]"
+      - run: pytest sdk/python/tests -v
+
+  sdk-typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - working-directory: sdk/typescript
+        run: |
+          npm ci || npm install
+          npm run build
+          npm test
+
+  sdk-rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - working-directory: sdk/rust
+        run: |
+          cargo build --verbose
+          cargo test --verbose
+
+  federation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt cryptography
+      - name: Verify identity creation
+        run: |
+          python scripts/federation.py identity
+          python scripts/federation.py manifest | head -40
+
+  state-of-the-book:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_index.py
+      - run: python scripts/state_of_the_book.py --year $(date +%Y)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: state-of-the-book
+          path: build/reports/
+
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify CHANGELOG has Unreleased section
+        run: grep -q "## \[Unreleased\]" CHANGELOG.md
+
+  continuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify governance files exist
+        run: |
+          for f in \
+            governance/CHARTER.md \
+            governance/ROLES.md \
+            governance/DECISION-LOG.md \
+            governance/DEPRECATION.md \
+            governance/CONTINUITY.md \
+            governance/FISCAL-SPONSORSHIP.md \
+            governance/ROTATION.md \
+            governance/ROADMAP.md \
+            MAINTAINERS.md \
+            CHANGELOG.md; do
+            [ -f "$f" ] || (echo "Missing: $f" && exit 1)
+          done
+
+  funding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify FUNDING.yml
+        run: |
+          [ -f FUNDING.yml ] || (echo "Missing FUNDING.yml" && exit 1)
+          grep -q "open_collective" FUNDING.yml
+
+  codeowners:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify CODEOWNERS
+        run: |
+          [ -f .github/CODEOWNERS ] || (echo "Missing CODEOWNERS" && exit 1)
