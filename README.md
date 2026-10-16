@@ -50,11 +50,19 @@ docker compose up -d
 book-of-life/
 ├── domains/          # Source of truth (Markdown + assets)
 ├── sidecars/         # Metadata sidecars (.pnk.yaml)
+├── android/          # Native Android app (Kotlin + Jetpack Compose)
+├── mobile/           # React Native mobile app
 ├── scripts/          # Build, index, validation
 ├── build/            # Generated artifacts (gitignored)
 ├── deploy/           # Deployment recipes
 └── .github/          # CI/CD workflows
 ```
+
+## Native Android App
+
+A fully offline, native reader lives in [`android/`](android/) — Kotlin, Jetpack Compose
+and Material 3, with a bundled copy of the knowledge base and hybrid (BM25 + TF-IDF)
+on-device search. See [`android/README.md`](android/README.md) for build instructions.
 
 ## Contributing
 

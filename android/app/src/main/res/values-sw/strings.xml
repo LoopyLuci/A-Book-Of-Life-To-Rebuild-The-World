@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">Kitabu Cha Maisha Cha Kujenga Ulimwengu</string>
+    <string name="tagline">Hifadhi ya maarifa isiyo na mtandao kwa kujenga ustaarabu.</string>
+    <string name="search_placeholder">Tafuta katika maingizo %1$d…</string>
+    <string name="domains">Nyanja</string>
+    <string name="entries">Maingizo</string>
+    <string name="difficulty">Ugumu</string>
+    <string name="safety">Usalama</string>
+    <string name="time_to_complete">Muda wa kukamilisha</string>
+    <string name="prerequisites">Mahitaji ya awali</string>
+    <string name="materials">Nyenzo na zana</string>
+    <string name="procedure">Utaratibu</string>
+    <string name="safety_notes">Vidokezo vya usalama</string>
+    <string name="verification">Uthibitisho</string>
+    <string name="sources">Vyanzo</string>
+    <string name="status_draft">Rasimu</string>
+    <string name="status_peer_reviewed">Imepitiwa na wenzao</string>
+    <string name="status_field_tested">Imejaribiwa uwandani</string>
+    <string name="status_deprecated">Iliyopitwa na wakati</string>
+    <string name="safety_green">Salama</string>
+    <string name="safety_yellow">Tahadhari</string>
+    <string name="safety_red">Hatari</string>
+</resources>

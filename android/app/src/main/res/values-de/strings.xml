@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">Ein Buch Des Lebens Zum Wiederaufbau Der Welt</string>
+    <string name="tagline">Eine offline-fähige Wissensdatenbank zum Wiederaufbau der Zivilisation.</string>
+    <string name="search_placeholder">In %1$d Einträgen suchen…</string>
+    <string name="domains">Bereiche</string>
+    <string name="entries">Einträge</string>
+    <string name="difficulty">Schwierigkeit</string>
+    <string name="safety">Sicherheit</string>
+    <string name="time_to_complete">Zeit bis zur Fertigstellung</string>
+    <string name="prerequisites">Voraussetzungen</string>
+    <string name="materials">Materialien und Werkzeuge</string>
+    <string name="procedure">Verfahren</string>
+    <string name="safety_notes">Sicherheitshinweise</string>
+    <string name="verification">Verifizierung</string>
+    <string name="sources">Quellen</string>
+    <string name="status_draft">Entwurf</string>
+    <string name="status_peer_reviewed">Peer-Reviewed</string>
+    <string name="status_field_tested">Feldgetestet</string>
+    <string name="status_deprecated">Veraltet</string>
+    <string name="safety_green">Sicher</string>
+    <string name="safety_yellow">Vorsicht</string>
+    <string name="safety_red">Gefahr</string>
+</resources>

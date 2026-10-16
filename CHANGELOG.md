@@ -8,7 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Nothing yet.
+- Native Android app (`android/`): Kotlin + Jetpack Compose reader with the knowledge
+  base bundled as offline assets, hybrid BM25 + TF-IDF on-device search, a Markdown
+  reader, bookmarks, reading progress, themes and 8 UI translations.
+- `android/tools/export_content.py` content export pipeline (entries/domains/meta JSON
+  and `values-<lang>` string resources) and `.github/workflows/android.yml` CI.
 
 ## [1.0.0] — 2026-01-01
 

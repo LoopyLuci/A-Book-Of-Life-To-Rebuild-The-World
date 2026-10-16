@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">重建世界的生活之书</string>
+    <string name="tagline">一个离线优先的知识库，用于重建文明。</string>
+    <string name="search_placeholder">在 %1$d 条目中搜索…</string>
+    <string name="domains">领域</string>
+    <string name="entries">条目</string>
+    <string name="difficulty">难度</string>
+    <string name="safety">安全</string>
+    <string name="time_to_complete">完成时间</string>
+    <string name="prerequisites">先决条件</string>
+    <string name="materials">材料与工具</string>
+    <string name="procedure">步骤</string>
+    <string name="safety_notes">安全须知</string>
+    <string name="verification">验证</string>
+    <string name="sources">来源</string>
+    <string name="status_draft">草稿</string>
+    <string name="status_peer_reviewed">同行评审</string>
+    <string name="status_field_tested">实地测试</string>
+    <string name="status_deprecated">已弃用</string>
+    <string name="safety_green">安全</string>
+    <string name="safety_yellow">注意</string>
+    <string name="safety_red">危险</string>
+</resources>

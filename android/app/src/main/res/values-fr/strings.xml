@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">Un Livre De Vie Pour Reconstruire Le Monde</string>
+    <string name="tagline">Une base de connaissances hors ligne pour reconstruire la civilisation.</string>
+    <string name="search_placeholder">Rechercher parmi %1$d entrées…</string>
+    <string name="domains">Domaines</string>
+    <string name="entries">Entrées</string>
+    <string name="difficulty">Difficulté</string>
+    <string name="safety">Sécurité</string>
+    <string name="time_to_complete">Temps de réalisation</string>
+    <string name="prerequisites">Prérequis</string>
+    <string name="materials">Matériaux et outils</string>
+    <string name="procedure">Procédure</string>
+    <string name="safety_notes">Consignes de sécurité</string>
+    <string name="verification">Vérification</string>
+    <string name="sources">Sources</string>
+    <string name="status_draft">Brouillon</string>
+    <string name="status_peer_reviewed">Révisé par les pairs</string>
+    <string name="status_field_tested">Testé sur le terrain</string>
+    <string name="status_deprecated">Obsolète</string>
+    <string name="safety_green">Sûr</string>
+    <string name="safety_yellow">Attention</string>
+    <string name="safety_red">Danger</string>
+</resources>

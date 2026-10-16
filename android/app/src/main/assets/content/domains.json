@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "survival",
+    "title": "Survival & Immediate Needs",
+    "description": "Water, fire, shelter, first aid",
+    "icon": "local_fire_department",
+    "color": "#D84315",
+    "entryCount": 10
+  },
+  {
+    "slug": "agriculture",
+    "title": "Agriculture & Food Systems",
+    "description": "Soil, crops, livestock, preservation",
+    "icon": "eco",
+    "color": "#2E7D32",
+    "entryCount": 8
+  },
+  {
+    "slug": "materials",
+    "title": "Materials & Fabrication",
+    "description": "Metals, glass, chemicals, textiles",
+    "icon": "handyman",
+    "color": "#6D4C41",
+    "entryCount": 11
+  },
+  {
+    "slug": "energy",
+    "title": "Energy & Power",
+    "description": "Generation, storage, conversion",
+    "icon": "bolt",
+    "color": "#F9A825",
+    "entryCount": 8
+  },
+  {
+    "slug": "construction",
+    "title": "Construction & Infrastructure",
+    "description": "Shelter, roads, water, sanitation",
+    "icon": "architecture",
+    "color": "#455A64",
+    "entryCount": 8
+  },
+  {
+    "slug": "health",
+    "title": "Health & Medicine",
+    "description": "Diagnosis, surgery, medicine, care",
+    "icon": "medical_services",
+    "color": "#C62828",
+    "entryCount": 8
+  },
+  {
+    "slug": "knowledge",
+    "title": "Knowledge & Communication",
+    "description": "Printing, radio, education, records",
+    "icon": "menu_book",
+    "color": "#1565C0",
+    "entryCount": 9
+  },
+  {
+    "slug": "society",
+    "title": "Society & Governance",
+    "description": "Law, economics, ethics, community",
+    "icon": "groups",
+    "color": "#6A1B9A",
+    "entryCount": 9
+  }
+]

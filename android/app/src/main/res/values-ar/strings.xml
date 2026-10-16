@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">كتاب الحياة لإعادة بناء العالم</string>
+    <string name="tagline">قاعدة معرفية تعمل دون اتصال لإعادة بناء الحضارة.</string>
+    <string name="search_placeholder">ابحث في %1$d مدخلاً…</string>
+    <string name="domains">المجالات</string>
+    <string name="entries">المدخلات</string>
+    <string name="difficulty">الصعوبة</string>
+    <string name="safety">السلامة</string>
+    <string name="time_to_complete">الوقت اللازم</string>
+    <string name="prerequisites">المتطلبات المسبقة</string>
+    <string name="materials">المواد والأدوات</string>
+    <string name="procedure">الإجراء</string>
+    <string name="safety_notes">ملاحظات السلامة</string>
+    <string name="verification">التحقق</string>
+    <string name="sources">المصادر</string>
+    <string name="status_draft">مسودة</string>
+    <string name="status_peer_reviewed">مراجعة الأقران</string>
+    <string name="status_field_tested">مختبر ميدانياً</string>
+    <string name="status_deprecated">مهمل</string>
+    <string name="safety_green">آمن</string>
+    <string name="safety_yellow">تحذير</string>
+    <string name="safety_red">خطر</string>
+</resources>

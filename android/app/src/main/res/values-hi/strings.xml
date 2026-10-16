@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="site_name">दुनिया को फिर से बनाने के लिए जीवन की एक किताब</string>
+    <string name="tagline">सभ्यता को फिर से बनाने के लिए एक ऑफ़लाइन ज्ञान आधार।</string>
+    <string name="search_placeholder">%1$d प्रविष्टियों में खोजें…</string>
+    <string name="domains">क्षेत्र</string>
+    <string name="entries">प्रविष्टियाँ</string>
+    <string name="difficulty">कठिनाई</string>
+    <string name="safety">सुरक्षा</string>
+    <string name="time_to_complete">पूरा होने का समय</string>
+    <string name="prerequisites">पूर्वापेक्षाएँ</string>
+    <string name="materials">सामग्री और उपकरण</string>
+    <string name="procedure">प्रक्रिया</string>
+    <string name="safety_notes">सुरक्षा नोट्स</string>
+    <string name="verification">सत्यापन</string>
+    <string name="sources">स्रोत</string>
+    <string name="status_draft">प्रारूप</string>
+    <string name="status_peer_reviewed">सहकर्मी-समीक्षित</string>
+    <string name="status_field_tested">क्षेत्र-परीक्षित</string>
+    <string name="status_deprecated">अप्रचलित</string>
+    <string name="safety_green">सुरक्षित</string>
+    <string name="safety_yellow">सावधानी</string>
+    <string name="safety_red">खतरा</string>
+</resources>

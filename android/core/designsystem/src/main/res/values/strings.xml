@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Knowledge-base vocabulary (English source of truth; translated via app overlays) -->
+    <string name="site_name">A Book Of Life To Rebuild The World</string>
+    <string name="tagline">An offline-first knowledge base for rebuilding civilization.</string>
+    <string name="search_placeholder">Search %1$d entries…</string>
+    <string name="domains">Domains</string>
+    <string name="entries">Entries</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="safety">Safety</string>
+    <string name="time_to_complete">Time to complete</string>
+    <string name="prerequisites">Prerequisites</string>
+    <string name="materials">Materials &amp; Tools</string>
+    <string name="procedure">Procedure</string>
+    <string name="safety_notes">Safety Notes</string>
+    <string name="verification">Verification</string>
+    <string name="sources">Sources</string>
+    <string name="status_draft">Draft</string>
+    <string name="status_peer_reviewed">Peer-Reviewed</string>
+    <string name="status_field_tested">Field-Tested</string>
+    <string name="status_deprecated">Deprecated</string>
+    <string name="safety_green">Safe</string>
+    <string name="safety_yellow">Caution</string>
+    <string name="safety_red">Danger</string>
+
+    <!-- Vocabulary companions -->
+    <string name="difficulty_beginner">Beginner</string>
+    <string name="difficulty_intermediate">Intermediate</string>
+    <string name="difficulty_advanced">Advanced</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Library</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_bookmarks">Saved</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_bookmark">Save</string>
+    <string name="action_bookmarked">Saved</string>
+    <string name="action_share">Share</string>
+    <string name="action_copy_link">Copy link</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_close">Close</string>
+    <string name="action_open">Open</string>
+
+    <!-- Home / library -->
+    <string name="continue_reading">Continue reading</string>
+    <string name="field_tested">Verified in the field</string>
+    <string name="see_all">See all</string>
+    <string name="related">Related entries</string>
+    <string name="library_stats">%1$d entries across %2$d domains</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search entries</string>
+    <string name="search_hint_title">Search the whole book</string>
+    <string name="search_hint_body">Full-text and ranked relevance across every domain — entirely offline.</string>
+    <string name="recent_searches">Recent searches</string>
+    <string name="filters">Filters</string>
+    <string name="filter_domain">Domain</string>
+    <string name="filter_difficulty">Difficulty</string>
+    <string name="filter_safety">Safety</string>
+    <string name="all">All</string>
+    <string name="results_count">%1$d results</string>
+    <string name="no_results_title">No matches</string>
+    <string name="no_results_body">Try fewer or different words.</string>
+
+    <!-- Bookmarks -->
+    <string name="no_bookmarks_title">Nothing saved yet</string>
+    <string name="no_bookmarks_body">Tap the bookmark icon on any entry to keep it close at hand.</string>
+    <string name="remove_bookmark">Remove</string>
+
+    <!-- Reader -->
+    <string name="verified_by">Verified by %1$s</string>
+    <string name="tested_in">Tested in %1$s</string>
+    <string name="reading_time">%1$d min read</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_dynamic_color">Dynamic color</string>
+    <string name="settings_dynamic_color_desc">Use wallpaper colors (Android 12+)</string>
+    <string name="settings_reading">Reading</string>
+    <string name="settings_font_scale">Text size</string>
+    <string name="settings_serif">Serif body text</string>
+    <string name="settings_serif_desc">Use a serif typeface for entry text</string>
+    <string name="settings_content">Content</string>
+    <string name="settings_kb_version">Knowledge base version</string>
+    <string name="settings_entries_count">Entries</string>
+    <string name="settings_reindex">Rebuild search index</string>
+    <string name="settings_reindex_desc">Re-import content and rebuild the offline index</string>
+    <string name="settings_reindex_done">Search index rebuilt</string>
+    <string name="settings_about">About</string>
+    <string name="settings_license">License</string>
+    <string name="settings_version">App version</string>
+
+    <!-- States -->
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_entry_missing">This entry could not be found.</string>
+    <string name="content_importing">Preparing offline content…</string>
+    <string name="license_summary">Text is available under CC BY-SA 4.0. Build on it, share it, keep it open.</string>
+    <string name="verification_icon_desc">Verification status</string>
+</resources>
