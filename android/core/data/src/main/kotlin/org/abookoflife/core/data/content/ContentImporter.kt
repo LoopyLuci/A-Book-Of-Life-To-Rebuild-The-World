@@ -7,6 +7,7 @@ import kotlinx.coroutines.withContext
 import kotlinx.serialization.decodeFromString
 import org.abookoflife.core.common.AppDispatchers
 import org.abookoflife.core.data.JsonCodec
+import org.abookoflife.core.data.encodeResourceBudget
 import org.abookoflife.core.data.encodeSources
 import org.abookoflife.core.data.encodeStringList
 import org.abookoflife.core.data.local.AbookDatabase
@@ -132,6 +133,10 @@ class ContentImporter @Inject constructor(
         storage = storage,
         costTier = CostTier.fromId(cost).id,
         hazardsJson = encodeStringList(hazards),
+        resourceBudgetJson = encodeResourceBudget(resourceBudget),
+        lifespan = lifespan,
+        maintenance = maintenance,
+        limitsJson = encodeStringList(limits),
         prerequisitesJson = encodeStringList(prerequisites),
         materialsJson = encodeStringList(materialsRequired),
         toolsJson = encodeStringList(toolsRequired),

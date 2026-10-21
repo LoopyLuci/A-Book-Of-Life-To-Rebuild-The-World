@@ -17,6 +17,10 @@ data class EntryDto(
     val storage: String = "",
     val cost: String = "unknown",
     val hazards: List<String> = emptyList(),
+    val resourceBudget: ResourceBudgetDto? = null,
+    val lifespan: String = "",
+    val maintenance: String = "",
+    val limits: List<String> = emptyList(),
     val prerequisites: List<String> = emptyList(),
     val materialsRequired: List<String> = emptyList(),
     val toolsRequired: List<String> = emptyList(),
@@ -26,6 +30,14 @@ data class EntryDto(
     val regions: List<String> = emptyList(),
     val language: String = "en",
     val body: String = "",
+)
+
+@Serializable
+data class ResourceBudgetDto(
+    val batch: String = "",
+    val laborHours: Double = 0.0,
+    val energyKwh: Double = 0.0,
+    val waterLiters: Double = 0.0,
 )
 
 @Serializable

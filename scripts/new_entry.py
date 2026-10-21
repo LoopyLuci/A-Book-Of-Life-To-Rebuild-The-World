@@ -18,8 +18,8 @@ DOMAINS_DIR = ROOT / "domains"
 SIDECARS_DIR = ROOT / "sidecars"
 
 VALID_DOMAINS = {
-    "survival", "agriculture", "materials", "energy",
-    "construction", "health", "knowledge", "society",
+    "survival", "water", "agriculture", "materials", "energy",
+    "construction", "transport", "health", "knowledge", "society",
 }
 
 TEMPLATE_MD = """# {title}
@@ -92,6 +92,20 @@ def main() -> int:
         "difficulty": "novice",
         "safety": "green",
         "time_to_complete": "hours",
+        "yield": "",
+        "season": "",
+        "storage": "",
+        "cost": "low",
+        "hazards": [],
+        "resource_budget": {
+            "batch": "",
+            "labor_hours": 0,
+            "energy_kwh": 0,
+            "water_liters": 0,
+        },
+        "lifespan": "",
+        "maintenance": "",
+        "limits": [],
         "prerequisites": [],
         "materials_required": [],
         "tools_required": [],

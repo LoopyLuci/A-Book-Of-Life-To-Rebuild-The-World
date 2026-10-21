@@ -206,6 +206,25 @@ def load_entries() -> list[dict]:
         tools = list(meta.get("tools_required", []) or [])
         if not materials and not tools:
             materials = section_bullets(body, "Materials & Tools")
+        raw_budget = meta.get("resource_budget") or {}
+        if not isinstance(raw_budget, dict):
+            raw_budget = {}
+
+        def budget_number(key: str) -> float:
+            try:
+                return max(0.0, float(raw_budget.get(key, 0) or 0))
+            except (TypeError, ValueError):
+                return 0.0
+
+        budget = {
+            "batch": str(raw_budget.get("batch", "") or "").strip(),
+            "laborHours": budget_number("labor_hours"),
+            "energyKwh": budget_number("energy_kwh"),
+            "waterLiters": budget_number("water_liters"),
+        }
+        has_budget = bool(budget["batch"]) or any(
+            budget[key] > 0 for key in ("laborHours", "energyKwh", "waterLiters")
+        )
         entries.append({
             "id": meta["id"],
             "slug": md_path.stem,
@@ -220,6 +239,10 @@ def load_entries() -> list[dict]:
             "storage": meta.get("storage", "") or "",
             "cost": meta.get("cost", "unknown") or "unknown",
             "hazards": list(meta.get("hazards", []) or []),
+            "resourceBudget": budget if has_budget else None,
+            "lifespan": meta.get("lifespan", "") or "",
+            "maintenance": meta.get("maintenance", "") or "",
+            "limits": list(meta.get("limits", []) or []),
             "prerequisites": list(meta.get("prerequisites", []) or []),
             "materialsRequired": materials,
             "toolsRequired": tools,

@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KSY817XFRG6KBDD1T3/construction/seismic-bracing
+title: Seismic Bracing
+domain: construction
+tags:
+- earthquake
+- retrofit
+- structure
+- safety
+- construction
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+yield: A continuous load path from roof to foundation plus restrained chimney, water heater, and tall furniture
+season: Dry weather for foundation and roof work; complete before the storm season
+storage: Keep spare straps, anchors, and fasteners dry and labelled
+cost: medium
+hazards:
+- Falls from ladders and roofs
+- Dust and power-tool injuries
+- Gas leaks and chimney collapse
+- Structural damage from incorrect cutting or anchoring
+resource_budget:
+  batch: one 100 square metre single-storey house
+  labor_hours: 40
+  energy_kwh: 10
+  water_liters: 20
+lifespan: A code-compliant retrofit can protect the structure for 30-50 years
+maintenance: Inspect anchors, straps, and chimney after any earthquake and yearly
+limits:
+- Not a substitute for engineered design on unreinforced masonry or soft-storey buildings
+- Do not cut structural members without an engineer's approval
+- Do not re-enter a damaged building until it is declared safe
+prerequisites:
+- pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+- pnk:01M52TVJZPMXC71VXFS42RAJWY/construction/timber-framing
+materials_required:
+- Foundation anchor bolts and plates
+- Metal straps and hold-downs
+- Structural screws and nails
+- Plywood or OSB sheathing
+- Water heater straps
+- Flexible gas connector
+- Cabinet latches
+tools_required:
+- Drill and impact driver
+- Wrench set
+- Spirit level
+- Circular saw
+- Hammer
+- Respirator and eye protection
+sources:
+- title: FEMA P-530 Earthquake Safety Guide for Homeowners
+- title: FEMA E-74 Reducing the Risks of Nonstructural Earthquake Damage
+- title: USGS Earthquake Hazards Program
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+- pnk:01M52TVJZPMXC71VXFS42RAJWY/construction/timber-framing
+- pnk:01M5FBX2KSZYD6RTXWK9JXH5S1/society/disaster-preparedness
+geographic_applicability:
+- universal
+language: en
+media: []

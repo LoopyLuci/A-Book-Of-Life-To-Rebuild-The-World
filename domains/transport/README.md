@@ -10,6 +10,8 @@ Entries on moving people, goods, and animals without fossil fuel.
 | [Pack Animals and Load Transport](pack-animals.md) | apprentice | yellow | days |
 | [River Ferries and Small-Boat Crossings](river-ferries.md) | journeyman | red | weeks |
 | [Bicycle Maintenance and Load Carrying](bicycle-maintenance.md) | novice | yellow | hours |
+| [Route Planning](route-planning.md) | apprentice | yellow | hours |
+| [Cargo Lashing](cargo-lashing.md) | novice | yellow | hours |
 
 ## Cross-Domain Links
 

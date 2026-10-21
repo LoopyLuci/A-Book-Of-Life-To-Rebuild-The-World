@@ -16,6 +16,17 @@
     <string name="cost_low">Low</string>
     <string name="cost_medium">Medium</string>
     <string name="cost_high">High</string>
+    <string name="resources">Resources</string>
+    <string name="batch">Batch</string>
+    <string name="labor">Labor</string>
+    <string name="energy">Energy</string>
+    <string name="water">Water</string>
+    <string name="resource_labor">%1$s person-hours</string>
+    <string name="resource_energy">%1$s kWh</string>
+    <string name="resource_water">%1$s L</string>
+    <string name="service_life">Service life</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="limits">Limits &amp; contraindications</string>
     <string name="key_hazards">Key hazards</string>
     <string name="tags">Tags</string>
     <string name="applies_to">Applies to</string>

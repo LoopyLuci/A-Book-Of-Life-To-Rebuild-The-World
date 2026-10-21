@@ -2,6 +2,7 @@ package org.abookoflife.core.data
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
+import org.abookoflife.core.data.content.ResourceBudgetDto
 import org.abookoflife.core.data.content.SourceDto
 import org.abookoflife.core.data.local.BookmarkRow
 import org.abookoflife.core.data.local.DomainEntity
@@ -13,6 +14,7 @@ import org.abookoflife.core.model.Difficulty
 import org.abookoflife.core.model.Domain
 import org.abookoflife.core.model.Entry
 import org.abookoflife.core.model.EntrySummary
+import org.abookoflife.core.model.ResourceBudget
 import org.abookoflife.core.model.SafetyLevel
 import org.abookoflife.core.model.Source
 import org.abookoflife.core.model.Verification
@@ -23,6 +25,29 @@ fun encodeStringList(values: List<String>): String = JsonCodec.json.encodeToStri
 fun decodeStringList(json: String): List<String> =
     if (json.isBlank()) emptyList()
     else runCatching { JsonCodec.json.decodeFromString<List<String>>(json) }.getOrDefault(emptyList())
+
+fun encodeResourceBudget(value: ResourceBudgetDto?): String {
+    if (value == null) return ""
+    val hasValue = value.batch.isNotBlank() ||
+        value.laborHours > 0.0 ||
+        value.energyKwh > 0.0 ||
+        value.waterLiters > 0.0
+    return if (hasValue) JsonCodec.json.encodeToString(value) else ""
+}
+
+fun decodeResourceBudget(json: String): ResourceBudget? {
+    if (json.isBlank()) return null
+    val dto = runCatching {
+        JsonCodec.json.decodeFromString<ResourceBudgetDto>(json)
+    }.getOrNull() ?: return null
+    val budget = ResourceBudget(
+        batch = dto.batch.ifBlank { null },
+        laborHours = dto.laborHours.takeIf { it > 0.0 },
+        energyKwh = dto.energyKwh.takeIf { it > 0.0 },
+        waterLiters = dto.waterLiters.takeIf { it > 0.0 },
+    )
+    return budget.takeUnless { it.isEmpty }
+}
 
 fun encodeSources(values: List<SourceDto>): String = JsonCodec.json.encodeToString(values)
 
@@ -44,6 +69,10 @@ fun EntryEntity.toEntry(): Entry = Entry(
     storage = storage.ifBlank { null },
     cost = CostTier.fromId(costTier),
     hazards = decodeStringList(hazardsJson),
+    resourceBudget = decodeResourceBudget(resourceBudgetJson),
+    lifespan = lifespan.ifBlank { null },
+    maintenance = maintenance.ifBlank { null },
+    limits = decodeStringList(limitsJson),
     prerequisites = decodeStringList(prerequisitesJson),
     materialsRequired = decodeStringList(materialsJson),
     toolsRequired = decodeStringList(toolsJson),

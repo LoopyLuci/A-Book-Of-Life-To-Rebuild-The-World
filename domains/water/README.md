@@ -10,6 +10,8 @@ Entries on harvesting, protecting, storing, and reusing water.
 | [Safe Household Water Storage](water-storage.md) | novice | yellow | hours |
 | [Spring Development and Protection](spring-development.md) | journeyman | yellow | weeks |
 | [Greywater Reuse](greywater-reuse.md) | apprentice | yellow | days |
+| [Water Quality Testing](water-quality-testing.md) | apprentice | yellow | hours |
+| [Well Maintenance](well-maintenance.md) | journeyman | red | weeks |
 
 ## Cross-Domain Links
 

@@ -13,3 +13,5 @@
 | [Food Preservation](food-preservation.md) | apprentice | yellow | days |
 | [Raising Livestock](raising-livestock.md) | journeyman | yellow | months |
 | [Grain Storage and Pest Control](grain-storage.md) | apprentice | yellow | days |
+| [Irrigation Scheduling](irrigation-scheduling.md) | apprentice | yellow | days |
+| [Soil Fertility Management](soil-fertility-management.md) | apprentice | yellow | weeks |

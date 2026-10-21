@@ -15,7 +15,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         DomainEntity::class,
         MetaEntity::class,
     ],
-    version = 2,
+    version = 3,
     exportSchema = false,
 )
 abstract class AbookDatabase : RoomDatabase() {
@@ -41,6 +41,15 @@ abstract class AbookDatabase : RoomDatabase() {
                 db.execSQL("ALTER TABLE entries ADD COLUMN storage TEXT NOT NULL DEFAULT ''")
                 db.execSQL("ALTER TABLE entries ADD COLUMN costTier TEXT NOT NULL DEFAULT 'unknown'")
                 db.execSQL("ALTER TABLE entries ADD COLUMN hazardsJson TEXT NOT NULL DEFAULT '[]'")
+            }
+        }
+
+        val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE entries ADD COLUMN resourceBudgetJson TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN lifespan TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN maintenance TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN limitsJson TEXT NOT NULL DEFAULT '[]'")
             }
         }
     }

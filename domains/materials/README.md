@@ -15,3 +15,5 @@
 | [Mills](mills.md) | journeyman | yellow | weeks |
 | [Leather Tanning](leather-tanning.md) | apprentice | yellow | weeks |
 | [Salt Production and Iodization](salt-production.md) | apprentice | yellow | days |
+| [Ceramics](ceramics.md) | journeyman | yellow | weeks |
+| [Adhesives](adhesives.md) | apprentice | yellow | hours |

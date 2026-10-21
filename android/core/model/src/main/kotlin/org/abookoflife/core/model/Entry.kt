@@ -17,6 +17,19 @@ data class Verification(
     val notes: String? = null,
 )
 
+data class ResourceBudget(
+    val batch: String? = null,
+    val laborHours: Double? = null,
+    val energyKwh: Double? = null,
+    val waterLiters: Double? = null,
+) {
+    val isEmpty: Boolean
+        get() = batch.isNullOrBlank() &&
+            (laborHours == null || laborHours <= 0.0) &&
+            (energyKwh == null || energyKwh <= 0.0) &&
+            (waterLiters == null || waterLiters <= 0.0)
+}
+
 /**
  * The full knowledge-base entry, including its Markdown body.
  */
@@ -34,6 +47,10 @@ data class Entry(
     val storage: String?,
     val cost: CostTier,
     val hazards: List<String>,
+    val resourceBudget: ResourceBudget? = null,
+    val lifespan: String? = null,
+    val maintenance: String? = null,
+    val limits: List<String> = emptyList(),
     val prerequisites: List<String>,
     val materialsRequired: List<String>,
     val toolsRequired: List<String>,

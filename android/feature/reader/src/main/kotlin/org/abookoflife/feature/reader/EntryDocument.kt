@@ -51,6 +51,7 @@ import org.abookoflife.core.model.CostTier
 import org.abookoflife.core.model.Entry
 import org.abookoflife.core.model.EntrySummary
 import org.abookoflife.core.model.Source
+import kotlin.math.roundToInt
 
 /**
  * Shared renderer for a full knowledge-base entry.
@@ -160,6 +161,51 @@ fun EntryDocument(
             item { MetaLine(label = stringResource(R.string.applies_to), value = regions) }
         }
 
+        entry.resourceBudget?.takeUnless { it.isEmpty }?.let { budget ->
+            item { SectionHeader(title = stringResource(R.string.resources)) }
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    budget.batch?.takeIf { it.isNotBlank() }?.let { value ->
+                        MetaLine(label = stringResource(R.string.batch), value = value)
+                    }
+                    budget.laborHours?.takeIf { it > 0.0 }?.let { value ->
+                        MetaLine(
+                            label = stringResource(R.string.labor),
+                            value = stringResource(
+                                R.string.resource_labor,
+                                formatResourceAmount(value),
+                            ),
+                        )
+                    }
+                    budget.energyKwh?.takeIf { it > 0.0 }?.let { value ->
+                        MetaLine(
+                            label = stringResource(R.string.energy),
+                            value = stringResource(
+                                R.string.resource_energy,
+                                formatResourceAmount(value),
+                            ),
+                        )
+                    }
+                    budget.waterLiters?.takeIf { it > 0.0 }?.let { value ->
+                        MetaLine(
+                            label = stringResource(R.string.water),
+                            value = stringResource(
+                                R.string.resource_water,
+                                formatResourceAmount(value),
+                            ),
+                        )
+                    }
+                }
+            }
+        }
+
+        entry.lifespan?.takeIf { it.isNotBlank() }?.let { value ->
+            item { MetaBlock(label = stringResource(R.string.service_life), value = value) }
+        }
+        entry.maintenance?.takeIf { it.isNotBlank() }?.let { value ->
+            item { MetaBlock(label = stringResource(R.string.maintenance), value = value) }
+        }
+
         if (entry.tags.isNotEmpty()) {
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -216,6 +262,15 @@ fun EntryDocument(
                         )
                         entry.toolsRequired.forEach { BulletLine(it) }
                     }
+                }
+            }
+        }
+
+        if (entry.limits.isNotEmpty()) {
+            item { SectionHeader(title = stringResource(R.string.limits)) }
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    entry.limits.forEach { BulletLine(it) }
                 }
             }
         }
@@ -340,6 +395,11 @@ private fun TagPill(tag: String) {
             modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
         )
     }
+}
+
+private fun formatResourceAmount(value: Double): String {
+    val rounded = (value * 100).roundToInt() / 100.0
+    return if (rounded % 1.0 == 0.0) rounded.toLong().toString() else rounded.toString()
 }
 
 @Composable

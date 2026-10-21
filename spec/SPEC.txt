@@ -46,6 +46,10 @@ The seed dataset contains 23 chapters. These are reorganized into **10 Domains**
 - **Storage:** Shelf life and storage requirements
 - **Cost Tier:** Low / Medium / High
 - **Key Hazards:** Principal risks beyond the safety colour
+- **Resource Budget:** Batch, labour hours, energy, and water for a stated unit
+- **Service Life:** Expected lifespan or reapplication interval
+- **Maintenance:** Routine inspection and servicing requirements
+- **Limits:** Performance boundaries and contraindications, distinct from hazards
 - **Materials Required:** Linked or described material inputs
 - **Safety Level:** Green / Yellow / Red
 - **Source Provenance:** Public domain, CC‑BY‑SA, original, field‑tested

@@ -17,6 +17,8 @@ Entries focused on sustaining life in the first hours and days.
 | [Simple Tools](simple-tools.md) | apprentice | yellow | hours |
 | [Soap Making](soap-making.md) | apprentice | yellow | days |
 | [Cold Exposure and Hypothermia](cold-exposure.md) | novice | red | hours |
+| [Wildfire Evacuation](wildfire-evacuation.md) | apprentice | red | hours |
+| [Search and Rescue](search-and-rescue.md) | journeyman | red | hours |
 
 ## Cross-Domain Links
 

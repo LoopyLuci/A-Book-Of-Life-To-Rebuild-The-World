@@ -13,3 +13,5 @@
 | [Solar Photovoltaic Systems](solar-pv.md) | journeyman | red | days |
 | [Battery Basics](battery-basics.md) | journeyman | red | days |
 | [Electrical Wiring](electrical-wiring.md) | apprentice | red | days |
+| [DC Microgrids](dc-microgrids.md) | journeyman | red | weeks |
+| [Efficient Lighting](efficient-lighting.md) | novice | yellow | hours |

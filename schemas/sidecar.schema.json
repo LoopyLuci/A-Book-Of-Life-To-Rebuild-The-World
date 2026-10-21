@@ -63,6 +63,34 @@
       "items": { "type": "string" },
       "default": []
     },
+    "resource_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Inputs for a stated batch, used for comparison and planning.",
+      "properties": {
+        "batch": { "type": "string", "maxLength": 200 },
+        "labor_hours": { "type": "number", "minimum": 0 },
+        "energy_kwh": { "type": "number", "minimum": 0 },
+        "water_liters": { "type": "number", "minimum": 0 }
+      },
+      "default": {}
+    },
+    "lifespan": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Expected service life or reapplication interval, with units."
+    },
+    "maintenance": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "Routine inspection and servicing requirements."
+    },
+    "limits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Performance boundaries and contraindications distinct from hazards."
+    },
     "prerequisites": {
       "type": "array",
       "items": { "type": "string", "pattern": "^pnk:" },

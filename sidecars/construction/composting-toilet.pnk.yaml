@@ -1,0 +1,65 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Composting Toilet
+domain: construction
+tags:
+- sanitation
+- composting
+- toilet
+- water
+- public-health
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+yield: A twin-vault toilet serving a household of five, with one vault curing while the other fills
+season: Build in dry weather; start with a dry vault and keep rainwater out
+storage: Cure removed material under cover for 12-24 months before garden use
+cost: medium
+hazards:
+- Pathogen exposure from fresh waste and leachate
+- Groundwater contamination
+- Methane and ammonia in vaults
+- Falls and cuts during construction
+resource_budget:
+  batch: one household of five for one year
+  labor_hours: 40
+  energy_kwh: 0
+  water_liters: 50
+lifespan: A well-built vault can last 10-20 years with repairs
+maintenance: Add cover after each use, check the vent monthly, and cure each batch for 12-24 months
+limits:
+- Not suitable on sites with a high water table or frequent flooding
+- Do not apply fresh or partly cured material to ready-to-eat crops
+- Do not enter a vault; ventilate and use tools from outside
+prerequisites:
+- pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+materials_required:
+- Concrete, brick, or rot-resistant timber
+- Impermeable vault floor
+- Vent pipe and fly screen
+- Toilet pedestal
+- Sawdust, ash, or dry leaves
+- Lid and handwashing station
+tools_required:
+- Shovel and trowel
+- Spirit level
+- Saw and drill
+- Gloves and boots
+- Bucket and scrub brush
+sources:
+- title: WHO Guidelines on Sanitation and Health
+- title: EcoSanRes Composting Toilet Guidelines
+- title: US EPA Composting Toilets
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+- pnk:01M5FBX2KSXPAS0NBFKVZS5CDQ/agriculture/soil-fertility-management
+- pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability:
+- temperate
+- tropical
+- arid
+- universal
+language: en
+media: []
