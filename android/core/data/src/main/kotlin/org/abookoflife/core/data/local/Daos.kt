@@ -45,6 +45,9 @@ interface EntryDao {
     @Query("SELECT * FROM entries WHERE id = :id LIMIT 1")
     suspend fun entry(id: String): EntryEntity?
 
+    @Query("SELECT id FROM entries WHERE slug = :slug LIMIT 1")
+    suspend fun idBySlug(slug: String): String?
+
     @Query("SELECT * FROM entries WHERE id = :id LIMIT 1")
     fun observeEntry(id: String): Flow<EntryEntity?>
 

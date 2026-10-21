@@ -92,6 +92,8 @@ class ReaderViewModel @Inject constructor(
         }
     }
 
+    suspend fun entryIdForSlug(slug: String): String? = repository.entryIdBySlug(slug)
+
     fun onScroll(fraction: Float) {
         scroll.value = fraction.coerceIn(0f, 1f)
     }

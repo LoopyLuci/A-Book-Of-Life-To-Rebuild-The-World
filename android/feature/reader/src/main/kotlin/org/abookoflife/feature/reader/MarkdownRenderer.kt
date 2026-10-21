@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
@@ -65,40 +66,48 @@ fun MarkdownText(
     markdown: String,
     modifier: Modifier = Modifier,
     bodyStyle: TextStyle = MaterialTheme.typography.bodyLarge,
+    onLinkClick: ((String) -> Unit)? = null,
 ) {
     val flavour = remember { GFMFlavourDescriptor() }
     val tree = remember(markdown) {
         MarkdownParser(flavour).buildMarkdownTreeFromString(markdown)
     }
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        tree.children.forEach { child -> MarkdownBlock(child, markdown, bodyStyle) }
+        tree.children.forEach { child -> MarkdownBlock(child, markdown, bodyStyle, onLinkClick) }
     }
 }
 
 @Composable
-private fun MarkdownBlock(node: ASTNode, text: String, bodyStyle: TextStyle) {
+private fun MarkdownBlock(
+    node: ASTNode,
+    text: String,
+    bodyStyle: TextStyle,
+    onLinkClick: ((String) -> Unit)?,
+) {
     when (node.type) {
         MarkdownElementTypes.ATX_1, MarkdownElementTypes.SETEXT_1 ->
-            Heading(node, text, MaterialTheme.typography.headlineMedium)
+            Heading(node, text, MaterialTheme.typography.headlineMedium, onLinkClick)
 
         MarkdownElementTypes.ATX_2, MarkdownElementTypes.SETEXT_2 ->
-            Heading(node, text, MaterialTheme.typography.headlineSmall)
+            Heading(node, text, MaterialTheme.typography.headlineSmall, onLinkClick)
 
         MarkdownElementTypes.ATX_3 ->
-            Heading(node, text, MaterialTheme.typography.titleLarge)
+            Heading(node, text, MaterialTheme.typography.titleLarge, onLinkClick)
 
         MarkdownElementTypes.ATX_4,
         MarkdownElementTypes.ATX_5,
         MarkdownElementTypes.ATX_6,
-        -> Heading(node, text, MaterialTheme.typography.titleMedium)
+        -> Heading(node, text, MaterialTheme.typography.titleMedium, onLinkClick)
 
-        MarkdownElementTypes.PARAGRAPH -> InlineParagraph(node, text, bodyStyle)
+        MarkdownElementTypes.PARAGRAPH -> InlineParagraph(node, text, bodyStyle, onLinkClick)
 
-        MarkdownElementTypes.BLOCK_QUOTE -> BlockQuote(node, text, bodyStyle)
+        MarkdownElementTypes.BLOCK_QUOTE -> BlockQuote(node, text, bodyStyle, onLinkClick)
 
-        MarkdownElementTypes.UNORDERED_LIST -> ListBlock(node, text, bodyStyle, ordered = false)
+        MarkdownElementTypes.UNORDERED_LIST ->
+            ListBlock(node, text, bodyStyle, ordered = false, onLinkClick = onLinkClick)
 
-        MarkdownElementTypes.ORDERED_LIST -> ListBlock(node, text, bodyStyle, ordered = true)
+        MarkdownElementTypes.ORDERED_LIST ->
+            ListBlock(node, text, bodyStyle, ordered = true, onLinkClick = onLinkClick)
 
         MarkdownElementTypes.CODE_FENCE, MarkdownElementTypes.CODE_BLOCK -> CodeBlock(node, text)
 
@@ -108,30 +117,51 @@ private fun MarkdownBlock(node: ASTNode, text: String, bodyStyle: TextStyle) {
 
         GFMElementTypes.TABLE -> TableBlock(node, text)
 
-        else -> InlineParagraph(node, text, bodyStyle)
+        else -> InlineParagraph(node, text, bodyStyle, onLinkClick)
     }
 }
 
 @Composable
-private fun Heading(node: ASTNode, text: String, style: TextStyle) {
+private fun Heading(
+    node: ASTNode,
+    text: String,
+    style: TextStyle,
+    onLinkClick: ((String) -> Unit)?,
+) {
     Text(
-        text = buildInline(node, text, style.color, MaterialTheme.colorScheme.onBackground),
+        text = buildInline(node, text, style.color, MaterialTheme.colorScheme.onBackground, onLinkClick),
         style = style,
         color = MaterialTheme.colorScheme.onBackground,
     )
 }
 
 @Composable
-private fun InlineParagraph(node: ASTNode, text: String, bodyStyle: TextStyle) {
+private fun InlineParagraph(
+    node: ASTNode,
+    text: String,
+    bodyStyle: TextStyle,
+    onLinkClick: ((String) -> Unit)?,
+) {
     Text(
-        text = buildInline(node, text, MaterialTheme.colorScheme.primary, bodyStyle.color),
+        text = buildInline(
+            node,
+            text,
+            MaterialTheme.colorScheme.primary,
+            bodyStyle.color,
+            onLinkClick,
+        ),
         style = bodyStyle,
         color = MaterialTheme.colorScheme.onBackground,
     )
 }
 
 @Composable
-private fun BlockQuote(node: ASTNode, text: String, bodyStyle: TextStyle) {
+private fun BlockQuote(
+    node: ASTNode,
+    text: String,
+    bodyStyle: TextStyle,
+    onLinkClick: ((String) -> Unit)?,
+) {
     Row(
         modifier = Modifier.height(IntrinsicSize.Min),
         horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -151,22 +181,34 @@ private fun BlockQuote(node: ASTNode, text: String, bodyStyle: TextStyle) {
         ) {
             node.children
                 .filter { it.type != MarkdownTokenTypes.BLOCK_QUOTE }
-                .forEach { child -> MarkdownBlock(child, text, bodyStyle) }
+                .forEach { child -> MarkdownBlock(child, text, bodyStyle, onLinkClick) }
         }
     }
 }
 
 @Composable
-private fun ListBlock(node: ASTNode, text: String, bodyStyle: TextStyle, ordered: Boolean) {
+private fun ListBlock(
+    node: ASTNode,
+    text: String,
+    bodyStyle: TextStyle,
+    ordered: Boolean,
+    onLinkClick: ((String) -> Unit)?,
+) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         node.children
             .filter { it.type == MarkdownElementTypes.LIST_ITEM }
-            .forEach { item -> ListItem(item, text, bodyStyle, ordered) }
+            .forEach { item -> ListItem(item, text, bodyStyle, ordered, onLinkClick) }
     }
 }
 
 @Composable
-private fun ListItem(item: ASTNode, text: String, bodyStyle: TextStyle, ordered: Boolean) {
+private fun ListItem(
+    item: ASTNode,
+    text: String,
+    bodyStyle: TextStyle,
+    ordered: Boolean,
+    onLinkClick: ((String) -> Unit)?,
+) {
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         val markerNode = item.children.firstOrNull {
             it.type == MarkdownTokenTypes.LIST_BULLET || it.type == MarkdownTokenTypes.LIST_NUMBER
@@ -191,7 +233,7 @@ private fun ListItem(item: ASTNode, text: String, bodyStyle: TextStyle, ordered:
                     it.type != MarkdownTokenTypes.LIST_BULLET &&
                         it.type != MarkdownTokenTypes.LIST_NUMBER
                 }
-                .forEach { child -> MarkdownBlock(child, text, bodyStyle) }
+                .forEach { child -> MarkdownBlock(child, text, bodyStyle, onLinkClick) }
         }
     }
 }
@@ -245,10 +287,24 @@ private fun buildInline(
     text: String,
     linkColor: androidx.compose.ui.graphics.Color,
     baseColor: androidx.compose.ui.graphics.Color,
+    onLinkClick: ((String) -> Unit)?,
 ): AnnotatedString {
     val builder = AnnotatedString.Builder()
-    appendInline(builder, node, text, SpanStyle(color = baseColor), linkColor)
+    appendInline(builder, node, text, SpanStyle(color = baseColor), linkColor, onLinkClick)
     return builder.toAnnotatedString()
+}
+
+private fun linkDestination(node: ASTNode, text: String): String? = when (node.type) {
+    MarkdownElementTypes.AUTOLINK ->
+        node.getTextInNode(text).toString().trim().removeSurrounding("<", ">")
+
+    else -> node.children
+        .firstOrNull { it.type == MarkdownElementTypes.LINK_DESTINATION }
+        ?.getTextInNode(text)
+        ?.toString()
+        ?.trim()
+        ?.removeSurrounding("<", ">")
+        ?.takeIf { it.isNotEmpty() }
 }
 
 private fun appendInline(
@@ -257,6 +313,7 @@ private fun appendInline(
     text: String,
     style: SpanStyle,
     linkColor: androidx.compose.ui.graphics.Color,
+    onLinkClick: ((String) -> Unit)?,
 ) {
     val children = node.children
     if (children.isEmpty()) {
@@ -272,22 +329,22 @@ private fun appendInline(
     when (node.type) {
         MarkdownElementTypes.STRONG -> {
             val merged = style.merge(SpanStyle(fontWeight = FontWeight.Bold))
-            children.forEach { appendInline(builder, it, text, merged, linkColor) }
+            children.forEach { appendInline(builder, it, text, merged, linkColor, onLinkClick) }
         }
 
         MarkdownElementTypes.EMPH -> {
             val merged = style.merge(SpanStyle(fontStyle = FontStyle.Italic))
-            children.forEach { appendInline(builder, it, text, merged, linkColor) }
+            children.forEach { appendInline(builder, it, text, merged, linkColor, onLinkClick) }
         }
 
         MarkdownElementTypes.CODE_SPAN -> {
             val merged = style.merge(SpanStyle(fontFamily = FontFamily.Monospace))
-            children.forEach { appendInline(builder, it, text, merged, linkColor) }
+            children.forEach { appendInline(builder, it, text, merged, linkColor, onLinkClick) }
         }
 
         GFMElementTypes.STRIKETHROUGH -> {
             val merged = style.merge(SpanStyle(textDecoration = TextDecoration.LineThrough))
-            children.forEach { appendInline(builder, it, text, merged, linkColor) }
+            children.forEach { appendInline(builder, it, text, merged, linkColor, onLinkClick) }
         }
 
         MarkdownElementTypes.INLINE_LINK,
@@ -298,19 +355,32 @@ private fun appendInline(
             val linkStyle = style.merge(
                 SpanStyle(color = linkColor, textDecoration = TextDecoration.Underline),
             )
+            val destination = linkDestination(node, text)
+            val start = builder.length
             val linkText = children.firstOrNull { it.type == MarkdownElementTypes.LINK_TEXT }
             if (linkText != null) {
-                appendInline(builder, linkText, text, linkStyle, linkColor)
+                appendInline(builder, linkText, text, linkStyle, linkColor, onLinkClick)
             } else {
                 builder.withStyle(linkStyle) { append(node.getTextInNode(text)) }
+            }
+            val end = builder.length
+            if (destination != null && onLinkClick != null && end > start) {
+                builder.addLink(
+                    LinkAnnotation.Clickable(
+                        tag = destination,
+                        linkInteractionListener = { onLinkClick(destination) },
+                    ),
+                    start = start,
+                    end = end,
+                )
             }
         }
 
         MarkdownElementTypes.IMAGE -> {
             val alt = children.firstOrNull { it.type == MarkdownElementTypes.LINK_TEXT }
-            if (alt != null) appendInline(builder, alt, text, style, linkColor)
+            if (alt != null) appendInline(builder, alt, text, style, linkColor, onLinkClick)
         }
 
-        else -> children.forEach { appendInline(builder, it, text, style, linkColor) }
+        else -> children.forEach { appendInline(builder, it, text, style, linkColor, onLinkClick) }
     }
 }

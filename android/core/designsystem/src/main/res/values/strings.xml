@@ -45,6 +45,13 @@
     <string name="action_clear">Clear</string>
     <string name="action_close">Close</string>
     <string name="action_open">Open</string>
+    <string name="action_open_in_new_tab">Open in new tab</string>
+    <string name="action_close_tab">Close tab</string>
+    <string name="open_tabs">Open tabs</string>
+    <string name="source_open">Open source</string>
+    <string name="source_search">Find this source</string>
+    <string name="source_search_hint">No link on file · tap to search</string>
+    <string name="preview_loading">Opening entry…</string>
 
     <!-- Home / library -->
     <string name="continue_reading">Continue reading</string>

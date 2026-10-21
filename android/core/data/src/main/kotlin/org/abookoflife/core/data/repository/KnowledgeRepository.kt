@@ -35,6 +35,8 @@ interface KnowledgeRepository {
 
     suspend fun entry(id: String): Entry?
 
+    suspend fun entryIdBySlug(slug: String): String?
+
     fun observeEntry(id: String): Flow<Entry?>
 
     suspend fun summaries(ids: List<String>): List<EntrySummary>

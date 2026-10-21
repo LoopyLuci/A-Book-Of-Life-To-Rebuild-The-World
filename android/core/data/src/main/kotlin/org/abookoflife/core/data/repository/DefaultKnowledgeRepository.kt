@@ -71,6 +71,8 @@ class DefaultKnowledgeRepository @Inject constructor(
 
     override suspend fun entry(id: String): Entry? = entryDao.entry(id)?.toEntry()
 
+    override suspend fun entryIdBySlug(slug: String): String? = entryDao.idBySlug(slug)
+
     override fun observeEntry(id: String): Flow<Entry?> =
         entryDao.observeEntry(id).map { it?.toEntry() }.distinctUntilChanged()
 

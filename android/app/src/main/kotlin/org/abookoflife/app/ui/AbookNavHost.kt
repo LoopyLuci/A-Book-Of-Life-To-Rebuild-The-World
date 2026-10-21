@@ -2,6 +2,7 @@ package org.abookoflife.app.ui
 
 import android.net.Uri
 import androidx.annotation.StringRes
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -19,8 +20,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
-import androidx.navigation.NavHostController
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavGraph.Companion.findStartDestination
+import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -32,6 +35,8 @@ import org.abookoflife.feature.bookmarks.BookmarksRoute
 import org.abookoflife.feature.home.DomainRoute
 import org.abookoflife.feature.home.HomeRoute
 import org.abookoflife.feature.reader.ReaderRoute
+import org.abookoflife.feature.reader.ReaderTabStrip
+import org.abookoflife.feature.reader.ReaderTabsViewModel
 import org.abookoflife.feature.search.SearchRoute
 import org.abookoflife.feature.settings.SettingsRoute
 
@@ -56,6 +61,8 @@ private data class TopLevelDestination(
 @Composable
 fun AbookNavHost(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
+    val tabsViewModel: ReaderTabsViewModel = hiltViewModel()
+    val tabs by tabsViewModel.tabs.collectAsStateWithLifecycle()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
 
@@ -71,19 +78,31 @@ fun AbookNavHost(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize(),
         bottomBar = {
             if (showBottomBar) {
-                NavigationBar {
-                    destinations.forEach { destination ->
-                        NavigationBarItem(
-                            selected = currentRoute == destination.route,
-                            onClick = { navController.switchTab(destination.route) },
-                            icon = {
-                                Icon(
-                                    imageVector = destination.icon,
-                                    contentDescription = null,
-                                )
-                            },
-                            label = { Text(stringResource(destination.labelRes)) },
-                        )
+                Column {
+                    ReaderTabStrip(
+                        tabs = tabs,
+                        activeEntryId = null,
+                        onSelect = { entryId ->
+                            navController.navigate(Routes.reader(entryId)) {
+                                launchSingleTop = true
+                            }
+                        },
+                        onClose = { entryId -> tabsViewModel.close(entryId) },
+                    )
+                    NavigationBar {
+                        destinations.forEach { destination ->
+                            NavigationBarItem(
+                                selected = currentRoute == destination.route,
+                                onClick = { navController.switchTab(destination.route) },
+                                icon = {
+                                    Icon(
+                                        imageVector = destination.icon,
+                                        contentDescription = null,
+                                    )
+                                },
+                                label = { Text(stringResource(destination.labelRes)) },
+                            )
+                        }
                     }
                 }
             }
@@ -132,10 +151,19 @@ fun AbookNavHost(modifier: Modifier = Modifier) {
             composable(
                 route = Routes.READER,
                 arguments = listOf(navArgument("entryId") { type = NavType.StringType }),
-            ) {
+            ) { readerEntry ->
+                val entryId = readerEntry.arguments?.getString("entryId").orEmpty()
                 ReaderRoute(
+                    entryId = entryId,
                     onBack = { navController.popBackStack() },
-                    onEntryClick = { entryId -> navController.navigate(Routes.reader(entryId)) },
+                    onSelectTab = { targetId ->
+                        if (targetId != entryId) {
+                            navController.navigate(Routes.reader(targetId)) {
+                                popUpTo(Routes.READER) { inclusive = true }
+                                launchSingleTop = true
+                            }
+                        }
+                    },
                 )
             }
         }
