@@ -76,9 +76,13 @@ jobs:
       - name: Install emulator runtime libraries
         run: |
           sudo apt-get update
-          # Fixed: Use libasound2t64 (correct package name in newer Ubuntu)
-          # libpulse0 may not be available in all environments
-          sudo apt-get install -y libasound2t64 libgl1 libglib2.0-0
+          # Ubuntu 24.04 renamed libasound2 to libasound2t64.
+          # The emulator still links libpulse even when run with -no-audio.
+          # The X/GTK libraries satisfy the emulator frontend in headless mode.
+          sudo apt-get install -y \
+            libasound2t64 libpulse0 libgl1 libglib2.0-0 \
+            libnss3 libxkbcommon0 libx11-6 libxcomposite1 \
+            libxdamage1 libxrandr2 libxtst6
 
       - name: Run instrumentation tests (API ${{ matrix.api-level }})
         uses: reactivecircus/android-emulator-runner@v2
@@ -87,6 +91,6 @@ jobs:
           target: ${{ matrix.target }}
           arch: ${{ matrix.arch }}
           disable-animations: true
-          emulator-options: -no-snapshot -no-boot-anim -no-audio -memory 2048
+          emulator-options: -no-snapshot -no-window -no-boot-anim -no-audio -gpu swiftshader_indirect -memory 2048
           working-directory: android
           script: ./gradlew :app:connectedDebugAndroidTest --console=plain
