@@ -7,6 +7,8 @@ import androidx.compose.material.icons.outlined.Eco
 import androidx.compose.material.icons.outlined.Groups
 import androidx.compose.material.icons.outlined.Handyman
 import androidx.compose.material.icons.outlined.LocalFireDepartment
+import androidx.compose.material.icons.outlined.LocalShipping
+import androidx.compose.material.icons.outlined.WaterDrop
 import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.outlined.MedicalServices
 import androidx.compose.material.icons.outlined.Public
@@ -90,10 +92,12 @@ object AbookAccents {
 
 fun domainIcon(name: String): ImageVector = when (name) {
     "local_fire_department" -> Icons.Outlined.LocalFireDepartment
+    "water_drop" -> Icons.Outlined.WaterDrop
     "eco" -> Icons.Outlined.Eco
     "handyman" -> Icons.Outlined.Handyman
     "bolt" -> Icons.Outlined.Bolt
     "architecture" -> Icons.Outlined.Architecture
+    "local_shipping" -> Icons.Outlined.LocalShipping
     "medical_services" -> Icons.Outlined.MedicalServices
     "menu_book" -> Icons.AutoMirrored.Outlined.MenuBook
     "groups" -> Icons.Outlined.Groups

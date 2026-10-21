@@ -12,3 +12,4 @@
 | [Beekeeping](beekeeping.md) | journeyman | yellow | months |
 | [Food Preservation](food-preservation.md) | apprentice | yellow | days |
 | [Raising Livestock](raising-livestock.md) | journeyman | yellow | months |
+| [Grain Storage and Pest Control](grain-storage.md) | apprentice | yellow | days |

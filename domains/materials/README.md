@@ -14,3 +14,4 @@
 | [Natural Dyes](natural-dyes.md) | apprentice | yellow | days |
 | [Mills](mills.md) | journeyman | yellow | weeks |
 | [Leather Tanning](leather-tanning.md) | apprentice | yellow | weeks |
+| [Salt Production and Iodization](salt-production.md) | apprentice | yellow | days |

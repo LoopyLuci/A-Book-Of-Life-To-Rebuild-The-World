@@ -47,6 +47,7 @@ import org.abookoflife.core.designsystem.component.DifficultyBadge
 import org.abookoflife.core.designsystem.component.SafetyBadge
 import org.abookoflife.core.designsystem.component.SectionHeader
 import org.abookoflife.core.designsystem.component.VerificationBadge
+import org.abookoflife.core.model.CostTier
 import org.abookoflife.core.model.Entry
 import org.abookoflife.core.model.EntrySummary
 import org.abookoflife.core.model.Source
@@ -132,6 +133,51 @@ fun EntryDocument(
                 MetaLine(label = stringResource(R.string.time_to_complete), value = timeToComplete)
             }
         }
+        entry.expectedYield?.takeIf { it.isNotBlank() }?.let { value ->
+            item { MetaBlock(label = stringResource(R.string.expected_yield), value = value) }
+        }
+        entry.season?.takeIf { it.isNotBlank() }?.let { value ->
+            item { MetaBlock(label = stringResource(R.string.season), value = value) }
+        }
+        entry.storage?.takeIf { it.isNotBlank() }?.let { value ->
+            item { MetaBlock(label = stringResource(R.string.storage), value = value) }
+        }
+        if (entry.cost != CostTier.UNKNOWN) {
+            item {
+                val costLabel = when (entry.cost) {
+                    CostTier.LOW -> stringResource(R.string.cost_low)
+                    CostTier.MEDIUM -> stringResource(R.string.cost_medium)
+                    CostTier.HIGH -> stringResource(R.string.cost_high)
+                    CostTier.UNKNOWN -> stringResource(R.string.cost)
+                }
+                MetaLine(label = stringResource(R.string.cost), value = costLabel)
+            }
+        }
+        if (entry.regions.isNotEmpty()) {
+            val regions = entry.regions.joinToString(", ") { region ->
+                region.replaceFirstChar { it.uppercase() }
+            }
+            item { MetaLine(label = stringResource(R.string.applies_to), value = regions) }
+        }
+
+        if (entry.tags.isNotEmpty()) {
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text(
+                        text = stringResource(R.string.tags).uppercase(),
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        fontWeight = FontWeight.SemiBold,
+                    )
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(6.dp),
+                        verticalArrangement = Arrangement.spacedBy(6.dp),
+                    ) {
+                        entry.tags.forEach { tag -> TagPill(tag) }
+                    }
+                }
+            }
+        }
 
         if (prerequisites.isNotEmpty()) {
             item { SectionHeader(title = stringResource(R.string.prerequisites)) }
@@ -151,8 +197,34 @@ fun EntryDocument(
             item { SectionHeader(title = stringResource(R.string.materials)) }
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    entry.materialsRequired.forEach { BulletLine(it) }
-                    entry.toolsRequired.forEach { BulletLine(it) }
+                    if (entry.materialsRequired.isNotEmpty()) {
+                        Text(
+                            text = stringResource(R.string.materials_label).uppercase(),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontWeight = FontWeight.SemiBold,
+                        )
+                        entry.materialsRequired.forEach { BulletLine(it) }
+                    }
+                    if (entry.toolsRequired.isNotEmpty()) {
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            text = stringResource(R.string.tools_label).uppercase(),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontWeight = FontWeight.SemiBold,
+                        )
+                        entry.toolsRequired.forEach { BulletLine(it) }
+                    }
+                }
+            }
+        }
+
+        if (entry.hazards.isNotEmpty()) {
+            item { SectionHeader(title = stringResource(R.string.key_hazards)) }
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    entry.hazards.forEach { HazardLine(it) }
                 }
             }
         }
@@ -252,6 +324,46 @@ private fun SourceRow(source: Source, onClick: () -> Unit) {
                 tint = MaterialTheme.colorScheme.primary,
             )
         }
+    }
+}
+
+@Composable
+private fun TagPill(tag: String) {
+    Surface(
+        color = MaterialTheme.colorScheme.secondaryContainer,
+        contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
+        shape = RoundedCornerShape(50),
+    ) {
+        Text(
+            text = "#$tag",
+            style = MaterialTheme.typography.labelSmall,
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
+        )
+    }
+}
+
+@Composable
+private fun HazardLine(text: String) {
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(
+            text = "!",
+            color = MaterialTheme.colorScheme.error,
+            fontWeight = FontWeight.Bold,
+        )
+        Text(text = text, style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
+@Composable
+private fun MetaBlock(label: String, value: String) {
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Text(
+            text = label.uppercase(),
+            style = MaterialTheme.typography.labelMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            fontWeight = FontWeight.SemiBold,
+        )
+        Text(text = value, style = MaterialTheme.typography.bodyMedium)
     }
 }
 

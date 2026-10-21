@@ -1,0 +1,52 @@
+id: pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+title: Grain Storage and Pest Control
+domain: agriculture
+tags:
+- agriculture
+- grain
+- storage
+- pests
+- food-security
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: A 1 m3 bin holds roughly 600-800 kg of dry grain
+season: Immediately after harvest; cool, dry grain stores best
+storage: Dry to 12-14% moisture; 6-24 months in hermetic or well-sealed storage
+cost: medium
+hazards:
+- Mould and aflatoxin from damp grain
+- Dust explosion and fumigant poisoning
+- Bin collapse or engulfment
+- Rodents, insects, and birds
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+materials_required:
+- Raised, sealed bin or hermetic bags
+- Moisture meter
+- Clean tarps
+- Diatomaceous earth
+- Pallets
+- Rodent-proof mesh
+- Labels
+tools_required:
+- Moisture meter
+- Scale
+- Scoop
+- Broom
+- Thermometer probe
+- Sealer
+sources:
+- title: FAO Grain Storage Techniques
+- title: USDA Stored Grain Management
+- title: WHO Mycotoxin Control Guidance
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+- pnk:01M5E8W7W17RTZPD945ZZV3J3H/construction/root-cellar
+geographic_applicability:
+- universal
+language: en
+media: []

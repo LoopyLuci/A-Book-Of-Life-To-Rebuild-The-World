@@ -68,7 +68,7 @@ paths:
           in: query
           schema:
             type: string
-            enum: [survival, agriculture, materials, energy, construction, health, knowledge, society]
+            enum: [survival, water, agriculture, materials, energy, construction, transport, health, knowledge, society]
         - name: difficulty
           in: query
           schema:

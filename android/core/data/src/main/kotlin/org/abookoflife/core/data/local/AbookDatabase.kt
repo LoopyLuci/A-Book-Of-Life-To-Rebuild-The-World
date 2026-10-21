@@ -2,6 +2,8 @@ package org.abookoflife.core.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Database(
     entities = [
@@ -13,7 +15,7 @@ import androidx.room.RoomDatabase
         DomainEntity::class,
         MetaEntity::class,
     ],
-    version = 1,
+    version = 2,
     exportSchema = false,
 )
 abstract class AbookDatabase : RoomDatabase() {
@@ -31,5 +33,15 @@ abstract class AbookDatabase : RoomDatabase() {
         const val META_IMPORTED_AT = "imported_at"
         const val META_ENTRY_COUNT = "entry_count"
         const val META_CONTENT_HASH = "content_hash"
+
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE entries ADD COLUMN expectedYield TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN season TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN storage TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE entries ADD COLUMN costTier TEXT NOT NULL DEFAULT 'unknown'")
+                db.execSQL("ALTER TABLE entries ADD COLUMN hazardsJson TEXT NOT NULL DEFAULT '[]'")
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ import org.abookoflife.core.data.local.DomainEntity
 import org.abookoflife.core.data.local.EntryEntity
 import org.abookoflife.core.data.local.EntrySummaryRow
 import org.abookoflife.core.model.Bookmark
+import org.abookoflife.core.model.CostTier
 import org.abookoflife.core.model.Difficulty
 import org.abookoflife.core.model.Domain
 import org.abookoflife.core.model.Entry
@@ -38,6 +39,11 @@ fun EntryEntity.toEntry(): Entry = Entry(
     difficulty = Difficulty.fromId(difficulty),
     safety = SafetyLevel.fromId(safety),
     timeToComplete = timeToComplete.ifBlank { null },
+    expectedYield = expectedYield.ifBlank { null },
+    season = season.ifBlank { null },
+    storage = storage.ifBlank { null },
+    cost = CostTier.fromId(costTier),
+    hazards = decodeStringList(hazardsJson),
     prerequisites = decodeStringList(prerequisitesJson),
     materialsRequired = decodeStringList(materialsJson),
     toolsRequired = decodeStringList(toolsJson),

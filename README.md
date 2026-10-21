@@ -8,7 +8,7 @@
 
 ## What is this?
 
-**Book of Life** is an open-source, forkable, field-ready knowledge base covering every domain required to rebuild civilization: survival, agriculture, materials, energy, construction, health, knowledge, and society.
+**Book of Life** is an open-source, forkable, field-ready knowledge base covering every domain required to rebuild civilization: survival, water, agriculture, materials, energy, construction, transport, health, knowledge, and society.
 
 Every entry is:
 - **Offline-first** — works with zero internet connectivity

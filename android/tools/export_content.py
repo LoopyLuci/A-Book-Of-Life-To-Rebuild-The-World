@@ -44,10 +44,12 @@ DS_RES_DIR = ANDROID_DIR / "core" / "designsystem" / "src" / "main" / "res"
 
 DOMAIN_META = {
     "survival": ("Survival & Immediate Needs", "Water, fire, shelter, first aid", "local_fire_department", "#D84315"),
+    "water": ("Water & Sanitation", "Harvesting, storage, springs, reuse", "water_drop", "#0277BD"),
     "agriculture": ("Agriculture & Food Systems", "Soil, crops, livestock, preservation", "eco", "#2E7D32"),
     "materials": ("Materials & Fabrication", "Metals, glass, chemicals, textiles", "handyman", "#6D4C41"),
     "energy": ("Energy & Power", "Generation, storage, conversion", "bolt", "#F9A825"),
     "construction": ("Construction & Infrastructure", "Shelter, roads, water, sanitation", "architecture", "#455A64"),
+    "transport": ("Transport & Logistics", "Carts, pack animals, ferries, bicycles", "local_shipping", "#EF6C00"),
     "health": ("Health & Medicine", "Diagnosis, surgery, medicine, care", "medical_services", "#C62828"),
     "knowledge": ("Knowledge & Communication", "Printing, radio, education, records", "menu_book", "#1565C0"),
     "society": ("Society & Governance", "Law, economics, ethics, community", "groups", "#6A1B9A"),
@@ -97,6 +99,28 @@ def strip_trailing_meta_sections(body: str) -> str:
             lines = lines[:index]
             break
     return "\n".join(lines).rstrip() + "\n"
+
+
+def section_bullets(body: str, heading: str) -> list[str]:
+    """Extract bullet items from a level-2 Markdown section."""
+    lines = body.splitlines()
+    start = None
+    for index, line in enumerate(lines):
+        if re.match(rf"^##\s+{re.escape(heading)}\s*$", line.strip(), re.IGNORECASE):
+            start = index + 1
+            break
+    if start is None:
+        return []
+    items: list[str] = []
+    for line in lines[start:]:
+        if line.startswith("## "):
+            break
+        match = re.match(r"^\s*[-*]\s+(.+?)\s*$", line)
+        if match:
+            text = re.sub(r"\*\*(.+?)\*\*", r"\1", match.group(1)).strip()
+            if text:
+                items.append(text)
+    return items
 
 
 VALID_URL = re.compile(r"^https?://\S+$")
@@ -178,6 +202,10 @@ def load_entries() -> list[dict]:
         )
         verification = meta.get("verification", {}) or {}
         sources = normalize_sources(meta.get("sources", []))
+        materials = list(meta.get("materials_required", []) or [])
+        tools = list(meta.get("tools_required", []) or [])
+        if not materials and not tools:
+            materials = section_bullets(body, "Materials & Tools")
         entries.append({
             "id": meta["id"],
             "slug": md_path.stem,
@@ -187,9 +215,14 @@ def load_entries() -> list[dict]:
             "difficulty": meta["difficulty"],
             "safety": meta["safety"],
             "timeToComplete": meta.get("time_to_complete", ""),
+            "yield": meta.get("yield", "") or "",
+            "season": meta.get("season", "") or "",
+            "storage": meta.get("storage", "") or "",
+            "cost": meta.get("cost", "unknown") or "unknown",
+            "hazards": list(meta.get("hazards", []) or []),
             "prerequisites": list(meta.get("prerequisites", []) or []),
-            "materialsRequired": list(meta.get("materials_required", []) or []),
-            "toolsRequired": list(meta.get("tools_required", []) or []),
+            "materialsRequired": materials,
+            "toolsRequired": tools,
             "sources": sources,
             "verification": {
                 "status": verification.get("status", "draft"),

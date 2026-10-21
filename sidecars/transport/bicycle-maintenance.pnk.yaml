@@ -1,0 +1,52 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Bicycle Maintenance and Load Carrying
+domain: transport
+tags:
+- transport
+- bicycles
+- repair
+- logistics
+- tools
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+yield: 10-30 km per day unloaded; 20-50 kg with a rack and low gearing
+season: Year-round; clean and lubricate more often in rain and dust
+storage: Store dry, keep tyres inflated, and hang or support the frame to avoid flat spots
+cost: low
+hazards:
+- Brake or tyre failure in traffic
+- Load shifting and loss of steering
+- Hand and chain injuries
+- Exertion and heat illness
+prerequisites: []
+materials_required:
+- Spare inner tubes
+- Patch kit
+- Tyre levers
+- Hand pump
+- Chain lubricant
+- Brake pads and cable
+- Spoke wrench
+- Rack and panniers
+tools_required:
+- Tyre levers
+- Adjustable wrench
+- Screwdriver
+- Chain tool
+- Pump
+- Rag and brush
+sources:
+- title: Village Bicycle Maintenance Guide
+- title: Bicycle Retailer and Industry Association repair standards
+- title: WHO Cycling Safety Guidance
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+- pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+- pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+geographic_applicability:
+- universal
+language: en
+media: []

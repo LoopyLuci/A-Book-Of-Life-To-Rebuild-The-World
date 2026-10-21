@@ -33,7 +33,11 @@ fun AbookAppRoot(viewModel: MainViewModel = hiltViewModel()) {
         ThemeMode.DARK -> true
     }
 
-    AbookTheme(darkTheme = darkTheme, dynamicColor = state.settings.dynamicColor) {
+    AbookTheme(
+        darkTheme = darkTheme,
+        dynamicColor = state.settings.dynamicColor,
+        palette = state.settings.palette,
+    ) {
         val current = LocalDensity.current
         CompositionLocalProvider(
             LocalDensity provides Density(current.density, state.settings.fontScale),

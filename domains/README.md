@@ -1,15 +1,17 @@
 # Domains
 
-The knowledge base is organized into 8 domains. Each domain is a self-contained
+The knowledge base is organized into 10 domains. Each domain is a self-contained
 directory with a `README.md` index and one Markdown file per entry.
 
 | Domain | Description | Maintainer |
 |--------|-------------|------------|
 | [survival](survival/README.md) | Immediate needs: water, fire, shelter, first aid | TBD |
+| [water](water/README.md) | Harvesting, protecting, storing, and reusing water | TBD |
 | [agriculture](agriculture/README.md) | Food production, soil, livestock, preservation | TBD |
 | [materials](materials/README.md) | Metals, glass, textiles, chemicals, adhesives | TBD |
 | [energy](energy/README.md) | Generation, storage, distribution, conversion | TBD |
 | [construction](construction/README.md) | Shelter, infrastructure, water systems, sanitation | TBD |
+| [transport](transport/README.md) | Carts, pack animals, ferries, bicycles, logistics | TBD |
 | [health](health/README.md) | Medicine, surgery, pharmacology, mental health | TBD |
 | [knowledge](knowledge/README.md) | Communication, printing, education, art, music | TBD |
 | [society](society/README.md) | Governance, economics, conflict resolution, culture | TBD |

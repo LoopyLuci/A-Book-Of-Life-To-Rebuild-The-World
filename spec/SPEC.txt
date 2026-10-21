@@ -19,17 +19,19 @@ Below is a complete, rigorously planned blueprint with **all phases fully specif
 
 ## 2. Content Architecture
 
-### 2.1 Eight Domains (Expanded from Seed Dataset)
+### 2.1 Ten Domains (Expanded from Seed Dataset)
 
-The seed dataset contains 23 chapters. These are reorganized into **8 Domains**, each with **Cross‑Cutting Threads**.
+The seed dataset contains 23 chapters. These are reorganized into **10 Domains**, each with **Cross‑Cutting Threads**.
 
 | Domain | Seed Chapters Mapped | New Additions |
 |---|---|---|
 | **Survival & Immediate Needs** | First Things, Food (partial), Medicine (partial) | Water purification at scale, NBC preparedness, psychological first aid, emergency shelter, rescue signaling |
+| **Water & Sanitation** | Water, Sanitation | Rainwater harvesting, spring protection, household storage, greywater reuse, water quality testing |
 | **Agriculture & Food Systems** | Plants, Animals, Food | Permaculture, seed saving, aquaponics, soil regeneration, food forests, livestock breeding, preservation |
 | **Materials & Fabrication** | Materials, Tools, Mechanics | Foundry work, blacksmithing, machining, 3D printing, glassblowing, ceramics, papermaking, adhesives |
 | **Energy & Power** | Electricity, Industry (partial) | Solar PV fabrication, wind turbines, micro‑hydro, biogas, wood gasification, battery chemistry, power electronics |
 | **Construction & Infrastructure** | Building, Mechanics (partial) | Timber framing, masonry, water wells, sanitation, roads, bridges, dams, surveying |
+| **Transport & Logistics** | Mechanics (partial), Trade (partial) | Handcarts, pack animals, river ferries, bicycle maintenance, route planning |
 | **Health & Medicine** | Medicine | Anatomy, diagnostics without labs, field surgery, antibiotics, vaccines, dental care, mental health, childbirth |
 | **Knowledge & Communication** | Word, Art, Music, Optics | Printing, radio, cryptography, library organization, oral history, education, art & music preservation |
 | **Society & Governance** | Society, Human, Games | Conflict resolution, consensus decision‑making, legal frameworks, economics, community organizing, ethics |
@@ -39,7 +41,12 @@ The seed dataset contains 23 chapters. These are reorganized into **8 Domains**,
 - **Difficulty:** Novice / Apprentice / Journeyman / Master
 - **Prerequisites:** Linked skill or material entries
 - **Time to Complete:** Hours / Days / Weeks
-- **Materials Required:** Linked to material entries
+- **Expected Yield:** Output or capacity with units
+- **Season:** When the technique applies
+- **Storage:** Shelf life and storage requirements
+- **Cost Tier:** Low / Medium / High
+- **Key Hazards:** Principal risks beyond the safety colour
+- **Materials Required:** Linked or described material inputs
 - **Safety Level:** Green / Yellow / Red
 - **Source Provenance:** Public domain, CC‑BY‑SA, original, field‑tested
 - **Verification Status:** Untested / Peer‑Reviewed / Field‑Tested (date & location)
@@ -60,10 +67,12 @@ book-of-life/
 ├── manifest.toml
 ├── domains/               # Source of truth (Markdown + assets)
 │   ├── survival/
+│   ├── water/
 │   ├── agriculture/
 │   ├── materials/
 │   ├── energy/
 │   ├── construction/
+│   ├── transport/
 │   ├── health/
 │   ├── knowledge/
 │   └── society/

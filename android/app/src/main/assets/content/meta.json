@@ -1,8 +1,8 @@
 {
   "kbVersion": "0.1.0-alpha",
-  "contentHash": "01fc120949ee45dd",
-  "entryCount": 71,
-  "domainCount": 8,
+  "contentHash": "09a844085177c95d",
+  "entryCount": 87,
+  "domainCount": 10,
   "defaultLanguage": "en",
   "license": "CC-BY-SA-4.0",
   "generatedBy": "android/tools/export_content.py"

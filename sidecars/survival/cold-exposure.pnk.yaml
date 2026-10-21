@@ -1,0 +1,50 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Cold Exposure and Hypothermia
+domain: survival
+tags:
+- survival
+- cold
+- hypothermia
+- first-aid
+- shelter
+difficulty: novice
+safety: red
+time_to_complete: hours
+yield: ''
+season: Cold, wet, or windy conditions; risk rises at night and after rain
+storage: ''
+cost: low
+hazards:
+- Hypothermia and cardiac arrest
+- Frostbite and permanent tissue loss
+- Worsening confusion that prevents self-rescue
+- Rewarming burns or alcohol-related blood vessel dilation
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+materials_required:
+- Dry insulating layers
+- Windproof and waterproof outer layer
+- Warm blankets
+- Fire or heat source
+- Warm sweet fluids
+- Emergency shelter
+tools_required:
+- Thermometer if available
+- Knife
+- Fire-starting kit
+- Headlamp
+sources:
+- title: CDC Preventing Hypothermia
+- title: Wilderness Medical Society Practice Guidelines
+- title: US Army FM 21-10 Cold Weather Casualty Care
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+geographic_applicability:
+- temperate
+- arctic
+language: en
+media: []

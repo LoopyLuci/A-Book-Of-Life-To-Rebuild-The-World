@@ -15,6 +15,7 @@ import org.abookoflife.core.data.local.EntryEntity
 import org.abookoflife.core.data.local.EntryFtsEntity
 import org.abookoflife.core.data.local.MetaEntity
 import org.abookoflife.core.data.search.SearchEngine
+import org.abookoflife.core.model.CostTier
 import org.abookoflife.core.model.Difficulty
 import org.abookoflife.core.model.SafetyLevel
 import org.abookoflife.core.model.VerificationStatus
@@ -126,6 +127,11 @@ class ContentImporter @Inject constructor(
         difficulty = Difficulty.fromId(difficulty).id,
         safety = SafetyLevel.fromId(safety).id,
         timeToComplete = timeToComplete,
+        expectedYield = yield,
+        season = season,
+        storage = storage,
+        costTier = CostTier.fromId(cost).id,
+        hazardsJson = encodeStringList(hazards),
         prerequisitesJson = encodeStringList(prerequisites),
         materialsJson = encodeStringList(materialsRequired),
         toolsJson = encodeStringList(toolsRequired),

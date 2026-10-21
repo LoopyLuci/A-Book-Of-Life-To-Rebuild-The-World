@@ -19,7 +19,7 @@
     },
     "domain": {
       "type": "string",
-      "enum": ["survival", "agriculture", "materials", "energy", "construction", "health", "knowledge", "society"]
+      "enum": ["survival", "water", "agriculture", "materials", "energy", "construction", "transport", "health", "knowledge", "society"]
     },
     "tags": {
       "type": "array",
@@ -39,6 +39,30 @@
       "type": "string",
       "enum": ["minutes", "hours", "days", "weeks", "months"]
     },
+    "yield": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "Expected output or capacity, with units."
+    },
+    "season": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "When the technique applies or is best performed."
+    },
+    "storage": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "Shelf life and storage requirements for inputs or outputs."
+    },
+    "cost": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "hazards": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
     "prerequisites": {
       "type": "array",
       "items": { "type": "string", "pattern": "^pnk:" },
@@ -46,12 +70,12 @@
     },
     "materials_required": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^pnk:" },
+      "items": { "type": "string" },
       "default": []
     },
     "tools_required": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^pnk:" },
+      "items": { "type": "string" },
       "default": []
     },
     "sources": {
@@ -59,7 +83,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["title", "license"],
+        "required": ["title"],
         "properties": {
           "title": { "type": "string" },
           "author": { "type": "string" },

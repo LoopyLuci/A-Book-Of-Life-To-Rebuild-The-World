@@ -8,17 +8,19 @@ homepage = "https://book-of-life.org"
 repository = "https://github.com/book-of-life/book-of-life"
 
 [knowledge_base]
-schema_version = "1.0.0"
+schema_version = "1.1.0"
 default_language = "en"
 supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja"]
 
 [domains]
 list = [
   "survival",
+  "water",
   "agriculture",
   "materials",
   "energy",
   "construction",
+  "transport",
   "health",
   "knowledge",
   "society",

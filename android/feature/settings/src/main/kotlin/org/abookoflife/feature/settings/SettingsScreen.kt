@@ -1,8 +1,14 @@
 package org.abookoflife.feature.settings
 
+import android.Manifest
 import android.content.pm.PackageManager
+import android.os.Build
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -10,12 +16,19 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Download
+import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
@@ -29,16 +42,27 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import kotlinx.coroutines.launch
 import org.abookoflife.core.designsystem.R
+import org.abookoflife.core.designsystem.theme.LocalDarkTheme
+import org.abookoflife.core.designsystem.theme.palettePrimaryColor
+import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
 
 @Composable
@@ -51,6 +75,7 @@ fun SettingsRoute(
         state = state,
         onThemeChange = viewModel::setTheme,
         onDynamicColorChange = viewModel::setDynamicColor,
+        onPaletteChange = viewModel::setPalette,
         onFontScaleChange = viewModel::setFontScale,
         onSerifChange = viewModel::setSerif,
         onReindex = viewModel::reindex,
@@ -64,14 +89,18 @@ fun SettingsScreen(
     state: SettingsUiState,
     onThemeChange: (ThemeMode) -> Unit,
     onDynamicColorChange: (Boolean) -> Unit,
+    onPaletteChange: (ColorPalette) -> Unit,
     onFontScaleChange: (Float) -> Unit,
     onSerifChange: (Boolean) -> Unit,
     onReindex: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
     val snackbarHostState = remember { SnackbarHostState() }
     val reindexDoneMessage = stringResource(R.string.settings_reindex_done)
+    val shareFailedMessage = stringResource(R.string.settings_share_apk_failed)
+    var exporting by remember { mutableStateOf(false) }
 
     LaunchedEffect(state.reindexTick) {
         if (state.reindexTick > 0) {
@@ -82,7 +111,49 @@ fun SettingsScreen(
     val appVersion = remember {
         runCatching {
             context.packageManager.getPackageInfo(context.packageName, 0).versionName
-        }.getOrNull() ?: "—"
+        }.getOrNull() ?: "-"
+    }
+
+    suspend fun saveApkToDownloads() {
+        if (exporting) return
+        exporting = true
+        val saved = exportAppApkToDownloads(context)
+        exporting = false
+        val message = if (saved == null) {
+            context.getString(R.string.settings_export_apk_failed)
+        } else {
+            context.getString(R.string.settings_export_apk_done, saved)
+        }
+        snackbarHostState.showSnackbar(message)
+    }
+
+    val permissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        scope.launch {
+            if (granted) {
+                saveApkToDownloads()
+            } else {
+                snackbarHostState.showSnackbar(
+                    context.getString(R.string.settings_export_apk_permission),
+                )
+            }
+        }
+    }
+
+    val requestExportApk: () -> Unit = {
+        if (!exporting) {
+            val needsPermission = Build.VERSION.SDK_INT < Build.VERSION_CODES.Q &&
+                ContextCompat.checkSelfPermission(
+                    context,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                ) != PackageManager.PERMISSION_GRANTED
+            if (needsPermission) {
+                permissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            } else {
+                scope.launch { saveApkToDownloads() }
+            }
+        }
     }
 
     Scaffold(
@@ -127,6 +198,25 @@ fun SettingsScreen(
                 selected = state.settings.themeMode == ThemeMode.DARK,
                 onSelect = { onThemeChange(ThemeMode.DARK) },
             )
+
+            Text(
+                text = stringResource(R.string.settings_palette),
+                style = MaterialTheme.typography.titleSmall,
+            )
+            Text(
+                text = stringResource(R.string.settings_palette_desc),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            val darkTheme = LocalDarkTheme.current
+            ColorPalette.entries.forEach { palette ->
+                PaletteOption(
+                    label = stringResource(paletteLabelRes(palette)),
+                    swatch = palettePrimaryColor(palette, darkTheme),
+                    selected = state.settings.palette == palette,
+                    onSelect = { onPaletteChange(palette) },
+                )
+            }
 
             SwitchRow(
                 title = stringResource(R.string.settings_dynamic_color),
@@ -194,6 +284,22 @@ fun SettingsScreen(
 
             SectionLabel(stringResource(R.string.settings_about))
             InfoRow(stringResource(R.string.settings_version), appVersion)
+            ActionRow(
+                icon = Icons.Outlined.Share,
+                title = stringResource(R.string.settings_share_apk),
+                subtitle = stringResource(R.string.settings_share_apk_desc),
+                onClick = {
+                    if (!shareAppApk(context)) {
+                        scope.launch { snackbarHostState.showSnackbar(shareFailedMessage) }
+                    }
+                },
+            )
+            ActionRow(
+                icon = Icons.Outlined.Download,
+                title = stringResource(R.string.settings_export_apk),
+                subtitle = stringResource(R.string.settings_export_apk_desc),
+                onClick = requestExportApk,
+            )
             InfoRow(stringResource(R.string.settings_license), "CC BY-SA 4.0")
             Text(
                 text = stringResource(R.string.license_summary),
@@ -221,12 +327,48 @@ private fun ThemeOption(label: String, selected: Boolean, onSelect: () -> Unit) 
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable(onClick = onSelect),
+            .selectable(selected = selected, role = Role.RadioButton, onClick = onSelect),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        RadioButton(selected = selected, onClick = onSelect)
+        RadioButton(selected = selected, onClick = null)
         Text(text = label, style = MaterialTheme.typography.bodyLarge)
     }
+}
+
+@Composable
+private fun PaletteOption(
+    label: String,
+    swatch: Color,
+    selected: Boolean,
+    onSelect: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .selectable(selected = selected, role = Role.RadioButton, onClick = onSelect),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Box(
+            modifier = Modifier
+                .size(22.dp)
+                .background(color = swatch, shape = CircleShape),
+        )
+        Spacer(Modifier.width(12.dp))
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.weight(1f),
+        )
+        RadioButton(selected = selected, onClick = null)
+    }
+}
+
+private fun paletteLabelRes(palette: ColorPalette): Int = when (palette) {
+    ColorPalette.FOREST -> R.string.palette_forest
+    ColorPalette.OCEAN -> R.string.palette_ocean
+    ColorPalette.SUNSET -> R.string.palette_sunset
+    ColorPalette.LILAC -> R.string.palette_lilac
+    ColorPalette.GRAPHITE -> R.string.palette_graphite
 }
 
 @Composable
@@ -251,6 +393,37 @@ private fun SwitchRow(
             )
         }
         Switch(checked = checked, onCheckedChange = onCheckedChange)
+    }
+}
+
+@Composable
+private fun ActionRow(
+    icon: ImageVector,
+    title: String,
+    subtitle: String,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(role = Role.Button, onClick = onClick)
+            .padding(vertical = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Icon(
+            imageVector = icon,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.primary,
+        )
+        Column(modifier = Modifier.weight(1f)) {
+            Text(text = title, style = MaterialTheme.typography.titleSmall)
+            Text(
+                text = subtitle,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
     }
 }
 

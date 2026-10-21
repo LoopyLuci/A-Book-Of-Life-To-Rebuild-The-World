@@ -5,7 +5,15 @@
     "description": "Water, fire, shelter, first aid",
     "icon": "local_fire_department",
     "color": "#D84315",
-    "entryCount": 10
+    "entryCount": 11
+  },
+  {
+    "slug": "water",
+    "title": "Water & Sanitation",
+    "description": "Harvesting, storage, springs, reuse",
+    "icon": "water_drop",
+    "color": "#0277BD",
+    "entryCount": 4
   },
   {
     "slug": "agriculture",
@@ -13,7 +21,7 @@
     "description": "Soil, crops, livestock, preservation",
     "icon": "eco",
     "color": "#2E7D32",
-    "entryCount": 8
+    "entryCount": 9
   },
   {
     "slug": "materials",
@@ -21,7 +29,7 @@
     "description": "Metals, glass, chemicals, textiles",
     "icon": "handyman",
     "color": "#6D4C41",
-    "entryCount": 11
+    "entryCount": 12
   },
   {
     "slug": "energy",
@@ -29,7 +37,7 @@
     "description": "Generation, storage, conversion",
     "icon": "bolt",
     "color": "#F9A825",
-    "entryCount": 8
+    "entryCount": 9
   },
   {
     "slug": "construction",
@@ -37,7 +45,15 @@
     "description": "Shelter, roads, water, sanitation",
     "icon": "architecture",
     "color": "#455A64",
-    "entryCount": 8
+    "entryCount": 9
+  },
+  {
+    "slug": "transport",
+    "title": "Transport & Logistics",
+    "description": "Carts, pack animals, ferries, bicycles",
+    "icon": "local_shipping",
+    "color": "#EF6C00",
+    "entryCount": 4
   },
   {
     "slug": "health",
@@ -45,7 +61,7 @@
     "description": "Diagnosis, surgery, medicine, care",
     "icon": "medical_services",
     "color": "#C62828",
-    "entryCount": 8
+    "entryCount": 9
   },
   {
     "slug": "knowledge",
@@ -53,7 +69,7 @@
     "description": "Printing, radio, education, records",
     "icon": "menu_book",
     "color": "#1565C0",
-    "entryCount": 9
+    "entryCount": 10
   },
   {
     "slug": "society",
@@ -61,6 +77,6 @@
     "description": "Law, economics, ethics, community",
     "icon": "groups",
     "color": "#6A1B9A",
-    "entryCount": 9
+    "entryCount": 10
   }
 ]

@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import org.abookoflife.core.data.preferences.UserSettingsRepository
 import org.abookoflife.core.data.repository.KnowledgeRepository
+import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
 import org.abookoflife.core.model.UserSettings
 import javax.inject.Inject
@@ -53,6 +54,8 @@ class SettingsViewModel @Inject constructor(
     fun setTheme(mode: ThemeMode) = launch { settingsRepository.setThemeMode(mode) }
 
     fun setDynamicColor(enabled: Boolean) = launch { settingsRepository.setDynamicColor(enabled) }
+
+    fun setPalette(palette: ColorPalette) = launch { settingsRepository.setPalette(palette) }
 
     fun setFontScale(scale: Float) = launch { settingsRepository.setFontScale(scale) }
 

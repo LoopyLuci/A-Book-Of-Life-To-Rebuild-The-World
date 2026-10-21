@@ -45,3 +45,16 @@ enum class VerificationStatus(val id: String) {
         }
     }
 }
+
+enum class CostTier(val id: String) {
+    LOW("low"),
+    MEDIUM("medium"),
+    HIGH("high"),
+    UNKNOWN("unknown"),
+    ;
+
+    companion object {
+        fun fromId(raw: String?): CostTier =
+            entries.firstOrNull { it.id == raw?.trim()?.lowercase() } ?: UNKNOWN
+    }
+}
