@@ -1,50 +1,86 @@
 name: Security Advisory
 
 on:
-  repository_vulnerability_alert:
-    types: [create, dismiss, reopen]
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
 
 permissions:
   contents: read
   issues: write
-  security-events: write
+  security-events: read
 
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Open tracking issue
+      - name: Open or update tracking issue
         uses: actions/github-script@v7
         with:
           script: |
-            const alert = context.payload.alert;
-            github.rest.issues.create({
+            const alerts = await github.paginate(github.rest.dependabot.listAlertsForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Security advisory: ${alert.summary}`,
-              body: `
-                **Severity:** ${alert.severity}
-                **Package:** ${alert.dependency.package.name}
-                **Vulnerable range:** ${alert.security_vulnerability.vulnerable_version_range}
-                **Patched version:** ${alert.security_vulnerability.first_patched_version?.identifier || "none"}
-
-                See the advisory: ${alert.security_advisory.ghsa_id}
-
-                /cc @abookoflife/core-maintainers
-              `,
-              labels: ["security", "advisory"],
+              state: "open",
+              per_page: 100,
             });
+            if (alerts.length === 0) {
+              console.log("No open Dependabot alerts.");
+              return;
+            }
 
-  # Also dispatch to Renovate for an automatic fix PR
+            const lines = alerts.map((alert) => {
+              const advisory = alert.security_advisory ?? {};
+              const vulnerability = alert.security_vulnerability ?? {};
+              const pkg = alert.dependency?.package?.name ?? "unknown package";
+              const patched = vulnerability.first_patched_version?.identifier ?? "none";
+              return `- **${advisory.summary ?? "advisory"}** (${advisory.severity ?? "unknown"}) in \`${pkg}\`; patched: ${patched}`;
+            });
+            const body = [
+              `${alerts.length} open Dependabot alert(s):`,
+              "",
+              ...lines,
+              "",
+              "This issue is refreshed by the Security Advisory workflow.",
+            ].join("\n");
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: "security,advisory",
+              state: "open",
+              per_page: 1,
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Security advisory: ${alerts.length} open Dependabot alert(s)`,
+                body,
+                labels: ["security", "advisory"],
+              });
+            }
+
   notify-renovate:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Renovate
+        env:
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
         run: |
+          if [ -z "$RENOVATE_TOKEN" ]; then
+            echo "RENOVATE_TOKEN is not configured; skipping."
+            exit 0
+          fi
           curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.RENOVATE_TOKEN }}" \
+            -H "Authorization: Bearer $RENOVATE_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/dispatches \
             -d '{"event_type":"renovate"}'
