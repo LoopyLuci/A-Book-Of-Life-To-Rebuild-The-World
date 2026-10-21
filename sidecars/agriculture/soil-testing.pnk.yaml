@@ -10,9 +10,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: USDA Soil Survey Manual
-    license: public-domain
   - title: FAO Soil Testing Guidelines
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-03-02"

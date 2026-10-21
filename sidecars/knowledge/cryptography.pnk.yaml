@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain cryptography primers
-  license: public-domain
 - title: NIST cryptographic guidelines
-  license: public-domain
 verification:
   status: draft
 links: []

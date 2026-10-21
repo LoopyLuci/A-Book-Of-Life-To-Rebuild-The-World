@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Guidelines on Sanitation and Health
-  license: public-domain
 - title: US Army FM 21-10 Field Sanitation
-  license: public-domain
 verification:
   status: draft
 links: []

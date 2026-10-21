@@ -11,7 +11,6 @@ materials_required: []
 tools_required: []
 sources:
   - title: USDA Composting Guide
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-03-05"

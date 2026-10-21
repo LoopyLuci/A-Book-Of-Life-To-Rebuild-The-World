@@ -12,9 +12,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: FAO Cereal Production Guide
-    license: public-domain
   - title: USDA Small Grains Manual
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-03-12"

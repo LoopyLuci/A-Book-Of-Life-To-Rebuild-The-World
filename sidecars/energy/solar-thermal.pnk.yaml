@@ -11,9 +11,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: NREL Solar Thermal Guide
-    license: public-domain
   - title: Solar Cookers International
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-04-28"

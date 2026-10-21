@@ -12,7 +12,6 @@ materials_required: []
 tools_required: []
 sources:
   - title: Traditional metallurgy methods
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-03-25"

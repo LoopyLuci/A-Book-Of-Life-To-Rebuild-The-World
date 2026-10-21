@@ -11,9 +11,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: US DOE Battery Handbook
-    license: public-domain
   - title: US Army Battery Manual
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-05-01"

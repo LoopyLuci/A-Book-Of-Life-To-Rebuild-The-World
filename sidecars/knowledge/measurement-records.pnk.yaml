@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain metrology texts
-  license: public-domain
 - title: BIPM SI brochure (open licence)
-  license: public-domain
 verification:
   status: draft
 links: []

@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain trade texts
-  license: public-domain
 - title: Traditional barter and scrip practice
-  license: public-domain
 verification:
   status: draft
 links: []

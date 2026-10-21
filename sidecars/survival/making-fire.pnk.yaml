@@ -10,9 +10,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: US Army Field Manual FM 21-76
-    license: public-domain
   - title: Boy Scouts of America Handbook (historical)
-    license: public-domain
 verification:
   status: draft
 links:

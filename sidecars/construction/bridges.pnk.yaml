@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 5-430 Roads and Airfields
-  license: public-domain
 - title: Historic bridge engineering texts
-  license: public-domain
 verification:
   status: draft
 links: []

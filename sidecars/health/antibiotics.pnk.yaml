@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Model List of Essential Medicines
-  license: public-domain
 - title: MSF Clinical Guidelines (open)
-  license: public-domain
 verification:
   status: draft
 links: []

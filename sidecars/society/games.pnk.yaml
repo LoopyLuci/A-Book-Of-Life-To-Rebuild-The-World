@@ -5,13 +5,11 @@ tags: [games, chess, go, mancala, recreation]
 difficulty: apprentice
 safety: green
 time_to_complete: days
-prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N86/society/festivals-celebration
+prerequisites: []
 materials_required: []
 tools_required: []
 sources:
   - title: H.J.R. Murray's Board Games
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-07-22"

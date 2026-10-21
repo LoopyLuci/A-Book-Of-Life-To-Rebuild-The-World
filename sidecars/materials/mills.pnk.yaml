@@ -12,7 +12,6 @@ materials_required: []
 tools_required: []
 sources:
   - title: FAO Small-Scale Milling
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-04-12"

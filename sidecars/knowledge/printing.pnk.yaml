@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain letterpress manuals
-  license: public-domain
 - title: Gutenberg press reconstruction notes
-  license: public-domain
 verification:
   status: draft
 links: []

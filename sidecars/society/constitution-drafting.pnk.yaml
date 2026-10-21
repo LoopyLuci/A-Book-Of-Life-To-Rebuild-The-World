@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain constitutional texts
-  license: public-domain
 - title: Democratic governance principles
-  license: public-domain
 verification:
   status: draft
 links: []

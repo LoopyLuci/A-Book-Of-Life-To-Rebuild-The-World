@@ -12,9 +12,7 @@ materials_required: []
 tools_required: []
 sources:
   - title: US DOE Micro-Hydro Guide
-    license: public-domain
   - title: Practical Action Micro-Hydro
-    license: public-domain
 verification:
   status: peer-reviewed
   date: "2026-04-25"

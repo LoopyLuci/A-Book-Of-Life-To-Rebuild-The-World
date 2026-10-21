@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain legal primers
-  license: public-domain
 - title: Natural-law and common-law principles
-  license: public-domain
 verification:
   status: draft
 links: []

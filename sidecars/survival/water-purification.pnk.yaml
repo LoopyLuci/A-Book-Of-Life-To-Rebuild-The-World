@@ -11,11 +11,8 @@ materials_required: []
 tools_required: []
 sources:
   - title: WHO Guidelines for Drinking-water Quality
-    license: public-domain
   - title: US Army FM 21-10 Field Sanitation
-    license: public-domain
   - title: CDC SODIS Fact Sheet
-    license: public-domain
 verification:
   status: field-tested
   tested_by: Community Team Alpha

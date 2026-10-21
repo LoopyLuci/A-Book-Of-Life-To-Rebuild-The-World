@@ -9,7 +9,7 @@ teaching, and community bonding.
 
 ## Prerequisites
 
-- [Festivals & Celebration](festivals-celebration.md)
+- None
 
 ## Materials & Tools
 

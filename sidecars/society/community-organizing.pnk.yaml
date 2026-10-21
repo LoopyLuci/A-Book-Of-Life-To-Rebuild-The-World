@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain community organizing texts
-  license: public-domain
 - title: Mutual-aid principles
-  license: public-domain
 verification:
   status: draft
 links: []

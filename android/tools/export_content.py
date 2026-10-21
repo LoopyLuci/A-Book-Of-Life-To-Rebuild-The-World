@@ -83,6 +83,86 @@ def strip_leading_title_block(body: str) -> str:
     return "\n".join(lines[i:]).lstrip("\n")
 
 
+def strip_trailing_meta_sections(body: str) -> str:
+    """Drop the trailing Verification/Sources sections.
+
+    The app renders both from structured sidecar data (with clickable source
+    rows and verification badges), so leaving the Markdown copies in the body
+    would duplicate them and, worse, repeat unverified prose such as
+    "Tested by: -".
+    """
+    lines = body.splitlines()
+    for index, line in enumerate(lines):
+        if re.match(r"^##\s+(verification|sources)\s*$", line.strip(), re.IGNORECASE):
+            lines = lines[:index]
+            break
+    return "\n".join(lines).rstrip() + "\n"
+
+
+VALID_URL = re.compile(r"^https?://\S+$")
+
+
+def normalize_sources(raw_sources: list) -> list[dict]:
+    """Convert sidecar sources into clean, de-duplicated citation records.
+
+    String sources keep only their title: earlier versions silently stamped
+    every one of them as "public-domain", which was not verifiable and often
+    wrong. Missing urls are left blank so the UI can offer a search instead of
+    presenting an invented link.
+    """
+    normalized: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+    for source in raw_sources or []:
+        if isinstance(source, str):
+            title, author, url, license_name, year = source.strip(), "", "", "", 0
+        elif isinstance(source, dict):
+            title = str(source.get("title", "") or "").strip()
+            author = str(source.get("author", "") or "").strip()
+            url = str(source.get("url", "") or "").strip()
+            license_name = str(source.get("license", "") or "").strip()
+            raw_year = source.get("year", 0) or 0
+            try:
+                year = int(raw_year)
+            except (TypeError, ValueError):
+                year = 0
+        else:
+            continue
+        if not title:
+            continue
+        if url and not VALID_URL.match(url):
+            print(f"  warn: dropping invalid source url for {title!r}: {url}", file=sys.stderr)
+            url = ""
+        key = (title.casefold(), url)
+        if key in seen:
+            continue
+        seen.add(key)
+        normalized.append({
+            "title": title,
+            "author": author,
+            "url": url,
+            "license": license_name,
+            "year": year,
+        })
+    return normalized
+
+
+def prune_dangling_references(entries: list[dict]) -> None:
+    """Remove prerequisite/link ids that do not resolve to an exported entry."""
+    known_ids = {entry["id"] for entry in entries}
+    for entry in entries:
+        for field in ("prerequisites", "links"):
+            kept = []
+            dropped = []
+            for ref in entry.get(field, []):
+                (kept if ref in known_ids else dropped).append(ref)
+            if dropped:
+                print(
+                    f"  warn: {entry['slug']} dropped dangling {field}: {dropped}",
+                    file=sys.stderr,
+                )
+            entry[field] = kept
+
+
 def load_entries() -> list[dict]:
     entries = []
     for sidecar_path in sorted(SIDECARS_DIR.rglob("*.pnk.yaml")):
@@ -93,20 +173,11 @@ def load_entries() -> list[dict]:
             continue
         with sidecar_path.open("r", encoding="utf-8") as f:
             meta = yaml.safe_load(f)
-        body = strip_leading_title_block(md_path.read_text(encoding="utf-8"))
+        body = strip_trailing_meta_sections(
+            strip_leading_title_block(md_path.read_text(encoding="utf-8"))
+        )
         verification = meta.get("verification", {}) or {}
-        sources = []
-        for s in meta.get("sources", []) or []:
-            if isinstance(s, str):
-                sources.append({"title": s, "license": "public-domain"})
-            else:
-                sources.append({
-                    "title": s.get("title", ""),
-                    "author": s.get("author", ""),
-                    "url": s.get("url", ""),
-                    "license": s.get("license", ""),
-                    "year": s.get("year", 0),
-                })
+        sources = normalize_sources(meta.get("sources", []))
         entries.append({
             "id": meta["id"],
             "slug": md_path.stem,
@@ -191,6 +262,7 @@ def main() -> int:
         return 1
 
     entries = load_entries()
+    prune_dangling_references(entries)
     domains = build_domains(entries)
     version = kb_version()
 
@@ -221,6 +293,12 @@ def main() -> int:
 
     total_chars = sum(len(e["body"]) for e in entries)
     print(f"Content payload: {total_chars / 1024:.0f} KB of Markdown")
+    source_total = sum(len(e["sources"]) for e in entries)
+    source_linked = sum(1 for e in entries for s in e["sources"] if s["url"])
+    print(
+        f"Sources: {source_total} total "
+        f"({source_linked} with links, {source_total - source_linked} searchable)"
+    )
     return 0
 
 

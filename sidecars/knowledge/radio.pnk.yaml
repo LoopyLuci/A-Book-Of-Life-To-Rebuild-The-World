@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army Signal Corps manuals (public domain)
-  license: public-domain
 - title: Public-domain amateur radio handbooks
-  license: public-domain
 verification:
   status: draft
 links: []

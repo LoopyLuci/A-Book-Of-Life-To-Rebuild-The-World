@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 3-34.331 Surveying
-  license: public-domain
 - title: Public-domain surveying primers
-  license: public-domain
 verification:
   status: draft
 links: []

@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain library science texts
-  license: public-domain
 - title: UNESCO archive guidance
-  license: public-domain
 verification:
   status: draft
 links: []

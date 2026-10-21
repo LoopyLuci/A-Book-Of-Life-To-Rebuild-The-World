@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Oral Health guidance
-  license: public-domain
 - title: Public-domain dental manuals
-  license: public-domain
 verification:
   status: draft
 links: []

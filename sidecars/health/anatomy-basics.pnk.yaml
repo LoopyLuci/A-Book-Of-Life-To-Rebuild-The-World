@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Gray's Anatomy (public domain)
-  license: public-domain
 - title: WHO Basic Emergency Care
-  license: public-domain
 verification:
   status: draft
 links: []

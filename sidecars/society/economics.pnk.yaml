@@ -14,9 +14,7 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain economics texts
-  license: public-domain
 - title: Traditional market practice
-  license: public-domain
 verification:
   status: draft
 links: []
