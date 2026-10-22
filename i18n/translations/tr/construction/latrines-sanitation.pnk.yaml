@@ -1,0 +1,23 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Kuyu Çukurları ve Sanitasyon
+domain: construction
+tags: [sanitasyon, kuyu-cukuru, hijyen, atik]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Sanitasyon ve Sağlık Kılavuzları
+  - title: US Army FM 21-10 Saha Sanitasyonu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

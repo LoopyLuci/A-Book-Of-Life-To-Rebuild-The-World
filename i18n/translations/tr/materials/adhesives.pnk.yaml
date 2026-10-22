@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Yapıştırıcılar
+domain: materials
+tags: [yapistiricilar, nisasta, deri-tutkali, kazein, marangozluk]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Sıcak yapıştırıcı ve benmariden kaynaklanan yanıklar.
+  - Kireç veya boraks nedeniyle kaşar yanıkları.
+  - Nişasta ve deri tutkalında küf oluşumu.
+  - Yük altında kırılan zayıf birleşimler.
+limits:
+  - Nişasta ve deri tutkalı su geçirmez değildir.
+  - Kazein suya dayanıklıdır ancak güvenlik açısından kritik yükler için yapısal yapıştırıcı değildir.
+  - Bilinmeyen yapıştırıcıları gıda veya içme suyu temas eden yüzeylerde kullanmayın.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Smithsonian Museum Conservation Institute Yapıştırıcıları
+  - title: Canadian Conservation Institute Yapıştırıcılar ve Sağlaştırıcılar
+  - title: Horie, Koruma için Malzemeler
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

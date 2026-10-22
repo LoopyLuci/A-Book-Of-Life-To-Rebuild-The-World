@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: Temiz Oda Protokolleri ve Kirlilik Kontrolü
+domain: silicon
+tags: [silikon, temiz-oda, kirlilik, protokol, guvenlik]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Aşırı sıcaklık ve kriyojenik sıvılar; yalnızca eğitimli işçilik kullanın.
+  - Zehirli ve aşındırıcı işlem gazları; alarmları ve havalandırmayı doğrulayın.
+  - İyonize edici ve morötesinik maruziyet; kalkanlı ekipman kullanın.
+  - Temiz oda protokolleri bir güvenlik kontrolüdür, isteğe bağlı bir uygulama değil.
+limits:
+  - Yatırım ekipmanı ve uzman süreç kontrolü gerektirir.
+  - Anlatılan verim ve maliyetler olgun üretimin tipik değerleridir.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: SEMI International Standards
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

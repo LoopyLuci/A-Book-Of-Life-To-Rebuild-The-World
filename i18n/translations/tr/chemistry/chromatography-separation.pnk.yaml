@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+translation_of: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+title: Kromatografik Ayırma
+domain: chemistry
+tags: [kimya, kromatografi, ayirma, tlc, hplc]
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Kimyasal yanıklar ve sıçramalar; sıçramaya dayanıklı gözlük ve eldiven giyin.
+  - Buhar soluma; havalandırılmış bir alanda veya aspiratör altında çalışın.
+  - Ateş ve ısı; yanıcı malzemeyi sıcak işlerden uzak tutun.
+  - Reaktif atıkları nötralize edilmeli ve ayrı toplanmalıdır.
+limits:
+  - Değerler laboratuvar saflığında malzeme ve kalibre edilmiş cam eşya varsayar.
+  - Kontrollü bir laboratuvar protokolünün yerine geçmez.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Analitik Kimya
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

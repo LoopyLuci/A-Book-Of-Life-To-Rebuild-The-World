@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+title: Tuğla Yapımı
+domain: materials
+tags: [tucla, kil, firin, insaat, malzemeler]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Geleneksel tuğla yapımı (kamu malı)
+  - title: US Bureau of Mines raporları (kamu malı)
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+translation_of: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+title: Ekosistem İzleme ve Biyoçeşitlilik
+domain: biology
+tags: [biyoloji, ekoloji, izleme, biyocesitlilik, arastirma]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Keskin aletler ve kesikler; forseps kullanın ve bıçakları güvenli biçimde atın.
+  - Biyolojik kirlilik; kültürleri kapalı ve etiketli tutun.
+  - Boya ve reaktana maruz kalma; eldiven giyin ve ellerinizi yıkayın.
+  - Yabani türler ve koruma altındaki bitkiler hakkındaki yerel kurallar geçerlidir.
+limits:
+  - Sonuçlar yerel suşlara, iklime ve tekniğe göre değişir.
+  - Gıda, yem veya tedavi amaçlı asla doğrulanmamış malzeme kullanmayın.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: UNEP Biyoçeşitlilik Göstergeleri
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

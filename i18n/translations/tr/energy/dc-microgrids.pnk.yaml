@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: DC Mikro Şebekeler
+domain: energy
+tags: [elektrik, solar, akuler, kablolama, mikro-sebeke]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Elektrik çarpması ve ark parlaması
+  - Akü kısa devreleri ve hidrojen açığa çıkışı
+  - Yetersiz ya da AC için anma değerli korumadan kaynaklanan yangın
+  - Panel montajı sırasında düşme
+limits:
+  - AC için anma değerli devre kesicileri ya da sigortaları DC devrelerinde kullanmayın
+  - Onaylı transfer ekipmanı olmadan şebekeye ya da jeneratöre bağlamayın
+  - Farklı akü yaşlarını, kapasitelerini ya da kimyasallarını karıştırmayın
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NEC Article 712 DC Mikro Şebekeler
+  - title: IEC 62548 Fotovoltaik Dizi Tasarımı
+  - title: Sandia National Laboratories DC Mikro Şebeke Kılavuzu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

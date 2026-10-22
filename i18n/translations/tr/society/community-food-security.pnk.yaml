@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Toplumda Gıda Güvenliği Planlaması
+domain: society
+tags: [toplum, gida-guvenligi, planlama, dayaniklilik, yonetim]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+  - Eşitsiz erişim ve seçkin sınıfın denetimi ele alması
+  - Kötü depolamadan bozulma
+  - Dağıtım üzerinde çatışma
+  - Tek bir ürüne veya tedarikçiye bağımlılık
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Gıda Güvenliği Değerlendirme Kılavuzu
+  - title: Sphere El Kitabı Gıda Güvenliği Standartları
+  - title: WHO Acil Durumlarda Beslenme
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

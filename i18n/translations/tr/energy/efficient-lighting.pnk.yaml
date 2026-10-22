@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Verimli Aydınlatma
+domain: energy
+tags: [aydinlatma, led, verim, gun-isigi, ic-hava]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Yakıt lambalarından gelen karbon monoksit ve parçacıklar
+  - Mumlar ve aşırı ısınan armatürlerden çıkan yangın
+  - Islak ya da hasarlı kablolardan gelen elektrik çarpması
+  - Merdivenden düşme
+limits:
+  - Havalandırmasız yakıt lambalarını iç mekânda uzun süre kullanmayın
+  - Uzatma kablolarını aşırı yüklemeyin ya da priz şeritlerini zincirle bağlamayın
+  - Lümen çıkışı toz, ısı ve zayıf sürücü kalitesiyle düşer
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: IEA Aydınlatma ve Enerji Verimliliği
+  - title: US DOE Katı Hâl Aydınlatma Programı
+  - title: WHO Ev İç Hava Kirliliği Kılavuzu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

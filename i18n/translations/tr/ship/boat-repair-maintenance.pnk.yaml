@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+translation_of: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+title: Tekne Onarım ve Bakımı
+domain: ship
+tags: [tekne, onarim, bakim, dikisler, macunlama]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Yüksekte çalışma ve açık su üzerinde çalışma; düşme koruması kullanın.
+  - Sıcak iş, kaynak dumanı ve yangın gözetimi; sıcak bölgeyi denetim altında tutun.
+  - Yapım sırasında dar hacim ve ağır kaldırma tehlikeleri.
+  - Sınıf ve bayrak kuralları geçerlidir; asla bir güvenlik sistemini ilkel biçimde kurmayın.
+limits:
+  - Ölçüler geleneksel çelik gövde ve normal yükleme varsayımlarına dayanır.
+  - Yasal denetim ve sınıflandırma yetkilidir.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Coast Guard Small Boat Guidance
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

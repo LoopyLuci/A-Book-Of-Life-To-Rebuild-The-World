@@ -1,0 +1,23 @@
+id: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+translation_of: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+title: Çatışma Çözümü
+domain: society
+tags: [catisma, aracilik, toplum, baris]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Kamu malı aracılık başlangıç metinleri
+  - title: Onarıcı adalet ilkeleri
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

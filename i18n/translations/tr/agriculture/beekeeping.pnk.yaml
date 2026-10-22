@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: Arıcılık
+domain: agriculture
+tags: [aris, bal, tozlasma, mum, tarim]
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA Arıcılık El Kitabı
+  - title: FAO Arı Ürünleri Rehberi
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical]
+language: tr
+media: []

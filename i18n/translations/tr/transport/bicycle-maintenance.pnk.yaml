@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Bisiklet Bakımı ve Yük Taşıma
+domain: transport
+tags: [ulasim, bisiklet, onarim, lojistik, aletler]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Trafikte fren veya lastik arızası
+  - Yükün kayması ve direksiyon kontrolünün kaybı
+  - El ve zincir yaralanmaları
+  - Efor ve sıcaklık kaynaklı hastalıklar
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Köy Bisikleti Bakım Kılavuzu
+  - title: Bicycle Retailer and Industry Association onarım standartları
+  - title: WHO Bisiklet Güvenliği Kılavuzu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

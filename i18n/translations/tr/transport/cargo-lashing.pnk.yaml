@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Yük Bağlama
+domain: transport
+tags: [ulasim, yuk, dugum, guvenlik, lojistik]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Kayan ya da düşen yükler
+  - Germe sırasında ezilme yaralanmaları
+  - Araç ya da arabanın devrilmesi
+  - Hasarlı kayışların yük altında kopması
+limits:
+  - En zayıf bileşenin emniyetli çalışma yükü sınırını asla aşmayın
+  - Kayışları yakıt hatlarına, gövde kapaklarına ya da keskin kenarlara bağlamayın
+  - Sabitlenmemiş bir yükte yolcu taşımayın
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FHWA Kuzey Amerika Yük Güvenliği Standardı
+  - title: US Army FM 55-15 Taşıma Referans Verileri
+  - title: ILO Limanlarda İş Sağlığı ve Güvenliği
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

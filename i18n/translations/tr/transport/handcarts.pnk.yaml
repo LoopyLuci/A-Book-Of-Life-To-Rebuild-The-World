@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: El Arabaları ve İki Tekerlekli Arabalar
+domain: transport
+tags: [ulasim, arabalar, marangozluk, lojistik, ticaret]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Eğimlerde ya da düz olmayan patikalarda devrilme
+  - Fren ya da kancalama arızası
+  - Aşırı yüklemeden itilme kaynaklı zorlanma
+  - Trafikle çarpışma
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Practical Action Köy Teknolojisi El Kitabı
+  - title: FAO Basit Çiftlik Arabaları
+  - title: Appropriate Technology ulaşım kılavuzları
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

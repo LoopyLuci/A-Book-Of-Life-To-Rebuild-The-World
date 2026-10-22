@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Veri Yolu Standartları ve Sinyal Arayüzleri
+domain: computers
+tags: [bilgisayar, veri-yolu, arayuz, uart, i2c, spi]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Şebeke gerilimi ve depolanan yük öldürücüdür; çalışmadan önce yalıtın.
+  - Lehim dumanı, flux ve kurşun; havalandırın ve ellerinizi yıkayın.
+  - Statik boşalma parçaları bozabilir; topraklı bir tezgâh kullanın.
+  - Veri kaybı sessizdir; herhangi bir yazılım veya disk çalışmasından önce yedek alın.
+limits:
+  - Örnekler yaygın açık araç zincirlerini varsayar.
+  - Her özetin üzerinde üreticinin veri sayfasına uyun.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NXP ve Analog Devices Arayüz Notları
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

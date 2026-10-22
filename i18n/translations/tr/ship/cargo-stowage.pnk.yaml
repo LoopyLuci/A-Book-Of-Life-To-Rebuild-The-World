@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+translation_of: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+title: Yük Elleçleme ve Düzenleme
+domain: ship
+tags: [tekne, yuk, istif, baglama, agirlik]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Yüksekte çalışma ve açık su üzerinde çalışma; düşme koruması kullanın.
+  - Sıcak iş, kaynak dumanı ve yangın gözetimi; sıcak bölgeyi denetim altında tutun.
+  - Yapım sırasında dar hacim ve ağır kaldırma tehlikeleri.
+  - Sınıf ve bayrak kuralları geçerlidir; asla bir güvenlik sistemini ilkel biçimde kurmayın.
+limits:
+  - Ölçüler geleneksel çelik gövde ve normal yükleme varsayımlarına dayanır.
+  - Yasal denetim ve sınıflandırma yetkilidir.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: IMO Cargo Securing Manual
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

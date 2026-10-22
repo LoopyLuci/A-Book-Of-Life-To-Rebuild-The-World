@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+title: Akü Temelleri
+domain: energy
+tags: [aku, kursun-asit, depolama, elektrik, enerji]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US DOE Akü El Kitabı
+  - title: US Army Akü El Kitabı
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

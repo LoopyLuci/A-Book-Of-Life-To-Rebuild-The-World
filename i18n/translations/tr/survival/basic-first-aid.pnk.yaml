@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+title: Temel İlk Yardım
+domain: survival
+tags: [ilk-yardim, cpr, kanama, kirik, yanik, hayatta-kalma]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Temel Acil Bakım
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

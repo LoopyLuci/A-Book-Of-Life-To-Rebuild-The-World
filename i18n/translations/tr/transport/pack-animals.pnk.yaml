@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Yük Hayvanları ve Yük Taşıma
+domain: transport
+tags: [ulasim, hayvanlar, lojistik, hayvancilik, ticaret]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Isırma, tekme ve ezilme yaralanmaları
+  - Dik zeminde kaymış yükten düşme
+  - Sırt yaraları ve ısı stresi
+  - Hayvan hastalığı ya da bitkinlik
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Hayvan Çekimi ve Taşımacılığı
+  - title: Practical Action Yük Taşımacılığı
+  - title: US Army FM 21-10 Hayvan Bakımı
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

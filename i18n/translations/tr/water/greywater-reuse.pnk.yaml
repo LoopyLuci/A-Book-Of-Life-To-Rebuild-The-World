@@ -1,0 +1,30 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Gri Su Geri Dönüşümü
+domain: water
+tags: [su, gri-su, sulama, sanitasyon, tarim]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Çamaşır, banyo ve el yıkama suyundan gelen patojenler
+  - Toprakta tuz ve bor birikmesi
+  - Yeraltı suyu kirlenmesi
+  - Durgun birikintilerde sivrisinek üremesi
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Atık Su, Dışkı ve Gri Suyun Güvenli Kullanımı Kılavuzları
+  - title: US EPA WaterSense Dış Mekân Su Kullanımı
+  - title: FAO Tarımda Atık Su Geri Dönüşümü
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - temperate
+  - arid
+  - tropical
+language: tr
+media: []

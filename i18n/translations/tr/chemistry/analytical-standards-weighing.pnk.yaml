@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+translation_of: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+title: Analitik Tartım, Standartlar ve Kalibrasyon
+domain: chemistry
+tags: [kimya, analitik, kalibrasyon, terazi, standartlar]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Kimyasal yanıklar ve sıçramalar; sıçramaya dayanıklı gözlük ve eldiven giyin.
+  - Buhar soluma; havalandırılmış bir alanda veya aspiratör altında çalışın.
+  - Ateş ve ısı; yanıcı malzemeyi sıcak işlerden uzak tutun.
+  - Reaktif atıkları nötralize edilmeli ve ayrı toplanmalıdır.
+limits:
+  - Değerler laboratuvar saflığında malzeme ve kalibre edilmiş cam eşya varsayar.
+  - Kontrollü bir laboratuvar protokolünün yerine geçmez.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST El Kitabı 44
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

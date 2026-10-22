@@ -1,0 +1,23 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+translation_of: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: Konsensüsle Karar Verme
+domain: society
+tags: [konsensus, yonetim, toplantilar, toplumsal-yapi]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Kamu malı konsensüs kılavuzları
+  - title: Kuveyk toplantı uygulaması
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Seramik
+domain: materials
+tags: [seramik, kil, firin, cini, sir]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Kil ve sırlardan gelen kristal silika tozu
+  - Fırınlardan kaynaklanan yanıklar ve yangınlar
+  - Yakıtla çalışan fırınlardan karbon monoksit
+  - Güvenli olmayan sırlardan kurşun ya da ağır metal zehirlenmesi
+limits:
+  - Islak ya da kalın, düzensiz eşyayı asla pişirmeyin
+  - Gıdayla temas eden yüzeylerde kurşunlu sır kullanmayın
+  - Tam bir parti yapmadan önce kil büzülmesini ve sır uyumunu test edin
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Potter'ın Malzeme ve Teknik Sözlüğü
+  - title: OSHA Kristal Silika Maruziyeti Kılavuzu
+  - title: American Ceramic Society Pişirme ve Sırlama Kılavuzları
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

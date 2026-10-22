@@ -1,0 +1,23 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: Eğitim
+domain: knowledge
+tags: [egitim, ogretme, okuryazarlik, bilgi]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Kamu malı pedagoji metinleri
+  - title: UNESCO eğitim kılavuzu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

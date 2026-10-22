@@ -1,0 +1,24 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Pınar Geliştirme ve Koruma
+domain: water
+tags: [su, pinarlar, yercekimi-akisi, insaat, sanitasyon]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Pınar Koruma Teknik Notu
+  - title: Oxfam Pınar Koruma Kılavuzları
+  - title: US Army FM 21-10 Saha Sanitasyonu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

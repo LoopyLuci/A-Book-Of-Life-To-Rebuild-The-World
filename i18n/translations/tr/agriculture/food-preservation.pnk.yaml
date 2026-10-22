@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+title: Gıda Koruma
+domain: agriculture
+tags: [koruma, konserveleme, kurutma, tutsuleme, fermantasyon]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA Evde Konserveleme Kılavuzu
+  - title: FAO Gıda Koruma El Kitabı
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

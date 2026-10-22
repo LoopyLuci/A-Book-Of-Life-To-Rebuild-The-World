@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+translation_of: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+title: Assembly Dili ve Makine Modeli
+domain: computers
+tags: [bilgisayar, assembly, isa, cpu, makine-kodu]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+  - Şebeke gerilimi ve depolanan yük öldürücüdür; çalışmadan önce yalıtın.
+  - Lehim dumanı, flux ve kurşun; havalandırın ve ellerinizi yıkayın.
+  - Statik boşalma parçaları bozabilir; topraklı bir tezgâh kullanın.
+  - Veri kaybı sessizdir; herhangi bir yazılım veya disk çalışmasından önce yedek alın.
+limits:
+  - Örnekler yaygın açık araç zincirlerini varsayar.
+  - Her özetin üzerinde üreticinin veri sayfasına uyun.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Arm Cortex-M Belgeleri
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

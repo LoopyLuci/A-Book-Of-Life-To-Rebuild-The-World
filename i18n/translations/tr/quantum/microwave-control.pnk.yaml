@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+translation_of: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+title: Mikrodalga Kontrol Elektroniği
+domain: quantum
+tags: [kuantum, mikrodalga, kontrol, awg, elektronik]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+  - Kriyojenik sıvılar odalarda donma yanıklarına ve boğulmaya yol açar.
+  - Mikrodalga ve yüksek frekanslı radyasyon; alanı sınırlı tutun.
+  - Lazer maruziyeti; asla ışın yoluna bakmayın.
+  - Tehlikeli gerilimler ve mıknatıs quench'i; tesis kurallarına uyun.
+limits:
+  - Rakamlar yalnızca mevcut laboratuvar ölçekli cihazları tanımlar.
+  - Gürültü, kayma ve kontrol sınırları kurulumlar arasında değişir.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Quantum Initiative Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

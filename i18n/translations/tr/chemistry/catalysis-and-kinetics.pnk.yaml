@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Kataliz ve Reaksiyon Kinetiği
+domain: chemistry
+tags: [kimya, kataliz, kinetik, reaksiyon-hizi, denge]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Kimyasal yanıklar ve sıçramalar; sıçramaya dayanıklı gözlük ve eldiven giyin.
+  - Buhar soluma; havalandırılmış bir alanda veya aspiratör altında çalışın.
+  - Ateş ve ısı; yanıcı malzemeyi sıcak işlerden uzak tutun.
+  - Reaktif atıkları nötralize edilmeli ve ayrı toplanmalıdır.
+limits:
+  - Değerler laboratuvar saflığında malzeme ve kalibre edilmiş cam eşya varsayar.
+  - Kontrollü bir laboratuvar protokolünün yerine geçmez.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Fiziksel Kimya
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

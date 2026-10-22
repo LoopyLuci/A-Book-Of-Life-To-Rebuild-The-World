@@ -1,0 +1,23 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+title: Demircilik
+domain: materials
+tags: [demircilik, demirhane, demir, celik, aletler, malzemeler]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Geleneksel demircilik (kamu malı)
+  - title: US Navy Demircilik El Kitabı
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

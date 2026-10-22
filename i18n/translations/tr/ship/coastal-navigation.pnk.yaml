@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: Kıyı Seyrinde ve Kılavuzluk
+domain: ship
+tags: [tekne, seyir, kiyi, acilar, pusula]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Yüksekte çalışma ve açık su üzerinde çalışma; düşme koruması kullanın.
+  - Sıcak iş, kaynak dumanı ve yangın gözetimi; sıcak bölgeyi denetim altında tutun.
+  - Yapım sırasında dar hacim ve ağir kaldırma tehlikeleri.
+  - Sınıf ve bayrak kuralları geçerlidir; asla bir güvenlik sistemini ilkel biçimde kurmayın.
+limits:
+  - Ölçüler geleneksel çelik gövde ve normal yükleme varsayımlarına dayanır.
+  - Yasal denetim ve sınıflandırma yetkilidir.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Coast Guard Navigation Manual
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

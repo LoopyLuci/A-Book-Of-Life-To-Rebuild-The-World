@@ -27,6 +27,7 @@ translation framework that scales to more.
 | `ja` | Japanese | 40% |
 | `ko` | Korean | 25% |
 | `vi` | Vietnamese | 30% |
+| `tr` | Turkish | 30% |
 
 ## Structure
 

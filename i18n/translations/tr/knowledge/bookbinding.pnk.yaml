@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Kitap Ciltleme ve Onarım
+domain: knowledge
+tags: [bilgi, kitaplar, onarim, zanaat, kutuphane]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Bıçak ve bizlerden kaynaklanan kesikler.
+  - Yapıştırıcı buharı ve cilt irritasyonu.
+  - Tekrarlayan zorlanma.
+  - Kitaplar nemli saklanırsa küf oluşumu.
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Kitap Ciltleme ve Koruma El Kitabı
+  - title: Library of Congress Kitap Onarımı Kılavuzları
+  - title: Canadian Conservation Institute Kitap Ciltleme Notları
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

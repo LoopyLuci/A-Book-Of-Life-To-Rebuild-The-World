@@ -1,0 +1,23 @@
+id: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+translation_of: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+title: Antibiyotikler
+domain: health
+tags: [antibiyotik, enfeksiyon, farmakoloji, saglik]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Temel İlaçlar Model Listesi
+  - title: MSF Klinik Kılavuzları (açık)
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

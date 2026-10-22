@@ -1,0 +1,28 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Yağmur Suyu Hasadı
+domain: water
+tags: [su, yagmur-suyu, depolama, cati, sanitasyon]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Çatıdan yıkanan patojenler ve ağır metaller
+  - Açık tanklarda sivrisinek üremesi
+  - Büyük açık sarnıçlarda boğulma ya da düşme
+  - Tam yükte tank ya da kaidenin çökmesi
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO İçme Suyu Kalitesi Kılavuzları
+  - title: Texas Yağmur Suyu Hasadı El Kitabı
+  - title: US EPA Yağmur Suyu Hasadı Kılavuzu
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

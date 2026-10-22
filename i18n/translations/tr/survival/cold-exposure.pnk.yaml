@@ -1,0 +1,29 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Soğuğa Maruz Kalma ve Hipotermi
+domain: survival
+tags: [hayatta-kalma, soguk, hipotermi, ilk-yardim, barinak]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - Hipotermi ve kalp durması
+  - Donma yaralanması ve kalıcı doku kaybı
+  - Kendi kendini kurtarmayı engelleyen bilinç bulanıklığının artması
+  - Isıtma yanıkları ya da alkole bağlı kan damarı genişlemesi
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: CDC Hipoterminin Önlenmesi
+  - title: Wilderness Medical Society Uygulama Kılavuzları
+  - title: US Army FM 21-10 Soğuk Hava Yaralanmaları Bakımı
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - temperate
+  - arctic
+language: tr
+media: []

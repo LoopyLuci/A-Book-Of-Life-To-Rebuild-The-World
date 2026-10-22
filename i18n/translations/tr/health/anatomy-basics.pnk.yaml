@@ -1,0 +1,23 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Anatomi Temelleri
+domain: health
+tags: [anatomi, fizyoloji, saglik, egitim]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Gray's Anatomy (kamu malı)
+  - title: WHO Temel Acil Bakım
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

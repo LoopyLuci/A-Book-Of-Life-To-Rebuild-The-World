@@ -1,0 +1,23 @@
+id: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+translation_of: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+title: Duvarcılık
+domain: construction
+tags: [duvarcilik, tucla, tas, insaat]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army TM 5-742 Duvarcılık
+  - title: Roma yapı ilkeleri
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

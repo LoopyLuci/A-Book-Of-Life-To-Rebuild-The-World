@@ -1,0 +1,29 @@
+id: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+translation_of: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+title: Hücre Biyolojisi ve Mikroskopi
+domain: biology
+tags: [biyoloji, hucre, mikroskopi, organeller, boyama]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards:
+  - Keskin aletler ve kesikler; forseps kullanın ve bıçakları güvenli biçimde atın.
+  - Biyolojik kirlilik; kültürleri kapalı ve etiketli tutun.
+  - Boya ve reaktana maruz kalma; eldiven giyin ve ellerinizi yıkayın.
+  - Yabani türler ve koruma altındaki bitkiler hakkındaki yerel kurallar geçerlidir.
+limits:
+  - Sonuçlar yerel suşlara, iklime ve tekniğe göre değişir.
+  - Gıda, yem veya tedavi amaçlı asla doğrulanmamış malzeme kullanmayın.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: OpenStax Biology 2e
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - universal
+language: tr
+media: []

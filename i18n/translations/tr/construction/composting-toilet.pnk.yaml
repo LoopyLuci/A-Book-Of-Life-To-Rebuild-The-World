@@ -1,0 +1,34 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Kompostlu Tuvalet
+domain: construction
+tags: [sanitasyon, kompostlama, tuvalet, su, halk-sagligi]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Taze atık ve sızıntı suyundan patojen maruziyeti
+  - Yeraltı suyu kirlenmesi
+  - Gözlerde metan ve amonyak birikimi
+  - İnşa sırasında düşme ve kesik yaralanmaları
+limits:
+  - Yeraltı suyu seviyesi yüksek ya da sık taşkın olan yerler için uygun değildir
+  - Taze ya da kısmen sertleşmiş malzemeyi doğrudan yenebilen ürünlere uygulamayın
+  - Gözün içine girmeyin; havalandırın ve aletleri dışarıdan kullanın
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Sanitasyon ve Sağlık Kılavuzları
+  - title: EcoSanRes Kompostlu Tuvalet Kılavuzları
+  - title: US EPA Kompostlu Tuvaletler
+verification:
+  status: draft
+links: []
+geographic_applicability:
+  - temperate
+  - tropical
+  - arid
+  - universal
+language: tr
+media: []
