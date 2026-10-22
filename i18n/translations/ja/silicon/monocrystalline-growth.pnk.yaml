@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA003Y2XJBMAN1R3TJZC/silicon/monocrystalline-growth
+translation_of: pnk:01KDVDNA003Y2XJBMAN1R3TJZC/silicon/monocrystalline-growth
+title: 単結晶シリコンの成長
+domain: silicon
+tags:
+- silicon
+- crystal
+- czochralski
+- ingot
+- wafer
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+- 極端な高温と極低温の液体。取り扱いは訓練を受けた者のみが行うこと。
+- 毒性と腐食性のあるプロセスガス。警報と換気を確認すること。
+- 電離放射線と紫外線へのばく露。遮蔽された装置を使用すること。
+- クリーンルームの規程は安全制御であり、任意の実践ではありません。
+limits:
+- 設備投資を要する装置と、専門家によるプロセス管理が必要です。
+- 記載されている収率とコストは、成熟した量産における典型的な値です。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST半導体リファレンス
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

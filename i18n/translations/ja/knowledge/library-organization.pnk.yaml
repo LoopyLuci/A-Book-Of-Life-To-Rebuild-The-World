@@ -1,0 +1,29 @@
+id: pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+translation_of: pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+title: 図書館の整理
+domain: knowledge
+tags:
+- toshokan
+- mokuroku
+- knowledge
+- archives
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: パブリックドメインの図書館学文献
+  license: public-domain
+- title: UNESCO アーカイブ指針
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

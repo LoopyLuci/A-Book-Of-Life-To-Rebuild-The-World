@@ -1,0 +1,24 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+title: 穀物栽培
+domain: agriculture
+tags: [grain, wheat, rice, maize, agriculture, staples]
+difficulty: apprentice
+safety: green
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO 穀類生産ガイド
+    license: original
+  - title: USDA 小粒穀物マニュアル
+    license: original
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: ja
+media: []

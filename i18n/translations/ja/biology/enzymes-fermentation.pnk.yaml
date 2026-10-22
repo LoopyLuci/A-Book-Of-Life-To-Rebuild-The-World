@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00Q1QPGDVP77WY8WJW/biology/enzymes-fermentation
+translation_of: pnk:01KDVDNA00Q1QPGDVP77WY8WJW/biology/enzymes-fermentation
+title: 酵素と発酵
+domain: biology
+tags:
+- biology
+- enzymes
+- fermentation
+- catalysis
+- food
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards:
+- 鋭利な器具による切り傷。ピンセットを使い、刃は安全に廃棄すること。
+- 生物学的汚染。培養物は密閉し、ラベルを付けておくこと。
+- 染色剤や試薬への曝露。手袋を着用し、手を洗うこと。
+- 野生種や保護対象の植物に関する地域の規則も引き続き適用される。
+limits:
+- 結果は地域の菌株、気候、技術によって異なる。
+- 未確認の材料を食品、飼料、治療に決して使用しないこと。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: OpenStax Biology 2e
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,29 @@
+id: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+translation_of: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+title: 橋梁の基礎
+domain: construction
+tags:
+- bridges
+- structure
+- transportation
+- construction
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 5-430 道路と飛行場
+  license: public-domain
+- title: 歴史的な橋梁工学の文献
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,29 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+translation_of: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: 合意形成による意思決定
+domain: society
+tags:
+- consensus
+- governance
+- meetings
+- society
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: パブリックドメインの合意形成ガイド
+  license: public-domain
+- title: クエーカーの会合の実践
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

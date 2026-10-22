@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: コミュニティの食料安全保障計画
+domain: society
+tags:
+- society
+- food-security
+- planning
+- resilience
+- governance
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+- 不平等なアクセスと有力者による独占
+- 不適切な貯蔵による腐敗
+- 配給をめぐる対立
+- 単一の作物や供給元への依存
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Food Security Assessment Guidance
+  license: original
+- title: Sphere Handbook Food Security Standards
+  license: original
+- title: WHO Nutrition in Emergencies
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

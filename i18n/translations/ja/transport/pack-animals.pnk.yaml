@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: 荷役動物と荷物輸送
+domain: transport
+tags:
+- transport
+- animals
+- logistics
+- kachiku
+- boeki
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- 噛まれる、蹴られる、押しつぶされるなどの負傷
+- 急斜面での積荷のずれや転落
+- 鞍傷および熱ストレス
+- 動物の病気や疲労困憊
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FAO 動物牽引と輸送
+  license: original
+- title: Practical Action 荷役輸送
+  license: original
+- title: 米陸軍 FM 21-10 動物の世話
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

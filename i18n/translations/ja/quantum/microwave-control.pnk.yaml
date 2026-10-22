@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+translation_of: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+title: マイクロ波制御エレクトロニクス
+domain: quantum
+tags:
+- quantum
+- microwave
+- control
+- awg
+- electronics
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+- 極低温液体は凍傷を引き起こし、室内では窒息の原因となる。
+- マイクロ波および高周波放射。電界の範囲を限定すること。
+- レーザー被曝。ビーム経路を決して覗き込まないこと。
+- 危険な電圧と磁石のクエンチ。施設の規則に従うこと。
+limits:
+- 数値は現在の実験室規模の装置のみを対象としている。
+- 雑音、ドリフト、制御の限界は設置環境によって異なる。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Quantum Initiative Reference
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

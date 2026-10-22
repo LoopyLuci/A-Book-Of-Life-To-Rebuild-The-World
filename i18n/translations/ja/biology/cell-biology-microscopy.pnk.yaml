@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+translation_of: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+title: 細胞生物学と顕微鏡観察
+domain: biology
+tags:
+- biology
+- cells
+- microscopy
+- organelles
+- staining
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards:
+- 鋭利な器具による切創。鉗子を使用し、刃物は安全に廃棄すること。
+- 生物学的汚染。培養物は蓋を閉じ、ラベルを付けて保管すること。
+- 染色液や試薬への曝露。手袋を着用し、手を洗うこと。
+- 野生種や保護対象の植物に関する現地の規則も引き続き適用される。
+limits:
+- 結果は地域の菌株、気候、手技によって異なる。
+- 未検証の材料を食品、飼料、治療に使用してはならない。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: OpenStax Biology 2e
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

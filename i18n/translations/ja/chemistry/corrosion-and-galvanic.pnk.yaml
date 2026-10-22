@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00Z0ZRRJE7CYERJ5NN/chemistry/corrosion-and-galvanic
+translation_of: pnk:01KDVDNA00Z0ZRRJE7CYERJ5NN/chemistry/corrosion-and-galvanic
+title: 腐食とガルバニック防食
+domain: chemistry
+tags:
+- chemistry
+- corrosion
+- galvanic
+- cathodic-protection
+- metals
+difficulty: journeyman
+safety: yellow
+time_to_complete: days
+hazards:
+- 化学熱傷や薬品の飛散の危険があります。飛沫防止ゴーグルと手袋を着用してください。
+- ヒュームの吸入の危険があります。換気された場所またはヒュームフード内で作業してください。
+- 火災と高温の危険があります。火気作業の周囲から可燃物を遠ざけてください。
+- 試薬の廃液は中和し、別々に回収する必要があります。
+limits:
+- 数値は、実験室グレードの純度と校正済みのガラス器具を前提としています。
+- 管理された実験室の手順書の代わりにはなりません。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST 腐食研究
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

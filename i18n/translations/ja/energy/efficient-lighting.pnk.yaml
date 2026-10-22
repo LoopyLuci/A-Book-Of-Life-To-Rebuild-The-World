@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: 効率的な照明
+domain: energy
+tags:
+- lighting
+- led
+- efficiency
+- daylight
+- indoor-air
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 燃料ランプから発生する一酸化炭素と微粒子
+- ろうそくや過熱した器具による火災
+- 濡れた、または損傷した配線による感電
+- 脚立からの転落
+limits:
+- 換気のない燃料ランプを室内で長時間使用しないこと
+- 延長コードに過負荷をかけたり、電源タップを数珠つなぎにしたりしないこと
+- ほこり、熱、ドライバーの品質不良により光束（ルーメン出力）は低下する
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: IEA Lighting and Energy Efficiency
+  license: original
+- title: US DOE Solid-State Lighting Program
+  license: original
+- title: WHO Household Air Pollution Guidance
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

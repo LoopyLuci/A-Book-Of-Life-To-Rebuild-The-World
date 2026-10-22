@@ -1,0 +1,42 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: コンポスト式トイレ
+domain: construction
+tags:
+- sanitation
+- composting
+- toilet
+- mizu
+- public-health
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- 新しい排泄物および浸出水による病原体への曝露
+- 地下水汚染
+- 槽内のメタンとアンモニア
+- 施工中の転落と切り傷
+limits:
+- 地下水位が高い場所や頻繁に冠水する場所には適さない
+- 新しい材料や熟成が不十分な材料を、そのまま食べる作物に施用しないこと
+- 槽に入ってはならない。換気し、外から道具を使うこと
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 衛生と健康に関するガイドライン
+  license: original
+- title: EcoSanRes コンポスト式トイレ ガイドライン
+  license: original
+- title: US EPA コンポスト式トイレ
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- temperate
+- tropical
+- arid
+- universal
+language: ja
+media: []

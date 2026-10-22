@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: 陶芸・窯業（セラミックス）
+domain: materials
+tags:
+- ceramics
+- clay
+- kiln
+- pottery
+- glaze
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+- 粘土と釉薬に含まれる結晶質シリカ粉じん
+- 窯によるやけどと火災
+- 燃料焚きの窯から発生する一酸化炭素
+- 安全でない釉薬による鉛または重金属中毒
+limits:
+- 湿ったもの、または厚さが不均一な成形品を焼成してはならない
+- 食品に触れる表面に鉛釉を使用してはならない
+- 全量を作る前に、粘土の収縮率と釉薬の適合性を試験すること
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: The Potter's Dictionary of Materials and Techniques
+  license: original
+- title: OSHA Crystalline Silica Exposure Guidance
+  license: original
+- title: American Ceramic Society Firing and Glazing Guides
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

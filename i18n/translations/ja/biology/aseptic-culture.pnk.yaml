@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+translation_of: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+title: 無菌操作と微生物培養
+domain: biology
+tags:
+- biology
+- microbiology
+- culture
+- sterility
+- contamination
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 鋭利物による切創。ピンセットを使い、刃物は安全に廃棄すること。
+- 生物学的汚染。培養物は蓋を閉じ、ラベルを付けておくこと。
+- 染色液や試薬への曝露。手袋を着用し、手を洗うこと。
+- 野生種や保護植物に関する現地の規則も引き続き適用される。
+limits:
+- 結果は現地の菌株、気候、技術によって異なる。
+- 未検証の材料を食品、飼料、治療に決して使用しないこと。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Laboratory Biosafety Guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

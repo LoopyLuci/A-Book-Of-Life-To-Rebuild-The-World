@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+title: 緊急シェルター
+domain: survival
+tags: [shelter, exposure, hypothermia, bushcraft, survival]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 米陸軍 FM 21-76 サバイバルマニュアル
+    license: original
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, arid, tropical, arctic]
+language: ja
+media: []

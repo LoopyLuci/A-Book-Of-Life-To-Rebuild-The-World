@@ -1,0 +1,44 @@
+id: pnk:01KDVDNA00K788C8H4DCKB25DR/quantum/quantum-gates
+title: Quantum Gates and Gate Fidelity
+domain: quantum
+tags:
+- quantum
+- gates
+- fidelity
+- calibration
+- control
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Cryogenic liquids cause cold burns and asphyxiation in rooms.
+- Microwave and high-frequency radiation; keep the field bounded.
+- Laser exposure; never look into a beam path.
+- Hazardous voltages and magnet quench; follow the facility rules.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Figures describe current laboratory-scale devices only.
+- Noise, drift and control limits vary between installations.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Quantum Initiative Reference
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

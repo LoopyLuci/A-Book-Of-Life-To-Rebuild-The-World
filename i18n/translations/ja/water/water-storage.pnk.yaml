@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+translation_of: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+title: 家庭用水の安全な貯蔵
+domain: water
+tags:
+- mizu
+- chozo
+- eisei
+- chlorination
+- public-health
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 温かい容器や開封された容器での細菌の再増殖
+- 食品グレードでないプラスチックからの化学物質の溶出
+- 蓋のないタンクでの溺水
+- 汚れた手や柄杓による交差汚染
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 飲料水水質ガイドライン
+  license: original
+- title: CDC 水の貯蔵と処理に関するガイダンス
+  license: original
+- title: Sphere ハンドブック 給水基準
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

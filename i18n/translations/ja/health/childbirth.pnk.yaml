@@ -1,0 +1,29 @@
+id: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+translation_of: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+title: 出産と周産期ケア
+domain: health
+tags:
+- childbirth
+- obstetrics
+- maternal
+- health
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 妊娠・出産時の合併症の管理
+  license: public-domain
+- title: パブリックドメインの助産学文献
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

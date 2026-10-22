@@ -18,10 +18,11 @@ STRINGS_DIR = I18N_DIR / "strings"
 TRANSLATIONS_DIR = I18N_DIR / "translations"
 SCHEMA_PATH = ROOT / "schemas" / "sidecar.schema.json"
 
-LANGS = ["es", "fr", "de", "pt", "hi", "ar", "sw", "zh"]
+LANGS = ["es", "fr", "de", "pt", "hi", "ar", "sw", "zh", "nl", "ru", "it", "ja"]
 COVERAGE_TARGETS = {
     "es": 1.0, "fr": 1.0, "de": 1.0, "pt": 1.0,
-    "hi": 0.8, "ar": 0.8, "sw": 0.6, "zh": 0.8,
+    "hi": 0.8, "ar": 0.8, "sw": 0.6, "zh": 0.8, "ru": 0.4, "nl": 0.3, "it": 0.3,
+    "ja": 0.4,
 }
 
 

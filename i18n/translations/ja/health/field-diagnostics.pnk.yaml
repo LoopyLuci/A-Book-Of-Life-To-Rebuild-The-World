@@ -1,0 +1,29 @@
+id: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+translation_of: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+title: フィールド診断
+domain: health
+tags:
+- diagnostics
+- examination
+- health
+- triage
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 基本救急ケア
+  license: public-domain
+- title: MSF 臨床ガイドライン（オープン版）
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

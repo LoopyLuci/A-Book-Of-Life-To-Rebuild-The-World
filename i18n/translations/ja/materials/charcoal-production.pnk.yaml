@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+title: 木炭の製造
+domain: materials
+tags: [charcoal, pyrolysis, fuel, smelting, materials]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO木炭製造マニュアル
+    license: public-domain
+verification:
+  status: field-tested
+links: []
+geographic_applicability: [universal]
+language: ja
+media: []

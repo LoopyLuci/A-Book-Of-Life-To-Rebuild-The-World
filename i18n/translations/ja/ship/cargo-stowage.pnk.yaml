@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+translation_of: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+title: 貨物の取り扱いと積み付け
+domain: ship
+tags:
+- ship
+- cargo
+- stowage
+- lashing
+- weight
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- 高所および開放水面上での作業です。墜落防止措置を使用してください。
+- 火気作業、溶接ヒューム、火災監視に注意し、高温作業区域を管理してください。
+- 建造中は、閉所および重量物吊り上げの危険があります。
+- 船級および旗国の規則が適用されます。安全装置を即興で作ってはなりません。
+limits:
+- 寸法は、一般的な鋼製船体と通常の積載を前提としています。
+- 法定検査および船級が引き続き優先されます。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: IMO 貨物固縛マニュアル
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

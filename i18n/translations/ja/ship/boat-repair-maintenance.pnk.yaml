@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+translation_of: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+title: 船舶の修理と保守
+domain: ship
+tags:
+- ship
+- repair
+- maintenance
+- seams
+- caulking
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- 高所および開放水面上での作業。墜落防止措置を講じること。
+- 火気作業、溶接ヒューム、火災監視。高温作業区域を管理すること。
+- 建造中の閉鎖空間および重量物の取り扱いに伴う危険。
+- 船級規則および旗国の規則が適用される。安全システムを即興で作らないこと。
+limits:
+- 寸法は一般的な鋼製船体と通常の積載条件を前提としている。
+- 法定検査および船級検査が引き続き優先される。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Coast Guard 小型船舶ガイダンス
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

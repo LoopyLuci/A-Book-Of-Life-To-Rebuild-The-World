@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+translation_of: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+title: 分析天秤による秤量、標準物質、校正
+domain: chemistry
+tags:
+- chemistry
+- analytical
+- calibration
+- balance
+- standards
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- 化学火傷や飛沫に注意。飛沫防止ゴーグルと手袋を着用すること。
+- ヒュームの吸入に注意。換気された場所またはヒュームフード内で作業すること。
+- 火災と高熱に注意。可燃物を熱を伴う作業から遠ざけること。
+- 試薬廃液は中和し、別に回収すること。
+limits:
+- 数値は実験室グレードの純度と校正済みガラス器具を前提としている。
+- 管理された実験室プロトコルの代わりにはならない。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Handbook 44
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

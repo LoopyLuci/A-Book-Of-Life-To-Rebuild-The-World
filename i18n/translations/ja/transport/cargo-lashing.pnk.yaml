@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: 貨物の固縛
+domain: transport
+tags:
+- transport
+- cargo
+- musubi
+- anzen
+- logistics
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 荷崩れや荷の落下
+- 締め付け作業中の挟まれ・圧挫傷害
+- 車両や荷車の転覆
+- 損傷したストラップが荷重下で破断すること
+limits:
+- 最も弱い部品の使用荷重限度を決して超えないこと
+- ストラップを燃料配管、車体パネル、鋭利な角に取り付けないこと
+- 固定されていない荷の上に人を乗せないこと
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FHWA 北米貨物固縛基準
+  license: original
+- title: 米陸軍 FM 55-15 輸送参考データ
+  license: original
+- title: ILO 港湾における安全と衛生
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+translation_of: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+title: 河川の渡船と小型船による渡河
+domain: transport
+tags:
+- transport
+- river
+- boats
+- ferries
+- mizu-anzen
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- 過積載または積荷の移動による転覆
+- 溺水と低体温症
+- ケーブルまたは滑車の破損
+- 樹木や急流へ流される危険
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Coast Guard 小型船安全ガイド
+  license: original
+- title: WHO 溺水予防ガイドライン
+  license: original
+- title: Practical Action 河川渡河と渡船のガイダンス
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

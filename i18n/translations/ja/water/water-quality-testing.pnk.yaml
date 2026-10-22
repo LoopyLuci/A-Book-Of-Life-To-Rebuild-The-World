@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+translation_of: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+title: 水質検査
+domain: water
+tags:
+- mizu
+- testing
+- sanitation
+- chlorine
+- public-health
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 試験用試薬による化学的刺激
+- 現場検査で陰性だったことによる誤った安心感
+- 採取中の試料の汚染
+- 下水や洪水の水への曝露
+limits:
+- 現場用キットは指標をスクリーニングするもので、微生物学的安全性を証明することはできない
+- 塩素検査では化学物質による汚染は検出できない
+- H2Sバイアルは警告のための検査であり、実験室での確認ではない
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 飲料水水質ガイドライン
+  license: original
+- title: US EPA 飲料水の緊急消毒
+  license: original
+- title: APHA 水および廃水検査の標準法
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

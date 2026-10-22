@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: 自転車の整備と荷物の運搬
+domain: transport
+tags:
+- transport
+- bicycles
+- repair
+- logistics
+- tools
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 交通の中でのブレーキまたはタイヤの故障
+- 荷物のずれによるハンドル操作不能
+- 手やチェーンによる負傷
+- 疲労と熱中症
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Village Bicycle Maintenance Guide
+  license: original
+- title: Bicycle Retailer and Industry Association repair standards
+  license: original
+- title: WHO Cycling Safety Guidance
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

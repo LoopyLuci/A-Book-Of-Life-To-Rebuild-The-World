@@ -1,0 +1,24 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: 養蜂技術
+domain: agriculture
+tags: [bees, honey, pollination, wax, agriculture]
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA 養蜂ハンドブック
+    license: public-domain
+  - title: FAO ミツバチ製品ガイド
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical]
+language: ja
+media: []

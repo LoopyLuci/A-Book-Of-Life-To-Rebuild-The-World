@@ -1,0 +1,38 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: 中水（グレイウォーター）の再利用
+domain: water
+tags:
+- mizu
+- greywater
+- kangai
+- eisei
+- nogyo
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- 洗濯、入浴、手洗いの排水に含まれる病原体
+- 土壌への塩分およびホウ素の蓄積
+- 地下水汚染
+- 滞留した水たまりでの蚊の発生
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Guidelines for the Safe Use of Wastewater, Excreta and Greywater
+  license: original
+- title: US EPA WaterSense Outdoor Water Use
+  license: original
+- title: FAO Wastewater Reuse in Agriculture
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- temperate
+- arid
+- tropical
+language: ja
+media: []

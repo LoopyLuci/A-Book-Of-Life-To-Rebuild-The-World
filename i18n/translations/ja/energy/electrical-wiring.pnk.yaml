@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N47/energy/electrical-wiring
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N47/energy/electrical-wiring
+title: 電気配線
+domain: energy
+tags: [electrical, wiring, grounding, anzen, energy]
+difficulty: apprentice
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 米国陸軍電気マニュアル
+    license: original
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ja
+media: []

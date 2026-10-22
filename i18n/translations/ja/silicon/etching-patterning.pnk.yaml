@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00XJ7X5GVWQ76CF3ZP/silicon/etching-patterning
+translation_of: pnk:01KDVDNA00XJ7X5GVWQ76CF3ZP/silicon/etching-patterning
+title: ウェットエッチングとドライエッチング
+domain: silicon
+tags:
+- silicon
+- etching
+- patterning
+- plasma
+- selectivity
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+- 極端な高温および極低温の液体があるため、訓練を受けた者のみが取り扱うこと。
+- 有毒で腐食性のプロセスガスがあるため、警報と換気を確認すること。
+- 電離放射線および紫外線への曝露があるため、遮蔽された装置を使用すること。
+- クリーンルームの規則は安全管理策であり、任意の慣行ではない。
+limits:
+- 設備投資を要する装置と、専門的なプロセス管理が必要である。
+- 記載した歩留まりとコストは、成熟した量産工程における典型値である。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Semiconductor Reference
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

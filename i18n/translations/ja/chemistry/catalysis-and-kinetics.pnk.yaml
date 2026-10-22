@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: 触媒作用と反応速度論
+domain: chemistry
+tags:
+- chemistry
+- catalysis
+- kinetics
+- reaction-rate
+- equilibrium
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- 化学やけどと飛沫。飛沫防止ゴーグルと手袋を着用すること。
+- 煙霧の吸入。換気された場所またはヒュームフード内で作業すること。
+- 火災と熱。可燃物を高温作業から遠ざけること。
+- 試薬の廃液は中和し、別々に回収すること。
+limits:
+- 数値は、実験室グレードの純度と校正されたガラス器具を前提としている。
+- 管理された実験室の手順書の代わりにはならない。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: LibreTexts 物理化学
+  license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

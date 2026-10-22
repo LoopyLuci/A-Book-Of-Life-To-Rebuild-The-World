@@ -1,0 +1,26 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: 手押し車と二輪荷車
+domain: transport
+tags: [transport, carts, mokkou, logistics, trade]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards: ['坂道や片勾配の道での転倒', 'ブレーキまたはヒッチの故障', '過積載での押し作業による筋肉の負傷', '交通との衝突']
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Practical Action Village Technology Handbook
+    license: original
+  - title: FAO Simple Farm Carts
+    license: original
+  - title: Appropriate Technology transport guides
+    license: original
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ja
+media: []

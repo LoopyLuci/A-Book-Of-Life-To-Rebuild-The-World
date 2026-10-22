@@ -1,0 +1,44 @@
+id: pnk:01KDVDNA00ECTB90MF9YM9NXHZ/computers/power-supplies
+title: Power Supplies and Regulation
+domain: computers
+tags:
+- computers
+- power
+- supply
+- regulation
+- electronics
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Mains voltage and stored charge can kill; isolate before work.
+- Solder fumes, flux and lead; ventilate and wash hands.
+- Static discharge can damage parts; use an earthed bench.
+- Data loss is silent; back up before any firmware or disk work.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Examples assume mainstream open toolchains.
+- Follow the manufacturer's datasheet over any summary.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: OpenStax University Physics
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

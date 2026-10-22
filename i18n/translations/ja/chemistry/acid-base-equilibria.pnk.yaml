@@ -1,0 +1,35 @@
+id: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+translation_of: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+title: 酸塩基平衡と緩衝作用
+domain: chemistry
+tags:
+- chemistry
+- acids
+- bases
+- buffers
+- ph
+- titration
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 化学熱傷や飛散の危険があります。飛沫防止ゴーグルと手袋を着用してください。
+- ヒュームの吸入の危険があります。換気のよい場所またはヒュームフード内で作業してください。
+- 火災と熱の危険があります。可燃物を高温作業から遠ざけてください。
+- 試薬の廃液は中和し、別々に回収する必要があります。
+limits:
+- 数値は実験室グレードの純度と校正済みガラス器具を前提としています。
+- 管理された実験室プロトコルの代わりにはなりません。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Introduction to Chemistry (OpenStax)
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

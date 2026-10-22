@@ -19,7 +19,7 @@
     },
     "domain": {
       "type": "string",
-      "enum": ["survival", "water", "agriculture", "materials", "energy", "construction", "transport", "health", "knowledge", "society"]
+      "enum": ["survival", "water", "agriculture", "materials", "energy", "construction", "transport", "health", "knowledge", "society", "chemistry", "biology", "silicon", "ship", "computers", "quantum"]
     },
     "tags": {
       "type": "array",

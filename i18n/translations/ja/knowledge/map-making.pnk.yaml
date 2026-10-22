@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+translation_of: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+title: 地図作成
+domain: knowledge
+tags:
+- chizu
+- surveying
+- navigation
+- cartography
+- kiroku
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+- 測量中の交通および無断立入り
+- 河川の横断と急斜面
+- 暑さ、寒さ、嵐への曝露
+- スマートフォンのバッテリーへの過度の依存
+limits:
+- スケッチ地図は法的な土地測量ではない
+- 磁気方位は磁気偏角で補正しなければならない
+- 許可なく立入制限区域や危険な区域に入ってはならない
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-26 地図の読み方と地上航法
+  license: original
+- title: USGS 地形図記号
+  license: original
+- title: 国際地図学会 地図デザインガイダンス
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

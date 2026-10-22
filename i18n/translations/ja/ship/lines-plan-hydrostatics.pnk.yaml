@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA001HXR01Z5WNBA8CYM/ship/lines-plan-hydrostatics
+translation_of: pnk:01KDVDNA001HXR01Z5WNBA8CYM/ship/lines-plan-hydrostatics
+title: 線図と静水力学
+domain: ship
+tags:
+- ship
+- lines
+- hydrostatics
+- displacement
+- naval-architecture
+difficulty: journeyman
+safety: green
+time_to_complete: days
+hazards:
+- 高所および開水面上での作業。墜落防止措置を用いること。
+- 火気作業、溶接ヒューム、火災監視。火気使用区域を管理すること。
+- 建造中の閉鎖空間および重量物吊り上げの危険。
+- 船級規則および旗国規則が適用される。安全設備を即興で作ってはならない。
+limits:
+- 寸法は一般的な鋼製船体と通常の積載状態を前提とする。
+- 法定検査および船級検査が引き続き優先される。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Navy Hydrostatics Text
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

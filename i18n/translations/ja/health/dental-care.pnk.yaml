@@ -1,0 +1,29 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: 歯科ケア
+domain: health
+tags:
+- dental
+- teeth
+- prevention
+- health
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 口腔保健ガイダンス
+  license: public-domain
+- title: パブリックドメインの歯科マニュアル
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,29 @@
+id: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+translation_of: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+title: 抗菌薬
+domain: health
+tags:
+- kokinyaku
+- kansensho
+- pharmacology
+- health
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 必須医薬品モデルリスト
+  license: public-domain
+- title: MSF 臨床ガイドライン（オープン版）
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

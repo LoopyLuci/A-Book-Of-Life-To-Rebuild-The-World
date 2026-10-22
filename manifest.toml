@@ -4,13 +4,13 @@ version = "0.1.0-alpha"
 description = "A living, decentralized, offline-first knowledge engine for rebuilding civilization."
 license_content = "CC-BY-SA-4.0"
 license_code = "MIT"
-homepage = "https://book-of-life.org"
-repository = "https://github.com/book-of-life/book-of-life"
+homepage = "https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World"
+repository = "https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World"
 
 [knowledge_base]
 schema_version = "1.2.0"
 default_language = "en"
-supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja"]
+supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja", "ru", "it"]
 
 [domains]
 list = [
@@ -24,6 +24,12 @@ list = [
   "health",
   "knowledge",
   "society",
+  "chemistry",
+  "biology",
+  "silicon",
+  "ship",
+  "computers",
+  "quantum",
 ]
 
 [chunking]

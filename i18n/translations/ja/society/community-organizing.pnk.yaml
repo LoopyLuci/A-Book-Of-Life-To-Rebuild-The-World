@@ -1,0 +1,29 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: コミュニティ・オーガナイジング
+domain: society
+tags:
+- organizing
+- community
+- governance
+- society
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: パブリックドメインのコミュニティ・オーガナイジング文献
+  license: public-domain
+- title: 相互扶助の原則
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

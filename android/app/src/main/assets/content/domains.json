@@ -78,5 +78,53 @@
     "icon": "groups",
     "color": "#6A1B9A",
     "entryCount": 12
+  },
+  {
+    "slug": "chemistry",
+    "title": "Chemistry & Laboratory",
+    "description": "Reactions, analysis, separation, safety",
+    "icon": "science",
+    "color": "#00838F",
+    "entryCount": 18
+  },
+  {
+    "slug": "biology",
+    "title": "Biology & Life Sciences",
+    "description": "Cells, genetics, ecology, medicine",
+    "icon": "biotech",
+    "color": "#558B2F",
+    "entryCount": 17
+  },
+  {
+    "slug": "silicon",
+    "title": "Silicon & Semiconductors",
+    "description": "Purification, wafers, fabrication, devices",
+    "icon": "memory",
+    "color": "#5E35B1",
+    "entryCount": 13
+  },
+  {
+    "slug": "ship",
+    "title": "Ship Design & Building",
+    "description": "Hulls, yards, propulsion, safety",
+    "icon": "sailing",
+    "color": "#00695C",
+    "entryCount": 18
+  },
+  {
+    "slug": "computers",
+    "title": "Computers & Electronics",
+    "description": "Circuits, software, systems, data",
+    "icon": "memory",
+    "color": "#1E88E5",
+    "entryCount": 18
+  },
+  {
+    "slug": "quantum",
+    "title": "Quantum Computing",
+    "description": "Qubits, control, error correction, algorithms",
+    "icon": "hub",
+    "color": "#D81B60",
+    "entryCount": 16
   }
 ]

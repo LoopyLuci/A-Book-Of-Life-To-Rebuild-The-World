@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA009J19T9WGRHKB092G/biology/animal-husbandry-breeding
+translation_of: pnk:01KDVDNA009J19T9WGRHKB092G/biology/animal-husbandry-breeding
+title: 畜産と育種システム
+domain: biology
+tags:
+- biology
+- livestock
+- breeding
+- husbandry
+- genetics
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+- 鋭利な器具による切創。鉗子を使用し、刃物は安全に廃棄すること。
+- 生物学的汚染。培養物は密閉し、ラベルを付けておくこと。
+- 染色剤や試薬への曝露。手袋を着用し、手を洗うこと。
+- 野生種や保護植物に関する地域の規則は引き続き適用される。
+limits:
+- 結果は地域の系統、気候、技術によって異なる。
+- 未検証の材料を食用、飼料用、治療用に使用してはならない。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: USDA 家畜ハンドブック
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

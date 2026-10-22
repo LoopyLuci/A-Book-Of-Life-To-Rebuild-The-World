@@ -1,0 +1,29 @@
+id: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+translation_of: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+title: 道路と排水
+domain: construction
+tags:
+- roads
+- drainage
+- infrastructure
+- earthworks
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 5-430 Roads and Airfields
+  license: public-domain
+- title: Public Works manual principles
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

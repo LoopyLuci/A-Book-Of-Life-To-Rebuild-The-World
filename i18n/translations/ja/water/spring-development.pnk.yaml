@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: 湧水の開発と保護
+domain: water
+tags:
+- mizu
+- yusui
+- gravity-feed
+- kensetsu
+- eisei
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+- 掘削中の溝・掘削穴の崩壊
+- 地表流出水や家畜による汚染
+- 蓋のない湧水槽での溺水
+- 下流の水利権の侵害
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Technical Note on Spring Protection
+  license: original
+- title: Oxfam Spring Protection Guidelines
+  license: original
+- title: US Army FM 21-10 Field Sanitation
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+title: コンポスト作り
+domain: agriculture
+tags: [compost, soil, waste, fertility, agriculture]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA コンポスト作りガイド
+    license: public-domain
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ja
+media: []

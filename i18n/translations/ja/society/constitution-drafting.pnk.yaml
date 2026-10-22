@@ -1,0 +1,29 @@
+id: pnk:01M52TVK0X3KV1MG5AVK0VQMS6/society/constitution-drafting
+translation_of: pnk:01M52TVK0X3KV1MG5AVK0VQMS6/society/constitution-drafting
+title: 憲法起草
+domain: society
+tags:
+- kenpo
+- governance
+- law
+- society
+difficulty: journeyman
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: パブリックドメインの憲法文書
+  license: public-domain
+- title: 民主的統治の原則
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

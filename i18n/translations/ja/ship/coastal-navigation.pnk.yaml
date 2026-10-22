@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: 沿岸航法とパイロッティング
+domain: ship
+tags:
+- ship
+- navigation
+- piloting
+- coast
+- bearings
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 高所および開水面上での作業です。墜落防止措置を用いてください。
+- 火気作業、溶接ヒューム、火災監視に注意し、高温作業区域を管理してください。
+- 建造中は閉鎖空間および重量物の吊り上げに伴う危険があります。
+- 船級規則および旗国の規則が適用されます。安全システムを独自に即興で作ってはなりません。
+limits:
+- 寸法は一般的な鋼製船体と通常の積載を前提としています。
+- 法定検査および船級検査が引き続き権威を持ちます。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Coast Guard 航法マニュアル
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

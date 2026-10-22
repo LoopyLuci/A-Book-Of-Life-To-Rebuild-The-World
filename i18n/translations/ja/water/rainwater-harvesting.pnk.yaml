@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: 雨水利用（レインウォーターハーベスティング）
+domain: water
+tags:
+- mizu
+- amamizu
+- chosui
+- yane-koji
+- eisei
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- 屋根から洗い流される病原体と重金属
+- 開放タンクでの蚊の発生
+- 大型の開放貯水槽での溺水または転落
+- 満載時のタンクまたは架台の崩壊
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO 飲料水水質ガイドライン
+  license: original
+- title: テキサス雨水利用マニュアル
+  license: original
+- title: 米国EPA 雨水利用および municipal separate storm sewer systems に関するガイダンス
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

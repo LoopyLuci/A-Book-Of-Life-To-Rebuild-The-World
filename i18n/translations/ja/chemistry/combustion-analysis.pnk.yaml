@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00TT91Q6AAJC3Q8DME/chemistry/combustion-analysis
+translation_of: pnk:01KDVDNA00TT91Q6AAJC3Q8DME/chemistry/combustion-analysis
+title: 燃焼分析と元素分析
+domain: chemistry
+tags:
+- chemistry
+- analysis
+- combustion
+- carbon
+- nitrogen
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+- 化学火傷や飛散に注意。飛沫防止ゴーグルと手袋を着用すること。
+- 煙やガスの吸入に注意。換気された場所またはドラフトチャンバー内で作業すること。
+- 火災と高熱に注意。可燃物を高温作業から遠ざけること。
+- 試薬廃液は中和し、別々に回収しなければならない。
+limits:
+- 数値は実験室グレードの純度と校正済みガラス器具を前提としている。
+- 管理された実験室プロトコルの代わりにはならない。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Introduction to Chemistry
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

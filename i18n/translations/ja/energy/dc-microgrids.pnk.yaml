@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: DC マイクログリッド
+domain: energy
+tags:
+- electricity
+- solar
+- batteries
+- wiring
+- microgrid
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- 感電およびアークフラッシュ
+- 蓄電池の短絡と水素の放出
+- 太さ不足または AC 定格の保護機器による火災
+- パネル設置中の転落
+limits:
+- DC 回路に AC 定格の遮断器やヒューズを使用しないこと
+- 承認された切替装置なしに系統や発電機へ接続しないこと
+- 蓄電池の使用年数、容量、種類（化学系）を混在させないこと
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NEC Article 712 DC Microgrids
+  license: original
+- title: IEC 62548 Photovoltaic Array Design
+  license: original
+- title: Sandia National Laboratories DC Microgrid Guidance
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+title: 鍛冶と鉄工
+domain: materials
+tags: [blacksmithing, forge, iron, steel, tools, materials]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 米海軍鍛冶マニュアル
+    license: original
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ja
+media: []

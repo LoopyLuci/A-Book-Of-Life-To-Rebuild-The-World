@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00PJ8S5BWXETPTW3D1/quantum/circuit-construction
+translation_of: pnk:01KDVDNA00PJ8S5BWXETPTW3D1/quantum/circuit-construction
+title: 量子回路の構築
+domain: quantum
+tags:
+- quantum
+- circuits
+- compilation
+- qiskit
+- design
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- 極低温の液体は凍傷を起こし、室内では窒息の原因となる。
+- マイクロ波および高周波放射。電磁場の範囲を限定すること。
+- レーザー被ばく。ビーム経路を決して直視しないこと。
+- 危険な高電圧と磁石のクエンチ。施設の規則に従うこと。
+limits:
+- 示した数値は、現行の実験室規模のデバイスのみを対象とする。
+- ノイズ、ドリフト、制御の限界は設置環境ごとに異なる。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Quantum Initiative Reference
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

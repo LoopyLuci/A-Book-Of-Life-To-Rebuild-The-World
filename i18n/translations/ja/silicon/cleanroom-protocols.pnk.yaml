@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: クリーンルーム運用規程と汚染管理
+domain: silicon
+tags:
+- silicon
+- cleanroom
+- contamination
+- protocol
+- safety
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 極端な高温および極低温液体。訓練を受けた者のみが取り扱うこと。
+- 有毒で腐食性のプロセスガス。警報と換気を確認すること。
+- 電離放射線および紫外線への曝露。遮蔽された装置を使うこと。
+- クリーンルームの運用規程は安全管理であり、任意の慣行ではない。
+limits:
+- 設備投資を要する装置と、専門的なプロセス管理が必要である。
+- 記載した歩留まりとコストは、成熟した量産での典型値である。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: SEMI International Standards
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+translation_of: pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+title: 穀物の貯蔵と害虫防除
+domain: agriculture
+tags:
+- agriculture
+- grain
+- storage
+- pests
+- food-security
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- 湿った穀物によるカビとアフラトキシン
+- 粉塵爆発と燻蒸剤による中毒
+- 貯蔵容器内の崩落または穀物への埋没
+- ネズミなどのげっ歯類、昆虫、鳥類
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FAO 穀物貯蔵技術
+  license: original
+- title: USDA 貯蔵穀物管理
+  license: original
+- title: WHO マイコトキシン管理ガイダンス
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

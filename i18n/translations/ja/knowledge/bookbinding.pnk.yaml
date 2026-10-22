@@ -1,0 +1,36 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: 製本と修復
+domain: knowledge
+tags:
+- knowledge
+- books
+- repair
+- craft
+- library
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- ナイフや錐による切創・刺創
+- 接着剤の蒸気と皮膚刺激
+- 反復動作による負傷
+- 本を湿った状態で保管した場合のカビ
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Bookbinding and Conservation Manual
+  license: original
+- title: Library of Congress Book Repair Guidelines
+  license: original
+- title: Canadian Conservation Institute Bookbinding Notes
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

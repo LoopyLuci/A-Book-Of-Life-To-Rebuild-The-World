@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+translation_of: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+title: クロマトグラフィー分離
+domain: chemistry
+tags:
+- chemistry
+- chromatography
+- separation
+- tlc
+- hplc
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+- 化学火傷や飛沫の危険があります。防護ゴーグルと手袋を着用してください。
+- 蒸気の吸入の危険があります。換気された場所またはヒュームフード内で作業してください。
+- 火災と熱の危険があります。可燃物を高温作業から遠ざけてください。
+- 試薬廃液は中和し、別々に回収する必要があります。
+limits:
+- 数値は、実験室グレードの純度と校正済みのガラス器具を前提としています。
+- 管理された実験室プロトコルの代わりにはなりません。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: LibreTexts 分析化学
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

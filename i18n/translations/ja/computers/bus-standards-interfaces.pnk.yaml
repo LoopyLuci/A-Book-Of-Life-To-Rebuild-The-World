@@ -1,0 +1,35 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: バス規格と信号インターフェース
+domain: computers
+tags:
+- computers
+- bus
+- interface
+- uart
+- i2c
+- spi
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- 商用電源電圧と蓄積された電荷は致命的になり得ます。作業前に必ず絶縁・遮断してください。
+- はんだの煙、フラックス、鉛に注意し、換気して作業後は手を洗ってください。
+- 静電気放電は部品を損傷するおそれがあります。接地した作業台を使用してください。
+- データの消失は気付かれずに起こります。ファームウェアやディスクの作業の前に必ずバックアップを取ってください。
+limits:
+- 例は主流のオープンなツールチェーンを前提としています。
+- 要約よりもメーカーのデータシートを優先してください。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NXP and Analog Devices インターフェースノート
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

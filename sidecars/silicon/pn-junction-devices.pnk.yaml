@@ -1,0 +1,44 @@
+id: pnk:01KDVDNA00RKXNESS3CNEF9BSE/silicon/pn-junction-devices
+title: P-N Junctions, Diodes and Transistors
+domain: silicon
+tags:
+- silicon
+- p-n-junction
+- diode
+- transistor
+- electronics
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Extreme heat and cryogenic liquids; use trained handling only.
+- Toxic and corrosive process gases; verify alarms and ventilation.
+- Ionising and ultraviolet exposure; use shielded equipment.
+- Cleanroom protocols are safety controls, not optional practice.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Requires capital equipment and specialist process control.
+- Yields and costs described are typical of mature production.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Semiconductor Reference
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: en
+media: []

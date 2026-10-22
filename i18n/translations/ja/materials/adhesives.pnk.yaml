@@ -1,0 +1,39 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: 接着剤
+domain: materials
+tags:
+- adhesives
+- starch
+- hide-glue
+- casein
+- woodworking
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- 熱い接着剤や湯煎鍋による火傷
+- 石灰やホウ砂による腐食性の薬傷
+- デンプン糊や膠でのカビの発生
+- 荷重下で接合が破断する弱い接合
+limits:
+- デンプン糊と膠は耐水性がない
+- カゼインは耐水性はあるが、安全に関わる荷重を受ける構造用接着剤ではない
+- 正体の分からない接着剤を、食品や飲料水に触れる面に使用しないこと
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Smithsonian Museum Conservation Institute Adhesives
+  license: original
+- title: Canadian Conservation Institute Adhesives and Consolidants
+  license: original
+- title: Horie, Materials for Conservation
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

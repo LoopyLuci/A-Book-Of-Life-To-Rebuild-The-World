@@ -1,0 +1,34 @@
+id: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+translation_of: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+title: アセンブリ言語とマシンモデル
+domain: computers
+tags:
+- computers
+- assembly
+- isa
+- cpu
+- machine-code
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+- 商用電源の電圧と蓄積された電荷は致命的になり得ます。作業前に必ず絶縁・遮断してください。
+- はんだの煙、フラックス、鉛に注意してください。換気し、手を洗ってください。
+- 静電気放電は部品を損傷することがあります。接地された作業台を使ってください。
+- データの消失は気付かないうちに起こります。ファームウェアやディスクの作業の前にバックアップを取ってください。
+limits:
+- 例は主流のオープンなツールチェーンを前提としています。
+- どのような要約よりも、製造元のデータシートに従ってください。
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Arm Cortex-M Documentation
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ja
+media: []

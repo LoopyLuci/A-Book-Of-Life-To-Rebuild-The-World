@@ -1,0 +1,37 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: 寒冷曝露と低体温症
+domain: survival
+tags:
+- survival
+- cold
+- hypothermia
+- kyujo-kyusyu
+- shelter
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+- 低体温症と心停止
+- 凍傷と永続的な組織の喪失
+- 錯乱の悪化による自力救助の不能
+- 再加温によるやけど、またはアルコールによる血管拡張
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: CDC Preventing Hypothermia
+  license: original
+- title: Wilderness Medical Society Practice Guidelines
+  license: original
+- title: US Army FM 21-10 Cold Weather Casualty Care
+  license: original
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- temperate
+- arctic
+language: ja
+media: []
