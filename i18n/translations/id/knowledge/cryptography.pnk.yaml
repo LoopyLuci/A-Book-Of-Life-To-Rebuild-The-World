@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+translation_of: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+title: Kriptografi
+domain: knowledge
+tags: [kriptografi, keamanan, komunikasi, pengetahuan]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pengantar kriptografi domain publik
+  - title: Pedoman kriptografi NIST
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

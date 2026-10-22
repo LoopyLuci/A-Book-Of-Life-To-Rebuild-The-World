@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+translation_of: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+title: Penanganan dan Penataan Muatan
+domain: ship
+tags: [kapal, muatan, penataan, pengikatan, berat]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Bekerja pada ketinggian dan di atas air terbuka; pakai pelindung jatuh.
+  - Pekerjaan panas, asap las, dan pemantau api; kendalikan zona panas.
+  - Bahaya ruang terbatas dan penanganan beban berat saat pembangunan.
+  - Aturan kelas dan bendera berlaku; jangan pernah merancang sistem keselamatan sendiri.
+limits:
+  - Ukuran diasumsikan untuk badan kapal baja konvensional dan pemuatan normal.
+  - Survei dan klasifikasi resmi tetap menjadi rujukan.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manual Pengamanan Muatan IMO
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

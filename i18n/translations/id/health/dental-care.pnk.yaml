@@ -1,0 +1,22 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: Perawatan Gigi
+domain: health
+tags: [perawatan-gigi, gigi, pencegahan, kesehatan]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman Kesehatan Mulut WHO
+  - title: Manual gigi domain publik
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

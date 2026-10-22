@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA001EX61E3PKVV83CYF/quantum/cryogenics-dilution
+translation_of: pnk:01KDVDNA001EX61E3PKVV83CYF/quantum/cryogenics-dilution
+title: Kriogenik dan Refrigerasi Dilusi
+domain: quantum
+tags: [kuantum, kriogenik, dilusi, refrigeran, helium]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+  - Cairan kriogenik menyebabkan luka bakar dingin dan kekurangan oksigen di dalam ruangan.
+  - Radiasi gelombang mikro dan frekuensi tinggi; batasi medan radiasi.
+  - Paparan laser; jangan pernah melihat ke arah berkas cahaya.
+  - Tegangan berbahaya dan quench magnet; ikuti aturan fasilitas.
+limits:
+  - Angka-angka ini hanya menggambarkan perangkat skala laboratorium saat ini.
+  - Derau, drift, dan batas kendali berbeda-beda antar instalasi.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman Kriogenik NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

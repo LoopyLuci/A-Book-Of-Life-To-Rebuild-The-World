@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+title: Digester Biogas
+domain: energy
+tags: [biogas, metana, pencernaan, pupuk, energi]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manual Biogas FAO
+  - title: Ringkasan Biogas GTZ
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: id
+media: []

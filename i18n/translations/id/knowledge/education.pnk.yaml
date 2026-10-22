@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: Pendidikan
+domain: knowledge
+tags: [pendidikan, mengajar, literasi, pengetahuan]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Teks pedagogi domain publik
+  - title: Pedoman pendidikan UNESCO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

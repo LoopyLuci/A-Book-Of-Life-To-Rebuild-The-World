@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00PJ8S5BWXETPTW3D1/quantum/circuit-construction
+translation_of: pnk:01KDVDNA00PJ8S5BWXETPTW3D1/quantum/circuit-construction
+title: Penyusunan Sirkuit Kuantum
+domain: quantum
+tags: [kuantum, sirkuit, kompilasi, qiskit, desain]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Cairan kriogenik menyebabkan luka bakar dingin dan kekurangan oksigen di dalam ruangan.
+  - Radiasi gelombang mikro dan frekuensi tinggi; batasi medan radiasi.
+  - Paparan laser; jangan pernah melihat ke arah berkas cahaya.
+  - Tegangan berbahaya dan quench magnet; ikuti aturan fasilitas.
+limits:
+  - Angka-angka ini hanya menggambarkan perangkat skala laboratorium saat ini.
+  - Derau, drift, dan batas kendali berbeda-beda antar instalasi.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Referensi Inisiatif Kuantum NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

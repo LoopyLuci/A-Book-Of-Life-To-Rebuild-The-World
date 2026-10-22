@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Kakus & Sanitasi
+domain: construction
+tags: [sanitasi, kakus, higiene, limbah]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman WHO tentang Sanitasi dan Kesehatan
+  - title: Sanitasi Lapangan US Army FM 21-10
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

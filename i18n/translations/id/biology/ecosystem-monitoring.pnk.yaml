@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+translation_of: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+title: Pemantauan Ekosistem dan Keanekaragaman Hayati
+domain: biology
+tags: [biologi, ekologi, pemantauan, keanekaragaman-hayati, survei]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Benda tajam dan luka iris; gunakan pincet dan buang bilah dengan aman.
+  - Kontaminasi biologis; tutup dan beri label pada kultur.
+  - Paparan pewarna dan pereaksi; pakai sarung tangan dan cucilah tangan.
+  - Aturan setempat tentang spesies liar dan tumbuhan terlindungi tetap berlaku.
+limits:
+  - Hasil bervariasi menurut strain lokal, iklim, dan teknik.
+  - Jangan pernah memakai bahan yang belum diverifikasi untuk pangan, pakan, atau pengobatan.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Indikator Keanekaragaman Hayati UNEP
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

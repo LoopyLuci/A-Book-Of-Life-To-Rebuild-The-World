@@ -1,0 +1,22 @@
+id: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+translation_of: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+title: Persalinan
+domain: health
+tags: [persalinan, obstetri, maternal, kesehatan]
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Mengelola Komplikasi pada Kehamilan dan Persalinan
+  - title: Teks kebidanan domain publik
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

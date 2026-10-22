@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+title: Shelter Darurat
+domain: survival
+tags: [shelter, paparan, hipotermia, bushcraft, bertahan-hidup]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manual Bertahan Hidup US Army FM 21-76
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, arid, tropical, arctic]
+language: id
+media: []

@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: Microgrid DC
+domain: energy
+tags: [listrik, surya, baterai, kabel, microgrid]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Sengatan listrik dan busur api
+  - Hubung singkat baterai dan pelepasan hidrogen
+  - Kebakaran akibat proteksi yang keliru ukuran atau berRating AC
+  - Jatuh saat memasang panel
+limits:
+  - Jangan memakai MCB atau sekring berRating AC pada rangkaian DC
+  - Jangan menyambung ke jaringan listrik atau generator tanpa peralatan transfer yang disetujui
+  - Jangan mencampur umur, kapasitas, atau kimia baterai
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NEC Pasal 712 Microgrid DC
+  - title: IEC 62548 Desain Susunan Fotovoltaik
+  - title: Pedoman Microgrid DC Laboratorium Nasional Sandia
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

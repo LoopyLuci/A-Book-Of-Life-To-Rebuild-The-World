@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+translation_of: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+title: Analisis Rangkaian AC dan Impedansi
+domain: computers
+tags: [komputer, elektronik, ac, impedansi, filter]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Tegangan listrik PLN dan muatan tersimpan dapat membunuh; putuskan sebelum bekerja.
+  - Uap solder, flux, dan timbal; ventilasi dan cucilah tangan.
+  - Pelepasan statis dapat merusak komponen; gunakan meja yang dibumikan.
+  - Kehilangan data terjadi tanpa suara; buat cadangan sebelum mengerjakan firmware atau disk.
+limits:
+  - Contoh mengasumsikan toolchain sumber terbuka yang umum.
+  - Ikuti datasheet produsen daripada ringkasan apa pun.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Fisika Universitas OpenStax
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

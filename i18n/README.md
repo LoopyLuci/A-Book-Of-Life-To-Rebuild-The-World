@@ -28,6 +28,7 @@ translation framework that scales to more.
 | `ko` | Korean | 25% |
 | `vi` | Vietnamese | 30% |
 | `tr` | Turkish | 30% |
+| `id` | Indonesian | 30% |
 
 ## Structure
 

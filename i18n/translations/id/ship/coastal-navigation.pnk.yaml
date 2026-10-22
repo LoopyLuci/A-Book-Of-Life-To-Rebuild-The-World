@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: Navigasi Pesisir dan Kemudi
+domain: ship
+tags: [kapal, navigasi, kemudi, pesisir, sudut]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Bekerja pada ketinggian dan di atas air terbuka; pakai pelindung jatuh.
+  - Pekerjaan panas, asap las, dan pemantau api; kendalikan zona panas.
+  - Bahaya ruang terbatas dan penanganan beban berat saat pembangunan.
+  - Aturan kelas dan bendera berlaku; jangan pernah merancang sistem keselamatan sendiri.
+limits:
+  - Ukuran diasumsikan untuk badan kapal baja konvensional dan pemuatan normal.
+  - Survei dan klasifikasi resmi tetap menjadi rujukan.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manual Navigasi US Coast Guard
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

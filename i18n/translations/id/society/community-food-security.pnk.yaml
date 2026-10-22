@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Perencanaan Ketahanan Pangan Masyarakat
+domain: society
+tags: [masyarakat, ketahanan-pangan, perencanaan, ketahanan, tata-kelola]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+  - Akses yang tidak setara dan penguasaan oleh elite
+  - Kerusakan karena penyimpanan yang buruk
+  - Konflik atas distribusi
+  - Ketergantungan pada satu jenis tanaman atau pemasok
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman Penilaian Ketahanan Pangan FAO
+  - title: Handbook Standar Ketahanan Pangan Sphere
+  - title: Gizi dalam Kondisi Darurat WHO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

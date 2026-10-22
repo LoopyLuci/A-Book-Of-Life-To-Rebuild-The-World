@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+translation_of: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+title: Prinsip Desain Badan Kapal
+domain: ship
+tags: [kapal, badan-kapal, desain, hidrodinamika, arsitektur-naval]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Bekerja pada ketinggian dan di atas air terbuka; pakai pelindung jatuh.
+  - Pekerjaan panas, asap las, dan pemantau api; kendalikan zona panas.
+  - Bahaya ruang terbatas dan penanganan beban berat saat pembangunan.
+  - Aturan kelas dan bendera berlaku; jangan pernah merancang sistem keselamatan sendiri.
+limits:
+  - Ukuran diasumsikan untuk badan kapal baja konvensional dan pemuatan normal.
+  - Survei dan klasifikasi resmi tetap menjadi rujukan.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Prinsip Desain Badan Kapal US Navy
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

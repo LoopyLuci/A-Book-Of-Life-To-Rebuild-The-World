@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+translation_of: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+title: Kesetimbangan Asam-Base dan Larutan Penyangga
+domain: chemistry
+tags: [kimia, asam, basa, buffer, ph, titrasi]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Luka bakar dan cipratan bahan kimia; pakai kacamata semprot dan sarung tangan.
+  - Menghirup uap; bekerja di ruang berventilasi atau di fume hood.
+  - Api dan panas; jauhkan bahan mudah terbakar dari pekerjaan panas.
+  - Limbah pereaksi harus dinetralkan dan dikumpulkan terpisah.
+limits:
+  - Angka-angka ini mengasumsikan kemurnian kelas laboratorium dan peralatan kaca yang terkalibrasi.
+  - Tidak menggantikan prosedur laboratorium yang terkendali.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pengantar Kimia
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

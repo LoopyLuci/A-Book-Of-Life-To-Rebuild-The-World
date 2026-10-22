@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Penerangan yang Efisien
+domain: energy
+tags: [penerangan, led, efisiensi, cahaya-natural, udara-dalam-ruangan]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Karbon monoksida dan partikel dari lampu bahan bakar
+  - Kebakaran dari lilin dan fitting yang terlalu panas
+  - Sengatan listrik dari kabel yang basah atau rusak
+  - Jatuh dari tangga
+limits:
+  - Jangan memakai lampu bahan bakar tanpa ventilasi di dalam ruangan dalam waktu lama
+  - Jangan membebani kabel sambungan atau menyambung stopkontak secara berantai
+  - Keluaran lumen menurun akibat debu, panas, dan kualitas driver yang buruk
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Penerangan dan Efisiensi Energi IEA
+  - title: Program Pencahayaan Solid-State US DOE
+  - title: Pedoman Polusi Udara Rumah Tangga WHO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

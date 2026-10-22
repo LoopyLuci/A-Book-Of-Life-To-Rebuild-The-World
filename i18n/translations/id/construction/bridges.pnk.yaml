@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+translation_of: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+title: Jembatan
+domain: construction
+tags: [jembatan, struktur, transportasi, konstruksi]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army FM 5-430 Roads and Airfields
+  - title: Teks Rekayasa Jembatan Bersejarah
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

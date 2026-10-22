@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00XJ7X5GVWQ76CF3ZP/silicon/etching-patterning
+translation_of: pnk:01KDVDNA00XJ7X5GVWQ76CF3ZP/silicon/etching-patterning
+title: Etching Basah dan Kering
+domain: silicon
+tags: [silikon, etching, pola, plasma, selektivitas]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+  - Panas ekstrem dan cairan kriogenik; hanya ditangani oleh orang yang terlatih.
+  - Gas proses beracun dan korosif; pastikan alarm dan ventilasi berfungsi.
+  - Paparan radiasi pengion dan ultraviolet; gunakan peralatan berpelindung.
+  - Protokol cleanroom adalah pengendalian keselamatan, bukan praktik opsional.
+limits:
+  - Memerlukan peralatan modal dan kendali proses khusus.
+  - Rendemen dan biaya yang dijelaskan adalah yang lazim pada produksi matang.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Referensi Semikonduktor NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

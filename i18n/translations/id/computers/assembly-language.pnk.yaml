@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+translation_of: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+title: Bahasa Assembly dan Model Mesin
+domain: computers
+tags: [komputer, assembly, isa, cpu, kode-mesin]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+  - Tegangan listrik PLN dan muatan tersimpan dapat membunuh; putuskan sebelum bekerja.
+  - Uap solder, flux, dan timbal; ventilasi dan cucilah tangan.
+  - Pelepasan statis dapat merusak komponen; gunakan meja yang dibumikan.
+  - Kehilangan data terjadi tanpa suara; buat cadangan sebelum mengerjakan firmware atau disk.
+limits:
+  - Contoh mengasumsikan toolchain sumber terbuka yang umum.
+  - Ikuti datasheet produsen daripada ringkasan apa pun.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Dokumentasi Arm Cortex-M
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Toilet Kompos
+domain: construction
+tags: [sanitasi, kompos, toilet, air, kesehatan-masyarakat]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Paparan patogen dari limbah segar dan cairan infiltrat
+  - Pencemaran air tanah
+  - Metana dan amonia di dalam bak
+  - Jatuh dan luka selama pembangunan
+limits:
+  - Tidak cocok untuk lahan dengan air tanah dangkal atau sering banjir
+  - Jangan Gives freshly or partly cured material to crops that are eaten raw
+  - Jangan memasuki bak; ventilasi dan gunakan alat dari luar
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman WHO tentang Sanitasi dan Kesehatan
+  - title: Pedoman Toilet Kompos EcoSanRes
+  - title: Toilet Kompos US EPA
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical, arid, universal]
+language: id
+media: []

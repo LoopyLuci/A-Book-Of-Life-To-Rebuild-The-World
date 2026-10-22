@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Standar Bus dan Antarmuka Sinyal
+domain: computers
+tags: [komputer, bus, antarmuka, uart, i2c, spi]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Tegangan listrik PLN dan muatan tersimpan dapat membunuh; putuskan sebelum bekerja.
+  - Uap solder, flux, dan timbal; ventilasi dan cucilah tangan.
+  - Pelepasan statis dapat merusak komponen; gunakan meja yang dibumikan.
+  - Kehilangan data terjadi tanpa suara; buat cadangan sebelum mengerjakan firmware atau disk.
+limits:
+  - Contoh mengasumsikan toolchain sumber terbuka yang umum.
+  - Ikuti datasheet produsen daripada ringkasan apa pun.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Catatan Antarmuka NXP dan Analog Devices
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

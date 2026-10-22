@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Pengembangan dan Perlindungan Mata Air
+domain: water
+tags: [air, mata-air, aliran-gravitasi, konstruksi, sanitasi]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Lubang galian runtuh saat penggalian
+  - Kontaminasi dari air limpasan permukaan dan hewan
+  - Tenggelam di dalam kotak yang tidak tertutup
+  - Kerusakan hak air pengguna di hilir
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Catatan Teknis WHO tentang Perlindungan Mata Air
+  - title: Pedoman Perlindungan Mata Air Oxfam
+  - title: Sanitasi Lapangan US Army FM 21-10
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

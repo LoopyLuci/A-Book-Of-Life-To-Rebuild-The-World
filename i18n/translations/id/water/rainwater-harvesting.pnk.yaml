@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Pemanenan Air Hujan
+domain: water
+tags: [air, air-hujan, penyimpanan, atap, sanitasi]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Patogen dan logam berat yang terbawa air limpasan atap
+  - Perkembangbiakan nyamuk pada tangki terbuka
+  - Tenggelam atau jatuh ke dalam tandon terbuka yang besar
+  - Runtuhnya tangki atau dudukan saat penuh
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman WHO tentang Mutu Air Minum
+  - title: Manual Texas tentang Pemanenan Air Hujan
+  - title: Pedoman Pemanenan Air Hujan US EPA
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

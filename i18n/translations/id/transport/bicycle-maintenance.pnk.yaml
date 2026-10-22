@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Perawatan Sepeda dan Pembawaan Beban
+domain: transport
+tags: [transportasi, sepeda, perbaikan, logistik, perkakas]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Rem atau ban gagal di jalan raya
+  - Beban bergeser dan kendali hilang
+  - Cedera pada tangan dan rantai
+  - Kelelahan dan penyakit panas
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Panduan Perawatan Sepeda Desa
+  - title: Standar Perbaikan Asosiasi Pengusaha dan Industri Sepeda
+  - title: Pedoman Keselamatan Bersepeda WHO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

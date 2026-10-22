@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+translation_of: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+title: Pemisahan Kromatografi
+domain: chemistry
+tags: [kimia, kromatografi, pemisahan, tlc, hplc]
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Luka bakar dan cipratan bahan kimia; pakai kacamata semprot dan sarung tangan.
+  - Menghirup uap; bekerja di ruang berventilasi atau di fume hood.
+  - Api dan panas; jauhkan bahan mudah terbakar dari pekerjaan panas.
+  - Limbah pereaksi harus dinetralkan dan dikumpulkan terpisah.
+limits:
+  - Angka-angka ini mengasumsikan kemurnian kelas laboratorium dan peralatan kaca yang terkalibrasi.
+  - Tidak menggantikan prosedur laboratorium yang terkendali.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Kimia Analitik
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

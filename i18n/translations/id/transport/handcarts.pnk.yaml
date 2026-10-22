@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: Gerobak Tangan dan Gerobak Dua Roda
+domain: transport
+tags: [transportasi, gerobak, kerja-kayu, logistik, perdagangan]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Gerobak terguling di tanjakan atau jalur yang miring
+  - Rem atau hitch yang gagal
+  - Cedera otot karena mendorong beban berlebih
+  - Tabrakan dengan kendaraan lain
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Handbook Teknologi Desa Practical Action
+  - title: Gerobak Peternakan Sederhana FAO
+  - title: Panduan transportasi Appropriate Technology
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Penggunaan Ulang Air Greywater
+domain: water
+tags: [air, greywater, irigasi, sanitasi, pertanian]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Patogen dari air laundry, mandi, dan cuci tangan
+  - Penumpukan garam dan boron di dalam tanah
+  - Pencemaran air tanah
+  - Perkembangbiakan nyamuk pada genangan air
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pedoman WHO untuk Penggunaan Aman Air Limbah, Ekskreta, dan Air Greywater
+  - title: Penggunaan Air Luar Ruangan WaterSense US EPA
+  - title: Penggunaan Ulang Air Limbah dalam Pertanian FAO
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arid, tropical]
+language: id
+media: []

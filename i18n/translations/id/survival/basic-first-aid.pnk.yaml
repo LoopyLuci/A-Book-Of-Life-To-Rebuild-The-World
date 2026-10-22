@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+title: Pertolongan Pertama Dasar
+domain: survival
+tags: [pertolongan-darurat, cpr, perdarahan, patah-tulang, luka-bakar, bertahan-hidup]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Perawatan Darurat Dasar WHO
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

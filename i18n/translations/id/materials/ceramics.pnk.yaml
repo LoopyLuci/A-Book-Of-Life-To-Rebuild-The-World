@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Keramik
+domain: materials
+tags: [keramik, tanah-liat, kiln, gerabah, glasir]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Debu silika kristalin dari tanah liat dan glasir
+  - Luka bakar dan kebakaran dari kiln
+  - Karbon monoksida dari kiln bahan bakar
+  - Keracunan timbal atau logam berat dari glasir yang tidak aman
+limits:
+  - Jangan pernah membakar benda yang basah atau tidak rata
+  - Jangan memakai glasir timbal pada permukaan kontak pangan
+  - Uji penyusutan tanah liat dan kesesuaian glasir sebelum membuat satu batch penuh
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Kamus Bahan dan Teknik Sang Pengrajin
+  - title: Pedoman Pajanan Silika Kristal OSHA
+  - title: Panduan Pembakaran dan Pengglasiran American Ceramic Society
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

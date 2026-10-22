@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Penjilidan dan Perbaikan Buku
+domain: knowledge
+tags: [pengetahuan, buku, perbaikan, kerajinan, perpustakaan]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Luka tusuk dari pisau dan jarum berlubang
+  - Uap lem dan iritasi kulit
+  - Cedera akibat gerakan berulang
+  - Jamur bila buku disimpan lembap
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manual Penjilidan dan Konservasi
+  - title: Pedoman Perbaikan Buku Library of Congress
+  - title: Catatan Penjilidan Canadian Conservation Institute
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

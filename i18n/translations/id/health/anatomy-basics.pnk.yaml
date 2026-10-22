@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Dasar-Dasar Anatomi
+domain: health
+tags: [anatomi, fisiologi, kesehatan, pendidikan]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Gray's Anatomy
+  - title: Perawatan Darurat Dasar WHO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+translation_of: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+title: Alur Desain Sirkuit Terintegrasi
+domain: silicon
+tags: [silikon, desain-ic, eda, verifikasi, tata-letak]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+  - Panas ekstrem dan cairan kriogenik; hanya ditangani oleh orang yang terlatih.
+  - Gas proses beracun dan korosif; pastikan alarm dan ventilasi berfungsi.
+  - Paparan radiasi pengion dan ultraviolet; gunakan peralatan berpelindung.
+  - Protokol cleanroom adalah pengendalian keselamatan, bukan praktik opsional.
+limits:
+  - Memerlukan peralatan modal dan kendali proses khusus.
+  - Rendemen dan biaya yang dijelaskan adalah yang lazim pada produksi matang.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Referensi Semikonduktor NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

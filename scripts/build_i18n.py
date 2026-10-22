@@ -17,7 +17,7 @@ TRANSLATIONS_DIR = I18N_DIR / "translations"
 STRINGS_DIR = I18N_DIR / "strings"
 BUILD_DIR = ROOT / "build" / "i18n"
 
-LANGS = ["es", "fr", "de", "pt", "hi", "ar", "sw", "zh", "nl", "ru", "it", "ja", "ko", "vi", "tr"]
+LANGS = ["es", "fr", "de", "pt", "hi", "ar", "sw", "zh", "nl", "ru", "it", "ja", "ko", "vi", "tr", "id"]
 
 
 def build() -> int:

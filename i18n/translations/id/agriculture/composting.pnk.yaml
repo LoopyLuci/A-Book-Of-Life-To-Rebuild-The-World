@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+title: Kompos
+domain: agriculture
+tags: [kompos, tanah, limbah, kesuburan, pertanian]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Panduan Kompos USDA
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

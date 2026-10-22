@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+translation_of: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+title: Penyelesaian Konflik
+domain: society
+tags: [konflik, mediasi, masyarakat, damai]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Pengantar mediasi domain publik
+  - title: Prinsip keadilan restoratif
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Katalisis dan Kinetika Reaksi
+domain: chemistry
+tags: [kimia, katalisis, kinetika, laju-reaksi, kesetimbangan]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Luka bakar dan cipratan bahan kimia; pakai kacamata semprot dan sarung tangan.
+  - Menghirup uap; bekerja di ruang berventilasi atau di fume hood.
+  - Api dan panas; jauhkan bahan mudah terbakar dari pekerjaan panas.
+  - Limbah pereaksi harus dinetralkan dan dikumpulkan terpisah.
+limits:
+  - Angka-angka ini mengasumsikan kemurnian kelas laboratorium dan peralatan kaca yang terkalibrasi.
+  - Tidak menggantikan prosedur laboratorium yang terkendali.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Kimia Fisik
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+translation_of: pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+title: Penataan Perpustakaan
+domain: knowledge
+tags: [perpustakaan, katalogisasi, pengetahuan, arsip]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Teks ilmu perpustakaan domain publik
+  - title: Pedoman arsip UNESCO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

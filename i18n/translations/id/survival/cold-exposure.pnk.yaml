@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Paparan Dingin dan Hipotermia
+domain: survival
+tags: [bertahan-hidup, dingin, hipotermia, pertolongan-darurat, shelter]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - Hipotermia dan henti jantung
+  - Radang dingin dan kehilangan jaringan permanen
+  - Kebingungan yang memburuk sehingga korban tidak dapat menolong dirinya sendiri
+  - Luka bakar akibat menghangatkan kembali atau pelebaran pembuluh darah akibat alkohol
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Mencegah Hipotermia CDC
+  - title: Pedoman Praktik Wilderness Medical Society
+  - title: US Army FM 21-10 Perawatan Casualti Cuaca Dingin
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arctic]
+language: id
+media: []

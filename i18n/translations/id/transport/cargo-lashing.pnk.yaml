@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Pengikatan Muatan
+domain: transport
+tags: [transportasi, muatan, simpul, keselamatan, logistik]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Muatan bergeser atau jatuh
+  - Cedera akibat remuk saat pengencangan
+  - Kendaraan atau gerobak terguling
+  - Tali pengikat rusak dan gagal menahan beban
+limits:
+  - Jangan pernah melebihi batas beban kerja komponen yang paling lemah
+  - Jangan pasangkan tali pada pipa bahan bakar, panel bodi, atau tepi tajam
+  - Jangan membawa penumpang pada muatan yang tidak terkunci
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Standar Pengamanan Muatan Amerika Utara FHWA
+  - title: Data Referensi Transportasi US Army FM 55-15
+  - title: Keselamatan dan Kesehatan di Bursa Kerja ILO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

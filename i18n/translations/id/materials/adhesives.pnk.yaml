@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Perekat
+domain: materials
+tags: [perekat, pati, perekat-kulit, kasein, kerja-kayu]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Luka bakar dari lem panas dan panci air ganda
+  - Luka bakar kaustik dari kapur atau boraks
+  - Pertumbuhan jamur pada perekat pati dan kulit
+  - Sambungan lemah yang runtuh di bawah beban
+limits:
+  - Perekat pati dan perekat kulit tidak tahan air
+  - Kasein tahan air tetapi bukan perekat struktural untuk beban kritis
+  - Jangan memakai perekat yang tidak dikenal pada permukaan kontak pangan atau air minum
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Perekat Smithsonian Museum Conservation Institute
+  - title: Perekat dan Penguat Canadian Conservation Institute
+  - title: Horie, Materials for Conservation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

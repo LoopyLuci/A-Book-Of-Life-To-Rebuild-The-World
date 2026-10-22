@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: Pengorganisasian Masyarakat
+domain: society
+tags: [pengorganisasian, masyarakat, tata-kelola, sosial]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Teks pengorganisasian masyarakat domain publik
+  - title: Prinsip gotong royong
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

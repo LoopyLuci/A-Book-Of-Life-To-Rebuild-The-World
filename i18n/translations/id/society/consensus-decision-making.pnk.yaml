@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+translation_of: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: Pengambilan Keputusan dengan Konsensus
+domain: society
+tags: [konsensus, tata-kelola, rapat, masyarakat]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Panduan konsensus domain publik
+  - title: Praktik rapat Quaker
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []

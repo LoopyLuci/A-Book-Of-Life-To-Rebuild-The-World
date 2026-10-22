@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: Beternak Lebah
+domain: agriculture
+tags: [lebah, madu, penyerbukan, lilin, pertanian]
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Handbook Peternakan Lebah USDA
+  - title: Panduan Produk Lebah FAO
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical]
+language: id
+media: []

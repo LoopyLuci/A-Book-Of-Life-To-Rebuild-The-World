@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Hewan Beban dan Angkutan Muatan
+domain: transport
+tags: [transportasi, hewan, logistik, ternak, perdagangan]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Gigitan, tendangan, dan cedera akibat himpitan
+  - Muatan bergeser atau terjatuh di tanah curam
+  - Luka gesek pada pelana dan stres panas
+  - Penyakit hewan atau kelelahan
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Penarik Hewan dan Transportasi FAO
+  - title: Transportasi Beban Practical Action
+  - title: Perawatan Hewan US Army FM 21-10
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: id
+media: []
