@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Vật liệu dán
+domain: materials
+tags: [vat-lieu-dan, tinh-bot, keo-da, casein, tho-moc]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Bỏng do keo nóng và nồi kiểu bồn nước
+  - Bỏng ăn mòn do vôi hoặc borax
+  - Mốc phát triển trong hồ tinh bột và keo da
+  - Mối nối yếu và hỏng dưới tải
+limits:
+  - Hồ tinh bột và keo da không chống nước
+  - Casein chống nước nhưng không phải là keo cấu trúc cho tải quan trọng an toàn
+  - Không dùng keo dán không rõ nguồn gốc cho thực phẩm hoặc bề mặt tiếp xúc với nước uống
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Smithsonian Museum Conservation Institute Adhesives
+  - title: Canadian Conservation Institute Adhesives and Consolidants
+  - title: Horie, Materials for Conservation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Đóng sách và sửa sách
+domain: knowledge
+tags: [tri-thuc, sach, sua-chua, nghe-thuat, thu-vien]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Vết cắt từ dao và kim khâu
+  - Hơi keo và kích ứng da
+  - Mỏi cơ do làm việc lặp lại
+  - Mốc nếu sách được bảo quản ẩm
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sổ tay Đóng sách và Bảo quản
+  - title: Hướng dẫn Sửa sách của Thư viện Quốc hội
+  - title: Ghi chú Đóng sách của Viện Bảo quản Canada
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

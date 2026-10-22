@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Tái sử dụng nước thải sinh hoạt
+domain: water
+tags: [nuoc, nuoc-thai-sinh-hoat, tuoi, ve-sinh, nong-nghiep]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Mầm bệnh từ nước giặt, tắm và rửa tay
+  - Tích tụ muối và bo trong đất
+  - Ô nhiễm nước ngầm
+  - Ruồi muỗi sinh sản trong vũng nước đọng
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Guidelines for the Safe Use of Wastewater, Excreta and Greywater
+  - title: US EPA WaterSense Outdoor Water Use
+  - title: FAO Wastewater Reuse in Agriculture
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arid, tropical]
+language: vi
+media: []

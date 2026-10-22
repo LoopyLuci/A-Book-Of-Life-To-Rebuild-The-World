@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA000BRNQ14DXD16KNHZ/computers/compilers-linkers
+translation_of: pnk:01KDVDNA000BRNQ14DXD16KNHZ/computers/compilers-linkers
+title: Trình biên dịch, trình liên kết và hệ thống build
+domain: computers
+tags: [may-tinh, bien-dich, lien-ket, build, cong-cu]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+  - Điện áp lưới và điện tích tích luỹ có thể gây chết người; phải cách ly trước khi làm việc.
+  - Khói hàn, chất lưu và chì; hãy thông gió và rửa tay.
+  - Phóng tĩnh điện có thể hỏng linh kiện; hãy dùng bàn nối đất.
+  - Mất dữ liệu xảy ra trong im lặng; hãy sao lưu trước mọi thao tác với firmware hoặc ổ đĩa.
+limits:
+  - Các ví dụ giả định dùng bộ công cụ mã nguồn mở phổ biến.
+  - Hãy làm theo datasheet của nhà sản xuất hơn bất kỳ tóm tắt nào.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sổ tay Bộ công cụ GNU
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

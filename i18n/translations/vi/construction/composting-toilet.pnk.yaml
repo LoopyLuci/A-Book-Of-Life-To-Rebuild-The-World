@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Nhà vệ sinh ủ phân
+domain: construction
+tags: [ve-sinh, u-phan, toilet, nuoc, suc-khoe-cong-cong]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Tiếp xúc mầm bệnh từ chất thải tươi và nước rỉ
+  - Ô nhiễm nước ngầm
+  - Methane và amoniac trong các hầm
+  - Ngã và cắt trong khi thi công
+limits:
+  - Không phù hợp với những nơi có mực nước ngầm cao hoặc hay ngập lũ
+  - Không bón vật liệu tươi hoặc mới hoai mục nửa vừa cho rau ăn sống
+  - Không bước vào hầm; hãy thông gió và dùng dụng cụ từ bên ngoài
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Hướng dẫn Vệ sinh và Sức khoẻ của WHO
+  - title: Hướng dẫn Nhà vệ sinh ủ phân của EcoSanRes
+  - title: US EPA Composting Toilets
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical, arid, universal]
+language: vi
+media: []

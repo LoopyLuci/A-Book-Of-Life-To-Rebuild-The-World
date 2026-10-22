@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+translation_of: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+title: Sửa lỗi lượng tử
+domain: quantum
+tags: [luong-tu, sua-loi, ma, nguong, nhieu]
+difficulty: master
+safety: green
+time_to_complete: days
+hazards:
+  - Chất lỏng siêu lạnh gây bỏng lạnh và ngạt thở trong phòng kín.
+  - Bức xạ vi sóng và tần số cao; hãy giới hạn trường bức xạ.
+  - Tiếp xúc laser; không bao giờ nhìn vào đường truyền tia.
+  - Điện áp nguy hiểm và hiện tượng mất từ trường nam châm; hãy tuân theo quy định của cơ sở.
+limits:
+  - Các con số chỉ mô tả các thiết bị ở quy mô phòng thí nghiệm hiện nay.
+  - Nhiễu, độ trôi và giới hạn điều khiển khác nhau giữa các cơ sở.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Quantum Initiative Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

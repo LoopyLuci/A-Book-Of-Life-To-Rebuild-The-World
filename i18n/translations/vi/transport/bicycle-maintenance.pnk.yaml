@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Bảo dưỡng xe đạp và vận chuyển tải trọng
+domain: transport
+tags: [van-tai, xe-dap, sua-chua, logistics, dung-cu]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Hỏng phanh hoặc lốp trong giao thông
+  - Hàng dịch chuyển và mất khả năng lái
+  - Chấn thương tay và xích
+  - Gắng sức quá mức và say nắng
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Village Bicycle Maintenance Guide
+  - title: Bicycle Retailer and Industry Association repair standards
+  - title: WHO Cycling Safety Guidance
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

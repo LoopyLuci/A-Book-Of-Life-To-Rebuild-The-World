@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+translation_of: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+title: Cân bằng acid-base và dung dịch đệm
+domain: chemistry
+tags: [hoa-hoc, axit, baz, dung-dich-dem, ph, chuan-do]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Bỏng hóa chất và văng bắn; đeo kính bảo hộ chống văng và găng tay.
+  - Hít phải khói hơi; làm việc ở nơi thông gió hoặc tủ hút.
+  - Cháy và nhiệt; để vật liệu dễ cháy xa khỏi công việc nóng.
+  - Chất thải thuốc thử phải được trung hoà và thu gom riêng.
+limits:
+  - Các giá trị giả định độ tinh khiết cấp phòng thí nghiệm và dụng cụ thuỷ tinh đã hiệu chuẩn.
+  - Không thay thế được cho quy trình phòng thí nghiệm có kiểm soát.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Giới thiệu về Hoá học (OpenStax)
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

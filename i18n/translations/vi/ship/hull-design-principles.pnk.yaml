@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+translation_of: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+title: Nguyên tắc thiết kế thân tàu
+domain: ship
+tags: [tau, than-tau, thiet-ke, thuy-dong-hoc, ky-thuat-dong-tau]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Làm việc trên cao và trên mặt nước mở; hãy dùng thiết bị chống rơi.
+  - Nhiệt hàn, khói hàn và người canh giữ hoả hoạn; hãy kiểm soát vùng nóng.
+  - Nguy cơ khoang kín và nâng hàng nặng trong khi thi công.
+  - Quy định về hạng tàu và cờ hiệu vẫn áp dụng; không bao giờ tự chế hệ thống an toàn.
+limits:
+  - Các kích thước giả định thân tàu thép thông thường và tải trọng bình thường.
+  - Kiểm định pháp lý và phân cấp tàu vẫn là căn cứ có hiệu lực.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Navy Hull Design Principles
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

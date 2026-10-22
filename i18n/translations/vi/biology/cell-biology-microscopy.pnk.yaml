@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+translation_of: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+title: Sinh học tế bào và kính hiển vi
+domain: biology
+tags: [sinh-hoc, te-bao, kinh-hien-vi, ban-te, nhuom-mau]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards:
+  - Vật sắc và vết cắt; dùng kẹp và thải bỏ lưỡi dao an toàn.
+  - Ô nhiễm sinh học; giữ mẫu nuôi kín và có dán nhãn.
+  - Tiếp xúc thuốc nhuộm và hóa chất; đeo găng tay và rửa tay.
+  - Quy định địa phương về loài hoang dã và cây được bảo vệ vẫn còn hiệu lực.
+limits:
+  - Kết quả thay đổi theo giống địa phương, khí hậu và kỹ thuật.
+  - Không bao giờ dùng vật liệu chưa được kiểm chứng cho thực phẩm, thức ăn hoặc điều trị.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: OpenStax Biology 2e
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+title: Pin kiềm
+domain: energy
+tags: [pin, pin-chi-acid, luu-tru, dien, nang-luong]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sổ tay Pin của US DOE
+  - title: Sổ tay Pin của US Army
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

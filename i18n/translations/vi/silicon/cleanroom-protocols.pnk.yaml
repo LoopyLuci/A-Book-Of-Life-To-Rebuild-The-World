@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: Quy trình phòng sạch và kiểm soát nhiễm bẩn
+domain: silicon
+tags: [silicon, phong-sach, o-nhiem, quy-trinh, an-toan]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Nhiệt cực độ và chất lỏng siêu lạnh; chỉ người được đào tạo mới xử lý.
+  - Khí quy trình độc và ăn mòn; hãy kiểm tra báo động và thông gió.
+  - Tiếp xúc tia ion hoá và tia cực tím; hãy dùng thiết bị có tấm chắn.
+  - Quy trình phòng sạch là biện pháp an toàn, không phải thực hành tuỳ chọn.
+limits:
+  - Đòi hỏi thiết bị vốn lớn và năng lực kiểm soát quy trình chuyên môn.
+  - Các tỷ lệ thu hoạch và chi phí được mô tả là đặc trưng của sản xuất đã trưởng thành.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: SEMI International Standards
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

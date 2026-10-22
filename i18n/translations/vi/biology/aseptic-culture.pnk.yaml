@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+translation_of: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+title: Kỹ thuật vô trùng và nuôi cấy vi sinh vật
+domain: biology
+tags: [sinh-hoc, vi-sinh-vat, nuoi-cay, vo-trung, o-nhiem]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Vật sắc và vết cắt; dùng kẹp và thải bỏ lưỡi dao an toàn.
+  - Ô nhiễm sinh học; giữ mẫu nuôi kín và có dán nhãn.
+  - Tiếp xúc thuốc nhuộm và hóa chất; đeo găng tay và rửa tay.
+  - Quy định địa phương về loài hoang dã và cây được bảo vệ vẫn còn hiệu lực.
+limits:
+  - Kết quả thay đổi theo giống địa phương, khí hậu và kỹ thuật.
+  - Không bao giờ dùng vật liệu chưa được kiểm chứng cho thực phẩm, thức ăn hoặc điều trị.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Hướng dẫn An toàn Sinh học Phòng thí nghiệm của WHO
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

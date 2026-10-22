@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+title: Sơ cứu cơ bản
+domain: survival
+tags: [so-cuu, cpr, chay-mau, gay-xuong, bo-ng, sinh-ton]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sơ cứu Cơ bản của WHO
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+translation_of: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+title: Xây khối
+domain: construction
+tags: [xay-khoi, gach, da, xay-dung]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army TM 5-742 Masonry
+  - title: Roman building principles
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

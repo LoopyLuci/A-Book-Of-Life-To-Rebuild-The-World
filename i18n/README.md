@@ -25,6 +25,8 @@ translation framework that scales to more.
 | `ru` | Russian | 40% |
 | `nl` | Dutch | 30% |
 | `ja` | Japanese | 40% |
+| `ko` | Korean | 25% |
+| `vi` | Vietnamese | 30% |
 
 ## Structure
 

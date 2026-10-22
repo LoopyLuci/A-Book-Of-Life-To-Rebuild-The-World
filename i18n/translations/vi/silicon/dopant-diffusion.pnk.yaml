@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+translation_of: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+title: Khuếch tán tạp chất và cấy ion
+domain: silicon
+tags: [silicon, pha-tap-chat, khuech-tan, cay-ion, moi-tiep-giap]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+  - Nhiệt cực độ và chất lỏng siêu lạnh; chỉ người được đào tạo mới xử lý.
+  - Khí quy trình độc và ăn mòn; hãy kiểm tra báo động và thông gió.
+  - Tiếp xúc tia ion hoá và tia cực tím; hãy dùng thiết bị có tấm chắn.
+  - Quy trình phòng sạch là biện pháp an toàn, không phải thực hành tuỳ chọn.
+limits:
+  - Đòi hỏi thiết bị vốn lớn và năng lực kiểm soát quy trình chuyên môn.
+  - Các tỷ lệ thu hoạch và chi phí được mô tả là đặc trưng của sản xuất đã trưởng thành.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Semiconductor Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

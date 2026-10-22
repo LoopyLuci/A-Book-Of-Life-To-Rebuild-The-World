@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Nhà vệ sinh và vệ sinh môi trường
+domain: construction
+tags: [ve-sinh, nha-ve-sinh, ve-sinh-ca-nhan, rac]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Hướng dẫn Vệ sinh và Sức khoẻ của WHO
+  - title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

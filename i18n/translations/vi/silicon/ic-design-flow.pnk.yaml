@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+translation_of: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+title: Quy trình thiết kế mạch tích hợp
+domain: silicon
+tags: [silicon, thiet-ke-mach, eda, kiem-chung, bo-cuc]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+  - Nhiệt cực độ và chất lỏng siêu lạnh; chỉ người được đào tạo mới xử lý.
+  - Khí quy trình độc và ăn mòn; hãy kiểm tra báo động và thông gió.
+  - Tiếp xúc tia ion hoá và tia cực tím; hãy dùng thiết bị có tấm chắn.
+  - Quy trình phòng sạch là biện pháp an toàn, không phải thực hành tuỳ chọn.
+limits:
+  - Đòi hỏi thiết bị vốn lớn và năng lực kiểm soát quy trình chuyên môn.
+  - Các tỷ lệ thu hoạch và chi phí được mô tả là đặc trưng của sản xuất đã trưởng thành.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Semiconductor Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

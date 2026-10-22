@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Xúc tác và động lực học phản ứng
+domain: chemistry
+tags: [hoa-hoc, xuc-tac, dong-luoc-hoc, toc-do-phan-ung, can-bang]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Bỏng hóa chất và văng bắn; đeo kính bảo hộ chống văng và găng tay.
+  - Hít phải khói hơi; làm việc ở nơi thông gió hoặc tủ hút.
+  - Cháy và nhiệt; để vật liệu dễ cháy xa khỏi công việc nóng.
+  - Chất thải thuốc thử phải được trung hoà và thu gom riêng.
+limits:
+  - Các giá trị giả định độ tinh khiết cấp phòng thí nghiệm và dụng cụ thuỷ tinh đã hiệu chuẩn.
+  - Không thay thế được cho quy trình phòng thí nghiệm có kiểm soát.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Physical Chemistry
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

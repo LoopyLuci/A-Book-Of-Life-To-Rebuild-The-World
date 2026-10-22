@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+translation_of: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+title: Ngôn ngữ assembly và mô hình máy
+domain: computers
+tags: [may-tinh, assembly, isa, cpu, ma-may]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+  - Điện áp lưới và điện tích tích luỹ có thể gây chết người; phải cách ly trước khi làm việc.
+  - Khói hàn, chất lưu và chì; hãy thông gió và rửa tay.
+  - Phóng tĩnh điện có thể hỏng linh kiện; hãy dùng bàn nối đất.
+  - Mất dữ liệu xảy ra trong im lặng; hãy sao lưu trước mọi thao tác với firmware hoặc ổ đĩa.
+limits:
+  - Các ví dụ giả định dùng bộ công cụ mã nguồn mở phổ biến.
+  - Hãy làm theo datasheet của nhà sản xuất hơn bất kỳ tóm tắt nào.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Arm Cortex-M Documentation
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

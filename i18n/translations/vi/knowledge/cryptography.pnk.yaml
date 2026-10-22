@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+translation_of: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+title: Mật mã học
+domain: knowledge
+tags: [ma-tha-hoc, bao-mat, truyen-thong, tri-thuc]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Public-domain cryptography primers
+  - title: NIST cryptographic guidelines
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

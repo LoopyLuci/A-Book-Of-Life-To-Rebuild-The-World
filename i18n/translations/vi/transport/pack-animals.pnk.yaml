@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Vật nuôi gánh hàng và vận chuyển tải
+domain: transport
+tags: [van-tai, gia-suc, logistics, chan-nuoi, buon-ban]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Cắn, đá và chấn thương bị nghiền
+  - Tải dịch chuyển hoặc ngã trên đất dốc
+  - Vết loét do yên và say nắng
+  - Bệnh hoặc kiệt sức ở động vật
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Animal Traction and Transport
+  - title: Practical Action Pack Transport
+  - title: US Army FM 21-10 Animal Care
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

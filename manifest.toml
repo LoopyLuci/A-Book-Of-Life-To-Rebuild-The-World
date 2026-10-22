@@ -10,7 +10,7 @@ repository = "https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World"
 [knowledge_base]
 schema_version = "1.2.0"
 default_language = "en"
-supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja", "ru", "it"]
+supported_languages = ["en", "es", "fr", "de", "hi", "ar", "sw", "zh", "ja", "ru", "it", "ko", "vi"]
 
 [domains]
 list = [

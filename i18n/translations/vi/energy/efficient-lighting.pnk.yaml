@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Chiếu sáng hiệu quả
+domain: energy
+tags: [chieu-sang, led, hieu-qua, anh-sang-tu-nhien, khong-khi-trong-nha]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Carbon monoxide và bụi từ đèn nhiên liệu
+  - Cháy do nến và thiết bị chiếu sáng quá nhiệt
+  - Điện giật từ dây điện ướt hoặc hỏng
+  - Ngã từ thang
+limits:
+  - Không dùng đèn nhiên liệu không thông gió trong nhà trong thời gian dài
+  - Không quá tải dây nối hoặc xích dây nối bộ ổ cắm
+  - Quang thông giảm theo bụi, nhiệt và chất lượng bộ nguồn kém
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: IEA Lighting and Energy Efficiency
+  - title: US DOE Solid-State Lighting Program
+  - title: WHO Household Air Pollution Guidance
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+translation_of: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+title: Sửa chữa và bảo dưỡng thuyền
+domain: ship
+tags: [tau, sua-chua, bao-duong, moi-ghep, tra-ke]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Làm việc trên cao và trên mặt nước mở; hãy dùng thiết bị chống rơi.
+  - Nhiệt hàn, khói hàn và người canh giữ hoả hoạn; hãy kiểm soát vùng nóng.
+  - Nguy cơ khoang kín và nâng hàng nặng trong khi thi công.
+  - Quy định về hạng tàu và cờ hiệu vẫn áp dụng; không bao giờ tự chế hệ thống an toàn.
+limits:
+  - Các kích thước giả định thân tàu thép thông thường và tải trọng bình thường.
+  - Kiểm định pháp lý và phân cấp tàu vẫn là căn cứ có hiệu lực.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Coast Guard Small Boat Guidance
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

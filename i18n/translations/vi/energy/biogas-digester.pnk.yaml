@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+title: Hầm khí sinh hữu cơ
+domain: energy
+tags: [khi-sinh-huu-co, methane, tieu-hoa, phan-bon, nang-luong]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sổ tay Khí sinh hữu cơ của FAO
+  - title: GTZ Biogas Digest
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: vi
+media: []

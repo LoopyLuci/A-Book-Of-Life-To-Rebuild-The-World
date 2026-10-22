@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: Nuôi ong
+domain: agriculture
+tags: [ong, mat-ong, thu-phan, sap-ong, nong-nghiep]
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Sổ tay Nuôi ong của USDA
+  - title: Cẩm nang Sản phẩm ong của FAO
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical]
+language: vi
+media: []

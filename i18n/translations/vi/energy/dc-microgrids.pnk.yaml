@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: Lưới điện một chiều cấp vi mạch
+domain: energy
+tags: [dien, mat-troi, pin, day-dien, luoi-vi-mach]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Điện giật và hồ quang điện
+  - Ngắn mạch pin và giải phóng hydro
+  - Cháy do thiết bị bảo vệ quá nhỏ hoặc chỉ định mức cho AC
+  - Ngã trong lúc lắp tấm pin
+limits:
+  - Không dùng bộ ngắt mạch hoặc cầu chì định mức AC trên mạch DC
+  - Không nối vào lưới điện hoặc máy phát điện nếu không có thiết bị chuyển mạch được duyệt
+  - Không trộn lẫn các pin khác tuổi, khác dung lượng hoặc khác hoá học
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NEC Article 712 DC Microgrids
+  - title: IEC 62548 Photovoltaic Array Design
+  - title: Sandia National Laboratories DC Microgrid Guidance
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

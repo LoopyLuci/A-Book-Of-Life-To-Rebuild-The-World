@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Gốm sứ
+domain: materials
+tags: [gom-su, dat-set, lo-nung, gom, men]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Bụi silica kết tinh từ đất sét và men
+  - Bỏng và hoả hoạn từ lò nung
+  - Carbon monoxide từ lò nung nhiên liệu
+  - Ngộ độc chì hoặc kim loại nặng từ men không an toàn
+limits:
+  - Không bao giờ nung sản phẩm ướt hoặc dày không đều
+  - Không dùng men có chì trên bề mặt tiếp xúc thực phẩm
+  - Thử độ co của đất sét và độ khớp của men trước khi làm cả mẻ
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: The Potter's Dictionary of Materials and Techniques
+  - title: OSHA Crystalline Silica Exposure Guidance
+  - title: American Ceramic Society Firing and Glazing Guides
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

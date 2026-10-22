@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+title: Ủ phân hữu cơ
+domain: agriculture
+tags: [phan-huu-co, dat, rac, do-phi, nong-nghiep]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Cẩm nang Ủ phân của USDA
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

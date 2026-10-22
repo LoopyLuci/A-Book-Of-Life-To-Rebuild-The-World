@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Thu gom nước mưa
+domain: water
+tags: [nuoc, nuoc-mua, luu-tru, mai-nha, ve-sinh]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Mầm bệnh và kim loại nặng rửa trôi từ mái nhà
+  - Ruồi muỗi sinh sản trong bể mở
+  - Chết đuối hoặc ngã trong các bể mở lớn
+  - Bể hoặc bệ sập dưới tải đầy
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Guidelines for Drinking-water Quality
+  - title: Texas Manual on Rainwater Harvesting
+  - title: US EPA Rainwater Harvesting and Municipal Separate Storm Sewer Systems
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

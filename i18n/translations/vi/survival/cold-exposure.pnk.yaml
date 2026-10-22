@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Tiếp xúc lạnh và hạ thân nhiệt
+domain: survival
+tags: [sinh-ton, lanh, ha-than-nhiet, so-cuu, lanh-trai]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - Hạ thân nhiệt và ngừng tim
+  - Tê đông và mất mô vĩnh viễn
+  - Lú lẫn nặng hơn khiến nạn nhân không tự cứu được
+  - Bỏng khi hồi nhiệt hoặc do rượu làm giãn mạch máu
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: CDC Preventing Hypothermia
+  - title: Wilderness Medical Society Practice Guidelines
+  - title: US Army FM 21-10 Cold Weather Casualty Care
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arctic]
+language: vi
+media: []

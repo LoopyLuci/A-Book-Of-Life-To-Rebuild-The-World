@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Khai thác và bảo vệ suối nước
+domain: water
+tags: [nuoc, suoi, cap-nuoc-the-trong-luc, xay-dung, ve-sinh]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Sập hào khi đào
+  - Ô nhiễm từ nước chảy mặt đất và chăn nuôi
+  - Chết đuối trong hộp không có nắp
+  - Tổn hại tới quyền lợi nước của vùng phía dưới
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Technical Note on Spring Protection
+  - title: Oxfam Spring Protection Guidelines
+  - title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

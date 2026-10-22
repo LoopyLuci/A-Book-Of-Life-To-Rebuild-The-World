@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Chuẩn bus và giao diện tín hiệu
+domain: computers
+tags: [may-tinh, bus, giao-dien, uart, i2c, spi]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Điện áp lưới và điện tích tích luỹ có thể gây chết người; phải cách ly trước khi làm việc.
+  - Khói hàn, chất lưu và chì; hãy thông gió và rửa tay.
+  - Phóng tĩnh điện có thể hỏng linh kiện; hãy dùng bàn nối đất.
+  - Mất dữ liệu xảy ra trong im lặng; hãy sao lưu trước mọi thao tác với firmware hoặc ổ đĩa.
+limits:
+  - Các ví dụ giả định dùng bộ công cụ mã nguồn mở phổ biến.
+  - Hãy làm theo datasheet của nhà sản xuất hơn bất kỳ tóm tắt nào.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Ghi chú Giao diện của NXP và Analog Devices
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

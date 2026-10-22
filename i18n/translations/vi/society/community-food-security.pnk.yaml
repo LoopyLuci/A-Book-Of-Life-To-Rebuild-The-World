@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Lập kế hoạch an ninh thực phẩm cộng đồng
+domain: society
+tags: [xa-hoi, an-ninh-thuc-pham, ke-hoach, khang-choi, quan-tri]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+  - Tiếp cận không bình đẳng và tình trạng nhóm tầng lớp chiếm đoạt nguồn lực
+  - Hư hỏng do bảo quản kém
+  - Tranh chấp trong phân phối
+  - Phụ thuộc vào một loại cây trồng hoặc một nhà cung cấp
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Hướng dẫn Đánh giá An ninh Thực phẩm của FAO
+  - title: Tiêu chuẩn An ninh Thực phẩm trong Sổ tay Sphere
+  - title: Dinh dưỡng trong Trường hợp Khẩn cấp của WHO
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []

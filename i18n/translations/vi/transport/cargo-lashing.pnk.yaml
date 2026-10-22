@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Chằng hàng hoá
+domain: transport
+tags: [van-tai, hang-hoa, nut-that, an-toan, logistics]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Hàng hoá dịch chuyển hoặc rơi
+  - Chấn thương nghiền khi siết dây
+  - Lật xe hoặc xe đẩy
+  - Dây chằng hỏng đứt dưới tải
+limits:
+  - Không bao giờ vượt quá tải trọng làm việc của linh kiện yếu nhất
+  - Không gắn dây chằng vào đường ống nhiên liệu, vỏ thân xe hoặc cạnh sắc
+  - Không chở hành khách trên tải không được cố định
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FHWA North American Cargo Securement Standard
+  - title: US Army FM 55-15 Transportation Reference Data
+  - title: ILO Safety and Health in Ports
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: vi
+media: []
