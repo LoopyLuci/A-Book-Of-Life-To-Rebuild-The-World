@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Communities solve problems when they organize. Mapping assets, building teams, and acting on shared goals turn scattered individuals into capable groups.
+Communities solve problems when they organize. Mapping assets, building teams,
+and acting on shared goals turn scattered individuals into capable groups.
 
 ## Prerequisites
 

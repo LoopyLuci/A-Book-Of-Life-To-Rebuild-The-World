@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Printing spreads knowledge cheaply and durably. Movable type, an oil ink, and a screw press let a small community reproduce books and posters.
+Printing spreads knowledge cheaply and durably. Movable type, an oil ink, and a
+screw press let a small community reproduce books and posters.
 
 ## Prerequisites
 

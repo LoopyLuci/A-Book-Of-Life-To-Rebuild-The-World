@@ -1,0 +1,51 @@
+id: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+translation_of: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+title: تخزين المياه المنزلية بأمان
+domain: water
+tags:
+- maa
+- khizan
+- nafasah-amma
+- klorini
+- siht-amma
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+yield: Plan 4 L per person per day for survival and 15-20 L for drinking, cooking, and hygiene
+season: Year-round; build reserves before dry or disaster seasons
+storage: Treated water keeps 6-12 months in a clean, covered, dark container; rotate and retest regularly
+cost: low
+hazards:
+- Bacterial regrowth in warm or opened containers
+- Chemical leaching from non-food-grade plastic
+- Drowning in open tanks
+- Cross-contamination from dirty hands or dippers
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+materials_required:
+- Food-grade HDPE, steel, or concrete tank
+- Fitted lid
+- Tap or spigot
+- Sediment filter
+- Chlorine test kit or pool-test strips
+- Pallet or raised base
+tools_required:
+- Drill
+- Pipe wrench
+- Measuring tape
+- Clean funnel
+- Scrub brush
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: CDC Water Storage and Treatment Guidance
+- title: Sphere Handbook water supply standards
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+- pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+geographic_applicability:
+- universal
+language: ar
+media: []

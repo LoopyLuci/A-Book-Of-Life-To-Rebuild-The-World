@@ -49,8 +49,29 @@ tools_required:
 - Funnel
 sources:
 - title: WHO Guidelines for Drinking-water Quality
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US EPA Private Drinking Water Wells
+  license: public-domain
+  language: en
 - title: WaterAid Handpump Maintenance Guidelines
+  license: CC-BY-4.0
+  language: en
+- title: 우물
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%AC%BC
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Pozzo
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Pozzo
+  license: CC-BY-SA-4.0
+  language: it
+- title: Waterput
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Waterput
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links:

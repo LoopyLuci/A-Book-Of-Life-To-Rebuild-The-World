@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: FAO Fisheries Technical Guidance
   license: public-domain
+  language: en
+- title: مسمكة
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%B3%D9%85%D9%83%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: मत्स्योद्योग
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%97
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Perikanan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Perikanan
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links: []

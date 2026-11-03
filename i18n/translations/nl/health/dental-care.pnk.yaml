@@ -1,0 +1,24 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: Tandheelkundige zorg
+domain: health
+tags: [tandheelkunde, tanden, preventie, gezondheid]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Oral Health guidance
+    license: public-domain
+  - title: Public-domain dental manuals
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

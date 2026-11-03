@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+title: 바이오가스 소화조
+domain: energy
+tags: [baiogasu, metan, hwaseon, biryo, enerji]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO 바이오가스 매뉴얼
+  - title: GTZ 바이오가스 다이제스트
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: ko
+media: []

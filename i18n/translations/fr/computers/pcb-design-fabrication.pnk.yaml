@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA0055SM4MX61T9DQR4G/computers/pcb-design-fabrication
+translation_of: pnk:01KDVDNA0055SM4MX61T9DQR4G/computers/pcb-design-fabrication
+title: Conception et Fabrication des PCB
+domain: computers
+tags:
+- informatique
+- pcb
+- fabrication
+- implantation
+- production-industrielle
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Mains voltage and stored charge can kill; isolate before work.
+- Solder fumes, flux and lead; ventilate and wash hands.
+- Static discharge can damage parts; use an earthed bench.
+- Data loss is silent; back up before any firmware or disk work.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Examples assume mainstream open toolchains.
+- Follow the manufacturer's datasheet over any summary.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: IPC Design Standards
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

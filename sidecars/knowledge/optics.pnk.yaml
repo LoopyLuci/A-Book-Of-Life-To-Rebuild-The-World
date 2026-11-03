@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain telescope-making texts
+  license: public-domain
+  language: en
 - title: Amateur optics handbooks
+  license: permission-granted
+  language: en
+- title: Optika
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Optika
+  license: CC-BY-SA-4.0
+  language: id
+- title: 光学
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E5%85%89%E5%AD%A6
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 광학
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EA%B4%91%ED%95%99
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

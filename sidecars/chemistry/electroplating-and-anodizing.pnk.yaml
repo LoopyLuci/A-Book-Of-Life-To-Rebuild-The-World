@@ -36,6 +36,22 @@ tools_required: []
 sources:
 - title: NIST Surface Metallurgy Notes
   license: public-domain
+  language: en
+- title: 電気めっき
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E9%9B%BB%E6%B0%97%E3%82%81%E3%81%A3%E3%81%8D
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 전기도금
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%A0%84%EA%B8%B0%EB%8F%84%EA%B8%88
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Galvanostegia
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Galvanostegia
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

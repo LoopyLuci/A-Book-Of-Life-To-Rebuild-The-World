@@ -1,20 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
 title: Beekeeping
 domain: agriculture
-tags: [bees, honey, pollination, wax, agriculture]
+tags:
+- bees
+- honey
+- pollination
+- wax
+- agriculture
 difficulty: journeyman
 safety: yellow
 time_to_complete: months
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
 materials_required: []
 tools_required: []
 sources:
-  - title: USDA Beekeeping Handbook
-  - title: FAO Bee Products Guide
+- title: USDA Beekeeping Handbook
+  license: public-domain
+  language: en
+- title: FAO Bee Products Guide
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Apicultura
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Apicultura
+  license: CC-BY-SA-4.0
+  language: es
+- title: Apiculture
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Apiculture
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Imkerei
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Imkerei
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []
-geographic_applicability: [temperate, tropical]
+geographic_applicability:
+- temperate
+- tropical
 language: en
 media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+translation_of: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+title: 양자 오류 교정
+domain: quantum
+tags: [kwantum, ogeumgyojeong, yeongdo, yik, boseong]
+difficulty: master
+safety: green
+time_to_complete: days
+hazards:
+  - 극저온 액체는 저온 화상과 실내 질식을 일으킨다.
+  - 마이크로파와 고주파 방사선; 전자기장을 제한한다.
+  - 레이저 노출; 광선 경로를 절대 바라보지 않는다.
+  - 위험 전압과 자석 퀀치; 시설 규정을 따른다.
+limits:
+  - 제시 수치는 현재 실험실 규모 장치만을 기술한다.
+  - 노이즈, 드리프트, 제어 한계는 시설마다 다르다.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Quantum Initiative Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

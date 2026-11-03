@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: 저온 노출과 저체온증
+domain: survival
+tags: [saengjon, han, yangmong, gwanu, ip]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - 저체온증과 심장마비
+  - 동상과 영구적인 조직 손실
+  - 악화되는 혼란으로 인한 자력 구조 불가능
+  - 다시 데울 때의 화상 또는 알코올에 의한 혈관 확장
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: CDC 저체온증 예방 지침
+  - title: Wilderness Medical Society Practice Guidelines
+  - title: US Army FM 21-10 한기 전 부상자 처치 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arctic]
+language: ko
+media: []

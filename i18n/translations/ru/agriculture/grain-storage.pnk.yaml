@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+translation_of: pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+title: Хранение зерна и борьба с вредителями
+domain: agriculture
+tags: [selskoe-khozyaystvo, zerno, khranenie, vrediteli, prodovolstvennaya-bezopasnost]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Плесень и афлатоксины во влажном зерне
+- Взрыв пыли и отравление фумигантами
+- Обрушение бункера или засыпание
+- Грызуны, насекомые и птицы
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Технологии хранения зерна ФАО
+- title: Управление хранением зерна USDA
+- title: Руководство ВОЗ по контролю микотоксинов
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

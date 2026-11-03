@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+title: Kichunguzi cha Biogas
+domain: energy
+tags:
+- biogasi
+- methani
+- utumbo
+- mbolea
+- nishati
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Biogas Manual
+- title: GTZ Biogas Digest
+verification:
+  status: peer-reviewed
+  date: '2026-04-20'
+links: []
+geographic_applicability:
+- temperate
+- tropical
+language: sw
+media: []

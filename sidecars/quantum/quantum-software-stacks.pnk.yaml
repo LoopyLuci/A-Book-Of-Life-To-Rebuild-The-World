@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Programação quântica
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_qu%C3%A2ntica
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Квантовое программирование
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 量子編程
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E7%B7%A8%E7%A8%8B
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

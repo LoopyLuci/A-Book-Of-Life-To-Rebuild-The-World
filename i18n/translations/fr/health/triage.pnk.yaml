@@ -1,0 +1,51 @@
+id: pnk:01M5E8W7W1HH39MEZ96Z0B9WAE/health/triage
+translation_of: pnk:01M5E8W7W1HH39MEZ96Z0B9WAE/health/triage
+title: Triage de Victimes Massives
+domain: health
+tags:
+- sante
+- triage
+- urgence
+- premiers-secours
+- catastrophe
+difficulty: apprentice
+safety: red
+time_to_complete: minutes
+yield: ''
+season: Any; rehearse before an incident
+storage: Keep triage tags and kits stocked and inspect them every 3 months
+cost: low
+hazards:
+- Missed internal bleeding or airway obstruction
+- Infection from body fluids
+- Secondary collapse or violence
+- Psychological overload and burnout
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+materials_required:
+- Colour-coded triage tags
+- Permanent markers
+- Gloves and eye protection
+- Headlamp
+- Bandages and tourniquets
+- Clipboard and tally sheet
+tools_required:
+- Triage tags
+- Pen
+- Headlamp
+- Stethoscope if available
+- Radio
+sources:
+- title: WHO Mass Casualty Management
+- title: START Simple Triage and Rapid Treatment
+- title: NATO Emergency War Surgery triage chapter
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+- pnk:01M52TVK0262WR91WPZ1FVPE6X/health/wound-care
+- pnk:01M52TVK04CN9AQVEG4C9T1T1M/health/field-surgery
+geographic_applicability:
+- universal
+language: fr
+media: []

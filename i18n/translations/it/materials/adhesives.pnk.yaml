@@ -1,0 +1,32 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Adesivi
+domain: materials
+tags: [adesivi, amido, colla-di-pelle, caseina, lavorazione-del-legno]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Ustioni da colla calda e dal bagno maria
+  - Ustioni caustiche da calce o borace
+  - Sviluppo di muffa nelle colle di amido e di pelle
+  - Giunzioni deboli che cedono sotto carico
+limits:
+  - Le colle di amido e di pelle non sono impermeabili
+  - La caseina è resistente all'acqua ma non è un adesivo strutturale per
+    carichi di sicurezza
+  - Non usare adesivi sconosciuti su superfici a contatto con alimenti o acqua
+    potabile
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Smithsonian Museum Conservation Institute Adhesives
+  - title: Canadian Conservation Institute Adhesives and Consolidants
+  - title: Horie, Materials for Conservation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

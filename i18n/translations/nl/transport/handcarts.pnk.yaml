@@ -1,0 +1,44 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: Handkarren en wagens met twee wielen
+domain: transport
+tags: [transport, wagens, houtbewerking, logistiek, handel]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Kantelen op hellingen of schuine paden
+  - Uitval van de rem of de dissel
+  - Overbelasting bij het duwen
+  - Botsingen met het verkeer
+limits: []
+prerequisites: []
+materials_required:
+  - As van hardhout of staal
+  - Twee wielen met lagers
+  - Houten bed
+  - Bouten en ringen
+  - Rem of sleepschoen
+  - Handvat of tuig
+  - Vet
+tools_required:
+  - Zaag
+  - Boormachine
+  - Sleutel
+  - Hamer
+  - Maatband
+  - Waterpas
+  - Krik
+sources:
+  - title: Practical Action Village Technology Handbook
+  - title: FAO Simple Farm Carts
+  - title: Appropriate Technology transport guides
+verification:
+  status: draft
+links:
+  - pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+  - pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+  - pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+geographic_applicability: [universal]
+language: nl
+media: []

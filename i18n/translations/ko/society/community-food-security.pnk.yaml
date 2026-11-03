@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: 공동체 식량 안정 계획
+domain: society
+tags: [sahoe, mangsik-anjeong, giho, taesang, gwangri]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+  - 불평등한 접근과 권력층의 자원 독점
+  - 부실한 저장으로 인한 부패
+  - 배분 문제를 둘러싼 갈등
+  - 단일 작물이나 단일 공급자에 대한 의존
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO 식량 안정 평가 지침
+  - title: Sphere Handbook 식량 안정 기준
+  - title: WHO 긴급 시 영양 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

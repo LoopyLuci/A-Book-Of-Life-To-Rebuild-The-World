@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Переплёт книг и ремонт книг
+domain: knowledge
+tags: [znanie, knigi, remont, remeslo, biblioteka]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Порезы от ножей и шил
+- Пары клея и раздражение кожи
+- Нагрузка от монотонной работы
+- Плесень при хранении книг во влажном виде
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство по переплёту и реставрации книг
+- title: Рекомендации Библиотеки Конгресса по ремонту книг
+- title: Материалы Канадского института реставрации по переплёту книг
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

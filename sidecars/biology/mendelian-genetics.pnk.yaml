@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Plant Breeding Guidance
   license: public-domain
+  language: en
+- title: Mendeliaanse overerving
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Mendeliaanse_overerving
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Mendel genetiği
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Mendel_geneti%C4%9Fi
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Di truyền Mendel
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Di_truy%E1%BB%81n_Mendel
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

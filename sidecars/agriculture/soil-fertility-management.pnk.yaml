@@ -47,8 +47,29 @@ tools_required:
 - pH and soil test kit
 sources:
 - title: FAO Soils Bulletin 80
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: USDA NRCS Soil Health Management
+  license: public-domain
+  language: en
 - title: Cornell Comprehensive Assessment of Soil Health
+  license: CC-BY-4.0
+  language: en
+- title: Bodenfruchtbarkeit
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Bodenfruchtbarkeit
+  license: CC-BY-SA-4.0
+  language: de
+- title: Fertilidade do solo
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Fertilidade_do_solo
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Плодородие почвы
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%B5_%D0%BF%D0%BE%D1%87%D0%B2%D1%8B
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links:

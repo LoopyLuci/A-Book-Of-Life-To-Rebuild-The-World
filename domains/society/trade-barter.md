@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Barter and local exchange move goods without money. Fair terms, standard measures, and reputation keep trade flowing and prevent exploitation.
+Barter and local exchange move goods without money. Fair terms, standard
+measures, and reputation keep trade flowing and prevent exploitation.
 
 ## Prerequisites
 

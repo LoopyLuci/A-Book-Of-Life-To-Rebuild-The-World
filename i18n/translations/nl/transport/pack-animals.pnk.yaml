@@ -1,0 +1,43 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Pakdieren en vrachttransport
+domain: transport
+tags: [transport, dieren, logistiek, vee, handel]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Beten, schoppen en pletwonden
+  - Verschuivende last of een val op steil terrein
+  - Zadelwonden en hittestress
+  - Ziekte of uitputting van het dier
+limits: []
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+materials_required:
+  - Pakzadel
+  - Onderleggers
+  - Zadeltassen of vangnetten
+  - Touwen en banden
+  - Voetbindingen
+  - Eerstehulpset voor dieren
+  - Voer- en watercontainers
+tools_required:
+  - Mes
+  - Tang
+  - Borstel
+  - Hoefmes
+  - Weegschaal of meetlint
+sources:
+  - title: FAO Animal Traction and Transport
+  - title: Practical Action Pack Transport
+  - title: US Army FM 21-10 Animal Care
+verification:
+  status: draft
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+  - pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+geographic_applicability: [universal]
+language: nl
+media: []

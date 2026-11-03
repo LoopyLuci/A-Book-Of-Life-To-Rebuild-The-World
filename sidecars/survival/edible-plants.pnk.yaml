@@ -1,21 +1,45 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1V/survival/edible-plants
 title: Edible & Inedible Plants
 domain: survival
-tags: [foraging, plants, food, botany, survival]
+tags:
+- foraging
+- plants
+- food
+- botany
+- survival
 difficulty: apprentice
 safety: red
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: Mencari pakan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Mencari_pakan
+  license: CC-BY-SA-4.0
+  language: id
+- title: Foerageren
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Foerageren
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Tập tính kiếm ăn
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/T%E1%BA%ADp_t%C3%ADnh_ki%E1%BA%BFm_%C4%83n
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: peer-reviewed
-  date: "2026-02-15"
+  date: '2026-02-15'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
-geographic_applicability: [temperate, tropical]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+geographic_applicability:
+- temperate
+- tropical
 language: en
 media: []

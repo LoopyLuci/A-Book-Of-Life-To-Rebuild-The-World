@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="<%= current_locale %>" dir="<%= rtl? ? "rtl" : "ltr" %>" data-theme="<%= theme || "system" %>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= content_for(:title) || page_title %></title>
+    <meta name="description" content="<%= content_for(:description) || t("tagline") %>">
+    <meta name="color-scheme" content="light dark">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application" %>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <%= yield :head %>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main"><%= t("skip_to_content") %></a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="<%= root_path %>">
+          <span class="brand-title"><%= t("site_name") %></span>
+          <span class="brand-tagline"><%= t("tagline") %></span>
+        </a>
+
+        <nav class="site-nav" aria-label="<%= t("site_name") %>">
+          <%= nav_link t("domains"), domains_path %>
+          <%= nav_link t("search"), search_path %>
+          <%= nav_link t("about"), about_path %>
+        </nav>
+
+        <form class="header-search" action="<%= search_path %>" method="get" role="search">
+          <label class="visually-hidden" for="header-query"><%= t("search") %></label>
+          <input type="search" id="header-query" name="q" value="<%= params[:q] %>"
+                 placeholder="<%= t("search_placeholder", count: corpus.total_entries) %>">
+          <button type="submit" class="button"><%= t("search") %></button>
+        </form>
+      </div>
+
+      <div class="wrap preferences">
+        <details class="preference">
+          <summary><%= t("language") %>: <%= language_name(current_locale) %></summary>
+          <%= form_with url: settings_language_path, method: :post, class: "preference-form" do %>
+            <%= hidden_field_tag :return_to, current_path_with_query %>
+            <label for="language-select"><%= t("language") %></label>
+            <%= select_tag :lang,
+                           options_for_select(available_languages.map { |code| [language_name(code), code] }, current_locale),
+                           id: "language-select" %>
+            <%= submit_tag t("apply"), class: "button" %>
+          <% end %>
+        </details>
+
+        <details class="preference">
+          <summary><%= t("theme") %>: <%= t("theme_#{theme || "system"}") %></summary>
+          <%= form_with url: settings_theme_path, method: :post, class: "preference-form" do %>
+            <%= hidden_field_tag :return_to, current_path_with_query %>
+            <fieldset>
+              <legend><%= t("theme") %></legend>
+              <% %w[light dark system].each do |option| %>
+                <label class="choice">
+                  <%= radio_button_tag :theme, option, (theme || "system") == option %>
+                  <%= t("theme_#{option}") %>
+                </label>
+              <% end %>
+            </fieldset>
+            <%= submit_tag t("apply"), class: "button" %>
+          <% end %>
+        </details>
+
+        <% if recently_read_entries.any? %>
+          <details class="preference">
+            <summary><%= t("recently_read") %></summary>
+            <ul class="recent-list">
+              <% recently_read_entries.each do |entry| %>
+                <li><%= link_to entry.title, entry_path(entry.domain, entry.slug) %></li>
+              <% end %>
+            </ul>
+          </details>
+        <% end %>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <%= yield %>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p><%= t("site_name") %> — <%= t("version") %> <%= corpus.version %></p>
+        <p>
+          <%= t("disclaimer_full") %>
+          <%= link_to t("disclaimer"), about_path %>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

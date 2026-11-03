@@ -1,0 +1,44 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Sjorren van lading
+domain: transport
+tags: [transport, lading, knopen, veiligheid, logistiek]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Verschuivende of vallende lading
+  - Verpletteringsletsel bij het aanspannen
+  - Omkappen van een voertuig of wagen
+  - Beschadigde banden die onder belasting bezwijken
+limits:
+  - Overschrijd nooit de bedrijfslastgrens van het zwakste onderdeel
+  - Bevestig banden niet aan brandstofleidingen, carrosseriepanelen of scherpe randen
+  - Vervoer geen passagiers op een niet-vastgezette lading
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required:
+  - Banden, kettingen of touw met een berekende werklast
+  - Zachte shackles of randbeschermers
+  - Antislipmatten
+  - Zeil
+  - Inspectielogboek
+tools_required:
+  - Handschoenen
+  - Mes
+  - Wiggen
+  - Bevestigingspunten
+  - Spangereedschap
+sources:
+  - title: FHWA North American Cargo Securement Standard
+  - title: US Army FM 55-15 Transportation Reference Data
+  - title: ILO Safety and Health in Ports
+verification:
+  status: draft
+links:
+  - pnk:01M5FBX2KS0K354SMG8T05GPPH/transport/route-planning
+  - pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+  - pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+geographic_applicability: [universal]
+language: nl
+media: []

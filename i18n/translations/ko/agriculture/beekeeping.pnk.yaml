@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: 양봉 기술
+domain: agriculture
+tags: [beol, mull, tonsa, milla, nongsik]
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA 양봉 핸드북
+  - title: FAO 벌 제품 가이드
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical]
+language: ko
+media: []

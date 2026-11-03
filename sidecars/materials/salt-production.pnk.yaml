@@ -37,8 +37,29 @@ tools_required:
 - Shovel
 sources:
 - title: WHO Salt Iodization Guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: FAO Small-scale Salt Production
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US Army FM 21-10 Water and Salt
+  license: public-domain
+  language: en
+- title: Muối ăn
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Mu%E1%BB%91i_%C4%83n
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Munyu
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Munyu
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Sal común
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Sal_com%C3%BAn
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links:

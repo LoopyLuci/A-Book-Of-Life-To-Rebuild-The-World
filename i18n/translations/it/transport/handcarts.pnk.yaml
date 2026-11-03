@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: Carrelli a mano e carrelli a due ruote
+domain: transport
+tags: [trasporto, carrelli, lavorazione-del-legno, logistica, commercio]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Ribaltamento su pendenze o strade sterrate sconnesse
+  - Guasto del freno o del perno di attacco
+  - Affaticamento da spinta eccessiva
+  - Collisioni con il traffico
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manuale Practical Action Village Technology
+  - title: FAO Carrelli agricoli semplici
+  - title: Guide di trasporto dell'Appropriate Technology
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

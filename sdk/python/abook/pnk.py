@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from urllib.parse import quote, unquote, urlparse
+from urllib.parse import quote, urlparse
 
 PNK_SCHEME = "pnk"
 

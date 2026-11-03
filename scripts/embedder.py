@@ -18,6 +18,16 @@ DIM = 384
 _USE_ONNX = MODEL_PATH.exists()
 
 
+def semantic_available() -> bool:
+    """Whether the real embedding model is installed.
+
+    The hash fallback produces stable but meaningless vectors. Callers that
+    rank by similarity must check this first: a cosine distance between two
+    hashes carries no information about the two texts.
+    """
+    return _USE_ONNX
+
+
 def _hash_embed(text: str) -> np.ndarray:
     """Deterministic fallback embedding (not semantic, but stable)."""
     h = hashlib.sha256(text.encode("utf-8")).digest()

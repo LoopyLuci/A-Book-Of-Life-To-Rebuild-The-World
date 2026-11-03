@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+title: Recherche d'Eau
+domain: survival
+tags:
+- eau
+- survie
+- hydrologie
+- cueillette
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-76 Survival Manual
+- title: WHO Emergency Water Supply Guidelines
+verification:
+  status: peer-reviewed
+  date: '2026-02-12'
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+geographic_applicability:
+- temperate
+- arid
+- tropical
+language: fr
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: Cleanroomprotocollen en contaminatiebeheersing
+domain: silicon
+tags: [silicon, cleanroom, verontreiniging, protocol, veiligheid]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Extreme hitte en kryogene vloeistoffen; alleen door getraind personeel hanteren
+  - Giftige en bijtende procesgassen; controleer alarms en ventilatie
+  - Blootstelling aan ioniserende en ultraviolette straling; gebruik afgeschermde apparatuur
+  - Cleanroomprotocollen zijn veiligheidsmaatregelen, geen optionele praktijk
+limits:
+  - Vereist kapitaalgoed en gespecialiseerde procesbeheersing
+  - De beschreven opbrengsten en kosten zijn gangbaar voor een volwassen productie
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: SEMI International Standards
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

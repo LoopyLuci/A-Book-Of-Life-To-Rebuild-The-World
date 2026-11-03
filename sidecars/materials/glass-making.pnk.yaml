@@ -1,20 +1,43 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N33/materials/glass-making
 title: Glass Making
 domain: materials
-tags: [glass, silica, lenses, containers, materials]
+tags:
+- glass
+- silica
+- lenses
+- containers
+- materials
 difficulty: journeyman
 safety: red
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional glassmaking methods
+- title: Traditional glassmaking methods
+  license: original
+  language: en
+- title: ガラス
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%A9%E3%82%B9
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 유리
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%A6%AC
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Vetro
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Vetro
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: peer-reviewed
-  date: "2026-04-01"
+  date: '2026-04-01'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

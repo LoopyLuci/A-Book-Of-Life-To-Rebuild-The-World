@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** apprentice | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Lime and cement are binders for masonry and concrete. Lime comes from

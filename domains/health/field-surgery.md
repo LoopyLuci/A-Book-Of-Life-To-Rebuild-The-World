@@ -2,9 +2,15 @@
 
 > **Domain:** health | **Difficulty:** master | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Field surgery addresses life-threatening injuries when evacuation is impossible. Sterile technique, anesthesia, and hemorrhage control are mandatory prerequisites.
+Field surgery addresses life-threatening injuries when evacuation is impossible.
+Sterile technique, anesthesia, and hemorrhage control are mandatory
+prerequisites.
 
 ## Prerequisites
 

@@ -2,9 +2,14 @@
 
 > **Domain:** construction | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Timber framing joins heavy members with interlocking mortise-and-tenon joints and pegs. A well-cut frame carries roof and floor loads without nails or steel.
+Timber framing joins heavy members with interlocking mortise-and-tenon joints
+and pegs. A well-cut frame carries roof and floor loads without nails or steel.
 
 ## Prerequisites
 

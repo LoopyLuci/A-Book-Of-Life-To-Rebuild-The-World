@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N41/energy/wood-gasification
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N41/energy/wood-gasification
+title: Gazéification du Bois
+domain: energy
+tags:
+- gazification
+- biomasse
+- gaz-synthese
+- energie
+- moteurs
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Wood Gasification Manual
+verification:
+  status: peer-reviewed
+  date: '2026-04-18'
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

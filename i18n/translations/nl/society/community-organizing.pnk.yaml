@@ -1,0 +1,24 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: Gemeenschapsorganisatie
+domain: society
+tags: [organisatie, gemeenschap, bestuur, maatschappij]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Public-domain community organizing texts
+    license: public-domain
+  - title: Mutual-aid principles
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

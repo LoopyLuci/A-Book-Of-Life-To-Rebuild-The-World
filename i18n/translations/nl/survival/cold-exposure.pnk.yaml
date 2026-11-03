@@ -1,0 +1,41 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Koudeblootstelling en onderkoeling
+domain: survival
+tags: [overleven, kou, onderkoeling, ehhulp, onderkomen]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - Onderkoeling en hartstilstand
+  - Bevriezing en permanent weefselverlies
+  - Toenemende verwardheid die zelfredding verhindert
+  - Brandwonden bij opwarmen of door alcohol veroorzaakte vaatverwijding
+limits: []
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+materials_required:
+  - Droge isolerende lagen
+  - Wind- en waterdichte buitenlaag
+  - Warme dekens
+  - Vuur of warmtebron
+  - Warme zoete dranken
+  - Noodonderkomen
+tools_required:
+  - Thermometer indien beschikbaar
+  - Mes
+  - Vuurmaakset
+  - Hoofdlamp
+sources:
+  - title: CDC Preventing Hypothermia
+  - title: Wilderness Medical Society Practice Guidelines
+  - title: US Army FM 21-10 Cold Weather Casualty Care
+verification:
+  status: draft
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+geographic_applicability: [temperate, arctic]
+language: nl
+media: []

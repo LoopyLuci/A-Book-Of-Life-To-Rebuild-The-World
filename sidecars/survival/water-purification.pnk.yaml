@@ -1,26 +1,53 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
 title: Water Purification
 domain: survival
-tags: [water, sanitation, survival, chemistry, health]
+tags:
+- water
+- sanitation
+- survival
+- chemistry
+- health
 difficulty: novice
 safety: red
 time_to_complete: hours
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 materials_required: []
 tools_required: []
 sources:
-  - title: WHO Guidelines for Drinking-water Quality
-  - title: US Army FM 21-10 Field Sanitation
-  - title: CDC SODIS Fact Sheet
+- title: WHO Guidelines for Drinking-water Quality
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: US Army FM 21-10 Field Sanitation
+  license: public-domain
+  language: en
+- title: CDC SODIS Fact Sheet
+  license: public-domain
+  language: en
+- title: Purificação de água
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Purifica%C3%A7%C3%A3o_de_%C3%A1gua
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Водоочистка
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 水淨化
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B7%A8%E5%8C%96
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: field-tested
   tested_by: Community Team Alpha
-  date: "2026-03-15"
+  date: '2026-03-15'
   location: Arizona, USA
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
-geographic_applicability: [universal]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+geographic_applicability:
+- universal
 language: en
 media: []

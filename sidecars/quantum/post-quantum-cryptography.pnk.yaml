@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Post-Quantum Cryptography Standards
   license: public-domain
+  language: en
+- title: Criptografía postcuántica
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Criptograf%C3%ADa_postcu%C3%A1ntica
+  license: CC-BY-SA-4.0
+  language: es
+- title: Cryptographie post-quantique
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Cryptographie_post-quantique
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Post-Quanten-Kryptographie
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Post-Quanten-Kryptographie
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

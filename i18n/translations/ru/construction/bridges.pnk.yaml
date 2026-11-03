@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+translation_of: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+title: Мосты
+domain: construction
+tags: [mosty, konstruktsiya, perevozki, stroitelstvo]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FM 5-430 «Дороги и аэродромы» армии США
+- title: Исторические тексты по инженерии мостов
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

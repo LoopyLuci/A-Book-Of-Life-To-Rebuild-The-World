@@ -12,13 +12,21 @@
 | Domain | Maintainer | Since |
 |--------|------------|-------|
 | survival | TBD | 2026 |
+| water | TBD | 2026 |
 | agriculture | TBD | 2026 |
 | materials | TBD | 2026 |
 | energy | TBD | 2026 |
 | construction | TBD | 2026 |
+| transport | TBD | 2026 |
 | health | TBD | 2026 |
 | knowledge | TBD | 2026 |
 | society | TBD | 2026 |
+| chemistry | TBD | 2026 |
+| biology | TBD | 2026 |
+| silicon | TBD | 2026 |
+| ship | TBD | 2026 |
+| computers | TBD | 2026 |
+| quantum | TBD | 2026 |
 
 ## Verifiers
 

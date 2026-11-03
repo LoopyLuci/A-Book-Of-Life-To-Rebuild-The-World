@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+translation_of: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+title: Estradas e Drenagem
+domain: construction
+tags:
+- estradas
+- drenagem
+- infraestrutura
+- terraplenagem
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 5-430 Roads and Airfields
+- title: Public Works manual principles
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

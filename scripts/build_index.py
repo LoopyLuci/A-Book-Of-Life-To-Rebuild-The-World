@@ -127,7 +127,9 @@ def build() -> int:
         texts = [c[3] for c in all_chunks]
         vectors = embed_texts(texts)
 
-        for (entry_id, heading, ordinal, chunk_text), vec in zip(all_chunks, vectors):
+        for (entry_id, heading, ordinal, chunk_text), vec in zip(
+            all_chunks, vectors, strict=False
+        ):
             cur = conn.execute(
                 "INSERT INTO chunks (entry_id, heading, ordinal, text) VALUES (?, ?, ?, ?)",
                 (entry_id, heading, ordinal, chunk_text),

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: 중수의 재이용
+domain: water
+tags: [mul, geummul, geul, hwangsang, nongsik]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - 세탁수, 목욕수, 손 씻기 물에서 오는 병원체
+  - 토양 내 염분과 붕소의 축적
+  - 지하수 오염
+  - 고인 물에서의 모기 번식
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO 중수, 배설물 및 오수의 안전한 이용 지침
+  - title: US EPA WaterSense 옥외 물 이용 지침
+  - title: FAO 농업에서의 오수 재이용 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arid, tropical]
+language: ko
+media: []

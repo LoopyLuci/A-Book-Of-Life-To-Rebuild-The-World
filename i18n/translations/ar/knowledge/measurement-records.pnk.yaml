@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0NNW7CVVWQ3MK3702G/knowledge/measurement-records
+translation_of: pnk:01M52TVK0NNW7CVVWQ3MK3702G/knowledge/measurement-records
+title: القياس والسجلات
+domain: knowledge
+tags:
+- qiyas
+- sujunat
+- maayir
+- maarifa
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain metrology texts
+- title: BIPM SI brochure (open licence)
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: US Navy Hull Design Principles
   license: public-domain
+  language: en
+- title: 선체
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%84%A0%EC%B2%B4
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Scafo
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Scafo
+  license: CC-BY-SA-4.0
+  language: it
+- title: Scheepsromp
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Scheepsromp
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

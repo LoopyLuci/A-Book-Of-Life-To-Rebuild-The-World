@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: التحفيز وحركية التفاعلات
+domain: chemistry
+tags:
+- kimiya
+- tahfiz
+- harakati
+- sira-istijab
+- tawazun
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Chemical burns and splashes; wear splash goggles and gloves.
+- Fume inhalation; work in a ventilated area or fume hood.
+- Fire and heat; keep flammable material away from hot work.
+- Reagent waste must be neutralised and collected separately.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Values assume laboratory-grade purity and calibrated glassware.
+- Not a substitute for a controlled laboratory protocol.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: LibreTexts Physical Chemistry
+  license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

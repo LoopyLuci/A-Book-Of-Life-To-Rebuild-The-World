@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: 양자 오류 정정
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%96%91%EC%9E%90_%EC%98%A4%EB%A5%98_%EC%A0%95%EC%A0%95
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Corrección de errores cuántica
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Correcci%C3%B3n_de_errores_cu%C3%A1ntica
+  license: CC-BY-SA-4.0
+  language: es
+- title: Quantenfehlerkorrektur
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Quantenfehlerkorrektur
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA003C3R12TEZPFVS263/chemistry/distillation-fractionation
+translation_of: pnk:01KDVDNA003C3R12TEZPFVS263/chemistry/distillation-fractionation
+title: 蒸馏与分馏
+domain: chemistry
+tags:
+- huaxue
+- zhengliu
+- fenji
+- huiliu
+- rongji
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Chemical burns and splashes; wear splash goggles and gloves.
+- Fume inhalation; work in a ventilated area or fume hood.
+- Fire and heat; keep flammable material away from hot work.
+- Reagent waste must be neutralised and collected separately.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Values assume laboratory-grade purity and calibrated glassware.
+- Not a substitute for a controlled laboratory protocol.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NIST Laboratory Safety Guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

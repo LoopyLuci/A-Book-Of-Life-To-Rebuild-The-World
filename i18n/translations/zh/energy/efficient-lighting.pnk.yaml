@@ -1,0 +1,61 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: 高效照明
+domain: energy
+tags:
+- zhaoming
+- led
+- xiaolv
+- zhanhuo
+- shinei-kongqi
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+yield: A room lit to a usable level with roughly one-fifth the energy of incandescent or fuel lighting
+season: Improve daylight and shade before the hot season; install lighting before dark months
+storage: Keep spare LED bulbs and fuses dry and labelled
+cost: low
+hazards:
+- Carbon monoxide and particles from fuel lamps
+- Fire from candles and overheated fittings
+- Electric shock from wet or damaged wiring
+- Falls from ladders
+resource_budget:
+  batch: one 20 square metre room
+  labor_hours: 2
+  energy_kwh: 0.05
+  water_liters: 0
+lifespan: Quality LEDs last 10-25 years; cheap drivers often fail sooner
+maintenance: Clean fixtures every few months and replace flickering lamps promptly
+limits:
+- Do not use unvented fuel lamps indoors for extended periods
+- Do not overload extension leads or daisy-chain power strips
+- Lumen output falls with dust, heat, and poor driver quality
+prerequisites: []
+materials_required:
+- LED bulbs or DC lamps
+- Lamp holders and switches
+- Reflectors or light paint
+- Rated extension cable
+- Fuses or breakers
+- Cleaning cloth
+tools_required:
+- Screwdriver
+- Insulated pliers
+- Multimeter
+- Ladder
+- Light meter or phone app
+sources:
+- title: IEA Lighting and Energy Efficiency
+- title: US DOE Solid-State Lighting Program
+- title: WHO Household Air Pollution Guidance
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+- pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+- pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+geographic_applicability:
+- universal
+language: zh
+media: []

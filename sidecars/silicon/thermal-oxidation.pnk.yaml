@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Semiconductor Reference
   license: public-domain
+  language: en
+- title: Thermische Oxidation von Silizium
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Thermische_Oxidation_von_Silizium
+  license: CC-BY-SA-4.0
+  language: de
+- title: Термическое оксидирование
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BE%D0%BA%D1%81%D0%B8%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 热氧化
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E7%83%AD%E6%B0%A7%E5%8C%96
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

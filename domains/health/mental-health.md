@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Disaster and isolation cause acute stress, grief, and depression. Safety, connection, routine, and dignity are the first-line treatments.
+Disaster and isolation cause acute stress, grief, and depression. Safety,
+connection, routine, and dignity are the first-line treatments.
 
 ## Prerequisites
 

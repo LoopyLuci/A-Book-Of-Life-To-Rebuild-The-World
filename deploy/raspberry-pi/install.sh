@@ -2,7 +2,7 @@
 # Install A Book Of Life To Rebuild The World on an existing Raspberry Pi.
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/abookoflife/a-book-of-life-to-rebuild-the-world.git}"
+REPO_URL="${REPO_URL:-https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World.git}"
 INSTALL_DIR="${INSTALL_DIR:-/opt/a-book-of-life}"
 
 echo "Installing A Book Of Life To Rebuild The World to ${INSTALL_DIR}..."

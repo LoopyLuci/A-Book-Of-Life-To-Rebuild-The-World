@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Basic Emergency Care
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: MSF Clinical Guidelines (open)
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Chẩn đoán y tế
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Ch%E1%BA%A9n_%C4%91o%C3%A1n_y_t%E1%BA%BF
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Utambuzi
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Utambuzi
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Diagnosis
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Diagnosis
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

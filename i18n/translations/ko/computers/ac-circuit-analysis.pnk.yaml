@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+translation_of: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+title: 교류 회로 해석과 임피던스
+domain: computers
+tags: [jeomputeo, denchi, jeonliu, impedansu, geunri]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - 상용 전압과 저장된 전하는 치명적일 수 있다; 작업 전에 격리한다.
+  - 납땜 연기, 플럭스, 납; 환기하고 손을 씻는다.
+  - 정전기 방전은 부품을 손상시킬 수 있다; 접지된 작업대를 사용한다.
+  - 데이터 손실은 조용히 일어난다; 펌웨어나 디스크 작업 전에는 백업한다.
+limits:
+  - 예시는 널리 쓰이는 오픈 툴체인을 전제로 한다.
+  - 어떤 요약보다도 제조사 데이터시트를 따른다.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: OpenStax University Physics
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

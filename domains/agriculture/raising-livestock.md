@@ -2,6 +2,10 @@
 
 > **Domain:** agriculture | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Livestock convert grass and waste into protein, fat, leather, and fertilizer.
@@ -67,7 +71,8 @@ Start small — chickens and rabbits first, then goats or pigs, then cattle.
 
 ## Safety Notes
 
-- **Yellow hazard:** Zoonotic diseases (brucellosis, rabies, salmonella) transmit from animals.
+- **Yellow hazard:** Zoonotic diseases (brucellosis, rabies, salmonella)
+  transmit from animals.
 - Always wash hands after handling.
 - Bulls and boars can be aggressive; never turn your back.
 - Slaughter humanely; stun before bleeding.

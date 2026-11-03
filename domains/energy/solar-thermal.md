@@ -2,6 +2,10 @@
 
 > **Domain:** energy | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Solar thermal collects sunlight as heat — for cooking, water heating,

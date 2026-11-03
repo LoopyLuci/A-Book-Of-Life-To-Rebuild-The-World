@@ -2,9 +2,15 @@
 
 > **Domain:** knowledge | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Optics magnify, focus, and direct light, enabling reading aids, telescopes, microscopes, and fire-starting. Grinding and polishing produce lenses from glass.
+Optics magnify, focus, and direct light, enabling reading aids, telescopes,
+microscopes, and fire-starting. Grinding and polishing produce lenses from
+glass.
 
 ## Prerequisites
 

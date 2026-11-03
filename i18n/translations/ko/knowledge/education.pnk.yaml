@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: 교육과 학습
+domain: knowledge
+tags: [hakgyo, gyoyuk, munhaeryeok, jisik]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 퍼블릭 도메인 교육학 문헌
+  - title: UNESCO 교육 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

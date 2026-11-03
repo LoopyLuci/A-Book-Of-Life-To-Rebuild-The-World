@@ -1,0 +1,16 @@
+<% content_for :title, page_title(t("domains")) %>
+<% content_for :description, t("tagline") %>
+
+<h1><%= t("domains") %></h1>
+
+<ul class="domain-grid">
+  <% @domains.each do |domain| %>
+    <li class="domain-card">
+      <h2><%= link_to domain.title, domain_path(domain.slug) %></h2>
+      <% if domain.description.present? %>
+        <p class="domain-description"><%= domain.description %></p>
+      <% end %>
+      <p class="domain-count"><%= t("entry_count", count: domain.count) %></p>
+    </li>
+  <% end %>
+</ul>

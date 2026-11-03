@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+title: Севооборот
+domain: agriculture
+tags: [sevakhotvor, pochva, azot, vrediteli, selskoe-khozyaystvo]
+difficulty: apprentice
+safety: green
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство USDA по севообороту
+- title: Устойчивое сельское хозяйство ФАО
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

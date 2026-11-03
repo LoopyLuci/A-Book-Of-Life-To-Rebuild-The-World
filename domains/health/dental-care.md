@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Dental pain disables and dental infection can spread fatally. Prevention by cleaning and diet comes first; extraction is the reliable field cure.
+Dental pain disables and dental infection can spread fatally. Prevention by
+cleaning and diet comes first; extraction is the reliable field cure.
 
 ## Prerequisites
 

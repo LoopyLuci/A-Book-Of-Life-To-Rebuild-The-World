@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: Istruzione
+domain: knowledge
+tags: [istruzione, insegnamento, alfabetizzazione, conoscenza]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Testi di pedagogia di pubblico dominio
+  - title: Linee guida UNESCO sull'istruzione
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain pedagogy texts
+  license: public-domain
+  language: en
 - title: UNESCO education guidance
+  license: CC-BY-SA-3.0-IGO
+  language: en
+- title: 教育
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%95%99%E8%82%B2
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 교육
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EA%B5%90%EC%9C%A1
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Educazione
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Educazione
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

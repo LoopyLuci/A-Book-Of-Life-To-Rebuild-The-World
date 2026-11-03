@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Основы анатомии
+domain: health
+tags: [anatomiya, fiziologiya, zdorove, obrazovanie]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Анатомия Грея (общественное достояние)
+- title: Базовая неотложная помощь ВОЗ
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

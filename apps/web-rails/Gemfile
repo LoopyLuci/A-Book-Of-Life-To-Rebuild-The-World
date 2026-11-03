@@ -1,0 +1,43 @@
+source "https://rubygems.org"
+
+# The application targets the Ruby that ships with the machine; see .ruby-version.
+ruby ">= 3.2.0"
+
+# Rails 8, server-rendered. No Active Record: the knowledge base is read-only
+# content that lives on disk, so the app boots and serves without a database.
+gem "rails", "~> 8.1.4"
+
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
+gem "propshaft"
+
+# Use the Puma web server [https://github.com/puma/puma]
+# It is required lazily: `rails server` loads it itself, and the test suite has
+# no use for a web server. That lets the suite run on a machine whose Ruby was
+# built without OpenSSL, instead of failing before the first assertion.
+gem "puma", ">= 5.0", require: false
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: %i[ windows jruby ]
+
+# Boot-time caching (bootsnap) is deliberately not used. It is a native
+# extension, and the precompiled builds do not load against every Ruby a
+# contributor may have, which turns an optional speed-up into a hard start-up
+# failure. This reader boots in well under a second without it.
+
+# `date` and `json` are deliberately not listed. Both ship with Ruby as default
+# gems, and every other copy is a native extension compiled against one exact
+# Ruby build: a pin turns a portable app into one that only starts on the
+# machine the wheel was built for.
+
+group :development, :test do
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+
+  # Audits gems for known security defects
+  gem "bundler-audit", require: false
+end
+
+group :development do
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "web-console"
+end

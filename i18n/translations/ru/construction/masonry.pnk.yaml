@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+translation_of: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+title: Каменная кладка
+domain: construction
+tags: [kamennaya-kladka, kirpich, kamen, stroitelstvo]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: TM 5-742 армии США «Каменная кладка»
+- title: Принципы римского зодчества
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

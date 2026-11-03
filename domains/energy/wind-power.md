@@ -2,6 +2,10 @@
 
 > **Domain:** energy | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Wind turbines convert kinetic energy into electricity or mechanical power.

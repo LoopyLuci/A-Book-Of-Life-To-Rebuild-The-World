@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+title: Viehhaltung
+domain: agriculture
+tags:
+- vieh
+- huehner
+- ziegen
+- schweine
+- rinder
+- protein
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Livestock Production Manual
+- title: USDA Small-Scale Livestock Guide
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- temperate
+- tropical
+language: de
+media: []

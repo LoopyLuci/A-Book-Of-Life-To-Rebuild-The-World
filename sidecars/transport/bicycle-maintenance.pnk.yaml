@@ -38,8 +38,29 @@ tools_required:
 - Rag and brush
 sources:
 - title: Village Bicycle Maintenance Guide
+  license: CC-BY-4.0
+  language: en
 - title: Bicycle Retailer and Industry Association repair standards
+  license: permission-granted
+  language: en
 - title: WHO Cycling Safety Guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: 自転車
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%87%AA%E8%BB%A2%E8%BB%8A
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 자전거
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%9E%90%EC%A0%84%EA%B1%B0
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Bicicletta
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Bicicletta
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links:

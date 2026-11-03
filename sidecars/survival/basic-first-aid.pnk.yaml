@@ -1,7 +1,13 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
 title: Basic First Aid
 domain: survival
-tags: [first-aid, cpr, bleeding, fractures, burns, survival]
+tags:
+- first-aid
+- cpr
+- bleeding
+- fractures
+- burns
+- survival
 difficulty: novice
 safety: yellow
 time_to_complete: hours
@@ -9,12 +15,30 @@ prerequisites: []
 materials_required: []
 tools_required: []
 sources:
-  - title: WHO Basic Emergency Care
+- title: WHO Basic Emergency Care
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Erste Hilfe
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Erste_Hilfe
+  license: CC-BY-SA-4.0
+  language: de
+- title: Primeiros socorros
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Primeiros_socorros
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Первая помощь
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: peer-reviewed
-  date: "2026-02-20"
+  date: '2026-02-20'
 links:
-  - pnk:01M52TVK0262WR91WPZ1FVPE6X/health/wound-care
-geographic_applicability: [universal]
+- pnk:01M52TVK0262WR91WPZ1FVPE6X/health/wound-care
+geographic_applicability:
+- universal
 language: en
 media: []

@@ -48,8 +48,29 @@ tools_required:
 - Sandpaper
 sources:
 - title: Smithsonian Museum Conservation Institute Adhesives
+  license: CC-BY-4.0
+  language: en
 - title: Canadian Conservation Institute Adhesives and Consolidants
+  license: CC-BY-4.0
+  language: en
 - title: Horie, Materials for Conservation
+  license: permission-granted
+  language: en
+- title: Perekat
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Perekat
+  license: CC-BY-SA-4.0
+  language: id
+- title: 接着剤
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%8E%A5%E7%9D%80%E5%89%A4
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 접착제
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%A0%91%EC%B0%A9%EC%A0%9C
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links:

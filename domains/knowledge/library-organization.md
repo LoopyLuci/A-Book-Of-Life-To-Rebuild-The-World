@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-An organized library keeps knowledge findable for generations. A simple classification plus a catalog protects against loss and makes retrieval fast.
+An organized library keeps knowledge findable for generations. A simple
+classification plus a catalog protects against loss and makes retrieval fast.
 
 ## Prerequisites
 

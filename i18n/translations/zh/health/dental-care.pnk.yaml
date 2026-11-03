@@ -1,0 +1,25 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: 口腔护理
+domain: health
+tags:
+- yake
+- yachi
+- yufang
+- jiankang
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Oral Health guidance
+- title: Public-domain dental manuals
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

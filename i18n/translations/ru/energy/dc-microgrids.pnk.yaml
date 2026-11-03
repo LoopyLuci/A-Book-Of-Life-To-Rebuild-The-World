@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: Микроэнергосети постоянного тока
+domain: energy
+tags: [elektroenergetika, solnechnaya-energiya, batarei, provodka, mikroset]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- Удар током и дуговой разряд
+- Короткие замыкания аккумуляторов и выделение водорода
+- Пожар из-за недостаточной по номиналу или рассчитанной на переменный ток аппаратуры защиты
+- Падения при монтаже панелей
+limits:
+- Не применяйте автоматы и предохранители, рассчитанные на переменный ток, в цепях постоянного тока
+- Не подключайтесь к сети или генератору без одобренного переключающего устройства
+- Не смешивайте аккумуляторы разного возраста, ёмкости или типа
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NEC, статья 712 «Микроэнергосети постоянного тока»
+- title: IEC 62548 «Проектирование фотоэлектрических массивов»
+- title: Руководство Национальной лаборатории Сэндия по микроэнергосетям постоянного тока
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

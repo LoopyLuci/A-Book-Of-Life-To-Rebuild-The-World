@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Basic Emergency Care
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: MSF Clinical Guidelines (open)
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Herida
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Herida
+  license: CC-BY-SA-4.0
+  language: es
+- title: Plaie
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Plaie
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Wunde
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Wunde
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

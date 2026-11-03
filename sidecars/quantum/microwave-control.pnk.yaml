@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: 마이크로파
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%8C%8C
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Microonde
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Microonde
+  license: CC-BY-SA-4.0
+  language: it
+- title: Microgolf
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Microgolf
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

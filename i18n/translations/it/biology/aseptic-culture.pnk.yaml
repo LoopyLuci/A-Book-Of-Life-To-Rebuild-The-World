@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+translation_of: pnk:01KDVDNA009YDZ40N10QN1J1GN/biology/aseptic-culture
+title: Tecnica asettica e coltura microbica
+domain: biology
+tags: [biologia, microbiologia, coltura, sterilita, contaminazione]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Oggetti taglienti e ferite; usa pinzette e smaltisci in sicurezza le lame.
+  - Contaminazione biologica; mantieni le colture chiuse ed etichettate.
+  - Esposizione a coloranti e reagenti; indossa guanti e lavati le mani.
+  - Restano valide le norme locali sulle specie selvatiche e sulle piante protette.
+limits:
+  - I risultati variano con ceppi locali, clima e tecnica.
+  - Non usare mai materiale non verificato per alimentazione, foraggio o trattamenti.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO sulla biosicurezza di laboratorio
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

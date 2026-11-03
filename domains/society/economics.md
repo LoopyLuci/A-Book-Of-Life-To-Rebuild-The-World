@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Economics allocates scarce resources. Tracking production, storage, and exchange prevents both shortage and waste.
+Economics allocates scarce resources. Tracking production, storage, and exchange
+prevents both shortage and waste.
 
 ## Prerequisites
 

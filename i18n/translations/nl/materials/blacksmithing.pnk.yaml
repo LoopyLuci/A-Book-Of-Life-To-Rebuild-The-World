@@ -1,0 +1,25 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+title: Smederij
+domain: materials
+tags: [smederij, vuurhaard, ijzer, staal, gereedschap, materialen]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+materials_required: []
+tools_required: []
+sources:
+  - title: US Navy Blacksmithing Manual
+    license: public-domain
+verification:
+  status: peer-reviewed
+  date: "2026-03-28"
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

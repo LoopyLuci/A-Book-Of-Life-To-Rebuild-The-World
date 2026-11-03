@@ -1,0 +1,22 @@
+id: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+translation_of: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+title: Роды
+domain: health
+tags: [rody, akusherstvo, zdorove-materi, zdorove]
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: «Ведение осложнений при беременности и родах» (ВОЗ)
+- title: Тексты по акушерству (общественное достояние)
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

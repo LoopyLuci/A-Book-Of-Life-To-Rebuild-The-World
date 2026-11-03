@@ -1,0 +1,62 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Seraiki
+domain: materials
+tags:
+- seramiki
+- udongo
+- kiln
+- ufinyanzi-wa-vyungwa
+- glazi
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+yield: About 8-15 food-safe vessels from a 20 kg clay batch after drying and firing losses
+season: Dig clay in dry weather; fire after the wet season when fuel and pots are dry
+storage: Store clay damp and covered; keep glaze materials labelled and away from food
+cost: medium
+hazards:
+- Crystalline silica dust from clay and glazes
+- Burns and fires from kilns
+- Carbon monoxide from fuel-fired kilns
+- Lead or heavy-metal poisoning from unsafe glazes
+resource_budget:
+  batch: 20 kg clay body
+  labor_hours: 12
+  energy_kwh: 40
+  water_liters: 20
+lifespan: Properly fired stoneware can last for decades
+maintenance: Inspect kiln elements, shelves, and vents every firing; re-level shelves seasonally
+limits:
+- Never fire wet or thick uneven ware
+- Do not use lead glazes on food-contact surfaces
+- Test clay shrinkage and glaze fit before making a full batch
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+materials_required:
+- Clay body
+- Sand or grog temper
+- Water
+- Lead-free glaze materials
+- Kiln shelves and posts
+tools_required:
+- Scales
+- Buckets and sieve
+- Wedging board
+- Kiln or pit
+- Pyrometric cones
+- Respirator and heat-resistant gloves
+sources:
+- title: The Potter's Dictionary of Materials and Techniques
+- title: OSHA Crystalline Silica Exposure Guidance
+- title: American Ceramic Society Firing and Glazing Guides
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N35/materials/lime-cement
+- pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability:
+- universal
+language: sw
+media: []

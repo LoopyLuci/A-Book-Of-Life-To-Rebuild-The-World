@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 3-34.331 Surveying
+  license: public-domain
+  language: en
 - title: Public-domain surveying primers
+  license: public-domain
+  language: en
+- title: Ilmu ukur wilayah
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Ilmu_ukur_wilayah
+  license: CC-BY-SA-4.0
+  language: id
+- title: 測量
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%B8%AC%E9%87%8F
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 측량
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%B8%A1%EB%9F%89
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

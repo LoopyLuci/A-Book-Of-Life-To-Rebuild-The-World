@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: البوابات المنطقية الكمية
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D9%8A%D8%A9_%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: 양자 논리 게이트
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%96%91%EC%9E%90_%EB%85%BC%EB%A6%AC_%EA%B2%8C%EC%9D%B4%ED%8A%B8
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Porta quantistica
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Porta_quantistica
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

@@ -6,7 +6,6 @@ Uses the hybrid index for retrieval and a local LLM (Ollama) for generation.
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 from typing import Any
@@ -14,8 +13,8 @@ from typing import Any
 import httpx
 
 sys.path.insert(0, str(Path(__file__).parent))
-from search import search as hybrid_search  # noqa: E402
-from mcp_server import _read_body, _load_sidecar  # noqa: E402
+from mcp_server import _load_sidecar, _read_body
+from search import search as hybrid_search
 
 OLLAMA_URL = "http://localhost:11434"
 DEFAULT_MODEL = "abook-rag"

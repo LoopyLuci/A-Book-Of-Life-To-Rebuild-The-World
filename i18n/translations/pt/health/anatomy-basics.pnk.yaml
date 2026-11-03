@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Fundamentos de Anatomia
+domain: health
+tags:
+- anatomia
+- fisiologia
+- saude
+- educacao
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Gray's Anatomy (public domain)
+- title: WHO Basic Emergency Care
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

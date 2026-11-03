@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Consensus builds decisions that people will uphold. A clear process separates proposal, discussion, objections, and consent.
+Consensus builds decisions that people will uphold. A clear process separates
+proposal, discussion, objections, and consent.
 
 ## Prerequisites
 

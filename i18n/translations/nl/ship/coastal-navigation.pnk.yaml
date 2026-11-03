@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: Kustnavigatie en loodsen
+domain: ship
+tags: [scheepsbouw, navigatie, loodsen, kust, peilingen]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Werken op hoogte en boven open water; gebruik valbeveiliging
+  - Hot werk, lasdamp en brandwacht; beheers de hete zone
+  - Risico's van besloten ruimten en zwaar tillen tijdens de bouw
+  - De klassen- en vlagregels gelden; improviseer nooit een veiligheidssysteem
+limits:
+  - De afmetingen gaan uit van een conventionele stalen romp en normale belasting
+  - De wettelijke inspectie en de klassing blijven leidend
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Coast Guard Navigation Manual
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -1,21 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
 title: Fire & Combustion
 domain: energy
-tags: [combustion, fire, stoves, heat, energy]
+tags:
+- combustion
+- fire
+- stoves
+- heat
+- energy
 difficulty: novice
 safety: yellow
 time_to_complete: hours
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 materials_required: []
 tools_required: []
 sources:
-  - title: US DOE Combustion Handbook
-  - title: FAO Wood Energy
+- title: US DOE Combustion Handbook
+  license: public-domain
+  language: en
+- title: FAO Wood Energy
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Combustión
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Combusti%C3%B3n
+  license: CC-BY-SA-4.0
+  language: es
+- title: Combustion
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Combustion
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Verbrennung (Chemie)
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Verbrennung_%28Chemie%29
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: peer-reviewed
-  date: "2026-04-16"
+  date: '2026-04-16'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

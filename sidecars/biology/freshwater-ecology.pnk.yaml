@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USGS Water Quality Guidance
   license: public-domain
+  language: en
+- title: Tatlı su ekosistemi
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Tatl%C4%B1_su_ekosistemi
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Hệ sinh thái nước ngọt
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/H%E1%BB%87_sinh_th%C3%A1i_n%C6%B0%E1%BB%9Bc_ng%E1%BB%8Dt
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Ecosistema de agua dulce
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Ecosistema_de_agua_dulce
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

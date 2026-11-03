@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0KW11P78YKDV1N77XB/knowledge/optics
+translation_of: pnk:01M52TVK0KW11P78YKDV1N77XB/knowledge/optics
+title: 光学基础
+domain: knowledge
+tags:
+- guangxue
+- jingtou
+- guang
+- zhishi
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain telescope-making texts
+- title: Amateur optics handbooks
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

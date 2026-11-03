@@ -1,0 +1,25 @@
+id: pnk:01M52TVK09QVKH9GQVGNXZS4E4/health/mental-health
+translation_of: pnk:01M52TVK09QVKH9GQVGNXZS4E4/health/mental-health
+title: Salud Mental
+domain: health
+tags:
+- salud-mental
+- psicologia
+- apoyo
+- salud
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Psychological First Aid Guide
+- title: IASC MHPSS guidance
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: es
+media: []

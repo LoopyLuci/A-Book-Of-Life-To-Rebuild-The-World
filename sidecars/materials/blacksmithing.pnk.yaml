@@ -1,21 +1,45 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
 title: Blacksmithing
 domain: materials
-tags: [blacksmithing, forge, iron, steel, tools, materials]
+tags:
+- blacksmithing
+- forge
+- iron
+- steel
+- tools
+- materials
 difficulty: journeyman
 safety: red
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
 materials_required: []
 tools_required: []
 sources:
-  - title: US Navy Blacksmithing Manual
+- title: US Navy Blacksmithing Manual
+  license: public-domain
+  language: en
+- title: 대장장이
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%8C%80%EC%9E%A5%EC%9E%A5%EC%9D%B4
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Fabbro
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Fabbro
+  license: CC-BY-SA-4.0
+  language: it
+- title: Demirci
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Demirci
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: peer-reviewed
-  date: "2026-03-28"
+  date: '2026-03-28'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

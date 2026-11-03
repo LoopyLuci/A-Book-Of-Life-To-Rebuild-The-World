@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N35/materials/lime-cement
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N35/materials/lime-cement
+title: الجير والاسمنت
+domain: materials
+tags:
+- jir
+- asmant
+- kharsana
+- malaa
+- bina
+difficulty: apprentice
+safety: red
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+materials_required: []
+tools_required: []
+sources:
+- title: US Bureau of Mines cement reports
+verification:
+  status: peer-reviewed
+  date: '2026-04-06'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

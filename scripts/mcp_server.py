@@ -87,6 +87,8 @@ async def list_tools() -> list[Tool]:
                         "enum": [
                             "survival", "agriculture", "materials", "energy",
                             "construction", "health", "knowledge", "society",
+                            "water", "transport", "chemistry", "biology",
+                            "silicon", "ship", "computers", "quantum",
                         ],
                     },
                     "limit": {"type": "integer", "default": 10, "minimum": 1, "maximum": 50},
@@ -236,6 +238,14 @@ def _tool_list_domains() -> list[TextContent]:
                 "health": "Medicine, surgery, pharmacology, mental health",
                 "knowledge": "Communication, printing, education, art, music",
                 "society": "Governance, economics, conflict resolution, culture",
+                "water": "Harvesting, treatment, storage and reuse of water",
+                "transport": "Carts, pack animals, ferries, bicycles, logistics",
+                "chemistry": "Reactions, analysis, separation and lab safety",
+                "biology": "Cells, genetics, ecology, agriculture and medicine",
+                "silicon": "Purification, fabrication and device physics",
+                "ship": "Naval architecture, construction, propulsion, safety",
+                "computers": "Electronics, software, systems and data",
+                "quantum": "Qubits, control, error correction and algorithms",
             }.get(d, ""),
         }
         for d, c in rows

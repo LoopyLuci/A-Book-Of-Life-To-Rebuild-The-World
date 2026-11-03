@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+translation_of: pnk:01KDVDNA00X2BT7B1E4FZ82CWX/chemistry/chromatography-separation
+title: Chromatografische scheiding
+domain: chemistry
+tags: [chemie, chromatografie, scheiding, tlc, hplc]
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Chemische brandwonden en spatten; draag een spatbril en handschoenen
+  - Inhalatie van dampen; werk in een geventileerde ruimte of onder een zuurkast
+  - Vuur en hitte; houd brandbaar materiaal weg bij het werken met warmte
+  - Reagentiaafval moet worden geneutraliseerd en apart worden ingezameld
+limits:
+  - De waarden gaan uit van laboratoriumkwaliteit en gekalibreerd glaswerk
+  - Geen vervanging van een gecontroleerd laboratoriumprotocol
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Analytical Chemistry
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

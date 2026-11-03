@@ -35,6 +35,12 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: 表面码
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E8%A1%A8%E9%9D%A2%E7%A0%81
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

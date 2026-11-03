@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Latrinas e Saneamento
+domain: construction
+tags:
+- saneamento
+- latrina
+- higiene
+- residuos
+difficulty: novice
+safety: yellow
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Guidelines on Sanitation and Health
+- title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

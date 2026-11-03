@@ -48,8 +48,29 @@ tools_required:
 - PPE
 sources:
 - title: WHO Infection Prevention and Control Guidelines
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: CDC Standard Precautions for Healthcare Personnel
+  license: public-domain
+  language: en
 - title: WHO Surgical Safety Checklist
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: مكافحة العدوى
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B9%D8%AF%D9%88%D9%89
+  license: CC-BY-SA-4.0
+  language: ar
+- title: 感染管理
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%84%9F%E6%9F%93%E7%AE%A1%E7%90%86
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 감염 관리
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EA%B0%90%EC%97%BC_%EA%B4%80%EB%A6%AC
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links:

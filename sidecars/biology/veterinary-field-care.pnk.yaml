@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: Merck Veterinary Manual
   license: public-domain
+  language: en
+- title: Thú y
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Th%C3%BA_y
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Medicina veterinaria
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Medicina_veterinaria
+  license: CC-BY-SA-4.0
+  language: es
+- title: Médecine vétérinaire
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/M%C3%A9decine_v%C3%A9t%C3%A9rinaire
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links: []

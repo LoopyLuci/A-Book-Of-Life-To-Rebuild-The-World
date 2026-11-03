@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Prompt cleaning and dressing prevents infection, the leading killer of field wounds. Control bleeding, remove debris, and keep the wound moist and covered.
+Prompt cleaning and dressing prevents infection, the leading killer of field
+wounds. Control bleeding, remove debris, and keep the wound moist and covered.
 
 ## Prerequisites
 

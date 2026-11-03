@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Esposizione al freddo e ipotermia
+domain: survival
+tags: [sopravvivenza, freddo, ipotermia, primo-soccorso, rifugio]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+  - Ipotermia e arresto cardiaco
+  - Congelamento e perdita permanente di tessuto
+  - Confusione in peggioramento che impedisce l'autosoccorso
+  - Ustioni da riscaldamento o dilatazione vascolare da alcol
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: CDC Prevenzione dell'ipotermia
+  - title: Linee guida pratiche della Wilderness Medical Society
+  - title: US Army FM 21-10 Cura dei feriti in clima freddo
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arctic]
+language: it
+media: []

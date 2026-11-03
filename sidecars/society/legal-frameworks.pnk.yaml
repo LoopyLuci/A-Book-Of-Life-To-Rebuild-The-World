@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain legal primers
+  license: public-domain
+  language: en
 - title: Natural-law and common-law principles
+  license: original
+  language: en
+- title: 法の支配
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%B3%95%E3%81%AE%E6%94%AF%E9%85%8D
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 법치주의
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%B2%95%EC%B9%98%EC%A3%BC%EC%9D%98
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Rule of law
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Rule_of_law
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

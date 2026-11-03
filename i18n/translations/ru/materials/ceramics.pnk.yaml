@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Керамика
+domain: materials
+tags: [keramika, glina, pech, goncharstvo, glazur]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+- Пыль кристаллического кремнезёма от глины и глазурей
+- Ожоги и пожары от печей
+- Монооксид углерода от печей на жидком топливе
+- Отравление свинцом или тяжёлыми металлами из-за небезопасных глазурей
+limits:
+- Никогда не обжигайте мокрые или неравномерно толстые изделия
+- Не используйте свинцовые глазури на поверхностях, контактирующих с пищей
+- Проверьте усадку глины и посадку глазури до изготовления полной партии
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: «Словарь материалов и техник гончара»
+- title: Руководство OSHA по воздействию кристаллического кремнезёма
+- title: Руководства Американского керамического общества по обжигу и глазурованию
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+translation_of: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+title: Alvenaria
+domain: construction
+tags:
+- alvenaria
+- tijolo
+- pedra
+- construcao
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army TM 5-742 Masonry
+- title: Roman building principles
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

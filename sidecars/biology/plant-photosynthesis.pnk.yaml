@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Agricultural Handbook
   license: public-domain
+  language: en
+- title: Photosynthese
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Photosynthese
+  license: CC-BY-SA-4.0
+  language: de
+- title: Fotossíntese
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Fotoss%C3%ADntese
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Фотосинтез
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%82%D0%BE%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links: []

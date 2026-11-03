@@ -30,13 +30,13 @@ impl Client {
 
     pub fn with_options(base_url: &str, opts: ClientOptions) -> Result<Self> {
         let base_url = Url::parse(base_url)
-            .map_err(|e| ABookError::Network(reqwest::Error::from(e)))?;
+            .map_err(ABookError::Url)?;
 
         let mut headers = HeaderMap::new();
         headers.insert(USER_AGENT, HeaderValue::from_static("abook-rust-sdk/1.0"));
         if let Some(key) = &opts.api_key {
             let value = HeaderValue::from_str(&format!("Bearer {}", key))
-                .map_err(|e| ABookError::Network(reqwest::Error::from(e)))?;
+                .map_err(ABookError::Header)?;
             headers.insert(AUTHORIZATION, value);
         }
 
@@ -59,7 +59,7 @@ impl Client {
         params: &[(&str, Option<String>)],
     ) -> Result<T> {
         let mut url = self.base_url.join(path.trim_start_matches('/'))
-            .map_err(|e| ABookError::Network(reqwest::Error::from(e)))?;
+            .map_err(ABookError::Url)?;
         {
             let mut qp = url.query_pairs_mut();
             for (k, v) in params {

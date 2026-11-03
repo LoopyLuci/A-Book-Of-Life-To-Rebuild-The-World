@@ -2,9 +2,14 @@
 
 > **Domain:** construction | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-All-weather roads move goods and people and connect settlements. The key is a crowned surface with side ditches so water leaves the roadbed quickly.
+All-weather roads move goods and people and connect settlements. The key is a
+crowned surface with side ditches so water leaves the roadbed quickly.
 
 ## Prerequisites
 

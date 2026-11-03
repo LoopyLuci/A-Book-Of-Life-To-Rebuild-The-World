@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: ILO Shipbuilding Guidance
   license: public-domain
+  language: en
+- title: Thép
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Th%C3%A9p
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Chuma cha pua
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Chuma_cha_pua
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Acero
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Acero
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

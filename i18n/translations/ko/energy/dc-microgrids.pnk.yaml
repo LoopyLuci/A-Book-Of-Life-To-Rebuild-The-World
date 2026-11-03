@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: DC 마이크로그리드
+domain: energy
+tags: [jeondan, taeyang, batteri, jeongeori, mikrogeid]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - 감전과 아크 화상
+  - 배터리 단락과 수소 방출
+  - 부적절한 크기나 AC 정격 보호 장치로 인한 화재
+  - 전지판 설치 중 낙상
+limits:
+  - AC 정격 차단기나 퓨즈를 DC 회로에 사용하지 않는다
+  - 승인된 전환 장비 없이 계통이나 발전기에 연결하지 않는다
+  - 배터리의 사용 연수, 용량, 화학계를 섞지 않는다
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NEC Article 712 DC Microgrids
+  - title: IEC 62548 Photovoltaic Array Design
+  - title: Sandia National Laboratories DC Microgrid Guidance
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

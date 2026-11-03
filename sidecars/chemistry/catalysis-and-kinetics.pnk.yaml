@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: LibreTexts Physical Chemistry
   license: CC-BY-SA-4.0
+  language: en
+- title: उत्प्रेरण
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A3
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Katalisis
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Katalisis
+  license: CC-BY-SA-4.0
+  language: id
+- title: 触媒作用
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%A7%A6%E5%AA%92%E4%BD%9C%E7%94%A8
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links: []

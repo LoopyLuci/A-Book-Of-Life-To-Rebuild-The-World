@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Consistent measurement and record-keeping make knowledge reproducible. Standard units, calibrated references, and ledgers underpin trade and science.
+Consistent measurement and record-keeping make knowledge reproducible. Standard
+units, calibrated references, and ledgers underpin trade and science.
 
 ## Prerequisites
 

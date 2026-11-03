@@ -1,22 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
 title: Metal Smelting
 domain: materials
-tags: [metallurgy, smelting, copper, iron, bronze, materials]
+tags:
+- metallurgy
+- smelting
+- copper
+- iron
+- bronze
+- materials
 difficulty: journeyman
 safety: red
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional metallurgy methods
+- title: Traditional metallurgy methods
+  license: original
+  language: en
+- title: Verhüttung
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Verh%C3%BCttung
+  license: CC-BY-SA-4.0
+  language: de
+- title: Fundição (metalurgia)
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Fundi%C3%A7%C3%A3o_%28metalurgia%29
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Плавка
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B2%D0%BA%D0%B0
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: peer-reviewed
-  date: "2026-03-25"
+  date: '2026-03-25'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
-geographic_applicability: [universal]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+geographic_applicability:
+- universal
 language: en
 media: []

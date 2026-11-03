@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+title: 식품 보존
+domain: agriculture
+tags: [bojon, jang, ganjo, hunyeon, hwaseon]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA 가정용 캔딩 완전 가이드
+  - title: FAO 식품 보존 매뉴얼
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

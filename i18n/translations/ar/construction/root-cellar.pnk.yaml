@@ -1,0 +1,56 @@
+id: pnk:01M5E8W7W17RTZPD945ZZV3J3H/construction/root-cellar
+translation_of: pnk:01M5E8W7W17RTZPD945ZZV3J3H/construction/root-cellar
+title: بناء مخزن الجذور
+domain: construction
+tags:
+- bina
+- khizan
+- hifath-taam
+- amal-turab
+- ziraa
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+yield: A 2 m x 3 m cellar holds roughly 1,500-2,500 kg of root crops and preserves
+season: Build in dry weather; load after harvest and ventilate in cool nights
+storage: Hold 0-4 C and 85-95% humidity; most root crops keep 3-8 months
+cost: medium
+hazards:
+- Excavation collapse
+- Carbon dioxide buildup and asphyxiation
+- Mould and freezing
+- Flooding and rodent entry
+prerequisites:
+- pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+materials_required:
+- Stone or concrete block
+- Timber or concrete roof
+- Insulation
+- Vent pipes with screens
+- Gravel floor
+- Shelving
+- Thermometer and hygrometer
+- Rodent mesh
+tools_required:
+- Shovel
+- Pickaxe
+- Wheelbarrow
+- Spirit level
+- Masonry trowel
+- Saw
+- Hammer
+sources:
+- title: USDA Storage of Vegetables and Root Crops
+- title: University Extension Root Cellar Design
+- title: FAO Post-harvest Storage
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+- pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+geographic_applicability:
+- temperate
+- arctic
+language: ar
+media: []

@@ -46,8 +46,29 @@ tools_required:
 - Tensioning tool
 sources:
 - title: FHWA North American Cargo Securement Standard
+  license: permission-granted
+  language: en
 - title: US Army FM 55-15 Transportation Reference Data
+  license: public-domain
+  language: en
 - title: ILO Safety and Health in Ports
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Vracht
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Vracht
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Yük
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Y%C3%BCk
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Shehena
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Shehena
+  license: CC-BY-SA-4.0
+  language: sw
 verification:
   status: draft
 links:

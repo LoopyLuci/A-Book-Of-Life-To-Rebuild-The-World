@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Q1QPGDVP77WY8WJW/biology/enzymes-fermentation
+translation_of: pnk:01KDVDNA00Q1QPGDVP77WY8WJW/biology/enzymes-fermentation
+title: Ферменты и брожение
+domain: biology
+tags: [biologiya, fermenty, brozhenie, kataliz, pishcha]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards:
+- Острые предметы и порезы; работайте пинцетом и безопасно утилизируйте лезвия.
+- Биологическое загрязнение; держите культуры закрытыми и подписанными.
+- Контакт с красителями и реактивами; надевайте перчатки и мойте руки.
+- Местные правила о диких видах и охраняемых растениях по-прежнему действуют.
+limits:
+- Результаты зависят от местных штаммов, климата и методики.
+- Никогда не используйте непроверенный материал для пищи, корма или лечения.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Биология 2e (OpenStax)
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

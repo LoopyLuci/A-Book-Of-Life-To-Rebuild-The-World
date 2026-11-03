@@ -1,0 +1,55 @@
+id: pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+translation_of: pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+title: Solare Photovoltaiksysteme
+domain: energy
+tags:
+- energie
+- solar
+- elektricitaet
+- batterien
+- netzunabhaengig
+difficulty: journeyman
+safety: red
+time_to_complete: days
+yield: About 3-5 kWh per day per 1 kW of panels in a sunny climate, after losses
+season: Year-round; output drops in winter, haze, and shade
+storage: Batteries should be ventilated, cool, and kept at 50-80% charge when not in use
+cost: high
+hazards:
+- DC shock and arc flash
+- Battery acid burns and hydrogen explosion
+- Fire from undersized wiring or fuses
+- Falls during roof mounting
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+materials_required:
+- PV panels
+- Charge controller
+- Battery bank
+- Inverter
+- Fuses and disconnect switch
+- UV-rated cable
+- Mounting rails
+- Grounding hardware
+tools_required:
+- Multimeter
+- Clamp meter
+- Crimping tool
+- Insulated screwdrivers
+- Drill
+- Torque wrench
+- Safety glasses
+sources:
+- title: NREL Photovoltaic Systems Basics
+- title: IEC 62548 Photovoltaic Array Design
+- title: US Department of Energy Off-Grid PV Guidance
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N47/energy/electrical-wiring
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N45/energy/solar-thermal
+geographic_applicability:
+- universal
+language: de
+media: []

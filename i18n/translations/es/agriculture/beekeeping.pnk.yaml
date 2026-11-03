@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N26/agriculture/beekeeping
+title: Apicultura
+domain: agriculture
+tags:
+- abejas
+- miel
+- polinizacion
+- cera
+- agricultura
+difficulty: journeyman
+safety: yellow
+time_to_complete: months
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required: []
+tools_required: []
+sources:
+- title: USDA Beekeeping Handbook
+- title: FAO Bee Products Guide
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- temperate
+- tropical
+language: es
+media: []

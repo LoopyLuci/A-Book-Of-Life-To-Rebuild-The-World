@@ -2,6 +2,10 @@
 
 > **Domain:** agriculture | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Compost converts waste into fertility. It requires four ingredients:

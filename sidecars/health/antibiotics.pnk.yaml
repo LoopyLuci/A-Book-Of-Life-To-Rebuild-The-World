@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Model List of Essential Medicines
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: MSF Clinical Guidelines (open)
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: 抗生素
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E6%8A%97%E7%94%9F%E7%B4%A0
+  license: CC-BY-SA-4.0
+  language: zh
+- title: مضاد حيوي
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%B6%D8%A7%D8%AF_%D8%AD%D9%8A%D9%88%D9%8A
+  license: CC-BY-SA-4.0
+  language: ar
+- title: प्रतिजैविक
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%9C%E0%A5%88%E0%A4%B5%E0%A4%BF%E0%A4%95
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links: []

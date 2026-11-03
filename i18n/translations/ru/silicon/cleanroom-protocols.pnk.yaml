@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: Правила чистой комнаты и контроль загрязнений
+domain: silicon
+tags: [kremniy, chistaya-komnata, zagryaznenie, protokol, bezopasnost]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Экстремальный нагрев и криогенные жидкости; допускаются только обученные специалисты.
+- Токсичные и коррозионные технологические газы; проверьте сигнализацию и вентиляцию.
+- Ионизирующее и ультрафиолетовое излучение; используйте экранированное оборудование.
+- Правила чистой комнаты — это меры безопасности, а не необязательная практика.
+limits:
+- Требуется дорогое оборудование и специализированный контроль технологических процессов.
+- Описанные выходы и затраты типичны для зрелого производства.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Международные стандарты SEMI
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -2,6 +2,10 @@
 
 > **Domain:** water | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 A spring is a place where groundwater reaches the surface. Development means

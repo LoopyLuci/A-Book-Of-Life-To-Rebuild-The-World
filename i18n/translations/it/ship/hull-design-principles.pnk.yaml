@@ -1,0 +1,31 @@
+id: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+translation_of: pnk:01KDVDNA00W2RXJM3AW5CZH91M/ship/hull-design-principles
+title: Principi di progettazione dello scafo
+domain: ship
+tags: [navigazione, scafo, progettazione, idrodinamica, architettura-navale]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Lavoro in quota e su acque aperte; usa la protezione anticaduta
+  - Lavori a caldo, fumi di saldatura e vigilanza antincendio; controlla la
+    zona calda
+  - Spazi confinati e sollevamento di carichi pesanti durante la costruzione
+  - Valgono le regole di classe e di bandiera; non improvvisare mai un
+    sistema di sicurezza
+limits:
+  - Le quote presuppongono uno scafo d'acciaio convenzionale e un carico
+    normale
+  - Restano autoritative la visita statale e la classificazione
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Principi di progettazione dello scafo della US Navy
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

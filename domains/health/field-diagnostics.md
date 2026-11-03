@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Without a laboratory, diagnosis relies on history, vital signs, and physical examination. A structured approach separates emergencies from routine illness.
+Without a laboratory, diagnosis relies on history, vital signs, and physical
+examination. A structured approach separates emergencies from routine illness.
 
 ## Prerequisites
 

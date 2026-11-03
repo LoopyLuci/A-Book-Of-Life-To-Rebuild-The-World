@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00JKQ11G2GCYH2AWNM/biology/veterinary-field-care
+translation_of: pnk:01KDVDNA00JKQ11G2GCYH2AWNM/biology/veterinary-field-care
+title: Cuidado Veterinário de Campo e Triagem
+domain: biology
+tags:
+- biologia
+- veterinaria
+- triagem
+- saude-do-gado
+- primeiros-socorros
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Sharps and cuts; use forceps and dispose of blades safely.
+- Biological contamination; keep cultures closed and labelled.
+- Stain and reagent exposure; wear gloves and wash hands.
+- Local rules on wild species and protected plants still apply.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Results vary with local strains, climate and technique.
+- Never use unverified material for food, feed or treatment.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Merck Veterinary Manual
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

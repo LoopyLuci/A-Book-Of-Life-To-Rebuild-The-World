@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: 해부학 기초
+domain: health
+tags: [haerim, saengligong, geongang, hakgyo]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 그레이 해부학(퍼블릭 도메인)
+  - title: WHO 기본 응급 처치
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

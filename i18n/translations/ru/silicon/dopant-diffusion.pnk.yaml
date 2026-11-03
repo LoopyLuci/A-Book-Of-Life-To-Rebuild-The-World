@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+translation_of: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+title: Диффузия легирующих примесей и ионная имплантация
+domain: silicon
+tags: [kremniy, legirovka, diffuziya, implantatsiya, perekhody]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+- Экстремальный нагрев и криогенные жидкости; допускаются только обученные специалисты.
+- Токсичные и коррозионные технологические газы; проверьте сигнализацию и вентиляцию.
+- Ионизирующее и ультрафиолетовое излучение; используйте экранированное оборудование.
+- Правила чистой комнаты — это меры безопасности, а не необязательная практика.
+limits:
+- Требуется дорогое оборудование и специализированный контроль технологических процессов.
+- Описанные выходы и затраты типичны для зрелого производства.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочные материалы NIST по полупроводникам
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

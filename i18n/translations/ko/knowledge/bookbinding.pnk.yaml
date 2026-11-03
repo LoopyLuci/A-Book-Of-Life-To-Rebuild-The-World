@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: 제책과 수선
+domain: knowledge
+tags: [jisik, chaek, suyong, jangin, dososeo]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - 칼과 송곳으로 인한 절상
+  - 접착제 연기과 피부 자극
+  - 반복 작업에 의한 누적 피로
+  - 젖은 상태로 보관하면 곰팡이가 생김
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 제책 및 보존 매뉴얼
+  - title: Library of Congress 도서 수리 지침
+  - title: Canadian Conservation Institute 제책 노트
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

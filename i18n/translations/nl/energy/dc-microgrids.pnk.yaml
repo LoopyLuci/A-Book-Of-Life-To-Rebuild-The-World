@@ -1,0 +1,48 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: DC-microgrids
+domain: energy
+tags: [elektriciteit, zonne-energie, accu, bekabeling, microgrid]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Elektrische schok en boogflits
+  - Kortsluitingen in accu's en waterstofvrijgave
+  - Brand door te kleine beveiliging of beveiliging die alleen voor AC geschikt is
+  - Vallen bij de montage van panelen
+limits:
+  - Gebruik geen automaten of zekeringen die alleen voor AC geschikt zijn op DC-circuits
+  - Sluit niet aan op het net of een generator zonder goedgekeurde omschakelapparatuur
+  - Meng geen verschillende acculeeftijden, capaciteiten of chemieën
+prerequisites:
+  - pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+materials_required:
+  - PV-panelen en montagehardware
+  - Laadregelaar
+  - Accubank
+  - DC-stroomrails en zekeringen
+  - DC-geschikte automaten
+  - Koperkabel en kabelschoenen
+  - Aardelektrode
+  - Verdeelbord en etiketten
+tools_required:
+  - Multimeter
+  - Stroomtang
+  - Geïsoleerde schroevendraaiers
+  - Krimptang
+  - Momentsleutel
+  - Boormachine
+sources:
+  - title: NEC Article 712 DC Microgrids
+  - title: IEC 62548 Photovoltaic Array Design
+  - title: Sandia National Laboratories DC Microgrid Guidance
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+  - pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+  - pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+geographic_applicability: [universal]
+language: nl
+media: []

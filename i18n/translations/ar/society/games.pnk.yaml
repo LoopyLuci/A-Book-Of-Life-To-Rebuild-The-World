@@ -1,0 +1,26 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N92/society/games
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N92/society/games
+title: الألعاب
+domain: society
+tags:
+- alab
+- shatranj
+- go
+- mancala
+- istirdah
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: H.J.R. Murray's Board Games
+verification:
+  status: peer-reviewed
+  date: '2026-07-22'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

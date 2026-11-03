@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Antibiotics cure bacterial infection. Knowing which drug for which bug, and completing the full course, prevents resistance and relapse.
+Antibiotics cure bacterial infection. Knowing which drug for which bug, and
+completing the full course, prevents resistance and relapse.
 
 ## Prerequisites
 

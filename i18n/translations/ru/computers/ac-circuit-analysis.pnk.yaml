@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+translation_of: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+title: Анализ цепей переменного тока и импеданс
+domain: computers
+tags: [vychislitelnaya-tehnika, elektronika, ac, impedans, filtry]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- Сетевое напряжение и накопленный заряд смертельны; обесточьте перед началом работ.
+- Пары пайки, флюс и свинец; проветривайте и мойте руки.
+- Статическое электричество может повредить детали; работайте на заземлённом верстаке.
+- Потеря данных происходит незаметно; делайте резервную копию перед работой с прошивкой или диском.
+limits:
+- Примеры рассчитаны на распространённые открытые инструментальные цепочки.
+- Следуйте datasheet производителя, а не любому пересказу.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Университетская физика OpenStax
+  license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

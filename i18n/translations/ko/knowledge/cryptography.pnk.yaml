@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+translation_of: pnk:01M52TVK0DC1B59EQB6Y20HJVF/knowledge/cryptography
+title: 암호학
+domain: knowledge
+tags: [bogeom, anbo, sotong, jisik]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 퍼블릭 도메인 암호학 입문서
+  - title: NIST 암호학 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

@@ -38,8 +38,29 @@ tools_required:
 - Sealer
 sources:
 - title: FAO Grain Storage Techniques
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: USDA Stored Grain Management
+  license: public-domain
+  language: en
 - title: WHO Mycotoxin Control Guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: تخزين الغذاء
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%AE%D8%B2%D9%8A%D9%86_%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A1
+  license: CC-BY-SA-4.0
+  language: ar
+- title: खाद्य भंडारण
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%96%E0%A4%BE%E0%A4%A6%E0%A5%8D%E0%A4%AF_%E0%A4%AD%E0%A4%82%E0%A4%A1%E0%A4%BE%E0%A4%B0%E0%A4%A3
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Penyimpanan makanan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Penyimpanan_makanan
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links:

@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00RG48JMWD9MMTVN56/ship/shipbuilding-project-cost
+translation_of: pnk:01KDVDNA00RG48JMWD9MMTVN56/ship/shipbuilding-project-cost
+title: Gestión de Proyectos y Costes en Construcción Naval
+domain: ship
+tags:
+- naval
+- construccion-naval
+- costo
+- proyecto
+- planificacion-de-tareas
+difficulty: journeyman
+safety: green
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Working at height and over open water; use fall protection.
+- Hot work, welding fume and fire watch; control the hot zone.
+- Confined space and heavy lifting hazards during construction.
+- Class and flag rules apply; never improvise a safety system.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Dimensions assume a conventional steel hull and normal loading.
+- Statutory survey and classification remain authoritative.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: ILO Shipbuilding Guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: es
+media: []

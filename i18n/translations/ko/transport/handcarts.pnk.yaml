@@ -1,0 +1,23 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: 손수레와 2바퀴 수레
+domain: transport
+tags: [unyong, sidae, mokjang, yujutsu, sanek]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Practical Action 마을 기술 핸드북
+  - title: FAO 단순 농용 수레 지침
+  - title: Appropriate Technology 운송 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

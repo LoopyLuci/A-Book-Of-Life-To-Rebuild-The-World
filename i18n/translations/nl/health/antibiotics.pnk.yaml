@@ -1,0 +1,24 @@
+id: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+translation_of: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+title: Antibiotica
+domain: health
+tags: [antibiotica, infectie, farmacologie, gezondheid]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Model List of Essential Medicines
+    license: public-domain
+  - title: MSF Clinical Guidelines (open)
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: OpenStax Biology 2e
   license: CC-BY-4.0
+  language: en
+- title: 발효
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%B0%9C%ED%9A%A8
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Fermentazione
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Fermentazione
+  license: CC-BY-SA-4.0
+  language: it
+- title: Fermentatie
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Fermentatie
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

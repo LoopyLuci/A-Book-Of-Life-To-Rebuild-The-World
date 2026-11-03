@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0BHFN6FGVNWDCDAKFT/knowledge/printing
+translation_of: pnk:01M52TVK0BHFN6FGVNWDCDAKFT/knowledge/printing
+title: 印刷技术
+domain: knowledge
+tags:
+- yinshua
+- chuban
+- zhishi
+- tongxin
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain letterpress manuals
+- title: Gutenberg press reconstruction notes
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

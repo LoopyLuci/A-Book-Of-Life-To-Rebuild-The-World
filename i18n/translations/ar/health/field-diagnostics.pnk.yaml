@@ -1,0 +1,25 @@
+id: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+translation_of: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+title: التشخيص الميداني
+domain: health
+tags:
+- tashkhis
+- fahs
+- siha
+- firagh-tibbi
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Basic Emergency Care
+- title: MSF Clinical Guidelines (open)
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

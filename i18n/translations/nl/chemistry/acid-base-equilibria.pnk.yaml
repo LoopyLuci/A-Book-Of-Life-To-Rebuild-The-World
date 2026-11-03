@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+translation_of: pnk:01KDVDNA00445N53H19BXPZMAR/chemistry/acid-base-equilibria
+title: Zuur-base-evenwichten en buffering
+domain: chemistry
+tags: [chemie, zuren, basen, buffers, ph, titratie]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Chemische brandwonden en spatten; draag een spatbril en handschoenen.
+  - Inhalatie van dampen; werk in een geventileerde ruimte of onder een zuurkast.
+  - Vuur en hitte; houd brandbaar materiaal weg bij het werken met warmte.
+  - Reagentiaafval moet worden geneutraliseerd en apart worden ingezameld.
+limits:
+  - De waarden gaan uit van laboratoriumkwaliteit en gekalibreerd glaswerk.
+  - Geen vervanging van een gecontroleerd laboratoriumprotocol.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Introduction to Chemistry
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

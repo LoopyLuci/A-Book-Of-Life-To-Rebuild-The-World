@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+translation_of: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+title: Konfliktlösung
+domain: society
+tags:
+- konflikt
+- mediation
+- gesellschaft
+- frieden
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain mediation primers
+- title: Restorative justice principles
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+translation_of: pnk:01M52TVK01DXN2XCR8ET8G91SE/health/field-diagnostics
+title: Полевая диагностика
+domain: health
+tags: [diagnostika, obsledovanie, zdorove, sortirovka]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Базовая неотложная помощь ВОЗ
+- title: Клинические рекомендации MSF (открытые)
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

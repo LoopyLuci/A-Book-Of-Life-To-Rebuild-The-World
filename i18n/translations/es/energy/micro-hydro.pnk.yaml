@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N44/energy/micro-hydro
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N44/energy/micro-hydro
+title: Microhidroeléctrica
+domain: energy
+tags:
+- hidro
+- agua
+- turbina
+- electricidad
+- energia
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N47/energy/electrical-wiring
+materials_required: []
+tools_required: []
+sources:
+- title: US DOE Micro-Hydro Guide
+- title: Practical Action Micro-Hydro
+verification:
+  status: peer-reviewed
+  date: '2026-04-25'
+links: []
+geographic_applicability:
+- temperate
+- tropical
+language: es
+media: []

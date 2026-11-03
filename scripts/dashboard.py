@@ -6,8 +6,7 @@ Generate a static verification dashboard as a self-contained HTML file.
 from __future__ import annotations
 
 import json
-import sqlite3
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 
 import yaml
@@ -183,7 +182,7 @@ def build() -> int:
     )
 
     replacements = {
-        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated_at": datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "total": total,
         "field_tested": status_counts["field-tested"],
         "peer_reviewed": status_counts["peer-reviewed"],

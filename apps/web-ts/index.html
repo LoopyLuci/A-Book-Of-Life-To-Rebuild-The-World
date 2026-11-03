@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="An offline-first knowledge base for rebuilding civilization." />
+  <title>A Book Of Life To Rebuild The World</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <a id="skip-link" class="skip-link" href="#view">Skip to the entries</a>
+
+  <header class="app-header">
+    <div class="brand">
+      <h1 id="site-title" class="brand-title">A Book Of Life To Rebuild The World</h1>
+      <p id="site-tagline" class="brand-tagline">An offline-first knowledge base for rebuilding civilization.</p>
+    </div>
+
+    <form class="search-form" role="search" onsubmit="return false;">
+      <label id="search-label" class="visually-hidden" for="search-input">Search</label>
+      <input
+        id="search-input"
+        class="search-input"
+        type="search"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Search entries…"
+      />
+      <button id="palette-button" class="button button-ghost" type="button" aria-label="Open the quick-jump palette">
+        <kbd>Ctrl</kbd><kbd>K</kbd>
+      </button>
+    </form>
+
+    <div class="header-actions">
+      <label id="language-label" class="visually-hidden" for="language-select">Language</label>
+      <select id="language-select" class="select"></select>
+      <button id="theme-toggle" class="button button-ghost" type="button" aria-label="Theme">Theme</button>
+      <button id="shortcuts-button" class="button button-ghost" type="button" aria-label="Keyboard shortcuts">?</button>
+      <button id="about-button" class="button button-ghost" type="button" aria-label="About">i</button>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <nav class="sidebar" aria-label="Domains and filters">
+      <section class="sidebar-section">
+        <h2 id="domains-heading" class="sidebar-heading">Domains</h2>
+        <ul id="domain-list" class="domain-list"></ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2 id="filters-heading" class="sidebar-heading">Filters</h2>
+        <label class="field">
+          <span id="difficulty-label" class="field-label">Difficulty</span>
+          <select id="difficulty-filter" class="select"></select>
+        </label>
+        <label class="field">
+          <span id="safety-label" class="field-label">Safety</span>
+          <select id="safety-filter" class="select"></select>
+        </label>
+        <button id="clear-filters" class="button button-block" type="button">Clear filters</button>
+      </section>
+
+      <section class="sidebar-section">
+        <div class="sidebar-heading-row">
+          <h2 id="recent-heading" class="sidebar-heading">Recently read</h2>
+          <button id="clear-recent" class="button button-tiny" type="button">Clear</button>
+        </div>
+        <ul id="recent-list" class="recent-list"></ul>
+      </section>
+    </nav>
+
+    <main id="main" class="main">
+      <div id="view" class="view" tabindex="-1"></div>
+    </main>
+  </div>
+
+  <footer class="app-footer">
+    <p id="footer-note" class="footer-note"></p>
+    <p class="footer-meta">
+      Content licensed under CC BY-SA 4.0 · Application code under MIT ·
+      <a href="https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World" rel="noopener noreferrer">Source</a>
+    </p>
+  </footer>
+
+  <dialog id="about-dialog" class="dialog dialog-wide" aria-labelledby="about-dialog-title">
+    <div class="dialog-header">
+      <h2 id="about-dialog-title" class="dialog-title">About</h2>
+      <button class="button button-ghost dialog-close" type="button" data-close-dialog>Close</button>
+    </div>
+    <div class="dialog-body"></div>
+  </dialog>
+
+  <dialog id="shortcuts-dialog" class="dialog" aria-labelledby="shortcuts-dialog-title">
+    <div class="dialog-header">
+      <h2 id="shortcuts-dialog-title" class="dialog-title">Keyboard shortcuts</h2>
+      <button class="button button-ghost dialog-close" type="button" data-close-dialog>Close</button>
+    </div>
+    <div class="dialog-body"></div>
+  </dialog>
+
+  <dialog id="palette-dialog" class="dialog dialog-palette" aria-labelledby="palette-dialog-title">
+    <div class="dialog-header">
+      <h2 id="palette-dialog-title" class="dialog-title">Quick jump</h2>
+      <button class="button button-ghost dialog-close" type="button" data-close-dialog>Close</button>
+    </div>
+    <div class="palette-input-wrap">
+      <label id="palette-label" class="visually-hidden" for="palette-input">Jump to an entry</label>
+      <input id="palette-input" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Jump to an entry…" />
+    </div>
+    <ul id="palette-list" class="palette-list" role="listbox" aria-label="Quick jump results"></ul>
+  </dialog>
+
+  <div id="live-region" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <script src="./content.embedded.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var script = document.createElement('script');
+      if (window.location.protocol === 'file:') {
+        // Module scripts are blocked on file:// origins, so the build also
+        // emits a classic-script bundle of the same sources.
+        script.src = './app.bundle.js';
+      } else {
+        script.type = 'module';
+        script.src = './main.js';
+      }
+      document.head.appendChild(script);
+    })();
+  </script>
+</body>
+</html>

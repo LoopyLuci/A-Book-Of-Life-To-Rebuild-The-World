@@ -1,0 +1,61 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: 货物绑扎
+domain: transport
+tags:
+- yunshu
+- huowu
+- jiedu
+- anquan
+- wuliu
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+yield: A balanced, restrained load that stays put through rough ground and repeated checks
+season: Year-round; recheck more often in rain, heat, and on rough roads
+storage: Store straps and rope dry, shaded, and inspected
+cost: low
+hazards:
+- Shifting or falling loads
+- Crushing injuries during tensioning
+- Vehicle or cart overturning
+- Damaged straps failing under load
+resource_budget:
+  batch: one 500 kg cart load
+  labor_hours: 2
+  energy_kwh: 0
+  water_liters: 1
+lifespan: Quality straps last 2-5 years; rope depends on wear and UV exposure
+maintenance: Inspect restraints before every trip and retire damaged ones immediately
+limits:
+- Never exceed the weakest component's working load limit
+- Do not attach straps to fuel lines, body panels, or sharp edges
+- Do not carry passengers on an unsecured load
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required:
+- Rated straps, chains, or rope
+- Soft shackles or edge protectors
+- Anti-slip matting
+- Tarpaulin
+- Inspection log
+tools_required:
+- Gloves
+- Knife
+- Chocks
+- Tie-down points
+- Tensioning tool
+sources:
+- title: FHWA North American Cargo Securement Standard
+- title: US Army FM 55-15 Transportation Reference Data
+- title: ILO Safety and Health in Ports
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KS0K354SMG8T05GPPH/transport/route-planning
+- pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+- pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+geographic_applicability:
+- universal
+language: zh
+media: []

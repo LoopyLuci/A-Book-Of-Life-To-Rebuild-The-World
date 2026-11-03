@@ -1,0 +1,45 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Regenwateropvang
+domain: water
+tags: [water, regenwater, opslag, dakbedekking, sanitatie]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Ziekteverwekkers en zware metalen die van het dak worden gespoeld
+  - Muggenbroed in open tanks
+  - Verdronken of vallen in grote open reservoirs
+  - Inzakken van de tank of de standaard onder volle belasting
+limits: []
+prerequisites: []
+materials_required:
+  - Dakoppervlak als vangoppervlak
+  - Goten en afvoerpijpen
+  - Eerste-afvoerafscheider
+  - Bladscherm
+  - Opslagtank van voedselkwaliteit
+  - Overlooppijp
+  - Chloor of ander ontsmettingsmiddel
+  - Filterszand en grind
+tools_required:
+  - Maatband
+  - Zaag
+  - Boormachine
+  - Ladder
+  - Waterpas
+  - Schep
+  - Pijptang
+sources:
+  - title: WHO Guidelines for Drinking-water Quality
+  - title: Texas Manual on Rainwater Harvesting
+  - title: US EPA Rainwater Harvesting and Municipal Separate Storm Sewer Systems
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+  - pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+geographic_applicability: [universal]
+language: nl
+media: []

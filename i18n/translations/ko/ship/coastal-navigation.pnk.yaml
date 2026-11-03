@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: 해안 항해와 조종
+domain: ship
+tags: [bae, hanghae, johang, haesan, bangwi]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - 높은 곳과 열린 수면 위에서의 작업; 추락 방어를 사용한다.
+  - 고온 작업, 용접 연기, 화재 감시; 고온 구역을 관리한다.
+  - 공사 중 밀폐 공간과 중량물 취급 위험.
+  - 선급 및 선기(旗) 규정이 적용된다; 안전 시스템을 임의로 만들어 쓰지 않는다.
+limits:
+  - 치수는 일반적인 강선 선체와 정상 적재를 전제로 한다.
+  - 법정 검사와 선급 분류가 우선한다.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Coast Guard Navigation Manual
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

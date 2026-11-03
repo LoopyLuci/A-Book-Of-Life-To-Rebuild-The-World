@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: US Coast Guard Small Boat Guidance
   license: public-domain
+  language: en
+- title: Construction de bateau
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Construction_de_bateau
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Bootsbau
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Bootsbau
+  license: CC-BY-SA-4.0
+  language: de
+- title: بناء قوارب
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A8%D9%86%D8%A7%D8%A1_%D9%82%D9%88%D8%A7%D8%B1%D8%A8
+  license: CC-BY-SA-4.0
+  language: ar
 verification:
   status: draft
 links: []

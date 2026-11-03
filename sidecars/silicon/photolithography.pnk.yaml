@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Semiconductor Reference
   license: public-domain
+  language: en
+- title: طباعة حجرية ضوئية
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9_%D8%AD%D8%AC%D8%B1%D9%8A%D8%A9_%D8%B6%D9%88%D8%A6%D9%8A%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: Fotolitografi
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Fotolitografi
+  license: CC-BY-SA-4.0
+  language: id
+- title: フォトリソグラフィ
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%88%E3%83%AA%E3%82%BD%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links: []

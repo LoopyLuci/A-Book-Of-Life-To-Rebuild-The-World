@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA001HXR01Z5WNBA8CYM/ship/lines-plan-hydrostatics
+translation_of: pnk:01KDVDNA001HXR01Z5WNBA8CYM/ship/lines-plan-hydrostatics
+title: План шпилей и гидростатика
+domain: ship
+tags: [korabl, plan-korablya, gidrostematika, vodoizmeshchenie, korable-stroitelstvo]
+difficulty: journeyman
+safety: green
+time_to_complete: days
+hazards:
+- Работы на высоте над открытой водой; используйте средства защиты от падения.
+- Огневые работы, сварочный дым и наблюдение за пожаром; контролируйте зону горения.
+- Опасности замкнутых пространств и тяжёлых подъёмов при постройке.
+- Действуют требования классификационного общества и флагового государства; не импровизируйте систему безопасности.
+limits:
+- Размеры рассчитаны на обычный стальной корпус и нормальную загрузку.
+- Обязательные обследования и классификация остаются обязательными.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Учебник ВМС США по гидростатике
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

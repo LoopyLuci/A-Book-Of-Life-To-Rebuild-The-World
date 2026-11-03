@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: SEMI International Standards
   license: public-domain
+  language: en
+- title: स्वच्छ कक्ष
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%9A%E0%A5%8D%E0%A4%9B_%E0%A4%95%E0%A4%95%E0%A5%8D%E0%A4%B7
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Kamar bersih
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Kamar_bersih
+  license: CC-BY-SA-4.0
+  language: id
+- title: クリーンルーム
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%AB%E3%83%BC%E3%83%A0
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links: []

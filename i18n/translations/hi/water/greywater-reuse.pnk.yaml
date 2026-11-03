@@ -1,0 +1,53 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Greywater Reuse
+domain: water
+tags:
+- paani
+- grey-jal
+- sinchai
+- suchak-tantra
+- kheti
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 50-80% of household wastewater; a low-use household can recover 100-150 L per day
+season: Growing season, when plants can use the water; do not store between irrigations
+storage: Use within 24 hours; no long-term storage without treatment
+cost: low
+hazards:
+- Pathogens from laundry, bath, and hand-washing water
+- Salt and boron accumulation in soil
+- Groundwater contamination
+- Mosquito breeding in stagnant pools
+prerequisites:
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+materials_required:
+- Diverter valve
+- Greywater-safe pipe
+- Mulch basin or subsurface irrigation line
+- Gravel
+- Filter screen
+- Soap without borax or heavy bleach
+tools_required:
+- Shovel
+- Pipe cutter
+- Spirit level
+- Bucket
+- Gloves
+sources:
+- title: WHO Guidelines for the Safe Use of Wastewater, Excreta and Greywater
+- title: US EPA WaterSense Outdoor Water Use
+- title: FAO Wastewater Reuse in Agriculture
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability:
+- temperate
+- arid
+- tropical
+language: hi
+media: []

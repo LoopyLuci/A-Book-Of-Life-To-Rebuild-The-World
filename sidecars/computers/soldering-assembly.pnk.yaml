@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Soldering Guidance
   license: public-domain
+  language: en
+- title: 납땜
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%82%A9%EB%95%9C
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Brasatura
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Brasatura
+  license: CC-BY-SA-4.0
+  language: it
+- title: Solderen
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Solderen
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

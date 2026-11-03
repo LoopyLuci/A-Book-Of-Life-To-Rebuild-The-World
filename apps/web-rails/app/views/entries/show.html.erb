@@ -1,0 +1,93 @@
+<% content_for :title, page_title(@entry.title) %>
+<% content_for :description, meta_description(@entry.excerpt) %>
+
+<nav class="breadcrumbs" aria-label="<%= t("domains") %>">
+  <ol>
+    <li><%= link_to t("home"), root_path %></li>
+    <li><%= link_to @entry.domain, domain_path(@entry.domain) %></li>
+    <li aria-current="page"><%= @entry.title %></li>
+  </ol>
+</nav>
+
+<article class="entry">
+  <header class="entry-header">
+    <h1><%= @entry.title %></h1>
+
+    <p class="entry-meta">
+      <span class="pill pill-domain"><%= link_to @entry.domain, domain_path(@entry.domain) %></span>
+      <span class="pill"><%= t("difficulty") %>: <%= difficulty_label(@entry.difficulty) %></span>
+      <span class="pill pill-<%= @entry.safety %>"><%= t("safety") %>: <%= safety_label(@entry.safety) %></span>
+      <% if @entry.time_to_complete.present? %>
+        <span class="pill"><%= t("time_to_complete") %>: <%= @entry.time_to_complete %></span>
+      <% end %>
+    </p>
+
+    <p class="verification verification-<%= @entry.verification.status %>">
+      <span class="verification-label"><%= t("verification") %>:</span>
+      <span class="verification-status"><%= verification_label(@entry.verification.status) %></span>
+      <% if @entry.verification.date.present? %>
+        <span class="verification-date"><%= @entry.verification.date %></span>
+      <% end %>
+    </p>
+  </header>
+
+  <div class="entry-body">
+    <%= entry_body(@entry) %>
+  </div>
+
+  <footer class="entry-footer">
+    <section aria-labelledby="tags-heading">
+      <h2 id="tags-heading"><%= t("tags") %></h2>
+      <% if @entry.tags.any? %>
+        <ul class="tag-list">
+          <% @entry.tags.each do |tag| %>
+            <li><%= tag %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p class="muted">—</p>
+      <% end %>
+    </section>
+
+    <section aria-labelledby="sources-heading">
+      <h2 id="sources-heading"><%= t("sources") %></h2>
+      <% if @entry.sources.any? %>
+        <ol class="source-list">
+          <% @entry.sources.each do |source| %>
+            <li><%= source.title %><% if source.license.present? %> <span class="meta">(<%= source.license %>)</span><% end %></li>
+          <% end %>
+        </ol>
+      <% else %>
+        <p class="muted">—</p>
+      <% end %>
+    </section>
+
+    <% if @relations[:prerequisites].any? || @entry.free_prerequisites.any? %>
+      <section aria-labelledby="prerequisites-heading">
+        <h2 id="prerequisites-heading"><%= t("prerequisites") %></h2>
+        <ul class="entry-list">
+          <% @relations[:prerequisites].each do |related| %>
+            <li><%= link_to related.title, entry_path(related.domain, related.slug) %></li>
+          <% end %>
+          <% @entry.free_prerequisites.each do |text| %>
+            <li><%= text %></li>
+          <% end %>
+        </ul>
+      </section>
+    <% end %>
+
+    <% if @relations[:related].any? %>
+      <section aria-labelledby="related-heading">
+        <h2 id="related-heading"><%= t("related_entries") %></h2>
+        <ul class="entry-list">
+          <% @relations[:related].each do |related| %>
+            <li>
+              <%= link_to related.title, entry_path(related.domain, related.slug) %>
+              <span class="meta"><%= related.domain %></span>
+            </li>
+          <% end %>
+        </ul>
+      </section>
+    <% end %>
+  </footer>
+</article>

@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Unresolved conflict destroys communities. Mediation that addresses interests, not positions, restores relationships and prevents violence.
+Unresolved conflict destroys communities. Mediation that addresses interests,
+not positions, restores relationships and prevents violence.
 
 ## Prerequisites
 

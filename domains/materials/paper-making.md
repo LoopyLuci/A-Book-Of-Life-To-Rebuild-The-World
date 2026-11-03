@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Paper preserves knowledge. It is made from cellulose fiber (rag, hemp, straw)

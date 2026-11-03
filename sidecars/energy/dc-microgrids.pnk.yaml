@@ -50,8 +50,24 @@ tools_required:
 - Drill
 sources:
 - title: NEC Article 712 DC Microgrids
+  license: permission-granted
+  language: en
 - title: IEC 62548 Photovoltaic Array Design
+  license: permission-granted
+  language: en
 - title: Sandia National Laboratories DC Microgrid Guidance
+  license: public-domain
+  language: en
+- title: 마이크로그리드
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EA%B7%B8%EB%A6%AC%EB%93%9C
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Microgrid
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Microgrid
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links:

@@ -1,0 +1,22 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: Cura dei denti
+domain: health
+tags: [dentale, denti, prevenzione, salute]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO sulla salute orale
+  - title: Manuali odontoiatrici di pubblico dominio
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

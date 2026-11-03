@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Blacksmithing shapes wrought iron and steel by heating and hammering. It

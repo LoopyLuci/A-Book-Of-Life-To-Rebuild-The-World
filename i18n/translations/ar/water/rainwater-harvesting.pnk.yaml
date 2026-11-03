@@ -1,0 +1,55 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: حصاد مياه الأمطار
+domain: water
+tags:
+- maa
+- maa-matar
+- khizan
+- sufuf
+- nafasah-amma
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 0.6-0.9 L per m² of roof per mm of rain; a 100 m² roof in an 800 mm climate can collect 48,000-72,000
+  L per year
+season: Wet season for collection; stored water carries the household through dry months
+storage: Covered, dark tank; use within 6-12 months and treat before drinking
+cost: medium
+hazards:
+- Pathogens and heavy metals washed from the roof
+- Mosquito breeding in open tanks
+- Drowning or falls in large open cisterns
+- Tank or stand collapse under full load
+prerequisites: []
+materials_required:
+- Roof catchment area
+- Gutters and downpipes
+- First-flush diverter
+- Leaf screen
+- Food-grade storage tank
+- Overflow pipe
+- Chlorine or other disinfectant
+- Filter sand and gravel
+tools_required:
+- Tape measure
+- Saw
+- Drill
+- Ladder
+- Spirit level
+- Shovel
+- Pipe wrench
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: Texas Manual on Rainwater Harvesting
+- title: US EPA Rainwater Harvesting and Municipal Separate Storm Sewer Systems
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+- pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+geographic_applicability:
+- universal
+language: ar
+media: []

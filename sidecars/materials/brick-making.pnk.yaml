@@ -1,21 +1,44 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
 title: Brick Making
 domain: materials
-tags: [brick, clay, kiln, construction, materials]
+tags:
+- brick
+- clay
+- kiln
+- construction
+- materials
 difficulty: apprentice
 safety: yellow
 time_to_complete: weeks
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional brickmaking methods
+- title: Traditional brickmaking methods
+  license: original
+  language: en
+- title: Tuğla
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Tu%C4%9Fla
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Gạch nung
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/G%E1%BA%A1ch_nung
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Tofali
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Tofali
+  license: CC-BY-SA-4.0
+  language: sw
 verification:
   status: peer-reviewed
-  date: "2026-04-03"
+  date: '2026-04-03'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

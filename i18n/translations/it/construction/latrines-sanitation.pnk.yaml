@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Latrine e sanità
+domain: construction
+tags: [sanitari, latrina, igiene, rifiuti]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO su sanità e salute
+  - title: US Army FM 21-10 Igiene di campo
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

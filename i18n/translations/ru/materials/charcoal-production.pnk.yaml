@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+title: Производство угля
+domain: materials
+tags: [ugol, piroliz, toplivo, plavka, materialy]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ФАО по производству угля
+verification:
+  status: field-tested
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -47,8 +47,29 @@ tools_required:
 - Respirator and heat-resistant gloves
 sources:
 - title: The Potter's Dictionary of Materials and Techniques
+  license: permission-granted
+  language: en
 - title: OSHA Crystalline Silica Exposure Guidance
+  license: public-domain
+  language: en
 - title: American Ceramic Society Firing and Glazing Guides
+  license: permission-granted
+  language: en
+- title: Cerámica
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Cer%C3%A1mica
+  license: CC-BY-SA-4.0
+  language: es
+- title: Céramique
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/C%C3%A9ramique
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Keramik
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Keramik
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links:

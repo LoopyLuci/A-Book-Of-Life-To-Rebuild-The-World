@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Semiconductor Reference
   license: public-domain
+  language: en
+- title: Fabbricazione dei dispositivi a semiconduttore
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Fabbricazione_dei_dispositivi_a_semiconduttore
+  license: CC-BY-SA-4.0
+  language: it
+- title: Fabricageproces halfgeleider
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Fabricageproces_halfgeleider
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Yarı iletken aygıt üretimi
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Yar%C4%B1_iletken_ayg%C4%B1t_%C3%BCretimi
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: draft
 links: []

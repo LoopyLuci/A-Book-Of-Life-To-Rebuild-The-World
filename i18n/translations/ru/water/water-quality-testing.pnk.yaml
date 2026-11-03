@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+translation_of: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+title: Оценка качества воды
+domain: water
+tags: [voda, ispytaniya, sanitariya, klor, obshestvennoe-zdorove]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Химическое раздражение от реактивов
+- Ложная уверенность из-за отрицательного экспресс-теста
+- Загрязнение проб при отборе
+- Контакт со сточными водами или паводковой водой
+limits:
+- Полевые наборы выявляют косвенные признаки и не подтверждают микробиологическую безопасность
+- Тесты на хлор не выявляют химическое загрязнение
+- Ампулы H2S — это предупреждающий тест, а не лабораторное подтверждение
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по качеству питьевой воды
+- title: 'АПН США: экстренная дезинфекция питьевой воды'
+- title: Стандартные методы APHA по исследованию воды и сточных вод
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

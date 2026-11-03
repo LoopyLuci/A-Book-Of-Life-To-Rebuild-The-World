@@ -6,7 +6,7 @@ Uses a simple word-count proxy for tokens (1 token ≈ 0.75 words).
 from __future__ import annotations
 
 import re
-from typing import Iterator
+from collections.abc import Iterator
 
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$", re.MULTILINE)
 

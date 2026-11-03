@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Pianificazione della sicurezza alimentare comunitaria
+domain: society
+tags: [societa, sicurezza-alimentare, pianificazione, resilienza, governance]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+  - Accesso diseguale e cattura di risorse da parte di chi ha potere
+  - Marciumi dovuti a uno stoccaggio inadeguato
+  - Conflitti sulla distribuzione
+  - Dipendenza da un'unica coltura o da un solo fornitore
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida FAO per la valutazione della sicurezza alimentare
+  - title: Standard di sicurezza alimentare del manuale Sphere
+  - title: WHO Nutrizione in emergenza
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

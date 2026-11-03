@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+translation_of: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+title: Речные паромы и переправы на малых лодках
+domain: transport
+tags: [transport, reka, lodki, paromy, bezopasnost-vody]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- Опрокидывание из-за перегрузки или сдвига груза
+- Утопление и переохлаждение
+- Обрыв троса или блока
+- Снос течением к деревьям или на пороги
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Безопасность малых судов (береговая охрана США)
+- title: Рекомендации ВОЗ по предотвращению утопления
+- title: 'Practical Action: переправы через реки и паромы'
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

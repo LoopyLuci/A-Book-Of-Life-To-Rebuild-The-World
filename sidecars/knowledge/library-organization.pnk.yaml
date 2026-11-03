@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain library science texts
+  license: public-domain
+  language: en
 - title: UNESCO archive guidance
+  license: CC-BY-SA-3.0-IGO
+  language: en
+- title: Bibliotheek (algemeen)
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Bibliotheek_%28algemeen%29
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Kütüphane
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/K%C3%BCt%C3%BCphane
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Thư viện
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Th%C6%B0_vi%E1%BB%87n
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

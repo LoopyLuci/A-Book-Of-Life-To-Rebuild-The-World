@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The repository the app checks for new releases. Forks that ship their
+      own build should change these two values in their own copy of the app.
+    -->
+    <string name="update_repo_owner" translatable="false">LoopyLuci</string>
+    <string name="update_repo_name" translatable="false">A-Book-Of-Life-To-Rebuild-The-World</string>
+    <string name="update_channel_id" translatable="false">app_updates</string>
+    <string name="update_channel_name" translatable="false">Application updates</string>
+    <string name="update_download_title" translatable="false">Downloading update</string>
+    <string name="update_download_description" translatable="false">Fetching the latest release package</string>
+    <string name="update_notification_title" translatable="false">Update ready to install</string>
+    <string name="update_notification_text" translatable="false">A newer version of the app has been downloaded.</string>
+    <string name="update_notification_action" translatable="false">Install</string>
+</resources>

@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+title: Acendimento de Fogo
+domain: survival
+tags:
+- incendio
+- ignicao
+- aquecimento
+- culinaria
+- sobrevivencia
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army Field Manual FM 21-76
+- title: Boy Scouts of America Handbook (historical)
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+geographic_applicability:
+- universal
+language: pt
+media: []

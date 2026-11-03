@@ -36,6 +36,22 @@ tools_required: []
 sources:
 - title: Introduction to Chemistry
   license: public-domain
+  language: en
+- title: Constante d'acidité
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Constante_d%27acidit%C3%A9
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Säurekonstante
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/S%C3%A4urekonstante
+  license: CC-BY-SA-4.0
+  language: de
+- title: Constante de acidez
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Constante_de_acidez
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

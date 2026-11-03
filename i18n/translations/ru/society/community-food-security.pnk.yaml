@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Планирование продовольственной безопасности сообщества
+domain: society
+tags: [obshchestvo, prodovolstvennaya-bezopasnost, planirovanie, ustoychivost, upravlenie]
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+hazards:
+- Неравный доступ и захват ресурсов узкой группой
+- Порча из-за плохого хранения
+- Конфликт из-за распределения
+- Зависимость от одной культуры или одного поставщика
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ФАО по оценке продовольственной безопасности
+- title: Стандарты продовольственной безопасности Сферы
+- title: Питание в чрезвычайных ситуациях (ВОЗ)
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

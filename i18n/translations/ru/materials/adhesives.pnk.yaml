@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Клеи
+domain: materials
+tags: [kley, krahmal, klej-iz-kozhi, kazein, derevoobrabotka]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Ожоги от горячего клея и паровой ванны
+- Ожоги от едкой извести или боракса
+- Развитие плесени в крахмальном и кожевенном клее
+- Разрушение слабых соединений под нагрузкой
+limits:
+- Крахмальный и кожевенный клей не водостойки
+- Казеин водостоек, но не является конструкционным клеем для ответственных нагрузок
+- Не применяйте неизвестные клеи на поверхностях, контактирующих с пищей или питьевой водой.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Клеи Института охраны музеев Смитсоновского университета
+- title: Клеи и консолидирующие составы Канадского института реставрации
+- title: Хори, «Материалы для реставрации»
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

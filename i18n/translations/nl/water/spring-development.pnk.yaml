@@ -1,0 +1,43 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Ontwikkeling en bescherming van een bron
+domain: water
+tags: [water, bronnen, zwaartekracht, constructie, sanitatie]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Instorten van de sleuf tijdens het graven
+  - Verontreiniging door afstromend oppervlaktewater en vee
+  - Verdronken in een niet-afgedekte put
+  - Schade aan de waterrechten stroomafwaarts
+limits: []
+prerequisites: []
+materials_required:
+  - Steen of beton
+  - Grind en zand als filterpakket
+  - Opvangpijp
+  - Overlooppijp
+  - Klei of mortel als afdichting
+  - Hekpalen
+  - Afdekplaat
+tools_required:
+  - Schep
+  - Pik
+  - Kruiwagen
+  - Waterpas
+  - Pijpsnijder
+  - Maatbak en stopwatch
+sources:
+  - title: WHO Technical Note on Spring Protection
+  - title: Oxfam Spring Protection Guidelines
+  - title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+  - pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+geographic_applicability: [universal]
+language: nl
+media: []

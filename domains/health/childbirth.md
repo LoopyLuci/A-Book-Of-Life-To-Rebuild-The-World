@@ -2,9 +2,15 @@
 
 > **Domain:** health | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Most births need only patience, warmth, cleanliness, and support. Recognizing obstructed labor and hemorrhage prevents the two leading causes of maternal death.
+Most births need only patience, warmth, cleanliness, and support. Recognizing
+obstructed labor and hemorrhage prevents the two leading causes of maternal
+death.
 
 ## Prerequisites
 

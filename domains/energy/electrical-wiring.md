@@ -2,6 +2,10 @@
 
 > **Domain:** energy | **Difficulty:** apprentice | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Wiring distributes electricity safely. Rules: correct wire gauge for current,

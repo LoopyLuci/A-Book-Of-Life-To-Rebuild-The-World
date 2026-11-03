@@ -1,0 +1,50 @@
+<% content_for :title, page_title %>
+<% content_for :description, t("tagline") %>
+
+<section class="hero">
+  <h1><%= t("site_name") %></h1>
+  <p class="lead"><%= t("tagline") %></p>
+
+  <p class="stats">
+    <span class="stat"><%= t("entry_count", count: @total_entries) %></span>
+    <span class="stat"><%= corpus.domains.size %> <%= t("domains").downcase %></span>
+    <span class="stat"><%= t("version") %> <%= @version %></span>
+  </p>
+
+  <form class="hero-search" action="<%= search_path %>" method="get" role="search">
+    <label for="hero-query"><%= t("search") %></label>
+    <input type="search" id="hero-query" name="q"
+           placeholder="<%= t("search_placeholder", count: @total_entries) %>">
+    <button type="submit" class="button button-primary"><%= t("search") %></button>
+  </form>
+</section>
+
+<section class="section" aria-labelledby="domains-heading">
+  <h2 id="domains-heading"><%= t("domains") %></h2>
+
+  <ul class="domain-grid">
+    <% @domains.each do |domain| %>
+      <li class="domain-card">
+        <h3><%= link_to domain.title, domain_path(domain.slug) %></h3>
+        <% if domain.description.present? %>
+          <p class="domain-description"><%= domain.description %></p>
+        <% end %>
+        <p class="domain-count"><%= t("entry_count", count: domain.count) %></p>
+      </li>
+    <% end %>
+  </ul>
+</section>
+
+<% if recently_read_entries.any? %>
+  <section class="section" aria-labelledby="recent-heading">
+    <h2 id="recent-heading"><%= t("recently_read") %></h2>
+    <ul class="entry-list">
+      <% recently_read_entries.each do |entry| %>
+        <li>
+          <%= link_to entry.title, entry_path(entry.domain, entry.slug) %>
+          <span class="meta"><%= entry.domain %></span>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>

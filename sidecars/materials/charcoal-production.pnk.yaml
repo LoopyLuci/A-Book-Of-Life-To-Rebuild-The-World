@@ -1,23 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
 title: Charcoal Production
 domain: materials
-tags: [charcoal, pyrolysis, fuel, smelting, materials]
+tags:
+- charcoal
+- pyrolysis
+- fuel
+- smelting
+- materials
 difficulty: novice
 safety: yellow
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 materials_required: []
 tools_required: []
 sources:
-  - title: FAO Charcoal Production Manual
+- title: FAO Charcoal Production Manual
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Carvão vegetal
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Carv%C3%A3o_vegetal
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Древесный уголь
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B9_%D1%83%D0%B3%D0%BE%D0%BB%D1%8C
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 木炭
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E6%9C%A8%E7%82%AD
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: field-tested
   tested_by: Community Team Alpha
-  date: "2026-03-22"
+  date: '2026-03-22'
   location: Missouri, USA
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
-geographic_applicability: [universal]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+geographic_applicability:
+- universal
 language: en
 media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Катализ и кинетика реакций
+domain: chemistry
+tags: [khimiya, kataliz, kinetika, skorost-reaktsii, ravnovesie]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- Химические ожоги и брызги; надевайте защитные очки и перчатки.
+- Вдыхание паров; работайте в проветриваемом помещении или под вытяжным шкафом.
+- Пожар и нагрев; держите горючие материалы вдали от горячих работ.
+- Отходы реактивов нейтрализуйте и собирайте отдельно.
+limits:
+- Значения предполагают чистоту реактивов лабораторного класса и откалиброванную посуду.
+- Не заменяет регламент работы в лаборатории.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Физическая химия (LibreTexts)
+  license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

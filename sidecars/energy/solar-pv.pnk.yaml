@@ -40,8 +40,29 @@ tools_required:
 - Safety glasses
 sources:
 - title: NREL Photovoltaic Systems Basics
+  license: public-domain
+  language: en
 - title: IEC 62548 Photovoltaic Array Design
+  license: permission-granted
+  language: en
 - title: US Department of Energy Off-Grid PV Guidance
+  license: public-domain
+  language: en
+- title: مصفوف ضوئي جهدي
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D9%81%D9%88%D9%81_%D8%B6%D9%88%D8%A6%D9%8A_%D8%AC%D9%87%D8%AF%D9%8A
+  license: CC-BY-SA-4.0
+  language: ar
+- title: Sistem fotovoltaik
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Sistem_fotovoltaik
+  license: CC-BY-SA-4.0
+  language: id
+- title: Impianto fotovoltaico
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Impianto_fotovoltaico
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links:

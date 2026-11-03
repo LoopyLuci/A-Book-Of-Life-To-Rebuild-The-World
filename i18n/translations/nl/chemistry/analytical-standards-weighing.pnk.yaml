@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+translation_of: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+title: Analytisch wegen, standaarden en kalibratie
+domain: chemistry
+tags: [chemie, analytisch, kalibratie, balans, standaarden]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Chemische brandwonden en spatten; draag een spatbril en handschoenen
+  - Inhalatie van dampen; werk in een geventileerde ruimte of onder een zuurkast
+  - Vuur en hitte; houd brandbaar materiaal weg bij het werken met warmte
+  - Reagentiaafval moet worden geneutraliseerd en apart worden ingezameld
+limits:
+  - De waarden gaan uit van laboratoriumkwaliteit en gekalibreerd glaswerk
+  - Geen vervanging van een gecontroleerd laboratoriumprotocol
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Handbook 44
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

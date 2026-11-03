@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: 샘 개발과 보호
+domain: water
+tags: [mul, yuseon, jungnyeok-geupsu, gongseo, hwangsang]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - 굴착 중 트렌치 붕괴
+  - 지표 유출수와 가축에 의한 오염
+  - 덮이지 않은 상자에서의 익사
+  - 하류 수원에 대한 피해
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO Technical Note on Spring Protection
+  - title: Oxfam Spring Protection Guidelines
+  - title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

@@ -1,0 +1,32 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Illuminazione efficiente
+domain: energy
+tags: [illuminazione, led, efficienza, luce-diurna, aria-interna]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Monossido di carbonio e particelle delle lampade a combustibile
+  - Incendio da candele e da corpi illuminanti surriscaldati
+  - Scarica elettrica da cablaggi bagnati o danneggiati
+  - Cadute dalle scale
+limits:
+  - Non usare lampade a combustibile senza ventilazione in ambienti interni per
+    periodi prolungati
+  - Non sovraccaricare le prolunghe e non collegare a cascata le ciastre
+    multiple
+  - Il flusso luminoso cala con polvere, calore e driver di scarsa qualità
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: IEA Illuminazione ed efficienza energetica
+  - title: Programma US DOE sull'illuminazione a stato solido
+  - title: Linee guida WHO sull'inquinamento domestico dell'aria
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

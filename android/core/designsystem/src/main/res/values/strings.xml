@@ -145,6 +145,30 @@
     <string name="settings_export_apk_failed">Could not save the APK</string>
     <string name="settings_export_apk_permission">Storage permission is needed to save the APK</string>
 
+    <!-- App updates -->
+    <string name="settings_updates">App updates</string>
+    <string name="settings_check_updates">Check for updates</string>
+    <string name="settings_check_updates_desc">Look for a newer release of the app</string>
+    <string name="settings_update_checking">Checking for updates…</string>
+    <string name="settings_update_up_to_date">The app is up to date</string>
+    <string name="settings_update_up_to_date_desc">Newest release: %1$s</string>
+    <string name="settings_update_available">A newer version is available</string>
+    <string name="settings_update_available_desc">Release %1$s is ready to download</string>
+    <string name="settings_update_download">Download update</string>
+    <string name="settings_update_download_desc">Fetches the package in the background</string>
+    <string name="settings_update_downloading">Downloading update… %1$d%%</string>
+    <string name="settings_update_downloading_desc">The download continues if you close the app</string>
+    <string name="settings_update_ready">Update downloaded</string>
+    <string name="settings_update_ready_desc">Release %1$s is waiting to be installed</string>
+    <string name="settings_update_install">Install update</string>
+    <string name="settings_update_install_desc">Opens the system installer so you can confirm</string>
+    <string name="settings_update_permission_needed">Allow installation</string>
+    <string name="settings_update_permission_needed_desc">Android needs your permission to install this app</string>
+    <string name="settings_update_failed">The update check did not work</string>
+    <string name="settings_update_failed_desc">%1$s</string>
+    <string name="settings_update_cancel">Cancel download</string>
+    <string name="settings_update_source">Release source: the project repository on GitHub</string>
+
     <!-- States -->
     <string name="loading">Loading…</string>
     <string name="error_generic">Something went wrong. Please try again.</string>

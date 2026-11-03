@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** journeyman | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-A constitution fixes the structure of governance, rights, and limits of power. Short, clear, and amendable texts endure best.
+A constitution fixes the structure of governance, rights, and limits of power.
+Short, clear, and amendable texts endure best.
 
 ## Prerequisites
 

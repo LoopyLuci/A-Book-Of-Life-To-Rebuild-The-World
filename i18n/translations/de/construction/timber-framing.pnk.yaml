@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZPMXC71VXFS42RAJWY/construction/timber-framing
+translation_of: pnk:01M52TVJZPMXC71VXFS42RAJWY/construction/timber-framing
+title: Holzrahmenbau
+domain: construction
+tags:
+- holz
+- zimmerei
+- struktur
+- bauwesen
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-6 Carpentry
+- title: Traditional timber-frame guild notes
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

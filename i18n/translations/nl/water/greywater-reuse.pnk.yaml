@@ -1,0 +1,42 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Hergebruik van grijs water
+domain: water
+tags: [water, grijs-water, beregening, sanitatie, landbouw]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Ziekteverwekkers uit was-, bad- en handwaswater
+  - Zout- en booraccumulatie in de bodem
+  - Verontreiniging van het grondwater
+  - Muggenbroed in stilstaande plassen
+limits: []
+prerequisites:
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+materials_required:
+  - Overloopklep
+  - Grijswaterbestendige buis
+  - Mulchbekken of ondergrondse irrigatieleiding
+  - Grind
+  - Filterscherm
+  - Zeep zonder borax of zwaar bleek
+tools_required:
+  - Schep
+  - Buissnijder
+  - Waterpas
+  - Emmer
+  - Handschoenen
+sources:
+  - title: WHO Guidelines for the Safe Use of Wastewater, Excreta and Greywater
+  - title: US EPA WaterSense Outdoor Water Use
+  - title: FAO Wastewater Reuse in Agriculture
+verification:
+  status: draft
+links:
+  - pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability: [temperate, arid, tropical]
+language: nl
+media: []

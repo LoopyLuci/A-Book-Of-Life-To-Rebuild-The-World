@@ -1,0 +1,25 @@
+id: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+translation_of: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+title: Kuzaliwa
+domain: health
+tags:
+- kuzaa
+- uzazi
+- ya-uzazi
+- afya
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Managing Complications in Pregnancy and Childbirth
+- title: Public-domain midwifery texts
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: sw
+media: []

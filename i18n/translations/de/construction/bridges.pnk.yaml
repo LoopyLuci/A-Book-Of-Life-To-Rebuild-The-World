@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+translation_of: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+title: Brücken
+domain: construction
+tags:
+- bruecken
+- struktur
+- transport-allgemein
+- bauwesen
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 5-430 Roads and Airfields
+- title: Historic bridge engineering texts
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

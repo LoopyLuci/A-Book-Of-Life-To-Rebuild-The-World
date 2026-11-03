@@ -2,6 +2,10 @@
 
 > **Domain:** transport | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 A bicycle is the most efficient human transport available: 10-30 km a day

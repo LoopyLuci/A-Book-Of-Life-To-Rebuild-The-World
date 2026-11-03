@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+translation_of: pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+title: Уборные и санитария
+domain: construction
+tags: [sanitariya, otkrytaya-udalya, gigiena, otkhody]
+difficulty: novice
+safety: yellow
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по санитарии и здоровью
+- title: 'FM 21-10 армии США: полевая санитария'
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

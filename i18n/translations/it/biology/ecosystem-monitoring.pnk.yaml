@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+translation_of: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+title: Monitoraggio degli ecosistemi e biodiversità
+domain: biology
+tags: [biologia, ecologia, monitoraggio, biodiversita, rilievo]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Oggetti taglienti e ferite; usa pinzette e smaltisci in sicurezza le lame.
+  - Contaminazione biologica; mantieni le colture chiuse ed etichettate.
+  - Esposizione a coloranti e reagenti; indossa guanti e lavati le mani.
+  - Restano valide le norme locali sulle specie selvatiche e sulle piante protette.
+limits:
+  - I risultati variano con ceppi locali, clima e tecnica.
+  - Non usare mai materiale non verificato per alimentazione, foraggio o trattamenti.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Indicatori di biodiversità UNEP
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

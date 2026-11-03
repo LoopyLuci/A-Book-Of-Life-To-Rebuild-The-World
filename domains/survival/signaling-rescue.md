@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Rescue teams search in patterns. The rule of three: **three of anything**

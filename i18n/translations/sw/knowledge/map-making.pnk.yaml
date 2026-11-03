@@ -1,0 +1,62 @@
+id: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+translation_of: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+title: Uchoraji wa Ramani
+domain: knowledge
+tags:
+- ramani
+- upimaji
+- urambuzi
+- uchoro-wa-ramani
+- rejareja
+difficulty: apprentice
+safety: green
+time_to_complete: days
+yield: A scaled sketch map of about 1 square kilometre with bearings, distances, water, and hazards
+season: Survey in dry, clear weather; leaf cover and floods hide features in wet seasons
+storage: Keep the master map flat, dry, and out of sunlight; store a digital copy separately
+cost: low
+hazards:
+- Traffic and trespassing while surveying
+- River crossings and steep ground
+- Exposure to heat, cold, and storms
+- Over-reliance on a phone battery
+resource_budget:
+  batch: one 1 square kilometre sketch map
+  labor_hours: 16
+  energy_kwh: 0
+  water_liters: 5
+lifespan: A local map remains useful for 5-10 years if updated
+maintenance: Correct after new roads, bridges, or flood damage; recheck declination yearly
+limits:
+- A sketch map is not a legal property survey
+- Magnetic bearings must be corrected for declination
+- Do not enter restricted or unsafe areas without permission
+prerequisites: []
+materials_required:
+- Compass
+- Measuring tape or rope
+- Graph paper and clipboard
+- Pencil and eraser
+- GPS or phone
+- Range poles
+- Waterproof map case
+tools_required:
+- Compass
+- Measuring tape
+- Clinometer or level
+- GPS
+- Ruler and protractor
+sources:
+- title: US Army FM 21-26 Map Reading and Land Navigation
+- title: USGS Topographic Map Symbols
+- title: International Cartographic Association Map Design Guidance
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZYRW8670DXEDMQ9NTP/construction/surveying
+- pnk:01M5FBX2KS0K354SMG8T05GPPH/transport/route-planning
+- pnk:01M5FBX2KSZYD6RTXWK9JXH5S1/society/disaster-preparedness
+geographic_applicability:
+- universal
+language: sw
+media: []

@@ -1,20 +1,43 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
 title: Paper Making
 domain: materials
-tags: [paper, pulp, writing, knowledge, materials]
+tags:
+- paper
+- pulp
+- writing
+- knowledge
+- materials
 difficulty: apprentice
 safety: green
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional papermaking methods
+- title: Traditional papermaking methods
+  license: original
+  language: en
+- title: Carta
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Carta
+  license: CC-BY-SA-4.0
+  language: it
+- title: Papier
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Papier
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Kâğıt
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/K%C3%A2%C4%9F%C4%B1t
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: peer-reviewed
-  date: "2026-04-08"
+  date: '2026-04-08'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

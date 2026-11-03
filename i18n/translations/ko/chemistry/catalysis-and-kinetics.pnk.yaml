@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: 촉매와 반응 속도론
+domain: chemistry
+tags: [hwapyeong, chokmae, dongha, bangsok, pingyeong]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - 화학적 화상과 튀김; 물방울 방지 보안경과 장갑을 착용한다.
+  - 연기 흡입; 환기 공간 또는 후드에서 작업한다.
+  - 화재와 열; 가연성 물질을 고온 작업에서 멀리 둔다.
+  - 시약 폐기물은 중화하여 별도로 수거해야 한다.
+limits:
+  - 수치는 실험실급 순도와 보정된 유리 기구를 전제로 한다.
+  - 관리된 실험실 프로토콜을 대신하지 않는다.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Physical Chemistry
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+translation_of: pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+title: Безопасное хранение воды в домашних условиях
+domain: water
+tags: [voda, khranenie, sanitariya, khlorirovanie, obshestvennoe-zdorove]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Размножение бактерий в тёплой или открытой таре
+- Вымывание химикатов из пластика, не предназначенного для пищи
+- Утопление в открытых резервуарах
+- Перекрёстное загрязнение грязными руками или черпаками
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по качеству питьевой воды
+- title: Руководство CDC по хранению и обработке воды
+- title: Стандарты водоснабжения Справочника Сферы
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

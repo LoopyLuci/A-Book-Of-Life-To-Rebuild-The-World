@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+title: 작물 윤작
+domain: agriculture
+tags: [gyehwan, ttal, jilso, byeongchung, nongsik]
+difficulty: apprentice
+safety: green
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: USDA 작물 윤작 가이드
+  - title: FAO 지속가능 농업
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Circuit quantique
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Circuit_quantique
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Quantenschaltung
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Quantenschaltung
+  license: CC-BY-SA-4.0
+  language: de
+- title: Circuito Quântico
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Circuito_Qu%C3%A2ntico
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

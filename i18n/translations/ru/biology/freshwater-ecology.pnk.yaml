@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00D4D0WHFC96BDSJ7P/biology/freshwater-ecology
+translation_of: pnk:01KDVDNA00D4D0WHFC96BDSJ7P/biology/freshwater-ecology
+title: Пресноводная экология и качество воды
+domain: biology
+tags: [biologiya, presnovodnaya-voda, ekosistema, voda, monitoring]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- Острые предметы и порезы; работайте пинцетом и безопасно утилизируйте лезвия.
+- Биологическое загрязнение; держите культуры закрытыми и подписанными.
+- Контакт с красителями и реактивами; надевайте перчатки и мойте руки.
+- Местные правила о диких видах и охраняемых растениях по-прежнему действуют.
+limits:
+- Результаты зависят от местных штаммов, климата и методики.
+- Никогда не используйте непроверенный материал для пищи, корма или лечения.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство USGS по качеству воды
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

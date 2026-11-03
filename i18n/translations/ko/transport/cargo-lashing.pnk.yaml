@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: 짐 고정
+domain: transport
+tags: [unyong, bamul, maejil, anjeon, yujutsu]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - 움직이거나 떨어지는 짐
+  - 장력을 조일 때 압착 사고
+  - 차량이나 수레의 전복
+  - 손상된 밧줄이 하중 아래서 파손
+limits:
+  - 가장 약한 부품의 작업 하중 한계를 결코 넘지 않는다
+  - 밧줄을 연료 라인, 차체 판, 또는 날카로운 모서리에 붙이지 않는다
+  - 고정되지 않은 짐에 승객을 태우지 않는다
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FHWA 북미 화물 고정 기준
+  - title: US Army FM 55-15 운송 참고 자료
+  - title: ILO 항만 안전과 건강
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Raccolta dell'acqua piovana
+domain: water
+tags: [acqua, acqua-piovana, stoccaggio, coperture, sanitari]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Patogeni e metalli pesanti lavati via dal tetto
+  - Riproduzione di zanzare in serbatoi aperti
+  - Annegamento o cadute in grandi cisterne aperte
+  - Crollo del serbatoio o del supporto sotto carico pieno
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO sulla qualità dell'acqua potabile
+  - title: Manuale del Texas sulla raccolta dell'acqua piovana
+  - title: Linee guida US EPA sulla raccolta dell'acqua piovana
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

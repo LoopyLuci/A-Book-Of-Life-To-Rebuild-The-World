@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Cordage is a force multiplier — needed for shelter, traps, fire-making, and

@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+title: أدوات بسيطة
+domain: survival
+tags:
+- uda
+- hajar
+- hazaz
+- darb
+- fann-bari
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-76 Survival Manual
+verification:
+  status: peer-reviewed
+  date: '2026-02-25'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

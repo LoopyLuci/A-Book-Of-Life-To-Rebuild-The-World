@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00T1ZGZ3TYRQ1SAYMT/biology/plant-propagation-grafting
+translation_of: pnk:01KDVDNA00T1ZGZ3TYRQ1SAYMT/biology/plant-propagation-grafting
+title: Propagación Vegetal y Injertos
+domain: biology
+tags:
+- biologia
+- propagacion
+- injerto
+- esquejes
+- semilla
+difficulty: novice
+safety: green
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Sharps and cuts; use forceps and dispose of blades safely.
+- Biological contamination; keep cultures closed and labelled.
+- Stain and reagent exposure; wear gloves and wash hands.
+- Local rules on wild species and protected plants still apply.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Results vary with local strains, climate and technique.
+- Never use unverified material for food, feed or treatment.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: USDA Plant Propagation Handbook
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: es
+media: []

@@ -47,8 +47,29 @@ tools_required:
 - Lockable cabinet
 sources:
 - title: Ostrom, Governing the Commons
+  license: permission-granted
+  language: en
 - title: WHO Water Safety Plans
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: IRC Water Governance Training Materials
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Rasilimali za maji
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Rasilimali_za_maji
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Recurso hídrico
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Recurso_h%C3%ADdrico
+  license: CC-BY-SA-4.0
+  language: es
+- title: Ressource hydrique
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Ressource_hydrique
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links:

@@ -1,0 +1,63 @@
+id: pnk:01M5FBX2KS96WB87P2DZDWZW9R/society/water-governance
+translation_of: pnk:01M5FBX2KS96WB87P2DZDWZW9R/society/water-governance
+title: Governança da Água
+domain: society
+tags:
+- agua
+- governanca
+- comunidade
+- tarifas
+- conflito
+difficulty: journeyman
+safety: green
+time_to_complete: months
+yield: A functioning water committee with written rules, a transparent tariff, and a maintenance fund
+season: Establish before the dry season and review after every major repair
+storage: Keep cash books, minutes, and maintenance logs in a locked, dry place
+cost: low
+hazards:
+- Conflict over access and unpaid fees
+- Capture of the committee by one family or faction
+- Deferred maintenance and pump failure
+- Contamination of the source
+resource_budget:
+  batch: one village water point serving 500 users
+  labor_hours: 80
+  energy_kwh: 0
+  water_liters: 10
+lifespan: Rules remain workable for 2-3 years before a full review
+maintenance: Meet monthly, post accounts, and audit the fund twice a year
+limits:
+- Not legal advice; confirm water rights and bylaws locally
+- Do not deny water to vulnerable households without a written hardship process
+- Customary and formal rights may overlap and must be reconciled
+prerequisites:
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+materials_required:
+- Written rules and system map
+- User register
+- Cash book and receipts
+- Lockbox
+- Maintenance log
+- Notice board
+- Minutes book
+tools_required:
+- Notebook and pen
+- Calculator
+- Meeting space
+- Lockable cabinet
+sources:
+- title: Ostrom, Governing the Commons
+- title: WHO Water Safety Plans
+- title: IRC Water Governance Training Materials
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KS60NDC4XXPGS8MZEG/water/well-maintenance
+- pnk:01M5FBX2KSZYD6RTXWK9JXH5S1/society/disaster-preparedness
+- pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+- pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+geographic_applicability:
+- universal
+language: pt
+media: []

@@ -2,9 +2,15 @@
 
 > **Domain:** construction | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-A well taps groundwater for a reliable supply. The method depends on depth: dug wells for shallow aquifers, driven and bored wells for sand, and drilled wells for deep rock.
+A well taps groundwater for a reliable supply. The method depends on depth: dug
+wells for shallow aquifers, driven and bored wells for sand, and drilled wells
+for deep rock.
 
 ## Prerequisites
 

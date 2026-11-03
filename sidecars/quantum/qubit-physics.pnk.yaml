@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: 量子位元
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E4%BD%8D%E5%85%83
+  license: CC-BY-SA-4.0
+  language: zh
+- title: بت كمومي
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A8%D8%AA_%D9%83%D9%85%D9%88%D9%85%D9%8A
+  license: CC-BY-SA-4.0
+  language: ar
+- title: Qubit
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Qubit
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links: []

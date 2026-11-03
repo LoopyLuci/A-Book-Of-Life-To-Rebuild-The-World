@@ -2,6 +2,10 @@
 
 > **Domain:** construction | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 A composting toilet stores human waste with enough carbon cover and time for

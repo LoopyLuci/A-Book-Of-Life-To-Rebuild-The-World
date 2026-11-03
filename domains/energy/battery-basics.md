@@ -2,6 +2,10 @@
 
 > **Domain:** energy | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Batteries store electrical energy chemically. Lead-acid is the most
@@ -10,7 +14,7 @@ rebuildable chemistry; lithium-ion is denser but harder to make from scratch.
 ## Prerequisites
 
 - [Metal Smelting](../materials/metal-smelting.md)
-- [Chemistry](chemistry.md)
+- [Chemistry](../materials/chemistry.md)
 
 ## Materials & Tools
 

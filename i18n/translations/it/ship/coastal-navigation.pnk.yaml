@@ -1,0 +1,31 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: Navigazione costiera e pilotaggio
+domain: ship
+tags: [navigazione, navigazione-costiera, pilotaggio, costa, rilevamenti]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Lavoro in quota e su acque aperte; usa la protezione anticaduta
+  - Lavori a caldo, fumi di saldatura e vigilanza antincendio; controlla la
+    zona calda
+  - Spazi confinati e sollevamento di carichi pesanti durante la costruzione
+  - Valgono le regole di classe e di bandiera; non improvvisare mai un
+    sistema di sicurezza
+limits:
+  - Le quote presuppongono uno scafo d'acciaio convenzionale e un carico
+    normale
+  - Restano autoritative la visita statale e la classificazione
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manuale di navigazione della US Coast Guard
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

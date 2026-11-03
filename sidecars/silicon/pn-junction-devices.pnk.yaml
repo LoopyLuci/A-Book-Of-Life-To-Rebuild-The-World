@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Semiconductor Reference
   license: public-domain
+  language: en
+- title: Pn接合
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/Pn%E6%8E%A5%E5%90%88
+  license: CC-BY-SA-4.0
+  language: ja
+- title: PN 접합
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/PN_%EC%A0%91%ED%95%A9
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Giunzione p-n
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Giunzione_p-n
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

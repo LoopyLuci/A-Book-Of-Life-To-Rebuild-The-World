@@ -1,21 +1,44 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N23/agriculture/seed-saving
 title: Seed Saving
 domain: agriculture
-tags: [seeds, heirloom, genetics, agriculture, food-security]
+tags:
+- seeds
+- heirloom
+- genetics
+- agriculture
+- food-security
 difficulty: apprentice
 safety: green
 time_to_complete: months
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
 materials_required: []
 tools_required: []
 sources:
-  - title: USDA Seed Saving Guide
+- title: USDA Seed Saving Guide
+  license: public-domain
+  language: en
+- title: Coleccionismo de semillas
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Coleccionismo_de_semillas
+  license: CC-BY-SA-4.0
+  language: es
+- title: Semence paysanne
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Semence_paysanne
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Nachbau (Saatgut)
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Nachbau_%28Saatgut%29
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: peer-reviewed
-  date: "2026-03-08"
+  date: '2026-03-08'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

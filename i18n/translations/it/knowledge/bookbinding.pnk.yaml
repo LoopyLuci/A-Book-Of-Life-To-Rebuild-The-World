@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Rilegatura e restauro dei libri
+domain: knowledge
+tags: [conoscenza, libri, restauro, artigianato, biblioteca]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Tagli provocati da coltelli e punzoni
+  - Fumi della colla e irritazioni cutanee
+  - Affaticamento da movimenti ripetuti
+  - Muffa se i libri sono conservati umidi
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manuale di rilegatura e conservazione
+  - title: Linee guida della Library of Congress sul restauro dei libri
+  - title: Note dell'Istituto canadese per la conservazione sulla rilegatura
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

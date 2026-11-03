@@ -14,16 +14,31 @@ export function parsePnk(uri: string): PnkUri {
     if (slash < 0) throw new Error(`Invalid pnk URI: ${uri}`);
     const nodeId = rest.slice(0, slash);
     const parts = rest.slice(slash + 1).split("/").filter(Boolean);
-    if (parts.length !== 2) throw new Error(`Invalid pnk URI: ${uri}`);
-    return { nodeId, domain: parts[0], slug: parts[1] };
+    const domain = parts[0];
+    const slug = parts[1];
+    if (parts.length !== 2 || domain === undefined || slug === undefined) {
+      throw new Error(`Invalid pnk URI: ${uri}`);
+    }
+    return { nodeId, domain, slug };
   }
   if (uri.startsWith(PNK_SCHEME)) {
     const parts = uri.slice(PNK_SCHEME.length).split("/");
     if (parts.length === 3) {
-      return { nodeId: "", entryUlid: parts[0], domain: parts[1], slug: parts[2] };
+      const entryUlid = parts[0];
+      const domain = parts[1];
+      const slug = parts[2];
+      if (entryUlid === undefined || domain === undefined || slug === undefined) {
+        throw new Error(`Invalid pnk URI: ${uri}`);
+      }
+      return { nodeId: "", entryUlid, domain, slug };
     }
     if (parts.length === 2) {
-      return { nodeId: "", domain: parts[0], slug: parts[1] };
+      const domain = parts[0];
+      const slug = parts[1];
+      if (domain === undefined || slug === undefined) {
+        throw new Error(`Invalid pnk URI: ${uri}`);
+      }
+      return { nodeId: "", domain, slug };
     }
   }
   throw new Error(`Not a pnk URI: ${uri}`);

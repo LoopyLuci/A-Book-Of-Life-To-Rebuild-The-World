@@ -1,0 +1,23 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: 자전거 유지 관리와 짐 싣기
+domain: transport
+tags: [unyong, bajaeng, suyong, yujutsu, donggu]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 마을 자전거 유지 관리 지침
+  - title: Bicycle Retailer and Industry Association 수리 기준
+  - title: WHO 자전거 안전 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

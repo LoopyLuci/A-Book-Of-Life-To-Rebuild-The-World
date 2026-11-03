@@ -1,0 +1,26 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N92/society/games
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N92/society/games
+title: Jogos
+domain: society
+tags:
+- jogos
+- xadrez
+- linguagem-go
+- mancala
+- recreacao
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: H.J.R. Murray's Board Games
+verification:
+  status: peer-reviewed
+  date: '2026-07-22'
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

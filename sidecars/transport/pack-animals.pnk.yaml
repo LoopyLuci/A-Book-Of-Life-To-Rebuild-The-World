@@ -37,8 +37,29 @@ tools_required:
 - Scale or weigh tape
 sources:
 - title: FAO Animal Traction and Transport
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: Practical Action Pack Transport
+  license: CC-BY-4.0
+  language: en
 - title: US Army FM 21-10 Animal Care
+  license: public-domain
+  language: en
+- title: Tragtier
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Tragtier
+  license: CC-BY-SA-4.0
+  language: de
+- title: Besta de carga
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Besta_de_carga
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Вьючное животное
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%92%D1%8C%D1%8E%D1%87%D0%BD%D0%BE%D0%B5_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D0%BE%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links:

@@ -1,0 +1,17 @@
+# Development and test dependencies.
+#
+#   python -m pip install -r requirements.txt -r requirements-dev.txt
+#
+# `requirements.txt` holds what the project needs at run time; this file adds
+# the tools that only a contributor or the pipeline needs. The installer treats
+# this file as optional, so a reader never pays for it.
+
+-r requirements.txt
+
+# The test suite, with the helper the SDK tests use to stub HTTP.
+pytest>=8.0
+pytest-xdist>=3.5
+respx>=0.21
+
+# Lint gate. The pipeline runs it as its own stage.
+ruff>=0.5

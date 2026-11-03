@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Salt preserves food, supports health, and trades well. Seawater contains about

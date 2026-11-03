@@ -1,0 +1,25 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: Huduma ya Meno
+domain: health
+tags:
+- afya-ya-meno
+- mino
+- kuzuia
+- afya
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Oral Health guidance
+- title: Public-domain dental manuals
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: sw
+media: []

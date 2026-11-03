@@ -2,6 +2,10 @@
 
 > **Domain:** energy | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Lighting is often the first electrical load a household can afford, and the

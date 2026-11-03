@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+title: Fabricação de Papel
+domain: materials
+tags:
+- papel
+- polpa
+- escrita
+- conhecimento
+- materiais
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional papermaking methods
+verification:
+  status: peer-reviewed
+  date: '2026-04-08'
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

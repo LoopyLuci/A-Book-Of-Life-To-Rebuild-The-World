@@ -1,20 +1,43 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
 title: Composting
 domain: agriculture
-tags: [compost, soil, waste, fertility, agriculture]
+tags:
+- compost
+- soil
+- waste
+- fertility
+- agriculture
 difficulty: novice
 safety: green
 time_to_complete: weeks
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
 materials_required: []
 tools_required: []
 sources:
-  - title: USDA Composting Guide
+- title: USDA Composting Guide
+  license: public-domain
+  language: en
+- title: Compost
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Compost
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Kompost
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Kompost
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Phân compost
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Ph%C3%A2n_compost
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: peer-reviewed
-  date: "2026-03-05"
+  date: '2026-03-05'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

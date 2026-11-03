@@ -1,0 +1,31 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
+title: Mühlen
+domain: materials
+tags:
+- muehle
+- wasser-rad
+- windmuehle
+- getreide
+- mehl
+- materialien
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Small-Scale Milling
+verification:
+  status: peer-reviewed
+  date: '2026-04-12'
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+geographic_applicability:
+- temperate
+- tropical
+language: de
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+title: Rotazione delle colture
+domain: agriculture
+tags: [rotazione, terreno, azoto, parassiti, agricoltura]
+difficulty: apprentice
+safety: green
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Guida USDA sulla rotazione delle colture
+  - title: FAO Agricoltura sostenibile
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

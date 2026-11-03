@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00TT91Q6AAJC3Q8DME/chemistry/combustion-analysis
+translation_of: pnk:01KDVDNA00TT91Q6AAJC3Q8DME/chemistry/combustion-analysis
+title: Сжигание и элементный анализ
+domain: chemistry
+tags: [khimiya, analiz, gorenie, uglerod, azot]
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+hazards:
+- Химические ожоги и брызги; надевайте защитные очки и перчатки.
+- Вдыхание паров; работайте в проветриваемом помещении или под вытяжным шкафом.
+- Пожар и нагрев; держите горючие материалы вдали от горячих работ.
+- Отходы реактивов нейтрализуйте и собирайте отдельно.
+limits:
+- Значения предполагают чистоту реактивов лабораторного класса и откалиброванную посуду.
+- Не заменяет регламент работы в лаборатории.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Введение в химию (OpenStax)
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

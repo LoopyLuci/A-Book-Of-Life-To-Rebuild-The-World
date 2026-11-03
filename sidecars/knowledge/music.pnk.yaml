@@ -1,20 +1,43 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N91/knowledge/music
 title: Music
 domain: knowledge
-tags: [music, instruments, rhythm, song, culture]
+tags:
+- music
+- instruments
+- rhythm
+- song
+- culture
 difficulty: apprentice
 safety: green
 time_to_complete: weeks
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional instrument-making
+- title: Traditional instrument-making
+  license: original
+  language: en
+- title: 音乐
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%9F%B3%E4%B9%90
+  license: CC-BY-SA-4.0
+  language: zh
+- title: موسيقى
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%B3%D9%8A%D9%82%D9%89
+  license: CC-BY-SA-4.0
+  language: ar
+- title: संगीत
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%80%E0%A4%A4
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: peer-reviewed
-  date: "2026-07-20"
+  date: '2026-07-20'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

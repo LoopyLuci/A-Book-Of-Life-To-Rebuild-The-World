@@ -2,6 +2,10 @@
 
 > **Domain:** society | **Difficulty:** journeyman | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 A water point lasts when a community agrees who may use it, who maintains it,

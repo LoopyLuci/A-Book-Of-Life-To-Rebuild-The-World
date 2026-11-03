@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Animali da soma e trasporto dei carichi
+domain: transport
+tags: [trasporto, animali, logistica, bestiame, commercio]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Morsi, calci e lesioni da schiacciamento
+  - Spostamento del carico o caduta su terreni ripidi
+  - Piaghe da sella e stress da caldo
+  - Malattia o affaticamento dell'animale
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: FAO Trazione e trasporto animale
+  - title: Practical Action Trasporto con animali da soma
+  - title: US Army FM 21-10 Cura degli animali
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

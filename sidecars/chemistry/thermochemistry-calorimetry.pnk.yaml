@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: Introduction to Chemistry
   license: public-domain
+  language: en
+- title: Калориметрия
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%BE%D1%80%D0%B8%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 量热法
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%87%8F%E7%83%AD%E6%B3%95
+  license: CC-BY-SA-4.0
+  language: zh
+- title: مسعرية
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%B3%D8%B9%D8%B1%D9%8A%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
 verification:
   status: draft
 links: []

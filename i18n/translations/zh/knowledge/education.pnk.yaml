@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: 教育学基础
+domain: knowledge
+tags:
+- jiaoyu
+- jiaoxue
+- wenxue-shili
+- zhishi
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain pedagogy texts
+- title: UNESCO education guidance
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

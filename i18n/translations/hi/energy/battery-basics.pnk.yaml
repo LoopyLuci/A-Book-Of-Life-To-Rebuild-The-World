@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+title: Battery Basics
+domain: energy
+tags:
+- battery
+- lead-acid
+- bhandaran
+- bijli
+- urja
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
+materials_required: []
+tools_required: []
+sources:
+- title: US DOE Battery Handbook
+- title: US Army Battery Manual
+verification:
+  status: peer-reviewed
+  date: '2026-05-01'
+links: []
+geographic_applicability:
+- universal
+language: hi
+media: []

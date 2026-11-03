@@ -3,7 +3,8 @@
 from __future__ import annotations
 
 import asyncio
-from typing import Any, AsyncIterator, Iterator
+from collections.abc import Iterator
+from typing import Any
 
 import httpx
 
@@ -37,8 +38,9 @@ def _raise_for_status(response: httpx.Response) -> None:
     payload: dict[str, Any] = {}
     try:
         payload = response.json()
-    except Exception:  # noqa: BLE001
-        pass
+    except (ValueError, TypeError):
+        # The body is not JSON; the status line is the best error we have.
+        payload = {}
     message = payload.get("detail") or response.text or response.reason_phrase
     code = response.status_code
     if code == 404:

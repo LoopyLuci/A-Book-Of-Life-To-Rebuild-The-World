@@ -1,0 +1,31 @@
+id: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+translation_of: pnk:01KDVDNA004QN14Y9PC1673MMZ/silicon/cleanroom-protocols
+title: Protocolli di camera bianca e controllo della contaminazione
+domain: silicon
+tags: [silicio, camera-bianca, contaminazione, protocollo, sicurezza]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Calore estremo e liquidi criogenici; solo manipolazione da personale
+    formato
+  - Gas di processo tossici e corrosivi; verifica allarmi e ventilazione
+  - Esposizione a radiazioni ionizzanti e ultraviolette; usa apparecchiature
+    schermate
+  - I protocolli di camera bianca sono misure di sicurezza, non una pratica
+    facoltativa
+limits:
+  - Richiede attrezzature di capitale e controllo di processo specialistico
+  - Le rese e i costi descritti sono tipici di una produzione matura
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Standard internazionali SEMI
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

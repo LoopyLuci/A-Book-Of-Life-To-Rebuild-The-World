@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Ceramics turn clay into containers, tiles, filters, and refractory parts that

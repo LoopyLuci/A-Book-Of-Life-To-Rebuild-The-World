@@ -49,8 +49,29 @@ tools_required:
 - Water testing kit
 sources:
 - title: WHO Diarrhoea Treatment Guidelines
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: UNICEF Oral Rehydration Salts and Zinc
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: CDC Waterborne Disease Outbreak Guidance
+  license: public-domain
+  language: en
+- title: Su yoluyla bulaşan hastalıklar
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Su_yoluyla_bula%C5%9Fan_hastal%C4%B1klar
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Bệnh lây truyền qua đường nước
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/B%E1%BB%87nh_l%C3%A2y_truy%E1%BB%81n_qua_%C4%91%C6%B0%E1%BB%9Dng_n%C6%B0%E1%BB%9Bc
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Enfermedades de origen hídrico
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Enfermedades_de_origen_h%C3%ADdrico
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links:

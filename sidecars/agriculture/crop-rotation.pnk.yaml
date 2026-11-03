@@ -1,21 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
 title: Crop Rotation
 domain: agriculture
-tags: [rotation, soil, nitrogen, pests, agriculture]
+tags:
+- rotation
+- soil
+- nitrogen
+- pests
+- agriculture
 difficulty: apprentice
 safety: green
 time_to_complete: months
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
 materials_required: []
 tools_required: []
 sources:
-  - title: USDA Crop Rotation Guide
-  - title: FAO Sustainable Agriculture
+- title: USDA Crop Rotation Guide
+  license: public-domain
+  language: en
+- title: FAO Sustainable Agriculture
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Rotasi tanaman
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Rotasi_tanaman
+  license: CC-BY-SA-4.0
+  language: id
+- title: 輪作
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%BC%AA%E4%BD%9C
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 윤작
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%9E%91
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: peer-reviewed
-  date: "2026-03-10"
+  date: '2026-03-10'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

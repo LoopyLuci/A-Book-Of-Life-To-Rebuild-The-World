@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain constitutional texts
+  license: public-domain
+  language: en
 - title: Democratic governance principles
+  license: original
+  language: en
+- title: 헌법
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%97%8C%EB%B2%95
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Costituzione
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Costituzione
+  license: CC-BY-SA-4.0
+  language: it
+- title: Grondwet
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Grondwet
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

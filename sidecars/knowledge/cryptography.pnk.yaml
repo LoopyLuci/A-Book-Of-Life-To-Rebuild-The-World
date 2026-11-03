@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain cryptography primers
+  license: public-domain
+  language: en
 - title: NIST cryptographic guidelines
+  license: public-domain
+  language: en
+- title: تعمية (تخصص)
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%85%D9%8A%D8%A9_%28%D8%AA%D8%AE%D8%B5%D8%B5%29
+  license: CC-BY-SA-4.0
+  language: ar
+- title: बीज-लेखन
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A5%80%E0%A4%9C-%E0%A4%B2%E0%A5%87%E0%A4%96%E0%A4%A8
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Kriptografi
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Kriptografi
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links: []

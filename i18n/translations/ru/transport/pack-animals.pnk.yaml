@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: Вьючные животные и перевозка грузов
+domain: transport
+tags: [transport, zhivotnye, logistika, skot, torgovlya]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Укусы, удары копытами и травмы сдавливания
+- Сдвиг груза или падение на крутом склоне
+- Потёртости от седла и тепловой стресс
+- Болезнь или истощение животного
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FAO «Тяга животными и перевозка»
+- title: Practical Action «Перевозка вьючным транспортом»
+- title: 'FM 21-10 армии США: уход за животными'
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-When writing is scarce, oral history preserves memory, law, and craft. Structured interviews and mnemonic devices keep it accurate.
+When writing is scarce, oral history preserves memory, law, and craft.
+Structured interviews and mnemonic devices keep it accurate.
 
 ## Prerequisites
 

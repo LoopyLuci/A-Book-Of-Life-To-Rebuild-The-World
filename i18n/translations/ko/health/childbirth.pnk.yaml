@@ -1,0 +1,22 @@
+id: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+translation_of: pnk:01M52TVK07WTNY13J8CN09YZBG/health/childbirth
+title: 분만 실무
+domain: health
+tags: [chulsan, sanfuchui, eomyeong, geongang]
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO 임신과 분만 합병증 관리 지침
+  - title: 퍼블릭 도메인 산부인과학 문헌
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

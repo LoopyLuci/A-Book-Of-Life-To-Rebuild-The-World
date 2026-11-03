@@ -1,0 +1,26 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+title: الحبال والليف
+domain: survival
+tags:
+- hbal
+- habl
+- alyafa
+- uqud
+- nijah
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-76 Survival Manual
+verification:
+  status: peer-reviewed
+  date: '2026-02-18'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

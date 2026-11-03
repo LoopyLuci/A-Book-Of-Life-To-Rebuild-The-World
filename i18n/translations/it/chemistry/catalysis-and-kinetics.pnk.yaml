@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Catalisi e cinetica delle reazioni
+domain: chemistry
+tags: [chimica, catalisi, cinetica, velocita-di-reazione, equilibrio]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Ustioni chimiche e spruzzi; indossa occhiali antispruzzo e guanti.
+  - Inalazione di fumi; lavora in un locale ventilato o sotto cappa.
+  - Fuoco e calore; tieni lontano il materiale infiammabile dai lavori a caldo.
+  - I rifiuti di reagenti devono essere neutralizzati e raccolti separatamente.
+limits:
+  - I valori presuppongono purezza di grado di laboratorio e vetreria tarata.
+  - Non sostituisce un protocollo di laboratorio controllato.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Chimica fisica
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

@@ -1,0 +1,65 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: 直流微电网
+domain: energy
+tags:
+- dian
+- taiyang
+- xudianchi
+- dianlu-xian
+- weixiao-wang
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+yield: A 1 kW solar and battery microgrid with protected branch circuits for critical loads
+season: Install in dry weather; size for the shortest solar day of the year
+storage: Keep batteries ventilated, cool, and above the manufacturer's minimum charge
+cost: high
+hazards:
+- Electric shock and arc flash
+- Battery short circuits and hydrogen release
+- Fire from undersized or AC-rated protection
+- Falls during panel installation
+resource_budget:
+  batch: one 1 kW PV and 5 kWh battery microgrid
+  labor_hours: 24
+  energy_kwh: 0
+  water_liters: 10
+lifespan: Panels last 20-25 years; batteries 3-15 years depending on chemistry and cycling
+maintenance: Inspect terminals monthly; clean panels seasonally; check torque yearly
+limits:
+- Do not use AC-rated breakers or fuses on DC circuits
+- Do not connect to grid or generator without approved transfer equipment
+- Do not mix battery ages, capacities, or chemistries
+prerequisites:
+- pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+materials_required:
+- PV panels and mounts
+- Charge controller
+- Battery bank
+- DC busbars and fuses
+- DC-rated breakers
+- Copper cable and lugs
+- Grounding rod
+- Distribution box and labels
+tools_required:
+- Multimeter
+- Clamp meter
+- Insulated screwdrivers
+- Crimping tool
+- Torque wrench
+- Drill
+sources:
+- title: NEC Article 712 DC Microgrids
+- title: IEC 62548 Photovoltaic Array Design
+- title: Sandia National Laboratories DC Microgrid Guidance
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+- pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+- pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+geographic_applicability:
+- universal
+language: zh
+media: []

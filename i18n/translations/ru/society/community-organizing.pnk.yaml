@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: Организация сообщества
+domain: society
+tags: [organizatsiya, obshchina, upravlenie, obshchestvo]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Тексты по организации сообществ (общественное достояние)
+- title: Принципы взаимной помощи
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

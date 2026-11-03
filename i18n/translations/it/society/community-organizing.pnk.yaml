@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: Organizzazione comunitaria
+domain: society
+tags: [organizzazione, comunita, governance, societa]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Testi di organizzazione comunitaria di pubblico dominio
+  - title: Principi di aiuto reciproco
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

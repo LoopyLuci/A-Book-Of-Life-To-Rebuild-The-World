@@ -1,21 +1,45 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
 title: Signaling for Rescue
 domain: survival
-tags: [rescue, signaling, communication, survival]
+tags:
+- rescue
+- signaling
+- communication
+- survival
 difficulty: novice
 safety: green
 time_to_complete: minutes
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
-  - title: ICAO Search and Rescue Manual
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: ICAO Search and Rescue Manual
+  license: permission-granted
+  language: en
+- title: 조난 신호
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%82%9C_%EC%8B%A0%ED%98%B8
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Chiamata di emergenza
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Chiamata_di_emergenza
+  license: CC-BY-SA-4.0
+  language: it
+- title: Tehlike sinyali
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Tehlike_sinyali
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: peer-reviewed
-  date: "2026-02-22"
+  date: '2026-02-22'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

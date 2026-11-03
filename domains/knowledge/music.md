@@ -2,6 +2,10 @@
 
 > **Domain:** knowledge | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Music is a universal human language. It binds communities, transmits stories,

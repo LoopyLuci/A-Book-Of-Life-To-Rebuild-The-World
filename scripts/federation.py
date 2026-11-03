@@ -18,7 +18,7 @@ import json
 import sys
 import time
 from dataclasses import asdict, dataclass, field
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -68,12 +68,12 @@ def load_or_create_identity() -> dict[str, Any]:
         return json.loads(IDENTITY_FILE.read_text(encoding="utf-8"))
 
     try:
-        from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
         from cryptography.hazmat.primitives import serialization
-    except ImportError:
+        from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+    except ImportError as exc:
         raise SystemExit(
             "cryptography is required for federation. Install: pip install cryptography"
-        )
+        ) from exc
 
     priv = Ed25519PrivateKey.generate()
     pub = priv.public_key()
@@ -92,7 +92,7 @@ def load_or_create_identity() -> dict[str, Any]:
         "node_id": _new_ulid(),
         "private_key_pem": priv_pem,
         "public_key_pem": pub_pem,
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": datetime.now(UTC).isoformat(),
     }
     IDENTITY_FILE.write_text(json.dumps(identity, indent=2), encoding="utf-8")
     IDENTITY_FILE.chmod(0o600)
@@ -121,7 +121,7 @@ def _sidecar_to_entry(sidecar: dict, body: str) -> dict[str, Any]:
         "verification": sidecar["verification"]["status"],
         "verification_date": sidecar["verification"].get("date"),
         "updated_at": sidecar["verification"].get("date")
-        or datetime.now(timezone.utc).date().isoformat(),
+        or datetime.now(UTC).date().isoformat(),
         "content_hash": "sha256:" + _sha256_hex(body.encode("utf-8")),
     }
 
@@ -141,7 +141,7 @@ def build_sync_manifest(identity: dict) -> dict[str, Any]:
     payload = {
         "node_id": identity["node_id"],
         "protocol_version": PROTOCOL_VERSION,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "entries": entries,
     }
 
@@ -160,9 +160,9 @@ def _sign(private_pem: str, data: bytes) -> str:
 
 
 def verify_signature(public_pem: str, data: bytes, signature_b64: str) -> bool:
+    from cryptography.exceptions import InvalidSignature
     from cryptography.hazmat.primitives import serialization
     from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
-    from cryptography.exceptions import InvalidSignature
 
     pub = serialization.load_pem_public_key(public_pem.encode())
     assert isinstance(pub, Ed25519PublicKey)
@@ -333,7 +333,7 @@ def _write_entry(payload: dict) -> None:
 def _append_peer_ledger(result: SyncResult) -> None:
     FEDERATION_DIR.mkdir(parents=True, exist_ok=True)
     record = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(UTC).isoformat(),
         "peer_node_id": result.peer_node_id,
         "entries_fetched": result.entries_fetched,
         "entries_merged": result.entries_merged,

@@ -1,0 +1,67 @@
+id: pnk:01M5FBX2KSENPRQT0GJD1YTBKR/health/waterborne-disease
+translation_of: pnk:01M5FBX2KSENPRQT0GJD1YTBKR/health/waterborne-disease
+title: الأمراض المنقولة بالمياه
+domain: health
+tags:
+- ishal
+- kulyra
+- istirdad-tarbiba
+- maa
+- indilaq
+difficulty: apprentice
+safety: red
+time_to_complete: days
+yield: A treated patient with a rehydration plan and a source-control record for the household
+season: Peaks in rainy season, floods, and hot weather when water quality declines
+storage: Keep ORS and zinc dry, in date, and stocked at every clinic
+cost: low
+hazards:
+- Severe dehydration and shock
+- Cholera spreading through a shared water source
+- Electrolyte injury from incorrectly mixed ORS
+- Needlestick and body-fluid exposure
+resource_budget:
+  batch: one patient with acute watery diarrhoea
+  labor_hours: 1
+  energy_kwh: 0
+  water_liters: 5
+lifespan: ORS and zinc remain effective until the printed expiry if kept dry
+maintenance: Check stock monthly and retrain on dehydration classification each season
+limits:
+- Do not use antibiotics for uncomplicated watery diarrhoea
+- Do not give concentrated or incorrectly mixed ORS
+- Severe dehydration needs urgent referral or intravenous fluids
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+materials_required:
+- WHO-formulated ORS
+- Clean water
+- Measuring container
+- Zinc tablets
+- Soap and handwashing station
+- Thermometer
+- Referral forms
+tools_required:
+- Oral rehydration chart
+- Cup and spoon
+- Scales
+- Gloves
+- Water testing kit
+sources:
+- title: WHO Diarrhoea Treatment Guidelines
+- title: UNICEF Oral Rehydration Salts and Zinc
+- title: CDC Waterborne Disease Outbreak Guidance
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+- pnk:01M5FBX2KSSGGSJ8VC4057Y940/health/infection-control
+- pnk:01M5E8W7W1HH39MEZ96Z0B9WAE/health/triage
+geographic_applicability:
+- tropical
+- arid
+- temperate
+- universal
+language: ar
+media: []

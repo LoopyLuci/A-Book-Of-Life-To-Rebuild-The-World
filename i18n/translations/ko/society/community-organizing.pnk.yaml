@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+translation_of: pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+title: 공동체 조직
+domain: society
+tags: [johap, chiheom, gwangri, sahoe]
+difficulty: novice
+safety: green
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 퍼블릭 도메인 공동체 조직 문헌
+  - title: 상호원조 원칙
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

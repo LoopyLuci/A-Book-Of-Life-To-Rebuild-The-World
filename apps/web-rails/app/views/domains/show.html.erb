@@ -1,0 +1,30 @@
+<% content_for :title, page_title(@domain.title) %>
+<% content_for :description, @domain.description.presence || t("domain_entry_count", count: @domain.count) %>
+
+<nav class="breadcrumbs" aria-label="<%= t("domains") %>">
+  <ol>
+    <li><%= link_to t("home"), root_path %></li>
+    <li><%= link_to t("domains"), domains_path %></li>
+    <li aria-current="page"><%= @domain.title %></li>
+  </ol>
+</nav>
+
+<h1><%= @domain.title %></h1>
+
+<% if @domain.description.present? %>
+  <p class="lead"><%= @domain.description %></p>
+<% end %>
+
+<p class="stats"><span class="stat"><%= t("domain_entry_count", count: @domain.count) %></span></p>
+
+<ul class="entry-list">
+  <% @entries.each do |entry| %>
+    <li>
+      <%= link_to entry.title, entry_path(entry.domain, entry.slug) %>
+      <span class="meta">
+        <span class="pill pill-<%= entry.safety %>"><%= safety_label(entry.safety) %></span>
+        <span class="pill"><%= difficulty_label(entry.difficulty) %></span>
+      </span>
+    </li>
+  <% end %>
+</ul>

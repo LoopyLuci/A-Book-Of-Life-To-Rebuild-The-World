@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+translation_of: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+title: Ladingsbehandeling en stuwage
+domain: ship
+tags: [scheepsbouw, lading, stuwage, sjorring, gewicht]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Werken op hoogte en boven open water; gebruik valbeveiliging
+  - Hot werk, lasdamp en brandwacht; beheers de hete zone
+  - Risico's van besloten ruimten en zwaar tillen tijdens de bouw
+  - De klassen- en vlagregels gelden; improviseer nooit een veiligheidssysteem
+limits:
+  - De afmetingen gaan uit van een conventionele stalen romp en normale belasting
+  - De wettelijke inspectie en de klassing blijven leidend
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: IMO Cargo Securing Manual
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Техническое обслуживание велосипеда и перевозка грузов
+domain: transport
+tags: [transport, velosipedy, remont, logistika, instrumenty]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Отказ тормозов или шины в потоке движения
+- Сдвиг груза и потеря управляемости
+- Травмы рук и от цепи
+- Перенапряжение и тепловые болезни
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство по обслуживанию велосипедов для деревень
+- title: Стандарты ремонта Ассоциации розничных торговцев и производителей велосипедов
+- title: Рекомендации ВОЗ по безопасности велосипедного движения
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

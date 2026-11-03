@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Máy tính lượng tử bẫy ion
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/M%C3%A1y_t%C3%ADnh_l%C6%B0%E1%BB%A3ng_t%E1%BB%AD_b%E1%BA%ABy_ion
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Ordinateur quantique à ions piégés
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Ordinateur_quantique_%C3%A0_ions_pi%C3%A9g%C3%A9s
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Computador quântico de íons aprisionados
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Computador_qu%C3%A2ntico_de_%C3%ADons_aprisionados
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

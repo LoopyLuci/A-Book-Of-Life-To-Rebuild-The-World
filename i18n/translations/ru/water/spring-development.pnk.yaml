@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Обустройство и защита родника
+domain: water
+tags: [voda, rodniki, samotek, stroitelstvo, sanitariya]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+- Обрушение траншеи при раскопках
+- Загрязнение поверхностным стоком и животными
+- Утопление в открытом колодце
+- Ущерб водным правам ниже по течению
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Техническая записка ВОЗ по защите родников
+- title: Руководство Oxfam по защите родников
+- title: 'FM 21-10 армии США: полевая санитария'
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

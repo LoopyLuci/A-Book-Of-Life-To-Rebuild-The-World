@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Ceramica
+domain: materials
+tags: [ceramica, argilla, fornace, ceramica-pesante, smalto]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Polvere di silice cristallina dall'argilla e dagli smalti
+  - Ustioni e incendi dalle fornaci
+  - Monossido di carbonio dalle fornaci a combustibile
+  - Avvelenamento da piombo o metalli pesanti in smalti non sicuri
+limits:
+  - Non cuocere mai pezzi bagnati o spessi e disuguali
+  - Non usare smalti al piombo su superfici a contatto con alimenti
+  - Prova il ritiro dell'argilla e l'adattamento dello smalto prima di fare un
+    lotto completo
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: The Potter's Dictionary of Materials and Techniques
+  - title: OSHA Linee guida sull'esposizione alla silice cristallina
+  - title: Guide della American Ceramic Society su cottura e smalti
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

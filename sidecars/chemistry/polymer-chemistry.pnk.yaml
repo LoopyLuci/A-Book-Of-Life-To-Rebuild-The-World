@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: Introduction to Polymers
   license: CC-BY-4.0
+  language: en
+- title: 聚合物
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E8%81%9A%E5%90%88%E7%89%A9
+  license: CC-BY-SA-4.0
+  language: zh
+- title: مبلمر
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%A8%D9%84%D9%85%D8%B1
+  license: CC-BY-SA-4.0
+  language: ar
+- title: पॉलीमर
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AE%E0%A4%B0
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links: []

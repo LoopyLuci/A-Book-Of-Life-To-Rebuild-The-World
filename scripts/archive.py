@@ -18,7 +18,7 @@ import json
 import os
 import sys
 import tarfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,7 +29,7 @@ ARCHIVE_DIR = BUILD_DIR / "archive"
 def _bundle() -> Path:
     """Create a tarball of the entire repository (excluding build/)."""
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     out = ARCHIVE_DIR / f"a-book-of-life-{stamp}.tar.gz"
 
     def _exclude(tarinfo: tarfile.TarInfo) -> tarfile.TarInfo | None:
@@ -63,7 +63,7 @@ def archive_internet_archive(bundle: Path, dry_run: bool = False) -> dict:
     access = os.environ.get("IA_ACCESS_KEY")
     secret = os.environ.get("IA_SECRET_KEY")
 
-    identifier = f"a-book-of-life-{datetime.now(timezone.utc).strftime('%Y%m%d')}"
+    identifier = f"a-book-of-life-{datetime.now(UTC).strftime('%Y%m%d')}"
     metadata = {
         "identifier": identifier,
         "title": f"A Book Of Life To Rebuild The World — snapshot {identifier}",
@@ -191,7 +191,7 @@ def main() -> int:
     results: dict = {
         "bundle": str(bundle.relative_to(ROOT)),
         "sha256": digest,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
     }
 
     if args.target in ("ia", "all"):

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+translation_of: pnk:01KDVDNA002TH0H1NRS831Z7ZE/computers/assembly-language
+title: Язык ассемблера и модель вычислительной машины
+domain: computers
+tags: [vychislitelnaya-tehnika, assembler, isa, cpu, mashinnyy-kod]
+difficulty: journeyman
+safety: green
+time_to_complete: hours
+hazards:
+- Сетевое напряжение и накопленный заряд смертельны; обесточьте перед началом работ.
+- Пары пайки, флюс и свинец; проветривайте и мойте руки.
+- Статическое электричество может повредить детали; работайте на заземлённом верстаке.
+- Потеря данных происходит незаметно; делайте резервную копию перед работой с прошивкой или диском.
+limits:
+- Примеры рассчитаны на распространённые открытые инструментальные цепочки.
+- Следуйте datasheet производителя, а не любому пересказу.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Документация Arm Cortex-M
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA009J19T9WGRHKB092G/biology/animal-husbandry-breeding
+translation_of: pnk:01KDVDNA009J19T9WGRHKB092G/biology/animal-husbandry-breeding
+title: Животноводство и системы разведения
+domain: biology
+tags: [biologiya, skot, razvedenie, zhivotnovodstvo, genetika]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+- Острые предметы и порезы; работайте пинцетом и безопасно утилизируйте лезвия.
+- Биологическое загрязнение; держите культуры закрытыми и подписанными.
+- Контакт с красителями и реактивами; надевайте перчатки и мойте руки.
+- Местные правила о диких видах и охраняемых растениях по-прежнему действуют.
+limits:
+- Результаты зависят от местных штаммов, климата и методики.
+- Никогда не используйте непроверенный материал для пищи, корма или лечения.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочник USDA по животноводству
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KS1M0Z9NF5X5SSTF7R/survival/search-and-rescue
+translation_of: pnk:01M5FBX2KS1M0Z9NF5X5SSTF7R/survival/search-and-rescue
+title: Utafuti na Uokoaji
+domain: survival
+tags:
+- utafutaji
+- okoaji
+- urambuzi
+- dharura
+- kazi-ya-timu
+difficulty: journeyman
+safety: red
+time_to_complete: hours
+yield: A documented search sector with clue log, coverage map, and safe patient handover
+season: Year-round; search urgency increases in cold, heat, and darkness
+storage: Keep search kits packed and maps current; replace batteries every 6 months
+cost: medium
+hazards:
+- Hypothermia, heat illness, and dehydration in searchers
+- Falls, drowning, and unstable structures
+- Violence or hazardous persons at the scene
+- Loss of situational awareness in darkness
+resource_budget:
+  batch: one 500 m by 500 m search sector
+  labor_hours: 16
+  energy_kwh: 0
+  water_liters: 12
+lifespan: Search skills remain usable for about 1 year without practice
+maintenance: Practice grid search and radio check-ins quarterly
+limits:
+- Do not enter water, caves, or collapsed structures without specialist training
+- Do not search alone
+- Do not move a patient before assessing and stabilizing life threats
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required:
+- Topographic maps
+- Compass or GPS
+- Whistles and signal mirrors
+- High-visibility vests
+- Headlamps and batteries
+- First aid kit and patient packaging
+- Flagging tape and clue markers
+tools_required:
+- Radio or charged phones
+- Notebook and pencil
+- GPS or compass
+- Knife
+- Walking staff
+sources:
+- title: FEMA National Incident Management System Search and Rescue
+- title: NASAR Fundamentals of Search and Rescue
+- title: Mountain Rescue Association field guidance
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSY5M34WP8NM8SXQST/survival/wildfire-evacuation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
+- pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+geographic_applicability:
+- universal
+language: sw
+media: []

@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Soap prevents disease. It is made by saponifying fat with lye. The reaction

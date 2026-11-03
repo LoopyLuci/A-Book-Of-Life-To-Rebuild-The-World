@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: 빗물 수집
+domain: water
+tags: [mul, bimul, jochwang, yachui, hwangsang]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - 지붕에서 씻겨 내려오는 병원체와 중금속
+  - 열린 탱크에서의 모기 번식
+  - 큰 열린 저수조에서의 익사나 낙상
+  - 만중 하중에서 탱크나 받침의 붕괴
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO 음용수 품질 지침
+  - title: Texas Manual on Rainwater Harvesting
+  - title: US EPA 빗물 수집 지침
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

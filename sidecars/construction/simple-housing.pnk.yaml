@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 21-10 Field Sanitation
+  license: public-domain
+  language: en
 - title: Traditional vernacular building practice
+  license: original
+  language: en
+- title: 住宅
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E4%BD%8F%E5%AE%85
+  license: CC-BY-SA-4.0
+  language: zh
+- title: منزل
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%B2%D9%84
+  license: CC-BY-SA-4.0
+  language: ar
+- title: मकान
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%95%E0%A4%BE%E0%A4%A8
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links: []

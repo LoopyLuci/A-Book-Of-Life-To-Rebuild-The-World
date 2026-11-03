@@ -2,9 +2,14 @@
 
 > **Domain:** health | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Knowing the body's systems and landmarks guides examination, first aid, and referral. Focus on the skeleton, major vessels, organs, and the airway.
+Knowing the body's systems and landmarks guides examination, first aid, and
+referral. Focus on the skeleton, major vessels, organs, and the airway.
 
 ## Prerequisites
 
@@ -20,7 +25,8 @@ Knowing the body's systems and landmarks guides examination, first aid, and refe
 
 ### Systems Overview
 
-1. Learn the skeletal, muscular, circulatory, respiratory, digestive, and nervous systems.
+1. Learn the skeletal, muscular, circulatory, respiratory, digestive, and
+   nervous systems.
 2. Memorize the positions of the heart, lungs, liver, spleen, and kidneys.
 
 ### Landmarks

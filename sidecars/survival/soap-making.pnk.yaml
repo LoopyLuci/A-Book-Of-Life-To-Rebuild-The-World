@@ -1,21 +1,44 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N20/survival/soap-making
 title: Soap Making
 domain: survival
-tags: [soap, hygiene, chemistry, lye, saponification]
+tags:
+- soap
+- hygiene
+- chemistry
+- lye
+- saponification
 difficulty: apprentice
 safety: yellow
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional soap-making methods
+- title: Traditional soap-making methods
+  license: original
+  language: en
+- title: Saponificación
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Saponificaci%C3%B3n
+  license: CC-BY-SA-4.0
+  language: es
+- title: Saponification
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Saponification
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Verseifung
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Verseifung
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: peer-reviewed
-  date: "2026-02-28"
+  date: '2026-02-28'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

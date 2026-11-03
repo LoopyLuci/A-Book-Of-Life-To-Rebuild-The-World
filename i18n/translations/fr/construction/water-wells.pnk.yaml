@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+translation_of: pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+title: Puits d'Eau
+domain: construction
+tags:
+- eau
+- puits
+- eaux-souterraines
+- construction
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

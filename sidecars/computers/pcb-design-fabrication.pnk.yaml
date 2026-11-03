@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: IPC Design Standards
   license: public-domain
+  language: en
+- title: Mạch in
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/M%E1%BA%A1ch_in
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Bodi ya saketi iliyochapishwa
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Bodi_ya_saketi_iliyochapishwa
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Circuito impreso
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Circuito_impreso
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

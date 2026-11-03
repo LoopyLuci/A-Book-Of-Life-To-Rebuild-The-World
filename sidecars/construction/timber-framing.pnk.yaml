@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 21-6 Carpentry
+  license: public-domain
+  language: en
 - title: Traditional timber-frame guild notes
+  license: original
+  language: en
+- title: Costruzione a graticcio
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Costruzione_a_graticcio
+  license: CC-BY-SA-4.0
+  language: it
+- title: Vakwerk (wandconstructie)
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Vakwerk_%28wandconstructie%29
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Ahşap karkas
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Ah%C5%9Fap_karkas
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: draft
 links: []

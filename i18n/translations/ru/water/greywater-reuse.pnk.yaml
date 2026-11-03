@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Повторное использование серой воды
+domain: water
+tags: [voda, seraya-voda, oroshenie, sanitariya, selskoe-khozyaystvo]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Патогены из воды стирки, мытья ванны и рук
+- Накопление солей и бора в почве
+- Загрязнение грунтовых вод
+- Размножение комаров в застойных лужах
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по безопасному использованию сточных вод, экскрементов и серой воды
+- title: 'WaterSense: использование воды на улице (АПН США)'
+- title: Руководство ФАО по повторному использованию сточных вод в сельском хозяйстве
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arid, tropical]
+language: ru
+media: []

@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Manutenzione della bicicletta e trasporto dei carichi
+domain: transport
+tags: [trasporto, biciclette, riparazione, logistica, attrezzi]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Guasto del freno o del pneumatico in traffico
+  - Spostamento del carico e perdita di sterzo
+  - Lesioni a mani e catena
+  - Sforzo e colpo di calore
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Guida alla manutenzione delle biciclette da villaggio
+  - title: Standard di riparazione della Bicycle Retailer and Industry Association
+  - title: Linee guida WHO sulla sicurezza in bicicletta
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

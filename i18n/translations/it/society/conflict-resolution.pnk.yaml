@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+translation_of: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+title: Risoluzione dei conflitti
+domain: society
+tags: [conflitto, mediazione, societa, pace]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Introduzioni alla mediazione di pubblico dominio
+  - title: Principi di giustizia riparativa
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

@@ -23,8 +23,10 @@ import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Close
 import androidx.compose.material.icons.outlined.Download
 import androidx.compose.material.icons.outlined.Share
+import androidx.compose.material.icons.outlined.SystemUpdate
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
@@ -58,7 +60,9 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import java.io.File
 import kotlinx.coroutines.launch
+import org.abookoflife.core.data.update.ReleaseInfo
 import org.abookoflife.core.designsystem.R
 import org.abookoflife.core.designsystem.theme.LocalDarkTheme
 import org.abookoflife.core.designsystem.theme.palettePrimaryColor
@@ -71,6 +75,7 @@ fun SettingsRoute(
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val context = LocalContext.current
     SettingsScreen(
         state = state,
         onThemeChange = viewModel::setTheme,
@@ -79,6 +84,18 @@ fun SettingsRoute(
         onFontScaleChange = viewModel::setFontScale,
         onSerifChange = viewModel::setSerif,
         onReindex = viewModel::reindex,
+        onCheckForUpdate = viewModel::checkForUpdate,
+        onDownloadUpdate = viewModel::downloadUpdate,
+        onCancelUpdate = viewModel::cancelUpdate,
+        onResumePendingDownload = viewModel::resumePendingDownload,
+        installPackage = { apk ->
+            val intent = installPackageIntent(context, apk)
+            runCatching { context.startActivity(intent) }.isSuccess
+        },
+        requestInstallPermission = {
+            val intent = installPermissionIntent(context)
+            runCatching { context.startActivity(intent) }.isSuccess
+        },
         modifier = modifier,
     )
 }
@@ -93,6 +110,12 @@ fun SettingsScreen(
     onFontScaleChange: (Float) -> Unit,
     onSerifChange: (Boolean) -> Unit,
     onReindex: () -> Unit,
+    onCheckForUpdate: () -> Unit,
+    onDownloadUpdate: (ReleaseInfo) -> Unit,
+    onCancelUpdate: () -> Unit,
+    onResumePendingDownload: () -> Unit,
+    installPackage: (File) -> Boolean,
+    requestInstallPermission: () -> Boolean,
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
@@ -106,6 +129,12 @@ fun SettingsScreen(
         if (state.reindexTick > 0) {
             snackbarHostState.showSnackbar(reindexDoneMessage)
         }
+    }
+
+    // A download started earlier, possibly before the app was closed, is
+    // picked up again so the reader can install it.
+    LaunchedEffect(Unit) {
+        onResumePendingDownload()
     }
 
     val appVersion = remember {
@@ -278,6 +307,131 @@ fun SettingsScreen(
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
+            }
+
+            HorizontalDivider()
+
+            SectionLabel(stringResource(R.string.settings_updates))
+
+            when (val update = state.updateState) {
+                UpdateState.Idle -> {
+                    ActionRow(
+                        icon = Icons.Outlined.SystemUpdate,
+                        title = stringResource(R.string.settings_check_updates),
+                        subtitle = stringResource(R.string.settings_check_updates_desc),
+                        onClick = onCheckForUpdate,
+                    )
+                    Text(
+                        text = stringResource(R.string.settings_update_source),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+
+                UpdateState.Checking -> {
+                    InfoRow(
+                        stringResource(R.string.settings_check_updates),
+                        stringResource(R.string.settings_update_checking),
+                    )
+                }
+
+                is UpdateState.UpToDate -> {
+                    InfoRow(
+                        stringResource(R.string.settings_check_updates),
+                        stringResource(R.string.settings_update_up_to_date),
+                    )
+                    Text(
+                        text = stringResource(
+                            R.string.settings_update_up_to_date_desc,
+                            update.latestTag,
+                        ),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+
+                is UpdateState.Available -> {
+                    InfoRow(
+                        stringResource(R.string.settings_update_available),
+                        update.release.tag,
+                    )
+                    Text(
+                        text = stringResource(
+                            R.string.settings_update_available_desc,
+                            update.release.tag,
+                        ),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Button(onClick = { onDownloadUpdate(update.release) }) {
+                        Text(stringResource(R.string.settings_update_download))
+                    }
+                    Text(
+                        text = stringResource(R.string.settings_update_download_desc),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+
+                is UpdateState.Downloading -> {
+                    InfoRow(
+                        stringResource(R.string.settings_check_updates),
+                        stringResource(R.string.settings_update_downloading, update.percent),
+                    )
+                    Text(
+                        text = stringResource(R.string.settings_update_downloading_desc),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    ActionRow(
+                        icon = Icons.Outlined.Close,
+                        title = stringResource(R.string.settings_update_cancel),
+                        subtitle = "",
+                        onClick = onCancelUpdate,
+                    )
+                }
+
+                is UpdateState.ReadyToInstall -> {
+                    InfoRow(
+                        stringResource(R.string.settings_update_ready),
+                        update.releaseTag,
+                    )
+                    Text(
+                        text = stringResource(
+                            R.string.settings_update_ready_desc,
+                            update.releaseTag,
+                        ),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Button(
+                        onClick = {
+                            if (!installPackage(update.apk)) {
+                                requestInstallPermission()
+                            }
+                        },
+                    ) {
+                        Text(stringResource(R.string.settings_update_install))
+                    }
+                    Text(
+                        text = stringResource(R.string.settings_update_install_desc),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+
+                is UpdateState.Failed -> {
+                    InfoRow(
+                        stringResource(R.string.settings_update_failed),
+                        update.reason,
+                    )
+                    ActionRow(
+                        icon = Icons.Outlined.SystemUpdate,
+                        title = stringResource(R.string.settings_check_updates),
+                        subtitle = "",
+                        onClick = onCheckForUpdate,
+                    )
+                }
             }
 
             HorizontalDivider()

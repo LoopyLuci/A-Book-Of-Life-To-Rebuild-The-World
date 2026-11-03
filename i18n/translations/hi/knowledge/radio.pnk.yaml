@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0CFGSJ8VHHS6PG1D0D/knowledge/radio
+translation_of: pnk:01M52TVK0CFGSJ8VHHS6PG1D0D/knowledge/radio
+title: Radio
+domain: knowledge
+tags:
+- radio
+- sanvad
+- elektroniki
+- signal
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army Signal Corps manuals (public domain)
+- title: Public-domain amateur radio handbooks
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: hi
+media: []

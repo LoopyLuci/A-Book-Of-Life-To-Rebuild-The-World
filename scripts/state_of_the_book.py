@@ -12,10 +12,9 @@ from __future__ import annotations
 
 import argparse
 import json
-import sqlite3
 import sys
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import yaml
@@ -195,7 +194,7 @@ def build(year: int, dry_run: bool = False) -> int:
 
     context = {
         "year": year,
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "total": total,
         "field_tested": field_tested,
         "peer_reviewed": peer_reviewed,
@@ -262,7 +261,7 @@ Generated {context['generated_at']}.
 
 def main() -> int:
     parser = argparse.ArgumentParser(prog="abook-state")
-    parser.add_argument("--year", type=int, default=datetime.now().year)
+    parser.add_argument("--year", type=int, default=datetime.now(UTC).year)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     return build(args.year, dry_run=args.dry_run)

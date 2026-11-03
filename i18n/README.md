@@ -1,7 +1,9 @@
 # Internationalization (i18n)
 
-A Book Of Life To Rebuild The World supports 12 languages at launch, with a
-translation framework that scales to more.
+A Book Of Life To Rebuild The World ships its interface in 17 languages, with
+16 translated corpora and a translation framework that scales to more. Every
+language has a coverage target, and the pipeline fails the build when a
+language drops below it.
 
 > Translations are reference material like everything else in this project.
 > A translated entry is still an entry: check the primary sources, and do not
@@ -10,25 +12,49 @@ translation framework that scales to more.
 
 ## Supported Languages
 
-| Code | Language | Coverage target |
-|------|----------|-----------------|
-| `en` | English | 100% |
-| `es` | Spanish | 100% |
-| `fr` | French | 100% |
-| `de` | German | 100% |
-| `pt` | Portuguese | 100% |
-| `hi` | Hindi | 80% |
-| `ar` | Arabic | 80% |
-| `sw` | Swahili | 60% |
-| `zh` | Chinese (Simplified) | 80% |
-| `it` | Italian | 30% |
-| `ru` | Russian | 40% |
-| `nl` | Dutch | 30% |
-| `ja` | Japanese | 40% |
-| `ko` | Korean | 25% |
-| `vi` | Vietnamese | 30% |
-| `tr` | Turkish | 30% |
-| `id` | Indonesian | 30% |
+`en` is the canonical corpus; every other language is a translation that falls
+back to it key by key. The coverage figure is what the language covers of the
+207 entries today, and the target is the floor the pipeline enforces.
+
+| Code | Language | Coverage | Target |
+|------|----------|----------|--------|
+| `en` | English | 100% | 100% |
+| `es` | Spanish | 100% | 100% |
+| `fr` | French | 100% | 100% |
+| `de` | German | 100% | 100% |
+| `pt` | Portuguese | 100% | 100% |
+| `hi` | Hindi | 80.2% | 80% |
+| `ar` | Arabic | 80.2% | 80% |
+| `zh` | Chinese (Simplified) | 80.2% | 80% |
+| `sw` | Swahili | 60.4% | 60% |
+| `ja` | Japanese | 40.1% | 40% |
+| `ru` | Russian | 40.1% | 40% |
+| `id` | Indonesian | 30.4% | 30% |
+| `it` | Italian | 30.4% | 30% |
+| `nl` | Dutch | 30.4% | 30% |
+| `tr` | Turkish | 30.4% | 30% |
+| `vi` | Vietnamese | 30.4% | 30% |
+| `ko` | Korean | 25.1% | 25% |
+
+### Sources, not only translations
+
+A reader whose first language is Swahili or Korean can follow an untranslated
+entry, because every entry cites sources in several languages and records the
+language of each one:
+
+```yaml
+sources:
+- title: Water Purification
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Purification_de_l%27eau
+  license: CC-BY-SA-4.0
+  language: fr
+```
+
+The URLs are resolved through the MediaWiki language-links API when they are
+added, so each one is a real article in that language rather than a guess. See
+[`../docs/ENTRIES.md`](../docs/ENTRIES.md) for the rule.
+
 
 ## Structure
 

@@ -2,6 +2,10 @@
 
 > **Domain:** health | **Difficulty:** apprentice | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Waterborne disease usually appears as acute watery diarrhoea, vomiting, fever,

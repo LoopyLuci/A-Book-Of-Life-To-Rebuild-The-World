@@ -2,6 +2,10 @@
 
 > **Domain:** transport | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 A route plan turns a destination into a schedule with known water, feed, fuel,

@@ -1,0 +1,65 @@
+id: pnk:01M5FBX2KSXPAS0NBFKVZS5CDQ/agriculture/soil-fertility-management
+translation_of: pnk:01M5FBX2KSXPAS0NBFKVZS5CDQ/agriculture/soil-fertility-management
+title: Mitti Urvarata Management
+domain: agriculture
+tags:
+- mitti
+- urvarata
+- khad
+- ghaavat-fasal
+- ph
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+yield: A soil-fertility plan with tested amendments, organic matter, and a rotation that maintains yield
+season: Sample after harvest; apply compost and lime before the main planting window
+storage: Cover compost and fertilizer stacks; keep lime dry and labelled
+cost: medium
+hazards:
+- Pathogens in fresh manure
+- Dust and chemical irritation from lime and fertilizer
+- Nitrate and phosphorus runoff into water
+- Heavy-metal contamination from untested inputs
+resource_budget:
+  batch: 100 square metres of garden bed
+  labor_hours: 8
+  energy_kwh: 0
+  water_liters: 500
+lifespan: Expect 3-5 years to rebuild depleted organic matter and structure
+maintenance: Test soil every 2-3 years and add compost or cover crops each season
+limits:
+- Do not lime without a pH test
+- Do not use fresh manure on crops eaten raw
+- Do not spread amendments before heavy rain or near wells and streams
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+materials_required:
+- Mature compost or rotted manure
+- Cover crop seed
+- Lime or gypsum only if tested
+- Mulch
+- Soil sample bags
+tools_required:
+- Spade and hoe
+- Soil auger
+- Wheelbarrow
+- Bucket
+- Gloves and dust mask
+- pH and soil test kit
+sources:
+- title: FAO Soils Bulletin 80
+- title: USDA NRCS Soil Health Management
+- title: Cornell Comprehensive Assessment of Soil Health
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSBP421X7Q3TA4QS7J/agriculture/irrigation-scheduling
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N23/agriculture/seed-saving
+- pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+geographic_applicability:
+- temperate
+- tropical
+- arid
+- universal
+language: hi
+media: []

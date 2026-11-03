@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: Ручные тележки и двухколёсные повозки
+domain: transport
+tags: [transport, telegi, derevoobrabotka, logistika, torgovlya]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Опрокидывание на уклонах или дорогах с поперечным уклоном
+- Отказ тормоза или сцепки
+- Перенапряжение при перегрузке при толкании
+- Столкновения с дорожным движением
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочник Practical Action по деревенским технологиям
+- title: FAO «Простые сельские тележки»
+- title: Руководства Appropriate Technology по перевозкам
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

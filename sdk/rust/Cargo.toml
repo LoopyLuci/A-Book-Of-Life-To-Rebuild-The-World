@@ -4,7 +4,7 @@ version = "1.0.0"
 edition = "2021"
 description = "Rust SDK for A Book Of Life To Rebuild The World."
 license = "MIT"
-repository = "https://github.com/abookoflife/a-book-of-life-to-rebuild-the-world"
+repository = "https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World"
 readme = "README.md"
 
 [dependencies]

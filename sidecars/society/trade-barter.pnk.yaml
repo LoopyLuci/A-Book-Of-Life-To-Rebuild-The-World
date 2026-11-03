@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain trade texts
+  license: public-domain
+  language: en
 - title: Traditional barter and scrip practice
+  license: original
+  language: en
+- title: Ruilhandel
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Ruilhandel
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Barter
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Barter
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Trao đổi hiện vật
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Trao_%C4%91%E1%BB%95i_hi%E1%BB%87n_v%E1%BA%ADt
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

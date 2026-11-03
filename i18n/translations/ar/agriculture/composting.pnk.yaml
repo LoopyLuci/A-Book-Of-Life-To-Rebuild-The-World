@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+title: التسميد المركب
+domain: agriculture
+tags:
+- kamil
+- turab
+- nafatha
+- khusuba
+- ziraa
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+materials_required: []
+tools_required: []
+sources:
+- title: USDA Composting Guide
+verification:
+  status: peer-reviewed
+  date: '2026-03-05'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

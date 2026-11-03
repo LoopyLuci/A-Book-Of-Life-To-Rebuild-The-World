@@ -46,8 +46,29 @@ tools_required:
 - Light meter or phone app
 sources:
 - title: IEA Lighting and Energy Efficiency
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US DOE Solid-State Lighting Program
+  license: public-domain
+  language: en
 - title: WHO Household Air Pollution Guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: 조명
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%AA%85
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Illuminazione
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Illuminazione
+  license: CC-BY-SA-4.0
+  language: it
+- title: Belichting
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Belichting
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links:

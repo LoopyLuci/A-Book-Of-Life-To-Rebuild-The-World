@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
 Scaffold a new knowledge entry (Markdown + sidecar).
+
 Usage: python scripts/new_entry.py <domain> <slug> "<Title>"
+
+The generated files are a starting point, not a finished entry. Read
+docs/ENTRIES.md before filling them in, and docs/DISCLAIMER.md before writing
+anything that could be followed as a procedure.
 """
 
 from __future__ import annotations
@@ -10,7 +15,6 @@ import sys
 from pathlib import Path
 
 import yaml
-
 from ulid import new_pnk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,15 +24,25 @@ SIDECARS_DIR = ROOT / "sidecars"
 VALID_DOMAINS = {
     "survival", "water", "agriculture", "materials", "energy",
     "construction", "transport", "health", "knowledge", "society",
+    "chemistry", "biology", "silicon", "ship", "computers", "quantum",
 }
+
+NOTICE = (
+    "*Reference material only. Verify this information against primary sources\n"
+    "and qualified professionals before acting on it. This entry is not a sole\n"
+    "source of information.*"
+)
 
 TEMPLATE_MD = """# {title}
 
 > **Domain:** {domain} | **Difficulty:** novice | **Safety:** green
 
+{notice}
+
 ## Overview
 
-_Describe what this entry enables and why it matters._
+_Describe what this entry enables and why it matters. State the key principle
+in one or two sentences and say what the reader will be able to do afterwards._
 
 ## Prerequisites
 
@@ -46,6 +60,8 @@ _Describe what this entry enables and why it matters._
 ## Safety Notes
 
 - TBD
+- State the real hazard here, and the training, equipment and supervision the
+  work needs.
 
 ## Verification
 
@@ -82,7 +98,10 @@ def main() -> int:
         print("Entry already exists.", file=sys.stderr)
         return 1
 
-    md_path.write_text(TEMPLATE_MD.format(title=title, domain=domain), encoding="utf-8")
+    md_path.write_text(
+        TEMPLATE_MD.format(title=title, domain=domain, notice=NOTICE),
+        encoding="utf-8",
+    )
 
     sidecar = {
         "id": pnk,
@@ -121,6 +140,8 @@ def main() -> int:
         yaml.safe_dump(sidecar, f, sort_keys=False, allow_unicode=True)
 
     print(f"Created:\n  {md_path}\n  {sidecar_path}")
+    print("\nNext: read docs/ENTRIES.md, then fill in the entry and its sidecar,")
+    print("and run: python scripts/validate.py")
     return 0
 
 

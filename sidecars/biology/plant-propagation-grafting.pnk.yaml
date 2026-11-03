@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Plant Propagation Handbook
   license: public-domain
+  language: en
+- title: 嫁接
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E5%AB%81%E6%8E%A5
+  license: CC-BY-SA-4.0
+  language: zh
+- title: تطعيم (نبات)
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%B7%D8%B9%D9%8A%D9%85_%28%D9%86%D8%A8%D8%A7%D8%AA%29
+  license: CC-BY-SA-4.0
+  language: ar
+- title: कलम बांधना
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%B2%E0%A4%AE_%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%A7%E0%A4%A8%E0%A4%BE
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links: []

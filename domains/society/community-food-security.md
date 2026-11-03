@@ -2,6 +2,10 @@
 
 > **Domain:** society | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Food security is not only how much a community grows; it is whether every

@@ -1,9 +1,25 @@
 # Build artifacts
 build/
+logs/
 *.zim
 *.db
 *.db-wal
 *.db-shm
+*.apk
+*.aab
+
+# Logs and local scratch
+*.log
+*.log.*
+!docs/**/*.log
+ci-fail.log
+
+# Agent session transcripts and other local dumps; they hold conversation
+# history and never belong in a public tree.
+*_convo.json
+opencode-*.json
+.abook/
+X?/
 
 # Python
 __pycache__/
@@ -12,15 +28,71 @@ __pycache__/
 venv/
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+.vite/
+*.tsbuildinfo
+
+# Rust
+target/
+**/*.rs.bk
+
+# Ruby
+vendor/bundle/
+.bundle/
+tmp/
+log/*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+local.properties
+*.keystore
+*.jks
+!debug.keystore
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# Machine-local build environment: toolchain paths and cache locations differ
+# per machine and per drive, so never track them. See docs/LOCAL-PIPELINE.md.
+scripts/env.ps1
+scripts/env.sh
+scripts/env.bat
+
+# The offline wheelhouse is built per platform and interpreter.
+vendor/wheels/
+
+# Launchers written by the installer; they hold the absolute path of the
+# interpreter of this machine. See docs/INSTALL.md.
+/abook.cmd
+/abook
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Editor
 .vscode/
 .idea/
 *.swp
+*~
 
 # Model cache
 *.onnx
+
+# Local plugin configuration
+.claude/
+.opencode/

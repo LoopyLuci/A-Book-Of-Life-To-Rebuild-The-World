@@ -2,6 +2,10 @@
 
 > **Domain:** water | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Storing water turns a lucky find into a reliable supply. The container matters

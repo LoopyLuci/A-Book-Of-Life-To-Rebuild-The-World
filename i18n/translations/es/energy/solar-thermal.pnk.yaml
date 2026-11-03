@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N45/energy/solar-thermal
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N45/energy/solar-thermal
+title: Energía Solar Térmica
+domain: energy
+tags:
+- solar
+- termico
+- cocina
+- agua-caliente
+- energia
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required: []
+tools_required: []
+sources:
+- title: NREL Solar Thermal Guide
+- title: Solar Cookers International
+verification:
+  status: peer-reviewed
+  date: '2026-04-28'
+links: []
+geographic_applicability:
+- temperate
+- arid
+- tropical
+language: es
+media: []

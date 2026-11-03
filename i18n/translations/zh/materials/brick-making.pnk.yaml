@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+title: 制砖工艺
+domain: materials
+tags:
+- zhuan
+- ni
+- yao
+- jianzhu
+- cailiao
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional brickmaking methods
+verification:
+  status: peer-reviewed
+  date: '2026-04-03'
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

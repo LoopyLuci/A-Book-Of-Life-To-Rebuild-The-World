@@ -1,0 +1,30 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N43/energy/wind-power
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N43/energy/wind-power
+title: Énergie Éolienne
+domain: energy
+tags:
+- vent
+- turbine
+- electricite
+- alternateur
+- energie
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N47/energy/electrical-wiring
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+materials_required: []
+tools_required: []
+sources:
+- title: NREL Small Wind Guide
+verification:
+  status: peer-reviewed
+  date: '2026-04-22'
+links: []
+geographic_applicability:
+- temperate
+- arctic
+language: fr
+media: []

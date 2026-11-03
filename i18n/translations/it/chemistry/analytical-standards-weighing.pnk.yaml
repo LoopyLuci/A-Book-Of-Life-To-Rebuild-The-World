@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+translation_of: pnk:01KDVDNA001332T8V3B14WF36G/chemistry/analytical-standards-weighing
+title: Pesata analitica, standard e taratura
+domain: chemistry
+tags: [chimica, analitica, taratura, bilancia, standard]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Ustioni chimiche e spruzzi; indossa occhiali antispruzzo e guanti.
+  - Inalazione di fumi; lavora in un locale ventilato o sotto cappa.
+  - Fuoco e calore; tieni lontano il materiale infiammabile dai lavori a caldo.
+  - I rifiuti di reagenti devono essere neutralizzati e raccolti separatamente.
+limits:
+  - I valori presuppongono purezza di grado di laboratorio e vetreria tarata.
+  - Non sostituisce un protocollo di laboratorio controllato.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Handbook 44
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

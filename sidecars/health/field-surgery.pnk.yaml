@@ -14,7 +14,21 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Basic Emergency Care
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: War surgery manuals (public domain)
+  license: public-domain
+  language: en
+- title: Chirurgie
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Chirurgie
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Cirurgia
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Cirurgia
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

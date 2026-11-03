@@ -39,8 +39,29 @@ tools_required:
 - Brush
 sources:
 - title: Bookbinding and Conservation Manual
+  license: permission-granted
+  language: en
 - title: Library of Congress Book Repair Guidelines
+  license: public-domain
+  language: en
 - title: Canadian Conservation Institute Bookbinding Notes
+  license: CC-BY-4.0
+  language: en
+- title: Encadernação
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Encaderna%C3%A7%C3%A3o
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Переплёт
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D0%BB%D1%91%D1%82
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 裝訂
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E8%A3%9D%E8%A8%82
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links:

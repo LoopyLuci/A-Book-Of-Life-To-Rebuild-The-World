@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain philosophy texts
+  license: public-domain
+  language: en
 - title: Humanitarian ethics guidance
+  license: original
+  language: en
+- title: Ética
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/%C3%89tica
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Этика
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%AD%D1%82%D0%B8%D0%BA%D0%B0
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 伦理学
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E4%BC%A6%E7%90%86%E5%AD%A6
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

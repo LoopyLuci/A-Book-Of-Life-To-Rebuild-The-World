@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00ESV951BH0DCVKZXD/ship/structural-design-rules
+translation_of: pnk:01KDVDNA00ESV951BH0DCVKZXD/ship/structural-design-rules
+title: Règles de Calcul des Structures de Coques
+domain: ship
+tags:
+- navire
+- structure
+- placage
+- gabarits
+- regles
+difficulty: master
+safety: yellow
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: high
+hazards:
+- Working at height and over open water; use fall protection.
+- Hot work, welding fume and fire watch; control the hot zone.
+- Confined space and heavy lifting hazards during construction.
+- Class and flag rules apply; never improvise a safety system.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Dimensions assume a conventional steel hull and normal loading.
+- Statutory survey and classification remain authoritative.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Classification Society Rules
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

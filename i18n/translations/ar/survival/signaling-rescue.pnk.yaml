@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
+title: إشارات الإنقاذ
+domain: survival
+tags:
+- injaz
+- isharat
+- ittisal
+- nijah
+difficulty: novice
+safety: green
+time_to_complete: minutes
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-76 Survival Manual
+- title: ICAO Search and Rescue Manual
+verification:
+  status: peer-reviewed
+  date: '2026-02-22'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

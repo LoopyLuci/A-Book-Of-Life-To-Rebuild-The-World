@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+title: حفظ الأغذية
+domain: agriculture
+tags:
+- hifath
+- talib
+- tajfif
+- tadkhin
+- takhammur
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+- title: USDA Complete Guide to Home Canning
+- title: FAO Food Preservation Manual
+verification:
+  status: peer-reviewed
+  date: '2026-03-18'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

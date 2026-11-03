@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: Arm Cortex-M Documentation
   license: public-domain
+  language: en
+- title: 어셈블리어
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%96%B4%EC%85%88%EB%B8%94%EB%A6%AC%EC%96%B4
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Linguaggio assembly
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Linguaggio_assembly
+  license: CC-BY-SA-4.0
+  language: it
+- title: Assembleertaal
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Assembleertaal
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

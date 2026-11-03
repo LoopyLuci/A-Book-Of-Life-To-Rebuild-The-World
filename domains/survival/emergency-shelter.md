@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Exposure kills faster than hunger or thirst. A shelter must address four

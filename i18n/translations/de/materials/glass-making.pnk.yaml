@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N33/materials/glass-making
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N33/materials/glass-making
+title: Glasherstellung
+domain: materials
+tags:
+- glas
+- kieselsaeure
+- linsen
+- behaelter
+- materialien
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional glassmaking methods
+verification:
+  status: peer-reviewed
+  date: '2026-04-01'
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

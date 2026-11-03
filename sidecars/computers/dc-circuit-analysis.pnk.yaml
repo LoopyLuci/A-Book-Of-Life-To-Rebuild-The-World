@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: OpenStax University Physics
   license: CC-BY-4.0
+  language: en
+- title: Gelijkstroom
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Gelijkstroom
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Doğru akım
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Do%C4%9Fru_ak%C4%B1m
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Điện một chiều
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_m%E1%BB%99t_chi%E1%BB%81u
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

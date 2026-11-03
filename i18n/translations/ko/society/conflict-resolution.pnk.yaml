@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+translation_of: pnk:01M52TVK0PT9JK3FNQ6CZENE2D/society/conflict-resolution
+title: 갈등 해소
+domain: society
+tags: [choyeon, jungjae, sahoe, pyeonghwa]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: 퍼블릭 도메인 중재 입문서
+  - title: 회복적 정의 원칙
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

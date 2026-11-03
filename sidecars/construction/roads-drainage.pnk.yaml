@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army FM 5-430 Roads and Airfields
+  license: public-domain
+  language: en
 - title: Public Works manual principles
+  license: public-domain
+  language: en
+- title: Weg
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Weg
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Yol
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Yol
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Đường giao thông
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_giao_th%C3%B4ng
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

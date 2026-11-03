@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: Introduction to Chemistry
   license: public-domain
+  language: en
+- title: Stœchiométrie
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/St%C5%93chiom%C3%A9trie
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Stöchiometrie
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/St%C3%B6chiometrie
+  license: CC-BY-SA-4.0
+  language: de
+- title: Estequiometria
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Estequiometria
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

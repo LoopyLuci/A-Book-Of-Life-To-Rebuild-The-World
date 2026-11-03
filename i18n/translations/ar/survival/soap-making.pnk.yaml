@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N20/survival/soap-making
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N20/survival/soap-making
+title: صناعة الصابون
+domain: survival
+tags:
+- sabun
+- nafasah
+- kimiya
+- kals
+- tasabbin
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional soap-making methods
+verification:
+  status: peer-reviewed
+  date: '2026-02-28'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

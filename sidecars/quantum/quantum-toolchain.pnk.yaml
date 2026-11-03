@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Quantenrechner
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Quantenrechner
+  license: CC-BY-SA-4.0
+  language: de
+- title: Computação quântica
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_qu%C3%A2ntica
+  license: CC-BY-SA-4.0
+  language: pt
+- title: 量子计算
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

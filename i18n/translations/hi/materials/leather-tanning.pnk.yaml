@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N38/materials/leather-tanning
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N38/materials/leather-tanning
+title: Chamda Chhauna
+domain: materials
+tags:
+- tan-chamda
+- chamda-tanai
+- chamda
+- padarth
+- kapda
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required: []
+tools_required: []
+sources:
+- title: FAO Leather Processing Manual
+verification:
+  status: peer-reviewed
+  date: '2026-04-14'
+links: []
+geographic_applicability:
+- universal
+language: hi
+media: []

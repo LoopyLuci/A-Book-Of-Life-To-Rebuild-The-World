@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: OpenStax Biology 2e
   license: CC-BY-4.0
+  language: en
+- title: 浸透
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%B5%B8%E9%80%8F
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 삼투
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%82%BC%ED%88%AC
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Osmosi
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Osmosi
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links: []

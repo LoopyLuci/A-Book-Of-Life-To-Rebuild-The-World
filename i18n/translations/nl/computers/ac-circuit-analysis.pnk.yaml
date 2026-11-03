@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+translation_of: pnk:01KDVDNA0077Y96QYQ8A1X0HR5/computers/ac-circuit-analysis
+title: Analyse van wisselstroomcircuits en impedantie
+domain: computers
+tags: [computers, elektronica, wisselstroom, impedantie, filters]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Netspanning en opgeslagen lading kunnen dodelijk zijn; schakel spanningsvrij vóór het werken.
+  - Soldeerdampen, vloeimiddel en lood; zorg voor ventilatie en was uw handen.
+  - Statische ontlading kan onderdelen beschadigen; werk op een geaarde werkbank.
+  - Gegevensverlies is stil; maak een back-up vóór elke firmware- of schijfbehandeling.
+limits:
+  - De voorbeelden gaan uit van gangbare open toolchains.
+  - Volg het datasheet van de fabrikant boven elke samenvatting.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: OpenStax University Physics
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+translation_of: pnk:01KDVDNA00S8676XAMJYDZPQH3/biology/ecosystem-monitoring
+title: Ecosysteemmonitoring en biodiversiteit
+domain: biology
+tags: [biologie, ecologie, monitoring, biodiversiteit, inventarisatie]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+  - Scherpe voorwerpen en snijwonden; gebruik een pincet en gooi mesjes veilig af
+  - Biologische besmetting; houd kweken gesloten en goed gelabeld
+  - Blootstelling aan kleurlosstoffen en reagentia; draag handschoenen en was uw handen
+  - Lokale regels over wilde soorten en beschermde planten blijven van kracht
+limits:
+  - Resultaten verschillen per lokale stam, klimaat en techniek
+  - Gebruik nooit ongeverifieerd materiaal voor voedsel, veevoer of behandeling
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: UNEP Biodiversity Indicators
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

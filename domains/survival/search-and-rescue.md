@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Most lost-person searches are won by fast, organized coverage of likely places,

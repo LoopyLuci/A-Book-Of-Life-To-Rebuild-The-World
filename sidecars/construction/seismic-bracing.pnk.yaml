@@ -50,8 +50,29 @@ tools_required:
 - Respirator and eye protection
 sources:
 - title: FEMA P-530 Earthquake Safety Guide for Homeowners
+  license: public-domain
+  language: en
 - title: FEMA E-74 Reducing the Risks of Nonstructural Earthquake Damage
+  license: public-domain
+  language: en
 - title: USGS Earthquake Hazards Program
+  license: public-domain
+  language: en
+- title: Сейсмоусиление
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B9%D1%81%D0%BC%D0%BE%D1%83%D1%81%D0%B8%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
+- title: التعديلات التحديثية الزلزالية
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%D9%8A%D8%A9_%D8%A7%D9%84%D8%B2%D9%84%D8%B2%D8%A7%D9%84%D9%8A%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: 耐震工事
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%80%90%E9%9C%87%E5%B7%A5%E4%BA%8B
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links:

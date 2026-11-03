@@ -1,0 +1,69 @@
+id: pnk:01M5FBX2KSBP421X7Q3TA4QS7J/agriculture/irrigation-scheduling
+translation_of: pnk:01M5FBX2KSBP421X7Q3TA4QS7J/agriculture/irrigation-scheduling
+title: Sinchai Samay Yojana
+domain: agriculture
+tags:
+- sinchai
+- paani
+- mitti
+- fasal
+- kram-bandi
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: A written irrigation schedule that refills the root zone with measured applications and avoids
+  runoff
+season: Adjust weekly during the growing season; reduce or stop at harvest and dormancy
+storage: Store drip tape and fittings dry and out of sunlight between seasons
+cost: medium
+hazards:
+- Drowning in ditches, ponds, and tanks
+- Slips on wet paths and buried pipes
+- Electric shock from pumps and controls
+- Crop contamination from unsafe water
+resource_budget:
+  batch: 100 square metres of vegetable bed for one week
+  labor_hours: 6
+  energy_kwh: 2
+  water_liters: 1500
+lifespan: Recalibrate the schedule each season and whenever the crop stage changes
+maintenance: Check emitters and filters weekly; flush lines monthly
+limits:
+- Scheduling figures are crop, soil, and climate specific
+- Do not use untreated sewage or industrial water on edible crops
+- Do not irrigate steep slopes faster than the soil can absorb
+prerequisites:
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+materials_required:
+- Soil auger or trowel
+- Moisture meter or tensiometers
+- Catch cans
+- Flow meter or calibrated bucket
+- Drip tape or furrow gates
+- Mulch
+- Rain gauge
+- Notebook
+tools_required:
+- Shovel
+- Timer
+- Calculator
+- Pipe wrench
+- pH and salinity test kit if available
+sources:
+- title: FAO Irrigation and Drainage Paper 56
+- title: USDA NRCS Irrigation Guide
+- title: UC ANR Irrigation Scheduling for Small Farms
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSXPAS0NBFKVZS5CDQ/agriculture/soil-fertility-management
+- pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+- pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+geographic_applicability:
+- arid
+- temperate
+- tropical
+- universal
+language: hi
+media: []

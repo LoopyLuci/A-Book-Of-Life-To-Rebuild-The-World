@@ -26,8 +26,7 @@ def load_schema() -> Draft202012Validator:
 
 
 def iter_sidecars():
-    for path in sorted(SIDECARS_DIR.rglob("*.pnk.yaml")):
-        yield path
+    yield from sorted(SIDECARS_DIR.rglob("*.pnk.yaml"))
 
 
 def markdown_path_for(sidecar_path: Path) -> Path:

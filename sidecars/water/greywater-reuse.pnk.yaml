@@ -36,8 +36,29 @@ tools_required:
 - Gloves
 sources:
 - title: WHO Guidelines for the Safe Use of Wastewater, Excreta and Greywater
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US EPA WaterSense Outdoor Water Use
+  license: public-domain
+  language: en
 - title: FAO Wastewater Reuse in Agriculture
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Grijs water
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Grijs_water
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Gri su
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Gri_su
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Aguas grises
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Aguas_grises
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links:

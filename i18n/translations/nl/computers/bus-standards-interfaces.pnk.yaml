@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Busstandaarden en signaalinterfaces
+domain: computers
+tags: [computers, bus, interface, uart, i2c, spi]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Netspanning en opgeslagen lading kunnen dodelijk zijn; schakel spanningsvrij vóór het werken
+  - Soldeerdampen, vloeimiddel en lood; zorg voor ventilatie en was uw handen
+  - Statische ontlading kan onderdelen beschadigen; werk op een geaarde werkbank
+  - Gegevensverlies is stil; maak een back-up vóór elke firmware- of schijfbehandeling
+limits:
+  - De voorbeelden gaan uit van gangbare open toolchains
+  - Volg het datasheet van de fabrikant boven elke samenvatting
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NXP and Analog Devices Interface Notes
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

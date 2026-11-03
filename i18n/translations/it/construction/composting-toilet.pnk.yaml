@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Toilet a compostaggio
+domain: construction
+tags: [sanitari, compostaggio, toilette, acqua, salute-pubblica]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Esposizione a patogeni da rifiuti freschi e percolato
+  - Contaminamento delle falde
+  - Metano e ammoniaca nelle camere
+  - Cadute e tagli durante la costruzione
+limits:
+  - Non adatto a siti con falda freatica alta o alluvioni frequenti
+  - Non applicare materiale fresco o parzialmente maturo a colture da mangiare
+    crudi
+  - Non entrare in una camera; ventilare e usare gli attrezzi dall'esterno
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO su sanità e salute
+  - title: Linee guida EcoSanRes sui toilet a compostaggio
+  - title: US EPA Composting Toilets
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical, arid, universal]
+language: it
+media: []

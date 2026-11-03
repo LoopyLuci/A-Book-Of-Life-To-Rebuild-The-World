@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+translation_of: pnk:01M5E8W7W1PY9ATZ4M01BY24K0/water/rainwater-harvesting
+title: Сбор дождевой воды
+domain: water
+tags: [voda, dozhdevaya-voda, khranenie, krovlya, sanitariya]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Патогены и тяжёлые металлы, смытые с крыши
+- Размножение комаров в открытых резервуарах
+- Утопление или падение в больших открытых цистернах
+- Обрушение резервуара или опоры под полной нагрузкой
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по качеству питьевой воды
+- title: Техасское руководство по сбору дождевой воды
+- title: Руководство АПН США по сбору дождевой воды
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

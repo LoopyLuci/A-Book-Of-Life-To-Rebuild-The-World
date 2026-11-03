@@ -1,0 +1,62 @@
+id: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+translation_of: pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+title: Jal Gunatva Pariksha
+domain: water
+tags:
+- paani
+- pariksha
+- suchak-tantra
+- klorin
+- sarv-jan-swasthya
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: A dated water-quality record covering turbidity, pH, chlorine residual, and H2S screening
+season: Test before the rainy season, after floods, and whenever a source changes
+storage: Keep reagents dry and in date; store sample bottles clean and capped
+cost: low
+hazards:
+- Chemical irritation from test reagents
+- False confidence from a negative field test
+- Contamination of samples during collection
+- Exposure to sewage or floodwater
+resource_budget:
+  batch: one water sample and treatment check
+  labor_hours: 0.5
+  energy_kwh: 0
+  water_liters: 1
+lifespan: Test strips and reagents expire; replace them by the printed date
+maintenance: Check meter calibration monthly and restock reagents before the wet season
+limits:
+- Field kits screen for indicators and cannot prove microbiological safety
+- Chlorine tests do not detect chemical contamination
+- H2S vials are a warning test, not a laboratory confirmation
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+materials_required:
+- Clean sample bottles
+- Turbidity tube or clear cylinder
+- Chlorine test strips or DPD kit
+- pH strips or meter
+- H2S test vials
+- Gloves and eye protection
+- Notebook and labels
+tools_required:
+- Thermometer
+- Timer
+- Sample collection cup
+- Cool box for transport
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: US EPA Emergency Disinfection of Drinking Water
+- title: APHA Standard Methods for the Examination of Water and Wastewater
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KS60NDC4XXPGS8MZEG/water/well-maintenance
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+geographic_applicability:
+- universal
+language: hi
+media: []

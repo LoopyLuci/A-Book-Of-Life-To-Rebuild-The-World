@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA009FEWXNVE4PD06CAM/quantum/photonic-quantum
+translation_of: pnk:01KDVDNA009FEWXNVE4PD06CAM/quantum/photonic-quantum
+title: Фотонный квантовый компьютер
+domain: quantum
+tags: [kvant, fotonika, interferometr, szhatie, izmerenie]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+- Криогенные жидкости вызывают холодовые ожоги и удушье в помещении.
+- СВЧ- и высокочастотное излучение; ограничивайте поле.
+- Облучение лазером; никогда не смотрите в направлении луча.
+- Опасные напряжения и срыв сверхпроводящего магнита; соблюдайте правила объекта.
+limits:
+- Числовые значения описывают только современные лабораторные установки.
+- Шум, дрейф и пределы управления различаются между установками.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочные материалы квантовой инициативы NIST
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

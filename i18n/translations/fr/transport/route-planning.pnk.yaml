@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KS0K354SMG8T05GPPH/transport/route-planning
+translation_of: pnk:01M5FBX2KS0K354SMG8T05GPPH/transport/route-planning
+title: Planification d'Itinéraire
+domain: transport
+tags:
+- transport
+- logistique
+- navigation
+- cartes
+- planification
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: A route card with distance, grades, water and feed stops, load limits, alternates, and a turn-around
+  point
+season: Recheck before every trip; avoid seasonal washouts, snow, and flood periods
+storage: Keep maps and route cards dry and replace outdated local information
+cost: low
+hazards:
+- Vehicle breakdown or animal exhaustion far from help
+- Flooded roads and unstable bridges
+- Landslides, snow, and extreme heat
+- Checkpoints or restricted areas
+resource_budget:
+  batch: one 50 km loaded route
+  labor_hours: 8
+  energy_kwh: 5
+  water_liters: 20
+lifespan: A route card is valid for one season or until conditions change
+maintenance: Update after washouts, bridge damage, or new restrictions
+limits:
+- Do not cross flooded roads or unmarked ice
+- Do not exceed axle, bridge, or animal load limits
+- Local permits and security advice override a planned route
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+materials_required:
+- Topographic maps
+- Route card and pencil
+- Water and feed containers
+- Tire repair kit or spare parts
+- Radio or charged phone
+- Weather protection
+tools_required:
+- Compass or GPS
+- Vehicle or cart
+- Tool kit
+- First aid kit
+- Watch or phone
+sources:
+- title: US Army FM 21-26 Map Reading and Land Navigation
+- title: FEMA Logistics Management Guidance
+- title: UNHCR Transport and Logistics Guide
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+- pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+- pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+- pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+geographic_applicability:
+- universal
+language: fr
+media: []

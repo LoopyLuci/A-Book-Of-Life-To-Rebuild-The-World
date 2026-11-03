@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: LibreTexts Physical Chemistry
   license: CC-BY-SA-4.0
+  language: en
+- title: Phasendiagramm
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Phasendiagramm
+  license: CC-BY-SA-4.0
+  language: de
+- title: Diagrama de fase
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Diagrama_de_fase
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Фазовая диаграмма
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links: []

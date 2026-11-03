@@ -36,8 +36,29 @@ tools_required:
 - Scrub brush
 sources:
 - title: WHO Guidelines for Drinking-water Quality
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: CDC Water Storage and Treatment Guidance
+  license: public-domain
+  language: en
 - title: Sphere Handbook water supply standards
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: पानी की टंकी
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%95%E0%A5%80_%E0%A4%9F%E0%A4%82%E0%A4%95%E0%A5%80
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Tangki air
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Tangki_air
+  license: CC-BY-SA-4.0
+  language: id
+- title: 貯水槽
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%B2%AF%E6%B0%B4%E6%A7%BD
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links:

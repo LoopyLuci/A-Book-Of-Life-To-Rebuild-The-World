@@ -36,8 +36,29 @@ tools_required:
 - Storage containers
 sources:
 - title: FAO Food Security Assessment Guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: Sphere Handbook Food Security Standards
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: WHO Nutrition in Emergencies
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: An ninh lương thực
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/An_ninh_l%C6%B0%C6%A1ng_th%E1%BB%B1c
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Seguridad alimentaria
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Seguridad_alimentaria
+  license: CC-BY-SA-4.0
+  language: es
+- title: Sécurité alimentaire
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_alimentaire
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links:

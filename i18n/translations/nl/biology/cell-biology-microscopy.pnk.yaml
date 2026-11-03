@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+translation_of: pnk:01KDVDNA008SN5N7MAE8KVGHPB/biology/cell-biology-microscopy
+title: Celbiologie en microscopie
+domain: biology
+tags: [biologie, cellen, microscopie, organelles, kleuring]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards:
+  - Scherpe voorwerpen en snijwonden; gebruik een pincet en gooi mesjes veilig af
+  - Biologische besmetting; houd kweken gesloten en goed gelabeld
+  - Blootstelling aan kleurlosstoffen en reagentia; draag handschoenen en was uw handen
+  - Lokale regels over wilde soorten en beschermde planten blijven van kracht
+limits:
+  - Resultaten verschillen per lokale stam, klimaat en techniek
+  - Gebruik nooit ongeverifieerd materiaal voor voedsel, veevoer of behandeling
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: OpenStax Biology 2e
+    license: CC-BY-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

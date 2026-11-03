@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: ISTQB Testing Guidance
   license: public-domain
+  language: en
+- title: Yazılım testi
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Yaz%C4%B1l%C4%B1m_testi
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Thử nghiệm phần mềm
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Th%E1%BB%AD_nghi%E1%BB%87m_ph%E1%BA%A7n_m%E1%BB%81m
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Pruebas de software
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Pruebas_de_software
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

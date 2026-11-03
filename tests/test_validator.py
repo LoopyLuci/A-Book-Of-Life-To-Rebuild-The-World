@@ -7,5 +7,6 @@ def test_validate_runs():
         [sys.executable, "scripts/validate.py"],
         capture_output=True,
         text=True,
+        check=False,
     )
     assert result.returncode == 0, result.stderr

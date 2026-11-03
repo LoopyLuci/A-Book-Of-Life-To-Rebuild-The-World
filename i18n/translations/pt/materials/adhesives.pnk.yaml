@@ -1,0 +1,63 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Adesivos
+domain: materials
+tags:
+- adesivos
+- amido
+- cola-de-couro
+- caseina
+- marcenaria
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: About 1 kg of usable starch, hide, or casein glue, enough for several small joints
+season: Make in dry, moderate weather; damp cold slows curing
+storage: Keep dry ingredients sealed; refrigerate starch paste and discard after a few days
+cost: low
+hazards:
+- Burns from hot glue and double boilers
+- Caustic burns from lime or borax
+- Mould growth in starch and hide glues
+- Weak joints failing under load
+resource_budget:
+  batch: 1 kg starch paste
+  labor_hours: 1
+  energy_kwh: 1
+  water_liters: 2
+lifespan: Dry hide glue keeps for years; starch paste lasts only days
+maintenance: Make fresh paste, label batches, and test each new glue batch on scrap
+limits:
+- Starch and hide glues are not waterproof
+- Casein is water-resistant but not a structural adhesive for safety-critical loads
+- Do not use unknown adhesives on food or drinking-water contact surfaces
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required:
+- Wheat or cassava starch
+- Hide glue granules or sheets
+- Casein powder or skim milk
+- Slaked lime or borax
+- Clean water
+- Scrap wood for tests
+tools_required:
+- Scales
+- Double boiler
+- Stirring stick
+- Brush
+- Clamps
+- Sandpaper
+sources:
+- title: Smithsonian Museum Conservation Institute Adhesives
+- title: Canadian Conservation Institute Adhesives and Consolidants
+- title: Horie, Materials for Conservation
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N38/materials/leather-tanning
+geographic_applicability:
+- universal
+language: pt
+media: []

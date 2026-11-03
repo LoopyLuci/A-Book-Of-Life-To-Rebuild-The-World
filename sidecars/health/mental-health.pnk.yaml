@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Psychological First Aid Guide
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: IASC MHPSS guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: मानसिक स्वास्थ्य
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B8%E0%A4%BF%E0%A4%95_%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A5%8D%E0%A4%AF
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Kesehatan mental
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Kesehatan_mental
+  license: CC-BY-SA-4.0
+  language: id
+- title: メンタルヘルス
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links: []

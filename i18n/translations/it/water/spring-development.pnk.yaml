@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Captazione e protezione delle sorgenti
+domain: water
+tags: [acqua, sorgenti, alimentazione-a-gravita, costruzioni, sanitari]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Crollo della trincea durante lo scavo
+  - Contaminazione da deflusso superficiale e bestiame
+  - Annegamento in una scatola non coperta
+  - Danno ai diritti d'acqua a valle
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Nota tecnica WHO sulla protezione delle sorgenti
+  - title: Linee guida Oxfam sulla protezione delle sorgenti
+  - title: US Army FM 21-10 Igiene di campo
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

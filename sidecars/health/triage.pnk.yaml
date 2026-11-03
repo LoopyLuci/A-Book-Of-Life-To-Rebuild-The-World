@@ -36,8 +36,24 @@ tools_required:
 - Radio
 sources:
 - title: WHO Mass Casualty Management
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: START Simple Triage and Rapid Treatment
+  license: public-domain
+  language: en
 - title: NATO Emergency War Surgery triage chapter
+  license: permission-granted
+  language: en
+- title: 트리아지
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC%EC%95%84%EC%A7%80
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Triage
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Triage
+  license: CC-BY-SA-4.0
+  language: it
 verification:
   status: draft
 links:

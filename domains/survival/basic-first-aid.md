@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Field first aid prioritizes: airway, breathing, circulation (ABC), then
@@ -61,7 +65,8 @@ bleeding control, then shock prevention. Definitive care is in
 
 ## Safety Notes
 
-- **Red hazard:** Do not move someone with a suspected spinal injury unless in immediate danger.
+- **Red hazard:** Do not move someone with a suspected spinal injury unless in
+  immediate danger.
 - Improper CPR can cause rib fractures; correct hand placement matters.
 - Tourniquets can cause tissue death; use only for life-threatening bleeding.
 

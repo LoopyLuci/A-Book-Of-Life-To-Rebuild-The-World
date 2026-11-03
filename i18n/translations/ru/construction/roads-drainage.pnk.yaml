@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+translation_of: pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+title: Дороги и водоотведение
+domain: construction
+tags: [dorogi, drainazh, infrastruktura, zemlyanye-raboty]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: FM 5-430 армии США «Дороги и аэродромы»
+- title: Принципы из руководств для коммунальных служб
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

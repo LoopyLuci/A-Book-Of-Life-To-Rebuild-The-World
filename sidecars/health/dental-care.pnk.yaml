@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Oral Health guidance
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: Public-domain dental manuals
+  license: public-domain
+  language: en
+- title: Odontoiatria
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Odontoiatria
+  license: CC-BY-SA-4.0
+  language: it
+- title: Tandheelkunde
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Tandheelkunde
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Diş hekimliği
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Di%C5%9F_hekimli%C4%9Fi
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: draft
 links: []

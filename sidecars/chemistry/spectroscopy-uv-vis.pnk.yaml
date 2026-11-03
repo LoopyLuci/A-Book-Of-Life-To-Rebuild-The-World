@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Spectrophotometry Guidance
   license: public-domain
+  language: en
+- title: Máy quang phổ cực tím - Khả kiến
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/M%C3%A1y_quang_ph%E1%BB%95_c%E1%BB%B1c_t%C3%ADm_-_Kh%E1%BA%A3_ki%E1%BA%BFn
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Espectroscopia ultravioleta-visible
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Espectroscopia_ultravioleta-visible
+  license: CC-BY-SA-4.0
+  language: es
+- title: Spectroscopie ultraviolet-visible
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Spectroscopie_ultraviolet-visible
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links: []

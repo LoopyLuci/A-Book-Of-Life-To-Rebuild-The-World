@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N42/energy/biogas-digester
+title: Digestore di biogas
+domain: energy
+tags: [biogas, metano, digestione, fertilizzante, energia]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manuale FAO sul biogas
+  - title: Digesto GTZ sul biogas
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: it
+media: []

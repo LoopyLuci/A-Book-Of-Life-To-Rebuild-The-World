@@ -1,0 +1,69 @@
+<% content_for :title, page_title(@query.present? ? t("search_results_for", query: @query) : t("search")) %>
+<% content_for :description, t("tagline") %>
+
+<h1><%= t("search") %></h1>
+
+<form class="search-form" action="<%= search_path %>" method="get" role="search">
+  <div class="field">
+    <label for="search-query"><%= t("search") %></label>
+    <input type="search" id="search-query" name="q" value="<%= @query %>"
+           placeholder="<%= t("search_placeholder", count: corpus.total_entries) %>">
+  </div>
+
+  <div class="field">
+    <label for="filter-domain"><%= t("filter_domain") %></label>
+    <%= select_tag :domain,
+                   options_for_select([[t("all_domains"), ""]] + corpus.domains.map { |domain| [domain.title, domain.slug] }, @domain),
+                   id: "filter-domain" %>
+  </div>
+
+  <div class="field">
+    <label for="filter-safety"><%= t("filter_safety") %></label>
+    <%= select_tag :safety,
+                   options_for_select([[t("all_safety_levels"), ""]] + corpus.safety_levels.map { |level| [safety_label(level), level] }, @safety),
+                   id: "filter-safety" %>
+  </div>
+
+  <div class="field">
+    <label for="filter-difficulty"><%= t("filter_difficulty") %></label>
+    <%= select_tag :difficulty,
+                   options_for_select([[t("all_difficulty_levels"), ""]] + corpus.difficulty_levels.map { |level| [difficulty_label(level), level] }, @difficulty),
+                   id: "filter-difficulty" %>
+  </div>
+
+  <div class="field field-submit">
+    <button type="submit" class="button button-primary"><%= t("search") %></button>
+  </div>
+</form>
+
+<section class="section" aria-labelledby="results-heading">
+  <h2 id="results-heading">
+    <% if @query.present? %>
+      <%= t("search_results_for", query: @query) %>
+    <% else %>
+      <%= t("results") %>
+    <% end %>
+  </h2>
+
+  <p class="stats"><span class="stat"><%= t("result_count", count: @result_count) %></span></p>
+
+  <% if @results.empty? %>
+    <p class="empty"><%= t("no_results") %></p>
+  <% else %>
+    <ol class="search-results">
+      <% @results.each do |result| %>
+        <li class="search-result">
+          <h3><%= link_to result.entry.title, entry_path(result.entry.domain, result.entry.slug) %></h3>
+          <p class="meta">
+            <%= link_to result.entry.domain, domain_path(result.entry.domain) %>
+            <span class="pill pill-<%= result.entry.safety %>"><%= safety_label(result.entry.safety) %></span>
+            <span class="pill"><%= difficulty_label(result.entry.difficulty) %></span>
+          </p>
+          <% if result.snippet.present? %>
+            <p class="snippet"><%= result.snippet %></p>
+          <% end %>
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+</section>

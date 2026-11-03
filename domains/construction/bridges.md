@@ -2,9 +2,14 @@
 
 > **Domain:** construction | **Difficulty:** journeyman | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Bridges cross water or ravines. Span length dictates the type: simple beam for short spans, trusses for medium, and suspension for long spans.
+Bridges cross water or ravines. Span length dictates the type: simple beam for
+short spans, trusses for medium, and suspension for long spans.
 
 ## Prerequisites
 

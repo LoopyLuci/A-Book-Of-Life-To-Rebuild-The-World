@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: FreeRTOS Documentation
   license: MIT
+  language: en
+- title: सकाल प्रचालन तंत्र
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%95%E0%A4%BE%E0%A4%B2_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A4%A8_%E0%A4%A4%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0
+  license: CC-BY-SA-4.0
+  language: hi
+- title: リアルタイムオペレーティングシステム
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%AA%E3%83%9A%E3%83%AC%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 실시간 운영체제
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EC%8B%A4%EC%8B%9C%EA%B0%84_%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

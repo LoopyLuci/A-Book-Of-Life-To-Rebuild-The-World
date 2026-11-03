@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0SAEQ62HQFTT2KHJ1P/society/economics
+translation_of: pnk:01M52TVK0SAEQ62HQFTT2KHJ1P/society/economics
+title: Economía
+domain: society
+tags:
+- economia
+- comercio
+- recursos
+- sociedad
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain economics texts
+- title: Traditional market practice
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: es
+media: []

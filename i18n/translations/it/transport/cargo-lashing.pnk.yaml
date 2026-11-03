@@ -1,0 +1,31 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Fissaggio del carico
+domain: transport
+tags: [trasporto, carico, nodi, sicurezza, logistica]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Carichi che si spostano o cadono
+  - Lesioni da schiacciamento durante la messa in tensione
+  - Ribaltamento di veicolo o carro
+  - Cinghie danneggiate che cedono sotto carico
+limits:
+  - Non superare mai il limite di carico di lavoro dell'elemento più debole
+  - Non agganciare le cinghie a linee di carburante, pannelli della
+    carrozzeria o spigoli taglienti
+  - Non trasportare passeggeri su un carico non fissato
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Standard FHWA sul fissaggio del carico in Nord America
+  - title: US Army FM 55-15 Transportation Reference Data
+  - title: ILO Sicurezza e salute nei porti
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: US Navy Marine Engineering Manual
   license: public-domain
+  language: en
+- title: 해양증기기관
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%95%B4%EC%96%91%EC%A6%9D%EA%B8%B0%EA%B8%B0%EA%B4%80
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Motor de vapor marino
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Motor_de_vapor_marino
+  license: CC-BY-SA-4.0
+  language: es
+- title: Schiffsdampfmaschine
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Schiffsdampfmaschine
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

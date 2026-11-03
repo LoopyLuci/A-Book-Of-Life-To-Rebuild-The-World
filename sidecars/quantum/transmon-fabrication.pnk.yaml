@@ -35,6 +35,17 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Transmon
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Transmon
+  license: CC-BY-SA-4.0
+  language: fr
+- title: ترانسمون
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D8%A7%D9%86%D8%B3%D9%85%D9%88%D9%86
+  license: CC-BY-SA-4.0
+  language: ar
 verification:
   status: draft
 links: []

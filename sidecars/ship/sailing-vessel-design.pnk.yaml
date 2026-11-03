@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: US Sailing Association Design Guidance
   license: public-domain
+  language: en
+- title: Zeilschip
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Zeilschip
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Yelkenli
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Yelkenli
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Thuyền buồm
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Thuy%E1%BB%81n_bu%E1%BB%93m
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

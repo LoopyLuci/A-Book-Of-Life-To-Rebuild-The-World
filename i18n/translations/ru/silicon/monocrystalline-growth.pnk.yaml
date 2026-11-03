@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA003Y2XJBMAN1R3TJZC/silicon/monocrystalline-growth
+translation_of: pnk:01KDVDNA003Y2XJBMAN1R3TJZC/silicon/monocrystalline-growth
+title: Выращивание монокристалла кремния
+domain: silicon
+tags: [kremniy, kristall, czochralski, slitok, kristall-plata]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+- Экстремальный нагрев и криогенные жидкости; допускаются только обученные специалисты.
+- Токсичные и коррозионные технологические газы; проверьте сигнализацию и вентиляцию.
+- Ионизирующее и ультрафиолетовое излучение; используйте экранированное оборудование.
+- Правила чистой комнаты — это меры безопасности, а не необязательная практика.
+limits:
+- Требуется дорогое оборудование и специализированный контроль технологических процессов.
+- Описанные выходы и затраты типичны для зрелого производства.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочные материалы NIST по полупроводникам
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

@@ -1,0 +1,54 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Pustak Binding aur Marammat
+domain: knowledge
+tags:
+- gyan
+- pustaken
+- marammat
+- hast
+- pustakalay
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 1-20 books per day depending on binding style and drying time
+season: Any; keep glue and paper dry
+storage: Store finished books upright, dry, and out of direct sun
+cost: low
+hazards:
+- Cuts from knives and awls
+- Glue fumes and skin irritation
+- Repetitive strain
+- Mould if books are stored damp
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+materials_required:
+- Paper signatures
+- Linen thread
+- Book cloth or leather
+- Board
+- PVA or starch paste
+- Endpapers
+- Wax
+tools_required:
+- Bone folder
+- Awl
+- Needle
+- Knife
+- Cutting mat
+- Book press
+- Brush
+sources:
+- title: Bookbinding and Conservation Manual
+- title: Library of Congress Book Repair Guidelines
+- title: Canadian Conservation Institute Bookbinding Notes
+verification:
+  status: draft
+links:
+- pnk:01M52TVK0BHFN6FGVNWDCDAKFT/knowledge/printing
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+- pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+geographic_applicability:
+- universal
+language: hi
+media: []

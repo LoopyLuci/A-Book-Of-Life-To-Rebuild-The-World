@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: OpenStax Biology 2e
   license: CC-BY-4.0
+  language: en
+- title: Микроскопия
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 顯微鏡學
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%A1%AF%E5%BE%AE%E9%8F%A1%E5%AD%B8
+  license: CC-BY-SA-4.0
+  language: zh
+- title: مجهرية
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%85%D8%AC%D9%87%D8%B1%D9%8A%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
 verification:
   status: draft
 links: []

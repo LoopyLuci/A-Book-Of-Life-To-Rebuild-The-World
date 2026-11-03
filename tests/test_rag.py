@@ -1,6 +1,5 @@
 """Tests for the RAG layer (no live LLM required)."""
 
-from unittest.mock import patch
 
 from scripts import rag
 

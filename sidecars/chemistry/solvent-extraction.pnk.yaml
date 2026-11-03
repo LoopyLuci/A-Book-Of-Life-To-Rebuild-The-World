@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: LibreTexts Analytical Chemistry
   license: CC-BY-4.0
+  language: en
+- title: Estrazione liquido-liquido
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Estrazione_liquido-liquido
+  license: CC-BY-SA-4.0
+  language: it
+- title: Vloeistof-vloeistofextractie
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Vloeistof-vloeistofextractie
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Sıvı-sıvı ekstraksiyonu
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/S%C4%B1v%C4%B1-s%C4%B1v%C4%B1_ekstraksiyonu
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: draft
 links: []

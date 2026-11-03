@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+translation_of: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+title: Маршрут проектирования интегральной схемы
+domain: silicon
+tags: [kremniy, proektirovanie-mikroshem, eda, proverka, komponovka]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+- Экстремальный нагрев и криогенные жидкости; допускаются только обученные специалисты.
+- Токсичные и коррозионные технологические газы; проверьте сигнализацию и вентиляцию.
+- Ионизирующее и ультрафиолетовое излучение; используйте экранированное оборудование.
+- Правила чистой комнаты — это меры безопасности, а не необязательная практика.
+limits:
+- Требуется дорогое оборудование и специализированный контроль технологических процессов.
+- Описанные выходы и затраты типичны для зрелого производства.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочные материалы NIST по полупроводникам
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

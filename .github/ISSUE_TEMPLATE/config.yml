@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to propose an entry or a topic
+    url: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/blob/main/CONTRIBUTING.md
+    about: Start here. Issues are the easiest way to propose a new entry, a new domain or a correction.
+  - name: Writing reference for an entry
+    url: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/blob/main/docs/ENTRIES.md
+    about: The section order, the sidecar fields, safety levels and style rules every entry follows.
+  - name: How a new topic becomes a domain
+    url: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/blob/main/docs/TOPICS.md
+    about: The criteria for a new domain and the exact steps from proposal to published domain.
+  - name: Report a security problem
+    url: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/blob/main/docs/security/SECURITY.md
+    about: Do not open a public issue for a security problem.
+  - name: Read the disclaimer
+    url: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/blob/main/docs/DISCLAIMER.md
+    about: What the book is, what it is not, and the limits of what any entry can promise.

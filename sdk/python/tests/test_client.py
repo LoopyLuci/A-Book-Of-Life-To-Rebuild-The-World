@@ -1,9 +1,8 @@
+import httpx
 import pytest
 import respx
-import httpx
-
 from abook import Client, NotFoundError
-from abook.pnk import parse, build, slug_from_title
+from abook.pnk import build, parse, slug_from_title
 
 
 @respx.mock
@@ -29,9 +28,8 @@ def test_get_entry_404():
     respx.get("http://localhost:8080/v1/entries/pnk:X/missing/slug").mock(
         return_value=httpx.Response(404, json={"detail": "Entry not found"})
     )
-    with Client() as c:
-        with pytest.raises(NotFoundError):
-            c.get_entry("pnk:X/missing/slug")
+    with Client() as c, pytest.raises(NotFoundError):
+        c.get_entry("pnk:X/missing/slug")
 
 
 def test_pnk_parse_entry_form():

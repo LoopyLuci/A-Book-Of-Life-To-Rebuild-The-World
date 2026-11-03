@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+translation_of: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+title: Ремонт и техническое обслуживание лодок
+domain: ship
+tags: [korabl, remont, obsluzhivanie, shvy, konopatsiya]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+- Работы на высоте над открытой водой; используйте средства защиты от падения.
+- Огневые работы, сварочный дым и наблюдение за пожаром; контролируйте зону горения.
+- Опасности замкнутых пространств и тяжёлых подъёмов при постройке.
+- Действуют требования классификационного общества и флагового государства; не импровизируйте систему безопасности.
+limits:
+- Размеры рассчитаны на обычный стальной корпус и нормальную загрузку.
+- Обязательные обследования и классификация остаются обязательными.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство береговой охраны США по малым судам
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

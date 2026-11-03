@@ -4,23 +4,21 @@
 from __future__ import annotations
 
 import sqlite3
+import sys
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
-import sys
-
 sys.path.insert(0, str(Path(__file__).parent))
-from search import search as hybrid_search  # noqa: E402
-from verify import (  # noqa: E402
-    Status,
+from dashboard import OUT_PATH as DASHBOARD_PATH
+from search import search as hybrid_search
+from verify import (
     list_field_tests,
     load_ledger,
     load_record,
 )
-from dashboard import OUT_PATH as DASHBOARD_PATH  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "build" / "index.db"
@@ -98,7 +96,7 @@ def get_verification(entry_id: str):
     try:
         rec = load_record(entry_id)
     except ValueError as e:
-        raise HTTPException(status_code=404, detail=str(e))
+        raise HTTPException(status_code=404, detail=str(e)) from e
     return VerificationResponse(
         entry_id=rec.entry_id,
         status=rec.status.value,

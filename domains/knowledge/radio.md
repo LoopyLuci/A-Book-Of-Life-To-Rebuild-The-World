@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Radio links communities beyond line of sight, using no infrastructure. A simple crystal set receives; a low-power transceiver sends voice or Morse.
+Radio links communities beyond line of sight, using no infrastructure. A simple
+crystal set receives; a low-power transceiver sends voice or Morse.
 
 ## Prerequisites
 

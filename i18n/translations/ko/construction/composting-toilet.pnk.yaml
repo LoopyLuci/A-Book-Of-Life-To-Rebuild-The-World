@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: 퇴비 화장실
+domain: construction
+tags: [hwangsang, kompost, hwachwi, mul, gonggeon-geongang]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - 신선한 폐기물과 침출물에 의한 병원체 노출
+  - 지하수 오염
+  - vault 안의 메탄과 암모니아
+  - 공사 중 낙상과 절상
+limits:
+  - 수위가 높거나 자주 침수되는 지점에는 적합하지 않다
+  - 신선하거나 일부 숙성된 물질을 바로 먹을 채소에 사용하지 않는다
+  - vault 안으로 들어가지 않는다; 환기하고 밖에서 도구를 사용한다
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: WHO 위생과 건강 지침
+  - title: EcoSanRes 퇴비 화장실 지침
+  - title: US EPA 퇴비 화장실 안내
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical, arid, universal]
+language: ko
+media: []

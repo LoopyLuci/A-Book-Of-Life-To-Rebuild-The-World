@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: 접착제
+domain: materials
+tags: [jeongchae, jeongmuk, hyeonjeong, kasein, mokjang]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - 뜨거운 접착제와 이중 가열 통에 의한 화상
+  - 석회나 붕산에 의한 부식성 화상
+  - 녹말 풀과 hide 접착제에서 생기는 곰팡이
+  - 부하를 받다 약해지는 접합부의 파손
+limits:
+  - 녹말과 hide 접착제는 방수되지 않는다
+  - 카신은 내수성이 있지만 안전이 중요한 하중용 구조 접착제는 아니다
+  - 음식이나 음수 접촉면에는 원인 불명의 접착제를 쓰지 않는다
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Smithsonian Museum Conservation Institute 접착제 지침
+  - title: Canadian Conservation Institute 접착제와 보강제 지침
+  - title: Horie, Materials for Conservation
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

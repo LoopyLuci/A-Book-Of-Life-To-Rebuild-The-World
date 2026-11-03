@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST AI Risk Framework
   license: public-domain
+  language: en
+- title: Visão computacional
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Vis%C3%A3o_computacional
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Компьютерное зрение
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B5_%D0%B7%D1%80%D0%B5%D0%BD%D0%B8%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 计算机视觉
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

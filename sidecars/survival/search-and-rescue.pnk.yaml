@@ -49,8 +49,29 @@ tools_required:
 - Walking staff
 sources:
 - title: FEMA National Incident Management System Search and Rescue
+  license: public-domain
+  language: en
 - title: NASAR Fundamentals of Search and Rescue
+  license: public-domain
+  language: en
 - title: Mountain Rescue Association field guidance
+  license: permission-granted
+  language: en
+- title: Pencarian dan penyelamatan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Pencarian_dan_penyelamatan
+  license: CC-BY-SA-4.0
+  language: id
+- title: 捜索救難
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E6%8D%9C%E7%B4%A2%E6%95%91%E9%9B%A3
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 탐색 구조
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%83%90%EC%83%89_%EA%B5%AC%EC%A1%B0
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links:

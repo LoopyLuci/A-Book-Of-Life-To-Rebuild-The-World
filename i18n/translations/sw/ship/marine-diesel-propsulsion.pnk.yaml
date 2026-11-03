@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00MC96XATE1GJA59TY/ship/marine-diesel-propsulsion
+translation_of: pnk:01KDVDNA00MC96XATE1GJA59TY/ship/marine-diesel-propsulsion
+title: Usukumu wa Diesel wa Bahari
+domain: ship
+tags:
+- meli
+- dizeli
+- usukumaji
+- injini
+- gearboxi
+difficulty: journeyman
+safety: red
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: high
+hazards:
+- Working at height and over open water; use fall protection.
+- Hot work, welding fume and fire watch; control the hot zone.
+- Confined space and heavy lifting hazards during construction.
+- Class and flag rules apply; never improvise a safety system.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Dimensions assume a conventional steel hull and normal loading.
+- Statutory survey and classification remain authoritative.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: IMO Marine Diesel Guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: sw
+media: []

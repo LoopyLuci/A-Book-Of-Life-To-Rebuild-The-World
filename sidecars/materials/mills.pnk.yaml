@@ -1,22 +1,47 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
 title: Mills
 domain: materials
-tags: [mill, water-wheel, windmill, grain, flour, materials]
+tags:
+- mill
+- water-wheel
+- windmill
+- grain
+- flour
+- materials
 difficulty: journeyman
 safety: yellow
 time_to_complete: weeks
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
 materials_required: []
 tools_required: []
 sources:
-  - title: FAO Small-Scale Milling
+- title: FAO Small-Scale Milling
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: طاحونة
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%B7%D8%A7%D8%AD%D9%88%D9%86%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: चक्की
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%95%E0%A5%8D%E0%A4%95%E0%A5%80
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Alat giling
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Alat_giling
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: peer-reviewed
-  date: "2026-04-12"
+  date: '2026-04-12'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
-geographic_applicability: [temperate, tropical]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+geographic_applicability:
+- temperate
+- tropical
 language: en
 media: []

@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZYRW8670DXEDMQ9NTP/construction/surveying
+translation_of: pnk:01M52TVJZYRW8670DXEDMQ9NTP/construction/surveying
+title: Vermessung
+domain: construction
+tags:
+- vermessung
+- messung
+- grundstueck
+- bauwesen
+difficulty: apprentice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 3-34.331 Surveying
+- title: Public-domain surveying primers
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

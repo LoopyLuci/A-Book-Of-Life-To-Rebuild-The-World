@@ -1,0 +1,54 @@
+id: pnk:01M5E8W7W1B1W285VY6YRDGS5G/materials/salt-production
+translation_of: pnk:01M5E8W7W1B1W285VY6YRDGS5G/materials/salt-production
+title: Produção e Iodação de Sal
+domain: materials
+tags:
+- materiais
+- sal
+- conservacao-de-alimentos
+- quimica
+- mineracao
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 20-30 kg of salt per 1,000 L of seawater, depending on salinity and recovery
+season: Dry, sunny, windy season for solar evaporation
+storage: Keep dry in a sealed container; salt keeps indefinitely
+cost: low
+hazards:
+- Dehydration and heat illness
+- Burns from boiling brine
+- Heavy-metal or industrial contamination
+- Iodine deficiency if salt is not iodized
+prerequisites: []
+materials_required:
+- Clean seawater or brine
+- Shallow evaporation pans
+- Clay or concrete lining
+- Filter cloth
+- Fuel for boiling
+- Iodine or iodized salt for fortification
+- Sealed storage containers
+tools_required:
+- Buckets
+- Rake or scraper
+- Thermometer
+- Scale
+- Filter frame
+- Shovel
+sources:
+- title: WHO Salt Iodization Guidance
+- title: FAO Small-scale Salt Production
+- title: US Army FM 21-10 Water and Salt
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N27/agriculture/food-preservation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N90/materials/chemistry
+- pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+geographic_applicability:
+- arid
+- temperate
+- tropical
+language: pt
+media: []

@@ -1,22 +1,48 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
 title: Finding Water
 domain: survival
-tags: [water, survival, hydrology, foraging]
+tags:
+- water
+- survival
+- hydrology
+- foraging
 difficulty: novice
 safety: yellow
 time_to_complete: hours
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
-  - title: WHO Emergency Water Supply Guidelines
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: WHO Emergency Water Supply Guidelines
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Cấp nước
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/C%E1%BA%A5p_n%C6%B0%E1%BB%9Bc
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Abastecimiento hídrico
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Abastecimiento_h%C3%ADdrico
+  license: CC-BY-SA-4.0
+  language: es
+- title: Alimentation en eau potable
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Alimentation_en_eau_potable
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: peer-reviewed
-  date: "2026-02-12"
+  date: '2026-02-12'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
-geographic_applicability: [temperate, arid, tropical]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+geographic_applicability:
+- temperate
+- arid
+- tropical
 language: en
 media: []

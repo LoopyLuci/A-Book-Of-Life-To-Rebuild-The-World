@@ -2,9 +2,15 @@
 
 > **Domain:** construction | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Safe excreta disposal prevents cholera, typhoid, and intestinal worms. A fly-proof latrine and a handwashing point are the highest-impact sanitation interventions in any settlement.
+Safe excreta disposal prevents cholera, typhoid, and intestinal worms. A
+fly-proof latrine and a handwashing point are the highest-impact sanitation
+interventions in any settlement.
 
 ## Prerequisites
 

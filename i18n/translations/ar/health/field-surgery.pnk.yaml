@@ -1,0 +1,25 @@
+id: pnk:01M52TVK04CN9AQVEG4C9T1T1M/health/field-surgery
+translation_of: pnk:01M52TVK04CN9AQVEG4C9T1T1M/health/field-surgery
+title: الجراحة الميدانية
+domain: health
+tags:
+- jiraha
+- rasih
+- tajai
+- siha
+difficulty: master
+safety: red
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Basic Emergency Care
+- title: War surgery manuals (public domain)
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

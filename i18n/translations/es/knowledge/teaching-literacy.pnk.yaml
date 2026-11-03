@@ -1,0 +1,61 @@
+id: pnk:01M5FBX2KS42DCZK53QK106NCC/knowledge/teaching-literacy
+translation_of: pnk:01M5FBX2KS42DCZK53QK106NCC/knowledge/teaching-literacy
+title: Enseñanza de la Alfabetización
+domain: knowledge
+tags:
+- alfabetizacion
+- educacion
+- ensenanza
+- lectura
+- comunidad
+difficulty: apprentice
+safety: green
+time_to_complete: months
+yield: A 12-week small-group sequence taking non-readers through letter sounds, blending, and short sentences
+season: Run in the off-season or evening; keep sessions short and regular
+storage: Keep lesson cards, readers, and learner records dry and organised
+cost: low
+hazards:
+- Learner dropout from embarrassment or punishment
+- Eye strain from poor lighting
+- Loss of records and materials
+- Exclusion of learners with disabilities
+resource_budget:
+  batch: one class of 10 learners for 12 weeks
+  labor_hours: 60
+  energy_kwh: 0
+  water_liters: 10
+lifespan: A lesson sequence remains usable for 1-3 years with revision
+maintenance: Review assessments each term and replace worn cards and readers
+limits:
+- Not a substitute for trained teachers in formal certification
+- Do not use corporal punishment or public shaming
+- Adapt examples and orthography to the local language
+prerequisites: []
+materials_required:
+- Chalkboard or large paper
+- Letter and word cards
+- Decodable readers
+- Notebooks and pencils
+- Assessment sheets
+- Picture cards
+tools_required:
+- Chalk or markers
+- Timer
+- Scissors
+- Ruler
+sources:
+- title: UNESCO Guidelines for Literacy Programmes
+- title: US National Reading Panel Report
+- title: RTI International Early Grade Reading Guidance
+verification:
+  status: draft
+links:
+- pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+- pnk:01M52TVK0JBQACJVMNCVNHX07Q/knowledge/oral-history
+- pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+- pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+geographic_applicability:
+- universal
+language: es
+media: []

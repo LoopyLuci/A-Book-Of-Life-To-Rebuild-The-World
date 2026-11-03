@@ -1,0 +1,51 @@
+id: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+translation_of: pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+title: Mipango ya Usalama wa Chakula ya Jamii
+domain: society
+tags:
+- jamii
+- usalama-wa-chakula
+- mipango
+- uimara
+- utawala
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+yield: ''
+season: Year-round; review before planting and before winter
+storage: Keep at least 3 months of staple reserves where storage allows
+cost: low
+hazards:
+- Unequal access and elite capture
+- Spoilage from poor storage
+- Conflict over distribution
+- Dependency on a single crop or supplier
+prerequisites:
+- pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+materials_required:
+- Household food survey forms
+- Maps and records
+- Scales
+- Storage inventory sheets
+- Seed stock
+- Distribution lists
+tools_required:
+- Clipboard
+- Scale
+- Calculator
+- Notice board
+- Storage containers
+sources:
+- title: FAO Food Security Assessment Guidance
+- title: Sphere Handbook Food Security Standards
+- title: WHO Nutrition in Emergencies
+verification:
+  status: draft
+links:
+- pnk:01M52TVK0VPJHAAB1CY5Q0NG64/society/community-organizing
+- pnk:01M5E8W7W1113HZADJZQ4NZA4F/agriculture/grain-storage
+- pnk:01M52TVK0SAEQ62HQFTT2KHJ1P/society/economics
+geographic_applicability:
+- universal
+language: sw
+media: []

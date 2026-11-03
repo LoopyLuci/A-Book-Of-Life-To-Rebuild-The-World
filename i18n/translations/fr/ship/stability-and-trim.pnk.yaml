@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00YGQDMK270GCKTB7S/ship/stability-and-trim
+translation_of: pnk:01KDVDNA00YGQDMK270GCKTB7S/ship/stability-and-trim
+title: Stabilité, Assiette et Moments de Redressement
+domain: ship
+tags:
+- navire
+- stabilite
+- assiette
+- redressement
+- ballast
+difficulty: journeyman
+safety: yellow
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Working at height and over open water; use fall protection.
+- Hot work, welding fume and fire watch; control the hot zone.
+- Confined space and heavy lifting hazards during construction.
+- Class and flag rules apply; never improvise a safety system.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Dimensions assume a conventional steel hull and normal loading.
+- Statutory survey and classification remain authoritative.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Navy Stability Manual
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

@@ -1,0 +1,52 @@
+id: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+translation_of: pnk:01M5E8W7W1B32NKVNK9C845NHR/water/spring-development
+title: Spring ka Vikas aur Suraksha
+domain: water
+tags:
+- paani
+- spring
+- gravity-feed
+- nirman
+- suchak-tantra
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+yield: Measure dry-season flow; a protected spring box should hold 1-2 days of demand
+season: Develop in the dry season so flow and water table are at their lowest
+storage: Spring box or break-pressure tank; keep the collection area fenced and free of animals
+cost: medium
+hazards:
+- Trench collapse during excavation
+- Contamination from surface runoff and livestock
+- Drowning in an uncovered box
+- Damage to downstream water rights
+prerequisites: []
+materials_required:
+- Stone or concrete
+- Gravel and sand filter pack
+- Collection pipe
+- Overflow pipe
+- Clay or mortar seal
+- Fence posts
+- Cover slab
+tools_required:
+- Shovel
+- Pickaxe
+- Wheelbarrow
+- Spirit level
+- Pipe cutter
+- Measuring container and stopwatch
+sources:
+- title: WHO Technical Note on Spring Protection
+- title: Oxfam Spring Protection Guidelines
+- title: US Army FM 21-10 Field Sanitation
+verification:
+  status: draft
+links:
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+- pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+geographic_applicability:
+- universal
+language: hi
+media: []

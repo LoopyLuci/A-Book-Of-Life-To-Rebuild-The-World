@@ -1,23 +1,50 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
 title: Grain Cultivation
 domain: agriculture
-tags: [grain, wheat, rice, maize, agriculture, staples]
+tags:
+- grain
+- wheat
+- rice
+- maize
+- agriculture
+- staples
 difficulty: apprentice
 safety: green
 time_to_complete: months
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N24/agriculture/crop-rotation
 materials_required: []
 tools_required: []
 sources:
-  - title: FAO Cereal Production Guide
-  - title: USDA Small Grains Manual
+- title: FAO Cereal Production Guide
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: USDA Small Grains Manual
+  license: public-domain
+  language: en
+- title: Cereal
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Cereal
+  license: CC-BY-SA-4.0
+  language: es
+- title: Céréale
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/C%C3%A9r%C3%A9ale
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Getreide
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Getreide
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: peer-reviewed
-  date: "2026-03-12"
+  date: '2026-03-12'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
-geographic_applicability: [temperate, tropical]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N30/materials/mills
+geographic_applicability:
+- temperate
+- tropical
 language: en
 media: []

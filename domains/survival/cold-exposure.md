@@ -2,6 +2,10 @@
 
 > **Domain:** survival | **Difficulty:** novice | **Safety:** red
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Cold kills by lowering the body's core temperature. Wet clothing, wind, and

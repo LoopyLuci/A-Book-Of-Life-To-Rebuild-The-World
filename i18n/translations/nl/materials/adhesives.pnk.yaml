@@ -1,0 +1,46 @@
+id: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+translation_of: pnk:01M5FBX2KS1HAC6HD2568FTYPA/materials/adhesives
+title: Lijmen
+domain: materials
+tags: [lijm, zetmeel, huidlijm, caseine, houtbewerking]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Brandwonden door hete lijm en dubbele ketels
+  - Bijtende brandwonden door kalk of boorax
+  - Schimmelgroei in zetmeel- en huidlijm
+  - Zwakke verbindingen die onder belasting bezwijken
+limits:
+  - Zetmeel- en huidlijm zijn niet waterdicht
+  - Caseïne is waterbestendig maar geen constructielijm voor veiligheidskritische belastingen
+  - Gebruik geen onbekende lijmen op oppervlakken die met voedsel of drinkwater in contact komen
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required:
+  - Tarwe- of cassavezetmeel
+  - Huidlijmkorrels of -vellen
+  - Caseïnemelkpoeder of magere melk
+  - Gebluste kalk of boorax
+  - Schoon water
+  - Afvalhout voor proefverbindingen
+tools_required:
+  - Weegschaal
+  - Dubbele ketel
+  - Roerstaaf
+  - Kwast
+  - Schroefklemmen
+  - Schuurpapier
+sources:
+  - title: Smithsonian Museum Conservation Institute Adhesives
+  - title: Canadian Conservation Institute Adhesives and Consolidants
+  - title: Horie, Materials for Conservation
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N38/materials/leather-tanning
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+translation_of: pnk:01KDVDNA00VQNMR8P58MR42NSS/quantum/microwave-control
+title: Elettronica di controllo a microonde
+domain: quantum
+tags: [quantistica, microonde, controllo, awg, elettronica]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+  - I liquidi criogenici provocano ustioni da freddo e asfissia in ambiente
+  - Radiazione a microonde e ad alta frequenza; mantieni il campo delimitato
+  - Esposizione ai laser; non guardare mai lungo un fascio
+  - Tensioni pericolose e quench del magnete; segui le regole della struttura
+limits:
+  - I dati descrivono solo i dispositivi attuali di scala di laboratorio
+  - Rumore, deriva e limiti di controllo variano da un'installazione all'altra
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Riferimento dell'Iniziativa Quantistica NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

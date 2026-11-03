@@ -35,6 +35,12 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Computação quântica fotônica
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_qu%C3%A2ntica_fot%C3%B4nica
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

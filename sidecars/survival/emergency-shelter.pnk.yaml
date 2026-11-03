@@ -1,7 +1,12 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
 title: Emergency Shelter
 domain: survival
-tags: [shelter, exposure, hypothermia, bushcraft, survival]
+tags:
+- shelter
+- exposure
+- hypothermia
+- bushcraft
+- survival
 difficulty: novice
 safety: green
 time_to_complete: hours
@@ -9,14 +14,36 @@ prerequisites: []
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: Noodwoning
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Noodwoning
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Notunterkunft
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Notunterkunft
+  license: CC-BY-SA-4.0
+  language: de
+- title: 臨時房屋
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E8%87%A8%E6%99%82%E6%88%BF%E5%B1%8B
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: peer-reviewed
-  reviewers: [TBD]
-  date: "2026-02-10"
+  reviewers:
+  - TBD
+  date: '2026-02-10'
 links:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
-geographic_applicability: [temperate, arid, tropical, arctic]
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+geographic_applicability:
+- temperate
+- arid
+- tropical
+- arctic
 language: en
 media: []

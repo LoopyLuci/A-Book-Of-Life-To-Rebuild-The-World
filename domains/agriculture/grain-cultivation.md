@@ -2,6 +2,10 @@
 
 > **Domain:** agriculture | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Grains (wheat, rice, maize, barley, millet) provide the calorie base of

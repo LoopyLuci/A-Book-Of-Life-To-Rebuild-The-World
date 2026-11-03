@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
+title: Feuer und Verbrennung
+domain: energy
+tags:
+- verbrennung
+- feuer
+- oefen
+- hitze
+- energie
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+- title: US DOE Combustion Handbook
+- title: FAO Wood Energy
+verification:
+  status: peer-reviewed
+  date: '2026-04-16'
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

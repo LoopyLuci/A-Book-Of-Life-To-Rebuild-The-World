@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+translation_of: pnk:01KDVDNA00CPFQKVE7A63XRQKG/ship/cargo-stowage
+title: Погрузка и размещение груза
+domain: ship
+tags: [korabl, gruz, ukladka, kreplenie-gruzov, ves]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- Работы на высоте над открытой водой; используйте средства защиты от падения.
+- Огневые работы, сварочный дым и наблюдение за пожаром; контролируйте зону горения.
+- Опасности замкнутых пространств и тяжёлых подъёмов при постройке.
+- Действуют требования классификационного общества и флагового государства; не импровизируйте систему безопасности.
+limits:
+- Размеры рассчитаны на обычный стальной корпус и нормальную загрузку.
+- Обязательные обследования и классификация остаются обязательными.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ИМО по креплению груза
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

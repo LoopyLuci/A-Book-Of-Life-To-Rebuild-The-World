@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+translation_of: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: Decisione per consenso
+domain: society
+tags: [consenso, governance, riunioni, societa]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Guide al consenso di pubblico dominio
+  - title: Pratica assembleare quacchere
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

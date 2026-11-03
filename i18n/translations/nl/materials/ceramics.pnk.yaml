@@ -1,0 +1,45 @@
+id: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+translation_of: pnk:01M5FBX2KSDHE5PNT3G1QDBGQE/materials/ceramics
+title: Keramiek
+domain: materials
+tags: [keramiek, klei, kiln, aardewerk, glazuur]
+difficulty: journeyman
+safety: yellow
+time_to_complete: weeks
+hazards:
+  - Kristallijn siliciumstof uit klei en glazuren
+  - Brandwonden en brand door kilns
+  - Koolmonoxide uit brandstofkilns
+  - Vergiftiging door lood of zware metalen uit onveilige glazuren
+limits:
+  - Bak nooit nat of dik ongelijkmatig werk
+  - Gebruik geen loodglazuren op oppervlakken die met voedsel in contact komen
+  - Test de krimp van de klei en de passing van het glazuur voordat u een volledige partij maakt
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N34/materials/brick-making
+materials_required:
+  - Kleimassa
+  - Zand of grog als toevoeging
+  - Water
+  - Loodvrije glazuurmaterialen
+  - Kilnplanken en poten
+tools_required:
+  - Weegschaal
+  - Emmers en zeef
+  - Kneedtafel
+  - Kiln of pit
+  - Pyrometrische kegels
+  - Stofmasker en hittebestendige handschoenen
+sources:
+  - title: The Potter's Dictionary of Materials and Techniques
+  - title: OSHA Crystalline Silica Exposure Guidance
+  - title: American Ceramic Society Firing and Glazing Guides
+verification:
+  status: draft
+links:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N35/materials/lime-cement
+  - pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability: [universal]
+language: nl
+media: []

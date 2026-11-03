@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+translation_of: pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+title: Воздействие холода и переохлаждение
+domain: survival
+tags: [vyzhivanie, kholod, perozyazhenie, pervaya-pomoshch, ukrytie]
+difficulty: novice
+safety: red
+time_to_complete: hours
+hazards:
+- Переохлаждение и остановка сердца
+- Обморожение и необратимая потеря тканей
+- Нарастающее замешательство, мешающее самоспасанию
+- Ожоги при согревании или расширение сосудов из-за алкоголя
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Профилактика переохлаждения (CDC)
+- title: Клинические рекомендации Общества дикой медицины
+- title: 'FM 21-10 армии США: помощь при холодовых травмах'
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arctic]
+language: ru
+media: []

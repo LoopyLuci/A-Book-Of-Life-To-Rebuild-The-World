@@ -1,21 +1,44 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N41/energy/wood-gasification
 title: Wood Gasification
 domain: energy
-tags: [gasification, biomass, syngas, energy, engines]
+tags:
+- gasification
+- biomass
+- syngas
+- energy
+- engines
 difficulty: journeyman
 safety: red
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N40/energy/fire-combustion
 materials_required: []
 tools_required: []
 sources:
-  - title: FAO Wood Gasification Manual
+- title: FAO Wood Gasification Manual
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Gaz de bois
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Gaz_de_bois
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Holzgas
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Holzgas
+  license: CC-BY-SA-4.0
+  language: de
+- title: Смешанный газ
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B5%D1%88%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B3%D0%B0%D0%B7
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: peer-reviewed
-  date: "2026-04-18"
+  date: '2026-04-18'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

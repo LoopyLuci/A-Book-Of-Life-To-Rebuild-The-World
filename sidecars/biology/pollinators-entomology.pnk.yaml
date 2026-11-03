@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Pollinator Guidance
   license: public-domain
+  language: en
+- title: Penyerbuk
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Penyerbuk
+  license: CC-BY-SA-4.0
+  language: id
+- title: 送粉者
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E9%80%81%E7%B2%89%E8%80%85
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 꽃가루 매개자
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EA%BD%83%EA%B0%80%EB%A3%A8_%EB%A7%A4%EA%B0%9C%EC%9E%90
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

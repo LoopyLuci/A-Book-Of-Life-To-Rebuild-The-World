@@ -1,20 +1,43 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
 title: Simple Tools
 domain: survival
-tags: [tools, stone, flint, knapping, bushcraft]
+tags:
+- tools
+- stone
+- flint
+- knapping
+- bushcraft
 difficulty: apprentice
 safety: yellow
 time_to_complete: hours
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: Alet
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Alet
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Dụng cụ
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/D%E1%BB%A5ng_c%E1%BB%A5
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Zana
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Zana
+  license: CC-BY-SA-4.0
+  language: sw
 verification:
   status: peer-reviewed
-  date: "2026-02-25"
+  date: '2026-02-25'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

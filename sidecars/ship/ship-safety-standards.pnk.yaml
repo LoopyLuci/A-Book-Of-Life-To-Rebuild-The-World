@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: IMO SOLAS Summary
   license: public-domain
+  language: en
+- title: Convenio Internacional para la Seguridad de la Vida Humana en el Mar
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Convenio_Internacional_para_la_Seguridad_de_la_Vida_Humana_en_el_Mar
+  license: CC-BY-SA-4.0
+  language: es
+- title: SOLAS
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/SOLAS
+  license: CC-BY-SA-4.0
+  language: fr
+- title: International Convention for the Safety of Life at Sea
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/International_Convention_for_the_Safety_of_Life_at_Sea
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

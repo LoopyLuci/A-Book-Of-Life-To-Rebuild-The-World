@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Managing Complications in Pregnancy and Childbirth
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: Public-domain midwifery texts
+  license: public-domain
+  language: en
+- title: Kelahiran anak
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Kelahiran_anak
+  license: CC-BY-SA-4.0
+  language: id
+- title: 分娩
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E5%88%86%E5%A8%A9
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 분만
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A7%8C
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

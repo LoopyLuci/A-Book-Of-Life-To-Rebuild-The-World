@@ -1,0 +1,44 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Zuinige verlichting
+domain: energy
+tags: [verlichting, led, efficientie, daglicht, binnenlucht]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Koolmonoxide en fijn stof van brandstoflampen
+  - Brand door kaarsen en oververhitte armaturen
+  - Elektrische schok door natte of beschadigde bekabeling
+  - Vallen van ladders
+limits:
+  - Gebruik ongeventileerde brandstoflampen niet langdurig binnenshuis
+  - Overbelast verlengkabels niet en keten geen stekkerdozen aan elkaar
+  - De lichtopbrengst daalt door stof, warmte en een slechte driver
+prerequisites: []
+materials_required:
+  - LED-lampen of DC-lampen
+  - Lampfittingen en schakelaars
+  - Reflectoren of lichte verf
+  - Verlengkabel voor de belasting
+  - Zekeringen of installatieautomaten
+  - Reinigingsdoek
+tools_required:
+  - Schroevendraaier
+  - Geïsoleerde tang
+  - Multimeter
+  - Ladder
+  - Luxmeter of telefoonapp
+sources:
+  - title: IEA Lighting and Energy Efficiency
+  - title: US DOE Solid-State Lighting Program
+  - title: WHO Household Air Pollution Guidance
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W1G32V5NZXYEBGQJ20/energy/solar-pv
+  - pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+  - pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+geographic_applicability: [universal]
+language: nl
+media: []

@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+translation_of: pnk:01M52TVK0QBVFMBTQ7SEW707HC/society/consensus-decision-making
+title: Принятие решений консенсусом
+domain: society
+tags: [konsensus, upravlenie, soveshchaniya, obshchestvo]
+difficulty: novice
+safety: green
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководства по консенсусу (общественное достояние)
+- title: Практика квакерских собраний
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

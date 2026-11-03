@@ -1,0 +1,22 @@
+id: pnk:01M52TVK0X3KV1MG5AVK0VQMS6/society/constitution-drafting
+translation_of: pnk:01M52TVK0X3KV1MG5AVK0VQMS6/society/constitution-drafting
+title: Разработка конституции
+domain: society
+tags: [konstitutsiya, upravlenie, pravo, obshchestvo]
+difficulty: journeyman
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Тексты конституций (общественное достояние)
+- title: Принципы демократического управления
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

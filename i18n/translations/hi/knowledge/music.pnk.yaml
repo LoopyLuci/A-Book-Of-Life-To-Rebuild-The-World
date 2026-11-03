@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N91/knowledge/music
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N91/knowledge/music
+title: Sangeet
+domain: knowledge
+tags:
+- sangeet
+- yantra
+- taal
+- gau
+- kulture
+difficulty: apprentice
+safety: green
+time_to_complete: weeks
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Z/survival/simple-tools
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional instrument-making
+verification:
+  status: peer-reviewed
+  date: '2026-07-20'
+links: []
+geographic_applicability:
+- universal
+language: hi
+media: []

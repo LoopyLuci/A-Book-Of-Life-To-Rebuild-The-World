@@ -11,7 +11,7 @@
 set -euo pipefail
 
 # --- Configuration -----------------------------------------------------------
-REPO_URL="${REPO_URL:-https://github.com/abookoflife/a-book-of-life-to-rebuild-the-world.git}"
+REPO_URL="${REPO_URL:-https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World.git}"
 IMAGE_NAME="${IMAGE_NAME:-a-book-of-life}"
 IMAGE_SIZE="${IMAGE_SIZE:-4G}"
 BUILD_DIR="${BUILD_DIR:-$(pwd)/pi-build}"

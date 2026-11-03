@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USGS Mineral Commodity Summaries
   license: public-domain
+  language: en
+- title: Silicaat
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Silicaat
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Silikat
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Silikat
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Silicat
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Silicat
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []

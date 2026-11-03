@@ -47,8 +47,29 @@ tools_required:
 - Pet carriers
 sources:
 - title: NFPA Wildfire Evacuation and Sheltering
+  license: permission-granted
+  language: en
 - title: FEMA Ready, Set, Go! Wildfire Program
+  license: public-domain
+  language: en
 - title: CDC Wildfire Smoke and Health
+  license: public-domain
+  language: en
+- title: حرائق الغابات
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AD%D8%B1%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%BA%D8%A7%D8%A8%D8%A7%D8%AA
+  license: CC-BY-SA-4.0
+  language: ar
+- title: दावानल
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A4%B2
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Kebakaran hutan dan lahan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Kebakaran_hutan_dan_lahan
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links:

@@ -1,0 +1,24 @@
+id: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+translation_of: pnk:01M52TVK0G3176JMSGG2CX95CG/knowledge/education
+title: Onderwijs
+domain: knowledge
+tags: [onderwijs, lesgeven, geletterdheid, kennis]
+difficulty: novice
+safety: green
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Public-domain pedagogy texts
+    license: public-domain
+  - title: UNESCO education guidance
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

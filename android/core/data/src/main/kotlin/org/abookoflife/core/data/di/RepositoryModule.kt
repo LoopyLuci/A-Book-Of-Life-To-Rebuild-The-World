@@ -8,6 +8,8 @@ import org.abookoflife.core.data.preferences.DefaultReaderTabsRepository
 import org.abookoflife.core.data.preferences.DefaultUserSettingsRepository
 import org.abookoflife.core.data.preferences.ReaderTabsRepository
 import org.abookoflife.core.data.preferences.UserSettingsRepository
+import org.abookoflife.core.data.repository.AppUpdateRepository
+import org.abookoflife.core.data.repository.DefaultAppUpdateRepository
 import org.abookoflife.core.data.repository.DefaultKnowledgeRepository
 import org.abookoflife.core.data.repository.KnowledgeRepository
 import javax.inject.Singleton
@@ -31,4 +33,10 @@ abstract class RepositoryModule {
     abstract fun bindReaderTabsRepository(
         impl: DefaultReaderTabsRepository,
     ): ReaderTabsRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindAppUpdateRepository(
+        impl: DefaultAppUpdateRepository,
+    ): AppUpdateRepository
 }

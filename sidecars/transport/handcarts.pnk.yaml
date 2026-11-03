@@ -38,8 +38,29 @@ tools_required:
 - Jack
 sources:
 - title: Practical Action Village Technology Handbook
+  license: CC-BY-4.0
+  language: en
 - title: FAO Simple Farm Carts
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: Appropriate Technology transport guides
+  license: CC-BY-4.0
+  language: en
+- title: Carro
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Carro
+  license: CC-BY-SA-4.0
+  language: es
+- title: Charrette
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Charrette
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Karre (Transport)
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Karre_%28Transport%29
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links:

@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Algoritmo quântico
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Algoritmo_qu%C3%A2ntico
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Квантовый алгоритм
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 量子演算法
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E6%BC%94%E7%AE%97%E6%B3%95
+  license: CC-BY-SA-4.0
+  language: zh
 verification:
   status: draft
 links: []

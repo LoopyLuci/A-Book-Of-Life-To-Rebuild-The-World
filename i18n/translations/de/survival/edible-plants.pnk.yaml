@@ -1,0 +1,29 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1V/survival/edible-plants
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1V/survival/edible-plants
+title: Essbare und ungenießbare Pflanzen
+domain: survival
+tags:
+- sammeln
+- pflanzen
+- nahrung
+- botanik
+- ueberleben
+difficulty: apprentice
+safety: red
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-76 Survival Manual
+verification:
+  status: peer-reviewed
+  date: '2026-02-15'
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+geographic_applicability:
+- temperate
+- tropical
+language: de
+media: []

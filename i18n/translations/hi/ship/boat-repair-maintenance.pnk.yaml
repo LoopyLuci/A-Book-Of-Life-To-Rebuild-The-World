@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+translation_of: pnk:01KDVDNA005HQ6RMADHF8X0K6M/ship/boat-repair-maintenance
+title: Jahaz ki Marammat aur Rakh-Rakhaw
+domain: ship
+tags:
+- jahaaz
+- marammat
+- sambhal
+- sila
+- caulking
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: ''
+season: ''
+storage: ''
+cost: medium
+hazards:
+- Working at height and over open water; use fall protection.
+- Hot work, welding fume and fire watch; control the hot zone.
+- Confined space and heavy lifting hazards during construction.
+- Class and flag rules apply; never improvise a safety system.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Dimensions assume a conventional steel hull and normal loading.
+- Statutory survey and classification remain authoritative.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Coast Guard Small Boat Guidance
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: hi
+media: []

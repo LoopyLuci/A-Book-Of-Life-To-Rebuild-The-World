@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: OpenStax University Physics
   license: CC-BY-4.0
+  language: en
+- title: प्रत्यावर्ती धारा
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A5%80_%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A4%BE
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Arus bolak-balik
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Arus_bolak-balik
+  license: CC-BY-SA-4.0
+  language: id
+- title: 交流
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E4%BA%A4%E6%B5%81
+  license: CC-BY-SA-4.0
+  language: ja
 verification:
   status: draft
 links: []

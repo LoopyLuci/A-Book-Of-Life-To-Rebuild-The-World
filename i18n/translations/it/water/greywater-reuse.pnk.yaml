@@ -1,0 +1,27 @@
+id: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+translation_of: pnk:01M5E8W7W1HTX84K7JC6YF9SD3/water/greywater-reuse
+title: Riutilizzo delle acque grigie
+domain: water
+tags: [acqua, acque-grigie, irrigazione, sanitari, agricoltura]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Patogeni provenienti da lavatrice, bagno e lavandino
+  - Accumulo di sali e boro nel terreno
+  - Contaminamento delle falde
+  - Riproduzione di zanzare in pozze stagnanti
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Linee guida WHO per l'uso sicuro delle acque di scarico, degli escrementi e delle acque grigie
+  - title: US EPA WaterSense Uso esterno dell'acqua
+  - title: FAO Riutilizzo delle acque di scarico in agricoltura
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, arid, tropical]
+language: it
+media: []

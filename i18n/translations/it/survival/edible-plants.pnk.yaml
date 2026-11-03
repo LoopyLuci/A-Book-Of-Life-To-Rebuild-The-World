@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1V/survival/edible-plants
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1V/survival/edible-plants
+title: Piante commestibili e non commestibili
+domain: survival
+tags: [raccolta, piante, cibo, botanica, sopravvivenza]
+difficulty: apprentice
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Manuale di sopravvivenza US Army FM 21-76
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: it
+media: []

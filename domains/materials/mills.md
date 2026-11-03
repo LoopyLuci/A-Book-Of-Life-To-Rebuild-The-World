@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** journeyman | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Mills grind grain, press oil, saw wood, and full cloth. They are powered by
@@ -26,7 +30,7 @@ water, wind, or animals. Mills are force multipliers for any community.
 1. Site on a stream with year-round flow.
 2. Build a wheel 2–4 m diameter with paddles.
 3. Mount on a horizontal axle; support with wooden or metal bearings.
-4. Couple to millstone via gears (see [Mechanics](../materials/mechanics.md)).
+4. Couple to millstone via gears (see [Blacksmithing](blacksmithing.md)).
 5. Build a sluice to direct water onto the paddles.
 
 ### Water Mill (Overshot — More Efficient)

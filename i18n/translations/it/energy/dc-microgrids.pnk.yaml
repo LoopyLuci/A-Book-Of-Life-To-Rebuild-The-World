@@ -1,0 +1,32 @@
+id: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+translation_of: pnk:01M5FBX2KSTSKQK0SA3A02J7QR/energy/dc-microgrids
+title: Microgrids in corrente continua
+domain: energy
+tags: [elettricita, solare, batterie, cablaggio, microgrid]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Scarica elettrica e arco elettrico
+  - Cortocircuiti delle batterie e rilascio di idrogeno
+  - Incendio per protezioni sotto dimensionate o omologate solo per l'alternata
+  - Cadute durante l'installazione dei pannelli
+limits:
+  - Non usare interruttori o fusibili omologati per l'alternata su circuiti in
+    continua
+  - Non collegarsi alla rete o a un generatore senza un dispositivo di
+    commutazione approvato
+  - Non mescolare batterie di età, capacità o chimica diverse
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NEC Articolo 712 sulle microgrid in corrente continua
+  - title: IEC 62548 Progettazione di impianti fotovoltaici
+  - title: Linee guida dei Sandia National Laboratories sulle microgrid CC
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

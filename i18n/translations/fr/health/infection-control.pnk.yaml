@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KSSGGSJ8VC4057Y940/health/infection-control
+translation_of: pnk:01M5FBX2KSSGGSJ8VC4057Y940/health/infection-control
+title: Lutte contre les Infections
+domain: health
+tags:
+- controle-infection
+- hygiene
+- epi
+- sterilisation
+- clinique
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: A clinic or household routine that breaks hand, surface, and sharps transmission routes
+season: Year-round; intensify during outbreaks and after floods
+storage: Keep PPE and disinfectant stock dry, labelled, and within expiry
+cost: low
+hazards:
+- Bloodborne pathogen exposure
+- Chemical irritation from disinfectants
+- Burns and pressure failure during sterilization
+- Needlestick injuries
+resource_budget:
+  batch: one 10-bed clinic shift
+  labor_hours: 8
+  energy_kwh: 5
+  water_liters: 50
+lifespan: PPE is single-use; sterilized instruments remain sterile only in sealed packs
+maintenance: Audit hand hygiene weekly, restock stations daily, and test the sterilizer monthly
+limits:
+- Alcohol rub does not inactivate bacterial spores
+- Do not reuse gloves or single-use needles
+- Sterilization requires a validated cycle, not just boiling water
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+materials_required:
+- Soap and clean water
+- Alcohol-based hand rub
+- Gloves, masks, eye protection, gowns
+- Disinfectant
+- Sharps container
+- Sterilizer or pressure cooker
+- Waste bags and labels
+tools_required:
+- Handwashing station
+- Thermometer and timer
+- Cleaning brushes
+- Sterilizer gauge
+- PPE
+sources:
+- title: WHO Infection Prevention and Control Guidelines
+- title: CDC Standard Precautions for Healthcare Personnel
+- title: WHO Surgical Safety Checklist
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSENPRQT0GJD1YTBKR/health/waterborne-disease
+- pnk:01M52TVK0262WR91WPZ1FVPE6X/health/wound-care
+- pnk:01M5E8W7W1HH39MEZ96Z0B9WAE/health/triage
+- pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+geographic_applicability:
+- universal
+language: fr
+media: []

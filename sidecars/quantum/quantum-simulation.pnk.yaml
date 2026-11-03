@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: Simulador cuántico
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Simulador_cu%C3%A1ntico
+  license: CC-BY-SA-4.0
+  language: es
+- title: Simulateur quantique
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Simulateur_quantique
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Simulador quântico
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Simulador_qu%C3%A2ntico
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+translation_of: pnk:01M5FBX2KSAKBYNQ40R42E8MM2/knowledge/map-making
+title: Составление карт
+domain: knowledge
+tags: [karty, toposyomka, navigatsiya, kartografiya, uchet]
+difficulty: apprentice
+safety: green
+time_to_complete: days
+hazards:
+- Движение транспорта и нарушение границ при съёмке
+- Переправы через реки и крутые склоны
+- Воздействие жары, холода и бурь
+- Чрезмерная зависимость от заряда телефона
+limits:
+- Кроки-схема не является юридическим землеустроительным обмером
+- Магнитные азимуты нужно приводить к истинным с учётом магнитного склонения
+- Не заходите в закрытые или опасные зоны без разрешения
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: 'FM 21-26 армии США: чтение карт и навигация на местности'
+- title: Условные обозначения топографических карт USGS
+- title: Рекомендации Международной картографической ассоциации по оформлению карт
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

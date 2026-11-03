@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KSY5M34WP8NM8SXQST/survival/wildfire-evacuation
+translation_of: pnk:01M5FBX2KSY5M34WP8NM8SXQST/survival/wildfire-evacuation
+title: Evacuación por Incendio Forestal
+domain: survival
+tags:
+- incendio-forestal
+- evacuacion
+- emergencia
+- humo
+- hogar
+difficulty: apprentice
+safety: red
+time_to_complete: hours
+yield: A tested household evacuation plan with two routes, a meeting place, and go bags for every person
+season: Dry, windy, and fire-weather seasons; rehearse before the first smoke event
+storage: Keep go bags by the exit; replace water, batteries, and medicines every 6-12 months
+cost: medium
+hazards:
+- Fire front changing direction faster than evacuation traffic
+- Smoke inhalation and reduced visibility while driving
+- Downed power lines and exploding propane tanks
+- Burns and trauma while defending a structure
+resource_budget:
+  batch: one household of four people
+  labor_hours: 6
+  energy_kwh: 0
+  water_liters: 20
+lifespan: Review the plan yearly and after any nearby fire
+maintenance: Drill both routes twice a year; inspect go bags every 6 months
+limits:
+- Do not wait for a mandatory order when escape routes are limited
+- Do not attempt to outrun a fire on foot or through dense smoke
+- Defensible space improves odds but does not make a house safe to defend
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1W/survival/basic-first-aid
+materials_required:
+- Go bags with medicines and spare glasses
+- N95 respirators and eye protection
+- Flashlight, headlamp, batteries, and power bank
+- Paper maps with two routes
+- Battery or hand-crank radio
+- Water, snacks, and pet supplies
+- Copies of identity and insurance documents
+tools_required:
+- Vehicle with at least half a tank of fuel
+- Maps and compass
+- Mobile phone and charger
+- Pet carriers
+sources:
+- title: NFPA Wildfire Evacuation and Sheltering
+- title: FEMA Ready, Set, Go! Wildfire Program
+- title: CDC Wildfire Smoke and Health
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Y/survival/signaling-rescue
+- pnk:01M5E8W7W1GA8VYD2JJ7C7GWTY/survival/cold-exposure
+geographic_applicability:
+- temperate
+- arid
+- universal
+language: es
+media: []

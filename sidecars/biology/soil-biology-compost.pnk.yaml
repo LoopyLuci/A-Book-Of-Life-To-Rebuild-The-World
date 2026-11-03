@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Soil Biology Primer
   license: public-domain
+  language: en
+- title: Bodemfauna
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Bodemfauna
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Sinh học đất
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Sinh_h%E1%BB%8Dc_%C4%91%E1%BA%A5t
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Biologie des sols
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Biologie_des_sols
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links: []

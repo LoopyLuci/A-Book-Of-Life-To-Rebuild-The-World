@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: ILO Shipbuilding Guidance
   license: public-domain
+  language: en
+- title: Schiffbau
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Schiffbau
+  license: CC-BY-SA-4.0
+  language: de
+- title: Construção naval
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Constru%C3%A7%C3%A3o_naval
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Судостроение
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links: []

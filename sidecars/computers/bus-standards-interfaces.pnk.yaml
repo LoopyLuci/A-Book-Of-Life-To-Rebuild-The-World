@@ -36,6 +36,22 @@ tools_required: []
 sources:
 - title: NXP and Analog Devices Interface Notes
   license: public-domain
+  language: en
+- title: Yol (bilgisayar)
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Yol_%28bilgisayar%29
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Bus (máy tính)
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Bus_%28m%C3%A1y_t%C3%ADnh%29
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Bus (informática)
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Bus_%28inform%C3%A1tica%29
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

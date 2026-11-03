@@ -1,0 +1,46 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Composterend toilet
+domain: construction
+tags: [sanitatie, composteren, toilet, water, volksgezondheid]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+  - Blootstelling aan ziekteverwekkers uit vers afval en percolaat
+  - Verontreiniging van het grondwater
+  - Methaan en ammoniak in de ruimtes
+  - Vallen en snijwonden tijdens de bouw
+limits:
+  - Niet geschikt op terreinen met een hoge grondwaterspiegel of frequente overstroming
+  - Breng vers of gedeeltelijk gerijpt materiaal niet aan op groenten die rauw worden gegeten
+  - Ga nooit in een ruimte; ventileer en gebruik het gereedschap van buiten
+prerequisites:
+  - pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+materials_required:
+  - Beton, baksteen of rotbestendig hout
+  - Waterdichte vloer van de ruimte
+  - Ventilatiepijp en vliegengaas
+  - Toiletvoet
+  - Zaagsel, as of droge bladeren
+  - Deksel en wasplek
+tools_required:
+  - Schep en troffel
+  - Waterpas
+  - Zaag en boormachine
+  - Handschoenen en laarzen
+  - Emmer en schrubborstel
+sources:
+  - title: WHO Guidelines on Sanitation and Health
+  - title: EcoSanRes Composting Toilet Guidelines
+  - title: US EPA Composting Toilets
+verification:
+  status: draft
+links:
+  - pnk:01M52TVJZSPBPJYGHTY8TP2JVB/construction/latrines-sanitation
+  - pnk:01M5FBX2KSXPAS0NBFKVZS5CDQ/agriculture/soil-fertility-management
+  - pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+  - pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+geographic_applicability: [temperate, tropical, arid, universal]
+language: nl
+media: []

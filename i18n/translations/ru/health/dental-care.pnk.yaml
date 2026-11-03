@@ -1,0 +1,22 @@
+id: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+translation_of: pnk:01M52TVK085ZSA9DNGW8MASBEA/health/dental-care
+title: Уход за зубами
+domain: health
+tags: [stomatologiya, zuby, profilaktika, zdorove]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Рекомендации ВОЗ по гигиене полости рта
+- title: Руководства по стоматологии (общественное достояние)
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

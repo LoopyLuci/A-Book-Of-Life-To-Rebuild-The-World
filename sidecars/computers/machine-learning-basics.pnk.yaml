@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST AI Risk Framework
   license: public-domain
+  language: en
+- title: 机器学习
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0
+  license: CC-BY-SA-4.0
+  language: zh
+- title: تعلم الآلة
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%A2%D9%84%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: यंत्र शिक्षण
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%AF%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0_%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links: []

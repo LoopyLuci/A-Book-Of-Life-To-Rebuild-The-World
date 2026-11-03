@@ -19,6 +19,9 @@ entire knowledge base into the APK so it works with **zero connectivity**.
   "field manual" accent palette.
 - **Localization** — 8 UI translations (ar, de, es, fr, hi, pt, sw, zh) generated from
   `i18n/strings/*.yaml`, selectable per app via Android 13+ per-app language settings.
+- **In-app updates** — check the project repository for a newer release, download the
+  package in the background, and hand it to the system installer from
+  **Settings → App updates**. Nothing is fetched unless the reader asks for it.
 
 ## Screenshots
 
@@ -159,6 +162,30 @@ release APK and attaches it to a GitHub Release. It expects these repository sec
 ```bash
 git tag v0.1.0-alpha && git push origin v0.1.0-alpha
 ```
+
+## App updates from the settings screen
+
+The app can look for a newer published release and install it without leaving
+the device. Open **Settings → App updates** and choose **Check for updates**.
+
+- The check reads the GitHub Releases API for the latest release of the
+  project repository. The repository it checks is configured in
+  `core/data/src/main/res/values/config.xml`; a fork that ships its own build
+  changes those two values.
+- The package is fetched by the platform download service, so the transfer
+  continues in the background after the app is closed, and the reader can
+  watch the progress in the settings screen.
+- When the download finishes, the app hands the package to the Android
+  installer. **Android always asks the reader to confirm**, and the app never
+  installs anything silently. On some devices Android also asks the reader to
+  allow the app to install packages; the app links straight to that screen.
+- If the app is closed while the download runs, opening the settings screen
+  picks the download up again.
+
+The app declares `INTERNET` and `REQUEST_INSTALL_PACKAGES`. The first is used
+only for the update check, and the second is required by Android 8 and later
+to show the installer. The app remains fully usable, for reading and for
+search, with no network at all.
 
 ## License
 

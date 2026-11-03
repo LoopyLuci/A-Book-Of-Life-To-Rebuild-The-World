@@ -40,8 +40,29 @@ tools_required:
 - Hammer
 sources:
 - title: USDA Storage of Vegetables and Root Crops
+  license: public-domain
+  language: en
 - title: University Extension Root Cellar Design
+  license: CC-BY-4.0
+  language: en
 - title: FAO Post-harvest Storage
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Bodega de raíces
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Bodega_de_ra%C3%ADces
+  license: CC-BY-SA-4.0
+  language: es
+- title: Erdkeller
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Erdkeller
+  license: CC-BY-SA-4.0
+  language: de
+- title: Погреб
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D1%80%D0%B5%D0%B1
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links:

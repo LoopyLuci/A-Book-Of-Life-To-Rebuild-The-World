@@ -1,40 +1,56 @@
 # Code owners require review from the listed individuals.
 # See MAINTAINERS.md for the current roster.
+#
+# The team handles below are created in the repository's GitHub organisation.
+# Until a team exists, GitHub ignores the rule for that path, so the rule is
+# safe to keep in place while the organisation is being set up.
 
-# Default — Core Maintainers
-*                       @abookoflife/core-maintainers
+# Default - Core Maintainers
+*                       @LoopyLuci/core-maintainers
 
 # Governance
-/governance/            @abookoflife/core-maintainers
-/MAINTAINERS.md         @abookoflife/core-maintainers
-/CODE_OF_CONDUCT.md     @abookoflife/core-maintainers
+/governance/            @LoopyLuci/core-maintainers
+/MAINTAINERS.md         @LoopyLuci/core-maintainers
+/CODE_OF_CONDUCT.md     @LoopyLuci/core-maintainers
+/SECURITY.md            @LoopyLuci/core-maintainers
 
 # CI and infrastructure
-/.github/               @abookoflife/core-maintainers
-/deploy/                @abookoflife/core-maintainers
+/.github/               @LoopyLuci/core-maintainers
+/scripts/               @LoopyLuci/core-maintainers
+/deploy/                @LoopyLuci/core-maintainers
 
 # Domain content
-/domains/survival/      @abookoflife/survival-maintainers
-/domains/agriculture/   @abookoflife/agriculture-maintainers
-/domains/materials/     @abookoflife/materials-maintainers
-/domains/energy/        @abookoflife/energy-maintainers
-/domains/construction/  @abookoflife/construction-maintainers
-/domains/health/        @abookoflife/health-maintainers
-/domains/knowledge/     @abookoflife/knowledge-maintainers
-/domains/society/       @abookoflife/society-maintainers
+/domains/survival/      @LoopyLuci/survival-maintainers
+/domains/water/         @LoopyLuci/water-maintainers
+/domains/agriculture/   @LoopyLuci/agriculture-maintainers
+/domains/materials/     @LoopyLuci/materials-maintainers
+/domains/energy/        @LoopyLuci/energy-maintainers
+/domains/construction/  @LoopyLuci/construction-maintainers
+/domains/transport/     @LoopyLuci/transport-maintainers
+/domains/health/        @LoopyLuci/health-maintainers
+/domains/knowledge/     @LoopyLuci/knowledge-maintainers
+/domains/society/       @LoopyLuci/society-maintainers
+/domains/chemistry/     @LoopyLuci/chemistry-maintainers
+/domains/biology/       @LoopyLuci/biology-maintainers
+/domains/silicon/       @LoopyLuci/silicon-maintainers
+/domains/ship/          @LoopyLuci/ship-maintainers
+/domains/computers/     @LoopyLuci/computers-maintainers
+/domains/quantum/       @LoopyLuci/quantum-maintainers
 
-# Schemas and sidecars — require Core sign-off
-/schemas/               @abookoflife/core-maintainers
-/sidecars/              @abookoflife/core-maintainers
+# Schemas and sidecars - require Core sign-off
+/schemas/               @LoopyLuci/core-maintainers
+/sidecars/              @LoopyLuci/core-maintainers
 
 # SDKs
-/sdk/python/            @abookoflife/sdk-maintainers
-/sdk/typescript/        @abookoflife/sdk-maintainers
-/sdk/rust/              @abookoflife/sdk-maintainers
+/sdk/python/            @LoopyLuci/sdk-maintainers
+/sdk/typescript/        @LoopyLuci/sdk-maintainers
+/sdk/rust/              @LoopyLuci/sdk-maintainers
 
-# Mobile
-/mobile/                @abookoflife/mobile-maintainers
+# Applications
+/android/               @LoopyLuci/mobile-maintainers
+/mobile/                @LoopyLuci/mobile-maintainers
+/apps/                  @LoopyLuci/core-maintainers
 
 # Federation
-/scripts/federation.py  @abookoflife/core-maintainers
-/docs/federation/       @abookoflife/core-maintainers
+/scripts/federation.py  @LoopyLuci/core-maintainers
+/docs/federation/       @LoopyLuci/core-maintainers

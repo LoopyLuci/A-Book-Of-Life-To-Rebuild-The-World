@@ -49,8 +49,19 @@ tools_required:
 - pH and salinity test kit if available
 sources:
 - title: FAO Irrigation and Drainage Paper 56
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: USDA NRCS Irrigation Guide
+  license: public-domain
+  language: en
 - title: UC ANR Irrigation Scheduling for Small Farms
+  license: CC-BY-4.0
+  language: en
+- title: Planification de l'irrigation
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Planification_de_l%27irrigation
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links:

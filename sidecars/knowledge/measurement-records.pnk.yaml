@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain metrology texts
+  license: public-domain
+  language: en
 - title: BIPM SI brochure (open licence)
+  license: CC-BY-SA-3.0-IGO
+  language: en
+- title: Metrologie
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Metrologie
+  license: CC-BY-SA-4.0
+  language: de
+- title: Metrologia
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Metrologia
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Метрология
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links: []

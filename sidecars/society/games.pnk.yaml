@@ -1,7 +1,12 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N92/society/games
 title: Games
 domain: society
-tags: [games, chess, go, mancala, recreation]
+tags:
+- games
+- chess
+- go
+- mancala
+- recreation
 difficulty: apprentice
 safety: green
 time_to_complete: days
@@ -9,11 +14,29 @@ prerequisites: []
 materials_required: []
 tools_required: []
 sources:
-  - title: H.J.R. Murray's Board Games
+- title: H.J.R. Murray's Board Games
+  license: permission-granted
+  language: en
+- title: لعب
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D9%84%D8%B9%D8%A8
+  license: CC-BY-SA-4.0
+  language: ar
+- title: क्रीडा
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%A1%E0%A4%BE
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Permainan
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Permainan
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: peer-reviewed
-  date: "2026-07-22"
+  date: '2026-07-22'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

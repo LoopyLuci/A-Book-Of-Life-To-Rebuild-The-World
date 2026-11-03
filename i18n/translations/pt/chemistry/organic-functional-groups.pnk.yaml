@@ -1,0 +1,45 @@
+id: pnk:01KDVDNA00FY1CMJDMH8VPD69R/chemistry/organic-functional-groups
+translation_of: pnk:01KDVDNA00FY1CMJDMH8VPD69R/chemistry/organic-functional-groups
+title: Grupos Funcionais Orgânicos
+domain: chemistry
+tags:
+- quimica
+- organico
+- grupos-funcionais
+- hidrocarbonetos
+- sintese
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Chemical burns and splashes; wear splash goggles and gloves.
+- Fume inhalation; work in a ventilated area or fume hood.
+- Fire and heat; keep flammable material away from hot work.
+- Reagent waste must be neutralised and collected separately.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Values assume laboratory-grade purity and calibrated glassware.
+- Not a substitute for a controlled laboratory protocol.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Introduction to Chemistry
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: pt
+media: []

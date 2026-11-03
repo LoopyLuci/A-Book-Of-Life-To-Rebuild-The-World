@@ -1,21 +1,48 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
 title: Raising Livestock
 domain: agriculture
-tags: [livestock, chickens, goats, pigs, cattle, protein]
+tags:
+- livestock
+- chickens
+- goats
+- pigs
+- cattle
+- protein
 difficulty: journeyman
 safety: yellow
 time_to_complete: months
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N22/agriculture/composting
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1S/survival/emergency-shelter
 materials_required: []
 tools_required: []
 sources:
-  - title: FAO Livestock Production Manual
-  - title: USDA Small-Scale Livestock Guide
+- title: FAO Livestock Production Manual
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: USDA Small-Scale Livestock Guide
+  license: public-domain
+  language: en
+- title: Vee
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Vee
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Çiftlik hayvanları
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/%C3%87iftlik_hayvanlar%C4%B1
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Gia súc
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Gia_s%C3%BAc
+  license: CC-BY-SA-4.0
+  language: vi
 verification:
   status: draft
 links: []
-geographic_applicability: [temperate, tropical]
+geographic_applicability:
+- temperate
+- tropical
 language: en
 media: []

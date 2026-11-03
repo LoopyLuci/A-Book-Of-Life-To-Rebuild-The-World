@@ -1,0 +1,45 @@
+id: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+translation_of: pnk:01M5E8W7W19XD7GE46QHWSMXVS/knowledge/bookbinding
+title: Boekbinderij en reparatie
+domain: knowledge
+tags: [kennis, boeken, reparatie, vakmanschap, bibliotheek]
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+hazards:
+  - Snijwonden door messen en priemen
+  - Lijmdamp en huidirritatie
+  - Repetitieve belasting van handen en polsen
+  - Schimmel als boeken vochtig worden bewaard
+limits: []
+prerequisites:
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+materials_required:
+  - Papierkaternen
+  - Linnen draad
+  - Boeklinnen of leer
+  - Boekbord
+  - PVA- of zetmeelpasta
+  - Vulwerk
+  - Was
+tools_required:
+  - Vouwhoorn
+  - Priem
+  - Naald
+  - Mes
+  - Snijmat
+  - Boekpers
+  - Kwast
+sources:
+  - title: Bookbinding and Conservation Manual
+  - title: Library of Congress Book Repair Guidelines
+  - title: Canadian Conservation Institute Bookbinding Notes
+verification:
+  status: draft
+links:
+  - pnk:01M52TVK0BHFN6FGVNWDCDAKFT/knowledge/printing
+  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N36/materials/paper-making
+  - pnk:01M52TVK0F781J6Y0HMP3S5YMB/knowledge/library-organization
+geographic_applicability: [universal]
+language: nl
+media: []

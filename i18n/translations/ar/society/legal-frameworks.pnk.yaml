@@ -1,0 +1,25 @@
+id: pnk:01M52TVK0RA0X0BA2YAAY2Y4XJ/society/legal-frameworks
+translation_of: pnk:01M52TVK0RA0X0BA2YAAY2Y4XJ/society/legal-frameworks
+title: الأطر القانونية
+domain: society
+tags:
+- qanun
+- adl
+- hukm
+- jamaa
+difficulty: journeyman
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Public-domain legal primers
+- title: Natural-law and common-law principles
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

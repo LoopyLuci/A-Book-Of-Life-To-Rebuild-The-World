@@ -2,6 +2,10 @@
 
 > **Domain:** society | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Preparedness is a cycle: understand the hazards, reduce the risks, plan the

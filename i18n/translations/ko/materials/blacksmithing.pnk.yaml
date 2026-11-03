@@ -1,0 +1,21 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N32/materials/blacksmithing
+title: 대장장이
+domain: materials
+tags: [jangin, nodan, cheol, yanggang, donggu, jaeryo]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Navy 대장장이 매뉴얼
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ko
+media: []

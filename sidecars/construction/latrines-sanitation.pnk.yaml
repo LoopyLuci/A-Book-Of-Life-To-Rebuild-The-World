@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Guidelines on Sanitation and Health
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US Army FM 21-10 Field Sanitation
+  license: public-domain
+  language: en
+- title: إصحاح بيئي
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A5%D8%B5%D8%AD%D8%A7%D8%AD_%D8%A8%D9%8A%D8%A6%D9%8A
+  license: CC-BY-SA-4.0
+  language: ar
+- title: स्वच्छता
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%A4%E0%A4%BE
+  license: CC-BY-SA-4.0
+  language: hi
+- title: Sanitasi
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Sanitasi
+  license: CC-BY-SA-4.0
+  language: id
 verification:
   status: draft
 links: []

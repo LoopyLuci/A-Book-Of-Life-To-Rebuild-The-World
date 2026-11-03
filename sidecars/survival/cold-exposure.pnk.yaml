@@ -35,8 +35,29 @@ tools_required:
 - Headlamp
 sources:
 - title: CDC Preventing Hypothermia
+  license: public-domain
+  language: en
 - title: Wilderness Medical Society Practice Guidelines
+  license: permission-granted
+  language: en
 - title: US Army FM 21-10 Cold Weather Casualty Care
+  license: public-domain
+  language: en
+- title: 失溫症
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E5%A4%B1%E6%BA%AB%E7%97%87
+  license: CC-BY-SA-4.0
+  language: zh
+- title: انخفاض درجة الحرارة
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%A7%D9%86%D8%AE%D9%81%D8%A7%D8%B6_%D8%AF%D8%B1%D8%AC%D8%A9_%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9
+  license: CC-BY-SA-4.0
+  language: ar
+- title: हाईपोथर्मिया
+  author: Wikipedia contributors
+  url: https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BE%E0%A4%88%E0%A4%AA%E0%A5%8B%E0%A4%A5%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A4%BE
+  license: CC-BY-SA-4.0
+  language: hi
 verification:
   status: draft
 links:

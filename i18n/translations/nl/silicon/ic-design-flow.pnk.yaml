@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+translation_of: pnk:01KDVDNA005PJ0S7KTX3Y0GC8G/silicon/ic-design-flow
+title: Ontwerproces voor geïntegreerde schakelingen
+domain: silicon
+tags: [silicon, ic-ontwerp, eda, verificatie, layout]
+difficulty: master
+safety: yellow
+time_to_complete: days
+hazards:
+  - Extreme hitte en kryogene vloeistoffen; alleen door getraind personeel hanteren
+  - Giftige en bijtende procesgassen; controleer alarms en ventilatie
+  - Blootstelling aan ioniserende en ultraviolette straling; gebruik afgeschermde apparatuur
+  - Cleanroomprotocollen zijn veiligheidsmaatregelen, geen optionele praktijk
+limits:
+  - Vereist kapitaalgoed en gespecialiseerde procesbeheersing
+  - De beschreven opbrengsten en kosten zijn gangbaar voor een volwassen productie
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Semiconductor Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

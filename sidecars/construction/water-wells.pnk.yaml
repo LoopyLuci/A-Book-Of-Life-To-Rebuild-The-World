@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: WHO Guidelines for Drinking-water Quality
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
 - title: US Army FM 21-10 Field Sanitation
+  license: public-domain
+  language: en
+- title: Giếng
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/Gi%E1%BA%BFng
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Pozo
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Pozo
+  license: CC-BY-SA-4.0
+  language: es
+- title: Puits à eau
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Puits_%C3%A0_eau
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links: []

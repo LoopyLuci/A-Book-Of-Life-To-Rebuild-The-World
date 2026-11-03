@@ -2,6 +2,10 @@
 
 > **Domain:** water | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Field testing tells you whether water needs treatment now; it cannot prove that

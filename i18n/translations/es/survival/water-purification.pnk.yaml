@@ -1,0 +1,33 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1Q/survival/water-purification
+title: Purificación del Agua
+domain: survival
+tags:
+- agua
+- saneamiento
+- supervivencia
+- quimica
+- salud
+difficulty: novice
+safety: red
+time_to_complete: hours
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: US Army FM 21-10 Field Sanitation
+- title: CDC SODIS Fact Sheet
+verification:
+  status: field-tested
+  tested_by: Community Team Alpha
+  date: '2026-03-15'
+  location: Arizona, USA
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
+geographic_applicability:
+- universal
+language: es
+media: []

@@ -12,7 +12,7 @@ import argparse
 import json
 import sys
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import UTC, datetime
 from enum import Enum
 from pathlib import Path
 from typing import Any
@@ -25,7 +25,7 @@ FIELD_TESTS_DIR = ROOT / "field-tests"
 GOVERNANCE_DIR = ROOT / "governance"
 
 
-class Status(str, Enum):
+class Status(str, Enum):  # noqa: UP042 - the string mixin is part of the API
     DRAFT = "draft"
     PEER_REVIEWED = "peer-reviewed"
     FIELD_TESTED = "field-tested"
@@ -177,7 +177,7 @@ def transition(
         from_status=record.status,
         to_status=target,
         actor=actor,
-        timestamp=date.today().isoformat(),
+        timestamp=datetime.now(UTC).date().isoformat(),
         notes=notes,
         reviewers=reviewers or [],
         field_test_id=field_test_id,

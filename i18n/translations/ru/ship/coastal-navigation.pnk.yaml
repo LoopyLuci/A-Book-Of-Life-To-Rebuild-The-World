@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+translation_of: pnk:01KDVDNA00X7MPKCE95E5GA3XT/ship/coastal-navigation
+title: Прибрежная навигация и лоцманское дело
+domain: ship
+tags: [korabl, navigatsiya, lotsmanskoe-delo, poberezhye, podshipniki]
+difficulty: apprentice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Работы на высоте над открытой водой; используйте средства защиты от падения.
+- Огневые работы, сварочный дым и наблюдение за пожаром; контролируйте зону горения.
+- Опасности замкнутых пространств и тяжёлых подъёмов при постройке.
+- Действуют требования классификационного общества и флагового государства; не импровизируйте систему безопасности.
+limits:
+- Размеры рассчитаны на обычный стальной корпус и нормальную загрузку.
+- Обязательные обследования и классификация остаются обязательными.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство береговой охраны США по навигации
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

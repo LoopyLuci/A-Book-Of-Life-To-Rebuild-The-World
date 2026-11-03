@@ -2,6 +2,10 @@
 
 > **Domain:** agriculture | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Rotation breaks pest cycles, balances nutrients, and prevents soil depletion.
@@ -28,6 +32,7 @@ Rule: never plant the same family in the same bed two years in a row.
 | 4 | Fruiting | Legume | Brassica | Root |
 
 Families:
+
 - **Legume:** pea, bean, clover — fixes nitrogen
 - **Brassica:** cabbage, broccoli, kale — heavy feeder
 - **Root:** carrot, beet, onion — loosens soil

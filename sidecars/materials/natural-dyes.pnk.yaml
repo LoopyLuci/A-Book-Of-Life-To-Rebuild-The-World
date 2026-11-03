@@ -1,21 +1,46 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N37/materials/natural-dyes
 title: Natural Dyes
 domain: materials
-tags: [dyes, textiles, mordants, color, materials]
+tags:
+- dyes
+- textiles
+- mordants
+- color
+- materials
 difficulty: apprentice
 safety: yellow
 time_to_complete: days
 prerequisites:
-  - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
 materials_required: []
 tools_required: []
 sources:
-  - title: Traditional dyeing methods
-  - title: USDA natural dye reports
+- title: Traditional dyeing methods
+  license: original
+  language: en
+- title: USDA natural dye reports
+  license: public-domain
+  language: en
+- title: Pewarna alami
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Pewarna_alami
+  license: CC-BY-SA-4.0
+  language: id
+- title: Natuurlijke kleurstof
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Natuurlijke_kleurstof
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Kök boya
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/K%C3%B6k_boya
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: peer-reviewed
-  date: "2026-04-10"
+  date: '2026-04-10'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

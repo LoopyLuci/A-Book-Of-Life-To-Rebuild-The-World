@@ -1,0 +1,22 @@
+id: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+translation_of: pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+title: Ponti
+domain: construction
+tags: [ponti, strutture, trasporto, costruzioni]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army FM 5-430 Strade e campi d'aviazione
+  - title: Testi storici di ingegneria dei ponti
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

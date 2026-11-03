@@ -2,9 +2,14 @@
 
 > **Domain:** construction | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Masonry builds durable walls, foundations, and ovens from stone or brick bedded in lime or cement mortar. Correct bond and footing prevent collapse.
+Masonry builds durable walls, foundations, and ovens from stone or brick bedded
+in lime or cement mortar. Correct bond and footing prevent collapse.
 
 ## Prerequisites
 

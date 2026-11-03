@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+translation_of: pnk:01M5FBX2KS078WV02DCA585SDF/construction/composting-toilet
+title: Компостирующий туалет
+domain: construction
+tags: [sanitariya, kompostirovanie, tualet, voda, obshestvennoe-zdorove]
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+hazards:
+- Контакт с патогенами из свежих отходов и стоков
+- Загрязнение грунтовых вод
+- Метан и аммиак в камерах
+- Падения и порезы при постройке
+limits:
+- Не подходит для участков с высоким уровнем грунтовых вод или частыми наводнениями
+- Не вносите свежий или частично вызревший материал под культуры, идущие в пищу без переработки
+- Не заходите внутрь камеры; проветривайте и работайте инструментами снаружи
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ВОЗ по санитарии и здоровью
+- title: Руководство EcoSanRes по компостирующим туалетам
+- title: Компостирующие туалеты (АПН США)
+verification:
+  status: draft
+links: []
+geographic_applicability: [temperate, tropical, arid, universal]
+language: ru
+media: []

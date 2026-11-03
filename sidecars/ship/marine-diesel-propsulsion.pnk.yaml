@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: IMO Marine Diesel Guidance
   license: public-domain
+  language: en
+- title: Motor diésel
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Motor_di%C3%A9sel
+  license: CC-BY-SA-4.0
+  language: es
+- title: Moteur Diesel
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Moteur_Diesel
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Dieselmotor
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Dieselmotor
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

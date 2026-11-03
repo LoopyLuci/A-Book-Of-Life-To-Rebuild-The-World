@@ -1,0 +1,28 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N37/materials/natural-dyes
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N37/materials/natural-dyes
+title: Natürliche Farbstoffe
+domain: materials
+tags:
+- farbstoffe
+- textilien
+- beizen
+- farbe
+- materialien
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required: []
+tools_required: []
+sources:
+- title: Traditional dyeing methods
+- title: USDA natural dye reports
+verification:
+  status: peer-reviewed
+  date: '2026-04-10'
+links: []
+geographic_applicability:
+- universal
+language: de
+media: []

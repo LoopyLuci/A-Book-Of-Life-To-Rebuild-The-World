@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Стандарты шин и сигнальные интерфейсы
+domain: computers
+tags: [vychislitelnaya-tehnika, shina, interfeys, uart, i2c, spi]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+- Сетевое напряжение и накопленный заряд смертельны; обесточьте перед началом работ.
+- Пары пайки, флюс и свинец; проветривайте и мойте руки.
+- Статическое электричество может повредить детали; работайте на заземлённом верстаке.
+- Потеря данных происходит незаметно; делайте резервную копию перед работой с прошивкой или диском.
+limits:
+- Примеры рассчитаны на распространённые открытые инструментальные цепочки.
+- Следуйте datasheet производителя, а не любому пересказу.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Notes по интерфейсам NXP и Analog Devices
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

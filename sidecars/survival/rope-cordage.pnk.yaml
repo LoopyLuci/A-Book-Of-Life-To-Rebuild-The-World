@@ -1,7 +1,12 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
 title: Rope & Cordage
 domain: survival
-tags: [cordage, rope, fiber, knots, survival]
+tags:
+- cordage
+- rope
+- fiber
+- knots
+- survival
 difficulty: novice
 safety: green
 time_to_complete: hours
@@ -9,11 +14,29 @@ prerequisites: []
 materials_required: []
 tools_required: []
 sources:
-  - title: US Army FM 21-76 Survival Manual
+- title: US Army FM 21-76 Survival Manual
+  license: public-domain
+  language: en
+- title: Трос
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%81
+  license: CC-BY-SA-4.0
+  language: ru
+- title: 繩
+  author: Wikipedia contributors
+  url: https://zh.wikipedia.org/wiki/%E7%B9%A9
+  license: CC-BY-SA-4.0
+  language: zh
+- title: حبل
+  author: Wikipedia contributors
+  url: https://ar.wikipedia.org/wiki/%D8%AD%D8%A8%D9%84
+  license: CC-BY-SA-4.0
+  language: ar
 verification:
   status: peer-reviewed
-  date: "2026-02-18"
+  date: '2026-02-18'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

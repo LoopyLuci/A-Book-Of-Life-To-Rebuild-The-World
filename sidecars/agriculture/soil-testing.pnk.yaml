@@ -1,7 +1,12 @@
 id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
 title: Soil Testing
 domain: agriculture
-tags: [soil, testing, ph, texture, agriculture]
+tags:
+- soil
+- testing
+- ph
+- texture
+- agriculture
 difficulty: novice
 safety: green
 time_to_complete: hours
@@ -9,12 +14,32 @@ prerequisites: []
 materials_required: []
 tools_required: []
 sources:
-  - title: USDA Soil Survey Manual
-  - title: FAO Soil Testing Guidelines
+- title: USDA Soil Survey Manual
+  license: public-domain
+  language: en
+- title: FAO Soil Testing Guidelines
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Analisis tanah
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Analisis_tanah
+  license: CC-BY-SA-4.0
+  language: id
+- title: 토양분석
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%86%A0%EC%96%91%EB%B6%84%EC%84%9D
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Test de suelos
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Test_de_suelos
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: peer-reviewed
-  date: "2026-03-02"
+  date: '2026-03-02'
 links: []
-geographic_applicability: [universal]
+geographic_applicability:
+- universal
 language: en
 media: []

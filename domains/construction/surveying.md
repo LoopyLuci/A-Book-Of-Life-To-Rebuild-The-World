@@ -2,9 +2,14 @@
 
 > **Domain:** construction | **Difficulty:** apprentice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Surveying sets out boundaries, grades, and alignments accurately. Simple leveling and angle measurement suffice for most community works.
+Surveying sets out boundaries, grades, and alignments accurately. Simple
+leveling and angle measurement suffice for most community works.
 
 ## Prerequisites
 

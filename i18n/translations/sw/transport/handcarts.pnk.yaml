@@ -1,0 +1,53 @@
+id: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+translation_of: pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+title: Magadi ya Mikono na Magadi ya Magogo Mibili
+domain: transport
+tags:
+- usafiri
+- magari
+- ushughulishaji-wa-mbao
+- usafirishaji
+- biashara
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 100-300 kg on level firm ground; 50-100 kg on rough tracks with two people
+season: Year-round; avoid deep mud and steep ice
+storage: Keep under cover, keep tyres inflated, and store the cart tipped with the axle unloaded
+cost: medium
+hazards:
+- Tip-over on slopes or off-camber tracks
+- Brake or hitch failure
+- Strains from overloaded pushing
+- Collisions with traffic
+prerequisites: []
+materials_required:
+- Hardwood or steel axle
+- Two wheels with bearings
+- Timber bed
+- Bolts and washers
+- Brake or drag shoe
+- Handle or harness
+- Grease
+tools_required:
+- Saw
+- Drill
+- Wrench
+- Hammer
+- Measuring tape
+- Spirit level
+- Jack
+sources:
+- title: Practical Action Village Technology Handbook
+- title: FAO Simple Farm Carts
+- title: Appropriate Technology transport guides
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+- pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+- pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+geographic_applicability:
+- universal
+language: sw
+media: []

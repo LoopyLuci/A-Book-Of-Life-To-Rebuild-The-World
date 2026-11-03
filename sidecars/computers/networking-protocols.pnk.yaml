@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: IETF RFC Series
   license: public-domain
+  language: en
+- title: Protokol (komputer)
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Protokol_%28komputer%29
+  license: CC-BY-SA-4.0
+  language: id
+- title: 通信プロトコル
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E9%80%9A%E4%BF%A1%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 통신 프로토콜
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links: []

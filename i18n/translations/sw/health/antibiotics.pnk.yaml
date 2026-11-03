@@ -1,0 +1,25 @@
+id: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+translation_of: pnk:01M52TVK056M62T4341WNMJBEW/health/antibiotics
+title: Antibiotiki
+domain: health
+tags:
+- antibiotiki
+- maambukizi
+- farmakolojia
+- afya
+difficulty: journeyman
+safety: red
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: WHO Model List of Essential Medicines
+- title: MSF Clinical Guidelines (open)
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: sw
+media: []

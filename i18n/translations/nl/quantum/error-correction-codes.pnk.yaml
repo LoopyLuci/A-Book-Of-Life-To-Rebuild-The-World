@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+translation_of: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+title: Kwantumfoutcorrectie
+domain: quantum
+tags: [quantum, foutcorrectie, codes, drempel, ruis]
+difficulty: master
+safety: green
+time_to_complete: days
+hazards:
+  - Kryogene vloeistoffen veroorzaken koudebrandwonden en verstikking in ruimten
+  - Microgolf- en hoogfrequente straling; houd het veld begrensd
+  - Laserblootstelling; kijk nooit in de bundel
+  - Gevaarlijke spanningen en het uitschakelen van een magnet; volg de regels van de faciliteit
+limits:
+  - De cijfers beschrijven uitsluitend de huidige apparaten op laboratoriumschaal
+  - Ruis, drift en grenzen van de besturing verschillen per installatie
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: NIST Quantum Initiative Reference
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

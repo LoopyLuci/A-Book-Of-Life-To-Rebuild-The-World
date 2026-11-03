@@ -1,0 +1,24 @@
+id: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+translation_of: pnk:01M52TVJZQ482KDC8W89HJ9T2X/construction/masonry
+title: Metselwerk
+domain: construction
+tags: [metselwerk, baksteen, steen, constructie]
+difficulty: apprentice
+safety: yellow
+time_to_complete: weeks
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: US Army TM 5-742 Masonry
+    license: public-domain
+  - title: Roman building principles
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

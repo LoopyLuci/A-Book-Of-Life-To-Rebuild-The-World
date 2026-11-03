@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Semiconductor Reference
   license: public-domain
+  language: en
+- title: 도핑 (반도체)
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%EB%8F%84%ED%95%91_%28%EB%B0%98%EB%8F%84%EC%B2%B4%29
+  license: CC-BY-SA-4.0
+  language: ko
+- title: Drogaggio
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Drogaggio
+  license: CC-BY-SA-4.0
+  language: it
+- title: Doteren
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Doteren
+  license: CC-BY-SA-4.0
+  language: nl
 verification:
   status: draft
 links: []

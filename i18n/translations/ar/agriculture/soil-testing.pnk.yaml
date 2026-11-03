@@ -1,0 +1,27 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N21/agriculture/soil-testing
+title: تحليل التربة
+domain: agriculture
+tags:
+- turab
+- ikhtibar
+- ph
+- nasij
+- ziraa
+difficulty: novice
+safety: green
+time_to_complete: hours
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: USDA Soil Survey Manual
+- title: FAO Soil Testing Guidelines
+verification:
+  status: peer-reviewed
+  date: '2026-03-02'
+links: []
+geographic_applicability:
+- universal
+language: ar
+media: []

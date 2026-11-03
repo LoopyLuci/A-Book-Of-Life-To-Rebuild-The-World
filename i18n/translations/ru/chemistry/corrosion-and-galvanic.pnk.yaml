@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Z0ZRRJE7CYERJ5NN/chemistry/corrosion-and-galvanic
+translation_of: pnk:01KDVDNA00Z0ZRRJE7CYERJ5NN/chemistry/corrosion-and-galvanic
+title: Коррозия и гальваническая защита
+domain: chemistry
+tags: [khimiya, korroziya, galvanika, katodnaya-zashchita, metally]
+difficulty: journeyman
+safety: yellow
+time_to_complete: days
+hazards:
+- Химические ожоги и брызги; надевайте защитные очки и перчатки.
+- Вдыхание паров; работайте в проветриваемом помещении или под вытяжным шкафом.
+- Пожар и нагрев; держите горючие материалы вдали от горячих работ.
+- Отходы реактивов нейтрализуйте и собирайте отдельно.
+limits:
+- Значения предполагают чистоту реактивов лабораторного класса и откалиброванную посуду.
+- Не заменяет регламент работы в лаборатории.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Исследования коррозии NIST
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

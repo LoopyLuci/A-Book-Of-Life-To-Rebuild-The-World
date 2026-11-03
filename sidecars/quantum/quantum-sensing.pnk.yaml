@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: NIST Quantum Initiative Reference
   license: public-domain
+  language: en
+- title: 量子センシング
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0
+  license: CC-BY-SA-4.0
+  language: ja
+- title: Cảm biến lượng tử
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/C%E1%BA%A3m_bi%E1%BA%BFn_l%C6%B0%E1%BB%A3ng_t%E1%BB%AD
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Quantensensor
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Quantensensor
+  license: CC-BY-SA-4.0
+  language: de
 verification:
   status: draft
 links: []

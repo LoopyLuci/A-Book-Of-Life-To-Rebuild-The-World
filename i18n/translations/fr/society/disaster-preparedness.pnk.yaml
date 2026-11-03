@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KSZYD6RTXWK9JXH5S1/society/disaster-preparedness
+translation_of: pnk:01M5FBX2KSZYD6RTXWK9JXH5S1/society/disaster-preparedness
+title: Préparation aux Catastrophes
+domain: society
+tags:
+- catastrophe
+- preparation
+- communaute
+- evacuation
+- resilience
+difficulty: apprentice
+safety: yellow
+time_to_complete: months
+yield: A practiced community plan with hazard maps, roles, shelters, caches, and drill records
+season: Review before seasonal hazards such as floods, wildfires, and storms
+storage: Rotate water, food, batteries, and medicines before expiry; keep plans in multiple places
+cost: medium
+hazards:
+- Panic and traffic during drills or evacuations
+- Contaminated water and disease after floods
+- Shelter overcrowding and violence
+- False confidence from an unpracticed plan
+resource_budget:
+  batch: one community of 200 people
+  labor_hours: 120
+  energy_kwh: 10
+  water_liters: 100
+lifespan: Review the plan yearly and after every real event
+maintenance: Drill twice a year, audit caches quarterly, and update contacts monthly
+limits:
+- Not a substitute for trained emergency services
+- Do not trigger false alarms without coordination
+- Plans must include people with disabilities, animals, and non-drivers
+prerequisites:
+- pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+materials_required:
+- Hazard and resource maps
+- Contact lists
+- Emergency supply caches
+- Shelter and route markers
+- First aid kits
+- Registration forms
+tools_required:
+- Radio or phones
+- Megaphone
+- Maps and markers
+- Clipboard and forms
+- Lighting
+sources:
+- title: FEMA Comprehensive Preparedness Guide 101
+- title: IFRC Disaster Preparedness Guidance
+- title: Sphere Handbook Humanitarian Standards
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSY5M34WP8NM8SXQST/survival/wildfire-evacuation
+- pnk:01M5FBX2KSY817XFRG6KBDD1T3/construction/seismic-bracing
+- pnk:01M5E8W7W1605VSPTVRD930DXM/society/community-food-security
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+- pnk:01M5E8W7W1HH39MEZ96Z0B9WAE/health/triage
+geographic_applicability:
+- universal
+language: fr
+media: []

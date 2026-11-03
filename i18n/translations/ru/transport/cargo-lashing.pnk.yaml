@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+translation_of: pnk:01M5FBX2KSGYKYP9N8TGGQEFE3/transport/cargo-lashing
+title: Крепление грузов
+domain: transport
+tags: [transport, gruz, uzly, bezopasnost, logistika]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Сдвиг или падение груза
+- Травмы сдавливания при натяжении
+- Опрокидывание транспортного средства или телеги
+- Разрушение повреждённых стропов под нагрузкой
+limits:
+- Никогда не превышайте допустимую нагрузку самого слабого элемента
+- Не крепите стропы к топливным линиям, панелям кузова или острым кромкам
+- Не перевозите пассажиров на незакреплённом грузе
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Стандарт FHWA по креплению грузов в Северной Америке
+- title: 'FM 55-15 армии США: справочные данные по перевозкам'
+- title: Безопасность и здоровье в портах (МОТ)
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

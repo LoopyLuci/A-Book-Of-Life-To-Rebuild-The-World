@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** novice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Charcoal burns hotter and cleaner than wood and is essential for smelting
@@ -52,7 +56,8 @@ and blacksmithing. It is made by pyrolysis — burning wood with limited oxygen.
 
 ## Safety Notes
 
-- **Yellow hazard:** Carbon monoxide from smoldering charcoal kills without warning. Work outdoors.
+- **Yellow hazard:** Carbon monoxide from smoldering charcoal kills without
+  warning. Work outdoors.
 - Never seal a drum while hot — pressure builds.
 - Quench thoroughly; buried embers can reignite days later.
 

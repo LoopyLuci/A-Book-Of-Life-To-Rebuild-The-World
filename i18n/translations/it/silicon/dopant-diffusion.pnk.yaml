@@ -1,0 +1,31 @@
+id: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+translation_of: pnk:01KDVDNA00JHEP5SPC1AF4CSP8/silicon/dopant-diffusion
+title: Diffusione dei dopanti e impianto ionico
+domain: silicon
+tags: [silicio, drogaggio, diffusione, impianto, giunzioni]
+difficulty: master
+safety: red
+time_to_complete: days
+hazards:
+  - Calore estremo e liquidi criogenici; solo manipolazione da personale
+    formato
+  - Gas di processo tossici e corrosivi; verifica allarmi e ventilazione
+  - Esposizione a radiazioni ionizzanti e ultraviolette; usa apparecchiature
+    schermate
+  - I protocolli di camera bianca sono misure di sicurezza, non una pratica
+    facoltativa
+limits:
+  - Richiede attrezzature di capitale e controllo di processo specialistico
+  - Le rese e i costi descritti sono tipici di una produzione matura
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Riferimento NIST sui semiconduttori
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

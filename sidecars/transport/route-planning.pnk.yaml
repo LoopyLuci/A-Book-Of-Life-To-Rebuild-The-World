@@ -47,8 +47,29 @@ tools_required:
 - Watch or phone
 sources:
 - title: US Army FM 21-26 Map Reading and Land Navigation
+  license: public-domain
+  language: en
 - title: FEMA Logistics Management Guidance
+  license: public-domain
+  language: en
 - title: UNHCR Transport and Logistics Guide
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Navigasi
+  author: Wikipedia contributors
+  url: https://id.wikipedia.org/wiki/Navigasi
+  license: CC-BY-SA-4.0
+  language: id
+- title: 航法
+  author: Wikipedia contributors
+  url: https://ja.wikipedia.org/wiki/%E8%88%AA%E6%B3%95
+  license: CC-BY-SA-4.0
+  language: ja
+- title: 항법
+  author: Wikipedia contributors
+  url: https://ko.wikipedia.org/wiki/%ED%95%AD%EB%B2%95
+  license: CC-BY-SA-4.0
+  language: ko
 verification:
   status: draft
 links:

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N25/agriculture/grain-cultivation
+title: Выращивание зерновых
+domain: agriculture
+tags: [zerno, pshenitsa, ris, kukuruza, selskoe-khozyaystvo, zernovye]
+difficulty: apprentice
+safety: green
+time_to_complete: months
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Руководство ФАО по производству зерновых
+- title: Руководство USDA по мелкозерновым культурам
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [temperate, tropical]
+language: ru
+media: []

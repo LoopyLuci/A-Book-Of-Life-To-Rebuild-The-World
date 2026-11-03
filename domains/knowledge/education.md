@@ -2,9 +2,14 @@
 
 > **Domain:** knowledge | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Education transmits skills and values across generations. A curriculum built on literacy, numeracy, and apprenticeship rebuilds capability quickly.
+Education transmits skills and values across generations. A curriculum built on
+literacy, numeracy, and apprenticeship rebuilds capability quickly.
 
 ## Prerequisites
 

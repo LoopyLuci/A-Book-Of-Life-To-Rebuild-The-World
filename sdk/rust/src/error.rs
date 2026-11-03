@@ -5,6 +5,12 @@ pub enum ABookError {
     #[error("network error: {0}")]
     Network(#[from] reqwest::Error),
 
+    #[error("url error: {0}")]
+    Url(#[from] url::ParseError),
+
+    #[error("header error: {0}")]
+    Header(#[from] reqwest::header::InvalidHeaderValue),
+
     #[error("not found: {0}")]
     NotFound(String),
 

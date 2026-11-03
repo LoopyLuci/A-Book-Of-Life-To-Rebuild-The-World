@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+translation_of: pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+title: Viviendas Sencillas
+domain: construction
+tags:
+- refugio
+- construccion
+- vivienda
+- infraestructura
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-10 Field Sanitation
+- title: Traditional vernacular building practice
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: es
+media: []

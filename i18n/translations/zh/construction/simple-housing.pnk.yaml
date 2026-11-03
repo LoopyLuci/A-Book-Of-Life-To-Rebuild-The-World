@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+translation_of: pnk:01M52TVJZJCP6PDV523BPX671D/construction/simple-housing
+title: 简易住房
+domain: construction
+tags:
+- zhihao
+- jianzhu
+- zhufang
+- jichu-shebei
+difficulty: novice
+safety: green
+time_to_complete: weeks
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: US Army FM 21-10 Field Sanitation
+- title: Traditional vernacular building practice
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: zh
+media: []

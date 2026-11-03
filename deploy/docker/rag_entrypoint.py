@@ -1,11 +1,12 @@
 """HTTP wrapper around scripts/rag.py for the Docker stack."""
 
+import sys
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-import sys
 sys.path.insert(0, "scripts")
-from rag import ask  # noqa: E402
+from rag import ask
 
 app = FastAPI(title="A Book Of Life — RAG", version="1.0.0")
 

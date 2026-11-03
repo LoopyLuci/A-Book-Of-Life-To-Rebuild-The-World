@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain letterpress manuals
+  license: public-domain
+  language: en
 - title: Gutenberg press reconstruction notes
+  license: original
+  language: en
+- title: In ấn
+  author: Wikipedia contributors
+  url: https://vi.wikipedia.org/wiki/In_%E1%BA%A5n
+  license: CC-BY-SA-4.0
+  language: vi
+- title: Uchapaji
+  author: Wikipedia contributors
+  url: https://sw.wikipedia.org/wiki/Uchapaji
+  license: CC-BY-SA-4.0
+  language: sw
+- title: Impresión
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Impresi%C3%B3n
+  license: CC-BY-SA-4.0
+  language: es
 verification:
   status: draft
 links: []

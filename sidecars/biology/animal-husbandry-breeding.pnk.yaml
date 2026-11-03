@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: USDA Livestock Handbook
   license: public-domain
+  language: en
+- title: Allevamento
+  author: Wikipedia contributors
+  url: https://it.wikipedia.org/wiki/Allevamento
+  license: CC-BY-SA-4.0
+  language: it
+- title: Veeteelt
+  author: Wikipedia contributors
+  url: https://nl.wikipedia.org/wiki/Veeteelt
+  license: CC-BY-SA-4.0
+  language: nl
+- title: Hayvancılık
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Hayvanc%C4%B1l%C4%B1k
+  license: CC-BY-SA-4.0
+  language: tr
 verification:
   status: draft
 links: []

@@ -2,6 +2,10 @@
 
 > **Domain:** materials | **Difficulty:** apprentice | **Safety:** yellow
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Simple adhesives can be made from starch, hide, milk protein, and lime. Each

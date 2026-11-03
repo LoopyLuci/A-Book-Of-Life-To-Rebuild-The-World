@@ -1,0 +1,25 @@
+id: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+translation_of: pnk:01M52TVJZZEX3BN6YP28BRMAG6/health/anatomy-basics
+title: Bases de l'Anatomie
+domain: health
+tags:
+- anatomie
+- physiologie
+- sante
+- education
+difficulty: novice
+safety: green
+time_to_complete: days
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Gray's Anatomy (public domain)
+- title: WHO Basic Emergency Care
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []

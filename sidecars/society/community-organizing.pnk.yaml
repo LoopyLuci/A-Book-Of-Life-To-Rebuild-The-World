@@ -14,7 +14,21 @@ materials_required: []
 tools_required: []
 sources:
 - title: Public-domain community organizing texts
+  license: public-domain
+  language: en
 - title: Mutual-aid principles
+  license: original
+  language: en
+- title: Community organizing
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Community_organizing
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Organização comunitária
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_comunit%C3%A1ria
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

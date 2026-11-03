@@ -1,0 +1,64 @@
+id: pnk:01M5FBX2KS60NDC4XXPGS8MZEG/water/well-maintenance
+translation_of: pnk:01M5FBX2KS60NDC4XXPGS8MZEG/water/well-maintenance
+title: Matunzo ya Kima ya Maji
+domain: water
+tags:
+- maji
+- visima
+- pampu
+- matunzo
+- klorinizhi
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+yield: A serviced well with restored yield, a sealed wellhead, and a documented disinfection record
+season: Service in the dry season when demand is lower and access is safer
+storage: Keep spare seals, gaskets, and a capped chlorine stock away from children
+cost: medium
+hazards:
+- Confined-space gases and low oxygen in dug wells
+- Electric shock from submersible pumps
+- Chlorine burns and toxic gas
+- Crushing injury from pump assemblies
+resource_budget:
+  batch: one 10 m hand-dug or bored well
+  labor_hours: 24
+  energy_kwh: 0
+  water_liters: 500
+lifespan: A properly sealed well can serve 20-50 years with annual service
+maintenance: Inspect the seal and pump quarterly; disinfect after flooding or repairs
+limits:
+- Never enter a well without confined-space training and gas testing
+- Do not shock chlorinate without bypassing filters and warning users
+- Do not restore a well to service until chlorine and bacteria tests pass
+prerequisites:
+- pnk:01M52TVJZRTVXD39N579XJ4TEK/construction/water-wells
+- pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+materials_required:
+- Pump seals and gaskets
+- Chlorine bleach with known concentration
+- Chlorine and pH test kits
+- Clean buckets and brushes
+- Well cap and screened vent
+- Concrete sealant
+- New safety rope
+tools_required:
+- Pipe wrench and wrench set
+- Pump puller or tripod and winch
+- Water level meter
+- Gloves and eye protection
+- Funnel
+sources:
+- title: WHO Guidelines for Drinking-water Quality
+- title: US EPA Private Drinking Water Wells
+- title: WaterAid Handpump Maintenance Guidelines
+verification:
+  status: draft
+links:
+- pnk:01M5FBX2KSBN9EJMP3H00WRJYQ/water/water-quality-testing
+- pnk:01M5E8W7W19VHR92PCP24VN08X/water/water-storage
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1K/survival/finding-water
+geographic_applicability:
+- universal
+language: sw
+media: []

@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+translation_of: pnk:01KDVDNA00Z9TFHBJSC6M3YANW/quantum/error-correction-codes
+title: Correzione degli errori quantistici
+domain: quantum
+tags: [quantistica, correzione-errori, codici, soglia, rumore]
+difficulty: master
+safety: green
+time_to_complete: days
+hazards:
+  - I liquidi criogenici provocano ustioni da freddo e asfissia in ambiente
+  - Radiazione a microonde e ad alta frequenza; mantieni il campo delimitato
+  - Esposizione ai laser; non guardare mai lungo un fascio
+  - Tensioni pericolose e quench del magnete; segui le regole della struttura
+limits:
+  - I dati descrivono solo i dispositivi attuali di scala di laboratorio
+  - Rumore, deriva e limiti di controllo variano da un'installazione all'altra
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: Riferimento dell'Iniziativa Quantistica NIST
+    license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: it
+media: []

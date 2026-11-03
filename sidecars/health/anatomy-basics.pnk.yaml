@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: Gray's Anatomy (public domain)
+  license: public-domain
+  language: en
 - title: WHO Basic Emergency Care
+  license: CC-BY-NC-SA-3.0-IGO
+  language: en
+- title: Anatomie
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Anatomie
+  license: CC-BY-SA-4.0
+  language: de
+- title: Anatomia
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/Anatomia
+  license: CC-BY-SA-4.0
+  language: pt
+- title: Анатомия
+  author: Wikipedia contributors
+  url: https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%8F
+  license: CC-BY-SA-4.0
+  language: ru
 verification:
   status: draft
 links: []

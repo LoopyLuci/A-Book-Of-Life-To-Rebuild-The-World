@@ -1,0 +1,52 @@
+id: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+translation_of: pnk:01M5E8W7W1Q9NPVF634N21XZ4G/transport/pack-animals
+title: 驮畜与货物运输
+domain: transport
+tags:
+- yunshu
+- dongwu
+- wuliu
+- jiachu
+- maoyi
+difficulty: apprentice
+safety: yellow
+time_to_complete: days
+yield: 60-150 kg per animal depending on species and condition; 10-30 km per day on good trails
+season: Avoid midday heat; plan around grazing and water availability
+storage: Store saddles and pads dry; keep feed covered and water clean
+cost: high
+hazards:
+- Bites, kicks, and crushing injuries
+- Load shifting or a fall on steep ground
+- Saddle sores and heat stress
+- Animal illness or exhaustion
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+materials_required:
+- Pack saddle
+- Saddle pads
+- Panniers or cargo nets
+- Ropes and straps
+- Hobbles
+- Animal first-aid kit
+- Feed and water containers
+tools_required:
+- Knife
+- Pliers
+- Brush
+- Hoof pick
+- Scale or weigh tape
+sources:
+- title: FAO Animal Traction and Transport
+- title: Practical Action Pack Transport
+- title: US Army FM 21-10 Animal Care
+verification:
+  status: draft
+links:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N28/agriculture/raising-livestock
+- pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+geographic_applicability:
+- universal
+language: zh
+media: []

@@ -1,0 +1,53 @@
+id: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+translation_of: pnk:01M5E8W7W1H7FJJ0G7Y2QPV1RP/transport/river-ferries
+title: Barcarias Fluviais e Travessias em Pequenos Barcos
+domain: transport
+tags:
+- transporte
+- rio
+- barcos
+- balsas
+- seguranca-da-agua
+difficulty: journeyman
+safety: red
+time_to_complete: weeks
+yield: 4-12 passengers or 500-2,000 kg per trip, depending on hull and freeboard
+season: Low-water season; suspend crossings during floods and heavy rain
+storage: Haul out or cover in the off-season; inspect cable, hull, and fittings before each season
+cost: high
+hazards:
+- Capsizing from overload or shifted cargo
+- Drowning and hypothermia
+- Cable or pulley failure
+- Being swept into trees or rapids
+prerequisites:
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+materials_required:
+- Boat or raft hull
+- Steel cable or rope
+- Pulleys and anchors
+- Life jackets or floats
+- Bailer
+- Oars or pole
+- Loading ramp
+tools_required:
+- Cable cutters
+- Wrenches
+- Drill
+- Saw
+- Throw line
+- Inspection lamp
+sources:
+- title: US Coast Guard Small Boat Safety
+- title: WHO Drowning Prevention Guidelines
+- title: Practical Action River Crossing and Ferry Guidance
+verification:
+  status: draft
+links:
+- pnk:01M52TVJZWCYKQ0HQVRRMNED06/construction/bridges
+- pnk:01HZX0K8J9Q7R3VY6T2M4B8N1T/survival/rope-cordage
+- pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+geographic_applicability:
+- universal
+language: pt
+media: []

@@ -2,9 +2,14 @@
 
 > **Domain:** society | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Ethics guides hard choices, especially triage and resource allocation. Shared principles make decisions defensible and reduce resentment.
+Ethics guides hard choices, especially triage and resource allocation. Shared
+principles make decisions defensible and reduce resentment.
 
 ## Prerequisites
 

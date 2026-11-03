@@ -20,7 +20,9 @@ HTML = BUNDLE / "html"
 def _build_everything():
     if not INDEX.exists():
         subprocess.run([sys.executable, "scripts/build_index.py"], check=True, cwd=ROOT)
-    if not HTML.exists():
+    # The bundle directory can exist half-written after an interrupted build,
+    # so check for the files the tests actually read, not for the directory.
+    if not (HTML / "index.html").exists() or not (HTML / "search-index.json").exists():
         subprocess.run([sys.executable, "scripts/build_zim.py"], check=True, cwd=ROOT)
 
 
@@ -51,6 +53,7 @@ def test_search_returns_water_for_purification():
 
 def test_mcp_get_returns_body():
     import asyncio
+
     from scripts import mcp_server
 
     hits = mcp_server.hybrid_search("making fire", limit=1)

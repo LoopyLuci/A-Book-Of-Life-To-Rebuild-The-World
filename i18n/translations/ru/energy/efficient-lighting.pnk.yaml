@@ -1,0 +1,30 @@
+id: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+translation_of: pnk:01M5FBX2KSTRYBMKH00B7DJSZD/energy/efficient-lighting
+title: Эффективное освещение
+domain: energy
+tags: [osveshchenie, led, effektivnost, estestvennyy-svet, vozduh-v-pomeshchenii]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+- Монооксид углерода и мелкодисперсные частицы от ламп на жидком топливе
+- Пожар от свечей и перегретых светильников
+- Удар током от мокрой или повреждённой проводки
+- Падения с лестниц
+limits:
+- Не используйте лампы на жидком топливе без вентиляции в помещении долгое время
+- Не перегружайте удлинители и не соединяйте удлинители каскадом
+- Световой поток падает от пыли, нагрева и низкого качества драйвера
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: 'МЭА: освещение и энергоэффективность'
+- title: Программа Министерства энергетики США по полупроводниковому освещению
+- title: Руководство ВОЗ по бытовому загрязнению воздуха
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

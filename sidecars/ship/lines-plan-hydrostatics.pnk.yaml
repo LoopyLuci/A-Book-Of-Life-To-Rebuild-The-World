@@ -35,6 +35,22 @@ tools_required: []
 sources:
 - title: US Navy Hydrostatics Text
   license: public-domain
+  language: en
+- title: Gemi inşaatı ve gemi makineleri mühendisliği
+  author: Wikipedia contributors
+  url: https://tr.wikipedia.org/wiki/Gemi_in%C5%9Faat%C4%B1_ve_gemi_makineleri_m%C3%BChendisli%C4%9Fi
+  license: CC-BY-SA-4.0
+  language: tr
+- title: Arquitectura naval
+  author: Wikipedia contributors
+  url: https://es.wikipedia.org/wiki/Arquitectura_naval
+  license: CC-BY-SA-4.0
+  language: es
+- title: Architecture navale
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Architecture_navale
+  license: CC-BY-SA-4.0
+  language: fr
 verification:
   status: draft
 links: []

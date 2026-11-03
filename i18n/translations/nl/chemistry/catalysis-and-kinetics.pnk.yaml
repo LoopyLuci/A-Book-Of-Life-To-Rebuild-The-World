@@ -1,0 +1,28 @@
+id: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+translation_of: pnk:01KDVDNA00SKE5WBRDPEV72RPE/chemistry/catalysis-and-kinetics
+title: Katalyse en reactiekinetiek
+domain: chemistry
+tags: [chemie, katalyse, kinetiek, reactiesnelheid, evenwicht]
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+hazards:
+  - Chemische brandwonden en spatten; draag een spatbril en handschoenen
+  - Inhalatie van dampen; werk in een geventileerde ruimte of onder een zuurkast
+  - Vuur en hitte; houd brandbaar materiaal weg bij het werken met warmte
+  - Reagentiaafval moet worden geneutraliseerd en apart worden ingezameld
+limits:
+  - De waarden gaan uit van laboratoriumkwaliteit en gekalibreerd glaswerk
+  - Geen vervanging van een gecontroleerd laboratoriumprotocol
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+  - title: LibreTexts Physical Chemistry
+    license: CC-BY-SA-4.0
+verification:
+  status: draft
+links: []
+geographic_applicability: [universal]
+language: nl
+media: []

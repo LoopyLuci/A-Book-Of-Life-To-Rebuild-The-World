@@ -2,9 +2,15 @@
 
 > **Domain:** construction | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
-Permanent shelter protects against weather, pests, and temperature swings. A dry, ventilated, raised-floor structure with a sound roof and a hearth is enough for most climates.
+Permanent shelter protects against weather, pests, and temperature swings. A
+dry, ventilated, raised-floor structure with a sound roof and a hearth is enough
+for most climates.
 
 ## Prerequisites
 

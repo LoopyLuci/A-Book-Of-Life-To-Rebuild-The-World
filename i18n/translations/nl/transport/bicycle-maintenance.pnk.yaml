@@ -1,0 +1,44 @@
+id: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+translation_of: pnk:01M5E8W7W1P0T9G2TQKM0FDMJA/transport/bicycle-maintenance
+title: Fietsonderhoud en het vervoeren van lading
+domain: transport
+tags: [transport, fietsen, reparatie, logistiek, gereedschap]
+difficulty: novice
+safety: yellow
+time_to_complete: hours
+hazards:
+  - Rem- of bandafailure in het verkeer
+  - Verschuivende lading en verlies van stuurcontrole
+  - Hand- en kettingletsel
+  - Overbelasting en hitteklachten
+limits: []
+prerequisites: []
+materials_required:
+  - Reservebinnenbanden
+  - Reparatieset
+  - Bandenhevels
+  - Handpomp
+  - Kettingolie
+  - Remblokken en remkabel
+  - Spakkesleutel
+  - Bagagedrager en fietstassen
+tools_required:
+  - Bandenhevels
+  - Verstelbare sleutel
+  - Schroevendraaier
+  - Kettingbreker
+  - Pomp
+  - Lap en borstel
+sources:
+  - title: Village Bicycle Maintenance Guide
+  - title: Bicycle Retailer and Industry Association repair standards
+  - title: WHO Cycling Safety Guidance
+verification:
+  status: draft
+links:
+  - pnk:01M5E8W7W1SJA7XZ5YP64GMYMJ/transport/handcarts
+  - pnk:01M52TVJZVZTBWT4TCZR94R219/construction/roads-drainage
+  - pnk:01M52TVK0ZWHTTT4G7QZVVA4R3/society/trade-barter
+geographic_applicability: [universal]
+language: nl
+media: []

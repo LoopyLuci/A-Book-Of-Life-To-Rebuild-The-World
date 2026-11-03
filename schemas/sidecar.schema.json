@@ -118,9 +118,28 @@
           "url": { "type": "string", "format": "uri" },
           "license": {
             "type": "string",
-            "enum": ["public-domain", "CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0", "MIT", "original", "field-tested"]
+            "description": "The licence the source is actually published under. Use 'permission-granted' only for a source that is cited and read but is not openly licensed; use 'original' for material written for this book.",
+            "enum": [
+              "public-domain",
+              "CC0-1.0",
+              "MIT",
+              "CC-BY-4.0",
+              "CC-BY-SA-4.0",
+              "CC-BY-NC-4.0",
+              "CC-BY-SA-3.0-IGO",
+              "CC-BY-NC-SA-3.0-IGO",
+              "original",
+              "field-tested",
+              "permission-granted"
+            ]
           },
-          "year": { "type": "integer" }
+          "year": { "type": "integer" },
+          "language": {
+            "type": "string",
+            "description": "The language the source is published in, as an ISO 639-1 code. Every entry carries sources in several languages, so a reader whose first language is not English can follow the trail.",
+            "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)?$",
+            "default": "en"
+          }
         }
       }
     },

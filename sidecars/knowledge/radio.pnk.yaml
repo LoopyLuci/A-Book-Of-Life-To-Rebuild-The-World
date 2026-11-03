@@ -14,7 +14,26 @@ materials_required: []
 tools_required: []
 sources:
 - title: US Army Signal Corps manuals (public domain)
+  license: public-domain
+  language: en
 - title: Public-domain amateur radio handbooks
+  license: public-domain
+  language: en
+- title: Radiocommunication
+  author: Wikipedia contributors
+  url: https://fr.wikipedia.org/wiki/Radiocommunication
+  license: CC-BY-SA-4.0
+  language: fr
+- title: Funktechnik
+  author: Wikipedia contributors
+  url: https://de.wikipedia.org/wiki/Funktechnik
+  license: CC-BY-SA-4.0
+  language: de
+- title: Rádio
+  author: Wikipedia contributors
+  url: https://pt.wikipedia.org/wiki/R%C3%A1dio
+  license: CC-BY-SA-4.0
+  language: pt
 verification:
   status: draft
 links: []

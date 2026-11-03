@@ -2,6 +2,10 @@
 
 > **Domain:** agriculture | **Difficulty:** novice | **Safety:** green
 
+*Reference material only. Verify this information against primary sources
+and qualified professionals before acting on it. This entry is not a sole
+source of information.*
+
 ## Overview
 
 Soil health determines crop yield. Test pH, texture, and organic matter
@@ -26,7 +30,8 @@ before planting.
 1. Fill a jar ⅓ with soil, top with water, add a pinch of detergent.
 2. Shake vigorously for 3 minutes.
 3. Let settle 24 hours.
-4. Measure layers: sand (bottom), silt, clay (top). Ratios indicate loam, sandy, or clay.
+4. Measure layers: sand (bottom), silt, clay (top). Ratios indicate loam, sandy,
+   or clay.
 
 ### pH Test (Vinegar & Baking Soda)
 

@@ -1,0 +1,22 @@
+id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+translation_of: pnk:01HZX0K8J9Q7R3VY6T2M4B8N46/energy/battery-basics
+title: Основы аккумуляторов
+domain: energy
+tags: [batareya, svintsovyy-akkumulyator, khranenie, elektroenergetika, energiya]
+difficulty: journeyman
+safety: red
+time_to_complete: days
+hazards: []
+limits: []
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: Справочник Министерства энергетики США по аккумуляторам
+- title: Руководство армии США по аккумуляторам
+verification:
+  status: peer-reviewed
+links: []
+geographic_applicability: [universal]
+language: ru
+media: []

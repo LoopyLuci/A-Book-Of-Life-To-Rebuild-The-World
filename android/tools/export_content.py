@@ -53,6 +53,12 @@ DOMAIN_META = {
     "health": ("Health & Medicine", "Diagnosis, surgery, medicine, care", "medical_services", "#C62828"),
     "knowledge": ("Knowledge & Communication", "Printing, radio, education, records", "menu_book", "#1565C0"),
     "society": ("Society & Governance", "Law, economics, ethics, community", "groups", "#6A1B9A"),
+    "chemistry": ("Chemistry & Laboratory", "Reactions, analysis, separation, safety", "science", "#00838F"),
+    "biology": ("Biology & Life Sciences", "Cells, genetics, ecology, medicine", "biotech", "#558B2F"),
+    "silicon": ("Silicon & Semiconductors", "Purification, wafers, fabrication, devices", "memory", "#5E35B1"),
+    "ship": ("Ship Design & Building", "Hulls, yards, propulsion, safety", "sailing", "#00695C"),
+    "computers": ("Computers & Electronics", "Circuits, software, systems, data", "memory", "#1E88E5"),
+    "quantum": ("Quantum Computing", "Qubits, control, error correction, algorithms", "hub", "#D81B60"),
 }
 
 VALID_DOMAINS = list(DOMAIN_META.keys())
@@ -209,15 +215,16 @@ def load_entries() -> list[dict]:
         raw_budget = meta.get("resource_budget") or {}
         if not isinstance(raw_budget, dict):
             raw_budget = {}
+        budget_source = dict(raw_budget)
 
-        def budget_number(key: str) -> float:
+        def budget_number(key: str, source: dict = budget_source) -> float:
             try:
-                return max(0.0, float(raw_budget.get(key, 0) or 0))
+                return max(0.0, float(source.get(key, 0) or 0))
             except (TypeError, ValueError):
                 return 0.0
 
         budget = {
-            "batch": str(raw_budget.get("batch", "") or "").strip(),
+            "batch": str(budget_source.get("batch", "") or "").strip(),
             "laborHours": budget_number("labor_hours"),
             "energyKwh": budget_number("energy_kwh"),
             "waterLiters": budget_number("water_liters"),

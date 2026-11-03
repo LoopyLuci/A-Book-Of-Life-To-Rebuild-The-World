@@ -1,0 +1,46 @@
+id: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+translation_of: pnk:01KDVDNA0044QD8ZTSQ81P1ZD3/computers/bus-standards-interfaces
+title: Bus, Normes et Interfaces de Signal
+domain: computers
+tags:
+- informatique
+- bus
+- interface
+- uart
+- i2c
+- spi
+difficulty: apprentice
+safety: green
+time_to_complete: hours
+yield: ''
+season: ''
+storage: ''
+cost: low
+hazards:
+- Mains voltage and stored charge can kill; isolate before work.
+- Solder fumes, flux and lead; ventilate and wash hands.
+- Static discharge can damage parts; use an earthed bench.
+- Data loss is silent; back up before any firmware or disk work.
+resource_budget:
+  batch: ''
+  labor_hours: 0
+  energy_kwh: 0
+  water_liters: 0
+lifespan: ''
+maintenance: ''
+limits:
+- Examples assume mainstream open toolchains.
+- Follow the manufacturer's datasheet over any summary.
+prerequisites: []
+materials_required: []
+tools_required: []
+sources:
+- title: NXP and Analog Devices Interface Notes
+  license: public-domain
+verification:
+  status: draft
+links: []
+geographic_applicability:
+- universal
+language: fr
+media: []
