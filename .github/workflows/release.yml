@@ -60,7 +60,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: API image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: deploy/docker/Dockerfile
@@ -70,7 +70,7 @@ jobs:
             ghcr.io/${{ github.repository }}/api:latest
 
       - name: MCP image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: deploy/docker/Dockerfile.mcp
@@ -80,7 +80,7 @@ jobs:
             ghcr.io/${{ github.repository }}/mcp:latest
 
       - name: RAG image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: deploy/docker/Dockerfile.rag
