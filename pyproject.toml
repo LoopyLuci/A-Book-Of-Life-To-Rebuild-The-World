@@ -53,3 +53,7 @@ ignore = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# The suite imports `scripts.` as a package. `python -m pytest` puts the
+# working directory on sys.path by itself, but the bare `pytest` console
+# script (what CI runs) does not, so the root is added explicitly.
+pythonpath = ["."]
