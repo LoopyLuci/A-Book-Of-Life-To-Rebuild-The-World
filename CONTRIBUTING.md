@@ -40,6 +40,9 @@ copyright-and-licence statement; by opening a pull request you confirm that
 you have the right to license what you send, and that your contribution is
 published under CC BY-SA 4.0 (content) or MIT (code).
 
+The CLA bot comments on your first pull request and records your confirmation
+in [`governance/cla-signatures.json`](governance/cla-signatures.json).
+
 ## Proposing a new entry
 
 1. Check that the subject is not already covered. Search the domain index in
