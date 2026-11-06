@@ -44,6 +44,13 @@ jobs:
 
   cla-check:
     runs-on: ubuntu-latest
+    # The bot records a signature by committing to the signatures file, so it
+    # needs a token that may write. The workflow token is enough when no
+    # personal token is configured; CLA_BOT_TOKEN takes over when it is.
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
     steps:
       - uses: contributor-assistant/github-action@v2.4.0
         env:
