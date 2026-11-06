@@ -1,11 +1,13 @@
 package org.abookoflife.app
 
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performTextInput
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
@@ -40,6 +42,11 @@ class AppSmokeTest {
         rule.onNodeWithText("Search").assertIsDisplayed()
         rule.onNodeWithText("Saved").assertIsDisplayed()
         rule.onNodeWithText("Settings").assertIsDisplayed()
+
+        // The domains section sits below the fold, so it only reaches the
+        // screen once the home list is scrolled to it. Asserting it was
+        // displayed without scrolling failed on every emulator.
+        rule.onNodeWithTag("home_list").performScrollToNode(hasText("Domains", substring = true))
         rule.onNodeWithText("Domains").assertIsDisplayed()
     }
 

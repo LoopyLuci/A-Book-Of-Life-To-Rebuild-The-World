@@ -74,6 +74,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `.github/workflows/android-emulator.yml` running them on an API 26/31/35 emulator matrix.
 
 ### Changed
+- The Android smoke test scrolls the home list to the domains section before
+  asserting it is on screen; the section starts below the fold, so the old
+  assertion failed on every emulator although the screen was correct. The list
+  carries a `home_list` test tag so the test scrolls the right node.
 - The README now describes every surface of the project (16 domains, six app
   front-ends, the Android and mobile apps, the three SDKs, the MCP server, the
   offline bundle, federation, the installer, the local pipeline,
