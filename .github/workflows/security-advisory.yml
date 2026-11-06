@@ -18,12 +18,30 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const alerts = await github.paginate(github.rest.dependabot.listAlertsForRepo, {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: "open",
-              per_page: 100,
-            });
+            let alerts;
+            try {
+              alerts = await github.paginate(github.rest.dependabot.listAlertsForRepo, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: "open",
+                per_page: 100,
+              });
+            } catch (error) {
+              // Dependabot alerts are a repository setting. When they are off
+              // the API answers 403, which is a configuration state and not a
+              // failed run; say so and leave the job green so the scheduled
+              // matrix does not show a permanent red mark.
+              if (error.status === 403 || error.status === 404) {
+                console.log(
+                  "Dependabot alerts are not enabled for this repository; nothing to triage."
+                );
+                console.log(
+                  "Enable them under Settings > Code security, or rely on the Security Audit workflow."
+                );
+                return;
+              }
+              throw error;
+            }
             if (alerts.length === 0) {
               console.log("No open Dependabot alerts.");
               return;

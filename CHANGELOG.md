@@ -120,6 +120,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   importer uses to pick up content refreshes even when the KB version is unchanged.
 - Android app declares a `localeConfig` so the 16 translations are selectable via Android's
   per-app language settings.
+- The Security Advisory workflow treats "Dependabot alerts are not enabled" as a
+  configuration state rather than a failed run, and the repository now enables
+  Dependabot alerts, Dependabot security updates, secret scanning and push
+  protection. The TypeScript lockfiles are committed, so the weekly
+  dependency audit has a lockfile to read.
 
 ## [1.0.0] — 2026-01-01
 
