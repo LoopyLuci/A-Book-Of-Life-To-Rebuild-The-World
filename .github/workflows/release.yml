@@ -13,7 +13,7 @@ jobs:
   build-index:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-index
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-index
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
         with:
@@ -94,7 +94,7 @@ jobs:
     needs: build-index
     if: startsWith(github.ref, 'refs/tags/')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install image build dependencies
         run: |
           sudo apt-get update
@@ -111,7 +111,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build-index, build-offline-bundle, build-images, build-pi-image]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
