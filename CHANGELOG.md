@@ -136,6 +136,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   tests from `sdk/python`, and `governance/cla-signatures.json` exists so the
   CLA bot has a file to write to. The link check drops `--exclude-mail`, which
   `lychee` 2 replaced with an opt-in flag.
+- The Python SDK builds a complete wheel again. Hatchling reads the
+  `.gitignore` above a project and anchors its patterns at the project
+  directory, so the repository's root-anchored `/abook` rule (the generated
+  launcher) looked like "exclude `abook/`" to `sdk/python` and the wheel shipped
+  no code. It only passed locally because hatchling drops the ignore rules when
+  the project path itself looks ignored, and this checkout sits under `tmp`.
+  `ignore-vcs` in `sdk/python/pyproject.toml` makes the file set explicit, and
+  CI now inspects the built wheel instead of trusting a clean install.
 
 ## [1.0.0] — 2026-01-01
 

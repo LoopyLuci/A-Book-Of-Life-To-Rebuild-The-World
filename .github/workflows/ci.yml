@@ -113,6 +113,25 @@ jobs:
           python-version: "3.11"
       - name: Install the SDK
         run: pip install "sdk/python[dev]"
+      # A wheel that ships no code installs cleanly and then fails on import,
+      # which is how this job broke: hatchling applied a root-anchored ignore
+      # rule above the project and quietly dropped the whole package. Check the
+      # artifact itself, not only the result of importing it.
+      - name: Check the wheel ships the package
+        run: |
+          python -m pip wheel sdk/python --no-deps -w /tmp/wheels --no-cache-dir
+          python - <<'PY'
+          import glob
+          import zipfile
+
+          wheel = glob.glob("/tmp/wheels/*.whl")[0]
+          names = zipfile.ZipFile(wheel).namelist()
+          required = ["abook/__init__.py", "abook/client.py"]
+          missing = [name for name in required if name not in names]
+          if missing:
+              raise SystemExit(f"{wheel} ships no {', '.join(missing)}: {names}")
+          print(f"{wheel}: {len(names)} entries")
+          PY
       # Proves the package is importable from an installed wheel, which is
       # what a consumer gets. The test run below then works from the source
       # tree, the same way the local pipeline runs it.
