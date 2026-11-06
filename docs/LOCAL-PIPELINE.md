@@ -24,9 +24,11 @@ python scripts/local_pipeline.py --telemetry  # print the last report as JSON
 python scripts/local_pipeline.py --quiet
 ```
 
-The exit status is `0` only when every required stage passed. An optional stage
-that fails is reported and does not fail the run; a required stage that fails
-stops the run.
+The exit status is `0` only when no stage failed. A stage marked *optional* is
+one whose toolchain may be absent (Node for the web readers, Ruby for Rails,
+Gradle for the APK): when the toolchain is missing the stage runs no command and
+reports a pass, and when it is present the stage really runs and a failure is a
+failure. Optional never means "a red stage is forgiven".
 
 ## The stages
 
@@ -48,8 +50,11 @@ stops the run.
 | `android` | no | yes | Exports the content into the app and runs `gradlew test :app:assembleDebug`. |
 
 Optional stages are optional because their toolchain is optional. A machine
-without Node does not fail the `apps` stage for the web readers; it tests the
-apps it can build. `--list` prints the same table as a single screen.
+without Node does not fail the `apps` stage for the web readers; the stage runs
+the apps it can build. A required stage that fails stops the run; an optional
+stage that fails does not, but the run still exits non-zero, because a red check
+is information the push must not ignore. `--list` prints the same table as a
+single screen.
 
 ### Dependencies between stages
 
@@ -108,6 +113,23 @@ mean the check ran against this tree, not against one from an hour ago. If you
 want a guaranteed cold run, `--clean` deletes the cache and the logs first.
 
 `ABP_PIPELINE_CACHE=0` disables the cache entirely for one invocation.
+
+## Which interpreter runs it
+
+Every stage runs with the interpreter that started the pipeline, so a tool that
+is installed for a *different* Python is, for the pipeline, not installed at
+all. The preflight therefore checks for `pytest`, `ruff` and `respx` in that
+interpreter and stops with the install command when one is missing:
+
+```bash
+python -m pip install -r requirements.txt -r requirements-dev.txt
+```
+
+`python scripts/install.py install` does the same thing into the isolated
+`.venv/`, and repairs an environment created before `requirements-dev.txt`
+existed. The `pre-push` hook prefers `.venv/`, so a hook run is only as complete
+as that environment: repair it with `scripts/install.py install` when the
+preflight says an extra is missing.
 
 ## Environment
 

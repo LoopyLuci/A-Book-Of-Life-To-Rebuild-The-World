@@ -154,6 +154,9 @@ class Stage:
     outputs: list[str] = field(default_factory=list)
     group: str = "default"
     slow: bool = False
+    #: True when the stage may legitimately have nothing to do: the apps stage
+    #: on a machine without Ruby, the android stage without a JDK. It does not
+    #: mean a failure is forgiven. A stage that runs and fails fails the run.
     optional: bool = False
     requires: list[str] = field(default_factory=list)
     #: True only for a stage that writes an artifact from its inputs. A gate
@@ -557,6 +560,25 @@ def preflight(report: dict) -> tuple[bool, list[str]]:
         notes.append("PyYAML available")
     except ImportError:
         problems.append("PyYAML is not installed; run scripts/install.py first")
+
+    # The stages run with *this* interpreter, so a tool that is installed for
+    # a different Python is, for the pipeline, not installed at all. Check the
+    # developer extras here rather than let `tests` and `lint` fail with an
+    # import error three stages later.
+    missing = []
+    for module in ("pytest", "ruff", "respx"):
+        try:
+            __import__(module)
+        except ImportError:
+            missing.append(module)
+    if missing:
+        problems.append(
+            f"the developer extras are missing from {sys.executable}: "
+            f"{', '.join(missing)}. Install them with:\n"
+            f"    {sys.executable} -m pip install -r requirements-dev.txt"
+        )
+    else:
+        notes.append("developer extras present (pytest, ruff, respx)")
 
     usage = shutil.disk_usage(ROOT)
     free_gb = usage.free / (1024 ** 3)

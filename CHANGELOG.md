@@ -105,6 +105,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The `markdown`, `sdk` and `android` stages resolve their tools by the name
   Windows can actually execute (`npx.cmd`, the SDK package directory from its
   own working directory, the absolute `gradlew.bat`).
+- The pipeline's preflight checks that `pytest`, `ruff` and `respx` are
+  importable by the interpreter that will run the stages, and prints the exact
+  install command when one is missing, instead of letting `tests`, `lint` and
+  `sdk` fail later with an import error.
+- An "optional" stage is documented for what it is: a stage that may have
+  nothing to do when its toolchain is absent. A stage that runs and fails still
+  fails the run, so a red check can never be mistaken for a skip.
 - Android release builds are minified, shrink resources, derive their version from
   `manifest.toml`, and are signed via environment/`keystore.properties` credentials
   (tag-driven `.github/workflows/android-release.yml` publishes them to GitHub Releases).
