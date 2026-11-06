@@ -131,7 +131,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   dependency audit has a lockfile to read.
 - The CLA job grants the workflow token write access to the signatures file, so
   the check works with the repository token when no dedicated bot token is
-  configured.
+  configured, and it runs again when a pull request gains a commit or is
+  reopened rather than only when it is first opened.
 - Dependency refresh for the open advisories: the TypeScript SDK moves to
   `vitest` 5 (with its `vite` and `tinypool` transitives), `sdk/rust` locks
   `tokio` 1.54.1, and the CI link check uses `lychee-action@v2`. The TypeScript

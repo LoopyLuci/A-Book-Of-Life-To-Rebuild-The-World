@@ -2,7 +2,9 @@ name: Contributor Onboarding
 
 on:
   pull_request_target:
-    types: [opened]
+    # A new commit on a pull request can change who contributed to it, so the
+    # check re-runs then too, not only when the request is first opened.
+    types: [opened, synchronize, reopened]
   issues:
     types: [opened]
 
