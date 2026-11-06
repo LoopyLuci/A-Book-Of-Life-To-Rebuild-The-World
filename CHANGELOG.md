@@ -125,6 +125,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Dependabot alerts, Dependabot security updates, secret scanning and push
   protection. The TypeScript lockfiles are committed, so the weekly
   dependency audit has a lockfile to read.
+- Dependency refresh for the open advisories: the TypeScript SDK moves to
+  `vitest` 5 (with its `vite` and `tinypool` transitives), `sdk/rust` locks
+  `tokio` 1.54.1, and the CI link check uses `lychee-action@v2`.
 
 ## [1.0.0] — 2026-01-01
 
