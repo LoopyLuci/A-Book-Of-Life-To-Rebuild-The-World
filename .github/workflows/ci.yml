@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -36,7 +36,7 @@ jobs:
   markdown-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: "domains/**/*.md"
@@ -44,7 +44,7 @@ jobs:
   link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: lycheeverse/lychee-action@v2
         with:
           args: --no-progress 'domains/**/*.md'
@@ -53,7 +53,7 @@ jobs:
   models:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -64,7 +64,7 @@ jobs:
   media:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -74,7 +74,7 @@ jobs:
   i18n:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -85,7 +85,7 @@ jobs:
   variants:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -95,7 +95,7 @@ jobs:
   simulators:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate simulator HTML (basic well-formedness)
         run: |
           for f in simulators/*.html; do
@@ -107,7 +107,7 @@ jobs:
   sdk-python:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -125,7 +125,7 @@ jobs:
   sdk-typescript:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -138,7 +138,7 @@ jobs:
   sdk-rust:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
       - working-directory: sdk/rust
         run: |
@@ -148,7 +148,7 @@ jobs:
   federation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -161,7 +161,7 @@ jobs:
   state-of-the-book:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -176,14 +176,14 @@ jobs:
   changelog:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Verify CHANGELOG has Unreleased section
         run: grep -q "## \[Unreleased\]" CHANGELOG.md
 
   continuity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Verify governance files exist
         run: |
           for f in \
@@ -203,7 +203,7 @@ jobs:
   funding:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Verify FUNDING.yml
         run: |
           [ -f FUNDING.yml ] || (echo "Missing FUNDING.yml" && exit 1)
@@ -212,7 +212,7 @@ jobs:
   codeowners:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Verify CODEOWNERS
         run: |
           [ -f .github/CODEOWNERS ] || (echo "Missing CODEOWNERS" && exit 1)
