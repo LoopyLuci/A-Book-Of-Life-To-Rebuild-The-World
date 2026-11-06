@@ -131,9 +131,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   SDK now needs Node 22.12 or newer, which its `engines` field states.
 - CI parses the tests the way CI runs them: `pythonpath = ["."]` in
   `pyproject.toml` lets the bare `pytest` console script import `scripts.`, the
-  Python SDK job installs the package, checks that it imports and then runs the
+  Python SDK job installs the package (not an editable link, so the wheel a
+  consumer gets is what is tested), checks that it imports and then runs the
   tests from `sdk/python`, and `governance/cla-signatures.json` exists so the
-  CLA bot has a file to write to.
+  CLA bot has a file to write to. The link check drops `--exclude-mail`, which
+  `lychee` 2 replaced with an opt-in flag.
 
 ## [1.0.0] — 2026-01-01
 
