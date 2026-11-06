@@ -60,7 +60,9 @@ jobs:
           path-to-signatures: "governance/cla-signatures.json"
           path-to-document: "https://github.com/${{ github.repository }}/blob/main/governance/CLA.md"
           branch: "main"
-          allowlist: "dependabot[bot],github-actions[bot]"
+          # The copyright holder does not license their own work back, and the
+          # bots cannot sign. Everyone else is asked to confirm the CLA.
+          allowlist: "dependabot[bot],github-actions[bot],LoopyLuci"
 
   label:
     runs-on: ubuntu-latest
