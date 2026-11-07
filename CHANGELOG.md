@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- A responsible field-testing guide, public-report privacy defaults, a
+  first-reader guide with draft-only reading paths, and an expanded generated
+  trust dashboard for source, translation, verification, and review coverage.
+- A GitHub Actions job that tests all six repository front-ends, plus the
+  `make test-apps` shortcut for local pipeline runs.
 - **100 new entries** across six new domains, bringing the book to 207 entries
   in 16 domains: `chemistry` (18), `biology` (17), `silicon` (13), `ship` (18),
   `computers` (18) and `quantum` (16).
@@ -74,6 +79,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `.github/workflows/android-emulator.yml` running them on an API 26/31/35 emulator matrix.
 
 ### Changed
+- Field-test validation now checks dates, canonical entry references, report
+  IDs, photo paths, and reviewed-report support for every `field-tested` entry.
+  Reviewed reports require a public reviewer and date; verification promotion
+  requires a valid, reviewed report. Resetting an entry to draft clears stale
+  review and test metadata.
+- Two unsupported `field-tested` labels were returned to draft and recorded
+  in the verification ledger. MCP v1/v2 tool schemas and dispatch are
+  compatible, and MCP domain filters now apply during ranking.
 - The Android smoke test scrolls the home list to the domains section before
   asserting it is on screen; the section starts below the fold, so the old
   assertion failed on every emulator although the screen was correct. The list

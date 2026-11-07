@@ -63,9 +63,9 @@ and blacksmithing. It is made by pyrolysis — burning wood with limited oxygen.
 
 ## Verification
 
-- **Status:** field-tested
-- **Date:** 2026-03-22
-- **Location:** Missouri, USA
+- **Status:** draft
+
+No reviewed field-test report currently supports a field-tested status.
 
 ## Sources
 

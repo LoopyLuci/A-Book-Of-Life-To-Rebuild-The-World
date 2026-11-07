@@ -28,11 +28,15 @@
 | computers | TBD | 2026 |
 | quantum | TBD | 2026 |
 
-## Verifiers
+## Field-test report contributors
 
-| Name | Domain(s) | Field tests |
-|------|-----------|-------------|
-| Community Team Alpha | survival, health | 2 |
+| Name | Domain(s) | Reports in repository |
+|------|-----------|-----------------------|
+| Community Team Alpha | survival | 1 pending review |
+
+The Q1 2026 finance report also records funding for a water-purification
+test, but its report is not present in this repository snapshot. Repository
+report counts do not establish whether an unreported test occurred.
 
 ## Emeritus
 

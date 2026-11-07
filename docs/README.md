@@ -3,10 +3,12 @@
 | Document | What is in it |
 |----------|---------------|
 | [DISCLAIMER.md](DISCLAIMER.md) | Warnings, limits of liability, and how to use the book safely. **Read this first.** |
+| [START-HERE.md](START-HERE.md) | A first-visit guide and non-procedural reading paths. |
 | [INSTALL.md](INSTALL.md) | Install, update, verify and remove the project; the offline wheelhouse; troubleshooting. |
 | [APPS.md](APPS.md) | The six front-ends, what each guarantees, how to run and test them, how to add a seventh. |
 | [LOCAL-PIPELINE.md](LOCAL-PIPELINE.md) | The on-device CI/CD pipeline: stages, flags, flakes, cache, telemetry, diagnostics. |
 | [ENTRIES.md](ENTRIES.md) | How to write an entry: structure, sidecar fields, safety levels, difficulty, sources, verification, style. |
+| [FIELD-TESTS.md](FIELD-TESTS.md) | How to test and report responsibly, protect privacy, and review field evidence. |
 | [TOPICS.md](TOPICS.md) | How a new subject area is proposed and turned into a published domain. |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Repository layout, the entry lifecycle, the build pipeline, the apps, the SDKs, federation. |
 | [RELEASES.md](RELEASES.md) | Versioning, tagging, the release workflows, the artifacts, the in-app update path, rollback. |
