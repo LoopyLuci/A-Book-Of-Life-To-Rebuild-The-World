@@ -64,9 +64,8 @@ class AppSmokeTest {
     @Test
     fun opening_an_entry_renders_the_reader() {
         awaitText("A Book Of Life To Rebuild The World")
-        rule.onNodeWithTag("home_list").performScrollToNode(
-            hasText("Charcoal Production", substring = true),
-        )
+        rule.onNodeWithText("Search").performClick()
+        rule.onNodeWithTag("search_input").performTextInput("charcoal production")
         awaitText("Charcoal Production")
 
         rule.onAllNodesWithText("Charcoal Production")[0].performClick()
