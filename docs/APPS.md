@@ -90,6 +90,12 @@ Each app has its own suite, and the local pipeline runs all six as one
 | `powershell` | `pwsh -NoProfile -File apps/powershell/tests/run-tests.ps1` | Hand-written YAML parser, corpus, search, i18n, version comparison, interaction |
 | `shell` | `sh apps/shell/tests/run-tests.sh` | awk-based YAML parser, corpus cache, search, i18n, renderer, self test |
 
+From the repository root, run `python scripts/local_pipeline.py --stage apps`
+to run the app suites supported by the local toolchains; `make test-apps` is a
+convenience alias where `make` is installed. GitHub CI runs all six app suites
+on its dedicated reader job. A local missing toolchain is reported as
+uncovered; it is not evidence that the corresponding reader passed.
+
 A missing toolchain is not a failure: the `apps` stage tests the apps the
 machine can build and reports which surfaces it covered. The summary line and
 `logs/local_pipeline/summary.txt` name the commands that actually ran.

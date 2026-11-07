@@ -40,10 +40,8 @@ sources:
   license: CC-BY-SA-4.0
   language: zh
 verification:
-  status: field-tested
-  tested_by: Community Team Alpha
-  date: '2026-03-15'
-  location: Arizona, USA
+  status: draft
+  notes: Reset to draft because no matching validated field-test report exists in the repository; re-promotion requires recovering and validating the report.
 links:
 - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production

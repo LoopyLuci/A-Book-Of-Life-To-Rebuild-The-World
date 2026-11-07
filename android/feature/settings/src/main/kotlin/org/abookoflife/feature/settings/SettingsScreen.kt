@@ -53,6 +53,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
@@ -63,11 +64,13 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import java.io.File
 import kotlinx.coroutines.launch
 import org.abookoflife.core.data.update.ReleaseInfo
+import org.abookoflife.core.data.update.ApkInstaller
 import org.abookoflife.core.designsystem.R
 import org.abookoflife.core.designsystem.theme.LocalDarkTheme
 import org.abookoflife.core.designsystem.theme.palettePrimaryColor
 import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
+import org.abookoflife.core.model.UpdatePolicy
 
 @Composable
 fun SettingsRoute(
@@ -84,6 +87,7 @@ fun SettingsRoute(
         onFontScaleChange = viewModel::setFontScale,
         onSerifChange = viewModel::setSerif,
         onReindex = viewModel::reindex,
+        onUpdatePolicyChange = viewModel::setUpdatePolicy,
         onCheckForUpdate = viewModel::checkForUpdate,
         onDownloadUpdate = viewModel::downloadUpdate,
         onCancelUpdate = viewModel::cancelUpdate,
@@ -110,6 +114,7 @@ fun SettingsScreen(
     onFontScaleChange: (Float) -> Unit,
     onSerifChange: (Boolean) -> Unit,
     onReindex: () -> Unit,
+    onUpdatePolicyChange: (UpdatePolicy) -> Unit,
     onCheckForUpdate: () -> Unit,
     onDownloadUpdate: (ReleaseInfo) -> Unit,
     onCancelUpdate: () -> Unit,
@@ -123,7 +128,10 @@ fun SettingsScreen(
     val snackbarHostState = remember { SnackbarHostState() }
     val reindexDoneMessage = stringResource(R.string.settings_reindex_done)
     val shareFailedMessage = stringResource(R.string.settings_share_apk_failed)
+    val updateNotificationPermissionMessage =
+        stringResource(R.string.settings_update_notification_permission)
     var exporting by remember { mutableStateOf(false) }
+    var pendingUpdatePolicy by remember { mutableStateOf<UpdatePolicy?>(null) }
 
     LaunchedEffect(state.reindexTick) {
         if (state.reindexTick > 0) {
@@ -167,6 +175,35 @@ fun SettingsScreen(
                     context.getString(R.string.settings_export_apk_permission),
                 )
             }
+        }
+    }
+
+    val updateNotificationPermissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        val requestedPolicy = pendingUpdatePolicy
+        pendingUpdatePolicy = null
+        if (granted && requestedPolicy != null) {
+            onUpdatePolicyChange(requestedPolicy)
+        } else if (requestedPolicy != null) {
+            scope.launch {
+                snackbarHostState.showSnackbar(updateNotificationPermissionMessage)
+            }
+        }
+    }
+
+    val selectUpdatePolicy: (UpdatePolicy) -> Unit = { policy ->
+        if (policy == UpdatePolicy.MANUAL ||
+            Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
+            ContextCompat.checkSelfPermission(
+                context,
+                Manifest.permission.POST_NOTIFICATIONS,
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            onUpdatePolicyChange(policy)
+        } else {
+            pendingUpdatePolicy = policy
+            updateNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
         }
     }
 
@@ -313,6 +350,39 @@ fun SettingsScreen(
 
             SectionLabel(stringResource(R.string.settings_updates))
 
+            Text(
+                text = stringResource(R.string.settings_update_policy),
+                style = MaterialTheme.typography.titleSmall,
+            )
+            UpdatePolicyOption(
+                testTag = "update_policy_manual",
+                label = stringResource(R.string.settings_update_policy_manual),
+                description = stringResource(R.string.settings_update_policy_manual_desc),
+                selected = state.settings.updatePolicy == UpdatePolicy.MANUAL,
+                onSelect = { selectUpdatePolicy(UpdatePolicy.MANUAL) },
+            )
+            UpdatePolicyOption(
+                testTag = "update_policy_auto_check",
+                label = stringResource(R.string.settings_update_policy_check),
+                description = stringResource(R.string.settings_update_policy_check_desc),
+                selected = state.settings.updatePolicy == UpdatePolicy.AUTO_CHECK,
+                onSelect = { selectUpdatePolicy(UpdatePolicy.AUTO_CHECK) },
+            )
+            UpdatePolicyOption(
+                testTag = "update_policy_auto_download",
+                label = stringResource(R.string.settings_update_policy_download),
+                description = stringResource(R.string.settings_update_policy_download_desc),
+                selected = state.settings.updatePolicy == UpdatePolicy.AUTO_DOWNLOAD,
+                onSelect = { selectUpdatePolicy(UpdatePolicy.AUTO_DOWNLOAD) },
+            )
+            UpdatePolicyOption(
+                testTag = "update_policy_auto_install",
+                label = stringResource(R.string.settings_update_policy_install),
+                description = stringResource(R.string.settings_update_policy_install_desc),
+                selected = state.settings.updatePolicy == UpdatePolicy.AUTO_DOWNLOAD_AND_INSTALL,
+                onSelect = { selectUpdatePolicy(UpdatePolicy.AUTO_DOWNLOAD_AND_INSTALL) },
+            )
+
             when (val update = state.updateState) {
                 UpdateState.Idle -> {
                     ActionRow(
@@ -406,8 +476,22 @@ fun SettingsScreen(
                     )
                     Button(
                         onClick = {
-                            if (!installPackage(update.apk)) {
-                                requestInstallPermission()
+                            if (!ApkInstaller.isValidUpdate(context, update.apk)) {
+                                scope.launch {
+                                    snackbarHostState.showSnackbar(
+                                        context.getString(R.string.settings_update_invalid_package),
+                                    )
+                                }
+                            } else if (!installPackage(update.apk)) {
+                                if (!ApkInstaller.canInstall(context)) {
+                                    requestInstallPermission()
+                                } else {
+                                    scope.launch {
+                                        snackbarHostState.showSnackbar(
+                                            context.getString(R.string.settings_update_installer_failed),
+                                        )
+                                    }
+                                }
                             }
                         },
                     ) {
@@ -486,6 +570,34 @@ private fun ThemeOption(label: String, selected: Boolean, onSelect: () -> Unit) 
     ) {
         RadioButton(selected = selected, onClick = null)
         Text(text = label, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+private fun UpdatePolicyOption(
+    testTag: String,
+    label: String,
+    description: String,
+    selected: Boolean,
+    onSelect: () -> Unit,
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .selectable(selected = selected, role = Role.RadioButton, onClick = onSelect)
+            .testTag(testTag)
+            .padding(vertical = 4.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            RadioButton(selected = selected, onClick = null)
+            Text(text = label, style = MaterialTheme.typography.bodyLarge)
+        }
+        Text(
+            text = description,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(start = 48.dp),
+        )
     }
 }
 

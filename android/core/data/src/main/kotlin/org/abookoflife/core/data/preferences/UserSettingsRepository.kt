@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
+import org.abookoflife.core.model.UpdatePolicy
 import org.abookoflife.core.model.UserSettings
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -26,6 +27,7 @@ interface UserSettingsRepository {
     suspend fun setPalette(palette: ColorPalette)
     suspend fun setFontScale(scale: Float)
     suspend fun setSerif(enabled: Boolean)
+    suspend fun setUpdatePolicy(policy: UpdatePolicy)
 }
 
 @Singleton
@@ -42,6 +44,7 @@ class DefaultUserSettingsRepository @Inject constructor(
             palette = ColorPalette.fromId(prefs[KEY_PALETTE]),
             fontScale = prefs[KEY_FONT_SCALE] ?: 1.0f,
             serif = prefs[KEY_SERIF] ?: false,
+            updatePolicy = UpdatePolicy.fromId(prefs[KEY_UPDATE_POLICY]),
         )
     }
 
@@ -65,11 +68,16 @@ class DefaultUserSettingsRepository @Inject constructor(
         dataStore.edit { it[KEY_SERIF] = enabled }
     }
 
+    override suspend fun setUpdatePolicy(policy: UpdatePolicy) {
+        dataStore.edit { it[KEY_UPDATE_POLICY] = policy.name }
+    }
+
     private companion object {
         val KEY_THEME_MODE = stringPreferencesKey("theme_mode")
         val KEY_DYNAMIC_COLOR = booleanPreferencesKey("dynamic_color")
         val KEY_PALETTE = stringPreferencesKey("color_palette")
         val KEY_FONT_SCALE = floatPreferencesKey("font_scale")
         val KEY_SERIF = booleanPreferencesKey("serif")
+        val KEY_UPDATE_POLICY = stringPreferencesKey("update_policy")
     }
 }

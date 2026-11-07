@@ -8,6 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import java.io.File
 import javax.inject.Inject
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -18,11 +19,14 @@ import org.abookoflife.core.data.preferences.UserSettingsRepository
 import org.abookoflife.core.data.repository.AppUpdateRepository
 import org.abookoflife.core.data.repository.KnowledgeRepository
 import org.abookoflife.core.data.update.ApkInstaller
+import org.abookoflife.core.data.update.AutoUpdateScheduler
 import org.abookoflife.core.data.update.DownloadStatus
 import org.abookoflife.core.data.update.ReleaseInfo
 import org.abookoflife.core.data.update.UpdateCheckResult
+import org.abookoflife.core.data.update.VersionCompare
 import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
+import org.abookoflife.core.model.UpdatePolicy
 import org.abookoflife.core.model.UserSettings
 
 /** What the app knows about a newer published release. */
@@ -63,6 +67,7 @@ class SettingsViewModel @Inject constructor(
     private val settingsRepository: UserSettingsRepository,
     private val knowledgeRepository: KnowledgeRepository,
     private val updateRepository: AppUpdateRepository,
+    private val autoUpdateScheduler: AutoUpdateScheduler,
 ) : ViewModel() {
 
     private val reindexState = MutableStateFlow(ReindexState())
@@ -99,6 +104,13 @@ class SettingsViewModel @Inject constructor(
 
     fun setSerif(enabled: Boolean) = launch { settingsRepository.setSerif(enabled) }
 
+    fun setUpdatePolicy(policy: UpdatePolicy) {
+        viewModelScope.launch {
+            settingsRepository.setUpdatePolicy(policy)
+            autoUpdateScheduler.setPolicy(policy)
+        }
+    }
+
     fun reindex() {
         viewModelScope.launch {
             reindexState.value = ReindexState(running = true, completed = reindexState.value.completed)
@@ -127,8 +139,27 @@ class SettingsViewModel @Inject constructor(
     fun downloadUpdate(release: ReleaseInfo) {
         viewModelScope.launch {
             updateState.value = UpdateState.Downloading(0, release.tag)
-            val downloadId = updateRepository.startDownload(release)
-            pollDownload(downloadId, release.tag)
+            try {
+                val activeDownloadId = updateRepository.pendingDownloadId()
+                if (activeDownloadId != 0L) {
+                    if (updateRepository.pendingReleaseTag() == release.tag) {
+                        pollDownload(activeDownloadId, release.tag)
+                        return@launch
+                    }
+                    updateRepository.cancelDownload(activeDownloadId)
+                }
+                val downloadId = updateRepository.startDownload(
+                    release = release,
+                    installWhenDownloaded = true,
+                )
+                pollDownload(downloadId, release.tag)
+            } catch (cancelled: CancellationException) {
+                throw cancelled
+            } catch (error: Exception) {
+                updateState.value = UpdateState.Failed(
+                    error.message?.takeIf { it.isNotBlank() } ?: "Could not start the update download",
+                )
+            }
         }
     }
 
@@ -137,7 +168,22 @@ class SettingsViewModel @Inject constructor(
         val downloadId = updateRepository.pendingDownloadId()
         if (downloadId == 0L) return
         val tag = updateRepository.pendingReleaseTag()
-        viewModelScope.launch { pollDownload(downloadId, tag) }
+        if (!VersionCompare.isNewer(tag, updateRepository.currentVersion())) {
+            updateRepository.cancelDownload(downloadId)
+            updateState.value = UpdateState.Idle
+            return
+        }
+        viewModelScope.launch {
+            try {
+                pollDownload(downloadId, tag)
+            } catch (cancelled: CancellationException) {
+                throw cancelled
+            } catch (error: Exception) {
+                updateState.value = UpdateState.Failed(
+                    error.message?.takeIf { it.isNotBlank() } ?: "Could not read update download status",
+                )
+            }
+        }
     }
 
     /** Stops a running download and forgets it. */
@@ -160,10 +206,12 @@ class SettingsViewModel @Inject constructor(
 
                 is DownloadStatus.Completed -> {
                     val apk = updateRepository.downloadedPackage(downloadId)
-                    updateState.value = if (apk != null) {
+                    updateState.value = if (apk != null &&
+                        updateRepository.isValidUpdatePackage(apk)
+                    ) {
                         UpdateState.ReadyToInstall(releaseTag, apk)
                     } else {
-                        UpdateState.Failed("The downloaded package could not be read")
+                        UpdateState.Failed("The downloaded package could not be validated")
                     }
                     return
                 }

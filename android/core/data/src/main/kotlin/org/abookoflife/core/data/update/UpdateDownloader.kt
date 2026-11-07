@@ -96,7 +96,7 @@ internal class UpdateDownloader(private val context: Context) {
     }
 
     fun cancel(downloadId: Long) {
-        runCatching { manager.remove(downloadId) }
+        manager.remove(downloadId)
     }
 
     companion object {

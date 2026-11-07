@@ -147,6 +147,18 @@
 
     <!-- App updates -->
     <string name="settings_updates">App updates</string>
+    <string name="settings_update_policy">Update behavior</string>
+    <string name="settings_update_policy_manual">Manual (default)</string>
+    <string name="settings_update_policy_manual_desc">Only check or download when you ask.</string>
+    <string name="settings_update_policy_check">Automatically check</string>
+    <string name="settings_update_policy_check_desc">Check daily and notify you when a release is available.</string>
+    <string name="settings_update_policy_download">Automatically check and download</string>
+    <string name="settings_update_policy_download_desc">Download new releases in the background. Install when you choose.</string>
+    <string name="settings_update_policy_install">Automatically download and request install</string>
+    <string name="settings_update_policy_install_desc">Download in the background, then notify you to review Android’s install prompt. Android still requires your confirmation.</string>
+    <string name="settings_update_notification_permission">Allow notifications to enable automatic update options.</string>
+    <string name="settings_update_invalid_package">The downloaded package is not a valid update for this app.</string>
+    <string name="settings_update_installer_failed">Could not open the Android package installer.</string>
     <string name="settings_check_updates">Check for updates</string>
     <string name="settings_check_updates_desc">Look for a newer release of the app</string>
     <string name="settings_update_checking">Checking for updates…</string>

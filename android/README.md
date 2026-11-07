@@ -165,20 +165,30 @@ git tag v0.1.0-alpha && git push origin v0.1.0-alpha
 
 ## App updates from the settings screen
 
-The app can look for a newer published release and install it without leaving
-the device. Open **Settings → App updates** and choose **Check for updates**.
+The app can look for a newer published release and download it from
+**Settings → App updates**. Manual behavior is the default. Readers can choose
+to check daily, check and download automatically, or check/download and receive
+an install-request notification when the APK is ready.
 
 - The check reads the GitHub Releases API for the latest release of the
   project repository. The repository it checks is configured in
   `core/data/src/main/res/values/config.xml`; a fork that ships its own build
   changes those two values.
-- The package is fetched by the platform download service, so the transfer
-  continues in the background after the app is closed, and the reader can
-  watch the progress in the settings screen.
-- When the download finishes, the app hands the package to the Android
-  installer. **Android always asks the reader to confirm**, and the app never
-  installs anything silently. On some devices Android also asks the reader to
-  allow the app to install packages; the app links straight to that screen.
+- Automatic checks are scheduled daily when network connectivity is available,
+  subject to Android's background scheduling. Choosing an automatic mode also
+  triggers an initial check. On Android 13+, notification permission is
+  required so release and install-request alerts can be shown.
+- The package is fetched by Android's download service, so the transfer
+  continues while the app is closed. Automatic download-only mode waits for the
+  reader to start installation from Settings.
+- The install-request mode shows a notification when the APK has downloaded.
+  Tapping it opens Android's installer. **Android always asks the reader to
+  confirm**; an ordinary app cannot install a package silently. On some devices
+  Android also asks the reader to allow this app to install packages.
+- Before offering installation, the app verifies the package name, that its
+  version is newer than the installed version, and that its signing certificate
+  matches the installed app. Release download URLs must point to the configured
+  repository's GitHub release assets.
 - If the app is closed while the download runs, opening the settings screen
   picks the download up again.
 

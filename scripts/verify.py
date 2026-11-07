@@ -18,11 +18,18 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from jsonschema import Draft202012Validator, FormatChecker
+
+if __package__:
+    from .validate_field_tests import validate_photo_paths
+else:
+    from validate_field_tests import validate_photo_paths
 
 ROOT = Path(__file__).resolve().parent.parent
 SIDECARS_DIR = ROOT / "sidecars"
 FIELD_TESTS_DIR = ROOT / "field-tests"
 GOVERNANCE_DIR = ROOT / "governance"
+FIELD_TEST_SCHEMA_PATH = ROOT / "schemas" / "field-test.schema.json"
 
 
 class Status(str, Enum):  # noqa: UP042 - the string mixin is part of the API
@@ -122,7 +129,7 @@ def save_record(record: VerificationRecord) -> None:
     data["verification"] = payload
 
     with path.open("w", encoding="utf-8") as f:
-        yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True)
+        yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True, width=4096)
 
 
 # ---------------------------------------------------------------------------
@@ -166,11 +173,22 @@ def transition(
         if not field_test_id:
             raise ValueError("Field-test transition requires --field-test-id.")
         report = load_field_test(field_test_id)
+        validate_field_test_report(report)
         if report["entry_id"] != entry_id:
             raise ValueError("Field test entry_id does not match target entry.")
+        if report["verified"] is not True:
+            raise ValueError(
+                "Field-test report must be reviewed and set verified: true before promotion."
+            )
         record.tested_by = report["tester"]
         record.tested_date = report["date"]
         record.tested_location = report["location"]
+
+    if target is Status.DRAFT:
+        record.reviewers = []
+        record.tested_by = None
+        record.tested_date = None
+        record.tested_location = None
 
     event = VerificationEvent(
         entry_id=entry_id,
@@ -219,11 +237,45 @@ def load_ledger() -> list[dict[str, Any]]:
 # ---------------------------------------------------------------------------
 
 def load_field_test(field_test_id: str) -> dict[str, Any]:
-    path = FIELD_TESTS_DIR / f"{field_test_id}.yaml"
-    if not path.exists():
+    paths = sorted(
+        path
+        for path in FIELD_TESTS_DIR.rglob("*.yaml")
+        if path.stem == field_test_id
+    )
+    if not paths:
         raise ValueError(f"Field test not found: {field_test_id}")
-    with path.open("r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+    if len(paths) > 1:
+        raise ValueError(f"Multiple field tests found with id: {field_test_id}")
+    with paths[0].open("r", encoding="utf-8") as f:
+        report = yaml.safe_load(f)
+    if not isinstance(report, dict):
+        raise ValueError(f"Field test must be a YAML object: {paths[0]}")
+    if report.get("id") != field_test_id:
+        raise ValueError(f"Field-test id does not match filename: {paths[0]}")
+    return report
+
+
+def validate_field_test_report(report: dict[str, Any]) -> None:
+    """Raise when a report does not satisfy the publication schema."""
+    with FIELD_TEST_SCHEMA_PATH.open("r", encoding="utf-8") as f:
+        schema = json.load(f)
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    errors = sorted(validator.iter_errors(report), key=lambda error: error.json_path)
+    errors.extend(
+        validate_photo_paths(
+            report.get("photos", []),
+            FIELD_TESTS_DIR.resolve().parent,
+            f"field-test report {report.get('id', '')}",
+        )
+    )
+    if errors:
+        details = "; ".join(
+            f"{error.json_path}: {error.message}"
+            if hasattr(error, "json_path")
+            else str(error)
+            for error in errors
+        )
+        raise ValueError(f"Invalid field-test report: {details}")
 
 
 def list_field_tests() -> list[dict[str, Any]]:
