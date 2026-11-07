@@ -1,12 +1,14 @@
 package org.abookoflife.app
 
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performTextInput
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -72,5 +74,23 @@ class AppSmokeTest {
 
         awaitText("Time to complete")
         rule.onNodeWithText("Time to complete", substring = true).assertIsDisplayed()
+    }
+
+    @Test
+    fun update_settings_offer_manual_and_automatic_policies() {
+        awaitText("A Book Of Life To Rebuild The World")
+        rule.onNodeWithText("Settings").performClick()
+        awaitText("Update behavior")
+        rule.onNodeWithText("Update behavior").performScrollTo()
+
+        rule.onNodeWithTag("update_policy_manual").assertIsSelected()
+        rule.onNodeWithText("Manual (default)").performScrollTo().assertIsDisplayed()
+        rule.onNodeWithText("Automatically check").performScrollTo().assertIsDisplayed()
+        rule.onNodeWithText("Automatically check and download")
+            .performScrollTo()
+            .assertIsDisplayed()
+        rule.onNodeWithText("Automatically download and request install")
+            .performScrollTo()
+            .assertIsDisplayed()
     }
 }
