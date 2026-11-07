@@ -51,7 +51,7 @@ jobs:
           components: clippy
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: apps/web-rails/.ruby-version
+          ruby-version: .ruby-version
           bundler-cache: true
           working-directory: apps/web-rails
       - name: Install native desktop build libraries
