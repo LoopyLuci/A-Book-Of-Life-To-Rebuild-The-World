@@ -33,6 +33,56 @@ jobs:
             build/index.db
             build/dashboard.html
 
+  application-readers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/web-ts/package-lock.json
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: apps/web-rails/.ruby-version
+          bundler-cache: true
+          working-directory: apps/web-rails
+      - uses: microsoft/setup-powershell@v2
+      - name: Install native desktop build libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libasound2-dev libgl1-mesa-dev libwayland-dev libx11-dev \
+            libxcursor-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-0 \
+            libxrandr-dev
+      - name: Install Python test runner
+        run: python -m pip install pytest
+      - name: Install TypeScript app dependencies
+        run: npm ci --prefix apps/web-ts
+      - name: Test Python desktop reader
+        run: python -m pytest apps/desktop-python/tests -q
+      - name: Test and lint Rust desktop reader
+        run: |
+          cargo test --manifest-path apps/desktop-rust/Cargo.toml
+          cargo clippy --manifest-path apps/desktop-rust/Cargo.toml --all-targets -- -D warnings
+      - name: Test TypeScript web reader
+        run: |
+          npm --prefix apps/web-ts run test
+          npm --prefix apps/web-ts run build
+      - name: Test Rails web reader
+        run: ruby -Capps/web-rails bin/rails test
+      - name: Test PowerShell terminal reader
+        run: pwsh -NoProfile -File apps/powershell/tests/run-tests.ps1
+      - name: Test POSIX shell reader
+        run: sh apps/shell/tests/run-tests.sh
+
   markdown-lint:
     runs-on: ubuntu-latest
     steps:

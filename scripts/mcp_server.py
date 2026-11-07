@@ -10,12 +10,23 @@ import json
 import sqlite3
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Annotated, Any, Literal
 
 import yaml
-from mcp.server import Server
-from mcp.server.stdio import stdio_server
-from mcp.types import TextContent, Tool
+from pydantic import Field
+
+try:
+    from mcp.server import Server
+    from mcp.server.stdio import stdio_server
+    from mcp.types import TextContent, Tool
+    MCP_V1 = hasattr(Server, "list_tools")
+except ImportError:  # pragma: no cover - compatibility with mcp v2+
+    MCP_V1 = False
+
+if not MCP_V1:
+    from mcp.server.mcpserver import MCPServer
+    from mcp.server.stdio import stdio_server
+    from mcp.types import TextContent, Tool
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "build" / "index.db"
@@ -28,7 +39,10 @@ from search import search as hybrid_search  # noqa: E402
 SERVER_NAME = "a-book-of-life"
 SERVER_VERSION = "1.0.0"
 
-app = Server(SERVER_NAME)
+if MCP_V1:
+    app = Server(SERVER_NAME)
+else:
+    app = MCPServer(SERVER_NAME, version=SERVER_VERSION)
 
 
 # ---------------------------------------------------------------------------
@@ -67,8 +81,7 @@ def _read_body(entry_id: str) -> str | None:
 # Tool registry
 # ---------------------------------------------------------------------------
 
-@app.list_tools()
-async def list_tools() -> list[Tool]:
+def _tool_specs() -> list[Tool]:
     return [
         Tool(
             name="abook_search",
@@ -136,12 +149,7 @@ async def list_tools() -> list[Tool]:
     ]
 
 
-# ---------------------------------------------------------------------------
-# Tool handlers
-# ---------------------------------------------------------------------------
-
-@app.call_tool()
-async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+async def _dispatch_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
     try:
         if name == "abook_search":
             return _tool_search(arguments)
@@ -160,9 +168,72 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
         return [TextContent(type="text", text=json.dumps({"error": str(exc)}))]
 
 
+if MCP_V1:
+    @app.list_tools()
+    async def list_tools() -> list[Tool]:
+        return _tool_specs()
+
+    @app.call_tool()
+    async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+        return await _dispatch_tool(name, arguments)
+else:
+    SearchDomain = Literal[
+        "survival", "agriculture", "materials", "energy", "construction",
+        "health", "knowledge", "society", "water", "transport", "chemistry",
+        "biology", "silicon", "ship", "computers", "quantum",
+    ]
+
+    async def _search_tool(
+        query: Annotated[str, Field(min_length=1, description="Search query.")],
+        domain: SearchDomain | None = None,
+        limit: Annotated[int, Field(ge=1, le=50)] = 10,
+    ) -> str:
+        return _tool_search({"query": query, "domain": domain, "limit": limit})[0].text
+
+    async def _get_tool(entry_id: str) -> str:
+        return _tool_get({"entry_id": entry_id})[0].text
+
+    async def _linked_tool(entry_id: str) -> str:
+        return _tool_linked({"entry_id": entry_id})[0].text
+
+    async def _verify_tool(entry_id: str) -> str:
+        return _tool_verify({"entry_id": entry_id})[0].text
+
+    async def _list_domains_tool() -> str:
+        return _tool_list_domains()[0].text
+
+    async def _stats_tool() -> str:
+        return _tool_stats()[0].text
+
+    v2_handlers = {
+        "abook_search": _search_tool,
+        "abook_get": _get_tool,
+        "abook_linked": _linked_tool,
+        "abook_verify": _verify_tool,
+        "abook_list_domains": _list_domains_tool,
+        "abook_stats": _stats_tool,
+    }
+    for spec in _tool_specs():
+        app.add_tool(
+            v2_handlers[spec.name],
+            name=spec.name,
+            description=spec.description,
+        )
+
+    async def list_tools() -> list[Tool]:
+        return _tool_specs()
+
+    async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+        return await _dispatch_tool(name, arguments)
+
+
 def _tool_search(args: dict[str, Any]) -> list[TextContent]:
-    results = hybrid_search(args["query"], limit=args.get("limit", 10))
     domain = args.get("domain")
+    results = hybrid_search(
+        args["query"],
+        limit=args.get("limit", 10),
+        domain=domain,
+    )
     if domain:
         results = [r for r in results if r["domain"] == domain]
     return [TextContent(type="text", text=json.dumps({"results": results}, indent=2))]
@@ -297,8 +368,11 @@ def _tool_stats() -> list[TextContent]:
 # ---------------------------------------------------------------------------
 
 async def main() -> None:
-    async with stdio_server() as (read, write):
-        await app.run(read, write, app.create_initialization_options())
+    if MCP_V1:
+        async with stdio_server() as (read, write):
+            await app.run(read, write, app.create_initialization_options())
+    else:
+        await app.run_stdio_async()
 
 
 if __name__ == "__main__":
