@@ -64,6 +64,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import java.io.File
 import kotlinx.coroutines.launch
 import org.abookoflife.core.data.update.ReleaseInfo
+import org.abookoflife.core.data.update.ApkInstaller
 import org.abookoflife.core.designsystem.R
 import org.abookoflife.core.designsystem.theme.LocalDarkTheme
 import org.abookoflife.core.designsystem.theme.palettePrimaryColor
@@ -475,8 +476,22 @@ fun SettingsScreen(
                     )
                     Button(
                         onClick = {
-                            if (!installPackage(update.apk)) {
-                                requestInstallPermission()
+                            if (!ApkInstaller.isValidUpdate(context, update.apk)) {
+                                scope.launch {
+                                    snackbarHostState.showSnackbar(
+                                        context.getString(R.string.settings_update_invalid_package),
+                                    )
+                                }
+                            } else if (!installPackage(update.apk)) {
+                                if (!ApkInstaller.canInstall(context)) {
+                                    requestInstallPermission()
+                                } else {
+                                    scope.launch {
+                                        snackbarHostState.showSnackbar(
+                                            context.getString(R.string.settings_update_installer_failed),
+                                        )
+                                    }
+                                }
                             }
                         },
                     ) {

@@ -14,9 +14,17 @@ class UpdateDownloadReceiver : BroadcastReceiver() {
         )
         if (downloadId == 0L) return
 
+        val state = UpdateStateStore(context)
+        if (state.downloadId != downloadId) return
+
         val downloader = UpdateDownloader(context)
         val apk = downloader.downloadedFile(downloadId) ?: return
-        val state = UpdateStateStore(context)
+        if (!ApkInstaller.isValidUpdate(context, apk)) {
+            UpdateNotifications.invalidPackage(context)
+            downloader.cancel(downloadId)
+            state.clear()
+            return
+        }
         val installIntent = if (state.installWhenDownloaded) {
             if (ApkInstaller.canInstall(context)) {
                 ApkInstaller.installIntent(context, apk)

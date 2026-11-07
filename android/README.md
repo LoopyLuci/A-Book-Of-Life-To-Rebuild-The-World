@@ -185,6 +185,10 @@ an install-request notification when the APK is ready.
   Tapping it opens Android's installer. **Android always asks the reader to
   confirm**; an ordinary app cannot install a package silently. On some devices
   Android also asks the reader to allow this app to install packages.
+- Before offering installation, the app verifies the package name, that its
+  version is newer than the installed version, and that its signing certificate
+  matches the installed app. Release download URLs must point to the configured
+  repository's GitHub release assets.
 - If the app is closed while the download runs, opening the settings screen
   picks the download up again.
 

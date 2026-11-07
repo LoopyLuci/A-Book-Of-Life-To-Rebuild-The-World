@@ -20,4 +20,6 @@
     <string name="update_install_notification_text" translatable="false">Release %1$s is ready. Tap to review the installation request.</string>
     <string name="update_check_failed_notification_title" translatable="false">Automatic update check failed</string>
     <string name="update_check_failed_notification_text" translatable="false">Open Settings to retry the update check.</string>
+    <string name="update_invalid_notification_title" translatable="false">Update package rejected</string>
+    <string name="update_invalid_notification_text" translatable="false">The downloaded package did not match this app and was discarded.</string>
 </resources>

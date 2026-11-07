@@ -31,6 +31,9 @@ interface AppUpdateRepository {
     /** The downloaded package on disk, or null if it is not ready. */
     suspend fun downloadedPackage(downloadId: Long): File?
 
+    /** Whether the package belongs to this app, is newer, and matches its signer. */
+    fun isValidUpdatePackage(file: File): Boolean
+
     /** Stops a running download. */
     fun cancelDownload(downloadId: Long)
 

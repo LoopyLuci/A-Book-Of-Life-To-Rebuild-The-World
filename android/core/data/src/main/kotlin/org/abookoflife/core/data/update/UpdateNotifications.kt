@@ -81,26 +81,32 @@ internal object UpdateNotifications {
         return post(context, FAILED_NOTIFICATION_ID, notification)
     }
 
+    fun invalidPackage(context: Context): Boolean {
+        val intent = context.packageManager.getLaunchIntentForPackage(context.packageName)
+            ?: return false
+        val notification = NotificationCompat.Builder(context, channelId(context))
+            .setSmallIcon(android.R.drawable.stat_notify_error)
+            .setContentTitle(context.getString(R.string.update_invalid_notification_title))
+            .setContentText(context.getString(R.string.update_invalid_notification_text))
+            .setContentIntent(pendingActivity(context, intent, INVALID_NOTIFICATION_ID))
+            .setAutoCancel(true)
+            .build()
+        return post(context, INVALID_NOTIFICATION_ID, notification)
+    }
+
     private fun channelId(context: Context): String {
         val id = context.getString(R.string.update_channel_id)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                id,
-                context.getString(R.string.update_channel_name),
-                NotificationManager.IMPORTANCE_DEFAULT,
-            )
-            context.getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
-        }
+        val channel = NotificationChannel(
+            id,
+            context.getString(R.string.update_channel_name),
+            NotificationManager.IMPORTANCE_DEFAULT,
+        )
+        context.getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
         return id
     }
 
     private fun pendingActivity(context: Context, intent: Intent, requestCode: Int): PendingIntent {
-        val flags = PendingIntent.FLAG_UPDATE_CURRENT or
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                PendingIntent.FLAG_IMMUTABLE
-            } else {
-                0
-            }
+        val flags = PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         return PendingIntent.getActivity(context, requestCode, intent, flags)
     }
 
@@ -136,4 +142,5 @@ internal object UpdateNotifications {
     private const val DOWNLOAD_NOTIFICATION_ID = 4201
     private const val INSTALL_NOTIFICATION_ID = 4202
     private const val FAILED_NOTIFICATION_ID = 4203
+    private const val INVALID_NOTIFICATION_ID = 4204
 }
