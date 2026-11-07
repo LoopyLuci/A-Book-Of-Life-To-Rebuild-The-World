@@ -157,6 +157,8 @@
     <string name="settings_update_policy_install">Automatically download and request install</string>
     <string name="settings_update_policy_install_desc">Download in the background, then notify you to review Android’s install prompt. Android still requires your confirmation.</string>
     <string name="settings_update_notification_permission">Allow notifications to enable automatic update options.</string>
+    <string name="settings_update_invalid_package">The downloaded package is not a valid update for this app.</string>
+    <string name="settings_update_installer_failed">Could not open the Android package installer.</string>
     <string name="settings_check_updates">Check for updates</string>
     <string name="settings_check_updates_desc">Look for a newer release of the app</string>
     <string name="settings_update_checking">Checking for updates…</string>

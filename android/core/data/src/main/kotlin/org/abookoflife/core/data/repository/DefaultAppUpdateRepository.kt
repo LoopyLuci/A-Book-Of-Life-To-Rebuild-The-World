@@ -9,6 +9,7 @@ import kotlinx.coroutines.withContext
 import org.abookoflife.core.common.AppDispatchers
 import org.abookoflife.core.data.R
 import org.abookoflife.core.data.update.DownloadStatus
+import org.abookoflife.core.data.update.ApkInstaller
 import org.abookoflife.core.data.update.GitHubReleaseClient
 import org.abookoflife.core.data.update.ReleaseInfo
 import org.abookoflife.core.data.update.UpdateCheckResult
@@ -16,6 +17,7 @@ import org.abookoflife.core.data.update.UpdateDownloader
 import org.abookoflife.core.data.update.UpdateStateStore
 import org.abookoflife.core.data.update.VersionCompare
 import java.io.File
+import java.net.URI
 
 @Singleton
 class DefaultAppUpdateRepository @Inject constructor(
@@ -50,6 +52,19 @@ class DefaultAppUpdateRepository @Inject constructor(
             }
             if (asset == null) {
                 return@withContext UpdateCheckResult.Failed("The latest release has no package")
+            }
+            val downloadUri = runCatching { URI(asset.browserDownloadUrl) }.getOrNull()
+            val expectedPath = "/${context.getString(R.string.update_repo_owner)}/" +
+                "${context.getString(R.string.update_repo_name)}/releases/download/"
+            if (downloadUri?.scheme != "https" ||
+                downloadUri.host != "github.com" ||
+                downloadUri.userInfo != null ||
+                downloadUri.port !in setOf(-1, 443) ||
+                downloadUri.path?.startsWith(expectedPath) != true
+            ) {
+                return@withContext UpdateCheckResult.Failed(
+                    "The release package URL is not from the configured GitHub repository",
+                )
             }
             val info = ReleaseInfo(
                 tag = release.tagName,
@@ -95,6 +110,9 @@ class DefaultAppUpdateRepository @Inject constructor(
 
     override suspend fun downloadedPackage(downloadId: Long): File? =
         withContext(dispatchers.io) { downloader.downloadedFile(downloadId) }
+
+    override fun isValidUpdatePackage(file: File): Boolean =
+        ApkInstaller.isValidUpdate(context, file)
 
     override fun cancelDownload(downloadId: Long) {
         downloader.cancel(downloadId)
