@@ -1,4 +1,4 @@
-.PHONY: help validate index bundle dashboard verify serve mcp rag test clean
+.PHONY: help validate index bundle dashboard verify serve mcp rag test test-apps clean
 
 help:
 	@echo "A Book Of Life To Rebuild The World"
@@ -12,6 +12,7 @@ help:
 	@echo "  make mcp         Run the MCP server (stdio)"
 	@echo "  make rag         Query the RAG layer"
 	@echo "  make test        Run the full test suite"
+	@echo "  make test-apps   Run all available front-end test suites"
 	@echo "  make clean       Remove build artifacts"
 
 validate:
@@ -42,6 +43,9 @@ rag:
 
 test:
 	pytest -v
+
+test-apps:
+	python scripts/local_pipeline.py --stage apps
 
 clean:
 	rm -rf build/ __pycache__/ .pytest_cache/ scripts/__pycache__/ tests/__pycache__/

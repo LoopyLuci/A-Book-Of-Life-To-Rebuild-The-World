@@ -41,7 +41,20 @@ Every entry is:
   into 16, and every entry carrying sources in more than one language so a
   reader can follow the trail without translating first.
 
+The verification dashboard is generated from the corpus and reports:
+
+```bash
+python scripts/dashboard.py
+```
+
+Open `build/dashboard.html` to review status, source and translation coverage,
+field reports, and high-risk review priorities. Field testing is voluntary
+and safety-led; read [docs/FIELD-TESTS.md](docs/FIELD-TESTS.md) before
+submitting a report.
+
 ## Install
+
+New readers can start with the [Start here guide](docs/START-HERE.md).
 
 The project installs itself, transactionally: a failed step restores the
 previous working environment.
@@ -232,10 +245,12 @@ structure is [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 | Document | What is in it |
 |----------|---------------|
 | [docs/DISCLAIMER.md](docs/DISCLAIMER.md) | Warnings, limits of liability, and how to use the book safely. **Read this first.** |
+| [docs/START-HERE.md](docs/START-HERE.md) | A first-visit guide and non-procedural reading paths. |
 | [docs/INSTALL.md](docs/INSTALL.md) | Install, update, verify, uninstall; the offline wheelhouse; troubleshooting. |
 | [docs/APPS.md](docs/APPS.md) | The six front-ends, what each guarantees, how to run and test them. |
 | [docs/LOCAL-PIPELINE.md](docs/LOCAL-PIPELINE.md) | The on-device CI/CD pipeline: stages, flags, flakes, cache, telemetry. |
 | [docs/ENTRIES.md](docs/ENTRIES.md) | How to write an entry: structure, safety levels, difficulty, sources, verification. |
+| [docs/FIELD-TESTS.md](docs/FIELD-TESTS.md) | Responsible field testing, report review, and privacy protections. |
 | [docs/TOPICS.md](docs/TOPICS.md) | How to propose a new domain, and how topics become entries. |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Repository layout, data flow, index, apps, SDKs, federation. |
 | [docs/RELEASES.md](docs/RELEASES.md) | Release process, tags, the APK, the offline bundle, signing. |

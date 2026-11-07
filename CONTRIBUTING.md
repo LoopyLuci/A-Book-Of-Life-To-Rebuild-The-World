@@ -18,7 +18,7 @@ contribute, from a one-line typo fix to a whole new domain.
 | Propose a new **entry** | Use the [New Entry issue template](.github/ISSUE_TEMPLATE/new-entry.md). |
 | Propose a new **topic** (a whole subject area) | Use the [New Topic issue template](.github/ISSUE_TEMPLATE/new-topic.md). |
 | Translate an entry | Follow the workflow in [`i18n/README.md`](i18n/README.md) and open a pull request. |
-| Report that you tried a procedure | Use the [Field Test template](.github/ISSUE_TEMPLATE/field-test.md). |
+| Report that you tried a procedure | Read [Field testing](docs/FIELD-TESTS.md), then use the [Field Test template](.github/ISSUE_TEMPLATE/field-test.md). |
 | Contribute code | Open a pull request. See [Code](#code) below. |
 
 Nothing here needs an invitation. The most useful contribution is usually a

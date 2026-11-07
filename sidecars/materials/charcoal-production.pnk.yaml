@@ -34,10 +34,8 @@ sources:
   license: CC-BY-SA-4.0
   language: zh
 verification:
-  status: field-tested
-  tested_by: Community Team Alpha
-  date: '2026-03-22'
-  location: Missouri, USA
+  status: draft
+  notes: Reset to draft because no matching validated field-test report exists in the repository; re-promotion requires recovering and validating the report.
 links:
 - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
 geographic_applicability:

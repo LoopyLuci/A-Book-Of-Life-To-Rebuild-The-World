@@ -18,11 +18,13 @@ import org.abookoflife.core.data.preferences.UserSettingsRepository
 import org.abookoflife.core.data.repository.AppUpdateRepository
 import org.abookoflife.core.data.repository.KnowledgeRepository
 import org.abookoflife.core.data.update.ApkInstaller
+import org.abookoflife.core.data.update.AutoUpdateScheduler
 import org.abookoflife.core.data.update.DownloadStatus
 import org.abookoflife.core.data.update.ReleaseInfo
 import org.abookoflife.core.data.update.UpdateCheckResult
 import org.abookoflife.core.model.ColorPalette
 import org.abookoflife.core.model.ThemeMode
+import org.abookoflife.core.model.UpdatePolicy
 import org.abookoflife.core.model.UserSettings
 
 /** What the app knows about a newer published release. */
@@ -63,6 +65,7 @@ class SettingsViewModel @Inject constructor(
     private val settingsRepository: UserSettingsRepository,
     private val knowledgeRepository: KnowledgeRepository,
     private val updateRepository: AppUpdateRepository,
+    private val autoUpdateScheduler: AutoUpdateScheduler,
 ) : ViewModel() {
 
     private val reindexState = MutableStateFlow(ReindexState())
@@ -99,6 +102,13 @@ class SettingsViewModel @Inject constructor(
 
     fun setSerif(enabled: Boolean) = launch { settingsRepository.setSerif(enabled) }
 
+    fun setUpdatePolicy(policy: UpdatePolicy) {
+        viewModelScope.launch {
+            settingsRepository.setUpdatePolicy(policy)
+            autoUpdateScheduler.setPolicy(policy)
+        }
+    }
+
     fun reindex() {
         viewModelScope.launch {
             reindexState.value = ReindexState(running = true, completed = reindexState.value.completed)
@@ -127,7 +137,10 @@ class SettingsViewModel @Inject constructor(
     fun downloadUpdate(release: ReleaseInfo) {
         viewModelScope.launch {
             updateState.value = UpdateState.Downloading(0, release.tag)
-            val downloadId = updateRepository.startDownload(release)
+            val downloadId = updateRepository.startDownload(
+                release = release,
+                installWhenDownloaded = true,
+            )
             pollDownload(downloadId, release.tag)
         }
     }

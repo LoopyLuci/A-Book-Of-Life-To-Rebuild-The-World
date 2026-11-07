@@ -5,14 +5,29 @@
   "type": "object",
   "required": ["id", "entry_id", "tester", "date", "location", "conditions", "results", "safety_observed"],
   "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": { "verified": { "const": true } },
+        "required": ["verified"]
+      },
+      "then": { "required": ["reviewed_by", "reviewed_at"] }
+    }
+  ],
   "properties": {
     "id": { "type": "string", "pattern": "^ft-[a-z0-9-]{3,64}$" },
     "entry_id": { "type": "string", "pattern": "^pnk:" },
     "tester": { "type": "string", "minLength": 2 },
-    "tester_contact": { "type": "string" },
+    "tester_contact": {
+      "type": "string",
+      "description": "Optional. Reports are public; do not include personal contact information."
+    },
     "date": { "type": "string", "format": "date" },
     "location": { "type": "string" },
-    "gps": { "type": "string" },
+    "gps": {
+      "type": "string",
+      "description": "Optional coarse location only. Do not publish precise coordinates that could identify a person or sensitive site."
+    },
     "conditions": {
       "type": "object",
       "properties": {
@@ -43,10 +58,24 @@
     "safety_notes": { "type": "string" },
     "photos": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string",
+        "description": "Publicly shareable paths only. Obtain consent and remove location metadata before submission."
+      }
     },
     "recommendations": { "type": "string" },
     "duration_minutes": { "type": "number" },
-    "verified": { "type": "boolean", "default": false }
+    "reviewed_by": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "description": "Public reviewer name, team, or pseudonym; do not include private contact details."
+    },
+    "reviewed_at": { "type": "string", "format": "date" },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether maintainers reviewed this report for publication; true requires reviewed_by and reviewed_at and does not certify the procedure."
+    }
   }
 }
