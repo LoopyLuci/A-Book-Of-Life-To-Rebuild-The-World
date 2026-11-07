@@ -5,11 +5,11 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
-    <!--
-      Used only when the reader asks the app to look for a newer release.
-      Everything else in the app works without a network connection.
-    -->
+    <!-- Used for manual or configured automatic release checks. -->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Auto-update modes use notifications to report releases and request installation. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <!--
       Required by Android 8 and later to hand a downloaded package to the

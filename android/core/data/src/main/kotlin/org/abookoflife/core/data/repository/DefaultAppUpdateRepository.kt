@@ -72,7 +72,10 @@ class DefaultAppUpdateRepository @Inject constructor(
         }
     }
 
-    override suspend fun startDownload(release: ReleaseInfo): Long =
+    override suspend fun startDownload(
+        release: ReleaseInfo,
+        installWhenDownloaded: Boolean,
+    ): Long =
         withContext(dispatchers.io) {
             val fileName = "abook-of-life-${release.tag.removePrefix("v")}.apk"
             val id = downloader.start(
@@ -83,6 +86,7 @@ class DefaultAppUpdateRepository @Inject constructor(
             )
             stateStore.downloadId = id
             stateStore.releaseTag = release.tag
+            stateStore.installWhenDownloaded = installWhenDownloaded
             id
         }
 

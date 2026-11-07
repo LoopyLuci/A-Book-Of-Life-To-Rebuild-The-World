@@ -8,8 +8,8 @@ import org.abookoflife.core.data.update.UpdateCheckResult
 /**
  * Finds newer published builds and downloads them in the background.
  *
- * The app is offline-first: nothing happens until a reader asks for it, and
- * every failure is reported rather than thrown.
+ * The app is offline-first: update checks run only when manually requested or
+ * when the reader explicitly enables an automatic update policy.
  */
 interface AppUpdateRepository {
 
@@ -20,7 +20,10 @@ interface AppUpdateRepository {
     suspend fun checkForUpdate(): UpdateCheckResult
 
     /** Starts a background download of the given release. */
-    suspend fun startDownload(release: ReleaseInfo): Long
+    suspend fun startDownload(
+        release: ReleaseInfo,
+        installWhenDownloaded: Boolean = true,
+    ): Long
 
     /** Progress of a running or finished download. */
     suspend fun downloadStatus(downloadId: Long): DownloadStatus
