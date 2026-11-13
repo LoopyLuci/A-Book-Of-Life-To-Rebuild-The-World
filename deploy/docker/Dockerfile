@@ -1,10 +1,10 @@
-FROM python:3.11-slim AS builder
+FROM python:3.15-slim AS builder
 
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-FROM python:3.11-slim
+FROM python:3.15-slim
 
 LABEL org.opencontainers.image.title="A Book Of Life To Rebuild The World — API"
 LABEL org.opencontainers.image.licenses="MIT"
