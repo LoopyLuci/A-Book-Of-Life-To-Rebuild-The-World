@@ -68,6 +68,13 @@ def main() -> int:
         changed.append("sdk/rust/Cargo.toml")
 
     if replace(
+        ROOT / "apps" / "desktop-rust" / "Cargo.toml",
+        r'version = "[^"]+"',
+        f'version = "{version}"',
+    ):
+        changed.append("apps/desktop-rust/Cargo.toml")
+
+    if replace(
         ROOT / "mobile" / "package.json",
         r'"version": "[^"]+"',
         f'"version": "{version}"',

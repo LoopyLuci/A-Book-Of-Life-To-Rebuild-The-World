@@ -1,0 +1,72 @@
+name: Desktop release
+
+# Builds the Windows reader for a v* tag and attaches it to the release, with a
+# .sha256 file the in-app updater checks the download against. The Android
+# release workflow attaches the APK to the same release. Whichever job finishes
+# first creates the release, so the order does not matter.
+#
+# The build runs on the maintainer's device. GitHub runs this workflow only when
+# someone starts it by hand, with the tag to release.
+#
+# Nothing here signs the Windows package. Until a code-signing certificate is
+# configured, Windows will show its "unknown publisher" warning.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to build, for example v0.2.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    env:
+      TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Test the desktop reader
+        run: cargo test --locked --manifest-path apps/desktop-rust/Cargo.toml
+
+      - name: Build the release binary
+        run: cargo build --locked --release --manifest-path apps/desktop-rust/Cargo.toml
+
+      - name: Stage the package and its checksum
+        shell: pwsh
+        run: |
+          $tag = $env:TAG
+          $package = "abook-desktop-$tag-windows-x64.exe"
+          Copy-Item -LiteralPath apps/desktop-rust/target/release/abook-desktop.exe -Destination $package
+          $digest = (Get-FileHash -Algorithm SHA256 -LiteralPath $package).Hash.ToLowerInvariant()
+          $checksumPath = Join-Path (Get-Location) "$package.sha256"
+          [System.IO.File]::WriteAllText($checksumPath, "$digest  $package`n")
+          Get-Content -LiteralPath $checksumPath
+
+      - name: Attach the package to the release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = $env:TAG
+          $package = "abook-desktop-$tag-windows-x64.exe"
+          gh release view $tag
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --title $tag --generate-notes
+            if ($LASTEXITCODE -ne 0) {
+              # The Android job may have created the release first.
+              gh release view $tag
+              if ($LASTEXITCODE -ne 0) { throw "Could not create or find release $tag." }
+            }
+          }
+          gh release upload $tag $package "$package.sha256" --clobber
+          if ($LASTEXITCODE -ne 0) { throw "Could not upload the Windows package." }

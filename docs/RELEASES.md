@@ -8,9 +8,12 @@ and what to do when one goes out wrong.
 ## What a release is
 
 A release is a git tag on `main` plus the artefacts published from that
-tag. The tag is both the trigger and the approval: pushing a tag that
-matches `v*` starts the release workflows, and nothing is published from
-a branch, a pull request or a schedule.
+tag. The tag is the approval. The release is built and signed on the
+maintainer's device through `scripts/local_pipeline.py`, and it is
+published only when the owner agrees. GitHub does not release on its own:
+the release workflows run only when someone starts them by hand, with the
+tag name, and nothing is published from a branch, a pull request or a
+schedule.
 
 What the tag publishes is real, immediately usable software:
 
@@ -52,6 +55,7 @@ sdk/python/pyproject.toml
 sdk/typescript/package.json
 sdk/rust/Cargo.toml
 mobile/package.json
+apps/desktop-rust/Cargo.toml
 ```
 
 Run it as `python scripts/bump_version.py 1.1.0`, or as
@@ -84,13 +88,16 @@ worth keeping it identical to the version in `manifest.toml`.
 
 ## The release workflows
 
-Two workflows trigger on a `v*` tag. Both run at the same time and both
-attach their artefacts to the release for that tag.
+Three workflows release a `v*` tag. All three are started by hand from the
+Actions tab, with the tag name as their `tag` input. They run at the same
+time, and each attaches its artefacts to the release for that tag, creating
+the release if it does not exist yet. They check out that tag, not the
+branch they were started from.
 
 ### The Android release
 
-`.github/workflows/android-release.yml` runs on a pushed `v*` tag with
-`contents: write` permission. It:
+`.github/workflows/android-release.yml` runs when someone starts it by hand
+with a `v*` tag, with `contents: write` permission. It:
 
 1. Checks out the repository, sets up JDK 17 and Python 3.11, and
    installs `PyYAML`.
@@ -125,10 +132,18 @@ keystore is configured, the Gradle build falls back to the debug signing
 key, which is useful for local verification and is never valid for
 distribution.
 
+### The Windows reader
+
+`.github/workflows/desktop-release.yml` runs when someone starts it by hand
+with a `v*` tag. It runs the reader's tests, builds `apps/desktop-rust` in release mode, and attaches
+`abook-desktop-<tag>-windows-x64.exe` with a `.sha256` file beside it. The
+in-app updater checks every download against that file. The package is not
+code-signed yet, so Windows shows an "unknown publisher" warning.
+
 ### The offline release
 
-`.github/workflows/release.yml` runs on a pushed `v*` tag with
-`contents: write` and `packages: write`. It has five jobs.
+`.github/workflows/release.yml` runs when someone starts it by hand with a
+`v*` tag, with `contents: write` and `packages: write`. It has five jobs.
 
 | Job | Does | Produces |
 |---|---|---|
@@ -226,6 +241,33 @@ by a person.
 A reader who prefers to install by hand can use "Save APK to Downloads"
 or "Share app" under Settings to pass the package to another device
 instead.
+
+## Updating the Windows reader
+
+The Windows reader shows its installed version and the newest published
+version under **About → Updates…**. The mode is chosen there and kept in the
+settings file.
+
+- **Manual (default):** nothing is checked or downloaded until the reader
+  presses **Check now**.
+- **Download automatically:** checks once a day and downloads a newer release
+  in the background. Installing waits until the reader presses **Install and
+  restart**.
+- **Download and install automatically:** checks and downloads in the
+  background, then asks before restarting. Choosing **Later** keeps the prompt
+  off until the next launch.
+
+Installing closes the reader. A small PowerShell helper waits for it to exit,
+copies the verified package over the program, and starts the new version. If
+the program's folder needs administrator rights, the reader does not elevate.
+It keeps the package and says where it is, so the reader can run it from there.
+
+The checksum comes from the same release as the package. It catches a damaged
+download, but it does not protect against a release that was itself tampered
+with. That needs a code-signing certificate, which is not configured yet.
+
+A fork can point the check at its own releases with the `ABOOK_UPDATE_REPO`
+environment variable.
 
 ## The release checklist
 

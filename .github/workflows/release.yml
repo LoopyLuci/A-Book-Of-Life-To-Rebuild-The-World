@@ -1,9 +1,14 @@
 name: Release
 
+# Release builds run on the maintainer's device. GitHub runs this workflow only
+# when someone starts it by hand, with the tag to release.
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to build, for example v0.2.0"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -14,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -31,6 +38,8 @@ jobs:
     needs: build-index
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -52,6 +61,8 @@ jobs:
     needs: build-index
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
         with:
@@ -66,7 +77,7 @@ jobs:
           file: deploy/docker/Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/api:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/api:${{ inputs.tag }}
             ghcr.io/${{ github.repository }}/api:latest
 
       - name: MCP image
@@ -76,7 +87,7 @@ jobs:
           file: deploy/docker/Dockerfile.mcp
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/mcp:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/mcp:${{ inputs.tag }}
             ghcr.io/${{ github.repository }}/mcp:latest
 
       - name: RAG image
@@ -86,15 +97,16 @@ jobs:
           file: deploy/docker/Dockerfile.rag
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/rag:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/rag:${{ inputs.tag }}
             ghcr.io/${{ github.repository }}/rag:latest
 
   build-pi-image:
     runs-on: ubuntu-latest
     needs: build-index
-    if: startsWith(github.ref, 'refs/tags/')
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
       - name: Install image build dependencies
         run: |
           sudo apt-get update
@@ -112,6 +124,8 @@ jobs:
     needs: [build-index, build-offline-bundle, build-images, build-pi-image]
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
@@ -124,7 +138,7 @@ jobs:
             artifacts/pi-image/*.img.xz
           generate_release_notes: true
           body: |
-            ## A Book Of Life To Rebuild The World — ${{ github.ref_name }}
+            ## A Book Of Life To Rebuild The World — ${{ inputs.tag }}
 
             ### Artifacts
             - `index.db` — hybrid search index (SQLite FTS5 + vectors)

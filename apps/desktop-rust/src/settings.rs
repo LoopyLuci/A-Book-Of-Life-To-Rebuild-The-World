@@ -6,6 +6,8 @@
 use std::fs;
 use std::path::PathBuf;
 
+use crate::update::UpdateMode;
+
 /// The reader's settings.
 #[derive(Debug, Clone)]
 pub struct Settings {
@@ -15,6 +17,8 @@ pub struct Settings {
     pub theme: String,
     /// The most recently read entries, newest last.
     pub recent: Vec<String>,
+    /// How updates are handled. Manual unless the reader chooses otherwise.
+    pub update_mode: UpdateMode,
 }
 
 impl Default for Settings {
@@ -23,6 +27,7 @@ impl Default for Settings {
             language: "en".to_string(),
             theme: "dark".to_string(),
             recent: Vec::new(),
+            update_mode: UpdateMode::default(),
         }
     }
 }
@@ -49,6 +54,7 @@ impl Settings {
             match key {
                 "language" => settings.language = value,
                 "theme" => settings.theme = value,
+                "update_mode" => settings.update_mode = UpdateMode::from_id(&value),
                 "recent" => {
                     settings.recent = value
                         .split(',')
@@ -70,9 +76,10 @@ impl Settings {
             fs::create_dir_all(parent).map_err(|e| format!("{}: {e}", parent.display()))?;
         }
         let body = format!(
-            "language = \"{}\"\ntheme = \"{}\"\nrecent = \"{}\"\n",
+            "language = \"{}\"\ntheme = \"{}\"\nupdate_mode = \"{}\"\nrecent = \"{}\"\n",
             self.language,
             self.theme,
+            self.update_mode.id(),
             self.recent.join(",")
         );
         fs::write(&path, body).map_err(|e| format!("{}: {e}", path.display()))
@@ -113,6 +120,7 @@ mod tests {
         assert_eq!(settings.language, "en");
         assert_eq!(settings.theme, "dark");
         assert!(settings.recent.is_empty());
+        assert_eq!(settings.update_mode, UpdateMode::Manual);
     }
 
     #[test]
