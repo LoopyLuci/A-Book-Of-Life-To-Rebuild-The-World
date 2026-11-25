@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- A Windows release: `desktop-release.yml` builds the native reader
+  (`apps/desktop-rust`) for each `v*` tag and attaches
+  `abook-desktop-<tag>-windows-x64.exe` with a `.sha256` file.
+- An update checker in the Windows reader, with an updates window under
+  About that shows the installed and the available version. Manual is the
+  default. The other modes download in the background, and the
+  download-and-install mode asks before it restarts. The package is checked
+  against its published SHA-256 before it is kept.
 - **100 new entries** across six new domains, bringing the book to 207 entries
   in 16 domains: `chemistry` (18), `biology` (17), `silicon` (13), `ship` (18),
   `computers` (18) and `quantum` (16).

@@ -73,7 +73,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            "abook-of-life-${GITHUB_REF_NAME}.apk" \
+          APK="abook-of-life-${GITHUB_REF_NAME}.apk"
+          if ! gh release create "$GITHUB_REF_NAME" "$APK" \
             --title "$GITHUB_REF_NAME" \
-            --generate-notes
+            --generate-notes; then
+            # The Windows release job may have created the release first.
+            # Attach the APK to that release instead.
+            gh release upload "$GITHUB_REF_NAME" "$APK" --clobber
+          fi

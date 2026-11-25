@@ -10,6 +10,7 @@
 //! - [`search`] ranks the entries.
 //! - [`i18n`] reads the interface strings.
 //! - [`settings`] keeps the reader's preferences.
+//! - [`update`] checks for, downloads and installs newer releases.
 //! - [`ui`] draws the window.
 
 #![forbid(unsafe_code)]
@@ -20,3 +21,4 @@ pub mod i18n;
 pub mod search;
 pub mod settings;
 pub mod ui;
+pub mod update;

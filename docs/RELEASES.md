@@ -52,6 +52,7 @@ sdk/python/pyproject.toml
 sdk/typescript/package.json
 sdk/rust/Cargo.toml
 mobile/package.json
+apps/desktop-rust/Cargo.toml
 ```
 
 Run it as `python scripts/bump_version.py 1.1.0`, or as
@@ -84,8 +85,9 @@ worth keeping it identical to the version in `manifest.toml`.
 
 ## The release workflows
 
-Two workflows trigger on a `v*` tag. Both run at the same time and both
-attach their artefacts to the release for that tag.
+Three workflows trigger on a `v*` tag. They run at the same time, and each
+attaches its artefacts to the release for that tag, creating the release if
+it does not exist yet.
 
 ### The Android release
 
@@ -121,6 +123,14 @@ The release build is minified with R8 and shrinks resources. If no release
 keystore is configured, the Gradle build falls back to the debug signing
 key, which is useful for local verification and is never valid for
 distribution.
+
+### The Windows reader
+
+`.github/workflows/desktop-release.yml` runs on a pushed `v*` tag. It runs
+the reader's tests, builds `apps/desktop-rust` in release mode, and attaches
+`abook-desktop-<tag>-windows-x64.exe` with a `.sha256` file beside it. The
+in-app updater checks every download against that file. The package is not
+code-signed yet, so Windows shows an "unknown publisher" warning.
 
 ### The offline release
 
@@ -221,6 +231,33 @@ by a person.
 A reader who prefers to install by hand can use "Save APK to Downloads"
 or "Share app" under Settings to pass the package to another device
 instead.
+
+## Updating the Windows reader
+
+The Windows reader shows its installed version and the newest published
+version under **About → Updates…**. The mode is chosen there and kept in the
+settings file.
+
+- **Manual (default):** nothing is checked or downloaded until the reader
+  presses **Check now**.
+- **Download automatically:** checks once a day and downloads a newer release
+  in the background. Installing waits until the reader presses **Install and
+  restart**.
+- **Download and install automatically:** checks and downloads in the
+  background, then asks before restarting. Choosing **Later** keeps the prompt
+  off until the next launch.
+
+Installing closes the reader. A small PowerShell helper waits for it to exit,
+copies the verified package over the program, and starts the new version. If
+the program's folder needs administrator rights, the reader does not elevate.
+It keeps the package and says where it is, so the reader can run it from there.
+
+The checksum comes from the same release as the package. It catches a damaged
+download, but it does not protect against a release that was itself tampered
+with. That needs a code-signing certificate, which is not configured yet.
+
+A fork can point the check at its own releases with the `ABOOK_UPDATE_REPO`
+environment variable.
 
 ## The release checklist
 
