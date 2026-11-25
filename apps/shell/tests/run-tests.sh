@@ -251,7 +251,8 @@ ABOOK_ROOT=$(_abook_find_root "$ABOOK_APP_DIR")
 _assert_ne "the repository is found" "" "$ABOOK_ROOT"
 
 _abook_load_manifest "$ABOOK_ROOT"
-_assert_eq "the version comes from the manifest" "0.1.0-alpha" "$ABOOK_VERSION"
+_manifest_version=$(sed -n 's/^version = "\(.*\)"/\1/p' "$ABOOK_ROOT/manifest.toml" | head -n 1)
+_assert_eq "the version comes from the manifest" "$_manifest_version" "$ABOOK_VERSION"
 
 _corpus_load "$ABOOK_ROOT"
 _assert_ok "the corpus loads" "$([ "$CORPUS_COUNT" -gt 0 ] && echo 0 || echo 1)"

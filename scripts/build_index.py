@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import sqlite3
 import sys
+import tomllib
 from pathlib import Path
 
 import yaml
@@ -21,6 +22,12 @@ INDEX_PATH = BUILD_DIR / "index.db"
 sys.path.insert(0, str(Path(__file__).parent))
 from chunker import chunk_markdown  # noqa: E402
 from embedder import embed_texts  # noqa: E402
+
+
+def project_version() -> str:
+    """The project version, read from the repository manifest."""
+    with (ROOT / "manifest.toml").open("rb") as handle:
+        return tomllib.load(handle)["project"]["version"]
 
 
 def load_entries():
@@ -142,7 +149,7 @@ def build() -> int:
         conn.commit()
 
         manifest = {
-            "kb_version": "0.1.0-alpha",
+            "kb_version": project_version(),
             "entry_count": len(entries),
             "chunk_count": len(all_chunks),
             "index_path": str(INDEX_PATH.relative_to(ROOT)),
