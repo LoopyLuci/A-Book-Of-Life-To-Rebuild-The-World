@@ -90,6 +90,21 @@ android {
         }
     }
 
+    // Two builds of the same app. "current" keeps the Android 8.0 floor. "legacy"
+    // lowers it to Android 5.1 for older devices, such as tablets that cannot be
+    // updated past Lollipop. Both use the same application ID and signing key.
+    flavorDimensions += "api"
+    productFlavors {
+        create("current") {
+            dimension = "api"
+            minSdk = 26
+        }
+        create("legacy") {
+            dimension = "api"
+            minSdk = 22
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17

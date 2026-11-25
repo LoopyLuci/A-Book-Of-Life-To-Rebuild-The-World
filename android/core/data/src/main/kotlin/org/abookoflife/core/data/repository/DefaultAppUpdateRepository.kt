@@ -1,6 +1,7 @@
 package org.abookoflife.core.data.repository
 
 import android.content.Context
+import android.os.Build
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -11,6 +12,7 @@ import org.abookoflife.core.data.R
 import org.abookoflife.core.data.update.DownloadStatus
 import org.abookoflife.core.data.update.ApkInstaller
 import org.abookoflife.core.data.update.GitHubReleaseClient
+import org.abookoflife.core.data.update.PackageSelector
 import org.abookoflife.core.data.update.ReleaseInfo
 import org.abookoflife.core.data.update.UpdateCheckResult
 import org.abookoflife.core.data.update.UpdateDownloader
@@ -46,12 +48,18 @@ class DefaultAppUpdateRepository @Inject constructor(
             if (release.draft) {
                 return@withContext UpdateCheckResult.Failed("No published release is available")
             }
+            // A release carries a current and a legacy package. Take the one this
+            // device can install, so an older tablet never gets a build it cannot run.
+            val sdkInt = Build.VERSION.SDK_INT
             val asset = release.assets.firstOrNull { asset ->
                 asset.name.endsWith(".apk", ignoreCase = true) &&
-                    asset.browserDownloadUrl.isNotBlank()
+                    asset.browserDownloadUrl.isNotBlank() &&
+                    PackageSelector.matchesDevice(asset.name, sdkInt)
             }
             if (asset == null) {
-                return@withContext UpdateCheckResult.Failed("The latest release has no package")
+                return@withContext UpdateCheckResult.Failed(
+                    "The latest release has no package for Android API $sdkInt",
+                )
             }
             val downloadUri = runCatching { URI(asset.browserDownloadUrl) }.getOrNull()
             val expectedPath = "/${context.getString(R.string.update_repo_owner)}/" +

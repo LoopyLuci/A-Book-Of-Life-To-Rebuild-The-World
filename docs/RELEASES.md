@@ -109,11 +109,14 @@ with a `v*` tag, with `contents: write` permission. It:
    temporary `release.jks`. If the secret is not set, the step fails with
    an explicit error rather than silently building an unsigned package.
 4. Runs the JVM unit tests with `./gradlew test`.
-5. Assembles the release APK with `./gradlew assembleRelease`, passing the
-   keystore location and the three credentials.
-6. Stages the artefact as `abook-of-life-<tag>.apk`.
-7. Creates the GitHub release with `gh release create`, attaching that
-   APK and generating the release notes.
+5. Assembles two release APKs with `./gradlew assembleCurrentRelease
+   assembleLegacyRelease`, passing the keystore location and the three
+   credentials. The "current" build needs Android 8.0 or newer. The
+   "legacy" build runs from Android 5.1 and is for older devices.
+6. Stages the artefacts as `abook-of-life-<tag>-current.apk` and
+   `abook-of-life-<tag>-legacy.apk`.
+7. Creates the GitHub release with `gh release create`, attaching both
+   APKs and generating the release notes.
 
 The repository secrets it needs are:
 
@@ -173,10 +176,11 @@ release page are:
 | `a-book-of-life.zim` | The offline browsable archive for Kiwix |
 | `bundle-manifest.json` | The manifest for the offline bundle |
 | `a-book-of-life.img.xz` | The bootable Raspberry Pi image |
-| `abook-of-life-v<tag>.apk` | The signed Android package |
+| `abook-of-life-v<tag>-current.apk` | The signed Android package, Android 8.0 and newer |
+| `abook-of-life-v<tag>-legacy.apk` | The signed Android package, Android 5.1 and newer |
 
 The `index.db`, the ZIM and the bundle manifest come from the Release
-workflow; the APK comes from the Android release workflow.
+workflow; the two APKs come from the Android release workflow.
 
 ## Updating an app that was installed by hand
 
@@ -192,9 +196,10 @@ without a confirmation.
    of the project repository. The owner and repository names are string
    resources, so a fork can point the check at its own repository. The
    request uses a 15-second connect timeout and a 20-second read timeout.
-3. A draft release is refused. The app looks for the first asset whose
-   name ends in `.apk` and that has a download URL; if the release has no
-   package, the check fails with a plain message.
+3. A draft release is refused. The app looks for the `.apk` asset that
+   suits its Android version: `-legacy` for a device below Android 8.0,
+   and the other package for Android 8.0 and newer. A release with no
+   matching package fails the check with a plain message.
 4. The release tag is compared with the installed `versionName`. The
    comparison strips a leading `v` and any pre-release suffix, and a
    build with no suffix sorts as newer than one with a suffix. If the tag
@@ -341,7 +346,8 @@ agreement.
 
 - The release page carries all five assets: `index.db`,
   `a-book-of-life.zim`, `bundle-manifest.json`,
-  `a-book-of-life.img.xz` and `abook-of-life-v1.1.0.apk`. The two
+  `a-book-of-life.img.xz`, `abook-of-life-v1.1.0-current.apk` and
+  `abook-of-life-v1.1.0-legacy.apk`. The two
   workflows run in parallel, so check that neither was left out; the
   Android workflow's release creation step fails if a release for the tag
   already exists, and the bundle job can publish without the ZIM when
@@ -432,7 +438,8 @@ without hunting for a download page.
 
 | Artefact | For | How it is used |
 |---|---|---|
-| `abook-of-life-v<tag>.apk` | A phone or a tablet | Install and read offline |
+| `abook-of-life-v<tag>-current.apk` | A phone or a tablet on Android 8.0 or newer | Install and read offline |
+| `abook-of-life-v<tag>-legacy.apk` | An older phone or tablet on Android 5.1 to 7.x | Install and read offline |
 | `a-book-of-life.zim` | Kiwix | Open the archive and search it |
 | `build/offline-bundle/` | A school or a site | Serve the static HTML |
 | `a-book-of-life.img.xz` | A Raspberry Pi | Flash it and boot |
@@ -479,10 +486,12 @@ with the project version.
 
 ### The Android APK
 
-`abook-of-life-v<tag>.apk` is a self-contained reader. The whole corpus
-is inside the package, the search index is built on the device at first
-launch, and no network is needed to read, search or bookmark. It is the
-one artefact a reader can carry with them.
+`abook-of-life-v<tag>-current.apk` and `abook-of-life-v<tag>-legacy.apk`
+are self-contained readers. They are the same app, built for two
+minimum Android versions, and both are signed with the same key. The
+whole corpus is inside each package, the search index is built on the
+device at first launch, and no network is needed to read, search or
+bookmark. It is the one artefact a reader can carry with them.
 
 ### The long-term archive
 
