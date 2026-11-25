@@ -108,10 +108,7 @@ sources:
   - "WHO Guidelines for Drinking-water Quality (public domain)"
   - "US Army FM 21-10 Field Sanitation (public domain)"
 verification:
-  status: field-tested
-  tested_by: "Community Team Alpha"
-  date: "2026-03-15"
-  location: "Arizona, USA"
+  status: draft
 links:
   - pnk:01H8X.../survival/fire-making
   - pnk:01H8X.../materials/charcoal-production
@@ -1949,10 +1946,9 @@ particulate.
 
 ## Verification
 
-- **Status:** field-tested
-- **Tested by:** Community Team Alpha
-- **Date:** 2026-03-15
-- **Location:** Arizona, USA
+- **Status:** draft
+
+No reviewed field-test report currently supports a field-tested status.
 
 ## Sources
 
@@ -1982,10 +1978,7 @@ sources:
   - title: CDC SODIS Fact Sheet
     license: public-domain
 verification:
-  status: field-tested
-  tested_by: Community Team Alpha
-  date: "2026-03-15"
-  location: Arizona, USA
+  status: draft
 links:
   - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
   - pnk:01HZX0K8J9Q7R3VY6T2M4B8N1R/materials/charcoal-production
@@ -4268,9 +4261,9 @@ and blacksmithing. It is made by pyrolysis — burning wood with limited oxygen.
 
 ## Verification
 
-- **Status:** field-tested
-- **Date:** 2026-03-22
-- **Location:** Missouri, USA
+- **Status:** draft
+
+No reviewed field-test report currently supports a field-tested status.
 
 ## Sources
 
@@ -4295,10 +4288,7 @@ sources:
   - title: FAO Charcoal Production Manual
     license: public-domain
 verification:
-  status: field-tested
-  tested_by: Community Team Alpha
-  date: "2026-03-22"
-  location: Missouri, USA
+  status: draft
 links:
   - pnk:01HZX0K8J9Q7R3VY6T2M4B8N31/materials/metal-smelting
 geographic_applicability: [universal]
@@ -9341,10 +9331,8 @@ if name == "abook_coverage":
 id: ft-making-fire-arizona-2026-03
 entry_id: pnk:01HZX0K8J9Q7R3VY6T2M4B8N1P/survival/making-fire
 tester: Community Team Alpha
-tester_contact: alpha@abookoflife.org
 date: "2026-03-15"
 location: "Sonoran Desert, Arizona, USA"
-gps: "33.4484, -112.0740"
 conditions:
   weather: clear, dry, light breeze
   temperature_c: 27
@@ -9372,14 +9360,11 @@ failure_modes: |
   Flint and steel failed entirely without char cloth.
 safety_observed: true
 safety_notes: "No injuries. Fire clear of overhanging branches."
-photos:
-  - "field-tests/ft-making-fire-arizona-2026-03/photo-01.jpg"
-  - "field-tests/ft-making-fire-arizona-2026-03/photo-02.jpg"
 recommendations: |
   Add a note that bow drill requires 2-3 kg of downward pressure.
   Emphasize char cloth production before flint-and-steel attempts.
 duration_minutes: 45
-verified: true
+verified: false
 ```
 
 ---
@@ -15464,6 +15449,8 @@ If the project dissolves:
 - Founding quarter. No grants received.
 - Field tests funded: `ft-making-fire-arizona-2026-03` ($200),
   `ft-water-purification-arizona-2026-04` ($200).
+- The water-purification report is absent from this repository snapshot; its
+  test outcome is not verified here.
 ```
 
 ---
@@ -15494,11 +15481,15 @@ If the project dissolves:
 | knowledge | TBD | 2026 |
 | society | TBD | 2026 |
 
-## Verifiers
+## Field-test report contributors
 
-| Name | Domain(s) | Field tests |
-|------|-----------|-------------|
-| Community Team Alpha | survival, health | 2 |
+| Name | Domain(s) | Reports in repository |
+|------|-----------|-----------------------|
+| Community Team Alpha | survival | 1 pending review |
+
+The Q1 2026 finance report also records funding for a water-purification
+test, but its report is not present in this repository snapshot. Repository
+report counts do not establish whether an unreported test occurred.
 
 ## Emeritus
 
@@ -17067,4 +17058,3 @@ All six phases are now delivered. The full `a-book-of-life-to-rebuild-the-world`
 | **Documentation** | README, CONTRIBUTING, CODE_OF_CONDUCT, CHANGELOG, roadmap, protocol spec |
 
 Every file is production-grade, fully specified, and ready to be committed. The project can be cloned, built, deployed offline, forked, federated, audited, and sustained across generations.
-

@@ -494,7 +494,12 @@ An entry can be sent back to `draft` after a major rewrite, and a
 `deprecated` entry can be revived. Every move is appended to
 `governance/verification-ledger.jsonl`. A field test report is validated by
 `scripts/validate_field_tests.py` against
-`schemas/field-test.schema.json`.
+`schemas/field-test.schema.json`, and must be reviewed (`verified: true`,
+with reviewer and date recorded)
+before it can support a `field-tested` transition. A reset to `draft` clears
+review and test metadata so it cannot be mistaken for evidence about the
+current version. See [Field testing](FIELD-TESTS.md) for safety and privacy
+requirements.
 
 ## Style rules
 

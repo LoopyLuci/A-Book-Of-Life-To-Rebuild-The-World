@@ -61,10 +61,9 @@ particulate.
 
 ## Verification
 
-- **Status:** field-tested
-- **Tested by:** Community Team Alpha
-- **Date:** 2026-03-15
-- **Location:** Arizona, USA
+- **Status:** draft
+
+No reviewed field-test report currently supports a field-tested status.
 
 ## Sources
 

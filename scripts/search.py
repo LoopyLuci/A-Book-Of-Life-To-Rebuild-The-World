@@ -27,18 +27,24 @@ RRF_K = 60
 FTS_WEIGHTS = (10.0, 1.0, 3.0)
 
 
-def _run_match(conn: sqlite3.Connection, match: str, limit: int):
-    return conn.execute(
-        """
+def _run_match(
+    conn: sqlite3.Connection,
+    match: str,
+    limit: int,
+    domain: str | None = None,
+):
+    sql = """
         SELECT e.id, e.title, e.domain, bm25(entries_fts, ?, ?, ?) AS score
         FROM entries_fts
         JOIN entries e ON e.rowid = entries_fts.rowid
         WHERE entries_fts MATCH ?
-        ORDER BY score
-        LIMIT ?
-        """,
-        (*FTS_WEIGHTS, match, limit),
-    ).fetchall()
+    """
+    params: tuple[object, ...] = (*FTS_WEIGHTS, match)
+    if domain is not None:
+        sql += " AND e.domain = ?"
+        params += (domain,)
+    sql += " ORDER BY score LIMIT ?"
+    return conn.execute(sql, (*params, limit)).fetchall()
 
 
 def _prefix_variants(terms: list[str]) -> list[list[str]]:
@@ -80,7 +86,12 @@ def _query_shapes(terms: list[str]) -> list[str]:
     return ordered
 
 
-def bm25_search(conn: sqlite3.Connection, query: str, limit: int = 50):
+def bm25_search(
+    conn: sqlite3.Connection,
+    query: str,
+    limit: int = 50,
+    domain: str | None = None,
+):
     terms = re.findall(r"[A-Za-z0-9]+", query)
     if not terms:
         return []
@@ -92,7 +103,7 @@ def bm25_search(conn: sqlite3.Connection, query: str, limit: int = 50):
     # would have ranked lower.
     best: dict[str, tuple[float, tuple]] = {}
     for shape in _query_shapes(terms):
-        for row in _run_match(conn, shape, limit * 2):
+        for row in _run_match(conn, shape, limit * 2, domain):
             entry_id = row[0]
             score = row[3]
             current = best.get(entry_id)
@@ -103,11 +114,22 @@ def bm25_search(conn: sqlite3.Connection, query: str, limit: int = 50):
     return [row for _score, row in ranked[:limit]]
 
 
-def vector_search(conn: sqlite3.Connection, query: str, limit: int = 50):
+def vector_search(
+    conn: sqlite3.Connection,
+    query: str,
+    limit: int = 50,
+    domain: str | None = None,
+):
     qvec = embed_texts([query])[0]
-    rows = conn.execute(
-        "SELECT chunk_id, entry_id, vector FROM chunk_vectors JOIN chunks USING (chunk_id)"
-    ).fetchall()
+    sql = (
+        "SELECT chunk_id, entry_id, vector FROM chunk_vectors "
+        "JOIN chunks USING (chunk_id) JOIN entries ON entries.id = chunks.entry_id"
+    )
+    params: tuple[object, ...] = ()
+    if domain is not None:
+        sql += " WHERE entries.domain = ?"
+        params = (domain,)
+    rows = conn.execute(sql, params).fetchall()
 
     scored: list[tuple[str, float]] = []
     for _chunk_id, entry_id, blob in rows:
@@ -134,12 +156,12 @@ def rrf_fuse(bm25, vector, k: int = RRF_K):
     return sorted(scores.items(), key=lambda x: -x[1])
 
 
-def search(query: str, limit: int = 20):
+def search(query: str, limit: int = 20, domain: str | None = None):
     conn = sqlite3.connect(INDEX_PATH)
     try:
-        bm25 = bm25_search(conn, query)
+        bm25 = bm25_search(conn, query, domain=domain)
         if semantic_available():
-            vec = vector_search(conn, query)
+            vec = vector_search(conn, query, domain=domain)
         else:
             # Without the real embedding model the vectors are hashes, and a
             # cosine distance between two hashes means nothing. Ranking on it
