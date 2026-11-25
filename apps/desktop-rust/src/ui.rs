@@ -9,6 +9,8 @@ use crate::corpus::Corpus;
 use crate::i18n::Strings;
 use crate::search::{search, Filters, Hit};
 use crate::settings::Settings;
+use crate::update::{self, Status, UpdateMode, Updater};
+use std::time::Duration;
 
 /// The `eframe` entry point, so the window draws the interface every frame.
 impl eframe::App for App {
@@ -107,6 +109,14 @@ pub struct App {
     /// The corpus is still loading.
     #[allow(dead_code)]
     pub loading: bool,
+    /// The update checker and installer.
+    pub updater: Updater,
+    /// Whether the updates window is open.
+    pub updates_open: bool,
+    /// Whether the reader has asked to install the downloaded update.
+    pub confirm_install: bool,
+    /// Whether the reader has put off the install prompt for this session.
+    pub install_later: bool,
 }
 
 impl App {
@@ -126,6 +136,10 @@ impl App {
             jump_text: String::new(),
             message: String::new(),
             loading: false,
+            updater: Updater::new(env!("CARGO_PKG_VERSION"), &update_repository()),
+            updates_open: false,
+            confirm_install: false,
+            install_later: false,
         }
     }
 
@@ -159,6 +173,13 @@ impl App {
 
     /// Draws the interface.
     pub fn ui(&mut self, ctx: &egui::Context) {
+        self.updater.poll();
+        self.updater.tick(self.settings.update_mode);
+        if self.updater.is_busy() {
+            ctx.request_repaint_after(Duration::from_millis(250));
+        } else if self.settings.update_mode != UpdateMode::Manual {
+            ctx.request_repaint_after(Duration::from_secs(900));
+        }
         let palette = self.palette();
         ctx.set_visuals(match self.settings.theme.as_str() {
             "light" => Visuals::light(),
@@ -431,6 +452,10 @@ impl App {
         if self.about_open {
             self.show_about(ctx);
         }
+        if self.updates_open {
+            self.show_updates(ctx);
+        }
+        self.show_install_prompt(ctx);
         if self.jump_open {
             self.show_jump(ctx);
         }
@@ -609,6 +634,9 @@ impl App {
                         .small()
                         .color(palette.muted),
                 );
+                if ui.button("Updates…").clicked() {
+                    self.updates_open = true;
+                }
                 if ui.button("Close").clicked() {
                     self.about_open = false;
                 }
@@ -660,5 +688,222 @@ impl App {
         if !open {
             self.jump_open = false;
         }
+    }
+
+    /// The updates window: the installed and available versions, the update
+    /// mode, and the actions the reader can take.
+    fn show_updates(&mut self, ctx: &egui::Context) {
+        let palette = self.palette();
+        let mut open = true;
+        let mut check_now = false;
+        let mut download_now = false;
+        let mut install_now = false;
+        let mut mode_changed = false;
+        let busy = self.updater.is_busy();
+        egui::Window::new("Updates")
+            .open(&mut open)
+            .resizable(false)
+            .anchor(
+                egui::Align2([egui::Align::Center, egui::Align::Center]),
+                egui::Vec2::ZERO,
+            )
+            .show(ctx, |ui| {
+                let installed = self.updater.installed().to_string();
+                let available = match &self.updater.latest {
+                    Some(release) => release.version.to_string(),
+                    None => "not checked yet".to_string(),
+                };
+                ui.label(
+                    RichText::new(format!("Installed version: {installed}")).color(palette.text),
+                );
+                ui.label(
+                    RichText::new(format!("Available version: {available}")).color(palette.text),
+                );
+                let failed = matches!(self.updater.status, Status::Failed(_));
+                ui.label(RichText::new(status_text(&self.updater.status)).small().color(
+                    if failed { palette.caution } else { palette.muted },
+                ));
+                ui.separator();
+                ui.label(RichText::new("Update mode").strong().color(palette.text));
+                egui::ComboBox::from_id_salt("update_mode")
+                    .selected_text(mode_label(self.settings.update_mode))
+                    .show_ui(ui, |ui| {
+                        for mode in [
+                            UpdateMode::Manual,
+                            UpdateMode::Download,
+                            UpdateMode::DownloadAndInstall,
+                        ] {
+                            let choice = ui.selectable_value(
+                                &mut self.settings.update_mode,
+                                mode,
+                                mode_label(mode),
+                            );
+                            if choice.clicked() {
+                                mode_changed = true;
+                            }
+                        }
+                    });
+                ui.label(
+                    RichText::new(mode_description(self.settings.update_mode))
+                        .small()
+                        .color(palette.muted),
+                );
+                ui.separator();
+                ui.horizontal(|ui| {
+                    if ui
+                        .add_enabled(!busy, egui::Button::new("Check now"))
+                        .clicked()
+                    {
+                        check_now = true;
+                    }
+                    let can_download = self.updater.update_available()
+                        && self.updater.staged.is_none()
+                        && self.updater.status != Status::Downloading;
+                    if can_download
+                        && ui
+                            .add_enabled(!busy, egui::Button::new("Download"))
+                            .clicked()
+                    {
+                        download_now = true;
+                    }
+                    if self.updater.status == Status::Ready
+                        && ui.button("Install and restart").clicked()
+                    {
+                        install_now = true;
+                    }
+                });
+            });
+        if !open {
+            self.updates_open = false;
+        }
+        if mode_changed {
+            let _ = self.settings.save();
+        }
+        if check_now {
+            self.updater
+                .check(self.settings.update_mode != UpdateMode::Manual);
+        }
+        if download_now {
+            self.updater.download();
+        }
+        if install_now {
+            self.confirm_install = true;
+        }
+    }
+
+    /// The prompt that asks before the reader restarts to install an update.
+    /// In the download-and-install mode it appears by itself once the update
+    /// is ready; in the other modes it appears when the reader asks.
+    fn show_install_prompt(&mut self, ctx: &egui::Context) {
+        let ready = self.updater.status == Status::Ready;
+        let automatic = self.settings.update_mode == UpdateMode::DownloadAndInstall
+            && !self.install_later;
+        if !ready || !(self.confirm_install || automatic) {
+            return;
+        }
+        let palette = self.palette();
+        let version = self
+            .updater
+            .latest
+            .as_ref()
+            .map(|release| release.version.to_string())
+            .unwrap_or_default();
+        let mut install = false;
+        let mut later = false;
+        egui::Window::new("Update ready")
+            .collapsible(false)
+            .resizable(false)
+            .anchor(
+                egui::Align2([egui::Align::Center, egui::Align::Center]),
+                egui::Vec2::ZERO,
+            )
+            .show(ctx, |ui| {
+                ui.label(
+                    RichText::new(format!(
+                        "Version {version} is downloaded and checked. Install it now?"
+                    ))
+                    .color(palette.text),
+                );
+                ui.label(
+                    RichText::new("The reader will close and start again on the new version.")
+                        .small()
+                        .color(palette.muted),
+                );
+                ui.horizontal(|ui| {
+                    install = ui.button("Install and restart").clicked();
+                    later = ui.button("Later").clicked();
+                });
+            });
+        if install {
+            self.confirm_install = false;
+            self.install_now(ctx);
+        } else if later {
+            self.confirm_install = false;
+            self.install_later = true;
+        }
+    }
+
+    /// Installs the downloaded update, then closes the reader so the
+    /// replacement can run. A failure is shown instead of closing.
+    fn install_now(&mut self, ctx: &egui::Context) {
+        let target = match std::env::current_exe() {
+            Ok(path) => path,
+            Err(error) => {
+                self.message = format!("The program's location is not known: {error}");
+                return;
+            }
+        };
+        match self.updater.install(&target) {
+            Ok(()) => ctx.send_viewport_cmd(egui::ViewportCommand::Close),
+            Err(error) => self.message = error.to_string(),
+        }
+    }
+}
+
+/// The repository the updater reads. `ABOOK_UPDATE_REPO` overrides it, so a
+/// fork can point the check at its own releases.
+fn update_repository() -> String {
+    std::env::var("ABOOK_UPDATE_REPO")
+        .ok()
+        .filter(|value| !value.trim().is_empty())
+        .unwrap_or_else(|| update::DEFAULT_REPOSITORY.to_string())
+}
+
+/// The name of an update mode, as the reader sees it.
+fn mode_label(mode: UpdateMode) -> &'static str {
+    match mode {
+        UpdateMode::Manual => "Manual (default)",
+        UpdateMode::Download => "Download automatically",
+        UpdateMode::DownloadAndInstall => "Download and install automatically",
+    }
+}
+
+/// What an update mode does, in one sentence.
+fn mode_description(mode: UpdateMode) -> &'static str {
+    match mode {
+        UpdateMode::Manual => {
+            "Nothing is checked or downloaded until you press Check now. You decide each step."
+        }
+        UpdateMode::Download => {
+            "Checks once a day and downloads new releases in the background. You choose when to install."
+        }
+        UpdateMode::DownloadAndInstall => {
+            "Checks once a day and downloads in the background. It asks before restarting to install."
+        }
+    }
+}
+
+/// The status line shown in the updates window.
+fn status_text(status: &Status) -> String {
+    match status {
+        Status::NotChecked => "Press Check now to look for a newer release.".to_string(),
+        Status::Checking => "Checking for updates…".to_string(),
+        Status::UpToDate => "You have the newest release.".to_string(),
+        Status::Available => "A newer release is available.".to_string(),
+        Status::Downloading => "Downloading the update…".to_string(),
+        Status::Ready => {
+            "The update is downloaded and checked. Install it when you are ready.".to_string()
+        }
+        Status::Failed(message) => message.clone(),
     }
 }

@@ -82,7 +82,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$TAG" \
-            "abook-of-life-${TAG}.apk" \
+          APK="abook-of-life-${TAG}.apk"
+          if ! gh release create "$TAG" "$APK" \
             --title "$TAG" \
-            --generate-notes
+            --generate-notes; then
+            # The Windows release job may have created the release first.
+            # Attach the APK to that release instead.
+            gh release upload "$TAG" "$APK" --clobber
+          fi
