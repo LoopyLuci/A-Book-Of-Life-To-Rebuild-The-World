@@ -383,6 +383,18 @@ fun SettingsScreen(
                 onSelect = { selectUpdatePolicy(UpdatePolicy.AUTO_DOWNLOAD_AND_INSTALL) },
             )
 
+            // The installed version and the newest one this app has seen, so the
+            // reader can compare them before deciding anything.
+            val availableVersion = when (val update = state.updateState) {
+                is UpdateState.Available -> update.release.tag
+                is UpdateState.UpToDate -> update.latestTag
+                is UpdateState.Downloading -> update.releaseTag
+                is UpdateState.ReadyToInstall -> update.releaseTag
+                else -> stringResource(R.string.settings_update_version_unknown)
+            }
+            InfoRow(stringResource(R.string.settings_update_installed_version), appVersion)
+            InfoRow(stringResource(R.string.settings_update_available_version), availableVersion)
+
             when (val update = state.updateState) {
                 UpdateState.Idle -> {
                     ActionRow(
