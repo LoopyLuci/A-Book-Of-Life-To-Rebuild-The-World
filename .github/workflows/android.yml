@@ -1,24 +1,9 @@
 name: Android
 
+# Android CI runs on the maintainer's device, through scripts/local_pipeline.py.
+# GitHub runs this workflow only when someone starts it by hand.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "android/**"
-      - "domains/**"
-      - "sidecars/**"
-      - "i18n/**"
-      - "manifest.toml"
-      - ".github/workflows/android.yml"
-  pull_request:
-    branches: [main]
-    paths:
-      - "android/**"
-      - "domains/**"
-      - "sidecars/**"
-      - "i18n/**"
-      - "manifest.toml"
-      - ".github/workflows/android.yml"
+  workflow_dispatch:
 
 concurrency:
   group: android-${{ github.ref }}

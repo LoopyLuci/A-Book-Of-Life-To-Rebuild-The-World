@@ -8,9 +8,12 @@ and what to do when one goes out wrong.
 ## What a release is
 
 A release is a git tag on `main` plus the artefacts published from that
-tag. The tag is both the trigger and the approval: pushing a tag that
-matches `v*` starts the release workflows, and nothing is published from
-a branch, a pull request or a schedule.
+tag. The tag is the approval. The release is built and signed on the
+maintainer's device through `scripts/local_pipeline.py`, and it is
+published only when the owner agrees. GitHub does not release on its own:
+the release workflows run only when someone starts them by hand, with the
+tag name, and nothing is published from a branch, a pull request or a
+schedule.
 
 What the tag publishes is real, immediately usable software:
 
@@ -84,13 +87,15 @@ worth keeping it identical to the version in `manifest.toml`.
 
 ## The release workflows
 
-Two workflows trigger on a `v*` tag. Both run at the same time and both
-attach their artefacts to the release for that tag.
+Two workflows release a `v*` tag. Both are started by hand from the Actions
+tab, with the tag name as their `tag` input, and both attach their artefacts
+to the release for that tag. They check out that tag, not the branch they
+were started from.
 
 ### The Android release
 
-`.github/workflows/android-release.yml` runs on a pushed `v*` tag with
-`contents: write` permission. It:
+`.github/workflows/android-release.yml` runs when someone starts it by hand
+with a `v*` tag, with `contents: write` permission. It:
 
 1. Checks out the repository, sets up JDK 17 and Python 3.11, and
    installs `PyYAML`.
@@ -124,8 +129,8 @@ distribution.
 
 ### The offline release
 
-`.github/workflows/release.yml` runs on a pushed `v*` tag with
-`contents: write` and `packages: write`. It has five jobs.
+`.github/workflows/release.yml` runs when someone starts it by hand with a
+`v*` tag, with `contents: write` and `packages: write`. It has five jobs.
 
 | Job | Does | Produces |
 |---|---|---|
