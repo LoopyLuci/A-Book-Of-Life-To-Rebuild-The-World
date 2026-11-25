@@ -1,24 +1,8 @@
 name: Android Emulator Tests
 
+# Emulator tests run on the maintainer's device, not on GitHub. GitHub runs this
+# workflow only when someone starts it by hand.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "android/**"
-      - "domains/**"
-      - "sidecars/**"
-      - "i18n/**"
-      - "manifest.toml"
-      - ".github/workflows/android-emulator.yml"
-  pull_request:
-    branches: [main]
-    paths:
-      - "android/**"
-      - "domains/**"
-      - "sidecars/**"
-      - "i18n/**"
-      - "manifest.toml"
-      - ".github/workflows/android-emulator.yml"
   workflow_dispatch:
 
 concurrency:
