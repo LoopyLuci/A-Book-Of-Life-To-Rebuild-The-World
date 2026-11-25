@@ -81,6 +81,20 @@ def main() -> int:
     ):
         changed.append("mobile/package.json")
 
+    if replace(
+        ROOT / "apps" / "desktop-python" / "pyproject.toml",
+        r'version = "[^"]+"',
+        f'version = "{version}"',
+    ):
+        changed.append("apps/desktop-python/pyproject.toml")
+
+    if replace(
+        ROOT / "apps" / "desktop-python" / "abook" / "__init__.py",
+        r'DEFAULT_VERSION = "[^"]+"',
+        f'DEFAULT_VERSION = "{version}"',
+    ):
+        changed.append("apps/desktop-python/abook/__init__.py")
+
     print(f"Bumped to {version}:")
     for f in changed:
         print(f"  - {f}")

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-11-25
+
 ### Added
 - A Windows release: `desktop-release.yml` builds the native reader
   (`apps/desktop-rust`) for each `v*` tag and attaches
@@ -195,6 +197,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.0
 [1.0.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.0.0
 [0.1.0-alpha]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v0.1.0-alpha
