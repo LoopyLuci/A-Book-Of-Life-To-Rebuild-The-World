@@ -26,10 +26,24 @@ enum class ColorPalette {
     }
 }
 
+enum class UpdatePolicy {
+    MANUAL,
+    AUTO_CHECK,
+    AUTO_DOWNLOAD,
+    AUTO_DOWNLOAD_AND_INSTALL,
+    ;
+
+    companion object {
+        fun fromId(raw: String?): UpdatePolicy =
+            entries.firstOrNull { it.name == raw?.uppercase() } ?: MANUAL
+    }
+}
+
 data class UserSettings(
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
     val dynamicColor: Boolean = true,
     val palette: ColorPalette = ColorPalette.FOREST,
     val fontScale: Float = 1.0f,
     val serif: Boolean = false,
+    val updatePolicy: UpdatePolicy = UpdatePolicy.MANUAL,
 )

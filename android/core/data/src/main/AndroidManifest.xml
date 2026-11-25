@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application>
-        <!--
-          Wakes the app when a background package download finishes so the
-          reader can be taken to the platform installer.
-        -->
+        <!-- Shows an update-ready notification after a package download finishes. -->
         <receiver
             android:name=".update.UpdateDownloadReceiver"
             android:exported="false">
