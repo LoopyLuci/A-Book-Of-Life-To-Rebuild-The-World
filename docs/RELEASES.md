@@ -41,7 +41,7 @@ build was made from.
 ### Where the version lives
 
 `manifest.toml` holds the project version under `[project] version`. It is
-currently `0.1.1`. The knowledge-base schema version is separate:
+currently `1.1.0`. The knowledge-base schema version is separate:
 `[knowledge_base] schema_version` is `1.2.0`, and it versions the
 sidecar schema rather than the content.
 
@@ -69,7 +69,7 @@ Run it as `python scripts/bump_version.py 1.1.0`, or as
 `manifest.toml` with a regular expression and uses it twice.
 
 `versionName` is the version string verbatim, including any pre-release
-suffix, so the reader sees `0.1.1` in Settings.
+suffix, so the reader sees `1.1.0` in Settings.
 
 `versionCode` is computed from the numeric part before the suffix:
 

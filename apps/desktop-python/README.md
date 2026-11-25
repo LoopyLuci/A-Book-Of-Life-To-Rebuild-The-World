@@ -71,7 +71,7 @@ abook-desktop --selftest
 
 The install pulls in nothing: `pyproject.toml` declares no runtime
 dependencies. The version in `pyproject.toml` mirrors `[project] version` in the
-repository `manifest.toml` (`0.1.1`).
+repository `manifest.toml` (`1.1.0`).
 
 ## Features
 
