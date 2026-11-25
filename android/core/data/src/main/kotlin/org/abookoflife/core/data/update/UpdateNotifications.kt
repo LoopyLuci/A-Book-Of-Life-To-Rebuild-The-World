@@ -9,6 +9,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
@@ -96,13 +97,22 @@ internal object UpdateNotifications {
 
     private fun channelId(context: Context): String {
         val id = context.getString(R.string.update_channel_id)
+        // Notification channels exist from Android 8.0. Older versions have none to create,
+        // and the same id simply works there.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            createChannel(context, id)
+        }
+        return id
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun createChannel(context: Context, id: String) {
         val channel = NotificationChannel(
             id,
             context.getString(R.string.update_channel_name),
             NotificationManager.IMPORTANCE_DEFAULT,
         )
         context.getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
-        return id
     }
 
     private fun pendingActivity(context: Context, intent: Intent, requestCode: Int): PendingIntent {
