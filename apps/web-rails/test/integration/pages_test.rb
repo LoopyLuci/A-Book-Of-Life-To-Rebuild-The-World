@@ -92,7 +92,7 @@ class PagesTest < ActionDispatch::IntegrationTest
     get about_path
 
     assert_response :success
-    assert_match(/0\.1\.0-alpha/, response.body)
+    assert_match Corpus.new(root: Corpus.root).version, response.body
     assert_match "Not professional advice of any kind", response.body
     assert_match "Local law, standards and primary sources always win", response.body
   end
