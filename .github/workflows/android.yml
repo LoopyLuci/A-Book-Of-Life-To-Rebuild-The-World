@@ -60,13 +60,15 @@ jobs:
         working-directory: android
         run: ./gradlew test --console=plain
 
-      - name: Assemble debug APK
+      - name: Assemble debug APKs
         working-directory: android
         run: ./gradlew assembleDebug --console=plain
 
-      - name: Upload debug APK
+      - name: Upload debug APKs
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: |
+            android/app/build/outputs/apk/current/debug/app-current-debug.apk
+            android/app/build/outputs/apk/legacy/debug/app-legacy-debug.apk
           if-no-files-found: error

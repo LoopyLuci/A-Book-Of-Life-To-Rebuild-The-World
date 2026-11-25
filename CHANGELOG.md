@@ -62,6 +62,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   platform download service in the background, and hands it to the system
   installer, which always asks the reader to confirm. A `BroadcastReceiver`
   picks the download up again when the app was closed while it was running.
+- A legacy Android build for devices that cannot run Android 8.0: each release
+  ships `abook-of-life-<tag>-current.apk` (Android 8.0 and newer) and
+  `abook-of-life-<tag>-legacy.apk` (Android 5.1 and newer). The app update
+  check takes the package that suits the device.
 - GitHub issue templates for proposing a new topic, a new entry and a field
   test, a `.github/ISSUE_TEMPLATE/config.yml` chooser that points at the
   guides, and a rewritten pull request template.

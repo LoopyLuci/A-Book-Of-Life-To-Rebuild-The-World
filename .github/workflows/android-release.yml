@@ -62,18 +62,26 @@ jobs:
           ABOOK_RELEASE_STORE_PASSWORD: ${{ secrets.ABOOK_RELEASE_STORE_PASSWORD }}
           ABOOK_RELEASE_KEY_ALIAS: ${{ secrets.ABOOK_RELEASE_KEY_ALIAS }}
           ABOOK_RELEASE_KEY_PASSWORD: ${{ secrets.ABOOK_RELEASE_KEY_PASSWORD }}
-        run: ./gradlew assembleRelease --console=plain
+        # Both flavours: "current" for Android 8.0 and newer, "legacy" for older devices.
+        run: ./gradlew assembleCurrentRelease assembleLegacyRelease --console=plain
 
-      - name: Stage release artifact
+      - name: Stage release artifacts
         run: |
-          cp android/app/build/outputs/apk/release/app-release.apk \
-            "abook-of-life-${GITHUB_REF_NAME}.apk"
+          cp android/app/build/outputs/apk/current/release/app-current-release.apk \
+            "abook-of-life-${GITHUB_REF_NAME}-current.apk"
+          cp android/app/build/outputs/apk/legacy/release/app-legacy-release.apk \
+            "abook-of-life-${GITHUB_REF_NAME}-legacy.apk"
 
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            "abook-of-life-${GITHUB_REF_NAME}.apk" \
+          CURRENT="abook-of-life-${GITHUB_REF_NAME}-current.apk"
+          LEGACY="abook-of-life-${GITHUB_REF_NAME}-legacy.apk"
+          if ! gh release create "$GITHUB_REF_NAME" "$CURRENT" "$LEGACY" \
             --title "$GITHUB_REF_NAME" \
-            --generate-notes
+            --generate-notes; then
+            # The Windows release job may have created the release first.
+            # Attach the APKs to that release instead.
+            gh release upload "$GITHUB_REF_NAME" "$CURRENT" "$LEGACY" --clobber
+          fi
