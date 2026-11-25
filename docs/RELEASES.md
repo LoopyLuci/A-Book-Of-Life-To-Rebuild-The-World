@@ -8,9 +8,12 @@ and what to do when one goes out wrong.
 ## What a release is
 
 A release is a git tag on `main` plus the artefacts published from that
-tag. The tag is both the trigger and the approval: pushing a tag that
-matches `v*` starts the release workflows, and nothing is published from
-a branch, a pull request or a schedule.
+tag. The tag is the approval. The release is built and signed on the
+maintainer's device through `scripts/local_pipeline.py`, and it is
+published only when the owner agrees. GitHub does not release on its own:
+the release workflows run only when someone starts them by hand, with the
+tag name, and nothing is published from a branch, a pull request or a
+schedule.
 
 What the tag publishes is real, immediately usable software:
 
@@ -85,14 +88,16 @@ worth keeping it identical to the version in `manifest.toml`.
 
 ## The release workflows
 
-Three workflows trigger on a `v*` tag. They run at the same time, and each
-attaches its artefacts to the release for that tag, creating the release if
-it does not exist yet.
+Three workflows release a `v*` tag. All three are started by hand from the
+Actions tab, with the tag name as their `tag` input. They run at the same
+time, and each attaches its artefacts to the release for that tag, creating
+the release if it does not exist yet. They check out that tag, not the
+branch they were started from.
 
 ### The Android release
 
-`.github/workflows/android-release.yml` runs on a pushed `v*` tag with
-`contents: write` permission. It:
+`.github/workflows/android-release.yml` runs when someone starts it by hand
+with a `v*` tag, with `contents: write` permission. It:
 
 1. Checks out the repository, sets up JDK 17 and Python 3.11, and
    installs `PyYAML`.
@@ -126,16 +131,16 @@ distribution.
 
 ### The Windows reader
 
-`.github/workflows/desktop-release.yml` runs on a pushed `v*` tag. It runs
-the reader's tests, builds `apps/desktop-rust` in release mode, and attaches
+`.github/workflows/desktop-release.yml` runs when someone starts it by hand
+with a `v*` tag. It runs the reader's tests, builds `apps/desktop-rust` in release mode, and attaches
 `abook-desktop-<tag>-windows-x64.exe` with a `.sha256` file beside it. The
 in-app updater checks every download against that file. The package is not
 code-signed yet, so Windows shows an "unknown publisher" warning.
 
 ### The offline release
 
-`.github/workflows/release.yml` runs on a pushed `v*` tag with
-`contents: write` and `packages: write`. It has five jobs.
+`.github/workflows/release.yml` runs when someone starts it by hand with a
+`v*` tag, with `contents: write` and `packages: write`. It has five jobs.
 
 | Job | Does | Produces |
 |---|---|---|

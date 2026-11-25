@@ -1,16 +1,23 @@
 name: Desktop release
 
-# Builds the Windows reader for a pushed v* tag and attaches it to the release,
-# with a .sha256 file the in-app updater checks the download against. The
-# Android release workflow attaches the APK to the same release. Whichever job
-# finishes first creates the release, so the order does not matter.
+# Builds the Windows reader for a v* tag and attaches it to the release, with a
+# .sha256 file the in-app updater checks the download against. The Android
+# release workflow attaches the APK to the same release. Whichever job finishes
+# first creates the release, so the order does not matter.
+#
+# The build runs on the maintainer's device. GitHub runs this workflow only when
+# someone starts it by hand, with the tag to release.
 #
 # Nothing here signs the Windows package. Until a code-signing certificate is
 # configured, Windows will show its "unknown publisher" warning.
 
 on:
-  push:
-    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to build, for example v0.2.0"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -19,8 +26,12 @@ jobs:
   windows:
     runs-on: windows-latest
     timeout-minutes: 45
+    env:
+      TAG: ${{ inputs.tag }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
 
       - uses: dtolnay/rust-toolchain@stable
 
@@ -33,7 +44,7 @@ jobs:
       - name: Stage the package and its checksum
         shell: pwsh
         run: |
-          $tag = $env:GITHUB_REF_NAME
+          $tag = $env:TAG
           $package = "abook-desktop-$tag-windows-x64.exe"
           Copy-Item -LiteralPath apps/desktop-rust/target/release/abook-desktop.exe -Destination $package
           $digest = (Get-FileHash -Algorithm SHA256 -LiteralPath $package).Hash.ToLowerInvariant()
@@ -46,7 +57,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $tag = $env:GITHUB_REF_NAME
+          $tag = $env:TAG
           $package = "abook-desktop-$tag-windows-x64.exe"
           gh release view $tag
           if ($LASTEXITCODE -ne 0) {
