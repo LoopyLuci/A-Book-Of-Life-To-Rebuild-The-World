@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] — 2026-11-25
+
+### Fixed
+- Installing an update to the Android app no longer crashes on Android 5.1 to
+  7.1. The install check used a call that exists only from Android 8.0. Those
+  versions now read the "unknown sources" switch, and the link to it opens the
+  general security settings, where that switch lives.
+- Update alerts no longer create a notification channel on Android 5.1 to 7.1,
+  which has none.
+
 ## [1.1.0] — 2026-11-25
 
 ### Added
@@ -197,7 +207,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.1
 [1.1.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.0
 [1.0.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.0.0
 [0.1.0-alpha]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v0.1.0-alpha

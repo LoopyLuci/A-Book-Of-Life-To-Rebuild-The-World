@@ -19,9 +19,25 @@ import java.io.File
  */
 object ApkInstaller {
 
-    /** Whether the user has allowed this app to install packages. */
-    fun canInstall(context: Context): Boolean =
-        context.packageManager.canRequestPackageInstalls()
+    /**
+     * Whether the user has allowed this app to install packages.
+     *
+     * Android 8.0 gives each app its own install permission. Older versions
+     * have one "unknown sources" switch for every app, so that switch is what
+     * this checks. `canRequestPackageInstalls` only exists from Android 8.0,
+     * and calling it earlier crashes the app.
+     */
+    @Suppress("DEPRECATION")
+    fun canInstall(context: Context): Boolean {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            return context.packageManager.canRequestPackageInstalls()
+        }
+        return Settings.Secure.getInt(
+            context.contentResolver,
+            Settings.Secure.INSTALL_NON_MARKET_APPS,
+            0,
+        ) == 1
+    }
 
     /** Rejects wrong-package, stale, or differently signed release packages. */
     fun isValidUpdate(context: Context, apk: File): Boolean {
@@ -70,12 +86,21 @@ object ApkInstaller {
             downloadedSignatures.toSet() == installedSignatures.toSet()
     }
 
-    /** The screen where the user grants permission to install packages. */
+    /**
+     * The screen where the user grants permission to install packages.
+     *
+     * `ACTION_MANAGE_UNKNOWN_APP_SOURCES` only exists from Android 8.0. Before
+     * that the switch sits in the general security settings.
+     */
     fun permissionIntent(context: Context): Intent =
-        Intent(
-            Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
-            Uri.parse("package:${context.packageName}"),
-        )
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Intent(
+                Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
+                Uri.parse("package:${context.packageName}"),
+            )
+        } else {
+            Intent(Settings.ACTION_SECURITY_SETTINGS)
+        }
 
     /** The intent that opens the platform installer for a downloaded package. */
     fun installIntent(context: Context, apk: File): Intent {

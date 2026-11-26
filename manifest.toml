@@ -1,6 +1,6 @@
 [project]
 name = "book-of-life"
-version = "1.1.0"
+version = "1.1.1"
 description = "A living, decentralized, offline-first knowledge engine for rebuilding civilization."
 license_content = "CC-BY-SA-4.0"
 license_code = "MIT"
