@@ -102,13 +102,24 @@ object ApkInstaller {
             Intent(Settings.ACTION_SECURITY_SETTINGS)
         }
 
-    /** The intent that opens the platform installer for a downloaded package. */
+    /**
+     * The intent that opens the platform installer for a downloaded package.
+     *
+     * From Android 7.0 the installer takes a content address from FileProvider.
+     * Before that it opens only file addresses, so the package is given as a file
+     * address. Downloads are kept in the app's external files folder, which the
+     * installer can read on those versions.
+     */
     fun installIntent(context: Context, apk: File): Intent {
-        val uri = FileProvider.getUriForFile(
-            context,
-            "${context.packageName}.fileprovider",
-            apk,
-        )
+        val uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            FileProvider.getUriForFile(
+                context,
+                "${context.packageName}.fileprovider",
+                apk,
+            )
+        } else {
+            Uri.fromFile(apk)
+        }
         return Intent(Intent.ACTION_VIEW).apply {
             setDataAndType(uri, UpdateDownloader.APK_MIME)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
