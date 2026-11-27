@@ -73,9 +73,11 @@ If step 3 or 4 fails, the previous environment is restored automatically.
 ### The pre-push hook
 
 Git hooks are local, so the installer has to write one for the checkout it runs
-in. It installs `.git/hooks/pre-push`, which runs the local pipeline and stops a
-push when a stage fails. The hook prefers the `.venv/` interpreter, so it runs
-with the same dependencies the install just verified.
+in. It installs `pre-push` in the hooks directory git reads for the checkout, which
+runs the local pipeline and stops a push when a stage fails. A linked worktree
+uses the same hooks directory as its main checkout, so one install covers both.
+The hook runs with the interpreter that installed it, which the install points at
+`.venv/`, so it uses the same dependencies the install just verified.
 
 ```bash
 python scripts/install_hooks.py --status      # report whether it is installed

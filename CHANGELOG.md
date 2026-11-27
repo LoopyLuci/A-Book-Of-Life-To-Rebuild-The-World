@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.4] — 2026-11-27
+
+### Changed
+- The Android app and the desktop reader are the same code as 1.1.3. Only the
+  version changes, so an in-app update can be checked from 1.1.3 to a newer build.
+- For contributors: the pre-push hook runs the pipeline with the Python that
+  installed it, and a linked worktree now gets its hook in the shared hooks
+  directory that git reads.
+
 ## [1.1.3] — 2026-11-27
 
 ### Fixed
@@ -240,7 +249,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.3...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.4...HEAD
+[1.1.4]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.4
 [1.1.3]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.3
 [1.1.2]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.2
 [1.1.1]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.1

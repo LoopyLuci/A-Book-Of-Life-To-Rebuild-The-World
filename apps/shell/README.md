@@ -90,7 +90,7 @@ shellcheck -x -s sh apps/shell/abook.sh apps/shell/lib/*.sh apps/shell/tests/run
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────┐
-│ A Book Of Life To Rebuild The World                                v1.1.3        English  [dark] │
+│ A Book Of Life To Rebuild The World                                v1.1.4        English  [dark] │
 ├───────────────────────────────┬────────────────────────────────────────────────────────────┤
 │Domains (16)                   │Making Fire                                                      │
 │  survival                   13│survival  -  Difficulty: novice  -  Safety: yellow               │

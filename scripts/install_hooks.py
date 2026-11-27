@@ -3,22 +3,26 @@
 Install the pre-push hook that runs the local pipeline.
 
 A push publishes, so the pipeline is the one check that must happen before a
-commit leaves the machine. This script writes `.git/hooks/pre-push` for the
-checkout it lives in. Git hooks are local: they are never committed, and every
-clone has to opt in once.
+commit leaves the machine. This script writes `pre-push` into the hooks
+directory that git reads for this repository. Linked worktrees share that
+directory with their main checkout, so one install covers all of them. Git
+hooks are local: they are never committed, and every clone has to opt in once.
 
     python scripts/install_hooks.py            # install or refresh the hook
     python scripts/install_hooks.py --status   # report whether it is installed
     python scripts/install_hooks.py --uninstall
 
-The hook runs `python scripts/local_pipeline.py` from the repository root and
-stops the push when the pipeline fails. It never adds `--no-verify`: a green
-run is what makes the push safe, not a bypass of it.
+The hook runs `local_pipeline.py` from the repository root and stops the push
+when the pipeline fails. The interpreter that installed the hook runs the
+pipeline first, so the push uses the packages that were installed for it. The
+hook never adds `--no-verify`: a green run is what makes the push safe, not a
+bypass of it.
 """
 
 from __future__ import annotations
 
 import argparse
+import shlex
 import subprocess
 import sys
 from pathlib import Path
@@ -27,7 +31,11 @@ ROOT = Path(__file__).resolve().parent.parent
 HOOK_NAME = "pre-push"
 MARKER = "# installed by scripts/install_hooks.py"
 
-HOOK_SCRIPT = f"""#!/bin/sh
+
+def hook_script(python: str) -> str:
+    """The hook body. `python` is the interpreter that runs the pipeline first."""
+    preferred = shlex.quote(python)
+    return f"""#!/bin/sh
 {MARKER} -- see docs/LOCAL-PIPELINE.md
 #
 # A push publishes. Run the whole pipeline first, and stop the push when it
@@ -46,7 +54,11 @@ if [ ! -f scripts/local_pipeline.py ]; then
     exit 0
 fi
 
-if [ -x .venv/bin/python ]; then
+# The interpreter that installed this hook comes first, then the project's
+# .venv, then whatever python3 or python is on PATH.
+if [ -f {preferred} ]; then
+    py={preferred}
+elif [ -x .venv/bin/python ]; then
     py=.venv/bin/python
 elif [ -x .venv/Scripts/python.exe ]; then
     py=.venv/Scripts/python.exe
@@ -60,7 +72,7 @@ else
     exit 0
 fi
 
-echo "pre-push: running the local pipeline (this can take several minutes)"
+echo "pre-push: running the local pipeline with $py (this can take several minutes)"
 if "$py" scripts/local_pipeline.py; then
     exit 0
 fi
@@ -73,12 +85,17 @@ exit 1
 """
 
 
-def git_hooks_dir() -> Path | None:
-    """The hooks directory of this checkout, or None outside a git tree."""
+def git_hooks_dir(root: Path = ROOT) -> Path | None:
+    """The hooks directory git reads for the checkout at `root`, or None outside git.
+
+    A linked worktree has a git directory of its own (`.git/worktrees/<name>`),
+    but git reads hooks only from the common directory shared with the main
+    checkout. Asking for `--git-common-dir` puts the hook where git looks.
+    """
     try:
         result = subprocess.run(
-            ["git", "rev-parse", "--git-dir"],
-            cwd=str(ROOT),
+            ["git", "rev-parse", "--git-common-dir"],
+            cwd=str(root),
             capture_output=True,
             text=True,
             encoding="utf-8",
@@ -89,10 +106,10 @@ def git_hooks_dir() -> Path | None:
         return None
     if result.returncode != 0:
         return None
-    git_dir = Path(result.stdout.strip())
-    if not git_dir.is_absolute():
-        git_dir = ROOT / git_dir
-    return git_dir / "hooks"
+    common_dir = Path(result.stdout.strip())
+    if not common_dir.is_absolute():
+        common_dir = root / common_dir
+    return (common_dir / "hooks").resolve()
 
 
 def show_status(hook: Path) -> int:
@@ -107,7 +124,7 @@ def show_status(hook: Path) -> int:
     return 0
 
 
-def install(hook: Path, force: bool) -> int:
+def install(hook: Path, force: bool, python: str = sys.executable) -> int:
     if hook.exists() and MARKER not in hook.read_text(encoding="utf-8", errors="replace"):
         if not force:
             print(
@@ -116,15 +133,16 @@ def install(hook: Path, force: bool) -> int:
                 file=sys.stderr,
             )
             return 1
+    interpreter = Path(python).as_posix()
     hook.parent.mkdir(parents=True, exist_ok=True)
-    hook.write_text(HOOK_SCRIPT, encoding="utf-8", newline="\n")
+    hook.write_text(hook_script(interpreter), encoding="utf-8", newline="\n")
     try:
         hook.chmod(0o755)
     except OSError:
         # Windows has no execute bit; git runs the hook through its own shell.
         pass
     print(f"pre-push hook installed: {hook}")
-    print("It runs scripts/local_pipeline.py before every push.")
+    print(f"It runs scripts/local_pipeline.py with {interpreter} before every push.")
     return 0
 
 
