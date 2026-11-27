@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.2] — 2026-11-27
+
+### Security
+- The Rails web reader moves to Rails 8.1.4.1, with loofah 2.25.3,
+  rails-html-sanitizer 1.7.2 and nokogiri 1.19.7. This closes the 32 open
+  Dependabot alerts on the repository, one of them critical (Active Storage).
+
+### Fixed
+- A release build of the Android app no longer falls back to the debug key.
+  Without the release keystore it stops with a message instead of producing a
+  package that is not signed for release.
+- The Android app sets the light status bar only on Android 6.0 and newer,
+  where the setting exists. This clears two lint errors in the legacy build.
+  Android 5.1 behaves as before.
+
+### Changed
+- `scripts/bump_version.py` also sets the version in `apps/web-ts/package.json`,
+  which had stayed at 0.1.0.
+- The search index is rebuilt when `scripts/build_index.py` or
+  `scripts/dashboard.py` changes.
+
 ## [1.1.1] — 2026-11-25
 
 ### Fixed
@@ -207,7 +228,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.2
 [1.1.1]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.1
 [1.1.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.0
 [1.0.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.0.0

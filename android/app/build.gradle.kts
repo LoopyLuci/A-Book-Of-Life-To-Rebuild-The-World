@@ -37,6 +37,15 @@ val signingProperties = Properties().apply {
 fun signingValue(name: String): String? =
     (System.getenv(name) ?: signingProperties.getProperty(name))?.takeIf { it.isNotBlank() }
 
+// A release build is signed only with the full release keystore. Without it, release
+// tasks stop with a clear message (see the check at the end of this file).
+val releaseKeystoreConfigured: Boolean = listOf(
+    "ABOOK_RELEASE_STORE_FILE",
+    "ABOOK_RELEASE_STORE_PASSWORD",
+    "ABOOK_RELEASE_KEY_ALIAS",
+    "ABOOK_RELEASE_KEY_PASSWORD",
+).all { signingValue(it) != null }
+
 android {
     namespace = "org.abookoflife.app"
     compileSdk = 35
@@ -84,9 +93,9 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
-            // Falls back to the debug key when no release keystore is configured.
-            signingConfig = signingConfigs.findByName("release")
-                ?: signingConfigs.getByName("debug")
+            // No debug-key fallback: without the release keystore the release build fails in
+            // the check at the end of this file, rather than signing with the debug key.
+            signingConfigs.findByName("release")?.let { signingConfig = it }
         }
     }
 
@@ -131,6 +140,20 @@ kotlin {
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
     }
+}
+
+// Stop before a release package is built when the release keystore is missing, so a
+// release can never be produced with the debug key or left unsigned.
+val requestedReleasePackage = gradle.startParameter.taskNames.any { requested ->
+    val task = requested.substringAfterLast(':')
+    (task.startsWith("assemble") || task.startsWith("bundle")) && task.endsWith("Release")
+}
+if (requestedReleasePackage && !releaseKeystoreConfigured) {
+    throw GradleException(
+        "No release keystore is configured. Set ABOOK_RELEASE_STORE_FILE, " +
+            "ABOOK_RELEASE_STORE_PASSWORD, ABOOK_RELEASE_KEY_ALIAS and " +
+            "ABOOK_RELEASE_KEY_PASSWORD, or fill in android/keystore.properties.",
+    )
 }
 
 dependencies {
