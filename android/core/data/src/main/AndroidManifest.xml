@@ -4,10 +4,14 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application>
-        <!-- Shows an update-ready notification after a package download finishes. -->
+        <!-- Shows an update-ready notification after a package download finishes.
+             It must be exported: the system's DownloadManager sends the completion
+             broadcast from its own process, and on Android 11 a receiver that is not
+             exported never gets it, so the update stalls at 0%. The receiver
+             ignores any download it did not start, and checks the package before use. -->
         <receiver
             android:name=".update.UpdateDownloadReceiver"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
             </intent-filter>
