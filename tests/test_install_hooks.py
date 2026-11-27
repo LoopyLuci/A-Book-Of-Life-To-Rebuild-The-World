@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import shlex
 import subprocess
 import sys
@@ -11,13 +12,14 @@ from scripts import install_hooks
 
 
 def _git(cwd: Path, *args: str) -> None:
-    subprocess.run(
+    result = subprocess.run(
         ["git", *args],
         cwd=cwd,
-        check=True,
         capture_output=True,
         text=True,
+        check=False,
     )
+    assert result.returncode == 0, result.stderr
 
 
 def test_install_writes_a_marked_hook(tmp_path):
@@ -53,7 +55,14 @@ def test_install_defaults_to_the_running_interpreter(tmp_path):
     assert f"py={shlex.quote(Path(sys.executable).as_posix())}" in text
 
 
-def test_hooks_dir_is_shared_by_a_linked_worktree(tmp_path):
+def test_hooks_dir_is_shared_by_a_linked_worktree(tmp_path, monkeypatch):
+    # git sets GIT_DIR and related variables for a hook, and they point at the
+    # checkout that runs it. Clear them so these commands touch only the
+    # throwaway repository below.
+    for name in list(os.environ):
+        if name.startswith("GIT_"):
+            monkeypatch.delenv(name)
+
     repo = tmp_path / "repo"
     repo.mkdir()
     _git(repo, "init", "-q")
