@@ -68,12 +68,15 @@ object ApkInstaller {
         if (downloadedVersion <= installedVersion) return false
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            // Signature.toByteArray() is the raw X.509 certificate, so it must be
+            // passed as CERT_INPUT_RAW_X509. CERT_INPUT_SHA256 expects a 32-byte
+            // digest, which never matches, and rejected every update on Android 9+.
             val downloadedSigners = downloaded.signingInfo?.apkContentsSigners ?: return false
             return downloadedSigners.isNotEmpty() && downloadedSigners.all { signer ->
                 packageManager.hasSigningCertificate(
                     context.packageName,
                     signer.toByteArray(),
-                    PackageManager.CERT_INPUT_SHA256,
+                    PackageManager.CERT_INPUT_RAW_X509,
                 )
             }
         }
