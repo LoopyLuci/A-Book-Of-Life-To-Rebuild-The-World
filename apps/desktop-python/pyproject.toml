@@ -1,7 +1,7 @@
 [project]
 name = "abook-desktop"
 # Mirrors [project] version in the repository manifest.toml.
-version = "1.1.5"
+version = "1.1.6"
 description = "Offline desktop reader for the A Book Of Life To Rebuild The World knowledge base"
 readme = "README.md"
 requires-python = ">=3.11"
