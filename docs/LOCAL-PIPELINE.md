@@ -127,9 +127,9 @@ python -m pip install -r requirements.txt -r requirements-dev.txt
 
 `python scripts/install.py install` does the same thing into the isolated
 `.venv/`, and repairs an environment created before `requirements-dev.txt`
-existed. The `pre-push` hook prefers `.venv/`, so a hook run is only as complete
-as that environment: repair it with `scripts/install.py install` when the
-preflight says an extra is missing.
+existed. The `pre-push` hook runs the interpreter that installed it first, then
+`.venv/`, so a hook run is only as complete as that environment: repair it with
+`scripts/install.py install` when the preflight says an extra is missing.
 
 ## Environment
 
@@ -185,10 +185,12 @@ git push
 ```
 
 The installer wires that rule into git: `python scripts/install_hooks.py` writes
-`.git/hooks/pre-push`, which runs the pipeline and stops the push when a stage
-fails. The hook prefers the project's `.venv`, so it sees the same dependencies
-the pipeline does. It is local to a checkout, and `--status`, `--uninstall` and
-`--force` are available; the installer runs it for you.
+`pre-push` into the hooks directory git reads for the repository, which runs the
+pipeline and stops the push when a stage fails. A linked worktree shares that
+directory with its main checkout. The hook runs the interpreter that installed
+it, which `scripts/install.py` points at the project's `.venv`, so it sees the
+same dependencies the pipeline does. It is local to a clone, and `--status`,
+`--uninstall` and `--force` are available; the installer runs it for you.
 
 ```bash
 python scripts/install_hooks.py --status      # is the hook installed?
