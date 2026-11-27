@@ -82,6 +82,13 @@ def main() -> int:
         changed.append("mobile/package.json")
 
     if replace(
+        ROOT / "apps" / "web-ts" / "package.json",
+        r'"version": "[^"]+"',
+        f'"version": "{version}"',
+    ):
+        changed.append("apps/web-ts/package.json")
+
+    if replace(
         ROOT / "apps" / "desktop-python" / "pyproject.toml",
         r'version = "[^"]+"',
         f'version = "{version}"',

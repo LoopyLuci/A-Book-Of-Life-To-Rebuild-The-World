@@ -1,6 +1,6 @@
 [project]
 name = "a-book-of-life"
-version = "1.1.1"
+version = "1.1.2"
 description = "A Book Of Life To Rebuild The World — an offline-first knowledge engine."
 requires-python = ">=3.11"
 license = { text = "MIT" }

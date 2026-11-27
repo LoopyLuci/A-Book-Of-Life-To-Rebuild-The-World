@@ -41,7 +41,7 @@ __all__ = [
 APP_NAME = "abook-desktop"
 
 #: Fallback version, used when no ``manifest.toml`` can be found.
-DEFAULT_VERSION = "1.1.1"
+DEFAULT_VERSION = "1.1.2"
 
 #: Name of the log file written under :func:`log_dir`.
 LOG_FILE_NAME = "abook.log"
