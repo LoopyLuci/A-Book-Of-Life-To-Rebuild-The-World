@@ -160,7 +160,7 @@ release APK and attaches it to a GitHub Release. It expects these repository sec
 | `ABOOK_RELEASE_KEY_PASSWORD` | key password |
 
 ```bash
-git tag v1.1.4 && git push origin v1.1.4
+git tag v1.1.5 && git push origin v1.1.5
 ```
 
 ## App updates from the settings screen

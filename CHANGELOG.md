@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.5] — 2026-11-27
+
+### Fixed
+- An in-app update stalled at 0% on Android 11. The system's download-complete
+  message was refused, so the app never learned the download had finished. The
+  app now receives that message, so the update can be installed from inside the
+  app. This was tested on Android 11.
+- Devices on 1.1.4 cannot get this fix in-app, because the stall is in the
+  installed code. On Android 11, install this release by hand once: open the
+  app's Settings, tap "Save APK to Downloads", then open the APK from Downloads.
+
 ## [1.1.4] — 2026-11-27
 
 ### Changed
@@ -249,7 +260,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.4...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.5...HEAD
+[1.1.5]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.5
 [1.1.4]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.4
 [1.1.3]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.3
 [1.1.2]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.2
