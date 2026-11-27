@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.3] — 2026-11-27
+
+### Fixed
+- Installing a downloaded update from the Android app now works on Android 5.1
+  and 6.0. The platform installer on those versions opens only file addresses,
+  so the app passes the downloaded package as a file address there. Before, the
+  app reported "Could not open the Android package installer." Android 7.0 and
+  newer use the content address, as before.
+- Devices on 1.1.1 or 1.1.2 cannot install this update from inside the app,
+  because their installed code has the old address. Install this release once
+  by hand. In-app updates work from then on.
+
 ## [1.1.2] — 2026-11-27
 
 ### Security
@@ -228,7 +240,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Internal alpha. Repository scaffold, schemas, CI.
 
-[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.2...HEAD
+[Unreleased]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/compare/v1.1.3...HEAD
+[1.1.3]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.3
 [1.1.2]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.2
 [1.1.1]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.1
 [1.1.0]: https://github.com/LoopyLuci/A-Book-Of-Life-To-Rebuild-The-World/releases/tag/v1.1.0
